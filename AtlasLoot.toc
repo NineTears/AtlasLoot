@@ -1,8 +1,12 @@
 ﻿## Interface: 11200
 ## Title: AtlasLoot TW Edition
+## Title-zhCN: AtlasLoot-TWoW 副本BOSS战利品查询
 ## Notes: Shows the possible loot from the bosses
-## Author: Daviesh, Pompa (Turtle WoW World Bosses), Xerron (Turtle WoW World Bosses), Gurky (Turtle WoW 1.16/1.16.1 Dungeons), |cffbe5effLexie|r
+## Notes-zhCN:|CFF00FF00AtlasLoot|R|N显示首领可能的掉落物品。|N命令：/atlasloot
+## Author: Daviesh, Pompa (Turtle WoW World Bosses), Xerron (Turtle WoW World Bosses), Gurky (Turtle WoW 1.16/1.16.1 Dungeons)
+## X-Repple: 地图
 ## Version: 1.0.9
+
 ## SavedVariables: AtlasLoot_updateavailable
 ## SavedVariablesPerCharacter: AtlasLootCharDB
 ## OptionalDeps: Alphamap, AtlasLoader, LootLink, ItemSync, DewdropLib, Ace2, EquipCompare, EQCompare
