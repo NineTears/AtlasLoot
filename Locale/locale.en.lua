@@ -1480,7 +1480,7 @@ AL:RegisterTranslations("enUS", function() return {
     ["DKP"] = "DKP",
     ["Priority:"] = "优先: ",
     ["Click boss name to view loot."] = "点击BOSS名以浏览掉落",
-	["Left-click to open AtlasLoot.\nMiddle-click for AtlasLoot options.\nRight-click and drag to move this button."] = true,
+    ["Left-click to open AtlasLoot.\nMiddle-click for AtlasLoot options.\nRight-click and drag to move this button."] = "左键点击打开AtlasLoot。\n中键点击打开AtlasLoot选项。\n右键点击并拖动以移动此按钮。",
     ["Various Locations"] = "多个位置",
     ["This is a loot browser only.  To view maps as well, install either Atlas or Alphamap."] = "该窗口只是一个掉落浏览器。若想同时查看地图，请安装 Atlas 或 Alphamap 插件。",
     ["Toggle AL Panel"] = "AtlasLoot 面板",
@@ -3168,4 +3168,4 @@ AL:RegisterTranslations("enUS", function() return {
     ["The specified item does not exist or is not cached!"] = "指定的物品不存在或不被缓存！",
     ["Master Craftsman Omarion"] = "大工匠奥玛里恩",
     ["The Behemoth"] = "贝哈默斯",
-	} end)
+} end)

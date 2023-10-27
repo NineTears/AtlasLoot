@@ -11,7 +11,7 @@ local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
 --Table of loot titles
 AtlasLoot_TableNames = {
     --Keys
-    ["VanillaKeys"] = { AL["Keys"], "AtlasLootItems" },
+    ["VanillaKeys"] = { AL["Keys"], "AtlasLootItems" },  
     --Blackfathom Deeps
     ["BFDGhamoora"] = { AL["Ghamoo-ra"], "AtlasLootItems" },
     ["BFDLadySarevess"] = { AL["Lady Sarevess"], "AtlasLootItems" },
