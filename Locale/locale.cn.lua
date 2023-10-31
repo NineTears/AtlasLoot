@@ -77,8 +77,8 @@ AL:RegisterTranslations("zhCN", function() return {
 	["Show IDs at all times"] = "永远显示物品ID",    
 	["Show itemIDs at all times"] = "永远显示物品ID",
 	["Hide AtlasLoot Panel"] = "隐藏 AtlasLoot 面板",
-	["Show Minimap Button"] = "显示小地图图标",
-	["Set Minimap Button Position"] = "设置小地图图标位置",
+	["Show Minimap Button"] = "显示小地图按钮",
+	["Set Minimap Button Position"] = "设置小地图按钮位置",
 	["Suppress text spam when querying items"] = "查询物品时不显示提示信息",
 	["Notify me when a LoD Module is loaded"] = "当物品数据模块载入时进行提示",
 	["Load all loot modules at startup"] = "在启动时载入所有物品数据模块",
@@ -901,7 +901,7 @@ AL:RegisterTranslations("zhCN", function() return {
 	["Lord Blackwood"] = "布莱克伍德公爵",
 	["Revanchion"] = "雷瓦克安",
 	["Scorn"] = "瑟克恩",
-	["Sever"] = "塞沃尔",
+
 	["Lady Falther'ess"] = "法瑟蕾丝夫人",
 	["Smokywood Pastures Vendor"] = "烟林牧场商人",
 	["Shartuul"] = "沙图尔",
@@ -936,18 +936,15 @@ AL:RegisterTranslations("zhCN", function() return {
 	["Namdo Bizzfizzle"] = "纳姆杜",
 	["The Nameles Prophet"] = "无名预言者",
 	["Zelemar the Wrathful"] = "愤怒者塞雷玛尔",
-	["Henry Stern"] = "亨利·斯特恩",
 	["Aggem Thorncurse"] = "阿格姆",
-	["Roogug"] = "鲁古格",
 	["Rajaxx's Captains"] = "拉贾克斯队长",
-	["Razorfen Spearhide"] = "剃刀沼泽刺鬃守卫",
-	["Rethilgore"] = "雷希戈尔",
+
 	["Kalldan Felmoon"] = "卡尔丹·暗月",
 	["Magregan Deepshadow"] = "马格雷甘·深影",
 	["Lord Ahune"] = "埃霍恩",
 	["Coren Direbrew"] = "科伦·恐酒",
 	["Don Carlos"] = "唐·卡洛斯",
-	["Fel Steed"] = "地狱战马",
+
 	["Monument of Franclorn Forgewright"] = "弗兰克罗恩·铸铁的雕像",
 	["The Grim Guzzler"] = "黑铁酒吧",
 	["Summoner's Tomb"] = "召唤者之墓",
@@ -1039,6 +1036,7 @@ AL:RegisterTranslations("zhCN", function() return {
 
     --副本BOSS等
     ["Dungeons & Raids"] = "地下城&团队副本",
+
     --稀有精英
     ["Rare Spawns"] = "稀有精英",
     ["Tarangos The Dampener"] = "塔兰戈斯·湿泽者",
@@ -1055,18 +1053,59 @@ AL:RegisterTranslations("zhCN", function() return {
 
     --怒焰裂谷
     ["Ragefire Chasm"] = "[13-18] 怒焰裂谷",
+    ["Oggleflint"] = "奥格弗林特",
+    ["Taragaman the Hungerer"] = "饥饿者塔拉加曼",
+    ["Jergosh the Invoker"] = "祈求者耶戈什",
+    ["Bazzalan"] = "巴扎兰",
 
     --哀嚎洞穴
     ["Wailing Caverns"] = "[17-24] 哀嚎洞穴",
+    ["Lord Cobrahn"] = "考布莱恩",
+    ["Lady Anacondra"] = "安娜科德拉",
+    ["Kresh"] = "克雷什",
+    ["Lord Pythas"] = "皮萨斯",
+    ["Skum"] = "斯卡姆",
+    ["Lord Serpentis"] = "瑟芬迪斯",
+    ["Verdan the Everliving"] = "永生者沃尔丹",
+    ["Mutanus the Devourer"] = "吞噬者穆坦努斯",
+    ["Deviate Faerie Dragon"] = "变异精灵龙",
 
     --死亡矿井
     ["The Deadmines"] = "[17-24] 死亡矿井",
+    ["Rhahk'Zor"] = "拉克佐",
+    ["Miner Johnson"] = "矿工约翰森",
+    ["Sneed"] = "斯尼德",
+    ["Sneed's Shredder"] = "斯尼德的伐木机",
+    ["Gilnid"] = "基尔尼格",
+    ["Mr. Smite"] = "重拳先生",
+    ["Cookie"] = "曲奇",
+    ["Captain Greenskin"] = "绿皮队长",
+    ["Edwin VanCleef"] = "艾德温·范克里夫",
 
     --影牙城堡
     ["Shadowfang Keep"] = "[22-30] 影牙城堡",
+    ["Rethilgore"] = "雷希戈尔",
+    ["Fel Steed"] = "地狱战马",
+    ["Razorclaw the Butcher"] = "屠夫拉佐克劳",
+    ["Baron Silverlaine"] = "席瓦莱恩男爵",
+    ["Commander Springvale"] = "指挥官斯普林瓦尔",
+    ["Sever"] = "塞沃尔",
+    ["Odo the Blindwatcher"] = "盲眼守卫奥杜",
+    ["Fenrus the Devourer"] = "吞噬者芬鲁斯",
+    ["Deathsworn Captain"] = "死亡之誓",
+    ["Arugal's Voidwalker"] = "阿鲁高的虚空行者",
+    ["Wolf Master Nandos"] = "狼王南杜斯",
+    ["Archmage Arugal"] = "大法师阿鲁高",
 
     --黑暗深渊
     ["Blackfathom Deeps"] = "[23-32] 黑暗深渊",
+    ["Ghamoo-ra"] = "加摩拉",
+    ["Lady Sarevess"] = "萨利维丝",
+    ["Gelihast"] = "格里哈斯特",
+    ["Baron Aquanis"] = "阿奎尼斯男爵",
+    ["Twilight Lord Kelris"] = "梦游者克尔里斯",
+    ["Old Serra'kis"] = "瑟拉吉斯",
+    ["Aku'mai"] = "阿库麦尔",
 
     --暴风城监狱
     ["The Stockade"] = "[22-30] 监狱",
@@ -1076,6 +1115,14 @@ AL:RegisterTranslations("zhCN", function() return {
 
     --剃刀沼泽
     ["Razorfen Kraul"] = "[29-38] 剃刀沼泽",
+    ["Roogug"] = "鲁古格",
+    ["Death Speaker Jargba"] = "亡语者贾格巴",
+    ["Overlord Ramtusk"] = "主宰拉姆塔斯",
+    ["Razorfen Spearhide"] = "剃刀沼泽刺鬃守卫",
+    ["Agathelos the Raging"] = "暴怒的阿迦赛罗斯",
+    ["Blind Hunter"] = "盲眼猎手",
+    ["Charlga Razorflank"] = "卡尔加·刺肋",
+    ["Earthcaller Halmgar"] = "唤地者哈穆加",
 
     --新月林地
     ["The Crescent Grove"] = "[32-38] |CFF00FF00新月林地",
@@ -1108,17 +1155,52 @@ AL:RegisterTranslations("zhCN", function() return {
 
     --剃刀高地
     ["Razorfen Downs"] = "[36-46] 剃刀高地",
+    ["Tuten'kash"] = "图特卡什",
+    ["Henry Stern"] = "亨利·斯特恩",
+    ["Mordresh Fire Eye"] = "火眼莫德雷斯",
+    ["Glutton"] = "暴食者",
+    ["Ragglesnout"] = "拉戈斯诺特",
+    ["Amnennar the Coldbringer"] = "寒冰之王亚门纳尔",
+    ["Plaguemaw the Rotting"] = "腐烂的普雷莫尔",
 
     --奥达曼
     ["Uldaman"] = "[40-51] 奥达曼",
 
     --吉尔尼斯城
     ["Gilneas City"] = "[42-50] |CFF00FF00吉尔尼斯城",
+
     --玛拉顿
     ["Maraudon"] = "[45-55] 玛拉顿",
+    ["Kolk"] = "考尔克",
+    ["Gelk"] = "吉尔克",
+    ["Magra"] = "玛格拉",
+    ["Veng"] = "温格",
+
+    ["Noxxion"] = "诺克赛恩",
+    ["Razorlash"] = "锐刺鞭笞者",
+    ["Maraudos"] = "玛拉多斯",
+    ["Lord Vyletongue"] = "维利塔恩",
+    ["Meshlok the Harvester"] = "收割者麦什洛克",
+    ["Celebras the Cursed"] = "被诅咒的塞雷布拉斯",
+    ["Landslide"] = "兰斯利德",
+    ["Tinkerer Gizlock"] = "工匠吉兹洛克",
+    ["Rotgrip"] = "洛特格里普",
+    ["Princess Theradras"] = "瑟莱德丝公主",
 
     --祖尔法拉克
     ["Zul'Farrak"] = "[44-54] 祖尔法拉克",
+    ["Antu'sul"] = "安图苏尔",
+    ["Theka the Martyr"] = "殉教者塞卡",
+    ["Witch Doctor Zum'rah"] = "巫医祖穆拉恩",
+    ["Nekrum Gutchewer"] = "耐克鲁姆",
+    ["Shadowpriest Sezz'ziz"] = "暗影祭司塞瑟斯",
+    ["Dustwraith"] = "灰尘怨灵",
+    ["Sergeant Bly"] = "布莱中士",
+    ["Sandfury Executioner"] = "沙怒刽子手",
+    ["Hydromancer Velratha"] = "水占师维蕾萨",
+    ["Gahz'rilla"] = "加兹瑞拉",
+    ["Chief Ukorz Sandscalp"] = "乌克兹·沙顶",
+    ["Zerillis"] = "泽雷利斯",
 
     --沉没的神庙
     ["The Sunken Temple"] = "[50-60] 沉没的神庙",
@@ -1143,9 +1225,33 @@ AL:RegisterTranslations("zhCN", function() return {
 
     --厄运之槌
     ["Dire Maul"] = "[55-60] 厄运之槌",
+    --厄运之槌 (东)
     ["Dire Maul (East)"] = "[55-60] 厄运之槌 (东)",
+    ["Pusillin"] = "普希林",
+    ["Zevrim Thornhoof"] = "瑟雷姆·刺蹄",
+    ["Hydrospawn"] = "海多斯博恩",
+    ["Lethtendris"] = "蕾瑟塔蒂丝";
+    ["Pimgib"] = "匹姆吉布";
+    ["Alzzin the Wildshaper"] = "奥兹恩",
+    ["Isalien"] = "依萨利恩",
+    --厄运之槌 (北)
     ["Dire Maul (North)"] = "[57-60] 厄运之槌 (北)",
+    ["Guard Mol'dar"] = "卫兵摩尔达",
+    ["Stomper Kreeg"] = "践踏者克雷格",
+    ["Guard Fengus"] = "卫兵芬古斯",
+    ["Guard Slip'kik"] = "卫兵斯里基克";
+    ["Captain Kromcrush"] = "克罗卡斯";
+    ["Cho'Rush the Observer"] = "观察者克鲁什";
+    ["King Gordok"] = "戈多克大王",
+    --厄运之槌 (西)
     ["Dire Maul (West)"] = "[57-60] 厄运之槌 (西)",
+    ["Tendris Warpwood"] = "特迪斯·扭木",
+    ["Illyanna Ravenoak"] = "伊琳娜·暗木",
+    ["Magister Kalendris"] = "卡雷迪斯镇长",
+    ["Tsu'zee"] = "苏斯",
+    ["Immol'thar"] = "伊莫塔尔",
+    ["Lord Hel'nurath"] = "赫尔努拉斯";
+    ["Prince Tortheldrin"] = "托塞德林王子";
 
     --通灵学院
     ["Scholomance"] = "[58-60] 通灵学院",
@@ -1174,7 +1280,11 @@ AL:RegisterTranslations("zhCN", function() return {
     ["Caverns of Time: Black Morass"] = "[60] |CFF00FF00时光之穴：黑色沼泽",
     ["Chronar"] = "克罗纳尔",
     ["Harbinger Aph'ygth"] = "预言者阿夫吉斯",
+	["Epidamu"] = "埃皮达姆",
+	["Drifting Avatar of Time"] = "漂移的时间化身",
     ["Time-Lord Epochronos"] = "时间领主埃波克隆诺斯",
+	["Mossheart"] = "苔心",
+	["Rotmaw"] = "腐蚀之喉",
     ["Antnormi"] = "安特诺米",
     ["Infinite Chromie"] = "无尽的克罗米",
 
@@ -1206,13 +1316,13 @@ AL:RegisterTranslations("zhCN", function() return {
     ["Buru the Gorger"] = "吞咽者布鲁",
     ["Ayamiss the Hunter"] = "狩猎者阿亚米斯",
     ["Ossirian the Unscarred"] = "无疤者奥斯里安",
-    ["Herod"] = "赫洛德",
 
     --熔火之心
     ["Molten Core"] = "|CFFFF0000[团队]|R 熔火之心",
 
     --奥妮克希亚的巢穴
     ["Onyxia's Lair"] = "|CFFFF0000[团队]|R 奥妮克希亚的巢穴",
+    ["Onyxia"] = "奥妮克希亚",
 
     --|CFF00FF00卡拉赞城堡下层
     ["Lower Karazhan Halls"] = "|CFFFF0000[团队] |CFF00FF00卡拉赞城堡下层",
@@ -1261,7 +1371,7 @@ AL:RegisterTranslations("zhCN", function() return {
     ["Tier 2 Sets"] = "T2套装",
     ["Survival"] = "生存",
 
-
+    ["Herod"] = "赫洛德",
 
     ["Highlord Omokk"] = "欧莫克大王",
     ["Shadow Hunter Vosh'gajin"] = "暗影猎手沃什加斯",
@@ -1308,7 +1418,7 @@ AL:RegisterTranslations("zhCN", function() return {
     ["Loatheb"] = "憎恨者",
     ["Sapphiron"] = "萨菲隆";
     ["Kel'Thuzad"] = "克尔苏加德";
-    ["Onyxia"] = "奥妮克希亚",
+
     ["Kirtonos the Herald"] = "传令官基尔图诺斯",
     ["Jandice Barov"] = "詹迪斯·巴罗夫",
     ["Rattlegore"] = "血骨傀儡",
@@ -1332,13 +1442,7 @@ AL:RegisterTranslations("zhCN", function() return {
     ["Ramstein the Gorger"] = "吞咽者拉姆斯登",
     ["Keys"] = "钥匙", 
 
-    ["Lady Sarevess"] = "萨利维丝",
-    ["Gelihast"] = "格里哈斯特",
-    ["Ghamoo-ra"] = "加摩拉",
-    ["Baron Aquanis"] = "阿奎尼斯男爵",
-    ["Twilight Lord Kelris"] = "梦游者克尔里斯",
-    ["Old Serra'kis"] = "瑟拉吉斯",
-    ["Aku'mai"] = "阿库麦尔",
+
     ["Lord Roccor"] = "洛考尔",
     ["High Interrogator Gerstahn"] = "审讯官格斯塔恩",
     ["Houndmaster Grebmar"] = "驯犬者格雷布玛尔",
@@ -1358,30 +1462,6 @@ AL:RegisterTranslations("zhCN", function() return {
 
 
 
-
-    ["Pusillin"] = "普希林",
-    ["Zevrim Thornhoof"] = "瑟雷姆·刺蹄",
-    ["Hydrospawn"] = "海多斯博恩",
-    ["Lethtendris"] = "蕾瑟塔蒂丝";
-    ["Pimgib"] = "匹姆吉布";
-    ["Alzzin the Wildshaper"] = "奥兹恩",
-    ["Isalien"] = "依萨利恩",
-
-    ["Guard Mol'dar"] = "卫兵摩尔达",
-    ["Stomper Kreeg"] = "践踏者克雷格",
-    ["Guard Fengus"] = "卫兵芬古斯",
-    ["Guard Slip'kik"] = "卫兵斯里基克";
-    ["Captain Kromcrush"] = "克罗卡斯";
-    ["Cho'Rush the Observer"] = "观察者克鲁什";
-    ["King Gordok"] = "戈多克大王",
-    ["Tendris Warpwood"] = "特迪斯·扭木",
-    ["Illyanna Ravenoak"] = "伊琳娜·暗木",
-    ["Magister Kalendris"] = "卡雷迪斯镇长",
-    ["Tsu'zee"] = "苏斯",
-    ["Immol'thar"] = "伊莫塔尔",
-    ["Lord Hel'nurath"] = "赫尔努拉斯";
-    ["Prince Tortheldrin"] = "托塞德林王子";
-
     ["Techbot"] = "尖端机器人",
     ["Grubbis"] = "格鲁比斯",
     ["Viscous Fallout"] = "粘性辐射尘",
@@ -1390,57 +1470,13 @@ AL:RegisterTranslations("zhCN", function() return {
     ["Dark Iron Ambassador"] = "黑铁大使",
     ["Mekgineer Thermaplugg"] = "机械师瑟玛普拉格",
 
-    ["Kolk"] = "考尔克",
-    ["Gelk"] = "吉尔克",
-    ["Magra"] = "玛格拉",
-    ["Veng"] = "温格",
-    ["Noxxion"] = "诺克赛恩",
-    ["Razorlash"] = "锐刺鞭笞者",
-    ["Maraudos"] = "玛拉多斯",
-    ["Lord Vyletongue"] = "维利塔恩",
-    ["Meshlok the Harvester"] = "收割者麦什洛克",
-    ["Celebras the Cursed"] = "被诅咒的塞雷布拉斯",
-    ["Landslide"] = "兰斯利德",
-    ["Tinkerer Gizlock"] = "工匠吉兹洛克",
-    ["Rotgrip"] = "洛特格里普",
-    ["Princess Theradras"] = "瑟莱德丝公主",
     ["Majordomo Executus"] = "管理者埃克索图斯";
-
-
-
-
-    ["Tuten'kash"] = "图特卡什",
-    ["Mordresh Fire Eye"] = "火眼莫德雷斯",
-    ["Glutton"] = "暴食者",
-    ["Ragglesnout"] = "拉戈斯诺特",
-    ["Amnennar the Coldbringer"] = "寒冰之王亚门纳尔",
-    ["Plaguemaw the Rotting"] = "腐烂的普雷莫尔",
-
-    ["Death Speaker Jargba"] = "亡语者贾格巴",
-    ["Overlord Ramtusk"] = "主宰拉姆塔斯",
-    ["Agathelos the Raging"] = "暴怒的阿迦赛罗斯",
-    ["Blind Hunter"] = "盲眼猎手",
-    ["Charlga Razorflank"] = "卡尔加·刺肋",
-    ["Earthcaller Halmgar"] = "唤地者哈穆加",
-
-
-
     ["Blood Steward of Kirtonos"] = "基尔图诺斯的卫士",
     ["Death Knight Darkreaver"] = "死亡骑士达克雷尔",
     ["Marduk Blackpool"] = "马杜克·布莱克波尔",
     ["Vectus"] = "维克图斯",
     ["Kormok"] = "库尔莫克",
     ["Lady Illucia Barov"] = "伊露希亚·巴罗夫",
-
-    ["Razorclaw the Butcher"] = "屠夫拉佐克劳",
-    ["Baron Silverlaine"] = "席瓦莱恩男爵",
-    ["Commander Springvale"] = "指挥官斯普林瓦尔",
-    ["Odo the Blindwatcher"] = "盲眼守卫奥杜",
-    ["Fenrus the Devourer"] = "吞噬者芬鲁斯",
-    ["Arugal's Voidwalker"] = "阿鲁高的虚空行者",
-    ["Wolf Master Nandos"] = "狼王南杜斯",
-    ["Archmage Arugal"] = "大法师阿鲁高",
-    ["Deathsworn Captain"] = "死亡之誓",
 
 
     ["Skul"] = "斯库尔",
@@ -1475,27 +1511,8 @@ AL:RegisterTranslations("zhCN", function() return {
     ["Mad Magglish"] = "疯狂的马格利什",
     ["Trigore the Lasher"] = "鞭笞者特里高雷",
     ["Boahn"] = "博艾恩",
-    ["Lord Cobrahn"] = "考布莱恩",
-    ["Lady Anacondra"] = "安娜科德拉",
-    ["Kresh"] = "克雷什",
-    ["Lord Pythas"] = "皮萨斯",
-    ["Skum"] = "斯卡姆",
-    ["Lord Serpentis"] = "瑟芬迪斯",
-    ["Verdan the Everliving"] = "永生者沃尔丹",
-    ["Mutanus the Devourer"] = "吞噬者穆坦努斯",
-    ["Deviate Faerie Dragon"] = "变异精灵龙",
-    ["Antu'sul"] = "安图苏尔",
-    ["Theka the Martyr"] = "殉教者塞卡",
-    ["Witch Doctor Zum'rah"] = "巫医祖穆拉恩",
-    ["Nekrum Gutchewer"] = "耐克鲁姆",
-    ["Shadowpriest Sezz'ziz"] = "暗影祭司塞瑟斯",
-    ["Dustwraith"] = "灰尘怨灵",
-    ["Sergeant Bly"] = "布莱中士",
-    ["Sandfury Executioner"] = "沙怒刽子手",
-    ["Hydromancer Velratha"] = "水占师维蕾萨",
-    ["Gahz'rilla"] = "加兹瑞拉",
-    ["Chief Ukorz Sandscalp"] = "乌克兹·沙顶",
-    ["Zerillis"] = "泽雷利斯",
+
+
 
     ["High Priestess Jeklik"] = "高阶祭司耶克里克",
     ["High Priest Venoxis"] = "高阶祭司温诺希斯",
@@ -1605,10 +1622,6 @@ AL:RegisterTranslations("zhCN", function() return {
     ["Vem"] = "维姆",
     ["Princess Yauj"] = "亚尔基公主",
     ["Shattrath City"] = "沙塔斯城",
-    ["Taragaman the Hungerer"] = "饥饿者塔拉加曼",
-    ["Oggleflint"] = "奥格弗林特",
-    ["Jergosh the Invoker"] = "祈求者耶戈什",
-    ["Bazzalan"] = "巴扎兰",
     ["Targorr the Dread"] = "可怕的塔格尔",
     ["Kam Deepfury"] = "卡姆·深怒",
     ["Bazil Thredd"] = "巴基尔·斯瑞德",
@@ -1705,15 +1718,9 @@ AL:RegisterTranslations("zhCN", function() return {
     ["Foreman Thistlenettle"] = "工头希斯耐特",
     ["Jordan's Hammer"] = "乔丹的铁锤",
     ["The Book of Ur"] = "乌尔之书",
-    ["Rhahk'Zor"] = "拉克佐",
-    ["Miner Johnson"] = "矿工约翰森",
-    ["Sneed"] = "斯尼德",
-    ["Sneed's Shredder"] = "斯尼德的伐木机",
-    ["Gilnid"] = "基尔尼格",
-    ["Captain Greenskin"] = "绿皮队长",
-    ["Edwin VanCleef"] = "艾德温·范克里夫",
-    ["Mr. Smite"] = "重拳先生",
-    ["Cookie"] = "曲奇",
+
+
+
     ["Reliquary of Souls"] = "灵魂之匣",
     ["Vazruden the Herald"] = "瓦兹德先驱",
     ["Roughshod Pike"] = "尖锐长矛",
