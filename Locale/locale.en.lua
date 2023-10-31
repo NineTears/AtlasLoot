@@ -1499,6 +1499,8 @@ AL:RegisterTranslations("enUS", function() return {
 
 
 	--汉显端汉化，wind
+	--Text strings for UI objects
+	--["AtlasLoot"] = "",
 	["No match found for"] = "未找到物品",
 	["Search"] = "搜索",
 	["Clear"] = "清除",
@@ -1533,8 +1535,8 @@ AL:RegisterTranslations("enUS", function() return {
 	["Close Menu"] = "关闭",
 	["Unknown"] = "未知",
 	["Skill Required:"] = "需要技能：",
-        ["Skill:"] = "技能：",
-        ["Level:"] = "等级：",
+	["Skill:"] = "技能：",
+	["Level:"] = "等级：",
 	["QuickLook"] = "快捷浏览",
 	["Add to QuickLooks:"] = "添加到快捷浏览",
 	["Assign this loot table\n to QuickLook"] = "将该掉落表添加到快捷浏览中",
@@ -1543,12 +1545,12 @@ AL:RegisterTranslations("enUS", function() return {
 	["Classic Instances"] = "旧世界副本",
 	["BC Instances"] = "燃烧的远征副本",
 	["Burning Crusade"] = "燃烧的远征",
-        ["Button Position"] = "按钮位置",
-        ["Button Radius"] = "按钮半径",
-        ["Reset Position"] = "重置位置",
-        ["Minimap button has been reset!"] = "小地图按钮重置！",
-        ["has been reset!"] = "已重置！",
-        ["|cff9d9d9dALT+Click to clear|r"] = "|cff9d9d9dAlt+点击清除|r",
+	["Button Position"] = "按钮位置",
+	["Button Radius"] = "按钮半径",
+	["Reset Position"] = "重置位置",
+	["Minimap button has been reset!"] = "小地图按钮重置！",
+	["has been reset!"] = "已重置！",
+	["|cff9d9d9dALT+Click to clear|r"] = "|cff9d9d9dAlt+点击清除|r",
 	--Text for Options Panel
 	["Atlasloot Options"] = "Atlasloot 设置",
 	["Safe Chat Links |cff1eff00(recommended)|r"] = "使用安全物品连接 |cff1eff00(推荐)|r",
@@ -1562,17 +1564,17 @@ AL:RegisterTranslations("enUS", function() return {
 	["|cff9d9d9dUse EquipCompare|r"] = "|cff9d9d9d使用装备对比|r",
 	["Show Comparison Tooltips"] = "显示装备对比",
 	["Make Loot Table Opaque"] = "禁用物品列表背景透明",
-        ["Show IDs at all times"] = "永远显示物品ID",    
+	["Show IDs at all times"] = "永远显示物品ID",    
 	["Show itemIDs at all times"] = "永远显示物品ID",
 	["Hide AtlasLoot Panel"] = "隐藏 AtlasLoot 面板",
-	["Show Minimap Button"] = "显示小地图图标",
-	["Set Minimap Button Position"] = "设置小地图图标位置",
+	["Show Minimap Button"] = "显示小地图按钮",
+	["Set Minimap Button Position"] = "设置小地图按钮位置",
 	["Suppress text spam when querying items"] = "查询物品时不显示提示信息",
 	["Notify me when a LoD Module is loaded"] = "当物品数据模块载入时进行提示",
 	["Load all loot modules at startup"] = "在启动时载入所有物品数据模块",
 	["AutoQuery items on loot tables |cffff0000(disconnection risk)|r"] = "打开掉落表后自动进行查询 |cffff0000(有掉线风险)|r",
 	["Done"] = "确定",
-        ["WishList"] = "收藏夹",
+	["WishList"] = "收藏夹",
 	["Search Result: %s"] = "搜索结果：%s",
 	["Last Result"] = "上次搜索",
 	["Search on"] = "搜索于",
@@ -1581,7 +1583,7 @@ AL:RegisterTranslations("enUS", function() return {
 	["Search options"] = "搜索选项",
 	["Partial matching"] = "部分匹配",
 	["If checked, AtlasLoot search item names for a partial match."] = "如果选中，AtlasLoot会将输入文字作为物品名称的一部分进行匹配。",
-        ["You don't have any module selected to search on!"] = "你没有选择要搜索的模块。",
+	["You don't have any module selected to search on!"] = "你没有选择要搜索的模块。",
 	--The next 4 lines are the tooltip for the Server Query Button
 	--The translation doesn't have to be literal, just re-write the
 	--sentences as you would naturally and break them up into 4 roughly
@@ -1592,28 +1594,28 @@ AL:RegisterTranslations("enUS", function() return {
 	["over them."] = "下次滑过时刷新",
 
 	--Slash commands
-        ["reset"] = "重置",
-        ["default"] = "默认",
-        ["panel"] = "面板",
-        ["options"] = "选项",
-        ["Reset complete!"] = "重置完成",
-        ["Default settings applied!"] = "应用默认设置！",
-        ["Default Settings"] = "默认设置",
-        --Error Messages and warnings
-        ["AtlasLoot Error!"] = "AtlasLoot 发生错误！",
-        ["WishList Full!"] = "收藏夹已满！",
-        [" added to the WishList."] = " 被添加到收藏夹",
-        [" already in the WishList!"] = " 已经在收藏夹表里了",
-        [" deleted from the WishList."] = " 已从收藏夹表删除",
+	["reset"] = "重置",
+	["default"] = "默认",
+	["panel"] = "面板",
+	["options"] = "选项",
+	["Reset complete!"] = "重置完成",
+	["Default settings applied!"] = "应用默认设置！",
+	["Default Settings"] = "默认设置",
+	--Error Messages and warnings
+	["AtlasLoot Error!"] = "AtlasLoot 发生错误！",
+	["WishList Full!"] = "收藏夹已满！",
+	[" added to the WishList."] = " 被添加到收藏夹",
+	[" already in the WishList!"] = " 已经在收藏夹表里了",
+	[" deleted from the WishList."] = " 已从收藏夹表删除",
 
 	--Incomplete Table Registry error message
 	[" not listed in loot table registry, please report this message to the AtlasLoot forums at http://www.atlasloot.net"] = "没有被列出，请将该错误信息发送到 AtlasLoot 官方论坛：http://www.atlasloot.net。",
 
 	--LoD Module disabled or missing
-        [" is unavailable, the following load on demand module is required: "] = "不可用，需要加载以下模块：",
+	[" is unavailable, the following load on demand module is required: "] = "不可用，需要加载以下模块：",
 
 	--LoD Module load sequence could not be completed
-        ["Status of the following module could not be determined: "] = "无法确定下列模块的状态:",
+	["Status of the following module could not be determined: "] = "无法确定下列模块的状态:",
 
 	--LoD Module required has loaded, but loot table is missing
 	[" could not be accessed, the following module may be out of date: "] = "无法进行操作，以下模块可能已过期：",
@@ -1638,16 +1640,16 @@ AL:RegisterTranslations("enUS", function() return {
 	["Collections"] = "套装/收藏",
 	["Factions"] = "阵营",
 	["World Events"] = "世界事件",
-        ["Load Modules"] = "加载模块",
-        ["Crafting"] = "专业制作",
-        ["Crafted Sets - Blacksmithing"] = "制造出的套装 - 锻造",
-        ["Crafted Sets - Tailoring"] = "制造出的套装 - 裁缝",
-        ["Crafted Sets - Leatherworking"] = "制造出的套装 - 制皮",
+	["Load Modules"] = "加载模块",
+	["Crafting"] = "专业制作",
+	["Crafted Sets - Blacksmithing"] = "制造出的套装 - 锻造",
+	["Crafted Sets - Tailoring"] = "制造出的套装 - 裁缝",
+	["Crafted Sets - Leatherworking"] = "制造出的套装 - 制皮",
 
 	--First time user
 	["Welcome to Atlasloot Enhanced.  Please take a moment to set your preferences."] = "欢迎使用 Atlasloot Enhanced，请花少许时间进行参数设置",
 	["New feature in 4.02.01: Type '/atlasloot options' to bring up the options menu and '/atlasloot reset' to reset AtlasLoot after a disconnect."] = "在4.02.01以上版本: 输入 '/atlasloot options'可以打开设置菜单，输入'/atlasloot reset'可以在登出游戏后重置AtlasLoot",
-        ["New feature in 4.03.00: Introducing the Wishlist!  Simply alt-click on any item to add it to the wishlist.  To delete an item from the wishlist, open up your wishlist and alt-click the item to remove it.  It's that simple.  Buttons to view the wishlist have been added to the Atlas interface and the loot browser."] = "在4.03.00版本中添加了收藏夹！你可以按住Alt并点击任何物品的链接来添加它到收藏夹中。打开收藏夹，按住Alt并点击物品链接可以将它删除。你可以点击Atlas界面内掉落浏览器上的相应按钮来打开收藏夹。",
+	["New feature in 4.03.00: Introducing the Wishlist!  Simply alt-click on any item to add it to the wishlist.  To delete an item from the wishlist, open up your wishlist and alt-click the item to remove it.  It's that simple.  Buttons to view the wishlist have been added to the Atlas interface and the loot browser."] = "在4.03.00版本中添加了收藏夹！你可以按住Alt并点击任何物品的链接来添加它到收藏夹中。打开收藏夹，按住Alt并点击物品链接可以将它删除。你可以点击Atlas界面内掉落浏览器上的相应按钮来打开收藏夹。",
 	["New feature in 4.05.00: Advanced searching functionality is now available. You can type in a partial item name, for example typing 'elixir' gives all items in the database with 'elixir' in the name.  Big thanks to Kurax for his help."] = "4.05.00新功能：高级搜索功能。现在可以使用模糊搜索方式，如在搜索框中输入“药剂”即可搜索艘有物品名中带有“药剂”字样的物品。非常感谢 Kurax 的帮助。",
 	["New feature in 4.05.00: All professions are now included in the AtlasLoot_Crafting module."] = "4.05.00新功能：所有专业技能信息现在都包含在 AtlasLoot_Crafting 模块中。",
 	["Welcome to Atlasloot Enhanced.  Please take a moment to set your preferences for tooltips and links in the chat window.\n\n  This options screen can be reached again at any later time by typing '/atlasloot'."] = "欢迎使用 Atlasloot Enhanced。请花少许时间进来设置提示与物品连接的方式。\n\n  以后可以输入“/atlasloot”再次显示该设置窗口。",
@@ -1662,9 +1664,9 @@ AL:RegisterTranslations("enUS", function() return {
 	--Unsafe item tooltip
 	["Unsafe Item"] = "不安全的物品",
 	["Item Unavailable"] = "物品不可用",
-        ["ItemID:"] = "物品ID:",
-        ["SpellID:"] = "法术ID:",
-        ["This item is not available on your server or your battlegroup yet."] = "此物品在你目前的服务器上不可用,可能还未开放此物品掉落.",
+	["ItemID:"] = "物品ID:",
+	["SpellID:"] = "法术ID:",
+	["This item is not available on your server or your battlegroup yet."] = "此物品在你目前的服务器上不可用,可能还未开放此物品掉落.",
 	["This item is unsafe.  To view this item without the risk of disconnection, you need to have first seen it in the game world. This is a restriction enforced by Blizzard since Patch 1.10."] = "该物品连接不安全。若想得知此物品的属性又想避免掉线问题，您需要在游戏内见过一次该物品。这是暴雪在1.10版本中做出的强制性改动。",
 	["You can right-click to attempt to query the server.  You may be disconnected."] = "您可以右键点击该物品以向服务器查询，但这样做有可能会与服务器断开连接。",
 
@@ -1678,15 +1680,15 @@ AL:RegisterTranslations("enUS", function() return {
 	["Book"] = "书籍",
 	["Banner"] = "旗帜",
 	["Set"] = "套装",
-        ["Set: "] = "套装： ",
+	["Set: "] = "套装： ",
 	["Token"] = "兑换物",
-        ["Token Hand-Ins"] = "需要兑换的奖励",
-        ["Crafting Reagent"] = "制作材料",
+	["Token Hand-Ins"] = "需要兑换的奖励",
+	["Crafting Reagent"] = "制作材料",
 	["Skinning Knife"] = "剥皮刀",
-        ["Herbalism Knife"] = "草药刀",
+	["Herbalism Knife"] = "草药刀",
 	["Fish"] = "鱼",
 	["Combat Pet"] = "战斗宠物",
-        ["Fireworks"] = "烟花",
+	["Fireworks"] = "烟花",
 		
 	--Extra inventory stuff
 	["Cloak"] = "披风",
@@ -1714,35 +1716,35 @@ AL:RegisterTranslations("enUS", function() return {
 	["Reputation Factions"] = "声望阵营",
 	["Sets/Collections"] = "套装/收藏",
 	["Card Game Item"] = "卡片游戏奖品",
-        ["Tier 1"] = "T1套装",
-        ["Tier 2"] = "T2套装",
-        ["Tier 3"] = "T3套装",
-        ["Tier 4"] = "T4套装",
-        ["Tier 5"] = "T5套装",
-        ["Tier 6"] = "T6套装",
+	["Tier 1"] = "T1套装",
+	["Tier 2"] = "T2套装",
+	["Tier 3"] = "T3套装",
+	["Tier 4"] = "T4套装",
+	--["Tier 5"] = "T5套装",
+	--["Tier 6"] = "T6套装",
 	["Arena Reward"] = "竞技场奖励",
 	["Conjured Item"] = "魔法制造的物品",
 	["Used to summon boss"] = "用以召唤首领",
-        ["Coin"] = "硬币",
-        ["Bijou"] = "宝石",
-        ["Doll"] = "人偶",
+	["Coin"] = "硬币",
+	["Bijou"] = "宝石",
+	["Doll"] = "人偶",
 	["Phase 1"] = "第一阶段",
 	["Phase 2"] = "第二阶段",
 	["Phase 3"] = "第三阶段",
 	["Fire"] = "火",
 	["Water"] = "水",
 	["Wind"] = "风",
-        ["Earth"] = "大地",
+	["Earth"] = "大地",
 	["Master Angler"] = "钓鱼大师",
 	["First Prize"] = "第一名奖励",
 	["Rare Fish Rewards"] = "稀有鱼种奖励",
 	["Rare Fish"] = "稀有鱼种",
 	["Tradable against sunmote + item above"] = "用太阳之尘和上个物品兑换得到",
 	["Rare"] = "稀有",
-        ["random stats"] = "随机属性",
-        ["random resistance"] = "随机抗性",
-        ["random color"] = "随机颜色",
-        ["<Right Click to Open>"] = "<右键打开>",
+	["random stats"] = "随机属性",
+	["random resistance"] = "随机抗性",
+	["random color"] = "随机颜色",
+	["<Right Click to Open>"] = "<右键打开>",
 	["Heroic"] = "英雄模式",
 	["Summon"] = "召唤",
 	["Random"] = "随机",
@@ -1773,7 +1775,6 @@ AL:RegisterTranslations("enUS", function() return {
 	["Paper Airplane"] = "纸飞机",
 	["Papa Hummel's Old-fashioned Pet Biscuit"] = "修默老爹的宠物饼干",
 	["Personal Weather Machine"] = "个人天气制造机",
-	["X-51 Nether-Rocket"] = "X-51虚空火箭",
 	["The Footsteps of Illidan"] = "伊利丹的脚步",
 	--["Disco Inferno!"] = true,
 	--["Ethereal Plunderer"] = true,
@@ -1991,7 +1992,6 @@ AL:RegisterTranslations("enUS", function() return {
 	["Battlegear of Heroism"] = "英勇",
 
 	--Dungeon 3 Sets
-	["Hallowed Raiment"] = "圣徒",
 	["Incanter's Regalia"] = "魔咒师",
 	["Mana-Etched Regalia"] = "法力蚀刻魔装",
 	["Oblivion Raiment"] = "湮灭",
@@ -2038,64 +2038,65 @@ AL:RegisterTranslations("enUS", function() return {
 	["Plagueheart Raiment"] = "瘟疫之心",
 	["Dreadnaught's Battlegear"] = "无畏",
 
-	--Tier 4 Sets
-	["Malorne Harness"] = "玛洛恩甲胄",
-	["Malorne Raiment"] = "玛洛恩圣装",
-	["Malorne Regalia"] = "玛洛恩法衣",
-	["Demon Stalker Armor"] = "恶魔追猎者",
-	["Aldor Regalia"] = "奥尔多魔装",
-	["Justicar Armor"] = "公正护甲",
-	["Justicar Battlegear"] = "公正战甲",
-	["Justicar Raiment"] = "公正圣装",
-	["Incarnate Raiment"] = "化身圣装",
-	["Incarnate Regalia"] = "化身法衣",
-	["Netherblade Set"] = "虚空刀锋",
-	["Cyclone Harness"] = "飓风甲胄",
-	["Cyclone Raiment"] = "飓风圣装",
-	["Cyclone Regalia"] = "飓风法衣",
-	["Voidheart Raiment"] = "虚空之心",
-	["Warbringer Armor"] = "战神护甲",
-	["Warbringer Battlegear"] = "战神战甲",
+    --[[Tier 4 Sets
+    ["Malorne Harness"] = "玛洛恩甲胄",
+    ["Malorne Raiment"] = "玛洛恩圣装",
+    ["Malorne Regalia"] = "玛洛恩法衣",
+    ["Demon Stalker Armor"] = "恶魔追猎者",
+    ["Aldor Regalia"] = "奥尔多魔装",
+    ["Justicar Armor"] = "公正护甲",
+    ["Justicar Battlegear"] = "公正战甲",
+    ["Justicar Raiment"] = "公正圣装",
+    ["Incarnate Raiment"] = "化身圣装",
+    ["Incarnate Regalia"] = "化身法衣",
+    ["Netherblade Set"] = "虚空刀锋",
+    ["Cyclone Harness"] = "飓风甲胄",
+    ["Cyclone Raiment"] = "飓风圣装",
+    ["Cyclone Regalia"] = "飓风法衣",
+    ["Voidheart Raiment"] = "虚空之心",
+    ["Warbringer Armor"] = "战神护甲",
+    ["Warbringer Battlegear"] = "战神战甲",
 
-	--Tier 5 Sets
-	["Nordrassil Harness"] = "诺达希尔甲胄",
-	["Nordrassil Raiment"] = "诺达希尔圣装",
-	["Nordrassil Regalia"] = "诺达希尔法衣",
-	["Rift Stalker Armor"] = "裂隙追猎者",
-	["Tirisfal Regalia"] = "提瑞斯法",
-	["Crystalforge Armor"] = "晶铸护甲",
-	["Crystalforge Battlegear"] = "晶铸战甲",
-	["Crystalforge Raiment"] = "晶铸圣装",
-	["Avatar Raiment"] = "神使圣装",
-	["Avatar Regalia"] = "神使法衣",
-	["Deathmantle Set"] = "死亡阴影",
-	["Cataclysm Harness"] = "灾难甲胄",
-	["Cataclysm Raiment"] = "灾难圣装",
-	["Cataclysm Regalia"] = "灾难法衣",
-	["Corruptor Raiment"] = "腐蚀者",
-	["Destroyer Armor"] = "毁灭者护甲",
-	["Destroyer Battlegear"] = "毁灭者战甲",
+    --Tier 5 Sets
+    ["Nordrassil Harness"] = "诺达希尔甲胄",
+    ["Nordrassil Raiment"] = "诺达希尔圣装",
+    ["Nordrassil Regalia"] = "诺达希尔法衣",
+    ["Rift Stalker Armor"] = "裂隙追猎者",
+    ["Tirisfal Regalia"] = "提瑞斯法",
+    ["Crystalforge Armor"] = "晶铸护甲",
+    ["Crystalforge Battlegear"] = "晶铸战甲",
+    ["Crystalforge Raiment"] = "晶铸圣装",
+    ["Avatar Raiment"] = "神使圣装",
+    ["Avatar Regalia"] = "神使法衣",
+    ["Deathmantle Set"] = "死亡阴影",
+    ["Cataclysm Harness"] = "灾难甲胄",
+    ["Cataclysm Raiment"] = "灾难圣装",
+    ["Cataclysm Regalia"] = "灾难法衣",
+    ["Corruptor Raiment"] = "腐蚀者",
+    ["Destroyer Armor"] = "毁灭者护甲",
+    ["Destroyer Battlegear"] = "毁灭者战甲",
 
-	--Tier 6 Sets
-	["Thunderheart Harness"] = "雷霆之心甲胄",
-	["Thunderheart Raiment"] = "雷霆之心圣服",
-	["Thunderheart Regalia"] = "雷霆之心法衣",
-	["Gronnstalker's Armor"] = "戈隆追猎者",
-	["Tempest Regalia"] = "风暴",
-	["Lightbringer Armor"] = "光明使者护甲",
-	["Lightbringer Battlegear"] = "光明使者战甲",
-	["Lightbringer Raiment"] = "光明使者圣服",
-	["Vestments of Absolution"] = "赦免法衣",
-	["Absolution Regalia"] = "赦免圣装",
-	["Slayer's Armor"] = "刺杀者",
-	["Skyshatter Harness"] = "破天甲胄",
-	["Skyshatter Raiment"] = "破天圣服",
-	["Skyshatter Regalia"] = "破天法衣",
-	["Malefic Raiment"] = "凶星",
-	["Onslaught Armor"] = "冲锋护甲",
-	["Onslaught Battlegear"] = "冲锋战甲",
+    --Tier 6 Sets
+    ["Thunderheart Harness"] = "雷霆之心甲胄",
+    ["Thunderheart Raiment"] = "雷霆之心圣服",
+    ["Thunderheart Regalia"] = "雷霆之心法衣",
+    ["Gronnstalker's Armor"] = "戈隆追猎者",
+    ["Tempest Regalia"] = "风暴",
+    ["Lightbringer Armor"] = "光明使者护甲",
+    ["Lightbringer Battlegear"] = "光明使者战甲",
+    ["Lightbringer Raiment"] = "光明使者圣服",
+    ["Vestments of Absolution"] = "赦免法衣",
+    ["Absolution Regalia"] = "赦免圣装",
+    ["Slayer's Armor"] = "刺杀者",
+    ["Skyshatter Harness"] = "破天甲胄",
+    ["Skyshatter Raiment"] = "破天圣服",
+    ["Skyshatter Regalia"] = "破天法衣",
+    ["Malefic Raiment"] = "凶星",
+    ["Onslaught Armor"] = "冲锋护甲",
+    ["Onslaught Battlegear"] = "冲锋战甲",
+    ]]
 
-	--Arathi Basin Sets - Alliance
+    --Arathi Basin Sets - Alliance
 	["The Highlander's Intent"] = "高地人的专注",
 	["The Highlander's Purpose"] = "高地人的毅力",
 	["The Highlander's Will"] = "高地人的意志",
@@ -2119,7 +2120,7 @@ AL:RegisterTranslations("enUS", function() return {
 	["Lieutenant Commander's Redoubt"] = "少校的壁垒",
 	["Lieutenant Commander's Investiture"] = "少校的授权",
 	["Lieutenant Commander's Guard"] = "少校的护卫",
-        ["Lieutenant Commander's Stormcaller"] = "少校的风暴",
+	["Lieutenant Commander's Stormcaller"] = "少校的风暴",
 	["Lieutenant Commander's Dreadgear"] = "少校的鬼纹",
 	["Lieutenant Commander's Battlearmor"] = "少校的战铠",
 
@@ -2146,7 +2147,7 @@ AL:RegisterTranslations("enUS", function() return {
 	["Field Marshal's Battlegear"] = "元帅的战甲",
 
 	--PvP Level 60 Epic Sets - Horde
-        ["Warlord's Sanctuary"] = "督军的战甲",
+	["Warlord's Sanctuary"] = "督军的战甲",
 	["Warlord's Pursuit"] = "督军的猎装",
 	["Warlord's Regalia"] = "督军的法衣",
 	["Warlord's Aegis"] = "督军的庇护",
@@ -2166,7 +2167,7 @@ AL:RegisterTranslations("enUS", function() return {
 	["Crusader's Ornamented Battledgear"] = "十字军的雕饰板甲套装",
 	["Satin Battlegear"] = "绸缎套装",
 	["Mooncloth Battlegear"] = "月布套装",
-	["Opportunist's Battlegear"] = "机遇者的套装",
+	--["Opportunist's Battlegear"] = "机遇者的套装",
 	["Seer's Linked Battlegear"] = "先知的鳞甲套装",
 	["Seer's Mail Battlegear"] = "先知的锁甲套装",
 	["Seer's Ringmail Battlegear"] = "先知的环甲套装",
@@ -2221,30 +2222,25 @@ AL:RegisterTranslations("enUS", function() return {
 	["Dungeon Set 2"] = "地下城套装2",
 	["Dungeon Set 3"] = "地下城套装3",
 	["Dungeon 3 Sets"] = "地下城套装3",
-        ["Tier 1/2 Sets"] = "T1/2套装",
-        ["Tier 3 Sets"] = "T3套装",
-        ["Tier 4 Sets"] = "T4套装",
-        ["Tier 5 Sets"] = "T5套装",
-        ["Tier 6 Sets"] = "T6套装",
+	["Tier 1/2 Sets"] = "T1/2套装",
+	["Tier 3 Sets"] = "T3套装",
+	["Tier 4 Sets"] = "T4套装",
+	["Tier 5 Sets"] = "T5套装",
+	["Tier 6 Sets"] = "T6套装",
 	["PvP Sets (Level 60)"] = "PvP奖励套装 (等级 60)",
-	["PvP Sets (Level 70)"] = "PvP奖励套装 (等级 70)",
-	["PvP Reputation Sets (Level 70)"] = "PvP声望套装 (等级 70)",
 	["PvP Rewards (Level 60)"] = "PvP奖励 (等级 60)",
-	["PvP Rewards (Level 70)"] = "PvP奖励 (等级 70)",
 	["PvP Accessories (Level 60)"] = "PvP奖励杂物 (等级 60)",
 	["PvP Accessories - Alliance (Level 60)"] = "PvP奖励杂物 - 联盟 (等级 60)",
 	["PvP Accessories - Horde (Level 60)"] = "PvP奖励杂物 - 部落 (等级 60)",
-	["PvP Accessories (Level 70)"] = "PvP奖励杂物 (等级 70)",
 	["PvP Rewards"] = "PvP奖励",
 	["PvP Armor Sets"] = "PvP奖励套装",
 	["PvP Weapons"] = "PvP奖励武器",
 	["PvP Weapons (Level 60)"] = "PvP奖励武器 (等级 60)",
-	["PvP Weapons (Level 70)"] = "PvP奖励武器 (等级 60)",
 	["PvP Accessories"] = "PvP奖励杂物",
 	["PvP Non-Set Epics"] = "PvP奖励非套装史诗级部件",
 	["PvP Honor System"] = "PvP荣誉系统",
 	["PvP Reputation Sets"] = "PvP声望套装",
-	["Arena PvP Sets"] = "竞技场奖励套装",
+	--["Arena PvP Sets"] = "竞技场奖励套装",
 	["Arena 2 PvP Sets"] = "竞技场第二赛季奖励套装",
 	["Arena 3 PvP Sets"] = "竞技场第三赛季奖励套装",
 	["Arena 4 PvP Sets"] = "竞技场第四赛季奖励套装",
@@ -2255,7 +2251,7 @@ AL:RegisterTranslations("enUS", function() return {
 	["Arena PvP System"] = "竞技场系统",
 	["Arena Season 1 Weapons"] = "竞技场第一赛季奖励武器",
 	["Arena Season 2 Weapons"] = "竞技场第二赛季奖励武器",
-	["Arena Season 3 Weapons"] = "竞技场第三赛季奖励武器",
+	--["Arena Season 3 Weapons"] = "竞技场第三赛季奖励武器",
 	["Arena Season 4 Weapons"] = "竞技场第四赛季奖励武器",
 	["Season 1"] = "第一赛季",
 	["Season 2"] = "第二赛季",
@@ -2279,21 +2275,21 @@ AL:RegisterTranslations("enUS", function() return {
 	["Nature Resistance Gear"] = "自然抗性装备",
 	["Frost Resistance Gear"] = "冰霜抗性装备",
 	["Shadow Resistance Gear"] = "暗影抗性装备",
-        ["Rare Pets"] = "稀有宠物",
+	["Rare Pets"] = "稀有宠物",
 	["Rare Mounts"] = "稀有坐骑",
-        ["Old Mounts"] = "老坐骑",
-        ["PvP Mounts"] = "PvP坐骑",
-        ["Unobtainable Mounts"] = "买不到的坐骑",
+	["Old Mounts"] = "老坐骑",
+	["PvP Mounts"] = "PvP坐骑",
+	["Unobtainable Mounts"] = "买不到的坐骑",
 	["Tabards"] = "徽章",
 	["Token Hand-Ins"] = "需要兑换的奖励",
 	["Heroic Mode Keys"] = "英雄模式钥匙",
 	["Legendary Items for Kael'thas Fight"] = "凯尔萨斯一役使用到的传奇物品",
 	["BoE World Epics"] = "世界掉落的史诗装备",
-        ["BoE World Blues"] = "世界装绑蓝色掉落",
+	["BoE World Blues"] = "世界装绑蓝色掉落",
 	["World Epics"] = "世界掉落的史诗装备",
-        ["World Blues"] = "世界掉落蓝色",
-        ["Level 10-19"] = "等级 10-19",
-        ["Level 20-29"] = "等级 20-29",
+	["World Blues"] = "世界掉落蓝色",
+	["Level 10-19"] = "等级 10-19",
+	["Level 20-29"] = "等级 20-29",
 	["Level 30-39"] = "等级 30-39",
 	["Level 40-49"] = "等级 40-49",
 	["Level 50-60"] = "等级 50-60",
@@ -2303,28 +2299,28 @@ AL:RegisterTranslations("enUS", function() return {
 
 	--NPCs missing from BabbleBoss
 	["Trash Mobs"] = "普通怪物",
-        ["Dungeon Set 2 Summonable"] = "T0.5套装任务BOSS",
+	["Dungeon Set 2 Summonable"] = "T0.5套装任务BOSS",
 	["Highlord Kruul"] = "魔王库鲁尔",
 	["Theldren"] = "塞尔德林",
 	["Sothos and Jarien"] = "索托斯/亚雷恩",
 	["Druid of the Fang"] = "尖牙德鲁伊",
 	["Defias Strip Miner"] = "迪菲亚赤膊矿工",
-        ["Defias Pirate"] = "迪菲亚海盗",
+	["Defias Pirate"] = "迪菲亚海盗",
 	["Defias Overseer/Taskmaster"] = "迪菲亚监工/工头",
-        ["Prisoner/Insurgent/Convict"] = "囚犯/叛军/罪犯",
+	["Prisoner/Insurgent/Convict"] = "囚犯/叛军/罪犯",
 	["Scarlet Defender/Myrmidon"] = "血色防御者/仆从",
-        ["Protector"] = "保卫者",
-        ["Myrmidon"] = "仆从",
+	["Protector"] = "保卫者",
+	["Myrmidon"] = "仆从",
 	["Scarlet Champion"] = "血色勇士",
 	["Scarlet Centurion"] = "血色百夫长",
-        ["Guardsman"] = "卫兵",
+	["Guardsman"] = "卫兵",
 	["Scarlet Trainee"] = "血色预备兵",
-        ["Plagued Hatchling"] = "天灾龙崽",
+	["Plagued Hatchling"] = "天灾龙崽",
 	["Herod/Mograine"] = "赫洛德/莫格莱尼",
 	["Scarlet Protector/Guardsman"] = "血色保卫者/卫兵",
 	["Shadowforge Flame Keeper"] = "暗炉持火者",
-        ["Hammered Patron"] = "喝醉的顾客",
-        ["Scarshield Warlock"] = "裂盾术士",
+	["Hammered Patron"] = "喝醉的顾客",
+	["Scarshield Warlock"] = "裂盾术士",
 	["Olaf"] = "奥拉夫",
 	["Eric 'The Swift'"] = "艾瑞克",
 	["Shadow of Doom"] = "末日之影",
@@ -2335,7 +2331,7 @@ AL:RegisterTranslations("enUS", function() return {
 	["Nexus Stalker"] = "节点潜行者",
 	["Auchenai Monk"] = "奥金尼僧侣",
 	["Cabal Fanatic"] = "秘教狂热者",
-        ["Unchained Doombringer"] = "末日毁灭者",
+	["Unchained Doombringer"] = "末日毁灭者",
 	["Crimson Sorcerer"] = "红衣法术师",
 	["Thuzadin Shadowcaster"] = "图萨丁暗影法师",
 	["Crimson Inquisitor"] = "红衣审查者",
@@ -2345,7 +2341,7 @@ AL:RegisterTranslations("enUS", function() return {
 	["Spectral Researcher"] = "鬼灵研究员",
 	["Scholomance Adept"] = "通灵学院专家",
 	["Scholomance Dark Summoner"] = "通灵学院黑暗召唤师",
-        ["Twilight Corrupter"] = "暮光腐蚀者",
+	["Twilight Corrupter"] = "暮光腐蚀者",
 	["Blackhand Elite"] = "黑手精英",
 	["Blackhand Assassin"] = "黑手刺客",
 	["Firebrand Pyromancer"] = "火印炎术师",
@@ -2395,7 +2391,7 @@ AL:RegisterTranslations("enUS", function() return {
 	["Lord Blackwood"] = "布莱克伍德公爵",
 	["Revanchion"] = "雷瓦克安",
 	["Scorn"] = "瑟克恩",
-	["Sever"] = "塞沃尔",
+
 	["Lady Falther'ess"] = "法瑟蕾丝夫人",
 	["Smokywood Pastures Vendor"] = "烟林牧场商人",
 	["Shartuul"] = "沙图尔",
@@ -2430,29 +2426,26 @@ AL:RegisterTranslations("enUS", function() return {
 	["Namdo Bizzfizzle"] = "纳姆杜",
 	["The Nameles Prophet"] = "无名预言者",
 	["Zelemar the Wrathful"] = "愤怒者塞雷玛尔",
-	["Henry Stern"] = "亨利·斯特恩",
 	["Aggem Thorncurse"] = "阿格姆",
-	["Roogug"] = "鲁古格",
-        ["Rajaxx's Captains"] = "拉贾克斯队长",
-	["Razorfen Spearhide"] = "剃刀沼泽刺鬃守卫",
-	["Rethilgore"] = "雷希戈尔",
+	["Rajaxx's Captains"] = "拉贾克斯队长",
+
 	["Kalldan Felmoon"] = "卡尔丹·暗月",
 	["Magregan Deepshadow"] = "马格雷甘·深影",
 	["Lord Ahune"] = "埃霍恩",
 	["Coren Direbrew"] = "科伦·恐酒",
 	["Don Carlos"] = "唐·卡洛斯",
-        ["Fel Steed"] = "地狱战马",
-        ["Monument of Franclorn Forgewright"] = "弗兰克罗恩·铸铁的雕像",
-        ["The Grim Guzzler"] = "黑铁酒吧",
-        ["Summoner's Tomb"] = "召唤者之墓",
-        ["Stratholme Courier"] = "斯坦索姆信使",
-        ["Atiesh"] = "埃提耶什",
-        ["Sothos"] = "索托斯",
-        ["Jarien"] = "亚雷恩",
-        ["East"] = "东",
-        ["West"] = "西",
-        ["North"] = "北",
-        ["Muddy Churning Waters"] = "混浊的水",
+
+	["Monument of Franclorn Forgewright"] = "弗兰克罗恩·铸铁的雕像",
+	["The Grim Guzzler"] = "黑铁酒吧",
+	["Summoner's Tomb"] = "召唤者之墓",
+	["Stratholme Courier"] = "斯坦索姆信使",
+	["Atiesh"] = "埃提耶什",
+	["Sothos"] = "索托斯",
+	["Jarien"] = "亚雷恩",
+	["East"] = "东",
+	["West"] = "西",
+	["North"] = "北",
+	["Muddy Churning Waters"] = "混浊的水",
 	
 	--Zones
 	["World Drop"] = "世界掉落",
@@ -2478,7 +2471,7 @@ AL:RegisterTranslations("enUS", function() return {
 	["Frostwhisper's Embalming Fluid"] = "莱斯·霜语的防腐液",
 	["Unforged Rune Covered Breastplate"] = "未铸造的符文覆饰胸甲",
 	["Malor's Strongbox"] = "玛洛尔的保险箱",
-        ["Malor the Zealous"] = "指挥官玛洛尔",
+	["Malor the Zealous"] = "指挥官玛洛尔",
 	["Unfinished Painting"] = "未完成的油画",
 	["Felvine Shard"] = "魔藤碎片",
 	["Baelog's Chest"] = "巴尔洛戈的箱子",
@@ -2488,13 +2481,13 @@ AL:RegisterTranslations("enUS", function() return {
 	["Gift of Adoration"] = "爱慕的礼物",
 	["Box of Chocolates"] = "一盒巧克力",
 	["Treat Bag"] = "糖果包",
-        ["Gaily Wrapped Present"] = "华丽包装的礼物",
+	["Gaily Wrapped Present"] = "华丽包装的礼物",
 	["Festive Gift"] = "节日礼物",
 	["Ticking Present"] = "条纹礼物盒",
 	["Gently Shaken Gift"] = "精美的礼品",
 	["Carefully Wrapped Present"] = "精心包裹的礼物",
-        ["Winter Veil Gift"] = "冬幕节的礼物",
-        ["Smokywood Pastures Extra-Special Gift"] = "烟林牧场特殊礼物",
+	["Winter Veil Gift"] = "冬幕节的礼物",
+    ["Smokywood Pastures Extra-Special Gift"] = "烟林牧场特殊礼物",
 	["Brightly Colored Egg"] = "复活节彩蛋",
 	["Lunar Festival Fireworks Pack"] = "春节烟花包",
 	["Lucky Red Envelope"] = "红包",
@@ -2533,6 +2526,7 @@ AL:RegisterTranslations("enUS", function() return {
 
     --副本BOSS等
     ["Dungeons & Raids"] = "地下城&团队副本",
+
     --稀有精英
     ["Rare Spawns"] = "稀有精英",
     ["Tarangos The Dampener"] = "塔兰戈斯·湿泽者",
@@ -2549,18 +2543,59 @@ AL:RegisterTranslations("enUS", function() return {
 
     --怒焰裂谷
     ["Ragefire Chasm"] = "[13-18] 怒焰裂谷",
+    ["Oggleflint"] = "奥格弗林特",
+    ["Taragaman the Hungerer"] = "饥饿者塔拉加曼",
+    ["Jergosh the Invoker"] = "祈求者耶戈什",
+    ["Bazzalan"] = "巴扎兰",
 
     --哀嚎洞穴
     ["Wailing Caverns"] = "[17-24] 哀嚎洞穴",
+    ["Lord Cobrahn"] = "考布莱恩",
+    ["Lady Anacondra"] = "安娜科德拉",
+    ["Kresh"] = "克雷什",
+    ["Lord Pythas"] = "皮萨斯",
+    ["Skum"] = "斯卡姆",
+    ["Lord Serpentis"] = "瑟芬迪斯",
+    ["Verdan the Everliving"] = "永生者沃尔丹",
+    ["Mutanus the Devourer"] = "吞噬者穆坦努斯",
+    ["Deviate Faerie Dragon"] = "变异精灵龙",
 
     --死亡矿井
     ["The Deadmines"] = "[17-24] 死亡矿井",
+    ["Rhahk'Zor"] = "拉克佐",
+    ["Miner Johnson"] = "矿工约翰森",
+    ["Sneed"] = "斯尼德",
+    ["Sneed's Shredder"] = "斯尼德的伐木机",
+    ["Gilnid"] = "基尔尼格",
+    ["Mr. Smite"] = "重拳先生",
+    ["Cookie"] = "曲奇",
+    ["Captain Greenskin"] = "绿皮队长",
+    ["Edwin VanCleef"] = "艾德温·范克里夫",
 
     --影牙城堡
     ["Shadowfang Keep"] = "[22-30] 影牙城堡",
+    ["Rethilgore"] = "雷希戈尔",
+    ["Fel Steed"] = "地狱战马",
+    ["Razorclaw the Butcher"] = "屠夫拉佐克劳",
+    ["Baron Silverlaine"] = "席瓦莱恩男爵",
+    ["Commander Springvale"] = "指挥官斯普林瓦尔",
+    ["Sever"] = "塞沃尔",
+    ["Odo the Blindwatcher"] = "盲眼守卫奥杜",
+    ["Fenrus the Devourer"] = "吞噬者芬鲁斯",
+    ["Deathsworn Captain"] = "死亡之誓",
+    ["Arugal's Voidwalker"] = "阿鲁高的虚空行者",
+    ["Wolf Master Nandos"] = "狼王南杜斯",
+    ["Archmage Arugal"] = "大法师阿鲁高",
 
     --黑暗深渊
     ["Blackfathom Deeps"] = "[23-32] 黑暗深渊",
+    ["Ghamoo-ra"] = "加摩拉",
+    ["Lady Sarevess"] = "萨利维丝",
+    ["Gelihast"] = "格里哈斯特",
+    ["Baron Aquanis"] = "阿奎尼斯男爵",
+    ["Twilight Lord Kelris"] = "梦游者克尔里斯",
+    ["Old Serra'kis"] = "瑟拉吉斯",
+    ["Aku'mai"] = "阿库麦尔",
 
     --暴风城监狱
     ["The Stockade"] = "[22-30] 监狱",
@@ -2570,6 +2605,14 @@ AL:RegisterTranslations("enUS", function() return {
 
     --剃刀沼泽
     ["Razorfen Kraul"] = "[29-38] 剃刀沼泽",
+    ["Roogug"] = "鲁古格",
+    ["Death Speaker Jargba"] = "亡语者贾格巴",
+    ["Overlord Ramtusk"] = "主宰拉姆塔斯",
+    ["Razorfen Spearhide"] = "剃刀沼泽刺鬃守卫",
+    ["Agathelos the Raging"] = "暴怒的阿迦赛罗斯",
+    ["Blind Hunter"] = "盲眼猎手",
+    ["Charlga Razorflank"] = "卡尔加·刺肋",
+    ["Earthcaller Halmgar"] = "唤地者哈穆加",
 
     --新月林地
     ["The Crescent Grove"] = "[32-38] |CFF00FF00新月林地",
@@ -2581,6 +2624,14 @@ AL:RegisterTranslations("enUS", function() return {
 
     --血色修道院
     ["Scarlet Monastery"] = "[27-45] 血色修道院",
+    ["Scarlet Monastery (Graveyard)"] = "[27-36]血色修道院（墓地）",
+    
+    ["Scarlet Monastery (Armory)"] = "[32-41]血色修道院（军械库）",
+    
+    ["Scarlet Monastery (Cathedral)"] = "[35-45]血色修道院（大教堂）",
+    
+    ["Scarlet Monastery (Library)"] = "[28-39]血色修道院（图书馆）",
+    
     ["High Inquisitor Fairbanks"] = "大检察官法尔班克斯",
     ["Scarlet Commander Mograine"] = "血色十字军指挥官莫格莱尼",
     ["High Inquisitor Whitemane"] = "大检察官怀特迈恩",
@@ -2594,17 +2645,52 @@ AL:RegisterTranslations("enUS", function() return {
 
     --剃刀高地
     ["Razorfen Downs"] = "[36-46] 剃刀高地",
+    ["Tuten'kash"] = "图特卡什",
+    ["Henry Stern"] = "亨利·斯特恩",
+    ["Mordresh Fire Eye"] = "火眼莫德雷斯",
+    ["Glutton"] = "暴食者",
+    ["Ragglesnout"] = "拉戈斯诺特",
+    ["Amnennar the Coldbringer"] = "寒冰之王亚门纳尔",
+    ["Plaguemaw the Rotting"] = "腐烂的普雷莫尔",
 
     --奥达曼
     ["Uldaman"] = "[40-51] 奥达曼",
 
     --吉尔尼斯城
+    ["Gilneas City"] = "[42-50] |CFF00FF00吉尔尼斯城",
 
     --玛拉顿
     ["Maraudon"] = "[45-55] 玛拉顿",
+    ["Kolk"] = "考尔克",
+    ["Gelk"] = "吉尔克",
+    ["Magra"] = "玛格拉",
+    ["Veng"] = "温格",
+
+    ["Noxxion"] = "诺克赛恩",
+    ["Razorlash"] = "锐刺鞭笞者",
+    ["Maraudos"] = "玛拉多斯",
+    ["Lord Vyletongue"] = "维利塔恩",
+    ["Meshlok the Harvester"] = "收割者麦什洛克",
+    ["Celebras the Cursed"] = "被诅咒的塞雷布拉斯",
+    ["Landslide"] = "兰斯利德",
+    ["Tinkerer Gizlock"] = "工匠吉兹洛克",
+    ["Rotgrip"] = "洛特格里普",
+    ["Princess Theradras"] = "瑟莱德丝公主",
 
     --祖尔法拉克
     ["Zul'Farrak"] = "[44-54] 祖尔法拉克",
+    ["Antu'sul"] = "安图苏尔",
+    ["Theka the Martyr"] = "殉教者塞卡",
+    ["Witch Doctor Zum'rah"] = "巫医祖穆拉恩",
+    ["Nekrum Gutchewer"] = "耐克鲁姆",
+    ["Shadowpriest Sezz'ziz"] = "暗影祭司塞瑟斯",
+    ["Dustwraith"] = "灰尘怨灵",
+    ["Sergeant Bly"] = "布莱中士",
+    ["Sandfury Executioner"] = "沙怒刽子手",
+    ["Hydromancer Velratha"] = "水占师维蕾萨",
+    ["Gahz'rilla"] = "加兹瑞拉",
+    ["Chief Ukorz Sandscalp"] = "乌克兹·沙顶",
+    ["Zerillis"] = "泽雷利斯",
 
     --沉没的神庙
     ["The Sunken Temple"] = "[50-60] 沉没的神庙",
@@ -2629,9 +2715,33 @@ AL:RegisterTranslations("enUS", function() return {
 
     --厄运之槌
     ["Dire Maul"] = "[55-60] 厄运之槌",
-    ["Dire Maul (East)"] = "厄运之槌 (东)",
-    ["Dire Maul (North)"] = "厄运之槌 (北)",
-    ["Dire Maul (West)"] = "厄运之槌 (西)",
+    --厄运之槌 (东)
+    ["Dire Maul (East)"] = "[55-60] 厄运之槌 (东)",
+    ["Pusillin"] = "普希林",
+    ["Zevrim Thornhoof"] = "瑟雷姆·刺蹄",
+    ["Hydrospawn"] = "海多斯博恩",
+    ["Lethtendris"] = "蕾瑟塔蒂丝";
+    ["Pimgib"] = "匹姆吉布";
+    ["Alzzin the Wildshaper"] = "奥兹恩",
+    ["Isalien"] = "依萨利恩",
+    --厄运之槌 (北)
+    ["Dire Maul (North)"] = "[57-60] 厄运之槌 (北)",
+    ["Guard Mol'dar"] = "卫兵摩尔达",
+    ["Stomper Kreeg"] = "践踏者克雷格",
+    ["Guard Fengus"] = "卫兵芬古斯",
+    ["Guard Slip'kik"] = "卫兵斯里基克";
+    ["Captain Kromcrush"] = "克罗卡斯";
+    ["Cho'Rush the Observer"] = "观察者克鲁什";
+    ["King Gordok"] = "戈多克大王",
+    --厄运之槌 (西)
+    ["Dire Maul (West)"] = "[57-60] 厄运之槌 (西)",
+    ["Tendris Warpwood"] = "特迪斯·扭木",
+    ["Illyanna Ravenoak"] = "伊琳娜·暗木",
+    ["Magister Kalendris"] = "卡雷迪斯镇长",
+    ["Tsu'zee"] = "苏斯",
+    ["Immol'thar"] = "伊莫塔尔",
+    ["Lord Hel'nurath"] = "赫尔努拉斯";
+    ["Prince Tortheldrin"] = "托塞德林王子";
 
     --通灵学院
     ["Scholomance"] = "[58-60] 通灵学院",
@@ -2660,7 +2770,11 @@ AL:RegisterTranslations("enUS", function() return {
     ["Caverns of Time: Black Morass"] = "[60] |CFF00FF00时光之穴：黑色沼泽",
     ["Chronar"] = "克罗纳尔",
     ["Harbinger Aph'ygth"] = "预言者阿夫吉斯",
+	["Epidamu"] = "埃皮达姆",
+	["Drifting Avatar of Time"] = "漂移的时间化身",
     ["Time-Lord Epochronos"] = "时间领主埃波克隆诺斯",
+	["Mossheart"] = "苔心",
+	["Rotmaw"] = "腐蚀之喉",
     ["Antnormi"] = "安特诺米",
     ["Infinite Chromie"] = "无尽的克罗米",
 
@@ -2692,21 +2806,23 @@ AL:RegisterTranslations("enUS", function() return {
     ["Buru the Gorger"] = "吞咽者布鲁",
     ["Ayamiss the Hunter"] = "狩猎者阿亚米斯",
     ["Ossirian the Unscarred"] = "无疤者奥斯里安",
-    ["Herod"] = "赫洛德",
 
     --熔火之心
     ["Molten Core"] = "|CFFFF0000[团队]|R 熔火之心",
 
     --奥妮克希亚的巢穴
     ["Onyxia's Lair"] = "|CFFFF0000[团队]|R 奥妮克希亚的巢穴",
+    ["Onyxia"] = "奥妮克希亚",
 
     --|CFF00FF00卡拉赞城堡下层
+    ["Lower Karazhan Halls"] = "|CFFFF0000[团队] |CFF00FF00卡拉赞城堡下层",
 
 
     --黑翼之巢
     ["Blackwing Lair"] = "|CFFFF0000[团队]|R 黑翼之巢",
 
     --|CFF00FF00翡翠圣境
+    ["Emerald Sanctum"] = "|CFFFF0000[团队] |CFF00FF00翡翠圣境",
 
     --安其拉神殿
     ["Temple of Ahn'Qiraj"] = "|CFFFF0000[团队]|R 安其拉神殿",
@@ -2745,7 +2861,7 @@ AL:RegisterTranslations("enUS", function() return {
     ["Tier 2 Sets"] = "T2套装",
     ["Survival"] = "生存",
 
-
+    ["Herod"] = "赫洛德",
 
     ["Highlord Omokk"] = "欧莫克大王",
     ["Shadow Hunter Vosh'gajin"] = "暗影猎手沃什加斯",
@@ -2792,7 +2908,7 @@ AL:RegisterTranslations("enUS", function() return {
     ["Loatheb"] = "憎恨者",
     ["Sapphiron"] = "萨菲隆";
     ["Kel'Thuzad"] = "克尔苏加德";
-    ["Onyxia"] = "奥妮克希亚",
+
     ["Kirtonos the Herald"] = "传令官基尔图诺斯",
     ["Jandice Barov"] = "詹迪斯·巴罗夫",
     ["Rattlegore"] = "血骨傀儡",
@@ -2816,13 +2932,7 @@ AL:RegisterTranslations("enUS", function() return {
     ["Ramstein the Gorger"] = "吞咽者拉姆斯登",
     ["Keys"] = "钥匙", 
 
-    ["Lady Sarevess"] = "萨利维丝",
-    ["Gelihast"] = "格里哈斯特",
-    ["Ghamoo-ra"] = "加摩拉",
-    ["Baron Aquanis"] = "阿奎尼斯男爵",
-    ["Twilight Lord Kelris"] = "梦游者克尔里斯",
-    ["Old Serra'kis"] = "瑟拉吉斯",
-    ["Aku'mai"] = "阿库麦尔",
+
     ["Lord Roccor"] = "洛考尔",
     ["High Interrogator Gerstahn"] = "审讯官格斯塔恩",
     ["Houndmaster Grebmar"] = "驯犬者格雷布玛尔",
@@ -2842,30 +2952,6 @@ AL:RegisterTranslations("enUS", function() return {
 
 
 
-
-    ["Pusillin"] = "普希林",
-    ["Zevrim Thornhoof"] = "瑟雷姆·刺蹄",
-    ["Hydrospawn"] = "海多斯博恩",
-    ["Lethtendris"] = "蕾瑟塔蒂丝";
-    ["Pimgib"] = "匹姆吉布";
-    ["Alzzin the Wildshaper"] = "奥兹恩",
-    ["Isalien"] = "依萨利恩",
-
-    ["Guard Mol'dar"] = "卫兵摩尔达",
-    ["Stomper Kreeg"] = "践踏者克雷格",
-    ["Guard Fengus"] = "卫兵芬古斯",
-    ["Guard Slip'kik"] = "卫兵斯里基克";
-    ["Captain Kromcrush"] = "克罗卡斯";
-    ["Cho'Rush the Observer"] = "观察者克鲁什";
-    ["King Gordok"] = "戈多克大王",
-    ["Tendris Warpwood"] = "特迪斯·扭木",
-    ["Illyanna Ravenoak"] = "伊琳娜·暗木",
-    ["Magister Kalendris"] = "卡雷迪斯镇长",
-    ["Tsu'zee"] = "苏斯",
-    ["Immol'thar"] = "伊莫塔尔",
-    ["Lord Hel'nurath"] = "赫尔努拉斯";
-    ["Prince Tortheldrin"] = "托塞德林王子";
-
     ["Techbot"] = "尖端机器人",
     ["Grubbis"] = "格鲁比斯",
     ["Viscous Fallout"] = "粘性辐射尘",
@@ -2874,57 +2960,13 @@ AL:RegisterTranslations("enUS", function() return {
     ["Dark Iron Ambassador"] = "黑铁大使",
     ["Mekgineer Thermaplugg"] = "机械师瑟玛普拉格",
 
-    ["Kolk"] = "考尔克",
-    ["Gelk"] = "吉尔克",
-    ["Magra"] = "玛格拉",
-    ["Veng"] = "温格",
-    ["Noxxion"] = "诺克赛恩",
-    ["Razorlash"] = "锐刺鞭笞者",
-    ["Maraudos"] = "玛拉多斯",
-    ["Lord Vyletongue"] = "维利塔恩",
-    ["Meshlok the Harvester"] = "收割者麦什洛克",
-    ["Celebras the Cursed"] = "被诅咒的塞雷布拉斯",
-    ["Landslide"] = "兰斯利德",
-    ["Tinkerer Gizlock"] = "工匠吉兹洛克",
-    ["Rotgrip"] = "洛特格里普",
-    ["Princess Theradras"] = "瑟莱德丝公主",
     ["Majordomo Executus"] = "管理者埃克索图斯";
-
-
-
-
-    ["Tuten'kash"] = "图特卡什",
-    ["Mordresh Fire Eye"] = "火眼莫德雷斯",
-    ["Glutton"] = "暴食者",
-    ["Ragglesnout"] = "拉戈斯诺特",
-    ["Amnennar the Coldbringer"] = "寒冰之王亚门纳尔",
-    ["Plaguemaw the Rotting"] = "腐烂的普雷莫尔",
-
-    ["Death Speaker Jargba"] = "亡语者贾格巴",
-    ["Overlord Ramtusk"] = "主宰拉姆塔斯",
-    ["Agathelos the Raging"] = "暴怒的阿迦赛罗斯",
-    ["Blind Hunter"] = "盲眼猎手",
-    ["Charlga Razorflank"] = "卡尔加·刺肋",
-    ["Earthcaller Halmgar"] = "唤地者哈穆加",
-
-
-
     ["Blood Steward of Kirtonos"] = "基尔图诺斯的卫士",
     ["Death Knight Darkreaver"] = "死亡骑士达克雷尔",
     ["Marduk Blackpool"] = "马杜克·布莱克波尔",
     ["Vectus"] = "维克图斯",
     ["Kormok"] = "库尔莫克",
     ["Lady Illucia Barov"] = "伊露希亚·巴罗夫",
-
-    ["Razorclaw the Butcher"] = "屠夫拉佐克劳",
-    ["Baron Silverlaine"] = "席瓦莱恩男爵",
-    ["Commander Springvale"] = "指挥官斯普林瓦尔",
-    ["Odo the Blindwatcher"] = "盲眼守卫奥杜",
-    ["Fenrus the Devourer"] = "吞噬者芬鲁斯",
-    ["Arugal's Voidwalker"] = "阿鲁高的虚空行者",
-    ["Wolf Master Nandos"] = "狼王南杜斯",
-    ["Archmage Arugal"] = "大法师阿鲁高",
-    ["Deathsworn Captain"] = "死亡之誓",
 
 
     ["Skul"] = "斯库尔",
@@ -2959,27 +3001,8 @@ AL:RegisterTranslations("enUS", function() return {
     ["Mad Magglish"] = "疯狂的马格利什",
     ["Trigore the Lasher"] = "鞭笞者特里高雷",
     ["Boahn"] = "博艾恩",
-    ["Lord Cobrahn"] = "考布莱恩",
-    ["Lady Anacondra"] = "安娜科德拉",
-    ["Kresh"] = "克雷什",
-    ["Lord Pythas"] = "皮萨斯",
-    ["Skum"] = "斯卡姆",
-    ["Lord Serpentis"] = "瑟芬迪斯",
-    ["Verdan the Everliving"] = "永生者沃尔丹",
-    ["Mutanus the Devourer"] = "吞噬者穆坦努斯",
-    ["Deviate Faerie Dragon"] = "变异精灵龙",
-    ["Antu'sul"] = "安图苏尔",
-    ["Theka the Martyr"] = "殉教者塞卡",
-    ["Witch Doctor Zum'rah"] = "巫医祖穆拉恩",
-    ["Nekrum Gutchewer"] = "耐克鲁姆",
-    ["Shadowpriest Sezz'ziz"] = "暗影祭司塞瑟斯",
-    ["Dustwraith"] = "灰尘怨灵",
-    ["Sergeant Bly"] = "布莱中士",
-    ["Sandfury Executioner"] = "沙怒刽子手",
-    ["Hydromancer Velratha"] = "水占师维蕾萨",
-    ["Gahz'rilla"] = "加兹瑞拉",
-    ["Chief Ukorz Sandscalp"] = "乌克兹·沙顶",
-    ["Zerillis"] = "泽雷利斯",
+
+
 
     ["High Priestess Jeklik"] = "高阶祭司耶克里克",
     ["High Priest Venoxis"] = "高阶祭司温诺希斯",
@@ -3089,10 +3112,6 @@ AL:RegisterTranslations("enUS", function() return {
     ["Vem"] = "维姆",
     ["Princess Yauj"] = "亚尔基公主",
     ["Shattrath City"] = "沙塔斯城",
-    ["Taragaman the Hungerer"] = "饥饿者塔拉加曼",
-    ["Oggleflint"] = "奥格弗林特",
-    ["Jergosh the Invoker"] = "祈求者耶戈什",
-    ["Bazzalan"] = "巴扎兰",
     ["Targorr the Dread"] = "可怕的塔格尔",
     ["Kam Deepfury"] = "卡姆·深怒",
     ["Bazil Thredd"] = "巴基尔·斯瑞德",
@@ -3189,15 +3208,9 @@ AL:RegisterTranslations("enUS", function() return {
     ["Foreman Thistlenettle"] = "工头希斯耐特",
     ["Jordan's Hammer"] = "乔丹的铁锤",
     ["The Book of Ur"] = "乌尔之书",
-    ["Rhahk'Zor"] = "拉克佐",
-    ["Miner Johnson"] = "矿工约翰森",
-    ["Sneed"] = "斯尼德",
-    ["Sneed's Shredder"] = "斯尼德的伐木机",
-    ["Gilnid"] = "基尔尼格",
-    ["Captain Greenskin"] = "绿皮队长",
-    ["Edwin VanCleef"] = "艾德温·范克里夫",
-    ["Mr. Smite"] = "重拳先生",
-    ["Cookie"] = "曲奇",
+
+
+
     ["Reliquary of Souls"] = "灵魂之匣",
     ["Vazruden the Herald"] = "瓦兹德先驱",
     ["Roughshod Pike"] = "尖锐长矛",
