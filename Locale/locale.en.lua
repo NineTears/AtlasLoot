@@ -2814,8 +2814,8 @@ AL:RegisterTranslations("enUS", function() return {
     ["Onyxia's Lair"] = "|CFFFF0000[团队]|R 奥妮克希亚的巢穴",
     ["Onyxia"] = "奥妮克希亚",
 
-    --|CFF00FF00卡拉赞城堡下层
-    ["Lower Karazhan Halls"] = "|CFFFF0000[团队] |CFF00FF00卡拉赞城堡下层",
+    --|CFF00FF00卡拉赞下层大厅
+    ["Lower Karazhan Halls"] = "|CFFFF0000[团队] |CFF00FF00卡拉赞下层大厅",
 
 
     --黑翼之巢
