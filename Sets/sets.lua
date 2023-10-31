@@ -20,7 +20,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 		{ 10412, "INV_Belt_30", "=q2=Belt of the Fang", "=ds=#s10#, #a2# =q7=#x2#", "8.64%" },
 		{ 10410, "INV_Pants_11", "=q3=Leggings of the Fang", "=ds=#s11#, #a2# =q7=#x1#", "16.03%" },
 		{ 10411, "INV_Boots_04", "=q2=Footpads of the Fang", "=ds=#s12#, #a2# =q7=#x3#", "19.08%" },
-		{ 81006, "", "=q2=Cowl of the Fang", "=ds=#s1#, #a1#", "5%" },
+		{ 81006, "INV_HELMET_27", "=q2=Cowl of the Fang", "=ds=#s1#, #a1#", "5%" },
 	};
 	SCARLET = {
 		{ 0, "", "", "" },
@@ -1242,6 +1242,7 @@ AtlasLoot_Data["AtlasLootSetItems"] = {
 	};
 	WorldEpics2 = {
 		{ 0, "", "", "" },
+		{ 14550, "inv_bracer_09", "=q4=Bladebane Armguards", "=ds=#s8#, #a2#", "" },
 		{ 3075, "INV_Helmet_44", "=q4=Eye of Flame", "=ds=#s1#, #a1#", "" },
 		{ 1315, "INV_Misc_Flower_01", "=q4=Lei of Lilies", "=ds=#s2#", "" },
 		{ 940, "INV_Chest_Cloth_26", "=q4=Robes of Insight", "=ds=#s5#, #a1#", "" },

@@ -1,144 +1,1982 @@
-﻿-- [[
--- Last Updated: 02/28/2008
--- Initial translation by: 560889223
--- Maintained by: Diablohu
--- http://www.dreamgen.cn
--- ]]
+﻿--[[
+loottables.en.lua
+This file assigns a title to every loot table.  The primary use of this table
+is in the search function, as when iterating through the loot tables there is no
+inherant title to the loot table, given the origins of the mod as an Atlas plugin.
+]]
 
+--Invoke libraries
+local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
 
 if (GetLocale() == "zhCN") then
+--Table of loot titles
+AtlasLoot_TableNames = {
+	--Keys
+	["VanillaKeys"] = { AL["Keys"], "AtlasLootItems" },
+	--Blackfathom Deeps
+	["BFDGhamoora"] = { AL["Ghamoo-ra"], "AtlasLootItems" },
+	["BFDLadySarevess"] = { AL["Lady Sarevess"], "AtlasLootItems" },
+	["BFDGelihast"] = { AL["Gelihast"], "AtlasLootItems" },
+	["BFDBaronAquanis"] = { AL["Baron Aquanis"], "AtlasLootItems" },
+	["BFDTwilightLordKelris"] = { AL["Twilight Lord Kelris"], "AtlasLootItems" },
+	["BFDOldSerrakis"] = { AL["Old Serra'kis"], "AtlasLootItems" },
+	["BFDAkumai"] = { AL["Aku'mai"], "AtlasLootItems" },
+	["BFDTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Blackfathom Deeps"] .. ")", "AtlasLootItems" },
+	--Blackrock Mountain
+	["BRMScarshieldQuartermaster"] = { AL["Scarshield Quartermaster"], "AtlasLootItems" },
+	--Blackrock Depths
+	["BRDPyron"] = { AL["Overmaster Pyron"], "AtlasLootItems" },
+	["BRDLordRoccor"] = { AL["Lord Roccor"], "AtlasLootItems" },
+	["BRDHighInterrogatorGerstahn"] = { AL["High Interrogator Gerstahn"], "AtlasLootItems" },
+	["BRDAnubshiah"] = { AL["Anub'shiah"], "AtlasLootItems" },
+	["BRDEviscerator"] = { AL["Eviscerator"], "AtlasLootItems" },
+	["BRDGorosh"] = { AL["Gorosh the Dervish"], "AtlasLootItems" },
+	["BRDGrizzle"] = { AL["Grizzle"], "AtlasLootItems" },
+	["BRDHedrum"] = { AL["Hedrum the Creeper"], "AtlasLootItems" },
+	["BRDOkthor"] = { AL["Ok'thor the Breaker"], "AtlasLootItems" },
+	["BRDTheldren"] = { AL["Theldren"], "AtlasLootItems" },
+	["BRDHoundmaster"] = { AL["Houndmaster Grebmar"], "AtlasLootItems" },
+	["BRDForgewright"] = { AL["Monument of Franclorn Forgewright"], "AtlasLootItems" },
+	["BRDPyromancerLoregrain"] = { AL["Pyromancer Loregrain"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["BRDTheVault"] = { AL["The Vault"], "AtlasLootItems" },
+	["BRDWarderStilgiss"] = { AL["Warder Stilgiss"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["BRDVerek"] = { AL["Verek"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["BRDFineousDarkvire"] = { AL["Fineous Darkvire"], "AtlasLootItems" },
+	["BRDLordIncendius"] = { AL["Lord Incendius"], "AtlasLootItems" },
+	["BRDBaelGar"] = { AL["Bael'Gar"], "AtlasLootItems" },
+	["BRDGeneralAngerforge"] = { AL["General Angerforge"], "AtlasLootItems" },
+	["BRDGolemLordArgelmach"] = { AL["Golem Lord Argelmach"], "AtlasLootItems" },
+	["BRDGuzzler"] = { AL["The Grim Guzzler"], "AtlasLootItems" },
+	["BRDFlamelash"] = { AL["Ambassador Flamelash"], "AtlasLootItems" },
+	["BRDPanzor"] = { AL["Panzor the Invincible"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["BRDTomb"] = { "Summoner's Tomb", "AtlasLootItems" },
+	["BRDLyceum"] = { AL["Shadowforge Flame Keeper"], "AtlasLootItems" },
+	["BRDMagmus"] = { AL["Magmus"], "AtlasLootItems" },
+	["BRDPrincess"] = { AL["Princess Moira Bronzebeard"], "AtlasLootItems" },
+	["BRDEmperorDagranThaurissan"] = { AL["Emperor Dagran Thaurissan"], "AtlasLootItems" },
+	["BRDBSPlans"] = { "Blacksmith Plans" .. " (" .. AL["Blackrock Depths"] .. ")", "AtlasLootItems" },
+	["BRDTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Blackrock Depths"] .. ")", "AtlasLootItems" },
+	--Lower Blackrock Spire
+	["LBRSSpirestoneButcher"] = { AL["Spirestone Butcher"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["LBRSPike"] = { AL["Roughshod Pike"], "AtlasLootItems" },
+	["LBRSOmokk"] = { AL["Highlord Omokk"], "AtlasLootItems" },
+	["LBRSSpirestoneBattleLord"] = { AL["Spirestone Battle Lord"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["LBRSSpirestoneLordMagus"] = { AL["Spirestone Lord Magus"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["LBRSVosh"] = { AL["Shadow Hunter Vosh'gajin"], "AtlasLootItems" },
+	["LBRSVoone"] = { AL["War Master Voone"], "AtlasLootItems" },
+	["LBRSGrayhoof"] = { AL["Mor Grayhoof"] .. " (" .. AL["Summon"] .. ")", "AtlasLootItems" },
+	["LBRSGrimaxe"] = { AL["Bannok Grimaxe"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["LBRSSmolderweb"] = { AL["Mother Smolderweb"], "AtlasLootItems" },
+	["LBRSCrystalFang"] = { AL["Crystal Fang"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["LBRSHumanRemains"] = { AL["Human Remains"], "AtlasLootItems" },
+	["LBRSDoomhowl"] = { AL["Urok Doomhowl"] .. " (" .. AL["Summon"] .. ")", "AtlasLootItems" },
+	["LBRSZigris"] = { AL["Quartermaster Zigris"], "AtlasLootItems" },
+	["LBRSHalycon"] = { AL["Halycon"], "AtlasLootItems" },
+	["LBRSSlavener"] = { AL["Gizrul the Slavener"], "AtlasLootItems" },
+	["LBRSBashguud"] = { AL["Ghok Bashguud"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["LBRSWyrmthalak"] = { AL["Overlord Wyrmthalak"], "AtlasLootItems" },
+	["LBRSFelguard"] = { AL["Burning Felguard"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["LBRSTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Lower Blackrock Spire"] .. ")", "AtlasLootItems" },
+	--Upper Blackrock Spire
+	["UBRSEmberseer"] = { AL["Pyroguard Emberseer"], "AtlasLootItems" },
+	["UBRSSolakar"] = { AL["Solakar Flamewreath"], "AtlasLootItems" },
+	["UBRSFlame"] = { AL["Father Flame"], "AtlasLootItems" },
+	["UBRSRunewatcher"] = { AL["Jed Runewatcher"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["UBRSAnvilcrack"] = { AL["Goraluk Anvilcrack"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["UBRSRend"] = { AL["Warchief Rend Blackhand"], "AtlasLootItems" },
+	["UBRSGyth"] = { AL["Gyth"], "AtlasLootItems" },
+	["UBRSBeast"] = { AL["The Beast"], "AtlasLootItems" },
+	["UBRSValthalak"] = { AL["Lord Valthalak"] .. " (" .. AL["Summon"] .. ")", "AtlasLootItems" },
+	["UBRSDrakkisath"] = { AL["General Drakkisath"], "AtlasLootItems" },
+	["UBRSTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Upper Blackrock Spire"] .. ")", "AtlasLootItems" },
+	--Blackwing Lair
+	["BWLRazorgore"] = { AL["Razorgore the Untamed"], "AtlasLootItems" },
+	["BWLVaelastrasz"] = { AL["Vaelastrasz the Corrupt"], "AtlasLootItems" },
+	["BWLLashlayer"] = { AL["Broodlord Lashlayer"], "AtlasLootItems" },
+	["BWLFiremaw"] = { AL["Firemaw"], "AtlasLootItems" },
+	["BWLEbonroc"] = { AL["Ebonroc"], "AtlasLootItems" },
+	["BWLFlamegor"] = { AL["Flamegor"], "AtlasLootItems" },
+	["BWLChromaggus"] = { AL["Chromaggus"], "AtlasLootItems" },
+	["BWLNefarian"] = { AL["Nefarian"], "AtlasLootItems" },
+	["BWLTrashMobs"] = { AL["Trash Mobs"] .. " (" .. AL["Blackwing Lair"] .. ")", "AtlasLootItems" },
+	--The Deadmines
+	["DMMarisaduPaige"] = { AL["Marisa du'Paige"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["DMBrainwashedNoble"] = { AL["Brainwashed Noble"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["DMForemanThistlenettle"] = { AL["Foreman Thistlenettle"], "AtlasLootItems" },
+	["DMRhahkZor"] = { AL["Rhahk'Zor"], "AtlasLootItems" },
+	["DMMinerJohnson"] = { AL["Miner Johnson"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["DMSneed"] = { AL["Sneed"], "AtlasLootItems" },
+	["DMSneedsShredder"] = { AL["Sneed's Shredder"], "AtlasLootItems" },
+	["DMGilnid"] = { AL["Gilnid"], "AtlasLootItems" },
+	["DMDefiasGunpowder"] = { AL["Defias Gunpowder"], "AtlasLootItems" },
+	["DMMrSmite"] = { AL["Mr. Smite"], "AtlasLootItems" },
+	["DMCookie"] = { AL["Cookie"], "AtlasLootItems" },
+	["DMCaptainGreenskin"] = { AL["Captain Greenskin"], "AtlasLootItems" },
+	["DMVanCleef"] = { AL["Edwin VanCleef"], "AtlasLootItems" },
+	["DMTrash"] = { AL["Trash Mobs"] .. " (" .. AL["The Deadmines"] .. ")", "AtlasLootItems" },
+	--Dire Maul East
+	["DMEPusillin"] = { AL["Pusillin"], "AtlasLootItems" },
+	["DMEZevrimThornhoof"] = { AL["Zevrim Thornhoof"], "AtlasLootItems" },
+	["DMEHydro"] = { AL["Hydrospawn"], "AtlasLootItems" },
+	["DMELethtendris"] = { AL["Lethtendris"], "AtlasLootItems" },
+	["DMEPimgib"] = { AL["Pimgib"], "AtlasLootItems" },
+	["DMEAlzzin"] = { AL["Alzzin the Wildshaper"], "AtlasLootItems" },
+	["DMEIsalien"] = { AL["Isalien"], "AtlasLootItems" },
+	["DMETrash"] = { AL["Trash Mobs"] .. " (" .. AL["Dire Maul (East)"] .. ")", "AtlasLootItems" },
+	["DMEShard"] = { AL["Felvine Shard"], "AtlasLootItems" },
+	["DMTome"] = { AL["A Dusty Tome"], "AtlasLootItems" },
+	["DMBooks"] = { "Dire Maul Books", "AtlasLootItems" },
+	--Dire Maul North
+	["DMNGuardMoldar"] = { AL["Guard Mol'dar"], "AtlasLootItems" },
+	["DMNStomperKreeg"] = { AL["Stomper Kreeg"], "AtlasLootItems" },
+	["DMNGuardFengus"] = { AL["Guard Fengus"], "AtlasLootItems" },
+	["DMNThimblejack"] = { AL["Knot Thimblejack"], "AtlasLootItems" },
+	["DMNGuardSlipkik"] = { AL["Guard Slip'kik"], "AtlasLootItems" },
+	["DMNCaptainKromcrush"] = { AL["Captain Kromcrush"], "AtlasLootItems" },
+	["DMNChoRush"] = { AL["Cho'Rush the Observer"], "AtlasLootItems" },
+	["DMNKingGordok"] = { AL["King Gordok"], "AtlasLootItems" },
+	["DMNTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Dire Maul (North)"] .. ")", "AtlasLootItems" },
+	["DMNTRIBUTERUN"] = { AL["DM North Tribute Chest"], "AtlasLootItems" },
+	--Dire Maul West
+	["DMWTendrisWarpwood"] = { AL["Tendris Warpwood"], "AtlasLootItems" },
+	["DMWIllyannaRavenoak"] = { AL["Illyanna Ravenoak"], "AtlasLootItems" },
+	["DMWMagisterKalendris"] = { AL["Magister Kalendris"], "AtlasLootItems" },
+	["DMWTsuzee"] = { AL["Tsu'zee"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["DMWRevanchion"] = { AL["Revanchion"] .. " (" .. AL["Scourge Invasion"] .. ")", "AtlasLootItems" },
+	["DMWImmolthar"] = { AL["Immol'thar"], "AtlasLootItems" },
+	["DMWHelnurath"] = { AL["Lord Hel'nurath"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["DMWPrinceTortheldrin"] = { AL["Prince Tortheldrin"], "AtlasLootItems" },
+	["DMWShendralarProvisioner"] = { AL["Shen'dralar Provisioner"], "AtlasLootItems" },
+	["DMWTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Dire Maul (West)"] .. ")", "AtlasLootItems" },
+	--Gnomeregan
+	["GnNamdoBizzfizzle"] = { AL["Namdo Bizzfizzle"], "AtlasLootItems" },
+	["GnTechbot"] = { AL["Techbot"], "AtlasLootItems" },
+	["GnGrubbis"] = { AL["Grubbis"], "AtlasLootItems" },
+	["GnViscousFallout"] = { AL["Viscous Fallout"], "AtlasLootItems" },
+	["GnElectrocutioner6000"] = { AL["Electrocutioner 6000"], "AtlasLootItems" },
+	["GnCrowdPummeler960"] = { AL["Crowd Pummeler 9-60"], "AtlasLootItems" },
+	["GnDIAmbassador"] = { AL["Dark Iron Ambassador"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["GnMekgineerThermaplugg"] = { AL["Mekgineer Thermaplugg"], "AtlasLootItems" },
+	["GnTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Gnomeregan"] .. ")", "AtlasLootItems" },
+	["GnOutsideTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Gnomeregan"] .. " " .. AL["Entrance"] .. ")", "AtlasLootItems" },
+	["GnPunchographA"] = { AL["Matrix Punchograph 3005-A"], "AtlasLootItems" },
+	["GnPunchographB"] = { AL["Matrix Punchograph 3005-B"], "AtlasLootItems" },
+	["GnPunchographC"] = { AL["Matrix Punchograph 3005-C"], "AtlasLootItems" },
+	["GnPunchographD"] = { AL["Matrix Punchograph 3005-D"], "AtlasLootItems" },
+	--Maraudon
+	["MaraNamelesProphet"] = { AL["The Nameles Prophet"], "AtlasLootItems" },
+	["MaraKhanKolk"] = { AL["Kolk"] .. " (The First Khan)", "AtlasLootItems" },
+	["MaraKhanGelk"] = { AL["Gelk"] .. " (The Second Khan)", "AtlasLootItems" },
+	["MaraKhanMagra"] = { AL["Magra"] .. " (The Third Khan)", "AtlasLootItems" },
+	["MaraKhanVeng"] = { AL["Veng"] .. " (The Fifth Khan)", "AtlasLootItems" },
+	["MaraNoxxion"] = { AL["Noxxion"], "AtlasLootItems" },
+	["MaraRazorlash"] = { AL["Razorlash"], "AtlasLootItems" },
+	["MaraKhanMaraudos"] = { AL["Maraudos"] .. " (The Forth Khan)", "AtlasLootItems" },
+	["MaraLordVyletongue"] = { AL["Lord Vyletongue"], "AtlasLootItems" },
+	["MaraMeshlok"] = { AL["Meshlok the Harvester"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["MaraCelebras"] = { AL["Celebras the Cursed"], "AtlasLootItems" },
+	["MaraLandslide"] = { AL["Landslide"], "AtlasLootItems" },
+	["MaraTinkererGizlock"] = { AL["Tinkerer Gizlock"], "AtlasLootItems" },
+	["MaraRotgrip"] = { AL["Rotgrip"], "AtlasLootItems" },
+	["MaraPrincessTheradras"] = { AL["Princess Theradras"], "AtlasLootItems" },
+	["MaraTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
+	--Molten Core
+	["MCLucifron"] = { AL["Lucifron"], "AtlasLootItems" },
+	["MCMagmadar"] = { AL["Magmadar"], "AtlasLootItems" },
+	["MCGehennas"] = { AL["Gehennas"], "AtlasLootItems" },
+	["MCGarr"] = { AL["Garr"], "AtlasLootItems" },
+	["MCShazzrah"] = { AL["Shazzrah"], "AtlasLootItems" },
+	["MCGeddon"] = { AL["Baron Geddon"], "AtlasLootItems" },
+	["MCGolemagg"] = { AL["Golemagg the Incinerator"], "AtlasLootItems" },
+	["MCSulfuron"] = { AL["Sulfuron Harbinger"], "AtlasLootItems" },
+	["MCMajordomo"] = { AL["Majordomo Executus"], "AtlasLootItems" },
+	["MCRagnaros"] = { AL["Ragnaros"], "AtlasLootItems" },
+	["MCRANDOMBOSSDROPS"] = { "Random Boss Drops", "AtlasLootItems" },
+	["MCTrashMobs"] = { AL["Trash Mobs"] .. " (" .. AL["Molten Core"] .. ")", "AtlasLootItems" },
+	--Naxxramas
+	["NAXPatchwerk"] = { AL["Patchwerk"], "AtlasLootItems" },
+	["NAXGrobbulus"] = { AL["Grobbulus"], "AtlasLootItems" },
+	["NAXGluth"] = { AL["Gluth"], "AtlasLootItems" },
+	["NAXThaddius"] = { AL["Thaddius"], "AtlasLootItems" },
+	["NAXAnubRekhan"] = { AL["Anub'Rekhan"], "AtlasLootItems" },
+	["NAXGrandWidowFaerlina"] = { AL["Grand Widow Faerlina"], "AtlasLootItems" },
+	["NAXMaexxna"] = { AL["Maexxna"], "AtlasLootItems" },
+	["NAXInstructorRazuvious"] = { AL["Instructor Razuvious"], "AtlasLootItems" },
+	["NAXGothiktheHarvester"] = { AL["Gothik the Harvester"], "AtlasLootItems" },
+	["NAXTheFourHorsemen"] = { AL["The Four Horsemen"], "AtlasLootItems" },
+	["NAXNoththePlaguebringer"] = { AL["Noth the Plaguebringer"], "AtlasLootItems" },
+	["NAXHeigantheUnclean"] = { AL["Heigan the Unclean"], "AtlasLootItems" },
+	["NAXLoatheb"] = { AL["Loatheb"], "AtlasLootItems" },
+	["NAXSapphiron"] = { AL["Sapphiron"], "AtlasLootItems" },
+	["NAXKelThuzard"] = { AL["Kel'Thuzad"], "AtlasLootItems" },
+	["NAXTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Naxxramas"] .. ")", "AtlasLootItems" },
+	--Onyxia's Lair
+	["Onyxia"] = { AL["Onyxia"], "AtlasLootItems" },
+	--Ragefire Chasm
+	["RFCBazzalan"] = { AL["Bazzalan"], "AtlasLootItems" },
+	["RFCOggleflint"] = { AL["Oggleflint"], "AtlasLootItems" },
+	["RFCTaragaman"] = { AL["Taragaman the Hungerer"], "AtlasLootItems" },
+	["RFCJergosh"] = { AL["Jergosh the Invoker"], "AtlasLootItems" },
+	--Razorfen Downs
+	["RFDTutenkash"] = { AL["Tuten'kash"], "AtlasLootItems" },
+	["RFDHenryStern"] = { AL["Henry Stern"], "AtlasLootItems" },
+	["RFDLadyF"] = { AL["Lady Falther'ess"] .. " (" .. AL["Scourge Invasion"] .. ")", "AtlasLootItems" },
+	["RFDMordreshFireEye"] = { AL["Mordresh Fire Eye"], "AtlasLootItems" },
+	["RFDGlutton"] = { AL["Glutton"], "AtlasLootItems" },
+	["RFDRagglesnout"] = { AL["Ragglesnout"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["RFDAmnennar"] = { AL["Amnennar the Coldbringer"], "AtlasLootItems" },
+	["RFDPlaguemaw"] = { AL["Plaguemaw the Rotting"], "AtlasLootItems" },
+	["RFDTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Razorfen Downs"] .. ")", "AtlasLootItems" },
+	--Razorfen Kraul
+	["RFKAggem"] = { AL["Aggem Thorncurse"], "AtlasLootItems" },
+	["RFKDeathSpeakerJargba"] = { AL["Death Speaker Jargba"], "AtlasLootItems" },
+	["RFKRazorfenSpearhide"] = { AL["Razorfen Spearhide"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["RFKOverlordRamtusk"] = { AL["Overlord Ramtusk"], "AtlasLootItems" },
+	["RFKAgathelos"] = { AL["Agathelos the Raging"], "AtlasLootItems" },
+	["RFKBlindHunter"] = { AL["Blind Hunter"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["RFKCharlgaRazorflank"] = { AL["Charlga Razorflank"], "AtlasLootItems" },
+	["RFKEarthcallerHalmgar"] = { AL["Earthcaller Halmgar"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["RFKRoogug"] = { AL["Roogug"], "AtlasLootItems" },
+	["RFKTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Razorfen Kraul"] .. ")", "AtlasLootItems" },
+	--The Ruins of Ahn'Qiraj
+	["AQ20Kurinnaxx"] = { AL["Kurinnaxx"], "AtlasLootItems" },
+	["AQ20Andorov"] = { AL["Lieutenant General Andorov"], "AtlasLootItems" },
+	["AQ20CAPTAIN"] = { AL["Rajaxx's Captains"], "AtlasLootItems" },
+	["AQ20Rajaxx"] = { AL["General Rajaxx"], "AtlasLootItems" },
+	["AQ20Moam"] = { AL["Moam"], "AtlasLootItems" },
+	["AQ20Buru"] = { AL["Buru the Gorger"], "AtlasLootItems" },
+	["AQ20Ayamiss"] = { AL["Ayamiss the Hunter"], "AtlasLootItems" },
+	["AQ20Ossirian"] = { AL["Ossirian the Unscarred"], "AtlasLootItems" },
+	["AQ20Trash"] = { AL["Trash Mobs"] .. " (AQ20)", "AtlasLootItems" },
+	["AQ20ClassBooks"] = { "AQ Class Books", "AtlasLootItems" },
+	["AQEnchants"] = { "AQ Enchants", "AtlasLootItems" },
+	--Scarlet Monestery - Armory
+	["SMHerod"] = { AL["Herod"], "AtlasLootItems" },
+	["SMATrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery (Armory)"] .. ")", "AtlasLootItems" },
+	--Scarlet Monestery - Cathedral
+	["SMFairbanks"] = { AL["High Inquisitor Fairbanks"], "AtlasLootItems" },
+	["SMMograine"] = { AL["Scarlet Commander Mograine"], "AtlasLootItems" },
+	["SMWhitemane"] = { AL["High Inquisitor Whitemane"], "AtlasLootItems" },
+	["SMCTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery (Cathedral)"] .. ")", "AtlasLootItems" },
+	--Scarlet Monestery - Graveyard
+	["SMVishas"] = { AL["Interrogator Vishas"], "AtlasLootItems" },
+	["SMScorn"] = { AL["Scorn"] .. " (" .. AL["Scourge Invasion"] .. ")", "AtlasLootItems" },
+	["SMIronspine"] = { AL["Ironspine"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["SMAzshir"] = { AL["Azshir the Sleepless"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["SMFallenChampion"] = { AL["Fallen Champion"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["SMBloodmageThalnos"] = { AL["Bloodmage Thalnos"], "AtlasLootItems" },
+	["SMGTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery (Graveyard)"] .. ")", "AtlasLootItems" },
+	--Scarlet Monestery - Library
+	["SMHoundmasterLoksey"] = { AL["Houndmaster Loksey"], "AtlasLootItems" },
+	["SMDoan"] = { AL["Arcanist Doan"], "AtlasLootItems" },
+	["SMDoansBox"] = { AL["Doan's Strongbox"], "AtlasLootItems" },
+	["SMLTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery (Library)"] .. ")", "AtlasLootItems" },
+	--Scholomance
+	["SCHOLOBlood"] = { AL["Blood Steward of Kirtonos"], "AtlasLootItems" },
+	["SCHOLOKirtonostheHerald"] = { AL["Kirtonos the Herald"], "AtlasLootItems" },
+	["SCHOLOJandiceBarov"] = { AL["Jandice Barov"], "AtlasLootItems" },
+	["SCHOLOLordBlackwood"] = { AL["Lord Blackwood"] .. " (" .. AL["Scourge Invasion"] .. ")", "AtlasLootItems" },
+	["SCHOLORattlegore"] = { AL["Rattlegore"], "AtlasLootItems" },
+	["SCHOLODeathKnight"] = { AL["Death Knight Darkreaver"], "AtlasLootItems" },
+	["SCHOLOMarduk"] = { AL["Marduk Blackpool"], "AtlasLootItems" },
+	["SCHOLOVectus"] = { AL["Vectus"], "AtlasLootItems" },
+	["SCHOLORasFrostwhisper"] = { AL["Ras Frostwhisper"], "AtlasLootItems" },
+	["SCHOLOKormok"] = { AL["Kormok"], "AtlasLootItems" },
+	["SCHOLOInstructorMalicia"] = { AL["Instructor Malicia"], "AtlasLootItems" },
+	["SCHOLODoctorTheolenKrastinov"] = { AL["Doctor Theolen Krastinov"], "AtlasLootItems" },
+	["SCHOLOLorekeeperPolkelt"] = { AL["Lorekeeper Polkelt"], "AtlasLootItems" },
+	["SCHOLOTheRavenian"] = { AL["The Ravenian"], "AtlasLootItems" },
+	["SCHOLOLordAlexeiBarov"] = { AL["Lord Alexei Barov"], "AtlasLootItems" },
+	["SCHOLOLadyIlluciaBarov"] = { AL["Lady Illucia Barov"], "AtlasLootItems" },
+	["SCHOLODarkmasterGandling"] = { AL["Darkmaster Gandling"], "AtlasLootItems" },
+	["SCHOLOTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scholomance"] .. ")", "AtlasLootItems" },
+	--Shadowfang Keep
+	["SFKRethilgore"] = { AL["Rethilgore"], "AtlasLootItems" },
+	["SFKFelSteed"] = { AL["Fel Steed"], "AtlasLootItems" },
+	["SFKJordansHammer"] = { AL["Jordan's Hammer"], "AtlasLootItems" },
+	["SFKRazorclawtheButcher"] = { AL["Razorclaw the Butcher"], "AtlasLootItems" },
+	["SFKSilverlaine"] = { AL["Baron Silverlaine"], "AtlasLootItems" },
+	["SFKSpringvale"] = { AL["Commander Springvale"], "AtlasLootItems" },
+	["SFKSever"] = { AL["Sever"] .. " (" .. AL["Scourge Invasion"] .. ")", "AtlasLootItems" },
+	["SFKOdotheBlindwatcher"] = { AL["Odo the Blindwatcher"], "AtlasLootItems" },
+	["SFKFenrustheDevourer"] = { AL["Fenrus the Devourer"], "AtlasLootItems" },
+	["SFKBookofUr"] = { AL["The Book of Ur"], "AtlasLootItems" },
+	["SFKArugalsVoidwalker"] = { AL["Arugal's Voidwalker"], "AtlasLootItems" },
+	["SFKWolfMasterNandos"] = { AL["Wolf Master Nandos"], "AtlasLootItems" },
+	["SFKArchmageArugal"] = { AL["Archmage Arugal"], "AtlasLootItems" },
+	["SFKDeathswornCaptain"] = { AL["Deathsworn Captain"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["SFKTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Shadowfang Keep"] .. ")", "AtlasLootItems" },
+	--The Stockade
+	["SWStTargorr"] = { AL["Targorr the Dread"], "AtlasLootItems" },
+	["SWStKamDeepfury"] = { AL["Kam Deepfury"], "AtlasLootItems" },
+	["SWStHamhock"] = { AL["Hamhock"], "AtlasLootItems" },
+	["SWStDextren"] = { AL["Dextren Ward"], "AtlasLootItems"},
+	["SWStBazil"] = { AL["Bazil Thredd"], "AtlasLootItems" },
+	["SWStBruegalIronknuckle"] = { AL["Bruegal Ironknuckle"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["SWStTrash"] = { AL["Trash Mobs"] .. " (" .. AL["The Stockade"] .. ")", "AtlasLootItems" },
+	--Stratholme
+	["STRATSkull"] = { AL["Skul"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["STRATStratholmeCourier"] = { AL["Stratholme Courier"], "AtlasLootItems" },
+	["STRATPostmaster"] = { AL["Postmaster Malown"], "AtlasLootItems" },
+	["STRATFrasSiabi"] = { AL["Fras Siabi"], "AtlasLootItems" },
+	["STRATAtiesh"] = { "Atiesh <Hand of Sargeras>", "AtlasLootItems" },
+	["STRATBalzaphon"] = { AL["Balzaphon"] .. " (" .. AL["Scourge Invasion"] .. ")", "AtlasLootItems" },
+	["STRATHearthsingerForresten"] = { AL["Hearthsinger Forresten"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["STRATTheUnforgiven"] = { AL["The Unforgiven"], "AtlasLootItems" },
+	["STRATTimmytheCruel"] = { AL["Timmy the Cruel"], "AtlasLootItems" },
+	["STRATMalor"] = { AL["Malor the Zealous"], "AtlasLootItems" },
+	["STRATMalorsStrongbox"] = { AL["Malor's Strongbox"], "AtlasLootItems" },
+	["STRATCrimsonHammersmith"] = { AL["Crimson Hammersmith"] .. " (" .. AL["Summon"] .. ")", "AtlasLootItems" },
+	["STRATBSPlansSerenity"] = { "Plans: Serenity", "AtlasLootItems" },
+	["STRATCannonMasterWilley"] = { AL["Cannon Master Willey"], "AtlasLootItems" },
+	["STRATArchivistGalford"] = { AL["Archivist Galford"], "AtlasLootItems" },
+	["STRATBalnazzar"] = { AL["Balnazzar"], "AtlasLootItems" },
+	["STRATSothosJarien"] = { AL["Sothos"] .. " & " .. AL["Jarien"], "AtlasLootItems" },
+	["STRATStonespine"] = { AL["Stonespine"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["STRATNerubenkan"] = { AL["Nerub'enkan"], "AtlasLootItems" },
+	["STRATBaronessAnastari"] = { AL["Baroness Anastari"], "AtlasLootItems" },
+	["STRATBlackGuardSwordsmith"] = { AL["Black Guard Swordsmith"] .. " (" .. AL["Summon"] .. ")", "AtlasLootItems" },
+	["STRATBSPlansCorruption"] = { "Plans: Corruption", "AtlasLootItems" },
+	["STRATMalekithePallid"] = { AL["Maleki the Pallid"], "AtlasLootItems" },
+	["STRATMagistrateBarthilas"] = { AL["Magistrate Barthilas"], "AtlasLootItems" },
+	["STRATRamsteintheGorger"] = { AL["Ramstein the Gorger"], "AtlasLootItems" },
+	["STRATBaronRivendare"] = { AL["Baron Rivendare"], "AtlasLootItems" },
+	["STRATTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Stratholme"] .. ")", "AtlasLootItems" },
+	--Sunken Temple
+	["STSpawnOfHakkar"] = { AL["Spawn of Hakkar"], "AtlasLootItems" },
+	["STBalconyMinibosses"] = { AL["Balcony Minibosses"], "AtlasLootItems" },
+	["STAtalalarion"] = { AL["Atal'alarion"], "AtlasLootItems" },
+	["STDreamscythe"] = { AL["Dreamscythe"], "AtlasLootItems" },
+	["STWeaver"] = { AL["Weaver"], "AtlasLootItems" },
+	["STAvatarofHakkar"] = { AL["Avatar of Hakkar"], "AtlasLootItems" },
+	["STJammalan"] = { AL["Jammal'an the Prophet"], "AtlasLootItems" },
+	["STOgom"] = { AL["Ogom the Wretched"], "AtlasLootItems" },
+	["STMorphaz"] = { AL["Morphaz"], "AtlasLootItems" },
+	["STHazzas"] = { AL["Hazzas"], "AtlasLootItems" },
+	["STEranikus"] = { AL["Shade of Eranikus"], "AtlasLootItems" },
+	["STTrash"] = { AL["Trash Mobs"] .. " (" .. AL["The Sunken Temple"] .. ")", "AtlasLootItems" },
+	-- Hateforge Quarry
+	["HQHighForemanBargulBlackhammer"] = { AL["High Foreman Bargul Blackhammer"], "AtlasLootItems" },
+	["HQEngineerFiggles"] = { AL["Engineer Figgles"], "AtlasLootItems" },
+	["HQCorrosis"] = { AL["Corrosis"], "AtlasLootItems" },
+	["HQHatereaverAnnihilator"] = { AL["Hatereaver Annihilator"], "AtlasLootItems" },
+	["HQHargeshDoomcaller"] = { AL["Hargesh Doomcaller"], "AtlasLootItems" },
+	["HQTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
+	-- The Cresant Grove
+	["TCGGrovetenderEngryss"] = { AL["Grovetender Engryss"], "AtlasLootItems" },
+	["TCGKeeperRanathos"] = { AL["Keeper Ranathos"], "AtlasLootItems" },
+	["TCGHighPriestessAlathea"] = { AL["High Priestess A'lathea"], "AtlasLootItems" },
+	["TCGFenektistheDeceiver"] = { AL["Fenektis the Deceiver"], "AtlasLootItems" },
+	["TCGMasterRaxxieth"] = { AL["Master Raxxieth"], "AtlasLootItems" },
+	["TCGTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
+	-- Karazhan Crypt
+	["KCMarrowspike"] = { AL["Marrowspike"], "AtlasLootItems" },
+	["KCHivaxxis"] = { AL["Hivaxxis"], "AtlasLootItems" },
+	["KCCorpsemuncher"] = { AL["Corpsemuncher"], "AtlasLootItems" },
+	["KCGuardCaptainGort"] = { AL["Guard Captain Gort"], "AtlasLootItems" },
+	["KCArchlichEnkhraz"] = { AL["Archlich Enkhraz"], "AtlasLootItems" },
+	["KCCommanderAnderson"] = { AL["Commander Anderson"], "AtlasLootItems" },
+	["KCAlarus"] = { AL["Alarus"], "AtlasLootItems" },
+	["KCTreasure"] = { AL["Half-Buried Treasure Chest"], "AtlasLootItems" },
+	["KCTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
+	-- Caverns of Time: Black Morass
+	["COTBMChronar"] = { AL["Chronar"], "AtlasLootItems" },
+	["COTBMHarbingerAphygth"] = { AL["Harbinger Aph'ygth"], "AtlasLootItems" },
+	["COTBMEpidamu"] = { AL["Epidamu"], "AtlasLootItems" },
+	["COTBMDriftingAvatar"] = { AL["Drifting Avatar of Time"], "AtlasLootItems" },
+	["COTBMTimeLordEpochronos"] = { AL["Time-Lord Epochronos"], "AtlasLootItems" },
+	["COTBMMossheart"] = { AL["Mossheart"], "AtlasLootItems" },
+	["COTBMRotmaw"] = { AL["Rotmaw"], "AtlasLootItems" },
+	["COTBMAntnormi"] = { AL["Antnormi"], "AtlasLootItems" },
+	["COTBMInfiniteChromie"] = { AL["Infinite Chromie"], "AtlasLootItems" },
+	-- Stormwind Vault
+	["SWVAszoshGrimflame"] = { AL["Aszosh Grimflame"], "AtlasLootItems" },
+	["SWVThamGrarr"] = { AL["Tham'Grarr"], "AtlasLootItems" },
+	["SWVBlackBride"] = { AL["Black Bride"], "AtlasLootItems" },
+	["SWVDamian"] = { AL["Damian"], "AtlasLootItems" },
+	["SWVVolkanCruelblade"] = { AL["Volkan Cruelblade"], "AtlasLootItems" },
+	["SWVVaultArmoryEquipment"] = { AL["Arc'tiras / Vault Armory Equipment"], "AtlasLootItems" },
+	--Temple of Ahn'Qiraj
+	["AQ40Skeram"] = { AL["The Prophet Skeram"], "AtlasLootItems" },
+	["AQ40Trio"] = { AL["The Bug Family"], "AtlasLootItems" },
+	["AQ40Sartura"] = { AL["Battleguard Sartura"], "AtlasLootItems" },
+	["AQ40Fankriss"] = { AL["Fankriss the Unyielding"], "AtlasLootItems" },
+	["AQ40Viscidus"] = { AL["Viscidus"], "AtlasLootItems" },
+	["AQ40Huhuran"] = { AL["Princess Huhuran"], "AtlasLootItems" },
+	["AQ40Emperors"] = { AL["The Twin Emperors"], "AtlasLootItems" },
+	["AQ40Ouro"] = { AL["Ouro"], "AtlasLootItems" },
+	["AQ40CThun"] = { AL["C'Thun"], "AtlasLootItems" },
+	["AQ40Trash1"] = { AL["Trash Mobs"] .. " (AQ40)", "AtlasLootItems" },
+	["AQ40Trash2"] = { AL["Trash Mobs"] .. " (AQ40)", "AtlasLootItems" },
+	["AQOpening"] = { "AQ Opening Quest Line", "AtlasLootItems" },
+	--Uldaman
+	["UldMagreganDeepshadow"] = { AL["Magregan Deepshadow"], "AtlasLootItems" },
+	["UldTabletofRyuneh"] = { "Tablet of Ryun'eh", "AtlasLootItems" },
+	["UldKromStoutarmChest"] = { AL["Krom Stoutarm's Chest"], "AtlasLootItems" },
+	["UldGarrettFamilyChest"] = { AL["Garrett Family Chest"], "AtlasLootItems" },
+	["UldShovelphlange"] = { AL["Digmaster Shovelphlange"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["UldRevelosh"] = { AL["Revelosh"], "AtlasLootItems" },
+	["UldEric"] = { AL["Baelog"], "AtlasLootItems" },
+	["UldOlaf"] = { AL["Baelog"], "AtlasLootItems" },
+	["UldBaelog"] = { AL["Baelog"], "AtlasLootItems" },
+	["UldBaelogsChest"] = { AL["Baelog"], "AtlasLootItems" },
+	["UldIronaya"] = { AL["Ironaya"], "AtlasLootItems" },
+	["UldObsidianSentinel"] = { AL["Obsidian Sentinel"], "AtlasLootItems" },
+	["UldAncientStoneKeeper"] = { AL["Ancient Stone Keeper"], "AtlasLootItems" },
+	["UldGalgannFirehammer"] = { AL["Galgann Firehammer"], "AtlasLootItems" },
+	["UldTabletofWill"] = { "Tablet of Will", "AtlasLootItems" },
+	["UldShadowforgeCache"] = { "Shadowforge Cache", "AtlasLootItems" },
+	["UldGrimlok"] = { AL["Grimlok"], "AtlasLootItems" },
+	["UldArchaedas"] = { AL["Archaedas"], "AtlasLootItems" },
+	["UldTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Uldaman"] .. ")", "AtlasLootItems" },
+	--Gilneas City
+	["GCMatthiasHoltz"] = { AL["Matthias Holtz"], "AtlasLootItems" },
+	["GCPackmasterRagetooth"] = { AL["Packmaster Ragetooth"], "AtlasLootItems" },
+	["GCJudgeSutherland"] = { AL["Judge Sutherland"], "AtlasLootItems" },
+	["GCDustivanBlackcowl"] = { AL["Dustivan Blackcowl"], "AtlasLootItems" },
+	["GCMarshalMagnusGreystone"] = { AL["Marshal Magnus Greystone"], "AtlasLootItems" },
+	["GCHorsemasterLevvin"] = { AL["Horsemaster Levvin"], "AtlasLootItems" },
+	["GCHarlowFamilyChest"] = { AL["Harlow Family Chest"], "AtlasLootItems" },
+	["GCGennGreymane"] = { AL["Genn Greymane"], "AtlasLootItems" },
+	["GCTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
+	--Wailing Caverns
+	["WCKalldanFelmoon"] = { AL["Kalldan Felmoon"], "AtlasLootItems" },
+	["WCMadMagglish"] = { AL["Mad Magglish"], "AtlasLootItems" },
+	["WCTrigoretheLasher"] = { AL["Trigore the Lasher"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["WCBoahn"] = { AL["Boahn"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["WCLordCobrahn"] = { AL["Lord Cobrahn"], "AtlasLootItems" },
+	["WCLadyAnacondra"] = { AL["Lady Anacondra"], "AtlasLootItems" },
+	["WCKresh"] = { AL["Kresh"], "AtlasLootItems" },
+	["WCLordPythas"] = { AL["Lord Pythas"], "AtlasLootItems" },
+	["WCSkum"] = { AL["Skum"], "AtlasLootItems" },
+	["WCLordSerpentis"] = { AL["Lord Serpentis"], "AtlasLootItems" },
+	["WCVerdan"] = { AL["Verdan the Everliving"], "AtlasLootItems" },
+	["WCMutanus"] = { AL["Mutanus the Devourer"], "AtlasLootItems" },
+	["WCDeviateFaerieDragon"] = { AL["Deviate Faerie Dragon"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["WCTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Wailing Caverns"] .. ")", "AtlasLootItems" },
+	--Zul'Farrak
+	["ZFAntusul"] = { AL["Antu'sul"], "AtlasLootItems" },
+	["ZFThekatheMartyr"] = { AL["Theka the Martyr"], "AtlasLootItems" },
+	["ZFWitchDoctorZumrah"] = { AL["Witch Doctor Zum'rah"], "AtlasLootItems" },
+	["ZFNekrumGutchewer"] = { AL["Nekrum Gutchewer"], "AtlasLootItems" },
+	["ZFSezzziz"] = { AL["Shadowpriest Sezz'ziz"], "AtlasLootItems" },
+	["ZFDustwraith"] = { AL["Dustwraith"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["ZFSergeantBly"] = { AL["Sergeant Bly"], "AtlasLootItems" },
+	["ZFSandfury"] = { AL["Sandfury Executioner"], "AtlasLootItems" },
+	["ZFHydromancerVelratha"] = { AL["Hydromancer Velratha"], "AtlasLootItems" },
+	["ZFGahzrilla"] = { AL["Gahz'rilla"], "AtlasLootItems" },
+	["ZFChiefUkorzSandscalp"] = { AL["Chief Ukorz Sandscalp"], "AtlasLootItems" },
+	["ZFZerillis"] = { AL["Zerillis"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["ZFTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Zul'Farrak"] .. ")", "AtlasLootItems" },
+	--Zul'Gurub
+	["ZGJeklik"] = { AL["High Priestess Jeklik"], "AtlasLootItems" },
+	["ZGVenoxis"] = { AL["High Priest Venoxis"], "AtlasLootItems" },
+	["ZGMarli"] = { AL["High Priestess Mar'li"], "AtlasLootItems" },
+	["ZGMandokir"] = { AL["Bloodlord Mandokir"], "AtlasLootItems" },
+	["ZGGrilek"] = { AL["Gri'lek"], "AtlasLootItems" },
+	["ZGHazzarah"] = { AL["Hazza'rah"], "AtlasLootItems" },
+	["ZGRenataki"] = { AL["Renataki"], "AtlasLootItems" },
+	["ZGWushoolay"] = { AL["Wushoolay"], "AtlasLootItems" },
+	["ZGGahzranka"] = { AL["Gahz'ranka"], "AtlasLootItems" },
+	["ZGThekal"] = { AL["High Priest Thekal"], "AtlasLootItems" },
+	["ZGArlokk"] = { AL["High Priestess Arlokk"], "AtlasLootItems" },
+	["ZGJindo"] = { AL["Jin'do the Hexxer"], "AtlasLootItems" },
+	["ZGHakkar"] = { AL["Hakkar"], "AtlasLootItems" },
+	["ZGMuddyChurningWaters"] = { AL["Muddy Churning Waters"], "AtlasLootItems" },
+	["ZGJinxedHoodooPile"] = { AL["Jinxed Hoodoo Pile"], "AtlasLootItems" },
+	["ZGShared"] = { "Shared ZG Priest Drops", "AtlasLootItems" },
+	["ZGTrash1"] = { AL["Trash Mobs"] .. " (" .. AL["Zul'Gurub"] .. ")", "AtlasLootItems" },
+	["ZGTrash2"] = { AL["Trash Mobs"] .. " (" .. AL["Zul'Gurub"] .. ")", "AtlasLootItems" },
+	["ZGEnchants"] = { "ZG Enchants", "AtlasLootItems" },
+	--Emerald Sanctum
+	["ESErennius"] = { AL["Erennius"], "AtlasLootItems" },
+	["ESSolnius1"] = { AL["Solnius the Awakener"], "AtlasLootItems" },
+	["ESSolnius2"] = { AL["Solnius the Awakener (Page 2)"], "AtlasLootItems" },
+	["ESHardMode"] = { AL["Favor of Erennius (ES Hard Mode)"], "AtlasLootItems" },
+	["ESTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
+	--Lower Karazhan Halls
+	["LKHRolfen"] = { AL["Master Blacksmith Rolfen"], "AtlasLootItems" },
+	["LKHBroodQueenAraxxna"] = { AL["Brood Queen Araxxna"], "AtlasLootItems" },
+	["LKHGrizikil"] = { AL["Grizikil"], "AtlasLootItems" },
+	["LKHClawlordHowlfang"] = { AL["Clawlord Howlfang"], "AtlasLootItems" },
+	["LKHLordBlackwaldII"] = { AL["Lord Blackwald II"], "AtlasLootItems" },
+	["LKHMoroes"] = { AL["Moroes"], "AtlasLootItems" },
+	["LKHTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
+	["LKHEnchants"] = { AL["LKH Enchants"], "AtlasLootItems" },
 
------------------
---- Instances ---
------------------
+	------------
+	--- Sets ---
+	------------
 
-  --Keys
-    --AtlasLoot_TableNames["OldKeys"][1] = "钥匙";
-    --AtlasLoot_TableNames["BCKeys"][1] = "钥匙";
-  --Auch: Sethekk Halls
-    --AtlasLoot_TableNames["AuchSethekkTheSagaofTerokk"][1] = "泰罗克的传说";
-  --Auch: Shadow Labyrinth
-    --AtlasLoot_TableNames["AuchShadowFirstFragmentGuardian"][1] = "第一块碎片的守护者";
-  --Blackrock Depths
-	--AtlasLoot_TableNames["BRDArena"][1] = "竞技场";
-	AtlasLoot_TableNames["BRDForgewright"][1] = "弗兰克罗恩·铸铁的雕像";
-	AtlasLoot_TableNames["BRDGuzzler"][1] = "黑铁酒吧";
-	AtlasLoot_TableNames["BRDTomb"][1] = "召唤者之墓";
-    AtlasLoot_TableNames["BRDBSPlans"][1] = "锻造设计图 (黑石深渊)";
-  --The Black Temple
-	--AtlasLoot_TableNames["BTEssencofSouls"][1] = "灵魂之匣";
-	--AtlasLoot_TableNames["BTPatterns"][1] = "掉落图纸 (黑暗神殿)";
-  --Blackwing Lair
-	--AtlasLoot_TableNames["BWLDraconicForDummies"][1] = "龙语傻瓜教程：第七卷";
-  --CFR: The Steamvault
-    --AtlasLoot_TableNames["CFRSteamSecondFragmentGuardian"][1] = "第二块碎片的守护者";
-  --CoT: Old Hillsbrad Foothills
-	--AtlasLoot_TableNames["CoTHillsbradAgedDalaranWizard"][1] = "老迈的达拉然巫师";
-  --Dire Maul East
-	AtlasLoot_TableNames["DMBooks"][1] = "厄运之槌书籍";
-  --HC: Shattered Halls
-	--AtlasLoot_TableNames["HCHallsExecutioner"][1] = "碎手斩杀者";
-  --Karazhan
-	--AtlasLoot_TableNames["KaraCharredBoneFragment"][1] = "焦骨碎块 (任务物品)";
-	--AtlasLoot_TableNames["KaraNamed"][1] = "仆人区动物首领";
-	--AtlasLoot_TableNames["KaraKeannaLog"][1] = "金娜的日记 (任务物品)";
-	--AtlasLoot_TableNames["KaraOperaEvent"][1] = "歌剧";
-  --Maraudon
-    AtlasLoot_TableNames["MaraKhanKolk"][1] = "考尔克 (第一可汗)";
-    AtlasLoot_TableNames["MaraKhanGelk"][1] = "吉尔克 (第二可汗)";
-    AtlasLoot_TableNames["MaraKhanMagra"][1] = "玛格拉 (第三可汗)";
-    AtlasLoot_TableNames["MaraKhanVeng"][1] = "温格 (第五可汗)";
-    AtlasLoot_TableNames["MaraKhanMaraudos"][1] = "玛拉多斯 (第四可汗)";
-  --Molten Core
-	--AtlasLoot_TableNames["MCRANDOMBOSSDROPPS"][1] = "首领随机掉落 (熔火之心)";
-  --The Ruins of Ahn'Qiraj
-    AtlasLoot_TableNames["AQ20Trash"][1] = "普通怪物 (安其拉废墟)";
-	AtlasLoot_TableNames["AQ20ClassBooks"][1] =  "安其拉职业书籍";
-	AtlasLoot_TableNames["AQEnchants"][1] = "安其拉掉落附魔公式";
-  --Shadowfang Keep
-	--AtlasLoot_TableNames["BSFFelSteed"][1] = "地狱战马";
-  --Stratholme
-	AtlasLoot_TableNames["STRATStratholmeCourier"][1] = "邮箱钥匙";
-    AtlasLoot_TableNames["STRATAtiesh"][1] = "埃提耶什 <萨格拉斯之手>";
-    AtlasLoot_TableNames["STRATBSPlansSerenity"][1] = "设计图：平静";
-    AtlasLoot_TableNames["STRATBSPlansCorruption"][1] = "设计图：腐蚀";
-  --Sunken Temple
-    AtlasLoot_TableNames["STSpawnOfHakkar"][1] = "哈卡的后代";
-	--AtlasLoot_TableNames["STTrollMinibosses"][1] = "巨魔小首领";
-  --Sunwell Plateau
-	--AtlasLoot_TableNames["SPPatterns"][1] = "掉落图纸 (太阳之井高地)";
-  --Temple of Ahn'Qiraj
-	AtlasLoot_TableNames["AQ40Trash1"][1] = "普通怪物 (安其拉神殿)";
-	AtlasLoot_TableNames["AQ40Trash2"][1] = "普通怪物 (安其拉神殿)";
-	AtlasLoot_TableNames["AQOpening"][1] = "安琪拉之门任务奖励";
-  --TK: The Arcatraz
-    --AtlasLoot_TableNames["TKArcThirdFragmentGuardian"][1] = "第三块碎片的守护者";
-  --TK: The Eye
-	--AtlasLoot_TableNames["TKEyeLegendaries"][1] = "凯尔萨斯一役使用到的传奇物品";
-  --TK: The Mechanar
-	--AtlasLoot_TableNames["TKMechCacheoftheLegion"][1] = "军团保险箱";
-	--AtlasLoot_TableNames["TKMechOverchargedManacell"][1] = "超载的魔法晶格";
-  --Uldaman
-    AtlasLoot_TableNames["UldTabletofRyuneh"][1] = "雷乌纳石板";
-    AtlasLoot_TableNames["UldTabletofWill"][1] = "意志石板";
-    AtlasLoot_TableNames["UldShadowforgeCache"][1] = "暗影熔炉地窖";
-  --Zul'Aman
-    --AtlasLoot_TableNames["ZATimedChest"][1] = "限时任务奖励";
-  --Zul'Gurub
-    AtlasLoot_TableNames["ZGMuddyChurningWaters"][1] = "混浊的水";
-	AtlasLoot_TableNames["ZGShared"][1] = "祖尔格拉布祭司首领共享掉落";
-	AtlasLoot_TableNames["ZGEnchants"][1] = "祖尔格拉布职业附魔";
+	--Vanilla WoW Sets
+	["DEADMINES"] = { AL["Set: "] .. AL["Defias Leather"], "AtlasLootSetItems" },
+	["WAILING"] = { AL["Set: "] .. AL["Embrace of the Viper"], "AtlasLootSetItems" },
+	["SCARLET"] = { AL["Set: "] .. AL["Chain of the Scarlet Crusade"], "AtlasLootSetItems" },
+	["BLACKROCKD"] = { AL["Set: "] .. AL["The Gladiator"], "AtlasLootSetItems" },
+	["IRONWEAVE"] = { AL["Set: "] .. AL["Ironweave Battlesuit"], "AtlasLootSetItems" },
+	["ScholoCloth"] = { AL["Set: "] .. AL["Necropile Raiment"], "AtlasLootSetItems" },
+	["ScholoLeather"] = { AL["Set: "] .. AL["Cadaverous Garb"], "AtlasLootSetItems" },
+	["ScholoMail"] = { AL["Set: "] .. AL["Bloodmail Regalia"], "AtlasLootSetItems" },
+	["ScholoPlate"] = { AL["Set: "] .. AL["Deathbone Guardian"], "AtlasLootSetItems" },
+	["STRAT"] = { AL["Set: "] .. AL["The Postmaster"], "AtlasLootSetItems" },
+	["SpiderKiss"] = { AL["Set: "] .. AL["Spider's Kiss"], "AtlasLootSetItems" },
+	["DalRend"] = { AL["Set: "] .. AL["Dal'Rend's Arms"], "AtlasLootSetItems" },
+	["ZGRings"] = { AL["Set: "] .. AL["ZG Rings"], "AtlasLootSetItems" },
+	["ShardOfGods"] = { AL["Set: "] .. AL["Shard of the Gods"], "AtlasLootSetItems" },
+	["SpiritofEskhandar"] = { AL["Set: "] .. AL["Spirit of Eskhandar"], "AtlasLootSetItems" },
+	["HakkariBlades"] = { AL["Set: "] .. AL["The Twin Blades of Hakkari"], "AtlasLootSetItems" },
+	["PrimalBlessing"] = { AL["Set: "] .. AL["Primal Blessing"], "AtlasLootSetItems" },
+	["ScourgeInvasion"] = { AL["Set: "] .. AL["Scourge Invasion"], "AtlasLootSetItems" },
+	["Legendaries"] = { AL["Set: "] .. AL["Legendary Items"], "AtlasLootSetItems" },
+	["Artifacts"] = { AL["Set: "] .. AL["Artifact Items"], "AtlasLootSetItems" },
+	["RareMounts"] = { AL["Rare Mounts"], "AtlasLootSetItems" },
+	["OldMounts"] = { AL["Old Mounts"], "AtlasLootSetItems" },
+	["PvPMountsSets"] = { AL["PvP Mounts"], "AtlasLootSetItems" },
+	["UnobMounts"] = { AL["Unobtainable Mounts"], "AtlasLootSetItems" },
+	["Tabards"] = { AL["Tabards"], "AtlasLootSetItems" },
+	["RarePets1"] = { AL["Rare Pets"], "AtlasLootSetItems" },
+	["RarePets2"] = { AL["Rare Pets"], "AtlasLootSetItems" },
+	--Crafted Sets - Blacksmithing
+	["SteelPlate"] = { AL["Steel Plate"], "AtlasLootCrafting" },
+	["ImperialPlate"] = { AL["Imperial Plate"], "AtlasLootCrafting" },
+	["TheDarksoul"] = { AL["The Darksoul"], "AtlasLootCrafting" },
+	["BloodsoulEmbrace"] = { AL["Bloodsoul Embrace"], "AtlasLootCrafting" },
+	--Crafted Sets - Tailoring
+	["AugerersAttire"] = { AL["Augerer's Attire"], "AtlasLootCrafting" },
+	["ShadoweaveSet"] = { AL["Shadoweave"], "AtlasLootCrafting" },
+	["DivinersGarments"] = { AL["Diviner's Garments"], "AtlasLootCrafting" },
+	["PillagersGarb"] = { AL["Pillager's Garb"], "AtlasLootCrafting" },
+	["BloodvineG"] = { AL["Bloodvine Garb"], "AtlasLootCrafting" },
+	--Crafted Sets - Leatherworking
+	["GriftersArmor"] = { AL["Grifter's Armor"], "AtlasLootCrafting" },
+	["PrimalistsTrappings"] = { AL["Primalist's Trappings"], "AtlasLootCrafting" },
+	["VolcanicArmor"] = { AL["Volcanic Armor"], "AtlasLootCrafting" },
+	["IronfeatherArmor"] = { AL["Ironfeather Armor"], "AtlasLootCrafting" },
+	["StormshroudArmor"] = { AL["Stormshroud Armor"], "AtlasLootCrafting" },
+	["DevilsaurArmor"] = { AL["Devilsaur Armor"], "AtlasLootCrafting" },
+	["BloodTigerH"] = { AL["Blood Tiger Harness"], "AtlasLootCrafting" },
+	["PrimalBatskin"] = { AL["Primal Batskin"], "AtlasLootCrafting" },
+	["RedDragonM"] = { AL["Red Dragon Mail"], "AtlasLootCrafting" },
+	["GreenDragonM"] = { AL["Green Dragon Mail"], "AtlasLootCrafting" },
+	["BlueDragonM"] = { AL["Blue Dragon Mail"], "AtlasLootCrafting" },
+	["BlackDragonM"] = { AL["Black Dragon Mail"], "AtlasLootCrafting" },
+	--ZG Sets
+	["ZGDruid"] = { AL["Druid"] .. " - " .. AL["ZG Class Sets"], "AtlasLootSetItems" },
+	["ZGHunter"] = { AL["Hunter"] .. " - " .. AL["ZG Class Sets"], "AtlasLootSetItems" },
+	["ZGMage"] = { AL["Mage"] .. " - " .. AL["ZG Class Sets"], "AtlasLootSetItems" },
+	["ZGPaladin"] = { AL["Paladin"] .. " - " .. AL["ZG Class Sets"], "AtlasLootSetItems" },
+	["ZGPriest"] = { AL["Priest"] .. " - " .. AL["ZG Class Sets"], "AtlasLootSetItems" },
+	["ZGRogue"] = { AL["Rogue"] .. " - " .. AL["ZG Class Sets"], "AtlasLootSetItems" },
+	["ZGShaman"] = { AL["Shaman"] .. " - " .. AL["ZG Class Sets"], "AtlasLootSetItems" },
+	["ZGWarlock"] = { AL["Warlock"] .. " - " .. AL["ZG Class Sets"], "AtlasLootSetItems" },
+	["ZGWarrior"] = { AL["Warrior"] .. " - " .. AL["ZG Class Sets"], "AtlasLootSetItems" },
+	--AQ20 Sets
+	["AQ20Mage"] = { AL["AQ20 Class Sets"], "AtlasLootSetItems" },
+	["AQ20Warlock"] = { AL["AQ20 Class Sets"], "AtlasLootSetItems" },
+	["AQ20Priest"] = { AL["AQ20 Class Sets"], "AtlasLootSetItems" },
+	["AQ20Rogue"] = { AL["AQ20 Class Sets"], "AtlasLootSetItems" },
+	["AQ20Druid"] = { AL["AQ20 Class Sets"], "AtlasLootSetItems" },
+	["AQ20Hunter"] = { AL["AQ20 Class Sets"], "AtlasLootSetItems" },
+	["AQ20Paladin"] = { AL["AQ20 Class Sets"], "AtlasLootSetItems" },
+	["AQ20Shaman"] = { AL["AQ20 Class Sets"], "AtlasLootSetItems" },
+	["AQ20Warrior"] = { AL["AQ20 Class Sets"], "AtlasLootSetItems" },
+	--AQ40 Sets
+	["AQ40Mage"] = { AL["AQ40 Class Sets"], "AtlasLootSetItems" },
+	["AQ40Priest"] = { AL["AQ40 Class Sets"], "AtlasLootSetItems" },
+	["AQ40Warlock"] = { AL["AQ40 Class Sets"], "AtlasLootSetItems" },
+	["AQ40Rogue"] = { AL["AQ40 Class Sets"], "AtlasLootSetItems" },
+	["AQ40Druid"] = { AL["AQ40 Class Sets"], "AtlasLootSetItems" },
+	["AQ40Shaman"] = { AL["AQ40 Class Sets"], "AtlasLootSetItems" },
+	["AQ40Hunter"] = { AL["AQ40 Class Sets"], "AtlasLootSetItems" },
+	["AQ40Warrior"] = { AL["AQ40 Class Sets"], "AtlasLootSetItems" },
+	["AQ40Paladin"] = { AL["AQ40 Class Sets"], "AtlasLootSetItems" },
+	--Dungeon Set 1/2
+	["T0Druid"] = { AL["Druid"] .. " - " .. AL["Dungeon 1/2 Sets"], "AtlasLootSetItems" },
+	["T0Hunter"] = { AL["Hunter"] .. " - " .. AL["Dungeon 1/2 Sets"], "AtlasLootSetItems" },
+	["T0Mage"] = { AL["Mage"] .. " - " .. AL["Dungeon 1/2 Sets"], "AtlasLootSetItems" },
+	["T0Paladin"] = { AL["Paladin"] .. " - " .. AL["Dungeon 1/2 Sets"], "AtlasLootSetItems" },
+	["T0Priest"] = { AL["Priest"] .. " - " .. AL["Dungeon 1/2 Sets"], "AtlasLootSetItems" },
+	["T0Rogue"] = { AL["Rogue"] .. " - " .. AL["Dungeon 1/2 Sets"], "AtlasLootSetItems" },
+	["T0Shaman"] = { AL["Shaman"] .. " - " .. AL["Dungeon 1/2 Sets"], "AtlasLootSetItems" },
+	["T0Warlock"] = { AL["Warlock"] .. " - " .. AL["Dungeon 1/2 Sets"], "AtlasLootSetItems" },
+	["T0Warrior"] = { AL["Warrior"] .. " - " .. AL["Dungeon 1/2 Sets"], "AtlasLootSetItems" },
+	--T1Sets
+	["T1Druid"] = { AL["Druid"] .. " - " .. AL["Tier 1 Sets"], "AtlasLootSetItems" },
+	["T1Hunter"] = { AL["Hunter"] .. " - " .. AL["Tier 1 Sets"], "AtlasLootSetItems" },
+	["T1Mage"] = { AL["Mage"] .. " - " .. AL["Tier 1 Sets"], "AtlasLootSetItems" },
+	["T1Paladin"] = { AL["Paladin"] .. " - " .. AL["Tier 1 Sets"], "AtlasLootSetItems" },
+	["T1Priest"] = { AL["Priest"] .. " - " .. AL["Tier 1 Sets"], "AtlasLootSetItems" },
+	["T1Rogue"] = { AL["Rogue"] .. " - " .. AL["Tier 1 Sets"], "AtlasLootSetItems" },
+	["T1Shaman"] = { AL["Shaman"] .. " - " .. AL["Tier 1 Sets"], "AtlasLootSetItems" },
+	["T1Warlock"] = { AL["Warlock"] .. " - " .. AL["Tier 1 Sets"], "AtlasLootSetItems" },
+	["T1Warrior"] = { AL["Warrior"] .. " - " .. AL["Tier 1 Sets"], "AtlasLootSetItems" },
+	--T2Sets
+	["T2Druid"] = { AL["Druid"] .. " - " .. AL["Tier 2 Sets"], "AtlasLootSetItems" },
+	["T2Hunter"] = { AL["Hunter"] .. " - " .. AL["Tier 2 Sets"], "AtlasLootSetItems" },
+	["T2Mage"] = { AL["Mage"] .. " - " .. AL["Tier 2 Sets"], "AtlasLootSetItems" },
+	["T2Paladin"] = { AL["Paladin"] .. " - " .. AL["Tier 2 Sets"], "AtlasLootSetItems" },
+	["T2Priest"] = { AL["Priest"] .. " - " .. AL["Tier 2 Sets"], "AtlasLootSetItems" },
+	["T2Rogue"] = { AL["Rogue"] .. " - " .. AL["Tier 2 Sets"], "AtlasLootSetItems" },
+	["T2Shaman"] = { AL["Shaman"] .. " - " .. AL["Tier 2 Sets"], "AtlasLootSetItems" },
+	["T2Warlock"] = { AL["Warlock"] .. " - " .. AL["Tier 2 Sets"], "AtlasLootSetItems" },
+	["T2Warrior"] = { AL["Warrior"] .. " - " .. AL["Tier 2 Sets"], "AtlasLootSetItems" },
+	--T3 Sets
+	["T3Druid"] = { AL["Druid"] .. " - " .. AL["Tier 3 Sets"], "AtlasLootSetItems" },
+	["T3Hunter"] = { AL["Hunter"] .. " - " .. AL["Tier 3 Sets"], "AtlasLootSetItems" },
+	["T3Mage"] = { AL["Mage"] .. " - " .. AL["Tier 3 Sets"], "AtlasLootSetItems" },
+	["T3Paladin"] = { AL["Paladin"] .. " - " .. AL["Tier 3 Sets"], "AtlasLootSetItems" },
+	["T3Priest"] = { AL["Priest"] .. " - " .. AL["Tier 3 Sets"], "AtlasLootSetItems" },
+	["T3Rogue"] = { AL["Rogue"] .. " - " .. AL["Tier 3 Sets"], "AtlasLootSetItems" },
+	["T3Shaman"] = { AL["Shaman"] .. " - " .. AL["Tier 3 Sets"], "AtlasLootSetItems" },
+	["T3Warlock"] = { AL["Warlock"] .. " - " .. AL["Tier 3 Sets"], "AtlasLootSetItems" },
+	["T3Warrior"] = { AL["Warrior"] .. " - " .. AL["Tier 3 Sets"], "AtlasLootSetItems" },
 
-------------------------
---- Misc Collections ---
-------------------------
+	------------------------
+	--- Misc Collections ---
+	------------------------
 
-	--AtlasLoot_TableNames["BlizzardCollectables1"][1] = "暴雪收藏表";
-	--AtlasLoot_TableNames["RareMounts1"][1] = "稀有坐骑 - 经典旧世";
-	--AtlasLoot_TableNames["RareMounts2"][1] = "稀有坐骑 - 燃烧的远征";
+	["CraftedWeapons1"] = { AL["Crafted Epic Weapons"], "AtlasLootCrafting" },
+	["WorldEpics1"] = { AL["World Epics"] .. " - " .. AL["Level 30-39"], "AtlasLootSetItems" },
+	["WorldEpics2"] = { AL["World Epics"] .. " - " .. AL["Level 40-49"], "AtlasLootSetItems" },
+	["WorldEpics3"] = { AL["World Epics"] .. " - " .. AL["Level 50-60"], "AtlasLootSetItems" },
 
---------------
---- Events ---
---------------
+	--------------------
+	--- World Bosses ---
+	--------------------
 
-  --Abyssal Council
-    AtlasLoot_TableNames["AbyssalTemplars"][1] = "深渊议会 - 圣殿骑士";
-    AtlasLoot_TableNames["AbyssalDukes"][1] = "深渊议会 - 公爵";
-    AtlasLoot_TableNames["AbyssalLords"][1] = "深渊议会 - 上层议会";
-  --Seasonal
-    --AtlasLoot_TableNames["LordAhune"][1] = "冰霜之王埃霍恩";
-    AtlasLoot_TableNames["Winterviel2"][1] = "冬幕节";
-  --Skettis
-    --AtlasLoot_TableNames["SkettisTalonpriestIshaal"][1] = "鸦爪祭司伊沙尔";
-    --AtlasLoot_TableNames["SkettisHazziksPackage"][1] = "哈吉克的包裹";
-  --Other
-    AtlasLoot_TableNames["ScourgeInvasionEvent2"][1] = "天灾入侵 - 首领";
-
---------------------
---- Rep Factions ---
---------------------
-
-  --Argent Dawn
-	AtlasLoot_TableNames["Argent1"][1] = "银色黎明: 交换的奖励";
-  --Exalted with Cenarion Expedition, The Sha'tar and The Aldor/Scryers
-    --AtlasLoot_TableNames["ShattrathFlasks1"][1] = "沙塔斯合剂";
+	--Azuregos
+	["AAzuregos"] = { AL["Azuregos"], "AtlasLootWBItems" },
+	["ASpiritA"] = { AL["Spirit of Azuregos"], "AtlasLootWBItems" },
+	["Turtlhu"] = { "Turtlhu, the Black Turtle of Doom", "AtlasLootWBItems" },
+	["Nerubian"] = { "Nerubian Overseer", "AtlasLootWBItems" },
+	["Reaver"] = { "Dark Reaver of Karazhan", "AtlasLootWBItems" },
+	["Ostarius"] = { "Ostarius", "AtlasLootWBItems" },
+	["Concavius"] = { "Concavius", "AtlasLootWBItems" },
+	["CowKing"] = { "CowKing", "AtlasLootWBItems" },
+	--Doom Lord Kazzak
+	["KKazzak"] = { AL["Lord Kazzak"], "AtlasLootWBItems" },
+	--Emrald Dragons
+	["DEmeriss"] = { AL["Emeriss"], "AtlasLootWBItems" },
+	["DLethon"] = { AL["Lethon"], "AtlasLootWBItems" },
+	["DTaerar"] = { AL["Taerar"], "AtlasLootWBItems" },
+	["DYsondre"] = { AL["Ysondre"], "AtlasLootWBItems" },
+	["DTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Emerald Dragons"] .. ")", "AtlasLootWBItems" },
 
 
+	--------------------------
+	--- Rare Spawns (1.16) ---
+	--------------------------
+	["Tarangos"] = { "Tarangos The Dampener", "AtlasLootWBItems" },
+	["Kargron"] = { "Blademaster Kargron", "AtlasLootWBItems" },
+	["Xalvic"] = { "Xalvic Blackclaw", "AtlasLootWBItems" },
+	["Mallon"] = { "Mallon The Moontouched", "AtlasLootWBItems" },
+	["Grugthok"] = { "Grug'thok the Seer", "AtlasLootWBItems" },
+	["WanderingKnight"] = { "The Wandering Knight", "AtlasLootWBItems" },
+	["CrusaderLarsarius"] = { "Crusader Larsarius The Scarlet Crusade", "AtlasLootWBItems" },
+	["Zareth"] = { "Zareth Terrorblade Demon Hunter", "AtlasLootWBItems" },
+	["Jalakar"] = { "Jal'akar Dire Troll", "AtlasLootWBItems" },
+	["Ashbeard"] = { "Explorer Ashbeard", "AtlasLootWBItems" },
+	["AdmiralBareanWestwind"] = { "Admiral Barean Westwind", "AtlasLootWBItems" },
+	
+	--------------------------
+	--- Rare Spawns (1.17) ---
+	--------------------------
+	["EarthcallerRezengal"] = { "Earthcaller Rezengal", "AtlasLootWBItems" },
+	["ShadeMage"] = { "Shade Mage", "AtlasLootWBItems" },
+	["GraypawAlpha"] = { "Graypaw Alpha", "AtlasLootWBItems" },
+	["Blazespark"] = { "Blazespark", "AtlasLootWBItems" },
+	["WitchDoctorTanzo"] = { "Witch Doctor Tan'zo", "AtlasLootWBItems" },
+	["Dawnhowl"] = { "Dawnhowl", "AtlasLootWBItems" },
+	["MaltimorsPrototype"] = { "Maltimor's Prototype", "AtlasLootWBItems" },
+	["Bonecruncher"] = { "Bonecruncher", "AtlasLootWBItems" },
+	["Duskskitter"] = { "Duskskitter", "AtlasLootWBItems" },
+	["BaronPerenolde"] = { "Baron Perenolde", "AtlasLootWBItems" },
+	["Embereye"] = { "Embereye", "AtlasLootWBItems" },
+	["Rukthok"] = { "Ruk'thok the Pyromancer", "AtlasLootWBItems" },
+	["Ripjaw"] = { "Ripjaw", "AtlasLootWBItems" },
+	["Aquitus"] = { "Aquitus", "AtlasLootWBItems" },
+	["FirstbornofArugal"] = { "Firstborn of Arugal", "AtlasLootWBItems" },
+	["Letashaz"] = { "Letashaz", "AtlasLootWBItems" },
+	["MargontheMighty"] = { "Margon the Mighty", "AtlasLootWBItems" },
+	["Stoneshell"] = { "Stoneshell", "AtlasLootWBItems" },
+	["HighvaleSilverback"] = { "Highvale Silverback", "AtlasLootWBItems" },
+	["Azurebeak"] = { "Azurebeak", "AtlasLootWBItems" },
+	["BarkskinFisher"] = { "Barkskin Fisher", "AtlasLootWBItems" },
+	["ShadeflayerGoliath"] = { "Shadeflayer Goliath", "AtlasLootWBItems" },
+	["M0L1Y"] = { "M-0L1Y", "AtlasLootWBItems" },
+	["WidowoftheWoods"] = { "Widow of the Woods", "AtlasLootWBItems" },
 
-    --- Rare Spawns (1.16) ---
-    --------------------------
-    AtlasLoot_TableNames["Tarangos"][1] = "塔兰戈斯·湿泽者";
-    AtlasLoot_TableNames["Kargron"][1] = "剑圣卡格隆";
-    AtlasLoot_TableNames["Xalvic"][1] = "萨尔维克·黑爪";
-    AtlasLoot_TableNames["Mallon"][1] = "月触者玛隆";
-    AtlasLoot_TableNames["Grugthok"][1] = "先知古尔格索克";
-    AtlasLoot_TableNames["WanderingKnight"][1] = "流浪骑士";
-    AtlasLoot_TableNames["CrusaderLarsarius"][1] = "血色十字军骑士拉萨留斯";
-    AtlasLoot_TableNames["Zareth"][1] = "恐怖之刃萨瑞特";
-    AtlasLoot_TableNames["Jalakar"][1] = "恐怖巨魔贾拉卡尔";
-    AtlasLoot_TableNames["Ashbeard"][1] = "探险家灰须";
-    AtlasLoot_TableNames["AdmiralBareanWestwind"][1] = "海军上将巴瑞安·西风";
+	--------------
+	--- Events ---
+	--------------
 
+	--Abyssal Council
+	["AbyssalTemplars"] = { "Abyssal Council - Templars", "AtlasLootWorldEvents" },
+	["AbyssalDukes"] = { "Abyssal Council - Dukes", "AtlasLootWorldEvents" },
+	["AbyssalLords"] = { "Abyssal Council - High Council", "AtlasLootWorldEvents" },
+	--Seasonal
+	["ChildrensWeek"] = { AL["Children's Week"], "AtlasLootWorldEvents" },
+	["Halloween1"] = { AL["Hallow's End"], "AtlasLootWorldEvents" },
+	["Halloween2"] = { AL["Hallow's End"], "AtlasLootWorldEvents" },
+	["HarvestFestival"] = { AL["Harvest Festival"], "AtlasLootWorldEvents" },
+	["LunarFestival1"] = { AL["Lunar Festival"], "AtlasLootWorldEvents" },
+	["LunarFestival2"] = { AL["Lunar Festival"], "AtlasLootWorldEvents" },
+	["MidsummerFestival"] = { AL["Midsummer Fire Festival"], "AtlasLootWorldEvents" },
+	["Noblegarden"] = { AL["Noblegarden"], "AtlasLootWorldEvents" },
+	["Valentineday"] = { AL["Love is in the Air"], "AtlasLootWorldEvents" },
+	["Winterviel1"] = { AL["Feast of Winter Veil"], "AtlasLootWorldEvents" },
+	["Winterviel2"] = { AL["Feast of Winter Veil"], "AtlasLootWorldEvents" },
+	--Other
+	["ElementalInvasion"] = { AL["Elemental Invasion"], "AtlasLootWorldEvents" },
+	["FishingExtravaganza"] = { AL["Stranglethorn Fishing Extravaganza"], "AtlasLootWorldEvents" },
+	["GurubashiArena"] = { AL["Gurubashi Arena Booty Run"], "AtlasLootWorldEvents" },
+	["ScourgeInvasionEvent1"] = { AL["Scourge Invasion"], "AtlasLootWorldEvents" },
+	["ScourgeInvasionEvent2"] = { AL["Scourge Invasion Bosses"], "AtlasLootWorldEvents" },
+
+	------------------------
+	--- Classic Factions ---
+	------------------------
+
+	--Argent Dawn
+	["Argent1"] = { AL["Argent Dawn"] .. ": Token Hand-ins", "AtlasLootRepItems" },
+	["Argent2"] = { AL["Argent Dawn"], "AtlasLootRepItems" },
+	["Argent3"] = { AL["Argent Dawn"], "AtlasLootRepItems" },
+	--Bloodsail Buccaneers
+	["Bloodsail1"] = { AL["Bloodsail Buccaneers"], "AtlasLootRepItems" },
+	--Brood of Nozdormu
+	["AQBroodRings"] = { AL["Brood of Nozdormu"], "AtlasLootRepItems" },
+	--Cenarion Circle
+	["Cenarion1"] = { AL["Cenarion Circle"] .. ": " .. AL["Friendly"], "AtlasLootRepItems" },
+	["Cenarion2"] = { AL["Cenarion Circle"] .. ": " .. AL["Honored"], "AtlasLootRepItems" },
+	["Cenarion3"] = { AL["Cenarion Circle"] .. ": " .. AL["Revered"], "AtlasLootRepItems" },
+	["Cenarion4"] = { AL["Cenarion Circle"] .. ": " .. AL["Exalted"], "AtlasLootRepItems" },
+	--The Darkmoon Faire
+	["Darkmoon"] = { AL["Darkmoon Faire"], "AtlasLootRepItems" },
+	--The Defilers
+	["Defilers"] = { AL["The Defilers"], "AtlasLootRepItems" },
+	--Frostwolf Clan
+	["Frostwolf1"] = { AL["Frostwolf Clan"], "AtlasLootRepItems" },
+	--Hydraxian Waterlords
+	["WaterLords1"] = { AL["Hydraxian Waterlords"], "AtlasLootRepItems" },
+	--Gelkis Clan Centaur
+	["GelkisClan1"] = { AL["Gelkis Clan Centaur"], "AtlasLootRepItems" },
+	--The League of Arathor
+	["LeagueofArathor"] = { AL["The League of Arathor"], "AtlasLootRepItems" },
+	--Magram Clan Centaur
+	["MagramClan1"] = { AL["Magram Clan Centaur"], "AtlasLootRepItems" },
+	--Stormpike Guard
+	["Stormpike1"] = { AL["Stormpike Guard"], "AtlasLootRepItems" },
+	--Thorium Brotherhood
+	["Thorium1"] = { AL["Thorium Brotherhood"] .. ": " .. AL["Friendly"] .. "/" .. AL["Honored"], "AtlasLootRepItems" },
+	["Thorium2"] = { AL["Thorium Brotherhood"] .. ": " .. AL["Revered"] .. "/" .. AL["Exalted"], "AtlasLootRepItems" },
+	--Timbermaw Hold
+	["Timbermaw"] = { AL["Timbermaw Hold"], "AtlasLootRepItems" },
+	--Wardens of Time
+	["Warderns1"] = { AL["Wardens of Time"], "AtlasLootRepItems" },
+	--Wintersaber Trainers
+	["Wintersaber1"] = { AL["Wintersaber Trainers"], "AtlasLootRepItems" },
+	--Zandalar Tribe
+	["Zandalar1"] = { AL["Zandalar Tribe"] .. ": " .. AL["Friendly"] .. "/" .. AL["Honored"], "AtlasLootRepItems" },
+	["Zandalar2"] = { AL["Zandalar Tribe"] .. ": " .. AL["Revered"] .. "/" .. AL["Exalted"], "AtlasLootRepItems" },
+
+	["Helf"] = { AL["Silvermoon Remnant"], "AtlasLootRepItems" },
+	["Helf2"] = { AL["Silvermoon Remnant"], "AtlasLootRepItems" },
+	["Helf3"] = { AL["Silvermoon Remnant"], "AtlasLootRepItems" },
+	["Revantusk"] = { AL["Revantusk Trolls"], "AtlasLootRepItems" },
+	["Revantusk2"] = { AL["Revantusk Trolls"], "AtlasLootRepItems" },
+	["Revantusk3"] = { AL["Revantusk Trolls"], "AtlasLootRepItems" },
+	["Ironforge"] = { AL["Ironforge"], "AtlasLootRepItems" },
+	["Darnassus"] = { AL["Darnassus"], "AtlasLootRepItems" },
+	["Stormwind"] = { AL["Stormwind"], "AtlasLootRepItems" },
+	["GnomereganExiles"] = { AL["Gnomeregan Exiles"], "AtlasLootRepItems" },
+	["DarkspearTrolls"] = { AL["Darkspear Trolls"], "AtlasLootRepItems" },
+	["DurotarLaborUnion"] = { AL["Durotar Labor Union"], "AtlasLootRepItems" },
+	["Undercity"] = { AL["Undercity"], "AtlasLootRepItems" },
+	["Orgrimmar"] = { AL["Orgrimmar"], "AtlasLootRepItems" },
+	["ThunderBluff"] = { AL["Thunder Bluff"], "AtlasLootRepItems" },
+	["Dalaran"] = { AL["Dalaran"], "AtlasLootRepItems" },
+	["Wildhammer"] = { AL["Wildhammer Clan"], "AtlasLootRepItems" },
+
+	--------------
+	--- Trades ---
+	--------------
+
+	--Alchemy
+	["AlchemyApprentice1"] = { AL["Alchemy"] .. ": " .. AL["Apprentice"], "AtlasLootCrafting" },
+	["AlchemyJourneyman1"] = { AL["Alchemy"] .. ": " .. AL["Journeyman"], "AtlasLootCrafting" },
+	["AlchemyExpert1"] = { AL["Alchemy"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
+	["AlchemyArtisan1"] = { AL["Alchemy"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+	["AlchemyArtisan2"] = { AL["Alchemy"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+	--BlackSmithing
+	["SmithingApprentice1"] = { AL["Blacksmithing"] .. ": " .. AL["Apprentice"], "AtlasLootCrafting" },
+	["SmithingJourneyman1"] = { AL["Blacksmithing"] .. ": " .. AL["Journeyman"], "AtlasLootCrafting" },
+	["SmithingJourneyman2"] = { AL["Blacksmithing"] .. ": " .. AL["Journeyman"], "AtlasLootCrafting" },
+	["SmithingExpert1"] = { AL["Blacksmithing"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
+	["SmithingExpert2"] = { AL["Blacksmithing"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
+	["SmithingExpert3"] = { AL["Blacksmithing"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
+	["SmithingArtisan1"] = { AL["Blacksmithing"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+	["SmithingArtisan2"] = { AL["Blacksmithing"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+	["SmithingArtisan3"] = { AL["Blacksmithing"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+	["Armorsmith1"] = { AL["Blacksmithing"] .. ": " .. AL["Armorsmith"], "AtlasLootCrafting" },
+	["Weaponsmith1"] = { AL["Blacksmithing"] .. ": " .. AL["Weaponsmith"], "AtlasLootCrafting" },
+	["Axesmith1"] = { AL["Blacksmithing"] .. ": " .. AL["Master Axesmith"], "AtlasLootCrafting" },
+	["Hammersmith1"] = { AL["Blacksmithing"] .. ": " .. AL["Master Hammersmith"], "AtlasLootCrafting" },
+	["Swordsmith1"] = { AL["Blacksmithing"] .. ": " .. AL["Master Swordsmith"], "AtlasLootCrafting" },
+	--Enchanting
+	["EnchantingApprentice1"] = { AL["Enchanting"] .. ": " .. AL["Apprentice"], "AtlasLootCrafting" },
+	["EnchantingJourneyman1"] = { AL["Enchanting"] .. ": " .. AL["Journeyman"], "AtlasLootCrafting" },
+	["EnchantingJourneyman2"] = { AL["Enchanting"] .. ": " .. AL["Journeyman"], "AtlasLootCrafting" },
+	["EnchantingExpert1"] = { AL["Enchanting"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
+	["EnchantingExpert2"] = { AL["Enchanting"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
+	["EnchantingArtisan1"] = { AL["Enchanting"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+	["EnchantingArtisan2"] = { AL["Enchanting"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+	["EnchantingArtisan3"] = { AL["Enchanting"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+	--Engineering
+	["EngineeringApprentice1"] = { AL["Engineering"] .. ": " .. AL["Apprentice"], "AtlasLootCrafting" },
+	["EngineeringJourneyman1"] = { AL["Engineering"] .. ": " .. AL["Journeyman"], "AtlasLootCrafting" },
+	["EngineeringJourneyman2"] = { AL["Engineering"] .. ": " .. AL["Journeyman"], "AtlasLootCrafting" },
+	["EngineeringExpert1"] = { AL["Engineering"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
+	["EngineeringExpert2"] = { AL["Engineering"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
+	["EngineeringArtisan1"] = { AL["Engineering"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+	["EngineeringArtisan2"] = { AL["Engineering"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+	["Gnomish1"] = { AL["Engineering"] .. ": " .. AL["Gnomish Engineering"], "AtlasLootCrafting" },
+	["Goblin1"] = { AL["Engineering"] .. ": " .. AL["Goblin Engineering"], "AtlasLootCrafting" },
+	--Leatherworking
+	["LeatherApprentice1"] = { AL["Leatherworking"] .. ": " .. AL["Apprentice"], "AtlasLootCrafting" },
+	["LeatherJourneyman1"] = { AL["Leatherworking"] .. ": " .. AL["Journeyman"], "AtlasLootCrafting" },
+	["LeatherJourneyman2"] = { AL["Leatherworking"] .. ": " .. AL["Journeyman"], "AtlasLootCrafting" },
+	["LeatherExpert1"] = { AL["Leatherworking"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
+	["LeatherExpert2"] = { AL["Leatherworking"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
+	["LeatherArtisan1"] = { AL["Leatherworking"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+	["LeatherArtisan2"] = { AL["Leatherworking"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+	["LeatherArtisan3"] = { AL["Leatherworking"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+	["Dragonscale1"] = { AL["Leatherworking"] .. ": " .. AL["Dragonscale Leatherworking"], "AtlasLootCrafting" },
+	["Elemental1"] = { AL["Leatherworking"] .. ": " .. AL["Elemental Leatherworking"], "AtlasLootCrafting" },
+	["Tribal1"] = { AL["Leatherworking"] .. ": " .. AL["Tribal Leatherworking"], "AtlasLootCrafting" },
+	--Mining
+	["Mining1"] = { AL["Mining"], "AtlasLootCrafting" },
+	["Mining2"] = { AL["Mining"], "AtlasLootCrafting" },
+	["Smelting1"] = { AL["Smelting"], "AtlasLootCrafting" },
+	["Herbalism1"] = { AL["Herbalism"], "AtlasLootCrafting" },
+	["Herbalism2"] = { AL["Herbalism"], "AtlasLootCrafting" },
+	--Tailoring
+	["TailoringApprentice1"] = { AL["Tailoring"] .. ": " .. AL["Apprentice"], "AtlasLootCrafting" },
+	["TailoringJourneyman1"] = { AL["Tailoring"] .. ": " .. AL["Journeyman"], "AtlasLootCrafting" },
+	["TailoringJourneyman2"] = { AL["Tailoring"] .. ": " .. AL["Journeyman"], "AtlasLootCrafting" },
+	["TailoringExpert1"] = { AL["Tailoring"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
+	["TailoringExpert2"] = { AL["Tailoring"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
+	["TailoringArtisan1"] = { AL["Tailoring"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+	["TailoringArtisan2"] = { AL["Tailoring"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+	["TailoringArtisan3"] = { AL["Tailoring"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+	["TailoringArtisan4"] = { AL["Tailoring"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+	["TailoringArtisan5"] = { AL["Tailoring"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+	--Cooking
+	["CookingApprentice1"] = { AL["Cooking"] .. ": " .. AL["Apprentice"], "AtlasLootCrafting" },
+	["CookingJourneyman1"] = { AL["Cooking"] .. ": " .. AL["Journeyman"], "AtlasLootCrafting" },
+	["CookingExpert1"] = { AL["Cooking"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
+	["CookingArtisan1"] = { AL["Cooking"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+	--FirstAid
+	["FirstAid1"] = { AL["First Aid"], "AtlasLootCrafting" },
+	--Survival
+	["Survival1"] = { AL["Survival"], "AtlasLootCrafting" },
+	["Survival2"] = { AL["Garderning"], "AtlasLootCrafting" },
+	--Poisons
+	["Poisons1"] = { AL["Rogue"] .. ": " .. AL["Poisons"], "AtlasLootCrafting" },
+	
+
+	-----------
+	--- PvP ---
+	-----------
+
+	--Battlegrounds
+	--Blood Ring
+	["BRRepFriendly"] = { AL["Blood Ring"] .. " " .. AL["Friendly Rewards"], "AtlasLootBGItems" },
+	["BRRepHonored"] = { AL["Blood Ring"] .. " " .. AL["Honored Rewards"], "AtlasLootBGItems" },
+	["BRRepRevered"] = { AL["Blood Ring"] .. " " .. AL["Revered Rewards"], "AtlasLootBGItems" },
+	["BRRepExalted"] = { AL["Blood Ring"] .. " " .. AL["Exalted Rewards"], "AtlasLootBGItems" },
+	--Alterac Valley
+	["AVRepFriendly"] = { AL["Alterac Valley"] .. " " .. AL["51-60 Friendly Rewards"], "AtlasLootBGItems" },
+	["AVRepHonored"] = { AL["Alterac Valley"] .. " " .. AL["51-60 Honored Rewards"], "AtlasLootBGItems" },
+	["AVRepRevered"] = { AL["Alterac Valley"] .. " " .. AL["51-60 Revered Rewards"], "AtlasLootBGItems" },
+	["AVRepExalted"] = { AL["Alterac Valley"] .. " " .. AL["51-60 Exalted Rewards"], "AtlasLootBGItems" },
+	--Arathi Basin
+	["ABRepFriendly"] = { AL["Arathi Basin"] .. " " .. AL["Friendly Rewards"], "AtlasLootBGItems" },
+	["ABRepHonored2029"] = { AL["Arathi Basin"] .. " " .. AL["20-29 Honored Rewards"], "AtlasLootBGItems" },
+	["ABRepHonored3039"] = { AL["Arathi Basin"] .. " " .. AL["30-39 Honored Rewards"], "AtlasLootBGItems" },
+	["ABRepHonored4049"] = { AL["Arathi Basin"] .. " " .. AL["40-49 Honored Rewards"], "AtlasLootBGItems" },
+	["ABRepHonored5059"] = { AL["Arathi Basin"] .. " " .. AL["50-59 Honored Rewards"], "AtlasLootBGItems" },
+	["ABRepRevered2029"] = { AL["Arathi Basin"] .. " " .. AL["20-29 Revered Rewards"], "AtlasLootBGItems" },
+	["ABRepRevered3039"] = { AL["Arathi Basin"] .. " " .. AL["30-39 Revered Rewards"], "AtlasLootBGItems" },
+	["ABRepRevered4049"] = { AL["Arathi Basin"] .. " " .. AL["40-49 Revered Rewards"], "AtlasLootBGItems" },
+	["ABRepRevered5059"] = { AL["Arathi Basin"] .. " " .. AL["50-59 Revered Rewards"], "AtlasLootBGItems" },
+	["ABRepExalted"] = { AL["Arathi Basin"] .. " " .. AL["60 Exalted Rewards"], "AtlasLootBGItems" },
+	--Warsong Gulch
+	["WSGRepFriendly"] = { AL["Warsong Gulch"] .. " " .. AL["Friendly Rewards"], "AtlasLootBGItems" },
+	["WSGRepHonored1019"] = { AL["Warsong Gulch"] .. " " .. AL["10-19 Honored Rewards"], "AtlasLootBGItems" },
+	["WSGRepHonored2029"] = { AL["Warsong Gulch"] .. " " .. AL["20-29 Honored Rewards"], "AtlasLootBGItems" },
+	["WSGRepHonored3039"] = { AL["Warsong Gulch"] .. " " .. AL["30-39 Honored Rewards"], "AtlasLootBGItems" },
+	["WSGRepHonored4049"] = { AL["Warsong Gulch"] .. " " .. AL["40-49 Honored Rewards"], "AtlasLootBGItems" },
+	["WSGRepHonored5059"] = { AL["Warsong Gulch"] .. " " .. AL["50-59 Honored Rewards"], "AtlasLootBGItems" },
+	["WSGRepRevered1019"] = { AL["Warsong Gulch"] .. " " .. AL["10-19 Revered Rewards"], "AtlasLootBGItems" },
+	["WSGRepRevered2029"] = { AL["Warsong Gulch"] .. " " .. AL["20-29 Revered Rewards"], "AtlasLootBGItems" },
+	["WSGRepRevered3039"] = { AL["Warsong Gulch"] .. " " .. AL["30-39 Revered Rewards"], "AtlasLootBGItems" },
+	["WSGRepRevered4049"] = { AL["Warsong Gulch"] .. " " .. AL["40-49 Revered Rewards"], "AtlasLootBGItems" },
+	["WSGRepRevered5059"] = { AL["Warsong Gulch"] .. " " .. AL["50-59 Revered Rewards"], "AtlasLootBGItems" },
+	["WSGRepExalted4049"] = { AL["Warsong Gulch"] .. " " .. AL["40-49 Exalted Rewards"], "AtlasLootBGItems" },
+	["WSGRepExalted5059"] = { AL["Warsong Gulch"] .. " " .. AL["50-59 Exalted Rewards"], "AtlasLootBGItems" },
+	["WSGRepExalted60"] = { AL["Warsong Gulch"] .. " " .. AL["60 Exalted Rewards"], "AtlasLootBGItems" },
+	--Misc Other PvP
+	["PvP60Accessories1"] = { AL["PvP Accessories"], "AtlasLootGeneralPvPItems" },
+	["PvP60Accessories2"] = { AL["PvP Accessories - Alliance"], "AtlasLootGeneralPvPItems" },
+	["PvP60Accessories3"] = { AL["PvP Accessories - Horde"], "AtlasLootGeneralPvPItems" },
+	["PVPWeapons1"] = { AL["Rank 14 Weapons"], "AtlasLootGeneralPvPItems" },
+	["PVPWeapons2"] = { AL["Rank 14 Weapons"], "AtlasLootGeneralPvPItems" },
+	["PvPMountsPvP"] = { AL["PvP Mounts"], "AtlasLootGeneralPvPItems" },
+	--Level 60 PvP Sets
+	["PVPDruid"] = { AL["Druid"] .. " - " .. AL["PvP Sets"], "AtlasLootGeneralPvPItems" },
+	["PVPHunter"] = { AL["Hunter"] .. " - " .. AL["PvP Sets"], "AtlasLootGeneralPvPItems" },
+	["PVPMage"] = { AL["Mage"] .. " - " .. AL["PvP Sets"], "AtlasLootGeneralPvPItems" },
+	["PVPPaladin"] = { AL["Paladin"] .. " - " .. AL["PvP Sets"], "AtlasLootGeneralPvPItems" },
+	["PVPPriest"] = { AL["Priest"] .. " - " .. AL["PvP Sets"], "AtlasLootGeneralPvPItems" },
+	["PVPRogue"] = { AL["Rogue"] .. " - " .. AL["PvP Sets"], "AtlasLootGeneralPvPItems" },
+	["PVPShaman"] = { AL["Shaman"] .. " - " .. AL["PvP Sets"], "AtlasLootGeneralPvPItems" },
+	["PVPWarlock"] = { AL["Warlock"] .. " - " .. AL["PvP Sets"], "AtlasLootGeneralPvPItems" },
+	["PVPWarrior"] = { AL["Warrior"] .. " - " .. AL["PvP Sets"], "AtlasLootGeneralPvPItems" },
+
+	-------------
+	--- Other ---
+	-------------
+
+	--Menus, the entry does nothing, but makes the generalised loot table code less complex
+	["PVPMENU"] = { "dummy", "dummy" },
+	["PVPSET"] = { "dummy", "dummy" },
+	["AVRepMenu"] = { "dummy", "dummy" },
+	["ABRepMenu"] = { "dummy", "dummy" },
+	["WSGRepMenu"] = { "dummy", "dummy" },
+	["BRRepMenu"] = { "dummy", "dummy" },
+	["AQ40SET"] = { "dummy", "dummy" },
+	["AQ20SET"] = { "dummy", "dummy" },
+	["ZGSET"] = { "dummy", "dummy" },
+	["PRE60SET"] = { "dummy", "dummy" },
+	["T3SET"] = { "dummy", "dummy" },
+	["T2SET"] = { "dummy", "dummy" },
+	["T1SET"] = { "dummy", "dummy" },
+	["T0SET"] = { "dummy", "dummy" },
+	["REPMENU"] = { "dummy", "dummy" },
+	["SETMENU"] = { "dummy", "dummy" },
+	["WORLDEPICS"] = { "dummy", "dummy" },
+	["WORLDEVENTMENU"] = { "dummy", "dummy" },
+	["AbyssalCouncil"] = { "dummy", "dummy" },
+	["ALCHEMYMENU"] = { "dummy", "dummy" },
+	["CRAFTSET"] = { "dummy", "dummy" },
+	["HONORMENU"] = { "dummy", "dummy" },
+	["CRAFTINGMENU"] = { "dummy", "dummy" },
+	["SMITHINGMENU"] = { "dummy", "dummy" },
+	["ENCHANTINGMENU"] = { "dummy", "dummy" },
+	["ENGINEERINGMENU"] = { "dummy", "dummy" },
+	["LEATHERWORKINGMENU"] = { "dummy", "dummy" },
+	["MININGMENU"] = { "dummy", "dummy" },
+	["TAILORINGMENU"] = { "dummy", "dummy" },
+	["COOKINGMENU"] = { "dummy", "dummy" },
+	["FIRSTAIDMENU"] = { "dummy", "dummy" },
+	["SURVIVALMENU"] = { "dummy", "dummy" },
+	["WishList"] = { AL["WishList"], "AtlasLootCharDB" },
+	--If all else fails!
+	["EmptyInstance"] = { "AtlasLoot", "AtlasLootFallback" },
+};
+
+AtlasLoot_TableNamesBoss = {
+	["Keys"] = {
+		["VanillaKeys"] = { AL["Keys"], "AtlasLootItems" },
+	},
+	["Blackfathom Deeps"] = {
+		["BFDGhamoora"] = { AL["Ghamoo-ra"], "AtlasLootItems" },
+		["BFDLadySarevess"] = { AL["Lady Sarevess"], "AtlasLootItems" },
+		["BFDGelihast"] = { AL["Gelihast"], "AtlasLootItems" },
+		["BFDBaronAquanis"] = { AL["Baron Aquanis"], "AtlasLootItems" },
+		["BFDTwilightLordKelris"] = { AL["Twilight Lord Kelris"], "AtlasLootItems" },
+		["BFDOldSerrakis"] = { AL["Old Serra'kis"], "AtlasLootItems" },
+		["BFDAkumai"] = { AL["Aku'mai"], "AtlasLootItems" },
+		["BFDTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Blackfathom Deeps"] .. ")", "AtlasLootItems" },
+	},
+	["Blackrock Mountain"] = {
+		["BRMScarshieldQuartermaster"] = { AL["Scarshield Quartermaster"], "AtlasLootItems" },
+		["BRDPyron"] = { AL["Overmaster Pyron"], "AtlasLootItems" },
+	},
+	["Blackrock Depths"] = {
+		["BRDLordRoccor"] = { AL["Lord Roccor"], "AtlasLootItems" },
+		["BRDHighInterrogatorGerstahn"] = { AL["High Interrogator Gerstahn"], "AtlasLootItems" },
+		["BRDAnubshiah"] = { AL["Anub'shiah"], "AtlasLootItems" },
+		["BRDEviscerator"] = { AL["Eviscerator"], "AtlasLootItems" },
+		["BRDGorosh"] = { AL["Gorosh the Dervish"], "AtlasLootItems" },
+		["BRDGrizzle"] = { AL["Grizzle"], "AtlasLootItems" },
+		["BRDHedrum"] = { AL["Hedrum the Creeper"], "AtlasLootItems" },
+		["BRDOkthor"] = { AL["Ok'thor the Breaker"], "AtlasLootItems" },
+		["BRDTheldren"] = { AL["Theldren"], "AtlasLootItems" },
+		["BRDHoundmaster"] = { AL["Houndmaster Grebmar"], "AtlasLootItems" },
+		["BRDForgewright"] = { AL["Monument of Franclorn Forgewright"], "AtlasLootItems" },
+		["BRDPyromancerLoregrain"] = { AL["Pyromancer Loregrain"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["BRDTheVault"] = { AL["The Vault"], "AtlasLootItems" },
+		["BRDWarderStilgiss"] = { AL["Warder Stilgiss"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["BRDVerek"] = { AL["Verek"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["BRDFineousDarkvire"] = { AL["Fineous Darkvire"], "AtlasLootItems" },
+		["BRDLordIncendius"] = { AL["Lord Incendius"], "AtlasLootItems" },
+		["BRDBaelGar"] = { AL["Bael'Gar"], "AtlasLootItems" },
+		["BRDGeneralAngerforge"] = { AL["General Angerforge"], "AtlasLootItems" },
+		["BRDGolemLordArgelmach"] = { AL["Golem Lord Argelmach"], "AtlasLootItems" },
+		["BRDGuzzler"] = { AL["The Grim Guzzler"], "AtlasLootItems" },
+		["BRDFlamelash"] = { AL["Ambassador Flamelash"], "AtlasLootItems" },
+		["BRDPanzor"] = { AL["Panzor the Invincible"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["BRDTomb"] = { "Summoner's Tomb", "AtlasLootItems" },
+		["BRDLyceum"] = { AL["Shadowforge Flame Keeper"], "AtlasLootItems" },
+		["BRDMagmus"] = { AL["Magmus"], "AtlasLootItems" },
+		["BRDPrincess"] = { AL["Princess Moira Bronzebeard"], "AtlasLootItems" },
+		["BRDEmperorDagranThaurissan"] = { AL["Emperor Dagran Thaurissan"], "AtlasLootItems" },
+		["BRDBSPlans"] = { "Blacksmith Plans" .. " (" .. AL["Blackrock Depths"] .. ")", "AtlasLootItems" },
+		["BRDTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Blackrock Depths"] .. ")", "AtlasLootItems" },
+	},
+	["Lower Blackrock Spire"] = {
+		["LBRSSpirestoneButcher"] = { AL["Spirestone Butcher"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["LBRSPike"] = { AL["Roughshod Pike"], "AtlasLootItems" },
+		["LBRSOmokk"] = { AL["Highlord Omokk"], "AtlasLootItems" },
+		["LBRSSpirestoneBattleLord"] = { AL["Spirestone Battle Lord"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["LBRSSpirestoneLordMagus"] = { AL["Spirestone Lord Magus"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["LBRSVosh"] = { AL["Shadow Hunter Vosh'gajin"], "AtlasLootItems" },
+		["LBRSVoone"] = { AL["War Master Voone"], "AtlasLootItems" },
+		["LBRSGrayhoof"] = { AL["Mor Grayhoof"] .. " (" .. AL["Summon"] .. ")", "AtlasLootItems" },
+		["LBRSGrimaxe"] = { AL["Bannok Grimaxe"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["LBRSSmolderweb"] = { AL["Mother Smolderweb"], "AtlasLootItems" },
+		["LBRSCrystalFang"] = { AL["Crystal Fang"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["LBRSHumanRemains"] = { AL["Human Remains"], "AtlasLootItems" },
+		["LBRSDoomhowl"] = { AL["Urok Doomhowl"] .. " (" .. AL["Summon"] .. ")", "AtlasLootItems" },
+		["LBRSZigris"] = { AL["Quartermaster Zigris"], "AtlasLootItems" },
+		["LBRSHalycon"] = { AL["Halycon"], "AtlasLootItems" },
+		["LBRSSlavener"] = { AL["Gizrul the Slavener"], "AtlasLootItems" },
+		["LBRSBashguud"] = { AL["Ghok Bashguud"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["LBRSWyrmthalak"] = { AL["Overlord Wyrmthalak"], "AtlasLootItems" },
+		["LBRSFelguard"] = { AL["Burning Felguard"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["LBRSTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Lower Blackrock Spire"] .. ")", "AtlasLootItems" },
+	},
+	["Upper Blackrock Spire"] = {
+		["UBRSEmberseer"] = { AL["Pyroguard Emberseer"], "AtlasLootItems" },
+		["UBRSSolakar"] = { AL["Solakar Flamewreath"], "AtlasLootItems" },
+		["UBRSFlame"] = { AL["Father Flame"], "AtlasLootItems" },
+		["UBRSRunewatcher"] = { AL["Jed Runewatcher"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["UBRSAnvilcrack"] = { AL["Goraluk Anvilcrack"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["UBRSRend"] = { AL["Warchief Rend Blackhand"], "AtlasLootItems" },
+		["UBRSGyth"] = { AL["Gyth"], "AtlasLootItems" },
+		["UBRSBeast"] = { AL["The Beast"], "AtlasLootItems" },
+		["UBRSValthalak"] = { AL["Lord Valthalak"] .. " (" .. AL["Summon"] .. ")", "AtlasLootItems" },
+		["UBRSDrakkisath"] = { AL["General Drakkisath"], "AtlasLootItems" },
+		["UBRSTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Upper Blackrock Spire"] .. ")", "AtlasLootItems" },
+	},
+	["Blackwing Lair"] = {
+		["BWLRazorgore"] = { AL["Razorgore the Untamed"], "AtlasLootItems" },
+		["BWLVaelastrasz"] = { AL["Vaelastrasz the Corrupt"], "AtlasLootItems" },
+		["BWLLashlayer"] = { AL["Broodlord Lashlayer"], "AtlasLootItems" },
+		["BWLFiremaw"] = { AL["Firemaw"], "AtlasLootItems" },
+		["BWLEbonroc"] = { AL["Ebonroc"], "AtlasLootItems" },
+		["BWLFlamegor"] = { AL["Flamegor"], "AtlasLootItems" },
+		["BWLChromaggus"] = { AL["Chromaggus"], "AtlasLootItems" },
+		["BWLNefarian"] = { AL["Nefarian"], "AtlasLootItems" },
+		["BWLTrashMobs"] = { AL["Trash Mobs"] .. " (" .. AL["Blackwing Lair"] .. ")", "AtlasLootItems" },
+	},
+	["The Deadmines Entrance"] = {
+		["DMMarisaduPaige"] = { AL["Marisa du'Paige"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["DMBrainwashedNoble"] = { AL["Brainwashed Noble"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["DMForemanThistlenettle"] = { AL["Foreman Thistlenettle"], "AtlasLootItems" },
+	},
+	["Hateforge Quarry"] = {
+		["HQHighForemanBargulBlackhammer"] = { AL["High Foreman Bargul Blackhammer"], "AtlasLootItems" },
+		["HQEngineerFiggles"] = { AL["Engineer Figgles"], "AtlasLootItems" },
+		["HQCorrosis"] = { AL["Corrosis"], "AtlasLootItems" },
+		["HQHatereaverAnnihilator"] = { AL["Hatereaver Annihilator"], "AtlasLootItems" },
+		["HQHargeshDoomcaller"] = { AL["Hargesh Doomcaller"], "AtlasLootItems" },
+		["HQTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
+	},
+	["The Crescent Grove"] = {
+		["TCGGrovetenderEngryss"] = { AL["Grovetender Engryss"], "AtlasLootItems" },
+		["TCGKeeperRanathos"] = { AL["Keeper Ranathos"], "AtlasLootItems" },
+		["TCGHighPriestessAlathea"] = { AL["High Priestess A'lathea"], "AtlasLootItems" },
+		["TCGFenektistheDeceiver"] = { AL["Fenektis the Deceiver"], "AtlasLootItems" },
+		["TCGMasterRaxxieth"] = { AL["Master Raxxieth"], "AtlasLootItems" },
+		["TCGTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
+	},
+	["Karazhan Crypt"] = {
+		["KCMarrowspike"] = { AL["Marrowspike"], "AtlasLootItems" },
+		["KCHivaxxis"] = { AL["Hivaxxis"], "AtlasLootItems" },
+		["KCCorpsemuncher"] = { AL["Corpsemuncher"], "AtlasLootItems" },
+		["KCGuardCaptainGort"] = { AL["Guard Captain Gort"], "AtlasLootItems" },
+		["KCArchlichEnkhraz"] = { AL["Archlich Enkhraz"], "AtlasLootItems" },
+		["KCCommanderAnderson"] = { AL["Commander Anderson"], "AtlasLootItems" },
+		["KCAlarus"] = { AL["Alarus"], "AtlasLootItems" },
+		["KCTreasure"] = { AL["Half-Buried Treasure Chest"], "AtlasLootItems" },
+		["KCTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
+	},
+	["Caverns of Time: Black Morass"] = {
+		["COTBMChronar"] = { AL["Chronar"], "AtlasLootItems" },
+		["COTBMHarbingerAphygth"] = { AL["Harbinger Aph'ygth"], "AtlasLootItems" },
+		["COTBMEpidamu"] = { AL["Epidamu"], "AtlasLootItems" },
+		["COTBMDriftingAvatar"] = { AL["Drifting Avatar of Time"], "AtlasLootItems" },
+		["COTBMTimeLordEpochronos"] = { AL["Time-Lord Epochronos"], "AtlasLootItems" },
+		["COTBMMossheart"] = { AL["Mossheart"], "AtlasLootItems" },
+		["COTBMRotmaw"] = { AL["Rotmaw"], "AtlasLootItems" },
+		["COTBMAntnormi"] = { AL["Antnormi"], "AtlasLootItems" },
+		["COTBMInfiniteChromie"] = { AL["Infinite Chromie"], "AtlasLootItems" },
+	},
+	["Stormwind Vault"] = {
+		["SWVAszoshGrimflame"] = { AL["Aszosh Grimflame"], "AtlasLootItems" },
+		["SWVThamGrarr"] = { AL["Tham'Grarr"], "AtlasLootItems" },
+		["SWVBlackBride"] = { AL["Black Bride"], "AtlasLootItems" },
+		["SWVDamian"] = { AL["Damian"], "AtlasLootItems" },
+		["SWVVolkanCruelblade"] = { AL["Volkan Cruelblade"], "AtlasLootItems" },
+		["SWVVaultArmoryEquipment"] = { AL["Arc'tiras / Vault Armory Equipment"], "AtlasLootItems" },
+	},
+	["The Deadmines"] = {
+		["DMRhahkZor"] = { AL["Rhahk'Zor"], "AtlasLootItems" },
+		["DMMinerJohnson"] = { AL["Miner Johnson"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["DMSneed"] = { AL["Sneed"], "AtlasLootItems" },
+		["DMSneedsShredder"] = { AL["Sneed's Shredder"], "AtlasLootItems" },
+		["DMGilnid"] = { AL["Gilnid"], "AtlasLootItems" },
+		["DMDefiasGunpowder"] = { AL["Defias Gunpowder"], "AtlasLootItems" },
+		["DMMrSmite"] = { AL["Mr. Smite"], "AtlasLootItems" },
+		["DMCookie"] = { AL["Cookie"], "AtlasLootItems" },
+		["DMCaptainGreenskin"] = { AL["Captain Greenskin"], "AtlasLootItems" },
+		["DMVanCleef"] = { AL["Edwin VanCleef"], "AtlasLootItems" },
+		["DMTrash"] = { AL["Trash Mobs"] .. " (" .. AL["The Deadmines"] .. ")", "AtlasLootItems" },
+	},
+	["Dire Maul East"] = {
+		["DMEPusillin"] = { AL["Pusillin"], "AtlasLootItems" },
+		["DMEZevrimThornhoof"] = { AL["Zevrim Thornhoof"], "AtlasLootItems" },
+		["DMEHydro"] = { AL["Hydrospawn"], "AtlasLootItems" },
+		["DMELethtendris"] = { AL["Lethtendris"], "AtlasLootItems" },
+		["DMEPimgib"] = { AL["Pimgib"], "AtlasLootItems" },
+		["DMEAlzzin"] = { AL["Alzzin the Wildshaper"], "AtlasLootItems" },
+		["DMEIsalien"] = { AL["Isalien"], "AtlasLootItems" },
+		["DMETrash"] = { AL["Trash Mobs"] .. " (" .. AL["Dire Maul (East)"] .. ")", "AtlasLootItems" },
+		["DMEShard"] = { AL["Felvine Shard"], "AtlasLootItems" },
+		["DMTome"] = { AL["A Dusty Tome"], "AtlasLootItems" },
+		["DMBooks"] = { "Dire Maul Books", "AtlasLootItems" },
+	},
+	["Dire Maul North"] = {
+		["DMNGuardMoldar"] = { AL["Guard Mol'dar"], "AtlasLootItems" },
+		["DMNStomperKreeg"] = { AL["Stomper Kreeg"], "AtlasLootItems" },
+		["DMNGuardFengus"] = { AL["Guard Fengus"], "AtlasLootItems" },
+		["DMNThimblejack"] = { AL["Knot Thimblejack"], "AtlasLootItems" },
+		["DMNGuardSlipkik"] = { AL["Guard Slip'kik"], "AtlasLootItems" },
+		["DMNCaptainKromcrush"] = { AL["Captain Kromcrush"], "AtlasLootItems" },
+		["DMNChoRush"] = { AL["Cho'Rush the Observer"], "AtlasLootItems" },
+		["DMNKingGordok"] = { AL["King Gordok"], "AtlasLootItems" },
+		["DMNTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Dire Maul (North)"] .. ")", "AtlasLootItems" },
+		["DMNTRIBUTERUN"] = { AL["DM North Tribute Chest"], "AtlasLootItems" },
+	},
+	["Dire Maul West"] = {
+		["DMWTendrisWarpwood"] = { AL["Tendris Warpwood"], "AtlasLootItems" },
+		["DMWIllyannaRavenoak"] = { AL["Illyanna Ravenoak"], "AtlasLootItems" },
+		["DMWMagisterKalendris"] = { AL["Magister Kalendris"], "AtlasLootItems" },
+		["DMWTsuzee"] = { AL["Tsu'zee"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["DMWRevanchion"] = { AL["Revanchion"] .. " (" .. AL["Scourge Invasion"] .. ")", "AtlasLootItems" },
+		["DMWImmolthar"] = { AL["Immol'thar"], "AtlasLootItems" },
+		["DMWHelnurath"] = { AL["Lord Hel'nurath"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["DMWPrinceTortheldrin"] = { AL["Prince Tortheldrin"], "AtlasLootItems" },
+		["DMWShendralarProvisioner"] = { AL["Shen'dralar Provisioner"], "AtlasLootItems" },
+		["DMWTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Dire Maul (West)"] .. ")", "AtlasLootItems" },
+	},
+	["Gnomeregan Entrance"] = {
+		["GnNamdoBizzfizzle"] = { AL["Namdo Bizzfizzle"], "AtlasLootItems" },
+		["GnTechbot"] = { AL["Techbot"], "AtlasLootItems" },
+		["GnPunchographA"] = { AL["Matrix Punchograph 3005-A"], "AtlasLootItems" },
+		["GnOutsideTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Gnomeregan"] .. " " .. AL["Entrance"] .. ")", "AtlasLootItems" },
+	},
+	["Gnomeregan"] = {
+		["GnGrubbis"] = { AL["Grubbis"], "AtlasLootItems" },
+		["GnViscousFallout"] = { AL["Viscous Fallout"], "AtlasLootItems" },
+		["GnElectrocutioner6000"] = { AL["Electrocutioner 6000"], "AtlasLootItems" },
+		["GnCrowdPummeler960"] = { AL["Crowd Pummeler 9-60"], "AtlasLootItems" },
+		["GnDIAmbassador"] = { AL["Dark Iron Ambassador"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["GnMekgineerThermaplugg"] = { AL["Mekgineer Thermaplugg"], "AtlasLootItems" },
+		["GnTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Gnomeregan"] .. ")", "AtlasLootItems" },
+		["GnPunchographB"] = { AL["Matrix Punchograph 3005-B"], "AtlasLootItems" },
+		["GnPunchographC"] = { AL["Matrix Punchograph 3005-C"], "AtlasLootItems" },
+		["GnPunchographD"] = { AL["Matrix Punchograph 3005-D"], "AtlasLootItems" },
+	},
+	["Maraudon Entrance"] = {
+		["MaraNamelesProphet"] = { AL["The Nameles Prophet"], "AtlasLootItems" },
+		["MaraKhanKolk"] = { AL["Kolk"] .. " (The First Khan)", "AtlasLootItems" },
+		["MaraKhanGelk"] = { AL["Gelk"] .. " (The Second Khan)", "AtlasLootItems" },
+	},
+	["Maraudon"] = {
+		["MaraKhanMagra"] = { AL["Magra"] .. " (The Third Khan)", "AtlasLootItems" },
+		["MaraKhanVeng"] = { AL["Veng"] .. " (The Fifth Khan)", "AtlasLootItems" },
+		["MaraNoxxion"] = { AL["Noxxion"], "AtlasLootItems" },
+		["MaraRazorlash"] = { AL["Razorlash"], "AtlasLootItems" },
+		["MaraKhanMaraudos"] = { AL["Maraudos"] .. " (The Forth Khan)", "AtlasLootItems" },
+		["MaraLordVyletongue"] = { AL["Lord Vyletongue"], "AtlasLootItems" },
+		["MaraMeshlok"] = { AL["Meshlok the Harvester"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["MaraCelebras"] = { AL["Celebras the Cursed"], "AtlasLootItems" },
+		["MaraLandslide"] = { AL["Landslide"], "AtlasLootItems" },
+		["MaraTinkererGizlock"] = { AL["Tinkerer Gizlock"], "AtlasLootItems" },
+		["MaraRotgrip"] = { AL["Rotgrip"], "AtlasLootItems" },
+		["MaraPrincessTheradras"] = { AL["Princess Theradras"], "AtlasLootItems" },
+		["MaraTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
+	},
+	["Molten Core"] = {
+		["MCLucifron"] = { AL["Lucifron"], "AtlasLootItems" },
+		["MCMagmadar"] = { AL["Magmadar"], "AtlasLootItems" },
+		["MCGehennas"] = { AL["Gehennas"], "AtlasLootItems" },
+		["MCGarr"] = { AL["Garr"], "AtlasLootItems" },
+		["MCShazzrah"] = { AL["Shazzrah"], "AtlasLootItems" },
+		["MCGeddon"] = { AL["Baron Geddon"], "AtlasLootItems" },
+		["MCGolemagg"] = { AL["Golemagg the Incinerator"], "AtlasLootItems" },
+		["MCSulfuron"] = { AL["Sulfuron Harbinger"], "AtlasLootItems" },
+		["MCMajordomo"] = { AL["Majordomo Executus"], "AtlasLootItems" },
+		["MCRagnaros"] = { AL["Ragnaros"], "AtlasLootItems" },
+		["MCRANDOMBOSSDROPS"] = { "Random Boss Drops", "AtlasLootItems" },
+		["MCTrashMobs"] = { AL["Trash Mobs"] .. " (" .. AL["Molten Core"] .. ")", "AtlasLootItems" },
+	},
+	["Naxxramas"] = {
+		["NAXPatchwerk"] = { AL["Patchwerk"], "AtlasLootItems" },
+		["NAXGrobbulus"] = { AL["Grobbulus"], "AtlasLootItems" },
+		["NAXGluth"] = { AL["Gluth"], "AtlasLootItems" },
+		["NAXThaddius"] = { AL["Thaddius"], "AtlasLootItems" },
+		["NAXAnubRekhan"] = { AL["Anub'Rekhan"], "AtlasLootItems" },
+		["NAXGrandWidowFaerlina"] = { AL["Grand Widow Faerlina"], "AtlasLootItems" },
+		["NAXMaexxna"] = { AL["Maexxna"], "AtlasLootItems" },
+		["NAXInstructorRazuvious"] = { AL["Instructor Razuvious"], "AtlasLootItems" },
+		["NAXGothiktheHarvester"] = { AL["Gothik the Harvester"], "AtlasLootItems" },
+		["NAXTheFourHorsemen"] = { AL["The Four Horsemen"], "AtlasLootItems" },
+		["NAXNoththePlaguebringer"] = { AL["Noth the Plaguebringer"], "AtlasLootItems" },
+		["NAXHeigantheUnclean"] = { AL["Heigan the Unclean"], "AtlasLootItems" },
+		["NAXLoatheb"] = { AL["Loatheb"], "AtlasLootItems" },
+		["NAXSapphiron"] = { AL["Sapphiron"], "AtlasLootItems" },
+		["NAXKelThuzard"] = { AL["Kel'Thuzad"], "AtlasLootItems" },
+		["NAXTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Naxxramas"] .. ")", "AtlasLootItems" },
+	},
+	["Onyxia's Lair"] = {
+		["Onyxia"] = { AL["Onyxia"], "AtlasLootItems" },
+	},
+	["Ragefire Chasm"] = {
+		["RFCTaragaman"] = { AL["Taragaman the Hungerer"], "AtlasLootItems" },
+		["RFCOggleflint"] = { AL["Oggleflint"], "AtlasLootItems" },
+		["RFCJergosh"] = { AL["Jergosh the Invoker"], "AtlasLootItems" },
+		["RFCBazzalan"] = { AL["Bazzalan"], "AtlasLootItems" },
+	},
+	["Razorfen Downs"] = {
+		["RFDTutenkash"] = { AL["Tuten'kash"], "AtlasLootItems" },
+		["RFDHenryStern"] = { AL["Henry Stern"], "AtlasLootItems" },
+		["RFDLadyF"] = { AL["Lady Falther'ess"] .. " (" .. AL["Scourge Invasion"] .. ")", "AtlasLootItems" },
+		["RFDMordreshFireEye"] = { AL["Mordresh Fire Eye"], "AtlasLootItems" },
+		["RFDGlutton"] = { AL["Glutton"], "AtlasLootItems" },
+		["RFDRagglesnout"] = { AL["Ragglesnout"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["RFDAmnennar"] = { AL["Amnennar the Coldbringer"], "AtlasLootItems" },
+		["RFDPlaguemaw"] = { AL["Plaguemaw the Rotting"], "AtlasLootItems" },
+		["RFDTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Razorfen Downs"] .. ")", "AtlasLootItems" },
+	},
+	["Razorfen Kraul"] = {
+		["RFKAggem"] = { AL["Aggem Thorncurse"], "AtlasLootItems" },
+		["RFKDeathSpeakerJargba"] = { AL["Death Speaker Jargba"], "AtlasLootItems" },
+		["RFKRazorfenSpearhide"] = { AL["Razorfen Spearhide"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["RFKOverlordRamtusk"] = { AL["Overlord Ramtusk"], "AtlasLootItems" },
+		["RFKAgathelos"] = { AL["Agathelos the Raging"], "AtlasLootItems" },
+		["RFKBlindHunter"] = { AL["Blind Hunter"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["RFKCharlgaRazorflank"] = { AL["Charlga Razorflank"], "AtlasLootItems" },
+		["RFKEarthcallerHalmgar"] = { AL["Earthcaller Halmgar"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["RFKRoogug"] = { AL["Roogug"], "AtlasLootItems" },
+		["RFKTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Razorfen Kraul"] .. ")", "AtlasLootItems" },
+	},
+	["The Ruins of Ahn'Qiraj"] = {
+		["AQ20Kurinnaxx"] = { AL["Kurinnaxx"], "AtlasLootItems" },
+		["AQ20Andorov"] = { AL["Lieutenant General Andorov"], "AtlasLootItems" },
+		["AQ20CAPTAIN"] = { AL["Rajaxx's Captains"], "AtlasLootItems" },
+		["AQ20Rajaxx"] = { AL["General Rajaxx"], "AtlasLootItems" },
+		["AQ20Moam"] = { AL["Moam"], "AtlasLootItems" },
+		["AQ20Buru"] = { AL["Buru the Gorger"], "AtlasLootItems" },
+		["AQ20Ayamiss"] = { AL["Ayamiss the Hunter"], "AtlasLootItems" },
+		["AQ20Ossirian"] = { AL["Ossirian the Unscarred"], "AtlasLootItems" },
+		["AQ20Trash"] = { AL["Trash Mobs"] .. " (AQ20)", "AtlasLootItems" },
+		["AQ20ClassBooks"] = { "AQ Class Books", "AtlasLootItems" },
+		["AQEnchants"] = { "AQ Enchants", "AtlasLootItems" },
+	},
+	["Scarlet Monestery - Armory"] = {
+		["SMHerod"] = { AL["Herod"], "AtlasLootItems" },
+		["SMATrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery (Armory)"] .. ")", "AtlasLootItems" },
+	},
+	["Scarlet Monestery - Cathedral"] = {
+		["SMFairbanks"] = { AL["High Inquisitor Fairbanks"], "AtlasLootItems" },
+		["SMMograine"] = { AL["Scarlet Commander Mograine"], "AtlasLootItems" },
+		["SMWhitemane"] = { AL["High Inquisitor Whitemane"], "AtlasLootItems" },
+		["SMCTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery (Cathedral)"] .. ")", "AtlasLootItems" },
+	},
+	["Scarlet Monestery - Graveyard"] = {
+		["SMVishas"] = { AL["Interrogator Vishas"], "AtlasLootItems" },
+		["SMScorn"] = { AL["Scorn"] .. " (" .. AL["Scourge Invasion"] .. ")", "AtlasLootItems" },
+		["SMIronspine"] = { AL["Ironspine"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["SMAzshir"] = { AL["Azshir the Sleepless"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["SMFallenChampion"] = { AL["Fallen Champion"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["SMBloodmageThalnos"] = { AL["Bloodmage Thalnos"], "AtlasLootItems" },
+		["SMGTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery (Graveyard)"] .. ")", "AtlasLootItems" },
+	},
+	["Scarlet Monestery - Library"] = {
+		["SMHoundmasterLoksey"] = { AL["Houndmaster Loksey"], "AtlasLootItems" },
+		["SMDoan"] = { AL["Arcanist Doan"], "AtlasLootItems" },
+		["SMDoansBox"] = { AL["Doan's Strongbox"], "AtlasLootItems" },
+		["SMLTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery (Library)"] .. ")", "AtlasLootItems" },
+	},
+	["Scholomance"] = {
+		["SCHOLOBlood"] = { AL["Blood Steward of Kirtonos"], "AtlasLootItems" },
+		["SCHOLOKirtonostheHerald"] = { AL["Kirtonos the Herald"], "AtlasLootItems" },
+		["SCHOLOJandiceBarov"] = { AL["Jandice Barov"], "AtlasLootItems" },
+		["SCHOLOLordBlackwood"] = { AL["Lord Blackwood"] .. " (" .. AL["Scourge Invasion"] .. ")", "AtlasLootItems" },
+		["SCHOLORattlegore"] = { AL["Rattlegore"], "AtlasLootItems" },
+		["SCHOLODeathKnight"] = { AL["Death Knight Darkreaver"], "AtlasLootItems" },
+		["SCHOLOMarduk"] = { AL["Marduk Blackpool"], "AtlasLootItems" },
+		["SCHOLOVectus"] = { AL["Vectus"], "AtlasLootItems" },
+		["SCHOLORasFrostwhisper"] = { AL["Ras Frostwhisper"], "AtlasLootItems" },
+		["SCHOLOKormok"] = { AL["Kormok"], "AtlasLootItems" },
+		["SCHOLOInstructorMalicia"] = { AL["Instructor Malicia"], "AtlasLootItems" },
+		["SCHOLODoctorTheolenKrastinov"] = { AL["Doctor Theolen Krastinov"], "AtlasLootItems" },
+		["SCHOLOLorekeeperPolkelt"] = { AL["Lorekeeper Polkelt"], "AtlasLootItems" },
+		["SCHOLOTheRavenian"] = { AL["The Ravenian"], "AtlasLootItems" },
+		["SCHOLOLordAlexeiBarov"] = { AL["Lord Alexei Barov"], "AtlasLootItems" },
+		["SCHOLOLadyIlluciaBarov"] = { AL["Lady Illucia Barov"], "AtlasLootItems" },
+		["SCHOLODarkmasterGandling"] = { AL["Darkmaster Gandling"], "AtlasLootItems" },
+		["SCHOLOTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scholomance"] .. ")", "AtlasLootItems" },
+	},
+	["Shadowfang Keep"] = {
+		["SFKRethilgore"] = { AL["Rethilgore"], "AtlasLootItems" },
+		["SFKFelSteed"] = { AL["Fel Steed"], "AtlasLootItems" },
+		["SFKJordansHammer"] = { AL["Jordan's Hammer"], "AtlasLootItems" },
+		["SFKRazorclawtheButcher"] = { AL["Razorclaw the Butcher"], "AtlasLootItems" },
+		["SFKSilverlaine"] = { AL["Baron Silverlaine"], "AtlasLootItems" },
+		["SFKSpringvale"] = { AL["Commander Springvale"], "AtlasLootItems" },
+		["SFKSever"] = { AL["Sever"] .. " (" .. AL["Scourge Invasion"] .. ")", "AtlasLootItems" },
+		["SFKOdotheBlindwatcher"] = { AL["Odo the Blindwatcher"], "AtlasLootItems" },
+		["SFKFenrustheDevourer"] = { AL["Fenrus the Devourer"], "AtlasLootItems" },
+		["SFKBookofUr"] = { AL["The Book of Ur"], "AtlasLootItems" },
+		["SFKArugalsVoidwalker"] = { AL["Arugal's Voidwalker"], "AtlasLootItems" },
+		["SFKWolfMasterNandos"] = { AL["Wolf Master Nandos"], "AtlasLootItems" },
+		["SFKArchmageArugal"] = { AL["Archmage Arugal"], "AtlasLootItems" },
+		["SFKDeathswornCaptain"] = { AL["Deathsworn Captain"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["SFKTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Shadowfang Keep"] .. ")", "AtlasLootItems" },
+	},
+	["The Stockade"] = {
+		["SWStKamDeepfury"] = { AL["Kam Deepfury"], "AtlasLootItems" },
+		["SWStBruegalIronknuckle"] = { AL["Bruegal Ironknuckle"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["SWStTrash"] = { AL["Trash Mobs"] .. " (" .. AL["The Stockade"] .. ")", "AtlasLootItems" },
+	},
+	["Stratholme"] = {
+		["STRATSkull"] = { AL["Skul"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["STRATStratholmeCourier"] = { AL["Stratholme Courier"], "AtlasLootItems" },
+		["STRATPostmaster"] = { AL["Postmaster Malown"], "AtlasLootItems" },
+		["STRATFrasSiabi"] = { AL["Fras Siabi"], "AtlasLootItems" },
+		["STRATAtiesh"] = { "Atiesh <Hand of Sargeras>", "AtlasLootItems" },
+		["STRATBalzaphon"] = { AL["Balzaphon"] .. " (" .. AL["Scourge Invasion"] .. ")", "AtlasLootItems" },
+		["STRATHearthsingerForresten"] = { AL["Hearthsinger Forresten"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["STRATTheUnforgiven"] = { AL["The Unforgiven"], "AtlasLootItems" },
+		["STRATTimmytheCruel"] = { AL["Timmy the Cruel"], "AtlasLootItems" },
+		["STRATMalor"] = { AL["Malor the Zealous"], "AtlasLootItems" },
+		["STRATMalorsStrongbox"] = { AL["Malor's Strongbox"], "AtlasLootItems" },
+		["STRATCrimsonHammersmith"] = { AL["Crimson Hammersmith"] .. " (" .. AL["Summon"] .. ")", "AtlasLootItems" },
+		["STRATBSPlansSerenity"] = { "Plans: Serenity", "AtlasLootItems" },
+		["STRATCannonMasterWilley"] = { AL["Cannon Master Willey"], "AtlasLootItems" },
+		["STRATArchivistGalford"] = { AL["Archivist Galford"], "AtlasLootItems" },
+		["STRATBalnazzar"] = { AL["Balnazzar"], "AtlasLootItems" },
+		["STRATSothosJarien"] = { AL["Sothos"] .. " & " .. AL["Jarien"], "AtlasLootItems" },
+		["STRATStonespine"] = { AL["Stonespine"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["STRATNerubenkan"] = { AL["Nerub'enkan"], "AtlasLootItems" },
+		["STRATBaronessAnastari"] = { AL["Baroness Anastari"], "AtlasLootItems" },
+		["STRATBlackGuardSwordsmith"] = { AL["Black Guard Swordsmith"] .. " (" .. AL["Summon"] .. ")", "AtlasLootItems" },
+		["STRATBSPlansCorruption"] = { "Plans: Corruption", "AtlasLootItems" },
+		["STRATMalekithePallid"] = { AL["Maleki the Pallid"], "AtlasLootItems" },
+		["STRATMagistrateBarthilas"] = { AL["Magistrate Barthilas"], "AtlasLootItems" },
+		["STRATRamsteintheGorger"] = { AL["Ramstein the Gorger"], "AtlasLootItems" },
+		["STRATBaronRivendare"] = { AL["Baron Rivendare"], "AtlasLootItems" },
+		["STRATTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Stratholme"] .. ")", "AtlasLootItems" },
+	},
+	["Sunken Temple"] = {
+		["STSpawnOfHakkar"] = { AL["Spawn of Hakkar"], "AtlasLootItems" },
+		["STBalconyMinibosses"] = { AL["Balcony Minibosses"], "AtlasLootItems" },
+		["STAtalalarion"] = { AL["Atal'alarion"], "AtlasLootItems" },
+		["STDreamscythe"] = { AL["Dreamscythe"], "AtlasLootItems" },
+		["STWeaver"] = { AL["Weaver"], "AtlasLootItems" },
+		["STAvatarofHakkar"] = { AL["Avatar of Hakkar"], "AtlasLootItems" },
+		["STJammalan"] = { AL["Jammal'an the Prophet"], "AtlasLootItems" },
+		["STOgom"] = { AL["Ogom the Wretched"], "AtlasLootItems" },
+		["STMorphaz"] = { AL["Morphaz"], "AtlasLootItems" },
+		["STHazzas"] = { AL["Hazzas"], "AtlasLootItems" },
+		["STEranikus"] = { AL["Shade of Eranikus"], "AtlasLootItems" },
+		["STTrash"] = { AL["Trash Mobs"] .. " (" .. AL["The Sunken Temple"] .. ")", "AtlasLootItems" },
+	},
+	["Temple of Ahn'Qiraj"] = {
+		["AQ40Skeram"] = { AL["The Prophet Skeram"], "AtlasLootItems" },
+		["AQ40Trio"] = { AL["The Bug Family"], "AtlasLootItems" },
+		["AQ40Sartura"] = { AL["Battleguard Sartura"], "AtlasLootItems" },
+		["AQ40Fankriss"] = { AL["Fankriss the Unyielding"], "AtlasLootItems" },
+		["AQ40Viscidus"] = { AL["Viscidus"], "AtlasLootItems" },
+		["AQ40Huhuran"] = { AL["Princess Huhuran"], "AtlasLootItems" },
+		["AQ40Emperors"] = { AL["The Twin Emperors"], "AtlasLootItems" },
+		["AQ40Ouro"] = { AL["Ouro"], "AtlasLootItems" },
+		["AQ40CThun"] = { AL["C'Thun"], "AtlasLootItems" },
+		["AQ40Trash1"] = { AL["Trash Mobs"] .. " (AQ40)", "AtlasLootItems" },
+		["AQ40Trash2"] = { AL["Trash Mobs"] .. " (AQ40)", "AtlasLootItems" },
+		["AQOpening"] = { "AQ Opening Quest Line", "AtlasLootItems" },
+	},
+	["Uldaman Entrance"] = {
+		["UldMagreganDeepshadow"] = { AL["Magregan Deepshadow"], "AtlasLootItems" },
+		["UldTabletofRyuneh"] = { "Tablet of Ryun'eh", "AtlasLootItems" },
+		["UldKromStoutarmChest"] = { AL["Krom Stoutarm's Chest"], "AtlasLootItems" },
+		["UldGarrettFamilyChest"] = { AL["Garrett Family Chest"], "AtlasLootItems" },
+		["UldShovelphlange"] = { AL["Digmaster Shovelphlange"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	},
+	["Uldaman"] = {
+		["UldRevelosh"] = { AL["Revelosh"], "AtlasLootItems" },
+		["UldEric"] = { AL["Baelog"], "AtlasLootItems" },
+		["UldOlaf"] = { AL["Baelog"], "AtlasLootItems" },
+		["UldBaelog"] = { AL["Baelog"], "AtlasLootItems" },
+		["UldBaelogsChest"] = { AL["Baelog"], "AtlasLootItems" },
+		["UldIronaya"] = { AL["Ironaya"], "AtlasLootItems" },
+		["UldObsidianSentinel"] = { AL["Obsidian Sentinel"], "AtlasLootItems" },
+		["UldAncientStoneKeeper"] = { AL["Ancient Stone Keeper"], "AtlasLootItems" },
+		["UldGalgannFirehammer"] = { AL["Galgann Firehammer"], "AtlasLootItems" },
+		["UldTabletofWill"] = { "Tablet of Will", "AtlasLootItems" },
+		["UldShadowforgeCache"] = { "Shadowforge Cache", "AtlasLootItems" },
+		["UldGrimlok"] = { AL["Grimlok"], "AtlasLootItems" },
+		["UldArchaedas"] = { AL["Archaedas"], "AtlasLootItems" },
+		["UldTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Uldaman"] .. ")", "AtlasLootItems" },
+	},
+	["Gilneas City"] = {
+		["GCMatthiasHoltz"] = { AL["Matthias Holtz"], "AtlasLootItems" },
+		["GCPackmasterRagetooth"] = { AL["Packmaster Ragetooth"], "AtlasLootItems" },
+		["GCJudgeSutherland"] = { AL["Judge Sutherland"], "AtlasLootItems" },
+		["GCDustivanBlackcowl"] = { AL["Dustivan Blackcowl"], "AtlasLootItems" },
+		["GCMarshalMagnusGreystone"] = { AL["Marshal Magnus Greystone"], "AtlasLootItems" },
+		["GCHorsemasterLevvin"] = { AL["Horsemaster Levvin"], "AtlasLootItems" },
+		["GCHarlowFamilyChest"] = { AL["Harlow Family Chest"], "AtlasLootItems" },
+		["GCGennGreymane"] = { AL["Genn Greymane"], "AtlasLootItems" },
+		["GCTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
+	},
+	["Wailing Caverns Entrance"] = {
+		["WCKalldanFelmoon"] = { AL["Kalldan Felmoon"], "AtlasLootItems" },
+		["WCMadMagglish"] = { AL["Mad Magglish"], "AtlasLootItems" },
+		["WCTrigoretheLasher"] = { AL["Trigore the Lasher"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	},
+	["Wailing Caverns"] = {
+		["WCBoahn"] = { AL["Boahn"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["WCLordCobrahn"] = { AL["Lord Cobrahn"], "AtlasLootItems" },
+		["WCLadyAnacondra"] = { AL["Lady Anacondra"], "AtlasLootItems" },
+		["WCKresh"] = { AL["Kresh"], "AtlasLootItems" },
+		["WCLordPythas"] = { AL["Lord Pythas"], "AtlasLootItems" },
+		["WCSkum"] = { AL["Skum"], "AtlasLootItems" },
+		["WCLordSerpentis"] = { AL["Lord Serpentis"], "AtlasLootItems" },
+		["WCVerdan"] = { AL["Verdan the Everliving"], "AtlasLootItems" },
+		["WCMutanus"] = { AL["Mutanus the Devourer"], "AtlasLootItems" },
+		["WCDeviateFaerieDragon"] = { AL["Deviate Faerie Dragon"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["WCTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Wailing Caverns"] .. ")", "AtlasLootItems" },
+	},
+	["Zul'Farrak"] = {
+		["ZFAntusul"] = { AL["Antu'sul"], "AtlasLootItems" },
+		["ZFThekatheMartyr"] = { AL["Theka the Martyr"], "AtlasLootItems" },
+		["ZFWitchDoctorZumrah"] = { AL["Witch Doctor Zum'rah"], "AtlasLootItems" },
+		["ZFNekrumGutchewer"] = { AL["Nekrum Gutchewer"], "AtlasLootItems" },
+		["ZFSezzziz"] = { AL["Shadowpriest Sezz'ziz"], "AtlasLootItems" },
+		["ZFDustwraith"] = { AL["Dustwraith"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["ZFSergeantBly"] = { AL["Sergeant Bly"], "AtlasLootItems" },
+		["ZFSandfury"] = { AL["Sandfury Executioner"], "AtlasLootItems" },
+		["ZFHydromancerVelratha"] = { AL["Hydromancer Velratha"], "AtlasLootItems" },
+		["ZFGahzrilla"] = { AL["Gahz'rilla"], "AtlasLootItems" },
+		["ZFChiefUkorzSandscalp"] = { AL["Chief Ukorz Sandscalp"], "AtlasLootItems" },
+		["ZFZerillis"] = { AL["Zerillis"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["ZFTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Zul'Farrak"] .. ")", "AtlasLootItems" },
+	},
+	["Zul'Gurub"] = {
+		["ZGJeklik"] = { AL["High Priestess Jeklik"], "AtlasLootItems" },
+		["ZGVenoxis"] = { AL["High Priest Venoxis"], "AtlasLootItems" },
+		["ZGMarli"] = { AL["High Priestess Mar'li"], "AtlasLootItems" },
+		["ZGMandokir"] = { AL["Bloodlord Mandokir"], "AtlasLootItems" },
+		["ZGGrilek"] = { AL["Gri'lek"], "AtlasLootItems" },
+		["ZGHazzarah"] = { AL["Hazza'rah"], "AtlasLootItems" },
+		["ZGRenataki"] = { AL["Renataki"], "AtlasLootItems" },
+		["ZGWushoolay"] = { AL["Wushoolay"], "AtlasLootItems" },
+		["ZGGahzranka"] = { AL["Gahz'ranka"], "AtlasLootItems" },
+		["ZGThekal"] = { AL["High Priest Thekal"], "AtlasLootItems" },
+		["ZGArlokk"] = { AL["High Priestess Arlokk"], "AtlasLootItems" },
+		["ZGJindo"] = { AL["Jin'do the Hexxer"], "AtlasLootItems" },
+		["ZGHakkar"] = { AL["Hakkar"], "AtlasLootItems" },
+		["ZGMuddyChurningWaters"] = { AL["Muddy Churning Waters"], "AtlasLootItems" },
+		["ZGJinxedHoodooPile"] = { AL["Jinxed Hoodoo Pile"], "AtlasLootItems" },
+		["ZGShared"] = { "Shared ZG Priest Drops", "AtlasLootItems" },
+		["ZGTrash1"] = { AL["Trash Mobs"] .. " (" .. AL["Zul'Gurub"] .. ")", "AtlasLootItems" },
+		["ZGTrash2"] = { AL["Trash Mobs"] .. " (" .. AL["Zul'Gurub"] .. ")", "AtlasLootItems" },
+		["ZGEnchants"] = { "ZG Enchants", "AtlasLootItems" },
+	},
+	["Emerald Sanctum"] = {
+		["ESErennius"] = { AL["Erennius"], "AtlasLootItems" },
+		["ESSolnius1"] = { AL["Solnius the Awakener"], "AtlasLootItems" },
+		["ESSolnius2"] = { AL["Solnius the Awakener (Page 2)"], "AtlasLootItems" },
+		["ESHardMode"] = { AL["Favor of Erennius (ES Hard Mode)"], "AtlasLootItems" },
+		["ESTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
+	},
+	["Lower Karazhan Halls"] = {
+		["LKHRolfen"] = { AL["Master Blacksmith Rolfen"], "AtlasLootItems" },
+		["LKHBroodQueenAraxxna"] = { AL["Erennius"], "AtlasLootItems" },
+		["LKHLordBlackwaldII"] = { AL["Lord Blackwald II"], "AtlasLootItems" },
+		["LKHClawlordHowlfang"] = { AL["Clawlord Howlfang"], "AtlasLootItems" },
+		["LKHGrizikil"] = { AL["Grizikil"], "AtlasLootItems" },
+		["LKHMoroes"] = { AL["Moroes"], "AtlasLootItems" },
+		["LKHTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
+		["LKHEchants"] = { AL["LKH Enchants"], "AtlasLootItems" },
+	},
+
+	------------
+	--- Sets ---
+	------------
+
+	["Sets"] = {
+		["DEADMINES"] = { AL["Set: "] .. AL["Defias Leather"], "AtlasLootSetItems" },
+		["WAILING"] = { AL["Set: "] .. AL["Embrace of the Viper"], "AtlasLootSetItems" },
+		["SCARLET"] = { AL["Set: "] .. AL["Chain of the Scarlet Crusade"], "AtlasLootSetItems" },
+		["BLACKROCKD"] = { AL["Set: "] .. AL["The Gladiator"], "AtlasLootSetItems" },
+		["IRONWEAVE"] = { AL["Set: "] .. AL["Ironweave Battlesuit"], "AtlasLootSetItems" },
+		["ScholoCloth"] = { AL["Set: "] .. AL["Necropile Raiment"], "AtlasLootSetItems" },
+		["ScholoLeather"] = { AL["Set: "] .. AL["Cadaverous Garb"], "AtlasLootSetItems" },
+		["ScholoMail"] = { AL["Set: "] .. AL["Bloodmail Regalia"], "AtlasLootSetItems" },
+		["ScholoPlate"] = { AL["Set: "] .. AL["Deathbone Guardian"], "AtlasLootSetItems" },
+		["STRAT"] = { AL["Set: "] .. AL["The Postmaster"], "AtlasLootSetItems" },
+		["SpiderKiss"] = { AL["Set: "] .. AL["Spider's Kiss"], "AtlasLootSetItems" },
+		["DalRend"] = { AL["Set: "] .. AL["Dal'Rend's Arms"], "AtlasLootSetItems" },
+		["ZGRings"] = { AL["Set: "] .. AL["ZG Rings"], "AtlasLootSetItems" },
+		["ShardOfGods"] = { AL["Set: "] .. AL["Shard of the Gods"], "AtlasLootSetItems" },
+		["SpiritofEskhandar"] = { AL["Set: "] .. AL["Spirit of Eskhandar"], "AtlasLootSetItems" },
+		["HakkariBlades"] = { AL["Set: "] .. AL["The Twin Blades of Hakkari"], "AtlasLootSetItems" },
+		["PrimalBlessing"] = { AL["Set: "] .. AL["Primal Blessing"], "AtlasLootSetItems" },
+		["ScourgeInvasion"] = { AL["Set: "] .. AL["Scourge Invasion"], "AtlasLootSetItems" },
+		["Legendaries"] = { AL["Set: "] .. AL["Legendary Items"], "AtlasLootSetItems" },
+		["Artifacts"] = { AL["Set: "] .. AL["Artifact Items"], "AtlasLootSetItems" },
+		["RareMounts"] = { AL["Rare Mounts"], "AtlasLootSetItems" },
+		["OldMounts"] = { AL["Old Mounts"], "AtlasLootSetItems" },
+		["PvPMountsSets"] = { AL["PvP Mounts"], "AtlasLootSetItems" },
+		["UnobMounts"] = { AL["Unobtainable Mounts"], "AtlasLootSetItems" },
+		["Tabards"] = { AL["Tabards"], "AtlasLootSetItems" },
+		["RarePets1"] = { AL["Rare Pets"], "AtlasLootSetItems" },
+		["RarePets2"] = { AL["Rare Pets"], "AtlasLootSetItems" },
+		["WorldEpics1"] = { AL["World Epics"] .. " - " .. AL["Level 30-39"], "AtlasLootSetItems" },
+		["WorldEpics2"] = { AL["World Epics"] .. " - " .. AL["Level 40-49"], "AtlasLootSetItems" },
+		["WorldEpics3"] = { AL["World Epics"] .. " - " .. AL["Level 50-60"], "AtlasLootSetItems" },
+	},
+	--Crafted Sets - Blacksmithing
+	["Crafted Sets - Blacksmithing"] = {
+		["ImperialPlate"] = { AL["Imperial Plate"], "AtlasLootCrafting" },
+		["TheDarksoul"] = { AL["The Darksoul"], "AtlasLootCrafting" },
+		["BloodsoulEmbrace"] = { AL["Bloodsoul Embrace"], "AtlasLootCrafting" },
+	},
+	--Crafted Sets - Tailoring
+	["Crafted Sets - Tailoring"] = {
+		["AugerersAttire"] = { AL["Augerer's Attire"], "AtlasLootCrafting" },
+		["ShadoweaveSet"] = { AL["Shadoweave"], "AtlasLootCrafting" },
+		["DivinersGarments"] = { AL["Diviner's Garments"], "AtlasLootCrafting" },
+		["PillagersGarb"] = { AL["Pillager's Garb"], "AtlasLootCrafting" },
+		["BloodvineG"] = { AL["Bloodvine Garb"], "AtlasLootCrafting" },
+	},
+	--Crafted Sets - Leatherworking
+	["Crafted Sets - Leatherworking"] = {
+		["VolcanicArmor"] = { AL["Volcanic Armor"], "AtlasLootCrafting" },
+		["IronfeatherArmor"] = { AL["Ironfeather Armor"], "AtlasLootCrafting" },
+		["StormshroudArmor"] = { AL["Stormshroud Armor"], "AtlasLootCrafting" },
+		["DevilsaurArmor"] = { AL["Devilsaur Armor"], "AtlasLootCrafting" },
+		["BloodTigerH"] = { AL["Blood Tiger Harness"], "AtlasLootCrafting" },
+		["PrimalBatskin"] = { AL["Primal Batskin"], "AtlasLootCrafting" },
+		["GreenDragonM"] = { AL["Green Dragon Mail"], "AtlasLootCrafting" },
+		["BlueDragonM"] = { AL["Blue Dragon Mail"], "AtlasLootCrafting" },
+		["BlackDragonM"] = { AL["Black Dragon Mail"], "AtlasLootCrafting" },
+	},
+	["ZG Sets"] = {
+		["ZGDruid"] = { AL["Druid"] .. " - " .. AL["ZG Class Sets"], "AtlasLootSetItems" },
+		["ZGHunter"] = { AL["Hunter"] .. " - " .. AL["ZG Class Sets"], "AtlasLootSetItems" },
+		["ZGMage"] = { AL["Mage"] .. " - " .. AL["ZG Class Sets"], "AtlasLootSetItems" },
+		["ZGPaladin"] = { AL["Paladin"] .. " - " .. AL["ZG Class Sets"], "AtlasLootSetItems" },
+		["ZGPriest"] = { AL["Priest"] .. " - " .. AL["ZG Class Sets"], "AtlasLootSetItems" },
+		["ZGRogue"] = { AL["Rogue"] .. " - " .. AL["ZG Class Sets"], "AtlasLootSetItems" },
+		["ZGShaman"] = { AL["Shaman"] .. " - " .. AL["ZG Class Sets"], "AtlasLootSetItems" },
+		["ZGWarlock"] = { AL["Warlock"] .. " - " .. AL["ZG Class Sets"], "AtlasLootSetItems" },
+		["ZGWarrior"] = { AL["Warrior"] .. " - " .. AL["ZG Class Sets"], "AtlasLootSetItems" },
+	},
+	["AQ20 Sets"] = {
+		["AQ20Mage"] = { AL["AQ20 Class Sets"], "AtlasLootSetItems" },
+		["AQ20Warlock"] = { AL["AQ20 Class Sets"], "AtlasLootSetItems" },
+		["AQ20Priest"] = { AL["AQ20 Class Sets"], "AtlasLootSetItems" },
+		["AQ20Rogue"] = { AL["AQ20 Class Sets"], "AtlasLootSetItems" },
+		["AQ20Druid"] = { AL["AQ20 Class Sets"], "AtlasLootSetItems" },
+		["AQ20Hunter"] = { AL["AQ20 Class Sets"], "AtlasLootSetItems" },
+		["AQ20Paladin"] = { AL["AQ20 Class Sets"], "AtlasLootSetItems" },
+		["AQ20Shaman"] = { AL["AQ20 Class Sets"], "AtlasLootSetItems" },
+		["AQ20Warrior"] = { AL["AQ20 Class Sets"], "AtlasLootSetItems" },
+	},
+	["AQ40 Sets"] = {
+		["AQ40Mage"] = { AL["AQ40 Class Sets"], "AtlasLootSetItems" },
+		["AQ40Priest"] = { AL["AQ40 Class Sets"], "AtlasLootSetItems" },
+		["AQ40Warlock"] = { AL["AQ40 Class Sets"], "AtlasLootSetItems" },
+		["AQ40Rogue"] = { AL["AQ40 Class Sets"], "AtlasLootSetItems" },
+		["AQ40Druid"] = { AL["AQ40 Class Sets"], "AtlasLootSetItems" },
+		["AQ40Shaman"] = { AL["AQ40 Class Sets"], "AtlasLootSetItems" },
+		["AQ40Hunter"] = { AL["AQ40 Class Sets"], "AtlasLootSetItems" },
+		["AQ40Warrior"] = { AL["AQ40 Class Sets"], "AtlasLootSetItems" },
+		["AQ40Paladin"] = { AL["AQ40 Class Sets"], "AtlasLootSetItems" },
+	},
+	["D1/2 Sets"] = {
+		["T0Druid"] = { AL["Druid"] .. " - " .. AL["Dungeon 1/2 Sets"], "AtlasLootSetItems" },
+		["T0Hunter"] = { AL["Hunter"] .. " - " .. AL["Dungeon 1/2 Sets"], "AtlasLootSetItems" },
+		["T0Mage"] = { AL["Mage"] .. " - " .. AL["Dungeon 1/2 Sets"], "AtlasLootSetItems" },
+		["T0Paladin"] = { AL["Paladin"] .. " - " .. AL["Dungeon 1/2 Sets"], "AtlasLootSetItems" },
+		["T0Priest"] = { AL["Priest"] .. " - " .. AL["Dungeon 1/2 Sets"], "AtlasLootSetItems" },
+		["T0Rogue"] = { AL["Rogue"] .. " - " .. AL["Dungeon 1/2 Sets"], "AtlasLootSetItems" },
+		["T0Shaman"] = { AL["Shaman"] .. " - " .. AL["Dungeon 1/2 Sets"], "AtlasLootSetItems" },
+		["T0Warlock"] = { AL["Warlock"] .. " - " .. AL["Dungeon 1/2 Sets"], "AtlasLootSetItems" },
+		["T0Warrior"] = { AL["Warrior"] .. " - " .. AL["Dungeon 1/2 Sets"], "AtlasLootSetItems" },
+	},
+	["T1 Sets"] = {
+		["T1Druid"] = { AL["Druid"] .. " - " .. AL["Tier 1 Sets"], "AtlasLootSetItems" },
+		["T1Hunter"] = { AL["Hunter"] .. " - " .. AL["Tier 1 Sets"], "AtlasLootSetItems" },
+		["T1Mage"] = { AL["Mage"] .. " - " .. AL["Tier 1 Sets"], "AtlasLootSetItems" },
+		["T1Paladin"] = { AL["Paladin"] .. " - " .. AL["Tier 1 Sets"], "AtlasLootSetItems" },
+		["T1Priest"] = { AL["Priest"] .. " - " .. AL["Tier 1 Sets"], "AtlasLootSetItems" },
+		["T1Rogue"] = { AL["Rogue"] .. " - " .. AL["Tier 1 Sets"], "AtlasLootSetItems" },
+		["T1Shaman"] = { AL["Shaman"] .. " - " .. AL["Tier 1 Sets"], "AtlasLootSetItems" },
+		["T1Warlock"] = { AL["Warlock"] .. " - " .. AL["Tier 1 Sets"], "AtlasLootSetItems" },
+		["T1Warrior"] = { AL["Warrior"] .. " - " .. AL["Tier 1 Sets"], "AtlasLootSetItems" },
+	},
+	["T2 Sets"] = {
+		["T2Druid"] = { AL["Druid"] .. " - " .. AL["Tier 2 Sets"], "AtlasLootSetItems" },
+		["T2Hunter"] = { AL["Hunter"] .. " - " .. AL["Tier 2 Sets"], "AtlasLootSetItems" },
+		["T2Mage"] = { AL["Mage"] .. " - " .. AL["Tier 2 Sets"], "AtlasLootSetItems" },
+		["T2Paladin"] = { AL["Paladin"] .. " - " .. AL["Tier 2 Sets"], "AtlasLootSetItems" },
+		["T2Priest"] = { AL["Priest"] .. " - " .. AL["Tier 2 Sets"], "AtlasLootSetItems" },
+		["T2Rogue"] = { AL["Rogue"] .. " - " .. AL["Tier 2 Sets"], "AtlasLootSetItems" },
+		["T2Shaman"] = { AL["Shaman"] .. " - " .. AL["Tier 2 Sets"], "AtlasLootSetItems" },
+		["T2Warlock"] = { AL["Warlock"] .. " - " .. AL["Tier 2 Sets"], "AtlasLootSetItems" },
+		["T2Warrior"] = { AL["Warrior"] .. " - " .. AL["Tier 2 Sets"], "AtlasLootSetItems" },
+	},
+	["T3 Sets"] = {
+		["T3Druid"] = { AL["Druid"] .. " - " .. AL["Tier 3 Sets"], "AtlasLootSetItems" },
+		["T3Hunter"] = { AL["Hunter"] .. " - " .. AL["Tier 3 Sets"], "AtlasLootSetItems" },
+		["T3Mage"] = { AL["Mage"] .. " - " .. AL["Tier 3 Sets"], "AtlasLootSetItems" },
+		["T3Paladin"] = { AL["Paladin"] .. " - " .. AL["Tier 3 Sets"], "AtlasLootSetItems" },
+		["T3Priest"] = { AL["Priest"] .. " - " .. AL["Tier 3 Sets"], "AtlasLootSetItems" },
+		["T3Rogue"] = { AL["Rogue"] .. " - " .. AL["Tier 3 Sets"], "AtlasLootSetItems" },
+		["T3Shaman"] = { AL["Shaman"] .. " - " .. AL["Tier 3 Sets"], "AtlasLootSetItems" },
+		["T3Warlock"] = { AL["Warlock"] .. " - " .. AL["Tier 3 Sets"], "AtlasLootSetItems" },
+		["T3Warrior"] = { AL["Warrior"] .. " - " .. AL["Tier 3 Sets"], "AtlasLootSetItems" },
+	},
+
+	------------------------
+	--- Misc Collections ---
+	------------------------
+
+
+	--------------------
+	--- World Bosses ---
+	--------------------
+
+	["World Bosses"] = {
+		["AAzuregos"] = { AL["Azuregos"], "AtlasLootWBItems" },
+		["ASpiritA"] = { AL["Spirit of Azuregos"], "AtlasLootWBItems" },
+		["Turtlhu"] = { "Turtlhu, the Black Turtle of Doom", "AtlasLootWBItems" },
+		["Nerubian"] = { "Nerubian Overseer", "AtlasLootWBItems" },
+		["Reaver"] = { "Dark Reaver of Karazhan", "AtlasLootWBItems" },
+		["Ostarius"] = { "Ostarius", "AtlasLootWBItems" },
+		--Doom Lord Kazzak
+		["KKazzak"] = { AL["Lord Kazzak"], "AtlasLootWBItems" },
+		--Emrald Dragons
+		["DEmeriss"] = { AL["Emeriss"], "AtlasLootWBItems" },
+		["DLethon"] = { AL["Lethon"], "AtlasLootWBItems" },
+		["DTaerar"] = { AL["Taerar"], "AtlasLootWBItems" },
+		["DYsondre"] = { AL["Ysondre"], "AtlasLootWBItems" },
+		["DTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Emerald Dragons"] .. ")", "AtlasLootWBItems" },
+	},
+	
+	--------------------------
+	--- Rare Spawns (1.16) ---
+	--------------------------
+	["Rare Spawns"] = {
+		["Tarangos"] = { "Tarangos The Dampener", "AtlasLootWBItems" },
+		["Kargron"] = { "Blademaster Kargron", "AtlasLootWBItems" },
+		["Xalvic"] = { "Xalvic Blackclaw", "AtlasLootWBItems" },
+		["Mallon"] = { "Mallon The Moontouched", "AtlasLootWBItems" },
+		["Grugthok"] = { "Grug'thok the Seer", "AtlasLootWBItems" },
+		["WanderingKnight"] = { "The Wandering Knight", "AtlasLootWBItems" },
+		["CrusaderLarsarius"] = { "Crusader Larsarius The Scarlet Crusade", "AtlasLootWBItems" },
+		["Zareth"] = { "Zareth Terrorblade Demon Hunter", "AtlasLootWBItems" },
+		["Jalakar"] = { "Jal'akar Dire Troll", "AtlasLootWBItems" },
+		["Ashbeard"] = { "Explorer Ashbeard", "AtlasLootWBItems" },
+		["AdmiralBareanWestwind"] = { "Admiral Barean Westwind", "AtlasLootWBItems" },
+		["EarthcallerRezengal"] = { "Earthcaller Rezengal", "AtlasLootWBItems" },
+		["ShadeMage"] = { "Shade Mage", "AtlasLootWBItems" },
+		["GraypawAlpha"] = { "Graypaw Alpha", "AtlasLootWBItems" },
+		["Blazespark"] = { "Blazespark", "AtlasLootWBItems" },
+		["WitchDoctorTanzo"] = { "Witch Doctor Tan'zo", "AtlasLootWBItems" },
+		["Dawnhowl"] = { "Dawnhowl", "AtlasLootWBItems" },
+		["MaltimorsPrototype"] = { "Maltimor's Prototype", "AtlasLootWBItems" },
+		["Bonecruncher"] = { "Bonecruncher", "AtlasLootWBItems" },
+		["Duskskitter"] = { "Duskskitter", "AtlasLootWBItems" },
+		["BaronPerenolde"] = { "Baron Perenolde", "AtlasLootWBItems" },
+		["Embereye"] = { "Embereye", "AtlasLootWBItems" },
+		["Rukthok"] = { "Ruk'thok the Pyromancer", "AtlasLootWBItems" },
+		["Ripjaw"] = { "Ripjaw", "AtlasLootWBItems" },
+		["Aquitus"] = { "Aquitus", "AtlasLootWBItems" },
+		["FirstbornofArugal"] = { "Firstborn of Arugal", "AtlasLootWBItems" },
+		["Letashaz"] = { "Letashaz", "AtlasLootWBItems" },
+		["MargontheMighty"] = { "Margon the Mighty", "AtlasLootWBItems" },
+		["Stoneshell"] = { "Stoneshell", "AtlasLootWBItems" },
+		["HighvaleSilverback"] = { "Highvale Silverback", "AtlasLootWBItems" },
+		["Azurebeak"] = { "Azurebeak", "AtlasLootWBItems" },
+		["BarkskinFisher"] = { "Barkskin Fisher", "AtlasLootWBItems" },
+		["ShadeflayerGoliath"] = { "Shadeflayer Goliath", "AtlasLootWBItems" },
+		["M0L1Y"] = { "M-0L1Y", "AtlasLootWBItems" },
+		["WidowoftheWoods"] = { "Widow of the Woods", "AtlasLootWBItems" },
+	},
+
+	--------------
+	--- Events ---
+	--------------
+
+	["World Events"] = {
+		["AbyssalTemplars"] = { "Abyssal Council - Templars", "AtlasLootWorldEvents" },
+		["AbyssalDukes"] = { "Abyssal Council - Dukes", "AtlasLootWorldEvents" },
+		["AbyssalLords"] = { "Abyssal Council - High Council", "AtlasLootWorldEvents" },
+		--Seasonal
+		["ChildrensWeek"] = { AL["Children's Week"], "AtlasLootWorldEvents" },
+		["Halloween1"] = { AL["Hallow's End"], "AtlasLootWorldEvents" },
+		["Halloween2"] = { AL["Hallow's End"], "AtlasLootWorldEvents" },
+		["HarvestFestival"] = { AL["Harvest Festival"], "AtlasLootWorldEvents" },
+		["LunarFestival1"] = { AL["Lunar Festival"], "AtlasLootWorldEvents" },
+		["LunarFestival2"] = { AL["Lunar Festival"], "AtlasLootWorldEvents" },
+		["MidsummerFestival"] = { AL["Midsummer Fire Festival"], "AtlasLootWorldEvents" },
+		["Noblegarden"] = { AL["Noblegarden"], "AtlasLootWorldEvents" },
+		["Valentineday"] = { AL["Love is in the Air"], "AtlasLootWorldEvents" },
+		["Winterviel1"] = { AL["Feast of Winter Veil"], "AtlasLootWorldEvents" },
+		["Winterviel2"] = { AL["Feast of Winter Veil"], "AtlasLootWorldEvents" },
+		--Other
+		["ElementalInvasion"] = { AL["Elemental Invasion"], "AtlasLootWorldEvents" },
+		["FishingExtravaganza"] = { AL["Stranglethorn Fishing Extravaganza"], "AtlasLootWorldEvents" },
+		["GurubashiArena"] = { AL["Gurubashi Arena Booty Run"], "AtlasLootWorldEvents" },
+		["ScourgeInvasionEvent1"] = { AL["Scourge Invasion"], "AtlasLootWorldEvents" },
+		["ScourgeInvasionEvent2"] = { AL["Scourge Invasion Bosses"], "AtlasLootWorldEvents" },
+	},
+
+	------------------------
+	--- Classic Factions ---
+	------------------------
+	["Factions"] = {
+		--Argent Dawn
+		["Argent1"] = { AL["Argent Dawn"] .. ": Token Hand-ins", "AtlasLootRepItems" },
+		["Argent2"] = { AL["Argent Dawn"], "AtlasLootRepItems" },
+		["Argent3"] = { AL["Argent Dawn"], "AtlasLootRepItems" },
+		--Bloodsail Buccaneers
+		["Bloodsail1"] = { AL["Bloodsail Buccaneers"], "AtlasLootRepItems" },
+		--Brood of Nozdormu
+		["AQBroodRings"] = { AL["Brood of Nozdormu"], "AtlasLootRepItems" },
+		--Cenarion Circle
+		["Cenarion1"] = { AL["Cenarion Circle"] .. ": " .. AL["Friendly"], "AtlasLootRepItems" },
+		["Cenarion2"] = { AL["Cenarion Circle"] .. ": " .. AL["Honored"], "AtlasLootRepItems" },
+		["Cenarion3"] = { AL["Cenarion Circle"] .. ": " .. AL["Revered"], "AtlasLootRepItems" },
+		["Cenarion4"] = { AL["Cenarion Circle"] .. ": " .. AL["Exalted"], "AtlasLootRepItems" },
+		--The Darkmoon Faire
+		["Darkmoon"] = { AL["Darkmoon Faire"], "AtlasLootRepItems" },
+		--The Defilers
+		["Defilers"] = { AL["The Defilers"], "AtlasLootRepItems" },
+		--Frostwolf Clan
+		["Frostwolf1"] = { AL["Frostwolf Clan"], "AtlasLootRepItems" },
+		--Hydraxian Waterlords
+		["WaterLords1"] = { AL["Hydraxian Waterlords"], "AtlasLootRepItems" },
+		--Gelkis Clan Centaur
+		["GelkisClan1"] = { AL["Gelkis Clan Centaur"], "AtlasLootRepItems" },
+		--The League of Arathor
+		["LeagueofArathor"] = { AL["The League of Arathor"], "AtlasLootRepItems" },
+
+		--Magram Clan Centaur
+		["MagramClan1"] = { AL["Magram Clan Centaur"], "AtlasLootRepItems" },
+		--Stormpike Guard
+		["Stormpike1"] = { AL["Stormpike Guard"], "AtlasLootRepItems" },
+		--Thorium Brotherhood
+		["Thorium1"] = { AL["Thorium Brotherhood"] .. ": " .. AL["Friendly"] .. "/" .. AL["Honored"], "AtlasLootRepItems" },
+		["Thorium2"] = { AL["Thorium Brotherhood"] .. ": " .. AL["Revered"] .. "/" .. AL["Exalted"], "AtlasLootRepItems" },
+		--Timbermaw Hold
+		["Timbermaw"] = { AL["Timbermaw Hold"], "AtlasLootRepItems" },
+		--Wardens of Time
+		["Warderns1"] = { AL["Wardens of Time"], "AtlasLootRepItems" },
+		--Wintersaber Trainers
+		["Wintersaber1"] = { AL["Wintersaber Trainers"], "AtlasLootRepItems" },
+		--Zandalar Tribe
+		["Zandalar1"] = { AL["Zandalar Tribe"] .. ": " .. AL["Friendly"] .. "/" .. AL["Honored"], "AtlasLootRepItems" },
+		["Zandalar2"] = { AL["Zandalar Tribe"] .. ": " .. AL["Revered"] .. "/" .. AL["Exalted"], "AtlasLootRepItems" },
+
+		["Helf"] = { AL["Silvermoon Remnant"], "AtlasLootRepItems" },
+		["Helf2"] = { AL["Silvermoon Remnant"], "AtlasLootRepItems" },
+		["Helf3"] = { AL["Silvermoon Remnant"], "AtlasLootRepItems" },
+		["Revantusk"] = { AL["Revantusk Trolls"], "AtlasLootRepItems" },
+		["Revantusk2"] = { AL["Revantusk Trolls"], "AtlasLootRepItems" },
+		["Revantusk3"] = { AL["Revantusk Trolls"], "AtlasLootRepItems" },
+		["Ironforge"] = { AL["Ironforge"], "AtlasLootRepItems" },
+		["Darnassus"] = { AL["Darnassus"], "AtlasLootRepItems" },
+		["Stormwind"] = { AL["Stormwind"], "AtlasLootRepItems" },
+		["GnomereganExiles"] = { AL["Gnomeregan Exiles"], "AtlasLootRepItems" },
+		["DarkspearTrolls"] = { AL["Darkspear Trolls"], "AtlasLootRepItems" },
+		["DurotarLaborUnion"] = { AL["Durotar Labor Union"], "AtlasLootRepItems" },
+		["Undercity"] = { AL["Undercity"], "AtlasLootRepItems" },
+		["Orgrimmar"] = { AL["Orgrimmar"], "AtlasLootRepItems" },
+		["ThunderBluff"] = { AL["Thunder Bluff"], "AtlasLootRepItems" },
+		["Wildhammer"] = { AL["Wildhammer Clan"], "AtlasLootRepItems" },
+	},
+
+	--------------
+	--- Trades ---
+	--------------
+	["Professions"] = {
+		["CraftedWeapons1"] = { AL["Crafted Epic Weapons"], "AtlasLootCrafting" },
+		--Alchemy
+		["AlchemyApprentice1"] = { AL["Alchemy"] .. ": " .. AL["Apprentice"], "AtlasLootCrafting" },
+		["AlchemyJourneyman1"] = { AL["Alchemy"] .. ": " .. AL["Journeyman"], "AtlasLootCrafting" },
+		["AlchemyExpert1"] = { AL["Alchemy"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
+		["AlchemyArtisan1"] = { AL["Alchemy"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+		["AlchemyArtisan2"] = { AL["Alchemy"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+		--BlackSmithing
+		["SmithingApprentice1"] = { AL["Blacksmithing"] .. ": " .. AL["Apprentice"], "AtlasLootCrafting" },
+		["SmithingJourneyman1"] = { AL["Blacksmithing"] .. ": " .. AL["Journeyman"], "AtlasLootCrafting" },
+		["SmithingJourneyman2"] = { AL["Blacksmithing"] .. ": " .. AL["Journeyman"], "AtlasLootCrafting" },
+		["SmithingExpert1"] = { AL["Blacksmithing"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
+		["SmithingExpert2"] = { AL["Blacksmithing"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
+		["SmithingExpert3"] = { AL["Blacksmithing"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
+		["SmithingArtisan1"] = { AL["Blacksmithing"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+		["SmithingArtisan2"] = { AL["Blacksmithing"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+		["SmithingArtisan3"] = { AL["Blacksmithing"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+		["Armorsmith1"] = { AL["Blacksmithing"] .. ": " .. AL["Armorsmith"], "AtlasLootCrafting" },
+		["Weaponsmith1"] = { AL["Blacksmithing"] .. ": " .. AL["Weaponsmith"], "AtlasLootCrafting" },
+		["Axesmith1"] = { AL["Blacksmithing"] .. ": " .. AL["Master Axesmith"], "AtlasLootCrafting" },
+		["Hammersmith1"] = { AL["Blacksmithing"] .. ": " .. AL["Master Hammersmith"], "AtlasLootCrafting" },
+		["Swordsmith1"] = { AL["Blacksmithing"] .. ": " .. AL["Master Swordsmith"], "AtlasLootCrafting" },
+		--Enchanting
+		["EnchantingApprentice1"] = { AL["Enchanting"] .. ": " .. AL["Apprentice"], "AtlasLootCrafting" },
+		["EnchantingJourneyman1"] = { AL["Enchanting"] .. ": " .. AL["Journeyman"], "AtlasLootCrafting" },
+		["EnchantingJourneyman2"] = { AL["Enchanting"] .. ": " .. AL["Journeyman"], "AtlasLootCrafting" },
+		["EnchantingExpert1"] = { AL["Enchanting"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
+		["EnchantingExpert2"] = { AL["Enchanting"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
+		["EnchantingArtisan1"] = { AL["Enchanting"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+		["EnchantingArtisan2"] = { AL["Enchanting"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+		["EnchantingArtisan3"] = { AL["Enchanting"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+		--Engineering
+		["EngineeringApprentice1"] = { AL["Engineering"] .. ": " .. AL["Apprentice"], "AtlasLootCrafting" },
+		["EngineeringJourneyman1"] = { AL["Engineering"] .. ": " .. AL["Journeyman"], "AtlasLootCrafting" },
+		["EngineeringJourneyman2"] = { AL["Engineering"] .. ": " .. AL["Journeyman"], "AtlasLootCrafting" },
+		["EngineeringExpert1"] = { AL["Engineering"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
+		["EngineeringExpert2"] = { AL["Engineering"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
+		["EngineeringArtisan1"] = { AL["Engineering"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+		["EngineeringArtisan2"] = { AL["Engineering"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+		["Gnomish1"] = { AL["Engineering"] .. ": " .. AL["Gnomish Engineering"], "AtlasLootCrafting" },
+		["Goblin1"] = { AL["Engineering"] .. ": " .. AL["Goblin Engineering"], "AtlasLootCrafting" },
+		--Leatherworking
+		["LeatherApprentice1"] = { AL["Leatherworking"] .. ": " .. AL["Apprentice"], "AtlasLootCrafting" },
+		["LeatherJourneyman1"] = { AL["Leatherworking"] .. ": " .. AL["Journeyman"], "AtlasLootCrafting" },
+		["LeatherJourneyman2"] = { AL["Leatherworking"] .. ": " .. AL["Journeyman"], "AtlasLootCrafting" },
+		["LeatherExpert1"] = { AL["Leatherworking"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
+		["LeatherExpert2"] = { AL["Leatherworking"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
+		["LeatherArtisan1"] = { AL["Leatherworking"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+		["LeatherArtisan2"] = { AL["Leatherworking"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+		["LeatherArtisan3"] = { AL["Leatherworking"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+		["Dragonscale1"] = { AL["Leatherworking"] .. ": " .. AL["Dragonscale Leatherworking"], "AtlasLootCrafting" },
+		["Elemental1"] = { AL["Leatherworking"] .. ": " .. AL["Elemental Leatherworking"], "AtlasLootCrafting" },
+		["Tribal1"] = { AL["Leatherworking"] .. ": " .. AL["Tribal Leatherworking"], "AtlasLootCrafting" },
+		--Mining
+		["Mining1"] = { AL["Mining"], "AtlasLootCrafting" },
+		["Mining2"] = { AL["Mining"], "AtlasLootCrafting" },
+		["Smelting1"] = { AL["Smelting"], "AtlasLootCrafting" },
+		["Herbalism1"] = { AL["Herbalism"], "AtlasLootCrafting" },
+		["Herbalism2"] = { AL["Herbalism"], "AtlasLootCrafting" },
+		--Tailoring
+		["TailoringApprentice1"] = { AL["Tailoring"] .. ": " .. AL["Apprentice"], "AtlasLootCrafting" },
+		["TailoringJourneyman1"] = { AL["Tailoring"] .. ": " .. AL["Journeyman"], "AtlasLootCrafting" },
+		["TailoringJourneyman2"] = { AL["Tailoring"] .. ": " .. AL["Journeyman"], "AtlasLootCrafting" },
+		["TailoringExpert1"] = { AL["Tailoring"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
+		["TailoringExpert2"] = { AL["Tailoring"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
+		["TailoringArtisan1"] = { AL["Tailoring"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+		["TailoringArtisan2"] = { AL["Tailoring"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+		["TailoringArtisan3"] = { AL["Tailoring"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+		["TailoringArtisan4"] = { AL["Tailoring"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+		["TailoringArtisan5"] = { AL["Tailoring"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+		--Cooking
+		["CookingApprentice1"] = { AL["Cooking"] .. ": " .. AL["Apprentice"], "AtlasLootCrafting" },
+		["CookingJourneyman1"] = { AL["Cooking"] .. ": " .. AL["Journeyman"], "AtlasLootCrafting" },
+		["CookingExpert1"] = { AL["Cooking"] .. ": " .. AL["Expert"], "AtlasLootCrafting" },
+		["CookingArtisan1"] = { AL["Cooking"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+		--FirstAid
+		["FirstAid1"] = { AL["First Aid"], "AtlasLootCrafting" },
+		--Survival
+		["Survival1"] = { AL["Survival"], "AtlasLootCrafting" },
+		["Survival2"] = { AL["Garderning"], "AtlasLootCrafting" },
+		--Poisons
+		["Poisons1"] = { AL["Rogue"] .. ": " .. AL["Poisons"], "AtlasLootCrafting" },
+	},
+
+	-----------
+	--- PvP ---
+	-----------
+
+	["Battlegrounds"] = {
+		--Blood Ring
+		["BRRepFriendly"] = { AL["Blood Ring"] .. " " .. AL["Friendly Rewards"], "AtlasLootBGItems" },
+		["BRRepHonored"] = { AL["Blood Ring"] .. " " .. AL["Honored Rewards"], "AtlasLootBGItems" },
+		["BRRepRevered"] = { AL["Blood Ring"] .. " " .. AL["Revered Rewards"], "AtlasLootBGItems" },
+		["BRRepExalted"] = { AL["Blood Ring"] .. " " .. AL["Exalted Rewards"], "AtlasLootBGItems" },
+		--Alterac Valley
+		["AVRepFriendly"] = { AL["Alterac Valley"] .. " " .. AL["51-60 Friendly Rewards"], "AtlasLootBGItems" },
+		["AVRepHonored"] = { AL["Alterac Valley"] .. " " .. AL["51-60 Honored Rewards"], "AtlasLootBGItems" },
+		["AVRepRevered"] = { AL["Alterac Valley"] .. " " .. AL["51-60 Revered Rewards"], "AtlasLootBGItems" },
+		["AVRepExalted"] = { AL["Alterac Valley"] .. " " .. AL["51-60 Exalted Rewards"], "AtlasLootBGItems" },
+		--Arathi Basin
+		["ABRepFriendly"] = { AL["Arathi Basin"] .. " " .. AL["Friendly Rewards"], "AtlasLootBGItems" },
+		["ABRepHonored2029"] = { AL["Arathi Basin"] .. " " .. AL["20-29 Honored Rewards"], "AtlasLootBGItems" },
+		["ABRepHonored3039"] = { AL["Arathi Basin"] .. " " .. AL["30-39 Honored Rewards"], "AtlasLootBGItems" },
+		["ABRepHonored4049"] = { AL["Arathi Basin"] .. " " .. AL["40-49 Honored Rewards"], "AtlasLootBGItems" },
+		["ABRepHonored5059"] = { AL["Arathi Basin"] .. " " .. AL["50-59 Honored Rewards"], "AtlasLootBGItems" },
+		["ABRepRevered2029"] = { AL["Arathi Basin"] .. " " .. AL["20-29 Revered Rewards"], "AtlasLootBGItems" },
+		["ABRepRevered3039"] = { AL["Arathi Basin"] .. " " .. AL["30-39 Revered Rewards"], "AtlasLootBGItems" },
+		["ABRepRevered4049"] = { AL["Arathi Basin"] .. " " .. AL["40-49 Revered Rewards"], "AtlasLootBGItems" },
+		["ABRepRevered5059"] = { AL["Arathi Basin"] .. " " .. AL["50-59 Revered Rewards"], "AtlasLootBGItems" },
+		["ABRepExalted"] = { AL["Arathi Basin"] .. " " .. AL["60 Exalted Rewards"], "AtlasLootBGItems" },
+		--Warsong Gulch
+		["WSGRepFriendly"] = { AL["Warsong Gulch"] .. " " .. AL["Friendly Rewards"], "AtlasLootBGItems" },
+		["WSGRepHonored1019"] = { AL["Warsong Gulch"] .. " " .. AL["10-19 Honored Rewards"], "AtlasLootBGItems" },
+		["WSGRepHonored2029"] = { AL["Warsong Gulch"] .. " " .. AL["20-29 Honored Rewards"], "AtlasLootBGItems" },
+		["WSGRepHonored3039"] = { AL["Warsong Gulch"] .. " " .. AL["30-39 Honored Rewards"], "AtlasLootBGItems" },
+		["WSGRepHonored4049"] = { AL["Warsong Gulch"] .. " " .. AL["40-49 Honored Rewards"], "AtlasLootBGItems" },
+		["WSGRepHonored5059"] = { AL["Warsong Gulch"] .. " " .. AL["50-59 Honored Rewards"], "AtlasLootBGItems" },
+		["WSGRepRevered1019"] = { AL["Warsong Gulch"] .. " " .. AL["10-19 Revered Rewards"], "AtlasLootBGItems" },
+		["WSGRepRevered2029"] = { AL["Warsong Gulch"] .. " " .. AL["20-29 Revered Rewards"], "AtlasLootBGItems" },
+		["WSGRepRevered3039"] = { AL["Warsong Gulch"] .. " " .. AL["30-39 Revered Rewards"], "AtlasLootBGItems" },
+		["WSGRepRevered4049"] = { AL["Warsong Gulch"] .. " " .. AL["40-49 Revered Rewards"], "AtlasLootBGItems" },
+		["WSGRepRevered5059"] = { AL["Warsong Gulch"] .. " " .. AL["50-59 Revered Rewards"], "AtlasLootBGItems" },
+		["WSGRepExalted4049"] = { AL["Warsong Gulch"] .. " " .. AL["40-49 Exalted Rewards"], "AtlasLootBGItems" },
+		["WSGRepExalted5059"] = { AL["Warsong Gulch"] .. " " .. AL["50-59 Exalted Rewards"], "AtlasLootBGItems" },
+		["WSGRepExalted60"] = { AL["Warsong Gulch"] .. " " .. AL["60 Exalted Rewards"], "AtlasLootBGItems" },
+	},
+	["PvP"] = {
+		--Misc Other PvP
+		["PvP60Accessories1"] = { AL["PvP Accessories"], "AtlasLootGeneralPvPItems" },
+		["PvP60Accessories2"] = { AL["PvP Accessories - Alliance"], "AtlasLootGeneralPvPItems" },
+		["PvP60Accessories3"] = { AL["PvP Accessories - Horde"], "AtlasLootGeneralPvPItems" },
+		["PVPWeapons1"] = { AL["Rank 14 Weapons"], "AtlasLootGeneralPvPItems" },
+		["PVPWeapons2"] = { AL["Rank 14 Weapons"], "AtlasLootGeneralPvPItems" },
+		["PvPMountsPvP"] = { AL["PvP Mounts"], "AtlasLootGeneralPvPItems" },
+		--Level 60 PvP Sets
+		["PVPDruid"] = { AL["Druid"] .. " - " .. AL["PvP Sets"], "AtlasLootGeneralPvPItems" },
+		["PVPHunter"] = { AL["Hunter"] .. " - " .. AL["PvP Sets"], "AtlasLootGeneralPvPItems" },
+		["PVPMage"] = { AL["Mage"] .. " - " .. AL["PvP Sets"], "AtlasLootGeneralPvPItems" },
+		["PVPPaladin"] = { AL["Paladin"] .. " - " .. AL["PvP Sets"], "AtlasLootGeneralPvPItems" },
+		["PVPPriest"] = { AL["Priest"] .. " - " .. AL["PvP Sets"], "AtlasLootGeneralPvPItems" },
+		["PVPRogue"] = { AL["Rogue"] .. " - " .. AL["PvP Sets"], "AtlasLootGeneralPvPItems" },
+		["PVPShaman"] = { AL["Shaman"] .. " - " .. AL["PvP Sets"], "AtlasLootGeneralPvPItems" },
+		["PVPWarlock"] = { AL["Warlock"] .. " - " .. AL["PvP Sets"], "AtlasLootGeneralPvPItems" },
+		["PVPWarrior"] = { AL["Warrior"] .. " - " .. AL["PvP Sets"], "AtlasLootGeneralPvPItems" },
+	},
+};
 
 end
 
