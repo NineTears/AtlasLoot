@@ -1827,21 +1827,22 @@ Requests the relevant loot page from a menu screen
 function AtlasLootMenuItem_OnClick()
 	if this.isheader == nil or this.isheader == false then
 		local pagename = getglobal(this:GetName().."_Name"):GetText()
-		for k,v in ipairs(AtlasLoot_HewdropDown) do
-			if not (type(v[1]) == "table") then
-				for k2, v2 in pairs(v) do
-					for k3, v3 in pairs(v2) do
-						for k4, v4 in pairs(v3) do
-							if not (type(v4[1]) == "table") then
-								if v4[1] == pagename then
-									AtlasLoot_HewdropClick(v4[2],v4[1],v4[3])
-								end
-							end
-						end
-					end
-				end
-			end
-		end
+		--取消遍历AtlasLoot_HewdropDown数组，直接显示AtlasLoot内容页面
+		-- for k,v in ipairs(AtlasLoot_HewdropDown) do
+		-- 	if not (type(v[1]) == "table") then
+		-- 		for k2, v2 in pairs(v) do
+		-- 			for k3, v3 in pairs(v2) do
+		-- 				for k4, v4 in pairs(v3) do
+		-- 					if not (type(v4[1]) == "table") then
+		-- 						if v4[1] == pagename then
+		-- 							AtlasLoot_HewdropClick(v4[2],v4[1],v4[3])
+		-- 						end
+		-- 					end
+		-- 				end
+		-- 			end
+		-- 		end
+		-- 	end
+		-- end
 		AtlasLoot_ShowBossLoot(this.lootpage, pagename, AtlasLoot_AnchorFrame);
 	end
 end
@@ -3840,7 +3841,7 @@ AtlasLoot_updater:SetScript("OnEvent", function()
 	if event == "CHAT_MSG_ADDON" and arg1 == "AtlasLoot" then
 		local v, remoteversion = AtlasLoot_strsplit(":", arg2)
 		local remoteversion = tonumber(remoteversion)
-		if remoteversion >= 40000 then remoteversion = 0 end --Block for people using some version from another version of WoW.
+		if remoteversion >= 11200 then remoteversion = 0 end --Block for people using some version from another version of WoW.
 		if v == "VERSION" and remoteversion then
 			if remoteversion > localversion then
 				AtlasLoot_updateavailable = remoteversion
@@ -3861,7 +3862,7 @@ AtlasLoot_updater:SetScript("OnEvent", function()
 			local msg, v, remoteversion = AtlasLoot_strsplit(":", arg1)
 			if msg == "Atlasloot" then
 				local remoteversion = tonumber(remoteversion) or 0
-				if remoteversion >= 40000 then remoteversion = 0 end --Block for people using some version from another version of WoW.
+				if remoteversion >= 11200 then remoteversion = 0 end --Block for people using some version from another version of WoW.
 				if v == "VERSION" and remoteversion then
 					if remoteversion > localversion then
 						AtlasLoot_updateavailable = remoteversion
