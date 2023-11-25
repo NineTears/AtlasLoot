@@ -107,6 +107,12 @@ function AtlasLootBRRepMenu()
 	AtlasLootMenuItem_5_Icon:SetTexture("Interface\\Icons\\inv_jewelry_ring_04");
 	AtlasLootMenuItem_5.lootpage="BRRepExalted";
 	AtlasLootMenuItem_5:Show();
+	--Token of Blood
+	AtlasLootMenuItem_6_Name:SetText("Token of Blood Rewards");
+	AtlasLootMenuItem_6_Extra:SetText("");
+	AtlasLootMenuItem_6_Icon:SetTexture("Interface\\Icons\\inv_jewelry_talisman_04");
+	AtlasLootMenuItem_6.lootpage="BRRepTokens";
+	AtlasLootMenuItem_6:Show();
 	for i = 1, 30, 1 do
 		getglobal("AtlasLootMenuItem_"..i.."_Extra"):Show();
 	end
@@ -384,6 +390,18 @@ function AtlasLootAVRepMenu()
 	AtlasLootMenuItem_5_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Necklace_21");
 	AtlasLootMenuItem_5.lootpage="AVRepExalted";
 	AtlasLootMenuItem_5:Show();
+	--Korrak
+	AtlasLootMenuItem_6_Name:SetText(AL["Korrak the Bloodrager"]);
+	AtlasLootMenuItem_6_Extra:SetText("");
+	AtlasLootMenuItem_6_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Necklace_21");
+	AtlasLootMenuItem_6.lootpage="AVKorrak";
+	AtlasLootMenuItem_6:Show();
+	--LokholarIvus
+	AtlasLootMenuItem_7_Name:SetText(AL["Ivus & Lokholar"]);
+	AtlasLootMenuItem_7_Extra:SetText("");
+	AtlasLootMenuItem_7_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Necklace_21");
+	AtlasLootMenuItem_7.lootpage="AVLokholarIvus";
+	AtlasLootMenuItem_7:Show();
 	for i = 1, 30, 1 do
 		getglobal("AtlasLootMenuItem_"..i.."_Extra"):Show();
 	end

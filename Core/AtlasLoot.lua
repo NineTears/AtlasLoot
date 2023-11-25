@@ -70,7 +70,7 @@ local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
 local VERSION_MAJOR = "1";
 local VERSION_MINOR = "1";
 local VERSION_BOSSES = "0";
-ATLASLOOT_VERSION = "|cffFF8400AtlasLoot TW Edition v"..VERSION_MAJOR.."."..VERSION_MINOR.."."..VERSION_BOSSES.."|r";
+ATLASLOOT_VERSION = "|cffFF8400AtlasLoot Wind汉化修复 v"..VERSION_MAJOR.."."..VERSION_MINOR.."."..VERSION_BOSSES.."|r";
 ATLASLOOT_CURRENT_ATLAS = "1.12.0";
 ATLASLOOT_PREVIEW_ATLAS = "1.12.1";
 
@@ -2304,7 +2304,7 @@ AtlasLoot_HewdropDown = {
 		{ AL["World Bosses"], "WorldBosses", "Submenu" },
 	},
 	[3] = {
-		{ "Rare Spawns", "RareSpawns", "Submenu" },
+		{ AL["Rare Spawns"], "RareSpawns", "Submenu" },
 	},
 	[4] = {
 		[AL["PvP Rewards"]] = {
@@ -2548,7 +2548,8 @@ AtlasLoot_HewdropDown_SubTables = {
 		{ AL["Mossheart"], "COTBMMossheart" },
 		{ AL["Rotmaw"], "COTBMRotmaw" },
 		{ AL["Antnormi"], "COTBMAntnormi" },
-		{ AL["Infinite Chromie"], "COTBMInfiniteChromie" },
+		{ AL["Trash Mobs"], "COTTrash" },
+		--{ AL["Infinite Chromie"], "COTBMInfiniteChromie" },
 	},
 	["StormwindVault"] = {
 		{ AL["Aszosh Grimflame"], "SWVAszoshGrimflame" },
@@ -2557,6 +2558,7 @@ AtlasLoot_HewdropDown_SubTables = {
 		{ AL["Damian"], "SWVDamian" },
 		{ AL["Volkan Cruelblade"], "SWVVolkanCruelblade" },
 		{ AL["Arc'tiras / Vault Armory Equipment"], "SWVVaultArmoryEquipment" },
+		{ AL["Trash Mobs"], "SWVTrash" },
 	},
 	["BlackwingLair"] = {
 		{ AL["Razorgore the Untamed"], "BWLRazorgore" },
@@ -2941,49 +2943,49 @@ AtlasLoot_HewdropDown_SubTables = {
 		{ AL["Taerar"], "DTaerar" },
 		{ AL["Ysondre"], "DYsondre" },
 		{ AL["Lord Kazzak"], "KKazzak"},
-		--{ "Turtlhu, the Black Turtle of Doom", "Turtlhu" },
-		{ "Nerubian Overseer", "Nerubian" },
-		{ "Dark Reaver of Karazhan", "Reaver" },
-		{ "Ostarius", "Ostarius" },
-		{ "Concavius", "Concavius" },
-		{ "There Is No Cow Level", "CowKing" },
+		{ AL["Turtlhu, the Black Turtle of Doom"], "Turtlhu" },
+		{ AL["Nerubian Overseer"], "Nerubian" },
+		{ AL["Dark Reaver of Karazhan"], "Reaver" },
+		{ AL["Ostarius"], "Ostarius" },
+		{ AL["Concavius"], "Concavius" },
+		{ AL["There Is No Cow Level"], "CowKing" },
 	},
 	["RareSpawns"] = {
-		{ "|cffffffff[17]|cffffd200 Earthcaller Rezengal |cffffffff(Stonetalon)", "EarthcallerRezengal" },
-		{ "|cffffffff[17]|cffffd200 Shade Mage |cffffffff(Tirisfal Uplands)", "ShadeMage" },
-		{ "|cffffffff[18]|cffffd200 Graypaw Alpha |cffffffff(Tirisfal Uplands)", "GraypawAlpha" },
-		{ "|cffffffff[24]|cffffd200 Blazespark |cffffffff(Stonetalon)", "Blazespark" },
-		{ "|cffffffff[35]|cffffd200 Witch Doctor Tan'zo |cffffffff(Ruins of Zul'Rasaz)", "WitchDoctorTanzo" },
-		{ "|cffffffff[40]|cffffd200 Dawnhowl |cffffffff(Gilneas)", "Dawnhowl" },
-		{ "|cffffffff[43]|cffffd200 Maltimor's Prototype |cffffffff(Gilneas)", "MaltimorsPrototype" },
-		{ "|cffffffff[44]|cffffd200 Bonecruncher |cffffffff(Gilneas)", "Bonecruncher" },
-		{ "|cffffffff[44]|cffffd200 Duskskitter |cffffffff(Gilneas)", "Duskskitter" },
-		{ "|cffffffff[45]|cffffd200 Baron Perenolde |cffffffff(Gilneas)", "BaronPerenolde" },
-		{ "|cffffffff[47]|cffffd200 Grug'thok the Seer |cffffffff(Feralas)", "Grugthok" },
-		{ "|cffffffff[49]|cffffd200 Explorer Ashbeard |cffffffff(Searing Gorge)", "Ashbeard" },
-		{ "|cffffffff[50]|cffffd200 Jal'akar |cffffffff(Hinterlands)", "Jalakar" },
-		{ "|cffffffff[51]|cffffd200 Embereye |cffffffff(Gilijim Isle)", "Embereye" },
-		{ "|cffffffff[51]|cffffd200 Ruk'thok the Pyromancer |cffffffff(Lapidis Isle)", "Rukthok" },
-		{ "|cffffffff[51]|cffffd200 Tarangos |cffffffff(Azshara)", "Tarangos" },
-		{ "|cffffffff[51-52]|cffffd200 Ripjaw |cffffffff(Lapidis Isle)", "Ripjaw" },
-		{ "|cffffffff[53]|cffffd200 Xalvic Blackclaw |cffffffff(Felwood)", "Xalvic" },
-		{ "|cffffffff[54]|cffffd200 Aquitus |cffffffff(Gilijim Isle)", "Aquitus" },
-		{ "|cffffffff[55]|cffffd200 Firstborn of Arugal |cffffffff(Gilneas)", "FirstbornofArugal" },
-		{ "|cffffffff[55]|cffffd200 Letashaz |cffffffff(Gilijim Isle)", "Letashaz" },
-		{ "|cffffffff[55]|cffffd200 Margon the Mighty |cffffffff(Lapidis Isle)", "MargontheMighty" },
-		{ "|cffffffff[55]|cffffd200 The Wandering Knight |cffffffff(WPL)", "WanderingKnight" },
-		{ "|cffffffff[56]|cffffd200 Stoneshell |cffffffff(Tel'abim)", "Stoneshell" },
-		{ "|cffffffff[57]|cffffd200 Zareth Terrorblade |cffffffff(Blasted Lands)", "Zareth" },
-		{ "|cffffffff[58]|cffffd200 Highvale Silverback |cffffffff(Tel'abim)", "HighvaleSilverback" },
-		{ "|cffffffff[58]|cffffd200 Mallon The Moontouched |cffffffff(Winterspring)", "Mallon" },
-		{ "|cffffffff[59]|cffffd200 Blademaster Kargron |cffffffff(Burning Steppes)", "Kargron" },
-		{ "|cffffffff[60]|cffffd200 Admiral Barean Westwind |cffffffff(Sarlet Enclave)", "AdmiralBareanWestwind" },
-		{ "|cffffffff[60]|cffffd200 Azurebeak |cffffffff(Hyjal)", "Azurebeak" },
-		{ "|cffffffff[60]|cffffd200 Barkskin Fisher |cffffffff(Hyjal)", "BarkskinFisher" },
-		{ "|cffffffff[61]|cffffd200 Crusader Larsarius |cffffffff(EPL)", "CrusaderLarsarius" },
-		{ "|cffffffff[61]|cffffd200 Shadeflayer Goliath |cffffffff(Hyjal)", "ShadeflayerGoliath" },
-		{ "|cffffffff[??]|cffffd200 Widow of the Woods |cffffffff(Gilneas)", "WidowoftheWoods" },
-		{ "|cffffffff[??]|cffffd200 M-0L1Y |cffffffff(???)", "M0L1Y" },
+		{ AL["|cffffffff[17]|cffffd200 Earthcaller Rezengal |cffffffff(Stonetalon)"], "EarthcallerRezengal" },
+		{ AL["|cffffffff[17]|cffffd200 Shade Mage |cffffffff(Tirisfal Uplands)"], "ShadeMage" },
+		{ AL["|cffffffff[18]|cffffd200 Graypaw Alpha |cffffffff(Tirisfal Uplands)"], "GraypawAlpha" },
+		{ AL["|cffffffff[24]|cffffd200 Blazespark |cffffffff(Stonetalon)"], "Blazespark" },
+		{ AL["|cffffffff[35]|cffffd200 Witch Doctor Tan'zo |cffffffff(Ruins of Zul'Rasaz)"], "WitchDoctorTanzo" },
+		{ AL["|cffffffff[40]|cffffd200 Dawnhowl |cffffffff(Gilneas)"], "Dawnhowl" },
+		{ AL["|cffffffff[43]|cffffd200 Maltimor's Prototype |cffffffff(Gilneas)"], "MaltimorsPrototype" },
+		{ AL["|cffffffff[44]|cffffd200 Bonecruncher |cffffffff(Gilneas)"], "Bonecruncher" },
+		{ AL["|cffffffff[44]|cffffd200 Duskskitter |cffffffff(Gilneas)"], "Duskskitter" },
+		{ AL["|cffffffff[45]|cffffd200 Baron Perenolde |cffffffff(Gilneas)"], "BaronPerenolde" },
+		{ AL["|cffffffff[47]|cffffd200 Grug'thok the Seer |cffffffff(Feralas)"], "Grugthok" },
+		{ AL["|cffffffff[49]|cffffd200 Explorer Ashbeard |cffffffff(Searing Gorge)"], "Ashbeard" },
+		{ AL["|cffffffff[50]|cffffd200 Jal'akar |cffffffff(Hinterlands)"], "Jalakar" },
+		{ AL["|cffffffff[51]|cffffd200 Embereye |cffffffff(Gilijim Isle)"], "Embereye" },
+		{ AL["|cffffffff[51]|cffffd200 Ruk'thok the Pyromancer |cffffffff(Lapidis Isle)"], "Rukthok" },
+		{ AL["|cffffffff[51]|cffffd200 Tarangos |cffffffff(Azshara)"], "Tarangos" },
+		{ AL["|cffffffff[51-52]|cffffd200 Ripjaw |cffffffff(Lapidis Isle)"], "Ripjaw" },
+		{ AL["|cffffffff[53]|cffffd200 Xalvic Blackclaw |cffffffff(Felwood)"], "Xalvic" },
+		{ AL["|cffffffff[54]|cffffd200 Aquitus |cffffffff(Gilijim Isle)"], "Aquitus" },
+		{ AL["|cffffffff[55]|cffffd200 Firstborn of Arugal |cffffffff(Gilneas)"], "FirstbornofArugal" },
+		{ AL["|cffffffff[55]|cffffd200 Letashaz |cffffffff(Gilijim Isle)"], "Letashaz" },
+		{ AL["|cffffffff[55]|cffffd200 Margon the Mighty |cffffffff(Lapidis Isle)"], "MargontheMighty" },
+		{ AL["|cffffffff[55]|cffffd200 The Wandering Knight |cffffffff(WPL)"], "WanderingKnight" },
+		{ AL["|cffffffff[56]|cffffd200 Stoneshell |cffffffff(Tel'abim)"], "Stoneshell" },
+		{ AL["|cffffffff[57]|cffffd200 Zareth Terrorblade |cffffffff(Blasted Lands)"], "Zareth" },
+		{ AL["|cffffffff[58]|cffffd200 Highvale Silverback |cffffffff(Tel'abim)"], "HighvaleSilverback" },
+		{ AL["|cffffffff[58]|cffffd200 Mallon The Moontouched |cffffffff(Winterspring)"], "Mallon" },
+		{ AL["|cffffffff[59]|cffffd200 Blademaster Kargron |cffffffff(Burning Steppes)"], "Kargron" },
+		{ AL["|cffffffff[60]|cffffd200 Admiral Barean Westwind |cffffffff(Sarlet Enclave)"], "AdmiralBareanWestwind" },
+		{ AL["|cffffffff[60]|cffffd200 Azurebeak |cffffffff(Hyjal)"], "Azurebeak" },
+		{ AL["|cffffffff[60]|cffffd200 Barkskin Fisher |cffffffff(Hyjal)"], "BarkskinFisher" },
+		{ AL["|cffffffff[61]|cffffd200 Crusader Larsarius |cffffffff(EPL)"], "CrusaderLarsarius" },
+		{ AL["|cffffffff[61]|cffffd200 Shadeflayer Goliath |cffffffff(Hyjal)"], "ShadeflayerGoliath" },
+		{ AL["|cffffffff[??]|cffffd200 Widow of the Woods |cffffffff(Gilneas)"], "WidowoftheWoods" },
+		{ AL["|cffffffff[??]|cffffd200 M-0L1Y |cffffffff(???)"], "M0L1Y" },
 	},
 	["AbyssalCouncil"] = {
 		{ AL["Abyssal Council"].." - "..AL["Templars"], "AbyssalTemplars" },
@@ -3154,15 +3156,19 @@ AtlasLoot_HewdropDown_SubTables = {
 		{ AL["Honored Reputation Rewards"], "BRRepHonored" },
 		{ AL["Revered Reputation Rewards"], "BRRepRevered" },
 		{ AL["Exalted Reputation Rewards"], "BRRepExalted" },
+		{ AL["Token of Blood Rewards"], "BRRepTokens" },
 	},
 	["AVRewards"] = {
 		{ AL["Friendly Reputation Rewards"], "AVRepFriendly" },
 		{ AL["Honored Reputation Rewards"], "AVRepHonored" },
 		{ AL["Revered Reputation Rewards"], "AVRepRevered" },
 		{ AL["Exalted Reputation Rewards"], "AVRepExalted" },
+		{ AL["Exalted Reputation Rewards"], "AVRepExalted" },
+		{ AL["Korrak the Bloodrager"], "AVKorrak" },
+		{ AL["Ivus & Lokholar"], "AVLokholarIvus" },
 	},
 	["ABRewards"] = {
-		{ "Arathi Basin Menu", "ABRepMenu" },
+		{ AL["Arathi Basin Menu"], "ABRepMenu" },
 		{ AL["Friendly Reputation Rewards"], "ABRepFriendly" },
 		{ AL["Honored Reputation Rewards"], "ABRepHonored5059" },
 		{ AL["Revered Reputation Rewards"], "ABRepRevered5059" },
@@ -3180,7 +3186,7 @@ AtlasLoot_HewdropDown_SubTables = {
 		{ AL["Warrior"], "PVPWarrior" },
 	},
 	["WSGRewards"] = {
-		{ "Warsong Gulch Menu", "WSGRepMenu" },
+		{ AL["Warsong Gulch Menu"], "WSGRepMenu" },
 		{ AL["Friendly Reputation Rewards"], "WSGRepFriendly" },
 		{ AL["Honored Reputation Rewards"], "WSGRepHonored5059" },
 		{ AL["Revered Reputation Rewards"], "WSGRepRevered5059" },
@@ -3358,7 +3364,6 @@ function AtlasLootItem_OnEnter()
 			if ( AtlasLootCharDB.ItemIDs ) then
 				AtlasLootTooltip:AddLine(BLUE..AL["SpellID:"].." "..spellID, nil, nil, nil, 1);
 			end
-			AtlasLootTooltip:AddLine("\nLooking for an enchant? /w Lexie", 0.75, 0.37, 1, 1);
 			AtlasLootTooltip:Show();
 			if GetSpellInfoVanillaDB["enchants"][spellID]["item"] and GetSpellInfoVanillaDB["enchants"][spellID]["item"] ~= nil and GetSpellInfoVanillaDB["enchants"][spellID]["item"] ~= "" then
 				AtlasLootTooltip2:SetOwner(AtlasLootTooltip, "ANCHOR_BOTTOMRIGHT", -(AtlasLootTooltip:GetWidth()), 0);
@@ -3825,45 +3830,11 @@ local remoteversion = tonumber(AtlasLoot_updateavailable) or 0
 local loginchannels = { "BATTLEGROUND", "RAID", "GUILD" }
 local groupchannels = { "BATTLEGROUND", "RAID" }
 
-AtlasLoot_updater_ChatFrame_OnEvent = ChatFrame_OnEvent
 AtlasLoot_updater = CreateFrame("Frame")
 AtlasLoot_updater:RegisterEvent("CHAT_MSG_ADDON")
+AtlasLoot_updater:RegisterEvent("CHAT_MSG_CHANNEL")
 AtlasLoot_updater:RegisterEvent("PLAYER_ENTERING_WORLD")
 AtlasLoot_updater:RegisterEvent("PARTY_MEMBERS_CHANGED")
-
-function ChatFrame_OnEvent(event)
-
-	if event == "CHAT_MSG_CHANNEL" then
-	
-		local type = strsub(event, 10)
-		local source = strsub(type,1,1)
-		if type == "CHANNEL" and arg4 then
-			_,_,source = string.find(arg4,"(%d+)%.")
-		end
-		
-		if source then
-			_,name = GetChannelName(source)
-		end
-		
-		if name == "LFT" then
-			local msg, v, remoteversion = AtlasLoot_strsplit(":", arg1)
-			if msg == "Atlasloot" then
-				local remoteversion = tonumber(remoteversion)
-				if remoteversion >= 40000 then remoteversion = 0 end --Block for people using some version from another version of WoW.
-				if v == "VERSION" and remoteversion then
-					if remoteversion > localversion then
-						AtlasLoot_updateavailable = remoteversion
-						if not alreadyshown then
-							DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot]|r New version available! https://github.com/Lexiebean/AtlasLoot/")
-							alreadyshown = true
-						end
-					end
-				end
-			end
-		end
-	end
-	AtlasLoot_updater_ChatFrame_OnEvent(event);
-end
 
 AtlasLoot_updater:SetScript("OnEvent", function()
 	if event == "CHAT_MSG_ADDON" and arg1 == "AtlasLoot" then
@@ -3876,6 +3847,29 @@ AtlasLoot_updater:SetScript("OnEvent", function()
 				if not alreadyshown then
 					DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot]|r New version available! https://github.com/Lexiebean/AtlasLoot/")
 					alreadyshown = true
+				end
+			end
+		end
+	end
+
+	if event == "CHAT_MSG_CHANNEL" then
+		local _,_,source = string.find(arg4,"(%d+)%.")
+		if source then
+			_,name = GetChannelName(source)
+		end
+		if name == "LFT" then
+			local msg, v, remoteversion = AtlasLoot_strsplit(":", arg1)
+			if msg == "Atlasloot" then
+				local remoteversion = tonumber(remoteversion) or 0
+				if remoteversion >= 40000 then remoteversion = 0 end --Block for people using some version from another version of WoW.
+				if v == "VERSION" and remoteversion then
+					if remoteversion > localversion then
+						AtlasLoot_updateavailable = remoteversion
+						if not alreadyshown then
+							DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot]|r New version available! https://github.com/Lexiebean/AtlasLoot/")
+							alreadyshown = true
+						end
+					end
 				end
 			end
 		end

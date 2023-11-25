@@ -1,8 +1,8 @@
 ﻿--[[
-loottables.en.lua
-This file assigns a title to every loot table.  The primary use of this table
-is in the search function, as when iterating through the loot tables there is no
-inherant title to the loot table, given the origins of the mod as an Atlas plugin.
+-- zhCN汉化，Wind
+-- https://github.com/NineTears/AtlasQuest-Turtle-zhCN
+-- Last update: 2023-11-22
+
 ]]
 
 --Invoke libraries
@@ -388,6 +388,7 @@ AtlasLoot_TableNames = {
 	["COTBMMossheart"] = { AL["Mossheart"], "AtlasLootItems" },
 	["COTBMRotmaw"] = { AL["Rotmaw"], "AtlasLootItems" },
 	["COTBMAntnormi"] = { AL["Antnormi"], "AtlasLootItems" },
+	["COTTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
 	["COTBMInfiniteChromie"] = { AL["Infinite Chromie"], "AtlasLootItems" },
 	-- Stormwind Vault
 	["SWVAszoshGrimflame"] = { AL["Aszosh Grimflame"], "AtlasLootItems" },
@@ -396,6 +397,7 @@ AtlasLoot_TableNames = {
 	["SWVDamian"] = { AL["Damian"], "AtlasLootItems" },
 	["SWVVolkanCruelblade"] = { AL["Volkan Cruelblade"], "AtlasLootItems" },
 	["SWVVaultArmoryEquipment"] = { AL["Arc'tiras / Vault Armory Equipment"], "AtlasLootItems" },
+	["SWVTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
 	--Temple of Ahn'Qiraj
 	["AQ40Skeram"] = { AL["The Prophet Skeram"], "AtlasLootItems" },
 	["AQ40Trio"] = { AL["The Bug Family"], "AtlasLootItems" },
@@ -772,7 +774,8 @@ AtlasLoot_TableNames = {
 	--Timbermaw Hold
 	["Timbermaw"] = { AL["Timbermaw Hold"], "AtlasLootRepItems" },
 	--Wardens of Time
-	["Warderns1"] = { AL["Wardens of Time"], "AtlasLootRepItems" },
+	["Warderns1"] = { AL["Wardens of Time"] .. ": " .. AL["Friendly"] .. " & " .. AL["Honored"], "AtlasLootRepItems" },
+	["Warderns2"] = { AL["Wardens of Time"] .. ": " .. AL["Revered"] .. " & " .. AL["Exalted"], "AtlasLootRepItems" },
 	--Wintersaber Trainers
 	["Wintersaber1"] = { AL["Wintersaber Trainers"], "AtlasLootRepItems" },
 	--Zandalar Tribe
@@ -817,6 +820,7 @@ AtlasLoot_TableNames = {
 	["SmithingArtisan1"] = { AL["Blacksmithing"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
 	["SmithingArtisan2"] = { AL["Blacksmithing"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
 	["SmithingArtisan3"] = { AL["Blacksmithing"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+	["SmithingArtisan4"] = { AL["Blacksmithing"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
 	["Armorsmith1"] = { AL["Blacksmithing"] .. ": " .. AL["Armorsmith"], "AtlasLootCrafting" },
 	["Weaponsmith1"] = { AL["Blacksmithing"] .. ": " .. AL["Weaponsmith"], "AtlasLootCrafting" },
 	["Axesmith1"] = { AL["Blacksmithing"] .. ": " .. AL["Master Axesmith"], "AtlasLootCrafting" },
@@ -894,11 +898,14 @@ AtlasLoot_TableNames = {
 	["BRRepHonored"] = { AL["Blood Ring"] .. " " .. AL["Honored Rewards"], "AtlasLootBGItems" },
 	["BRRepRevered"] = { AL["Blood Ring"] .. " " .. AL["Revered Rewards"], "AtlasLootBGItems" },
 	["BRRepExalted"] = { AL["Blood Ring"] .. " " .. AL["Exalted Rewards"], "AtlasLootBGItems" },
+	["BRRepTokens"] = { AL["Token of Blood Rewards"], "AtlasLootBGItems" },
 	--Alterac Valley
 	["AVRepFriendly"] = { AL["Alterac Valley"] .. " " .. AL["51-60 Friendly Rewards"], "AtlasLootBGItems" },
 	["AVRepHonored"] = { AL["Alterac Valley"] .. " " .. AL["51-60 Honored Rewards"], "AtlasLootBGItems" },
 	["AVRepRevered"] = { AL["Alterac Valley"] .. " " .. AL["51-60 Revered Rewards"], "AtlasLootBGItems" },
 	["AVRepExalted"] = { AL["Alterac Valley"] .. " " .. AL["51-60 Exalted Rewards"], "AtlasLootBGItems" },
+	["AVKorrak"] = { AL["Korrak the Bloodrager"], "AtlasLootBGItems" },
+	["AVLokholarIvus"] = { AL["Ivus & Lokholar"], "AtlasLootBGItems" },
 	--Arathi Basin
 	["ABRepFriendly"] = { AL["Arathi Basin"] .. " " .. AL["Friendly Rewards"], "AtlasLootBGItems" },
 	["ABRepHonored2029"] = { AL["Arathi Basin"] .. " " .. AL["20-29 Honored Rewards"], "AtlasLootBGItems" },
@@ -1122,6 +1129,7 @@ AtlasLoot_TableNamesBoss = {
 		["COTBMMossheart"] = { AL["Mossheart"], "AtlasLootItems" },
 		["COTBMRotmaw"] = { AL["Rotmaw"], "AtlasLootItems" },
 		["COTBMAntnormi"] = { AL["Antnormi"], "AtlasLootItems" },
+		["COTTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
 		["COTBMInfiniteChromie"] = { AL["Infinite Chromie"], "AtlasLootItems" },
 	},
 	["Stormwind Vault"] = {
@@ -1131,6 +1139,7 @@ AtlasLoot_TableNamesBoss = {
 		["SWVDamian"] = { AL["Damian"], "AtlasLootItems" },
 		["SWVVolkanCruelblade"] = { AL["Volkan Cruelblade"], "AtlasLootItems" },
 		["SWVVaultArmoryEquipment"] = { AL["Arc'tiras / Vault Armory Equipment"], "AtlasLootItems" },
+		["SWVTrash"] = { AL["Trash Mobs"], "AtlasLootItems" },
 	},
 	["The Deadmines"] = {
 		["DMRhahkZor"] = { AL["Rhahk'Zor"], "AtlasLootItems" },
@@ -1360,7 +1369,11 @@ AtlasLoot_TableNamesBoss = {
 		["SFKTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Shadowfang Keep"] .. ")", "AtlasLootItems" },
 	},
 	["The Stockade"] = {
+		["SWStTargorr"] = { AL["Targorr the Dread"], "AtlasLootItems" },
 		["SWStKamDeepfury"] = { AL["Kam Deepfury"], "AtlasLootItems" },
+		["SWStHamhock"] = { AL["Hamhock"], "AtlasLootItems" },
+		["SWStDextren"] = { AL["Dextren Ward"], "AtlasLootItems"},
+		["SWStBazil"] = { AL["Bazil Thredd"], "AtlasLootItems" },
 		["SWStBruegalIronknuckle"] = { AL["Bruegal Ironknuckle"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
 		["SWStTrash"] = { AL["Trash Mobs"] .. " (" .. AL["The Stockade"] .. ")", "AtlasLootItems" },
 	},
@@ -1802,7 +1815,8 @@ AtlasLoot_TableNamesBoss = {
 		--Timbermaw Hold
 		["Timbermaw"] = { AL["Timbermaw Hold"], "AtlasLootRepItems" },
 		--Wardens of Time
-		["Warderns1"] = { AL["Wardens of Time"], "AtlasLootRepItems" },
+		["Warderns1"] = { AL["Wardens of Time"] .. ": " .. AL["Friendly"] .. " & " .. AL["Honored"], "AtlasLootRepItems" },
+		["Warderns2"] = { AL["Wardens of Time"] .. ": " .. AL["Revered"] .. " & " .. AL["Exalted"], "AtlasLootRepItems" },
 		--Wintersaber Trainers
 		["Wintersaber1"] = { AL["Wintersaber Trainers"], "AtlasLootRepItems" },
 		--Zandalar Tribe
@@ -1848,6 +1862,7 @@ AtlasLoot_TableNamesBoss = {
 		["SmithingArtisan1"] = { AL["Blacksmithing"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
 		["SmithingArtisan2"] = { AL["Blacksmithing"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
 		["SmithingArtisan3"] = { AL["Blacksmithing"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
+		["SmithingArtisan4"] = { AL["Blacksmithing"] .. ": " .. AL["Artisan"], "AtlasLootCrafting" },
 		["Armorsmith1"] = { AL["Blacksmithing"] .. ": " .. AL["Armorsmith"], "AtlasLootCrafting" },
 		["Weaponsmith1"] = { AL["Blacksmithing"] .. ": " .. AL["Weaponsmith"], "AtlasLootCrafting" },
 		["Axesmith1"] = { AL["Blacksmithing"] .. ": " .. AL["Master Axesmith"], "AtlasLootCrafting" },
@@ -1925,11 +1940,14 @@ AtlasLoot_TableNamesBoss = {
 		["BRRepHonored"] = { AL["Blood Ring"] .. " " .. AL["Honored Rewards"], "AtlasLootBGItems" },
 		["BRRepRevered"] = { AL["Blood Ring"] .. " " .. AL["Revered Rewards"], "AtlasLootBGItems" },
 		["BRRepExalted"] = { AL["Blood Ring"] .. " " .. AL["Exalted Rewards"], "AtlasLootBGItems" },
+		["BRRepTokens"] = { AL["Token of Blood Rewards"], "AtlasLootBGItems" },
 		--Alterac Valley
 		["AVRepFriendly"] = { AL["Alterac Valley"] .. " " .. AL["51-60 Friendly Rewards"], "AtlasLootBGItems" },
 		["AVRepHonored"] = { AL["Alterac Valley"] .. " " .. AL["51-60 Honored Rewards"], "AtlasLootBGItems" },
 		["AVRepRevered"] = { AL["Alterac Valley"] .. " " .. AL["51-60 Revered Rewards"], "AtlasLootBGItems" },
 		["AVRepExalted"] = { AL["Alterac Valley"] .. " " .. AL["51-60 Exalted Rewards"], "AtlasLootBGItems" },
+		["AVKorrak"] = { AL["Korrak the Bloodrager"], "AtlasLootBGItems" },
+		["AVLokholarIvus"] = { AL["Ivus & Lokholar"], "AtlasLootBGItems" },
 		--Arathi Basin
 		["ABRepFriendly"] = { AL["Arathi Basin"] .. " " .. AL["Friendly Rewards"], "AtlasLootBGItems" },
 		["ABRepHonored2029"] = { AL["Arathi Basin"] .. " " .. AL["20-29 Honored Rewards"], "AtlasLootBGItems" },
@@ -1979,5 +1997,3 @@ AtlasLoot_TableNamesBoss = {
 };
 
 end
-
-

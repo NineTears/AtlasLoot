@@ -494,6 +494,8 @@ AtlasLoot_ButtonRegistry = {
 		Title = AL["Chronar"];
 		Next_Page = "COTBMHarbingerAphygth";
 		Next_Title = AL["Harbinger Aph'ygth"];
+		Prev_Page = "COTTrash";
+		Prev_Title = AL["Trash Mobs"];
 	};
 	["COTBMHarbingerAphygth"] = {
 		Title = AL["Harbinger Aph'ygth"];
@@ -539,19 +541,26 @@ AtlasLoot_ButtonRegistry = {
 	};
 	["COTBMAntnormi"] = {
 		Title = AL["Antnormi"];
-		Next_Page = "COTBMInfiniteChromie";
-		Next_Title = AL["Infinite Chromie"];
+		Next_Page = "COTTrash";
+		Next_Title = AL["Trash Mobs"];
 		Prev_Page = "COTBMRotmaw";
 		Prev_Title = AL["Rotmaw"];
 	};
-	["COTBMInfiniteChromie"] = {
-		Title = AL["Infinite Chromie"];
+	["COTTrash"] = {
+		Title = AL["Trash Mobs"];
+		Next_Page = "COTBMChronar";
+		Next_Title = AL["Chronar"];
 		Prev_Page = "COTBMAntnormi";
 		Prev_Title = AL["Antnormi"];
 	};
+	--["COTBMInfiniteChromie"] = {
+	--	Title = AL["Infinite Chromie"];
+	--	Prev_Page = "COTBMAntnormi";
+	--	Prev_Title = AL["Antnormi"];
+	--};
 	["SWVAszoshGrimflame"] = {
-		Prev_Page = "SWVVaultArmoryEquipment";
-		Prev_Title = AL["Arc'tiras / Vault Armory Equipment"];
+		Prev_Page = "SWVTrash";
+		Prev_Title =  AL["Trash Mobs"];
 		Title = AL["Aszosh Grimflame"];
 		Next_Page = "SWVThamGrarr";
 		Next_Title = AL["Tham'Grarr"];
@@ -588,6 +597,13 @@ AtlasLoot_ButtonRegistry = {
 		Title = AL["Arc'tiras / Vault Armory Equipment"];
 		Prev_Page = "SWVVolkanCruelblade";
 		Prev_Title = AL["Volkan Cruelblade"];
+		Next_Page = "SWVTrash";
+		Next_Title = AL["Trash Mobs"];
+	};
+	["SWVTrash"] = {
+		Title = AL["Trash Mobs"];
+		Prev_Page = "SWVVaultArmoryEquipment";
+		Prev_Title = AL["Arc'tiras / Vault Armory Equipment"];
 		Next_Page = "SWVAszoshGrimflame";
 		Next_Title = AL["Aszosh Grimflame"];
 	};
@@ -2651,7 +2667,7 @@ AtlasLoot_ButtonRegistry = {
 		Next_Page = "DEmeriss";
 		Next_Title = AL["Emeriss"];
 		Prev_Page = "CowKing";
-		Prev_Title = "There Is No Cow Level";
+		Prev_Title = AL["There Is No Cow Level"];
 	};
 	["DEmeriss"] = {
 		Title = AL["Emeriss"];
@@ -2684,298 +2700,298 @@ AtlasLoot_ButtonRegistry = {
 	["KKazzak"] = {
 		Title = AL["Lord Kazzak"];
 		Next_Page = "Nerubian";
-		Next_Title = "Nerubian Overseer";
+		Next_Title = AL["Nerubian Overseer"];
 		Prev_Page = "DYsondre";
 		Prev_Title = AL["Ysondre"];
 	};
 	["Turtlhu"] = {
-		Title = "Turtlhu, the Black Turtle of Doom";
+		Title = AL["Turtlhu, the Black Turtle of Doom"];
 		Next_Page = "Nerubian";
-		Next_Title = "Nerubian Overseer";
+		Next_Title = AL["Nerubian Overseer"];
 		Prev_Page = "KKazzak";
 		Prev_Title = AL["Lord Kazzak"];
 	};
 	["Nerubian"] = {
-		Title = "Nerubian Overseer";
+		Title = AL["Nerubian Overseer"];
 		Next_Page = "Reaver";
-		Next_Title = "Dark Reaver of Karazhan";
+		Next_Title = AL["Dark Reaver of Karazhan"];
 		Prev_Page = "KKazzak";
 		Prev_Title = AL["Lord Kazzak"];
 	};
 	["Reaver"] = {
-		Title = "Dark Reaver of Karazhan";
+		Title = AL["Dark Reaver of Karazhan"];
 		Next_Page = "Ostarius";
-		Next_Title = "Ostarius";
+		Next_Title = AL["Ostarius"];
 		Prev_Page = "Nerubian";
-		Prev_Title = "Nerubian Overseer";
+		Prev_Title = AL["Nerubian Overseer"];
 	};
 	["Ostarius"] = {
-		Title = "Ostarius";
+		Title = AL["Ostarius"];
 		Next_Page = "Concavius";
-		Next_Title = "Concavius";
+		Next_Title = AL["Concavius"];
 		Prev_Page = "Reaver";
-		Prev_Title = "Dark Reaver of Karazhan";
+		Prev_Title = AL["Dark Reaver of Karazhan"];
 	};
 	["Concavius"] = {
-		Title = "Concavius";
+		Title = AL["Concavius"];
 		Next_Page = "CowKing";
-		Next_Title = "The Cow King";
+		Next_Title = AL["The Cow King"];
 		Prev_Page = "Ostarius";
-		Prev_Title = "Ostarius";
+		Prev_Title = AL["Ostarius"];
 	};
 	["CowKing"] = {
-		Title = "There Is No Cow Level";
+		Title = AL["There Is No Cow Level"];
 		Next_Page =	"AAzuregos";
 		Next_Title = AL["Azuregos"];
 		Prev_Page = "Concavius";
-		Prev_Title = "Concavius";
+		Prev_Title = AL["Concavius"];
 	};
 
 	--Rare Spawns
 	["EarthcallerRezengal"] = {
-		Title = "Earthcaller Rezengal";
+		Title = AL["Earthcaller Rezengal"];
 		Next_Page = "ShadeMage";
-		Next_Title = "Shade Mage";
+		Next_Title = AL["Shade Mage"];
 		Prev_Page = "M0L1Y";
-		Prev_Title = "M-0L1Y";
+		Prev_Title = AL["M-0L1Y"];
 	};
 	["ShadeMage"] = {
-		Title = "Shade Mage";
+		Title = AL["Shade Mage"];
 		Next_Page = "GraypawAlpha";
-		Next_Title = "Graypaw Alpha";
+		Next_Title = AL["Graypaw Alpha"];
 		Prev_Page = "EarthcallerRezengal";
-		Prev_Title = "Earthcaller Rezengal";
+		Prev_Title = AL["Earthcaller Rezengal"];
 	};
 	["GraypawAlpha"] = {
-		Title = "Graypaw Alpha";
+		Title = AL["Graypaw Alpha"];
 		Next_Page = "Blazespark";
-		Next_Title = "Blazespark";
+		Next_Title = AL["Blazespark"];
 		Prev_Page = "ShadeMage";
-		Prev_Title = "Shade Mage";
+		Prev_Title = AL["Shade Mage"];
 	};
 	["Blazespark"] = {
-		Title = "Blazespark";
+		Title = AL["Blazespark"];
 		Next_Page = "WitchDoctorTanzo";
-		Next_Title = "Witch Doctor Tan'zo";
+		Next_Title = AL["Witch Doctor Tan'zo"];
 		Prev_Page = "GraypawAlpha";
-		Prev_Title = "Graypaw Alpha";
+		Prev_Title = AL["Graypaw Alpha"];
 	};
 	["WitchDoctorTanzo"] = {
-		Title = "Witch Doctor Tan'zo";
+		Title = AL["Witch Doctor Tan'zo"];
 		Next_Page = "Dawnhowl";
-		Next_Title = "Dawnhowl";
+		Next_Title = AL["Dawnhowl"];
 		Prev_Page = "Blazespark";
-		Prev_Title = "Blazespark";
+		Prev_Title = AL["Blazespark"];
 	};
 	["Dawnhowl"] = {
-		Title = "Dawnhowl";
+		Title = AL["Dawnhowl"];
 		Next_Page = "MaltimorsPrototype";
-		Next_Title = "Maltimor's Prototype";
+		Next_Title = AL["Maltimor's Prototype"];
 		Prev_Page = "WitchDoctorTanzo";
-		Prev_Title = "Witch Doctor Tan'zo";
+		Prev_Title = AL["Witch Doctor Tan'zo"];
 	};
 	["MaltimorsPrototype"] = {
-		Title = "Maltimor's Prototype";
+		Title = AL["Maltimor's Prototype"];
 		Next_Page = "Bonecruncher";
-		Next_Title = "Bonecruncher";
+		Next_Title = AL["Bonecruncher"];
 		Prev_Page = "Dawnhowl";
-		Prev_Title = "Dawnhowl";
+		Prev_Title = AL["Dawnhowl"];
 	};
 	["Bonecruncher"] = {
-		Title = "Bonecruncher";
+		Title = AL["Bonecruncher"];
 		Next_Page = "Duskskitter";
-		Next_Title = "Duskskitter";
+		Next_Title = AL["Duskskitter"];
 		Prev_Page = "MaltimorsPrototype";
-		Prev_Title = "Maltimor's Prototype";
+		Prev_Title = AL["Maltimor's Prototype"];
 	};
 	["Duskskitter"] = {
-		Title = "Duskskitter";
+		Title = AL["Duskskitter"];
 		Next_Page = "BaronPerenolde";
-		Next_Title = "Baron Perenolde";
+		Next_Title = AL["Baron Perenolde"];
 		Prev_Page = "Bonecruncher";
-		Prev_Title = "Bonecruncher";
+		Prev_Title = AL["Bonecruncher"];
 	};
 	["BaronPerenolde"] = {
-		Title = "Baron Perenolde";
+		Title = AL["Baron Perenolde"];
 		Next_Page = "Grugthok";
-		Next_Title = "Grug'thok the Seer";
+		Next_Title = AL["Grug'thok the Seer"];
 		Prev_Page = "Duskskitter";
-		Prev_Title = "Duskskitter";
+		Prev_Title = AL["Duskskitter"];
 	};
 	["Grugthok"] = {
-		Title = "Grug'thok the Seer";
+		Title = AL["Grug'thok the Seer"];
 		Next_Page = "Ashbeard";
-		Next_Title = "Explorer Ashbeard";
+		Next_Title = AL["Explorer Ashbeard"];
 		Prev_Page = "BaronPerenolde";
-		Prev_Title = "Baron Perenolde";
+		Prev_Title = AL["Baron Perenolde"];
 	};
 	["Ashbeard"] = {
-		Title = "Explorer Ashbeard";
+		Title = AL["Explorer Ashbeard"];
 		Next_Page = "Jalakar";
-		Next_Title = "Jal'akar";
+		Next_Title = AL["Jal'akar"];
 		Prev_Page = "Grugthok";
-		Prev_Title = "Grug'thok the Seer";
+		Prev_Title = AL["Grug'thok the Seer"];
 	};
 	["Jalakar"] = {
-		Title = "Jal'akar";
+		Title = AL["Jal'akar"];
 		Next_Page = "Embereye";
-		Next_Title = "Embereye";
+		Next_Title = AL["Embereye"];
 		Prev_Page = "Ashbeard";
-		Prev_Title = "Explorer Ashbeard";
+		Prev_Title = AL["Explorer Ashbeard"];
 	};
 	["Embereye"] = {
-		Title = "Embereye";
+		Title = AL["Embereye"];
 		Next_Page = "Rukthok";
-		Next_Title = "Ruk'thok the Pyromancer";
+		Next_Title = AL["Ruk'thok the Pyromancer"];
 		Prev_Page = "Jalakar";
-		Prev_Title = "Jal'akar";
+		Prev_Title = AL["Jal'akar"];
 	};
 	["Rukthok"] = {
-		Title = "Ruk'thok the Pyromancer";
+		Title = AL["Ruk'thok the Pyromancer"];
 		Next_Page = "Tarangos";
-		Next_Title = "Tarangos";
+		Next_Title = AL["Tarangos"];
 		Prev_Page = "Embereye";
-		Prev_Title = "Embereye";
+		Prev_Title = AL["Embereye"];
 	};
 	["Tarangos"] = {
-		Title = "Tarangos";
+		Title = AL["Tarangos"];
 		Next_Page = "Ripjaw";
-		Next_Title = "Ripjaw";
+		Next_Title = AL["Ripjaw"];
 		Prev_Page = "Rukthok";
-		Prev_Title = "Ruk'thok the Pyromancer";
+		Prev_Title = AL["Ruk'thok the Pyromancer"];
 	};
 	["Ripjaw"] = {
-		Title = "Ripjaw";
+		Title = AL["Ripjaw"];
 		Next_Page = "Xalvic";
-		Next_Title = "Xalvic Blackclaw";
+		Next_Title = AL["Xalvic Blackclaw"];
 		Prev_Page = "Tarangos";
-		Prev_Title = "Tarangos";
+		Prev_Title = AL["Tarangos"];
 	};
 	["Xalvic"] = {
-		Title = "Xalvic Blackclaw";
+		Title = AL["Xalvic Blackclaw"];
 		Next_Page = "Aquitus";
-		Next_Title = "Aquitus";
+		Next_Title = AL["Aquitus"];
 		Prev_Page = "Ripjaw";
-		Prev_Title = "Ripjaw";
+		Prev_Title = AL["Ripjaw"];
 	};
 	["Aquitus"] = {
-		Title = "Aquitus";
+		Title = AL["Aquitus"];
 		Next_Page = "FirstbornofArugal";
-		Next_Title = "Firstborn of Arugal";
+		Next_Title = AL["Firstborn of Arugal"];
 		Prev_Page = "Xalvic";
-		Prev_Title = "Xalvic Blackclaw";
+		Prev_Title = AL["Xalvic Blackclaw"];
 	};
 	["FirstbornofArugal"] = {
-		Title = "Firstborn of Arugal";
+		Title = AL["Firstborn of Arugal"];
 		Next_Page = "Letashaz";
-		Next_Title = "Letashaz";
+		Next_Title = AL["Letashaz"];
 		Prev_Page = "Aquitus";
-		Prev_Title = "Aquitus";
+		Prev_Title = AL["Aquitus"];
 	};
 	["Letashaz"] = {
-		Title = "Letashaz";
+		Title = AL["Letashaz"];
 		Next_Page = "MargontheMighty";
-		Next_Title = "Margon the Mighty";
+		Next_Title = AL["Margon the Mighty"];
 		Prev_Page = "FirstbornofArugal";
-		Prev_Title = "Firstborn of Arugal";
+		Prev_Title = AL["Firstborn of Arugal"];
 	};
 	["MargontheMighty"] = {
-		Title = "Margon the Mighty";
+		Title = AL["Margon the Mighty"];
 		Next_Page = "WanderingKnight";
-		Next_Title = "The Wandering Knight";
+		Next_Title = AL["The Wandering Knight"];
 		Prev_Page = "Letashaz";
-		Prev_Title = "Letashaz";
+		Prev_Title = AL["Letashaz"];
 	};
 	["WanderingKnight"] = {
-		Title = "The Wandering Knight";
+		Title = AL["The Wandering Knight"];
 		Next_Page = "Stoneshell";
-		Next_Title = "Stoneshell";
+		Next_Title = AL["Stoneshell"];
 		Prev_Page = "MargontheMighty";
-		Prev_Title = "Margon the Mighty";
+		Prev_Title = AL["Margon the Mighty"];
 	};
 	["Stoneshell"] = {
-		Title = "Stoneshell";
+		Title = AL["Stoneshell"];
 		Next_Page = "Zareth";
-		Next_Title = "Zareth Terrorblade";
+		Next_Title = AL["Zareth Terrorblade"];
 		Prev_Page = "WanderingKnight";
-		Prev_Title = "The Wandering Knight";
+		Prev_Title = AL["The Wandering Knight"];
 	};
 	["Zareth"] = {
-		Title = "Zareth Terrorblade";
+		Title = AL["Zareth Terrorblade"];
 		Next_Page = "HighvaleSilverback";
-		Next_Title = "Highvale Silverback";
+		Next_Title = AL["Highvale Silverback"];
 		Prev_Page = "Stoneshell";
-		Prev_Title = "Stoneshell";
+		Prev_Title = AL["Stoneshell"];
 	};
 	["HighvaleSilverback"] = {
-		Title = "Highvale Silverback";
+		Title = AL["Highvale Silverback"];
 		Next_Page = "Mallon";
-		Next_Title = "Mallon The Moontouched";
+		Next_Title = AL["Mallon The Moontouched"];
 		Prev_Page = "Zareth";
-		Prev_Title = "Zareth Terrorblade";
+		Prev_Title = AL["Zareth Terrorblade"];
 	};
 	["Mallon"] = {
-		Title = "Mallon The Moontouched";
+		Title = AL["Mallon The Moontouched"];
 		Next_Page = "Kargron";
-		Next_Title = "Blademaster Kargron";
+		Next_Title = AL["Blademaster Kargron"];
 		Prev_Page = "HighvaleSilverback";
-		Prev_Title = "Highvale Silverback";
+		Prev_Title = AL["Highvale Silverback"];
 	};
 	["Kargron"] = {
-		Title = "Blademaster Kargron";
+		Title = AL["Blademaster Kargron"];
 		Next_Page = "AdmiralBareanWestwind";
-		Next_Title = "Admiral Barean Westwind";
+		Next_Title = AL["Admiral Barean Westwind"];
 		Prev_Page = "Mallon";
-		Prev_Title = "Mallon The Moontouched";
+		Prev_Title = AL["Mallon The Moontouched"];
 	};
 	["AdmiralBareanWestwind"] = {
-		Title = "Admiral Barean Westwind";
+		Title = AL["Admiral Barean Westwind"];
 		Next_Page = "Azurebeak";
-		Next_Title = "Azurebeak";
+		Next_Title = AL["Azurebeak"];
 		Prev_Page = "Kargron";
-		Prev_Title = "Blademaster Kargron";
+		Prev_Title = AL["Blademaster Kargron"];
 	};
 	["Azurebeak"] = {
-		Title = "Azurebeak";
+		Title = AL["Azurebeak"];
 		Next_Page = "BarkskinFisher";
-		Next_Title = "Barkskin Fisher";
+		Next_Title = AL["Barkskin Fisher"];
 		Prev_Page = "AdmiralBareanWestwind";
-		Prev_Title = "Admiral Barean Westwind";
+		Prev_Title = AL["Admiral Barean Westwind"];
 	};
 	["BarkskinFisher"] = {
-		Title = "Barkskin Fisher";
+		Title = AL["Barkskin Fisher"];
 		Next_Page = "CrusaderLarsarius";
-		Next_Title = "Crusader Larsarius";
+		Next_Title = AL["Crusader Larsarius"];
 		Prev_Page = "Azurebeak";
-		Prev_Title = "Azurebeak";
+		Prev_Title = AL["Azurebeak"];
 	};
 	["CrusaderLarsarius"] = {
-		Title = "Crusader Larsarius";
+		Title = AL["Crusader Larsarius"];
 		Next_Page = "ShadeflayerGoliath";
-		Next_Title = "Shadeflayer Goliath";
+		Next_Title = AL["Shadeflayer Goliath"];
 		Prev_Page = "BarkskinFisher";
-		Prev_Title = "Barkskin Fisher";
+		Prev_Title = AL["Barkskin Fisher"];
 	};
 	["ShadeflayerGoliath"] = {
-		Title = "Shadeflayer Goliath";
+		Title = AL["Shadeflayer Goliath"];
 		Next_Page = "WidowoftheWoods";
-		Next_Title = "Widow of the Woods";
+		Next_Title = AL["Widow of the Woods"];
 		Prev_Page = "CrusaderLarsarius";
-		Prev_Title = "Crusader Larsarius";
+		Prev_Title = AL["Crusader Larsarius"];
 	};
 	["WidowoftheWoods"] = {
-		Title = "Widow of the Woods";
+		Title = AL["Widow of the Woods"];
 		Next_Page = "M0L1Y";
-		Next_Title = "M-0L1Y";
+		Next_Title = AL["M-0L1Y"];
 		Prev_Page = "ShadeflayerGoliath";
-		Prev_Title = "Shadeflayer Goliath";
+		Prev_Title = AL["Shadeflayer Goliath"];
 	};
 	["M0L1Y"] = {
-		Title = "M-0L1Y";
+		Title = AL["M-0L1Y"];
 		Next_Page = "EarthcallerRezengal";
-		Next_Title = "Earthcaller Rezengal";
+		Next_Title = AL["Earthcaller Rezengal"];
 		Prev_Page = "WidowoftheWoods";
-		Prev_Title = "Widow of the Woods";
+		Prev_Title = AL["Widow of the Woods"];
 	};
 
 
@@ -3009,9 +3025,22 @@ AtlasLoot_ButtonRegistry = {
 		Back_Title = AL["Factions"];
 	};
 	["Warderns1"] = {
-		Title = "Wardens of Time";
+		Title = AL["Wardens of Time"] .. ": " .. AL["Friendly"] .. " & " .. AL["Honored"];
 		Back_Page = "REPMENU";
 		Back_Title = AL["Factions"];
+		Next_Page = "Warderns2";
+		Next_Title = AL["Wardens of Time"] .. ": " .. AL["Revered"] .. " & " .. AL["Exalted"];
+		Prev_Page = "Warderns2";
+		Prev_Title = AL["Wardens of Time"] .. ": " .. AL["Revered"] .. " & " .. AL["Exalted"];
+	};
+	["Warderns2"] = {
+		Title = AL["Wardens of Time"] .. ": " .. AL["Revered"] .. " & " .. AL["Exalted"];
+		Back_Page = "REPMENU";
+		Back_Title = AL["Factions"];
+		Next_Page = "Warderns1";
+		Next_Title = AL["Wardens of Time"] .. ": " .. AL["Friendly"] .. " & " .. AL["Honored"];
+		Prev_Page = "Warderns1";
+		Prev_Title = AL["Wardens of Time"] .. ": " .. AL["Friendly"] .. " & " .. AL["Honored"];
 	};
 	["AQBroodRings"] = {
 		Title = AL["Brood of Nozdormu"];
@@ -3222,190 +3251,234 @@ AtlasLoot_ButtonRegistry = {
 		Back_Title = AL["Factions"];
 	};
 	["BRRepFriendly"] = {
-		Title = "Blood Ring Friendly Rewards";
+		Title = AL["Blood Ring Friendly Rewards"];
 		Back_Page = "BRRepMenu";
+		Prev_Page = "BRRepTokens";
+		Prev_Title = AL["Token of Blood Rewards"];
 		Next_Page = "BRRepHonored";
+		Next_Title = AL["Blood Ring Honored Rewards"];
 	};
 	["BRRepHonored"] = {
-		Title = "Blood Ring Honored Rewards";
+		Title = AL["Blood Ring Honored Rewards"];
 		Back_Page = "BRRepMenu";
-		Next_Page = "BRRepRevered";
 		Prev_Page = "BRRepFriendly";
+		Prev_Title = AL["Blood Ring Friendly Rewards"];
+		Next_Page = "BRRepRevered";
+		Next_Title = AL["Blood Ring Revered Rewards"];
 	};
 	["BRRepRevered"] = {
-		Title = "Blood Ring Revered Rewards";
+		Title = AL["Blood Ring Revered Rewards"];
 		Back_Page = "BRRepMenu";
-		Next_Page = "BRRepExalted";
 		Prev_Page = "BRRepHonored";
+		Prev_Title = AL["Blood Ring Honored Rewards"];
+		Next_Page = "BRRepExalted";
+		Next_Title = AL["Blood Ring Exalted Rewards"];
 	};
 	["BRRepExalted"] = {
-		Title = "Blood Ring Exalted Rewards";
+		Title = AL["Blood Ring Exalted Rewards"];
 		Back_Page = "BRRepMenu";
 		Prev_Page = "BRRepRevered";
+		Prev_Title = AL["Blood Ring Revered Rewards"];
+		Next_Page = "BRRepTokens";
+		Next_Title = AL["Token of Blood Rewards"];
+	};
+	["BRRepTokens"] = {
+		Title = AL["Token of Blood Rewards"];
+		Back_Page = "BRRepMenu";
+		Prev_Page = "BRRepExalted";
+		Prev_Title = AL["Blood Ring Exalted Rewards"];
+		Next_Page = "BRRepFriendly";
+		Next_Title = AL["Blood Ring Friendly Rewards"];
 	};
 	["ABRepFriendly"] = {
 		Back_Page = "ABRepMenu";
-		Title = "AB Friendly Rewards";
+		Title = AL["AB Friendly Rewards"];
 		Next_Page = "ABRepHonored2029";
 		Prev_Page = "ABRepExalted";
 	};
 	["ABRepHonored2029"] = {
 		Back_Page = "ABRepMenu";
-		Title = "AB 20-29 Honored Rewards";
+		Title = AL["AB 20-29 Honored Rewards"];
 		Next_Page = "ABRepHonored3039";
 		Prev_Page = "ABRepFriendly";
 	};
 	["ABRepHonored3039"] = {
 		Back_Page = "ABRepMenu";
-		Title = "AB 30-39 Honored Rewards";
+		Title = AL["AB 30-39 Honored Rewards"];
 		Next_Page = "ABRepHonored4049";
 		Prev_Page = "ABRepHonored2029";
 	};
 	["ABRepHonored4049"] = {
 		Back_Page = "ABRepMenu";
-		Title = "AB 40-49 Honored Rewards";
+		Title = AL["AB 40-49 Honored Rewards"];
 		Next_Page = "ABRepHonored5059";
 		Prev_Page = "ABRepHonored3039";
 	};
 	["ABRepHonored5059"] = {
 		Back_Page = "ABRepMenu";
-		Title = "AB 50-59 Honored Rewards";
+		Title = AL["AB 50-59 Honored Rewards"];
 		Next_Page = "ABRepRevered2029";
 		Prev_Page = "ABRepHonored4049";
 	};
 	["ABRepRevered2029"] = {
 		Back_Page = "ABRepMenu";
-		Title = "AB 20-29 Revered Rewards";
+		Title = AL["AB 20-29 Revered Rewards"];
 		Next_Page = "ABRepRevered3039";
 		Prev_Page = "ABRepHonored5059";
 	};
 	["ABRepRevered3039"] = {
 		Back_Page = "ABRepMenu";
-		Title = "AB 30-39 Revered Rewards";
+		Title = AL["AB 30-39 Revered Rewards"];
 		Next_Page = "ABRepRevered4049";
 		Prev_Page = "ABRepRevered2029";
 	};
 	["ABRepRevered4049"] = {
 		Back_Page = "ABRepMenu";
-		Title = "AB 40-49 Revered Rewards";
+		Title = AL["AB 40-49 Revered Rewards"];
 		Next_Page = "ABRepRevered5059";
 		Prev_Page = "ABRepRevered3039";
 	};
 	["ABRepRevered5059"] = {
 		Back_Page = "ABRepMenu";
-		Title = "AB 50-59 Revered Rewards";
+		Title = AL["AB 50-59 Revered Rewards"];
 		Next_Page = "ABRepExalted";
 		Prev_Page = "ABRepRevered4049";
 	};
 	["ABRepExalted"] = {
 		Back_Page = "ABRepMenu";
-		Title = "AB Exalted Rewards";
+		Title = AL["AB Exalted Rewards"];
 		Prev_Page = "ABRepExalted5059";
 		Next_Page = "ABRepFriendly";
 	};
 	["AVRepFriendly"] = {
-		Title = "AV Friendly Rewards";
+		Title = AL["AV Friendly Rewards"];
 		Back_Page = "AVRepMenu";
+		Prev_Page = "AVLokholarIvus";
+		Prev_Title = AL["Ivus & Lokholar"];
 		Next_Page = "AVRepHonored";
+		Next_Title = AL["AV Honored Rewards"];
 	};
 	["AVRepHonored"] = {
-		Title = "AV Honored Rewards";
+		Title = AL["AV Honored Rewards"];
 		Back_Page = "AVRepMenu";
-		Next_Page = "AVRepRevered";
 		Prev_Page = "AVRepFriendly";
+		Prev_Title = AL["AV Friendly Rewards"];
+		Next_Page = "AVRepRevered";
+		Next_Title = AL["AV Revered Rewards"];
 	};
 	["AVRepRevered"] = {
-		Title = "AV Revered Rewards";
+		Title = AL["AV Revered Rewards"];
 		Back_Page = "AVRepMenu";
-		Next_Page = "AVRepExalted";
 		Prev_Page = "AVRepHonored";
+		Prev_Title = AL["AV Honored Rewards"];
+		Next_Page = "AVRepExalted";
+		Next_Title = AL["AV Exalted Rewards"];
 	};
 	["AVRepExalted"] = {
-		Title = "AV Exalted Rewards";
+		Title = AL["AV Exalted Rewards"];
 		Back_Page = "AVRepMenu";
 		Prev_Page = "AVRepRevered";
+		Prev_Title = AL["AV Revered Rewards"];
+		Next_Page = "AVKorrak";
+		Next_Title = AL["Korrak the Bloodrager"];
+	};
+	["AVKorrak"] = {
+		Title = AL["Korrak the Bloodrager"];
+		Back_Page = "AVRepMenu";
+		Prev_Page = "AVRepExalted";
+		Prev_Title = AL["AV Exalted Rewards"];
+		Next_Page = "AVLokholarIvus";
+		Next_Title = AL["Ivus & Lokholar"];
+	};
+	["AVLokholarIvus"] = {
+		Title = AL["Ivus & Lokholar"];
+		Back_Page = "AVRepMenu";
+		Prev_Page = "AVKorrak";
+		Prev_Title = AL["Korrak the Bloodrager"];
+		Next_Page = "AVRepFriendly";
+		Next_Title = AL["AV Friendly Rewards"];
 	};
 	["WSGRepFriendly"] = {
 		Back_Page = "WSGRepMenu";
-		Title = "WSG Friendly Rewards";
+		Title = AL["WSG Friendly Rewards"];
 		Next_Page = "WSGRepHonored1019";
 		Prev_Page = "WSGRepExalted60";
 	};
 	["WSGRepHonored1019"] = {
 		Back_Page = "WSGRepMenu";
-		Title = "WSG 10-19 Honored Rewards";
+		Title = AL["WSG 10-19 Honored Rewards"];
 		Next_Page = "WSGRepHonored2029";
 		Prev_Page = "WSGRepFriendly";
 	};
 	["WSGRepHonored2029"] = {
 		Back_Page = "WSGRepMenu";
-		Title = "WSG 20-29 Honored Rewards";
+		Title = AL["WSG 20-29 Honored Rewards"];
 		Next_Page = "WSGRepHonored3039";
 		Prev_Page = "WSGRepHonored1019";
 	};
 	["WSGRepHonored3039"] = {
 		Back_Page = "WSGRepMenu";
-		Title = "WSG 30-39 Honored Rewards";
+		Title = AL["WSG 30-39 Honored Rewards"];
 		Next_Page = "WSGRepHonored4049";
 		Prev_Page = "WSGRepHonored2029";
 	};
 	["WSGRepHonored4049"] = {
 		Back_Page = "WSGRepMenu";
-		Title = "WSG 40-49 Honored Rewards";
+		Title = AL["WSG 40-49 Honored Rewards"];
 		Next_Page = "WSGRepHonored5059";
 		Prev_Page = "WSGRepHonored3039";
 	};
 	["WSGRepHonored5059"] = {
 		Back_Page = "WSGRepMenu";
-		Title = "WSG 50-59 Honored Rewards";
+		Title = AL["WSG 50-59 Honored Rewards"];
 		Next_Page = "WSGRepRevered1019";
 		Prev_Page = "WSGRepHonored4049";
 	};
 	["WSGRepRevered1019"] = {
 		Back_Page = "WSGRepMenu";
-		Title = "WSG 10-19 Revered Rewards";
+		Title = AL["WSG 10-19 Revered Rewards"];
 		Next_Page = "WSGRepRevered2029";
 		Prev_Page = "WSGRepHonored5059";
 	};
 	["WSGRepRevered2029"] = {
 		Back_Page = "WSGRepMenu";
-		Title = "WSG 20-29 Revered Rewards";
+		Title = AL["WSG 20-29 Revered Rewards"];
 		Next_Page = "WSGRepRevered3039";
 		Prev_Page = "WSGRepRevered1019";
 	};
 	["WSGRepRevered3039"] = {
 		Back_Page = "WSGRepMenu";
-		Title = "WSG 30-39 Revered Rewards";
+		Title = AL["WSG 30-39 Revered Rewards"];
 		Next_Page = "WSGRepRevered4049";
 		Prev_Page = "WSGRepRevered2029";
 	};
 	["WSGRepRevered4049"] = {
 		Back_Page = "WSGRepMenu";
-		Title = "WSG 40-49 Revered Rewards";
+		Title = AL["WSG 40-49 Revered Rewards"];
 		Next_Page = "WSGRepRevered5059";
 		Prev_Page = "WSGRepRevered3039";
 	};
 	["WSGRepRevered5059"] = {
 		Back_Page = "WSGRepMenu";
-		Title = "WSG 50-59 Revered Rewards";
+		Title = AL["WSG 50-59 Revered Rewards"];
 		Next_Page = "WSGRepExalted4049";
 		Prev_Page = "WSGRepRevered4049";
 	};
 	["WSGRepExalted4049"] = {
 		Back_Page = "WSGRepMenu";
-		Title = "WSG 40-49 Exalted Rewards";
+		Title = AL["WSG 40-49 Exalted Rewards"];
 		Next_Page = "WSGRepExalted5059";
 		Prev_Page = "WSGRepRevered5059";
 	};
 	["WSGRepExalted5059"] = {
 		Back_Page = "WSGRepMenu";
-		Title = "WSG 50-59 Exalted Rewards";
+		Title = AL["WSG 50-59 Exalted Rewards"];
 		Next_Page = "WSGRepExalted60";
 		Prev_Page = "WSGRepExalted4049";
 	};
 	["WSGRepExalted60"] = {
 		Back_Page = "WSGRepMenu";
-		Title = "WSG 60 Exalted Rewards";
+		Title = AL["WSG 60 Exalted Rewards"];
 		Prev_Page = "WSGRepExalted5059";
 		Next_Page = "WSGRepFriendly";
 	};
@@ -4326,14 +4399,23 @@ AtlasLoot_ButtonRegistry = {
 		Back_Title = AL["Blacksmithing"];
 		Prev_Page = "SmithingArtisan2";
 		Prev_Title = AL["Blacksmithing"] .. ": " .. AL["Artisan"];
-		Next_Page = "Armorsmith1";
+		Next_Page = "SmithingArtisan4";
 		Next_Title = AL["Blacksmithing"] .. ": " .. AL["Armorsmith"];
 	};
+	["SmithingArtisan4"] = {
+		Title = AL["Blacksmithing"] .. ": " .. AL["Artisan"];
+		Back_Page = "SMITHINGMENU";
+		Back_Title = AL["Blacksmithing"];
+		Prev_Page = "SmithingArtisan3";
+		Prev_Title = AL["Blacksmithing"] .. ": " .. AL["Artisan"];
+		Next_Page = "Armorsmith1";
+		Next_Title = AL["Blacksmithing"] .. ": " .. AL["Armorsmith"];
+	};	
 	["Armorsmith1"] = {
 		Title = AL["Blacksmithing"] .. ": " .. AL["Armorsmith"];
 		Back_Page = "SMITHINGMENU";
 		Back_Title = AL["Blacksmithing"];
-		Prev_Page = "SmithingArtisan3";
+		Prev_Page = "SmithingArtisan4";
 		Prev_Title = AL["Blacksmithing"] .. ": " .. AL["Artisan"];
 		Next_Page = "Weaponsmith1";
 		Next_Title = AL["Blacksmithing"] .. ": " .. AL["Weaponsmith"];
