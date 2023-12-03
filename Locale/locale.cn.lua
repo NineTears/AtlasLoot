@@ -1380,7 +1380,7 @@ AL:RegisterTranslations("zhCN", function() return {
     ["WSG 50-59 Exalted Rewards"] = "战歌峡谷 50-59 崇拜奖励",
     ["WSG 60 Exalted Rewards"] = "战歌峡谷 60 崇拜奖励",
   
-        ["Neutral"] = "中立",
+    ["Neutral"] = "中立",
     ["Friendly"] = "友善",
     ["Honored"] = "尊敬",
     ["Revered"] = "崇敬",

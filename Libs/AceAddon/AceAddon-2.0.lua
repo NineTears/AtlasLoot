@@ -32,6 +32,8 @@ if GetLocale() == "deDE" then
 	CATEGORY = "Kategorie"
 	EMAIL = "E-mail"
 	WEBSITE = "Webseite"
+	CREDITS = "Credits" -- fix
+	COMMANDS = "Commands"
 		 
 	ABOUT = "\195\188ber"
 	PRINT_ADDON_INFO = "Gibt Addondaten aus"
@@ -44,7 +46,7 @@ if GetLocale() == "deDE" then
 		["Buffs"] = "Buffs",
 		["Chat/Communication"] = "Chat/Kommunikation",
 		["Druid"] = "Druide",
-		["Hunter"] = "J�ger",
+		["Hunter"] = "Jäger",
 		["Mage"] = "Magier",
 		["Paladin"] = "Paladin",
 		["Priest"] = "Priester",
@@ -83,6 +85,8 @@ elseif GetLocale() == "frFR" then
 	CATEGORY = "Cat\195\169gorie"
 	EMAIL = "E-mail"
 	WEBSITE = "Site web"
+	CREDITS = "Credits" -- fix
+	COMMANDS = "Commands"
 	
 	ABOUT = "A propos"
 	PRINT_ADDON_INFO = "Afficher les informations sur l'addon"
@@ -134,6 +138,8 @@ elseif GetLocale() == "koKR" then
 	CATEGORY = "분류"
 	EMAIL = "E-mail"
 	WEBSITE = "웹사이트"
+	CREDITS = "Credits" -- fix
+	COMMANDS = "Commands"
 	
 	ABOUT = "정보"
 	PRINT_ADDON_INFO = "애드온 정보 출력"
@@ -174,6 +180,216 @@ elseif GetLocale() == "koKR" then
 		["Tradeskill"] = "전문기술",
 		["UnitFrame"] = "유닛 프레임",
 	}
+elseif GetLocale() == "zhTW" then
+	STANDBY = "|cffff5050(待命)|r"
+	
+	TITLE = "標題"
+	NOTES = "註記"
+	VERSION = "版本"
+	AUTHOR = "作者"
+	DATE = "日期"
+	CATEGORY = "類別"
+	EMAIL = "E-mail"
+	WEBSITE = "網站"
+	CREDITS = "Credits" -- fix
+	COMMANDS = "Commands"
+	
+	ABOUT = "關於"
+	PRINT_ADDON_INFO = "顯示插件資訊"
+	
+	CATEGORIES = {
+		["Action Bars"] = "動作列",
+		["Auction"] = "拍賣",
+		["Audio"] = "音樂",
+		["Battlegrounds/PvP"] = "戰場/PvP",
+		["Buffs"] = "增益",
+		["Chat/Communication"] = "聊天/通訊",
+		["Druid"] = "德魯伊",
+		["Hunter"] = "獵人",
+		["Mage"] = "法師",
+		["Paladin"] = "聖騎士",
+		["Priest"] = "牧師",
+		["Rogue"] = "盜賊",
+		["Shaman"] = "薩滿",
+		["Warlock"] = "術士",
+		["Warrior"] = "戰士",
+		["Healer"] = "治療者",
+		["Tank"] = "坦克",
+		["Caster"] = "施法者",
+		["Combat"] = "戰鬥",
+		["Compilations"] = "編輯",
+		["Data Export"] = "資料匯出",
+		["Development Tools"] = "開發工具",
+		["Guild"] = "公會",
+		["Frame Modification"] = "框架修改",
+		["Interface Enhancements"] = "介面增強",
+		["Inventory"] = "背包",
+		["Library"] = "資料庫",
+		["Map"] = "地圖",
+		["Mail"] = "郵件",
+		["Miscellaneous"] = "綜合",
+		["Quest"] = "任務",
+		["Raid"] = "團隊",
+		["Tradeskill"] = "商業技能",
+		["UnitFrame"] = "單位框架",
+	}
+elseif GetLocale() == "zhCN" then
+	STANDBY = "|cffff5050(暂挂)|r"
+	
+	TITLE = "标题"
+	NOTES = "附注"
+	VERSION = "版本"
+	AUTHOR = "作者"
+	DATE = "日期"
+	CATEGORY = "分类"
+	EMAIL = "电子邮件"
+	WEBSITE = "网站"
+	CREDITS = "贡献" -- fix
+	COMMANDS = "命令"
+	
+	ABOUT = "关于"
+	PRINT_ADDON_INFO = "印列出插件信息"
+	
+	CATEGORIES = {
+		["Action Bars"] = "动作条",
+		["Auction"] = "拍卖",
+		["Audio"] = "音频",
+		["Battlegrounds/PvP"] = "战场/PvP",
+		["Buffs"] = "增益魔法",
+		["Chat/Communication"] = "聊天/交流",
+		["Druid"] = "德鲁伊",
+		["Hunter"] = "猎人",
+		["Mage"] = "法师",
+		["Paladin"] = "圣骑士",
+		["Priest"] = "牧师",
+		["Rogue"] = "盗贼",
+		["Shaman"] = "萨满祭司",
+		["Warlock"] = "术士",
+		["Warrior"] = "战士",
+		["Healer"] = "治疗保障",
+		["Tank"] = "近战控制",
+		["Caster"] = "远程输出",
+		["Combat"] = "战斗",
+		["Compilations"] = "编译",
+		["Data Export"] = "数据导出",
+		["Development Tools"] = "开发工具",
+		["Guild"] = "公会",
+		["Frame Modification"] = "框架修改",
+		["Interface Enhancements"] = "界面增强",
+		["Inventory"] = "背包",
+		["Library"] = "库",
+		["Map"] = "地图",
+		["Mail"] = "邮件",
+		["Miscellaneous"] = "杂项",
+		["Quest"] = "任务",
+		["Raid"] = "团队",
+		["Tradeskill"] = "商业技能",
+		["UnitFrame"] = "头像框架",
+	}
+elseif GetLocale() == "ruRU" then
+	STANDBY = "|cffff5050(в режиме ожидания)|r"
+	
+	TITLE = "Название"
+	NOTES = "Описание"
+	VERSION = "Версия"
+	AUTHOR = "Автор"
+	DATE = "Дата"
+	CATEGORY = "Категория"
+	EMAIL = "E-mail"
+	WEBSITE = "Сайт"
+	CREDITS = "Титры"
+	COMMANDS = "Команды"
+	
+	ABOUT = "Об аддоне"
+	PRINT_ADDON_INFO = "Показать информацию об аддоне."
+	
+	CATEGORIES = {
+		["Action Bars"] = "Панели команд",
+		["Auction"] = "Аукцион",
+		["Audio"] = "Аудио",
+		["Battlegrounds/PvP"] = "Поля сражений/PvP",
+		["Buffs"] = "Баффы",
+		["Chat/Communication"] = "Чат/Коммуникация",
+		["Druid"] = "Друид",
+		["Hunter"] = "Охотник",
+		["Mage"] = "Маг",
+		["Paladin"] = "Паладин",
+		["Priest"] = "Жрец",
+		["Rogue"] = "Разбойник",
+		["Shaman"] = "Шаман",
+		["Warlock"] = "Чернокнижник",
+		["Warrior"] = "Воин",
+		["Healer"] = "Лекарь",
+		["Tank"] = "Танк",
+		["Caster"] = "Кастер",
+		["Combat"] = "Сражения",
+		["Compilations"] = "Компиляция",
+		["Data Export"] = "Экспорт данных",
+		["Development Tools"] = "Инструменты разработчика",
+		["Guild"] = "Гильдия",
+		["Frame Modification"] = "Модификация фреймов",
+		["Interface Enhancements"] = "Улучшение интерфейса",
+		["Inventory"] = "Инвентарь",
+		["Library"] = "Библиотеки",
+		["Map"] = "Карта",
+		["Mail"] = "Почта",
+		["Miscellaneous"] = "Разное",
+		["Quest"] = "Задания",
+		["Raid"] = "Рейд",
+		["Tradeskill"] = "Умения",
+		["UnitFrame"] = "Фреймы персонажей",
+	}
+elseif GetLocale() == "esES" then
+	STANDBY = "|cffff5050(Espera)|r"
+	
+	TITLE = "T\195\173tulo"
+	NOTES = "Notas"
+	VERSION = "Versi\195\179n"
+	AUTHOR = "Autor"
+	DATE = "Fecha"
+	CATEGORY = "Categor\195\173a"
+	EMAIL = "E-mail"
+	WEBSITE = "Sitio de Web"
+	
+	ABOUT = "Sobre"
+	PRINT_ADDON_INFO = "Publica informaci\195\179n sobre addon"
+	
+	CATEGORIES = {
+		["Action Bars"] = "Barras de Acci\195\179n",
+		["Auction"] = "Subasta",
+		["Audio"] = "Audio",
+		["Battlegrounds/PvP"] = "Campos de Batalla/JcJ",
+		["Buffs"] = "Buffs",
+		["Chat/Communication"] = "Chat/Communicaci\195\179n",
+		["Druid"] = "Druida",
+		["Hunter"] = "Cazador",
+		["Mage"] = "Mago",
+		["Paladin"] = "Palad\195\173n",
+		["Priest"] = "Sacerdote",
+		["Rogue"] = "P\195\173caro",
+		["Shaman"] = "Cham\195\161n",
+		["Warlock"] = "Brujo",
+		["Warrior"] = "Guerrero",
+		["Healer"] = "Sanador",
+		["Tank"] = "Tanque",
+		["Caster"] = "Hechicero",
+		["Combat"] = "Combate",
+		["Compilations"] = "Compilaciones",
+		["Data Export"] = "Exporta de Datos",
+		["Development Tools"] = "Herramientas de Desarrollo",
+		["Guild"] = "Hermandad",
+		["Frame Modification"] = "Modificaci\195\179n del marco",
+		["Interface Enhancements"] = "Mejora de Interfaz",
+		["Inventory"] = "Inventario",
+		["Library"] = "Biblioteca",
+		["Map"] = "Mapa",
+		["Mail"] = "Correo",
+		["Miscellaneous"] = "Diverso",
+		["Quest"] = "Misi\195\179n",
+		["Raid"] = "Banda",
+		["Tradeskill"] = "Habilidad de Comercio", 
+		["UnitFrame"] = "Marco de Unidad", 
+	}
 else -- enUS
 	STANDBY = "|cffff5050(standby)|r"
 	
@@ -185,6 +401,8 @@ else -- enUS
 	CATEGORY = "Category"
 	EMAIL = "E-mail"
 	WEBSITE = "Website"
+	CREDITS = "Credits"
+	COMMANDS = "Commands"
 	
 	ABOUT = "About"
 	PRINT_ADDON_INFO = "Print out addon info"
