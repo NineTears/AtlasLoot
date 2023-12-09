@@ -1713,7 +1713,7 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s100000", "inv_ore_copper_01", "=ds=铜矿脉", "=ds=#sr# =so1=1 =so2=25 =so3=50 =so4=100" },
 		{ "s100001", "inv_ore_thorium_01", "=ds=火岩矿脉", "=ds=#sr# =so1=65 =so2=90 =so3=115 =so4=165" },
 		{ "s100002", "inv_ore_tin_01", "=ds=锡矿脉", "=ds=#sr# =so1=65 =so2=90 =so3=115 =so4=165" },
-		{ "s100003", "inv_stone_16", "=ds=银矿石", "=ds=#sr# =so1=75 =so2=100 =so3=125 =so4=175" },
+		{ "s100003", "inv_stone_16", "=ds=银矿脉", "=ds=#sr# =so1=75 =so2=100 =so3=125 =so4=175" },
 		{ "s100004", "inv_stone_16", "=ds=软泥覆盖的银矿脉", "=ds=#sr# =so1=75 =so2=100 =so3=125 =so4=175" },
 		{ "s100005", "inv_ore_thorium_01", "=ds=次级血石矿脉", "=ds=#sr# =so1=75 =so2=100 =so3=125 =so4=175" },
 		{ 0, "", "", "" },
