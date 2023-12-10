@@ -4,511 +4,511 @@ local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
 GetSpellInfoVanillaDB = {
 	["enchants"] = {
 		[7418] = {
-			["name"] = "Enchant Bracer - Minor Health",
+			["name"] = "附魔护腕 - 初级生命",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[7420] = {
-			["name"] = "Enchant Chest - Minor Health",
+			["name"] = "附魔胸甲 - 初级生命",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[7421] = {
-			["name"] = "Runed Copper Rod",
+			["name"] = "符文铜棒",
 			["icon"] = "Interface\\Icons\\INV_Staff_Goldfeathered_01",
 			["item"] = 6218,
 		},
 		[7426] = {
-			["name"] = "Enchant Chest - Minor Absorption",
+			["name"] = "附魔胸甲 - 初级吸收",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[7428] = {
-			["name"] = "Enchant Bracer - Minor Deflection",
+			["name"] = "附魔护腕 - 初级偏斜",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[7443] = {
-			["name"] = "Enchant Chest - Minor Mana",
+			["name"] = "附魔胸甲 - 初级法力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[7454] = {
-			["name"] = "Enchant Cloak - Minor Resistance",
+			["name"] = "附魔披风 - 初级抗性",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[7457] = {
-			["name"] = "Enchant Bracer - Minor Stamina",
+			["name"] = "附魔护腕 - 初级耐力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[7745] = {
-			["name"] = "Enchant 2H Weapon - Minor Impact",
+			["name"] = "附魔双手武器 - 初级冲击",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[7748] = {
-			["name"] = "Enchant Chest - Lesser Health",
+			["name"] = "附魔胸甲 - 次级生命",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[7766] = {
-			["name"] = "Enchant Bracer - Minor Spirit",
+			["name"] = "附魔护腕 - 初级精神",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[7771] = {
-			["name"] = "Enchant Cloak - Minor Protection",
+			["name"] = "附魔披风 - 初级防护",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[7776] = {
-			["name"] = "Enchant Chest - Lesser Mana",
+			["name"] = "附魔胸甲 - 次级法力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[7779] = {
-			["name"] = "Enchant Bracer - Minor Agility",
+			["name"] = "附魔护腕 - 初级敏捷",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[7782] = {
-			["name"] = "Enchant Bracer - Minor Strength",
+			["name"] = "附魔护腕 - 初级力量",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[7786] = {
-			["name"] = "Enchant Weapon - Minor Beastslayer",
+			["name"] = "附魔武器 - 初级屠兽",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[7788] = {
-			["name"] = "Enchant Weapon - Minor Striking",
+			["name"] = "附魔武器 - 初级攻击",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[7793] = {
-			["name"] = "Enchant 2H Weapon - Lesser Intellect",
+			["name"] = "附魔双手武器 - 次级智力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[7795] = {
-			["name"] = "Runed Silver Rod",
+			["name"] = "符文银棒",
 			["icon"] = "Interface\\Icons\\INV_Staff_01",
 			["item"] = 6339,
 		},
 		[7857] = {
-			["name"] = "Enchant Chest - Health",
+			["name"] = "附魔胸甲 - 生命",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[7859] = {
-			["name"] = "Enchant Bracer - Lesser Spirit",
+			["name"] = "附魔护腕 - 次级精神",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[7861] = {
-			["name"] = "Enchant Cloak - Lesser Fire Resistance",
+			["name"] = "附魔披风 - 次级火焰抗性",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[7863] = {
-			["name"] = "Enchant Boots - Minor Stamina",
+			["name"] = "附魔靴子 - 初级耐力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[7867] = {
-			["name"] = "Enchant Boots - Minor Agility",
+			["name"] = "附魔靴子 - 初级敏捷",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13378] = {
-			["name"] = "Enchant Shield - Minor Stamina",
+			["name"] = "附魔盾牌 - 初级耐力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13380] = {
-			["name"] = "Enchant 2H Weapon - Lesser Spirit",
+			["name"] = "附魔双手武器 - 次级精神",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13419] = {
-			["name"] = "Enchant Cloak - Minor Agility",
+			["name"] = "附魔披风 - 初级敏捷",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13421] = {
-			["name"] = "Enchant Cloak - Lesser Protection",
+			["name"] = "附魔披风 - 次级防护",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13464] = {
-			["name"] = "Enchant Shield - Lesser Protection",
+			["name"] = "附魔盾牌 - 次级防护",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13485] = {
-			["name"] = "Enchant Shield - Lesser Spirit",
+			["name"] = "附魔盾牌 - 次级精神",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13501] = {
-			["name"] = "Enchant Bracer - Lesser Stamina",
+			["name"] = "附魔护腕 - 次级耐力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13503] = {
-			["name"] = "Enchant Weapon - Lesser Striking",
+			["name"] = "附魔武器 - 次级攻击",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13522] = {
-			["name"] = "Enchant Cloak - Lesser Shadow Resistance",
+			["name"] = "附魔披风 - 次级暗影抵抗",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13529] = {
-			["name"] = "Enchant 2H Weapon - Lesser Impact",
+			["name"] = "附魔双手武器 - 次级冲击",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13536] = {
-			["name"] = "Enchant Bracer - Lesser Strength",
+			["name"] = "附魔护腕 - 次级力量",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13538] = {
-			["name"] = "Enchant Chest - Lesser Absorption",
+			["name"] = "附魔胸甲 - 次级吸收",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13607] = {
-			["name"] = "Enchant Chest - Mana",
+			["name"] = "附魔胸甲 - 法力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13612] = {
-			["name"] = "Enchant Gloves - Mining",
+			["name"] = "附魔手套 - 采矿",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13617] = {
-			["name"] = "Enchant Gloves - Herbalism",
+			["name"] = "附魔手套 - 草药学",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13620] = {
-			["name"] = "Enchant Gloves - Fishing",
+			["name"] = "附魔手套 - 钓鱼",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13622] = {
-			["name"] = "Enchant Bracer - Lesser Intellect",
+			["name"] = "附魔护腕 - 次级智力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13626] = {
-			["name"] = "Enchant Chest - Minor Stats",
+			["name"] = "附魔胸甲 - 初级属性",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13628] = {
-			["name"] = "Runed Golden Rod",
+			["name"] = "符文金棒",
 			["icon"] = "Interface\\Icons\\INV_Staff_10",
 			["item"] = 11130,
 		},
 		[13631] = {
-			["name"] = "Enchant Shield - Lesser Stamina",
+			["name"] = "附魔盾牌 - 次级耐力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13635] = {
-			["name"] = "Enchant Cloak - Defense",
+			["name"] = "附魔披风 - 防御",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13637] = {
-			["name"] = "Enchant Boots - Lesser Agility",
+			["name"] = "附魔靴子 - 次级敏捷",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13640] = {
-			["name"] = "Enchant Chest - Greater Health",
+			["name"] = "附魔胸甲 - 强效生命",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13642] = {
-			["name"] = "Enchant Bracer - Spirit",
+			["name"] = "附魔护腕 - 精神",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13644] = {
-			["name"] = "Enchant Boots - Lesser Stamina",
+			["name"] = "附魔靴子 - 次级耐力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13646] = {
-			["name"] = "Enchant Bracer - Lesser Deflection",
+			["name"] = "附魔护腕 - 次级偏斜",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13648] = {
-			["name"] = "Enchant Bracer - Stamina",
+			["name"] = "附魔护腕 - 耐力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13653] = {
-			["name"] = "Enchant Weapon - Lesser Beastslayer",
+			["name"] = "附魔武器 - 次级屠兽",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13655] = {
-			["name"] = "Enchant Weapon - Lesser Elemental Slayer",
+			["name"] = "附魔武器 - 次级元素杀手",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13657] = {
-			["name"] = "Enchant Cloak - Fire Resistance",
+			["name"] = "附魔披风 - 火焰抗性",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13659] = {
-			["name"] = "Enchant Shield - Spirit",
+			["name"] = "附魔盾牌 - 精神",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13661] = {
-			["name"] = "Enchant Bracer - Strength",
+			["name"] = "附魔护腕 - 力量",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13663] = {
-			["name"] = "Enchant Chest - Greater Mana",
+			["name"] = "附魔胸甲 - 强效法力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13687] = {
-			["name"] = "Enchant Boots - Lesser Spirit",
+			["name"] = "附魔靴子 - 次级精神",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13689] = {
-			["name"] = "Enchant Shield - Lesser Block",
+			["name"] = "附魔盾牌 - 次级格挡",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13693] = {
-			["name"] = "Enchant Weapon - Striking",
+			["name"] = "附魔武器 - 攻击",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13695] = {
-			["name"] = "Enchant 2H Weapon - Impact",
+			["name"] = "附魔双手武器 - 冲击",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13698] = {
-			["name"] = "Enchant Gloves - Skinning",
+			["name"] = "附魔手套 - 剥皮",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13700] = {
-			["name"] = "Enchant Chest - Lesser Stats",
+			["name"] = "附魔胸甲 - 次级状态",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13702] = {
-			["name"] = "Runed Truesilver Rod",
+			["name"] = "符文真银棒",
 			["icon"] = "Interface\\Icons\\INV_Staff_11",
 			["item"] = 11145,
 		},
 		[13746] = {
-			["name"] = "Enchant Cloak - Greater Defense",
+			["name"] = "附魔披风 - 强效防御",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13794] = {
-			["name"] = "Enchant Cloak - Resistance",
+			["name"] = "附魔披风 - 抗性",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13815] = {
-			["name"] = "Enchant Gloves - Agility",
+			["name"] = "附魔手套 - 敏捷",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13817] = {
-			["name"] = "Enchant Shield - Stamina",
+			["name"] = "附魔盾牌 - 耐力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13822] = {
-			["name"] = "Enchant Bracer - Intellect",
+			["name"] = "附魔护腕 - 智力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13836] = {
-			["name"] = "Enchant Boots - Stamina",
+			["name"] = "附魔靴子 - 耐力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13841] = {
-			["name"] = "Enchant Gloves - Advanced Mining",
+			["name"] = "附魔手套 - 高级采矿",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13846] = {
-			["name"] = "Enchant Bracer - Greater Spirit",
+			["name"] = "附魔护腕 - 强效精神",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13858] = {
-			["name"] = "Enchant Chest - Superior Health",
+			["name"] = "附魔胸甲 - 超强生命",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13868] = {
-			["name"] = "Enchant Gloves - Advanced Herbalism",
+			["name"] = "附魔手套 - 高级草药学",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13882] = {
-			["name"] = "Enchant Cloak - Lesser Agility",
+			["name"] = "附魔披风 - 次级敏捷",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13887] = {
-			["name"] = "Enchant Gloves - Strength",
+			["name"] = "附魔手套 - 力量",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13890] = {
-			["name"] = "Enchant Boots - Minor Speed",
+			["name"] = "附魔靴子 - 初级速度",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13898] = {
-			["name"] = "Enchant Weapon - Fiery Weapon",
+			["name"] = "附魔武器 - 烈焰",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13905] = {
-			["name"] = "Enchant Shield - Greater Spirit",
+			["name"] = "附魔盾牌 - 强效精神",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13915] = {
-			["name"] = "Enchant Weapon - Demonslaying",
+			["name"] = "附魔武器 - 屠魔",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13917] = {
-			["name"] = "Enchant Chest - Superior Mana",
+			["name"] = "附魔胸甲 - 超强法力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13931] = {
-			["name"] = "Enchant Bracer - Deflection",
+			["name"] = "附魔护腕 - 偏斜",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13933] = {
-			["name"] = "Enchant Shield - Frost Resistance",
+			["name"] = "附魔盾牌 - 冰霜抗性",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13935] = {
-			["name"] = "Enchant Boots - Agility",
+			["name"] = "附魔靴子 - 敏捷",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13937] = {
-			["name"] = "Enchant 2H Weapon - Greater Impact",
+			["name"] = "附魔双手武器 - 强效冲击",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13939] = {
-			["name"] = "Enchant Bracer - Greater Strength",
+			["name"] = "附魔护腕 - 强效力量",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13941] = {
-			["name"] = "Enchant Chest - Stats",
+			["name"] = "附魔胸甲 - 状态",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13943] = {
-			["name"] = "Enchant Weapon - Greater Striking",
+			["name"] = "附魔武器 - 强效攻击",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13945] = {
-			["name"] = "Enchant Bracer - Greater Stamina",
+			["name"] = "附魔护腕 - 强效耐力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13947] = {
-			["name"] = "Enchant Gloves - Riding Skill",
+			["name"] = "附魔手套 - 骑乘",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[13948] = {
-			["name"] = "Enchant Gloves - Minor Haste",
+			["name"] = "附魔手套 - 初级加速",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[14293] = {
-			["name"] = "Lesser Magic Wand",
+			["name"] = "次级魔法杖",
 			["icon"] = "Interface\\Icons\\INV_Staff_02",
 			["item"] = 11287,
 		},
 		[14807] = {
-			["name"] = "Greater Magic Wand",
+			["name"] = "强效魔法杖",
 			["icon"] = "Interface\\Icons\\INV_Staff_07",
 			["item"] = 11288,
 		},
 		[14809] = {
-			["name"] = "Lesser Mystic Wand",
+			["name"] = "次级秘法魔杖",
 			["icon"] = "Interface\\Icons\\INV_Staff_02",
 			["item"] = 11289,
 		},
 		[14810] = {
-			["name"] = "Greater Mystic Wand",
+			["name"] = "强效秘法杖",
 			["icon"] = "Interface\\Icons\\INV_Wand_07",
 			["item"] = 11290,
 		},
 		[15596] = {
-			["name"] = "Smoking Heart of the Mountain",
+			["name"] = "浓烟山脉之心",
 			["icon"] = "Interface\\Icons\\INV_Misc_Gem_Bloodstone_01",
 			["item"] = 11811,
 		},
 		[17180] = {
-			["name"] = "Enchanted Thorium",
+			["name"] = "魔化瑟银锭",
 			["icon"] = "Interface\\Icons\\INV_Ingot_Eternium",
 			["item"] = 12655,
 		},
 		[17181] = {
-			["name"] = "Enchanted Leather",
+			["name"] = "魔化皮",
 			["icon"] = "Interface\\Icons\\INV_Misc_Rune_05",
 			["item"] = 12810,
 		},
 		[20008] = {
-			["name"] = "Enchant Bracer - Greater Intellect",
+			["name"] = "附魔护腕 - 强效智力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[20009] = {
-			["name"] = "Enchant Bracer - Superior Spirit",
+			["name"] = "附魔护腕 - 超强精神",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[20010] = {
-			["name"] = "Enchant Bracer - Superior Strength",
+			["name"] = "附魔护腕 - 超强力量",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[20011] = {
-			["name"] = "Enchant Bracer - Superior Stamina",
+			["name"] = "附魔护腕 - 超强耐力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[20012] = {
-			["name"] = "Enchant Gloves - Greater Agility",
+			["name"] = "附魔手套 - 强效敏捷",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[20013] = {
-			["name"] = "Enchant Gloves - Greater Strength",
+			["name"] = "附魔手套 - 强效力量",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[20014] = {
-			["name"] = "Enchant Cloak - Greater Resistance",
+			["name"] = "附魔披风 - 强效抗性",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[20015] = {
-			["name"] = "Enchant Cloak - Superior Defense",
+			["name"] = "附魔披风 - 超级防御",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[20016] = {
-			["name"] = "Enchant Shield - Superior Spirit",
+			["name"] = "附魔盾牌 - 超强精神",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[20017] = {
-			["name"] = "Enchant Shield - Greater Stamina",
+			["name"] = "附魔盾牌 - 强效耐力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[20020] = {
-			["name"] = "Enchant Boots - Greater Stamina",
+			["name"] = "附魔靴子 - 强效耐力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[20023] = {
-			["name"] = "Enchant Boots - Greater Agility",
+			["name"] = "附魔靴子 - 强效敏捷",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[20024] = {
-			["name"] = "Enchant Boots - Spirit",
+			["name"] = "附魔靴子 - 精神",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[20025] = {
-			["name"] = "Enchant Chest - Greater Stats",
+			["name"] = "附魔胸甲 - 强效属性",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[20026] = {
-			["name"] = "Enchant Chest - Major Health",
+			["name"] = "附魔胸甲 - 极效生命",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[20028] = {
-			["name"] = "Enchant Chest - Major Mana",
+			["name"] = "附魔胸甲 - 极效法力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[20029] = {
-			["name"] = "Enchant Weapon - Icy Chill",
+			["name"] = "附魔武器 - 冰寒",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[20030] = {
-			["name"] = "Enchant 2H Weapon - Superior Impact",
+			["name"] = "附魔双手武器 - 超强冲击",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[20031] = {
-			["name"] = "Enchant Weapon - Superior Striking",
+			["name"] = "附魔武器 - 超强打击",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[20032] = {
-			["name"] = "Enchant Weapon - Lifestealing",
+			["name"] = "附魔武器 - 生命偷取",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[20033] = {
-			["name"] = "Enchant Weapon - Unholy Weapon",
+			["name"] = "附魔武器 - 邪恶武器",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[20034] = {
-			["name"] = "Enchant Weapon - Crusader",
+			["name"] = "附魔武器 - 十字军",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[20035] = {
-			["name"] = "Enchant 2H Weapon - Major Spirit",
+			["name"] = "附魔双手武器 - 极效精神",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[20036] = {
-			["name"] = "Enchant 2H Weapon - Major Intellect",
+			["name"] = "附魔双手武器 - 极效智力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[20051] = {
-			["name"] = "Runed Arcanite Rod",
+			["name"] = "符文奥金棒",
 			["icon"] = "Interface\\Icons\\INV_Wand_09",
 			["item"] = 16207,
 		},
 		[21931] = {
-			["name"] = "Enchant Weapon - Winter's Might",
+			["name"] = "附魔武器 - 寒冬之力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[22749] = {
@@ -520,175 +520,175 @@ GetSpellInfoVanillaDB = {
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[23799] = {
-			["name"] = "Enchant Weapon - Strength",
+			["name"] = "附魔武器 - 力量",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[23800] = {
-			["name"] = "Enchant Weapon - Agility",
+			["name"] = "附魔武器 - 敏捷",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[23801] = {
-			["name"] = "Enchant Bracer - Mana Regeneration",
+			["name"] = "附魔护腕 - 法力回复",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[23802] = {
-			["name"] = "Enchant Bracer - Healing Power",
+			["name"] = "附魔护腕 - 治疗能力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[23803] = {
-			["name"] = "Enchant Weapon - Mighty Spirit",
+			["name"] = "附魔武器 - 强效精神",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[23804] = {
-			["name"] = "Enchant Weapon - Mighty Intellect",
+			["name"] = "附魔武器 - 强效智力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[25072] = {
-			["name"] = "Enchant Gloves - Threat",
+			["name"] = "附魔手套 - 威胁",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[25073] = {
-			["name"] = "Enchant Gloves - Shadow Power",
+			["name"] = "附魔手套 - 暗影能量",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[25074] = {
-			["name"] = "Enchant Gloves - Frost Power",
+			["name"] = "附魔手套 - 冰霜能量",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[25078] = {
-			["name"] = "Enchant Gloves - Fire Power",
+			["name"] = "附魔手套 - 火焰能量",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[25079] = {
-			["name"] = "Enchant Gloves - Healing Power",
+			["name"] = "附魔手套 - 治疗能量",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[25080] = {
-			["name"] = "Enchant Gloves - Superior Agility",
+			["name"] = "附魔手套 - 超强敏捷",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[25081] = {
-			["name"] = "Enchant Cloak - Greater Fire Resistance",
+			["name"] = "附魔披风 - 强效火焰抗性",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[25082] = {
-			["name"] = "Enchant Cloak - Greater Nature Resistance",
+			["name"] = "附魔披风 - 强效自然抗性",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[25083] = {
-			["name"] = "Enchant Cloak - Stealth",
+			["name"] = "附魔披风 - 潜行",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[25084] = {
-			["name"] = "Enchant Cloak - Subtlety",
+			["name"] = "附魔披风 - 狡诈",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[25086] = {
-			["name"] = "Enchant Cloak - Dodge",
+			["name"] = "附魔披风 - 躲闪",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[25124] = {
-			["name"] = "Minor Wizard Oil",
+			["name"] = "初级巫师之油",
 			["icon"] = "Interface\\Icons\\INV_Poison_MindNumbing",
 			["item"] = 20744,
 			["extra"] = "|cffffffff5 Charges",
 		},
 		[25125] = {
-			["name"] = "Minor Mana Oil",
+			["name"] = "初级法力之油",
 			["icon"] = "Interface\\Icons\\INV_Potion_98",
 			["item"] = 20745,
 			["extra"] = "|cffffffff5 Charges",
 		},
 		[25126] = {
-			["name"] = "Lesser Wizard Oil",
+			["name"] = "次级巫师之油",
 			["icon"] = "Interface\\Icons\\INV_Potion_103",
 			["item"] = 20746,
 			["extra"] = "|cffffffff5 Charges",
 		},
 		[25127] = {
-			["name"] = "Lesser Mana Oil",
+			["name"] = "次级法力之油",
 			["icon"] = "Interface\\Icons\\INV_Potion_99",
 			["item"] = 20747,
 			["extra"] = "|cffffffff5 Charges",
 		},
 		[25128] = {
-			["name"] = "Wizard Oil",
+			["name"] = "巫师之油",
 			["icon"] = "Interface\\Icons\\INV_Potion_104",
 			["item"] = 20750,
 			["extra"] = "|cffffffff5 Charges",
 		},
 		[25129] = {
-			["name"] = "Brilliant Wizard Oil",
+			["name"] = "卓越巫师之油",
 			["icon"] = "Interface\\Icons\\INV_Potion_105",
 			["item"] = 20749,
 			["extra"] = "|cffffffff5 Charges",
 		},
 		[25130] = {
-			["name"] = "Brilliant Mana Oil",
+			["name"] = "卓越法力之油",
 			["icon"] = "Interface\\Icons\\INV_Potion_100",
 			["item"] = 20748,
 			["extra"] = "|cffffffff5 Charges",
 		},
 		[27837] = {
-			["name"] = "Enchant 2H Weapon - Agility",
+			["name"] = "附魔双手武器 - 敏捷",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[57030] = {
-			["name"] = "Enchant Bracer - Greater Agility",
+			["name"] = "附魔护腕 - 强效敏捷",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[57028] = {
-			["name"] = "Enchant Bracer - Spell Power",
+			["name"] = "附魔护腕 - 法术强度",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[57142] = {
-			["name"] = "Enchant Boots - Greater Spirit",
+			["name"] = "附魔靴子 - 强效精神",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[57518] = {
-			["name"] = "Eternal Dreamstone Shard",
+			["name"] = "永恒梦境碎片",
 			["icon"] = "Interface\\Icons\\inv_misc_gem_pearl_04",
 		},
 		[57127] = { 
-			["name"] = "Enchant Boots - Superior Stamina",
+			["name"] = "附魔靴子 - 超强耐力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[57148] = { 
-			["name"] = "Enchant Boots - Vampirism",
+			["name"] = "附魔靴子 - 吸血鬼",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[57144] = { 
-			["name"] = "Enchant Bracer - Greater Deflection",
+			["name"] = "附魔护腕 - 强效偏转",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[57119] = { 
-			["name"] = "Enchant Chest - Mighty Mana",
+			["name"] = "附魔宝箱 - 强大法力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[57117] = { 
-			["name"] = "Enchant Cloak - Greater Arcane Resistance",
+			["name"] = "附魔披风 - 强效奥术抗性",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[46601] = { 
-			["name"] = "Enchant Gloves - Arcane Power",
+			["name"] = "附魔手套 - 奥术能量",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[46602] = { 
-			["name"] = "Enchant Gloves - Nature Power",
+			["name"] = "附魔手套 - 自然之力",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[46086] = { 
-			["name"] = "Enchant Gloves - Major Strength",
+			["name"] = "附魔手套 - 主要力量",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[57146] = {
-			["name"] = "Enchant Bracer - Vampirism",
+			["name"] = "附魔护腕 - 吸血鬼",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 	},
 	["craftspells"] = {
 		[6510] = {
-			["name"] = "Poisons: Blinding Powder",
+			["name"] = "毒药: 致盲粉",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -701,7 +701,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8681] = {
-			["name"] = "Poisons: Instant Poison",
+			["name"] = "毒药: 速效毒药",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -715,7 +715,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8687] = {
-			["name"] = "Poisons: Instant Poison II",
+			["name"] = "毒药: 速效毒药 II",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -729,7 +729,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8691] = {
-			["name"] = "Poisons: Instant Poison III",
+			["name"] = "毒药: 速效毒药 III",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -743,7 +743,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11341] = {
-			["name"] = "Poisons: Instant Poison IV",
+			["name"] = "毒药: 速效毒药 IV",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -757,7 +757,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11342] = {
-			["name"] = "Poisons: Instant Poison V",
+			["name"] = "毒药: 速效毒药 V",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -771,7 +771,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11343] = {
-			["name"] = "Poisons: Instant Poison VI",
+			["name"] = "毒药: 速效毒药 VI",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -785,7 +785,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[65032] = {
-			["name"] = "Poisons: Agitating Poison I",
+			["name"] = "毒药: 激烈毒药I",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -799,7 +799,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46068] = {
-			["name"] = "Survival: Cleaning Cloth",
+			["name"] = "生存: 清洁布",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -813,7 +813,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3420] = {
-			["name"] = "Poisons: Crippling Poison",
+			["name"] = "毒药: 致残毒药",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -827,7 +827,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3421] = {
-			["name"] = "Poisons: Crippling Poison II",
+			["name"] = "毒药: 致残毒药 II",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -841,7 +841,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[5763] = {
-			["name"] = "Poisons: Mind-numbing Poison",
+			["name"] = "毒药: 迟钝毒药",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -856,7 +856,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8694] = {
-			["name"] = "Poisons: Mind-numbing Poison II",
+			["name"] = "毒药: 麻痹毒药 II",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -871,7 +871,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11400] = {
-			["name"] = "Poisons: Mind-numbing Poison III",
+			["name"] = "毒药: 麻痹毒药 III",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -886,7 +886,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2835] = {
-			["name"] = "Poisons: Deadly Poison",
+			["name"] = "毒药: 致命毒药",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -900,7 +900,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2837] = {
-			["name"] = "Poisons: Deadly Poison II",
+			["name"] = "毒药: 致命毒药 II",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -914,7 +914,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11357] = {
-			["name"] = "Poisons: Deadly Poison III",
+			["name"] = "毒药: 致命毒药 III",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -928,7 +928,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11358] = {
-			["name"] = "Poisons: Deadly Poison IV",
+			["name"] = "毒药: 致命毒药 IV",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -942,7 +942,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[25347] = {
-			["name"] = "Poisons: Deadly Poison V",
+			["name"] = "毒药: 致命毒药 V",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -956,7 +956,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[13220] = {
-			["name"] = "Poisons: Wound Poison",
+			["name"] = "毒药: 致伤毒药",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -971,7 +971,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[13228] = {
-			["name"] = "Poisons: Wound Poison II",
+			["name"] = "毒药: 致伤毒药 II",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -986,7 +986,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[13229] = {
-			["name"] = "Poisons: Wound Poison III",
+			["name"] = "毒药: 致伤毒药 III",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1001,7 +1001,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[13230] = {
-			["name"] = "Poisons: Wound Poison IV",
+			["name"] = "毒药: 致伤毒药 IV",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1016,7 +1016,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3275] = {
-			["name"] = "First Aid: Linen Bandage",
+			["name"] = "急救: 亚麻绷带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1029,7 +1029,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3276] = {
-			["name"] = "First Aid: Heavy Linen Bandage",
+			["name"] = "急救: 厚亚麻绷带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1042,7 +1042,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7934] = {
-			["name"] = "First Aid: Anti-Venom",
+			["name"] = "急救: 抗毒药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1055,7 +1055,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3277] = {
-			["name"] = "First Aid: Wool Bandage",
+			["name"] = "急救: 绒线绷带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1068,7 +1068,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3278] = {
-			["name"] = "First Aid: Heavy Wool Bandage",
+			["name"] = "急救: 厚绒线绷带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1081,7 +1081,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7935] = {
-			["name"] = "First Aid: Strong Anti-Venom",
+			["name"] = "急救: 强力抗毒药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1094,7 +1094,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7928] = {
-			["name"] = "First Aid: Silk Bandage",
+			["name"] = "急救: 丝质绷带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1107,7 +1107,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7929] = {
-			["name"] = "First Aid: Heavy Silk Bandage",
+			["name"] = "急救: 厚丝质绷带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1120,7 +1120,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10840] = {
-			["name"] = "First Aid: Mageweave Bandage",
+			["name"] = "急救: 魔纹绷带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1133,7 +1133,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10841] = {
-			["name"] = "First Aid: Heavy Mageweave Bandage",
+			["name"] = "急救: 厚魔纹绷带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1146,7 +1146,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18629] = {
-			["name"] = "First Aid: Runecloth Bandage",
+			["name"] = "急救: 符文布绷带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1159,7 +1159,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18630] = {
-			["name"] = "First Aid: Heavy Runecloth Bandage",
+			["name"] = "急救: 厚符文布绷带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1172,7 +1172,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23787] = {
-			["name"] = "First Aid: Powerful Anti-Venom",
+			["name"] = "急救: 特效抗毒药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1185,7 +1185,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10844] = {
-			["name"] = "First Aid: Powerful Anti-Venom",
+			["name"] = "急救: 特效抗毒药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1200,7 +1200,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[818] = {
-			["name"] = "Basic Campfire",
+			["name"] = "基础营火",
 			["requires"] = "",
 			["tools"] = {4471},
 			["castTime"] = 10,
@@ -1213,7 +1213,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46064] = {
-			["name"] = "Survival: Dim Torch",
+			["name"] = "生存: 昏暗的火炬",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 2,
@@ -1226,7 +1226,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46066] = {
-			["name"] = "Survival: Murloc's Flippers",
+			["name"] = "生存: 鱼人脚蹼",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 2,
@@ -1243,7 +1243,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46072] = {
-			["name"] = "Survival: Traveler's Tent",
+			["name"] = "生存: 旅行者的帐篷",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 10,
@@ -1258,7 +1258,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46073] = {
-			["name"] = "Survival: Fishing Boat",
+			["name"] = "生存: 渔船",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 20,
@@ -1273,7 +1273,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46074] = {
-			["name"] = "Survival: Simple Wooden Planter",
+			["name"] = "生存: 简易木制花盆",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 10,
@@ -1287,7 +1287,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46075] = {
-			["name"] = "Survival: Iron Lantern",
+			["name"] = "生存: 铁灯笼",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 2,
@@ -1302,7 +1302,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46077] = {
-			["name"] = "Survival: Repaired Electro-Lantern",
+			["name"] = "生存: 修复的电灯笼",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5,
@@ -1320,7 +1320,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7752] = {
-			["name"] = "Cooking: Slitherskin Mackerel",
+			["name"] = "烹饪: 滑皮鲭鱼",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1333,7 +1333,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2538] = {
-			["name"] = "Cooking: Charred Wolf Meat",
+			["name"] = "烹饪: 烧烤狼肉",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1346,7 +1346,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7751] = {
-			["name"] = "Cooking: Brilliant Smallfish",
+			["name"] = "烹饪: 美味小鱼",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1359,7 +1359,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[15935] = {
-			["name"] = "Cooking: Crispy Bat Wing",
+			["name"] = "烹饪: 香脆蝙蝠翅",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1373,7 +1373,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[21143] = {
-			["name"] = "Cooking: Gingerbread Cookie",
+			["name"] = "烹饪: 姜饼",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1387,7 +1387,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8604] = {
-			["name"] = "Cooking: Herb Baked Egg",
+			["name"] = "烹饪: 草药烘蛋",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1401,7 +1401,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2540] = {
-			["name"] = "Cooking: Roasted Boar Meat",
+			["name"] = "烹饪: 烤野猪肉",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1414,7 +1414,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6412] = {
-			["name"] = "Cooking: Kaldorei Spider Kabob",
+			["name"] = "烹饪: 卡多雷蜘蛛烤肉",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1427,7 +1427,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2539] = {
-			["name"] = "Cooking: Spiced Wolf Meat",
+			["name"] = "烹饪: 香辣狼肉",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1441,7 +1441,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6413] = {
-			["name"] = "Cooking: Scorpid Surprise",
+			["name"] = "烹饪: 蝎肉大餐",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1454,7 +1454,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2795] = {
-			["name"] = "Cooking: Beer Basted Boar Ribs",
+			["name"] = "烹饪: 啤酒烤猪排",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1468,7 +1468,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[21144] = {
-			["name"] = "Cooking: Egg Nog",
+			["name"] = "烹饪: 蛋奶酒",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1484,7 +1484,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6414] = {
-			["name"] = "Cooking: Roasted Kodo Meat",
+			["name"] = "烹饪: 烤科多肉",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1498,7 +1498,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8607] = {
-			["name"] = "Cooking: Smoked Bear Meat",
+			["name"] = "烹饪: 熏熊肉",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1511,7 +1511,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6499] = {
-			["name"] = "Cooking: Boiled Clams",
+			["name"] = "烹饪: 水煮蚌肉",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1525,7 +1525,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2541] = {
-			["name"] = "Cooking: Coyote Steak",
+			["name"] = "烹饪: 山狗肉排",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1538,7 +1538,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6415] = {
-			["name"] = "Cooking: Fillet of Frenzy",
+			["name"] = "烹饪: 狂鱼肉片",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1552,7 +1552,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2542] = {
-			["name"] = "Cooking: Goretusk Liver Pie",
+			["name"] = "烹饪: 猪肝馅饼",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1566,7 +1566,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7754] = {
-			["name"] = "Cooking: Loch Frenzy Delight",
+			["name"] = "烹饪: 洛克湖狂鱼",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1580,7 +1580,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7753] = {
-			["name"] = "Cooking: Longjaw Mud Snapper",
+			["name"] = "烹饪: 长嘴泥鳅",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1593,7 +1593,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7827] = {
-			["name"] = "Cooking: Rainbow Fin Albacore",
+			["name"] = "烹饪: 彩鳍鱼",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1606,7 +1606,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6416] = {
-			["name"] = "Cooking: Strider Stew",
+			["name"] = "烹饪: 炖陆行鸟",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1620,7 +1620,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3371] = {
-			["name"] = "Cooking: Blood Sausage",
+			["name"] = "烹饪: 血肠",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1635,7 +1635,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9513] = {
-			["name"] = "Cooking: Thistle Tea",
+			["name"] = "烹饪: 菊花茶",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1649,7 +1649,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2544] = {
-			["name"] = "Cooking: Crab Cake",
+			["name"] = "烹饪: 蟹肉蛋糕",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1663,7 +1663,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2543] = {
-			["name"] = "Cooking: Westfall Stew",
+			["name"] = "烹饪: 杂味炖肉",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1678,7 +1678,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3370] = {
-			["name"] = "Cooking: Crocolisk Steak",
+			["name"] = "烹饪: 鳄鱼肉排",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1692,7 +1692,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2546] = {
-			["name"] = "Cooking: Dry Pork Ribs",
+			["name"] = "烹饪: 猪肉干",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1706,7 +1706,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[25704] = {
-			["name"] = "Cooking: Smoked Sagefish",
+			["name"] = "烹饪: 烤鼠尾鱼",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1720,7 +1720,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2545] = {
-			["name"] = "Cooking: Cooked Crab Claw",
+			["name"] = "烹饪: 煮蟹爪",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1734,7 +1734,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8238] = {
-			["name"] = "Cooking: Savory Deviate Delight",
+			["name"] = "烹饪: 美味风蛇",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1748,7 +1748,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6501] = {
-			["name"] = "Cooking: Clam Chowder",
+			["name"] = "烹饪: 杂烩蚌肉",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1763,7 +1763,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6417] = {
-			["name"] = "Cooking: Dig Rat Stew",
+			["name"] = "烹饪: 掘地鼠炖肉",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1776,7 +1776,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3372] = {
-			["name"] = "Cooking: Murloc Fin Soup",
+			["name"] = "烹饪: 鱼人鳍汤",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1790,7 +1790,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2547] = {
-			["name"] = "Cooking: Redridge Goulash",
+			["name"] = "烹饪: 赤脊山炖肉",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1804,7 +1804,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7755] = {
-			["name"] = "Cooking: Bristle Whisker Catfish",
+			["name"] = "烹饪: 刺须鲶鱼",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1817,7 +1817,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6418] = {
-			["name"] = "Cooking: Crispy Lizard Tail",
+			["name"] = "烹饪: 脆炸蜥蜴尾",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1831,7 +1831,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2549] = {
-			["name"] = "Cooking: Seasoned Wolf Kabob",
+			["name"] = "烹饪: 干烤狼肉串",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1845,7 +1845,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2548] = {
-			["name"] = "Cooking: Succulent Pork Ribs",
+			["name"] = "烹饪: 多汁猪排",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1859,7 +1859,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3397] = {
-			["name"] = "Cooking: Big Bear Steak",
+			["name"] = "烹饪: 大块的熊排",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1873,7 +1873,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3377] = {
-			["name"] = "Cooking: Gooey Spider Cake",
+			["name"] = "烹饪: 蜘蛛蛋糕",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1887,7 +1887,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6419] = {
-			["name"] = "Cooking: Lean Venison",
+			["name"] = "烹饪: 瘦鹿肉",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1901,7 +1901,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3373] = {
-			["name"] = "Cooking: Crocolisk Gumbo",
+			["name"] = "烹饪: 鳄鱼浓汤",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1915,7 +1915,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6500] = {
-			["name"] = "Cooking: Goblin Deviled Clams",
+			["name"] = "烹饪: 地精芥末蘸蚌肉",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1929,7 +1929,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[15853] = {
-			["name"] = "Cooking: Lean Wolf Steak",
+			["name"] = "烹饪: 瘦狼排",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1943,7 +1943,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3398] = {
-			["name"] = "Cooking: Hot Lion Chops",
+			["name"] = "烹饪: 烤狮排",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1957,7 +1957,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3376] = {
-			["name"] = "Cooking: Curiously Tasty Omelet",
+			["name"] = "烹饪: 美味煎蛋卷",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1971,7 +1971,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24418] = {
-			["name"] = "Cooking: Heavy Crocolisk Stew",
+			["name"] = "烹饪: 鳄鱼炖肉",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1985,7 +1985,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3399] = {
-			["name"] = "Cooking: Tasty Lion Steak",
+			["name"] = "烹饪: 香烤狮肉",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -1999,7 +1999,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57178] = {
-			["name"] = "Blacksmithing: Arcanite Belt Buckle",
+			["name"] = "锻造: 奥金腰带扣",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -2016,7 +2016,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57166] = {
-			["name"] = "Blacksmithing: Bronze Belt Buckle",
+			["name"] = "锻造: 青铜皮带扣",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -2031,7 +2031,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57163] = {
-			["name"] = "Blacksmithing: Copper Belt Buckle",
+			["name"] = "锻造: 铜皮带扣",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -2046,7 +2046,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57169] = {
-			["name"] = "Blacksmithing: Iron Belt Buckle",
+			["name"] = "锻造: 铁皮带扣",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -2061,7 +2061,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57172] = {
-			["name"] = "Blacksmithing: Mithril Belt Buckle",
+			["name"] = "锻造: 秘银皮带扣",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -2077,7 +2077,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57175] = {
-			["name"] = "Blacksmithing: Thorium Belt Buckle",
+			["name"] = "锻造: 瑟银皮带扣",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -2093,7 +2093,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57189] = {
-			["name"] = "Blacksmithing: Towerforge Breastplate",
+			["name"] = "锻造: 塔铸胸甲",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -2110,7 +2110,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57187] = {
-			["name"] = "Blacksmithing: Towerforge Crown",
+			["name"] = "锻造: 塔铸皇冠",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -2127,7 +2127,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57193] = {
-			["name"] = "Blacksmithing: Towerforge Demolisher",
+			["name"] = "锻造: 塔铸拆除者",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -2145,7 +2145,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57191] = {
-			["name"] = "Blacksmithing: Towerforge Pauldrons",
+			["name"] = "锻造: 塔铸肩铠",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -2162,7 +2162,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[54005] = {
-			["name"] = "Blacksmithing: Pauldrons of the Timbermaw",
+			["name"] = "锻造: 木喉肩铠",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -2178,7 +2178,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[54003] = {
-			["name"] = "Blacksmithing: Fury of the Timbermaw",
+			["name"] = "锻造: 木喉之怒",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -2193,7 +2193,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[45487] = {
-			["name"] = "Blacksmithing: Sulfuron Hammer",
+			["name"] = "锻造: 萨弗隆战锤",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -2211,7 +2211,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[21161] = {
-			["name"] = "Blacksmithing: Sulfuron Hammer",
+			["name"] = "锻造: 萨弗隆战锤",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -2230,7 +2230,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46626] = {
-			["name"] = "Blacksmithing: Steel Plate Boots",
+			["name"] = "锻造: 钢板靴",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 10,
@@ -2244,7 +2244,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46627] = {
-			["name"] = "Blacksmithing: Steel Plate Gauntlets",
+			["name"] = "锻造: 钢板护手",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 10,
@@ -2258,7 +2258,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46628] = {
-			["name"] = "Blacksmithing: Steel Plate Legguards",
+			["name"] = "锻造: 钢板护腿",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 10,
@@ -2273,7 +2273,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46629] = {
-			["name"] = "Blacksmithing: Steel Plate Armor",
+			["name"] = "锻造: 钢板胸甲",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 10,
@@ -2289,7 +2289,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46630] = {
-			["name"] = "Blacksmithing: Steel Plate Pauldrons",
+			["name"] = "锻造: 钢板护肩",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 10,
@@ -2305,7 +2305,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46631] = {
-			["name"] = "Blacksmithing: Steel Plate Barbute",
+			["name"] = "锻造: 钢板开面盔",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 10,
@@ -2323,7 +2323,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[13028] = {
-			["name"] = "Cooking: Goldthorn Tea",
+			["name"] = "烹饪: 金棘茶",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2337,7 +2337,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7828] = {
-			["name"] = "Cooking: Rockscale Cod",
+			["name"] = "烹饪: 石鳞鳕鱼",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2350,7 +2350,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[4094] = {
-			["name"] = "Cooking: Barbecued Buzzard Wing",
+			["name"] = "烹饪: 烧烤秃鹰翅膀",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2364,7 +2364,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[15863] = {
-			["name"] = "Cooking: Carrion Surprise",
+			["name"] = "烹饪: 腐肉大餐",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2378,7 +2378,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7213] = {
-			["name"] = "Cooking: Giant Clam Scorcho",
+			["name"] = "烹饪: 烧烤巨蚌",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2392,7 +2392,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[15856] = {
-			["name"] = "Cooking: Hot Wolf Ribs",
+			["name"] = "烹饪: 热狼排",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2406,7 +2406,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[15861] = {
-			["name"] = "Cooking: Jungle Stew",
+			["name"] = "烹饪: 丛林大杂烩",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2421,7 +2421,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[20916] = {
-			["name"] = "Cooking: Mithril Headed Trout",
+			["name"] = "烹饪: 银头鲑鱼",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2434,7 +2434,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[15865] = {
-			["name"] = "Cooking: Mystery Stew",
+			["name"] = "烹饪: 神秘杂烩",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2448,7 +2448,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[15855] = {
-			["name"] = "Cooking: Roast Raptor",
+			["name"] = "烹饪: 烤迅猛龙肉",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2462,7 +2462,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[25954] = {
-			["name"] = "Cooking: Sagefish Delight",
+			["name"] = "烹饪: 美味鼠尾鱼",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2476,7 +2476,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3400] = {
-			["name"] = "Cooking: Soothing Turtle Bisque",
+			["name"] = "烹饪: 海龟汤",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2490,7 +2490,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[15906] = {
-			["name"] = "Cooking: Dragonbreath Chili",
+			["name"] = "烹饪: 龙息红椒",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2505,7 +2505,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[45627] = {
-			["name"] = "Cooking: Gilneas Hot Stew",
+			["name"] = "烹饪: 吉尔尼斯热炖菜",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2520,7 +2520,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[15910] = {
-			["name"] = "Cooking: Heavy Kodo Stew",
+			["name"] = "烹饪: 科多肉杂烩",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2535,7 +2535,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[21175] = {
-			["name"] = "Cooking: Spider Sausage",
+			["name"] = "烹饪: 蜘蛛肉肠",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2548,7 +2548,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18239] = {
-			["name"] = "Cooking: Cooked Glossy Mightfish",
+			["name"] = "烹饪: 煮熟的光滑大鱼",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2562,7 +2562,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18241] = {
-			["name"] = "Cooking: Filet of Redgill",
+			["name"] = "烹饪: 油炸红腮鱼",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2575,7 +2575,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[15933] = {
-			["name"] = "Cooking: Monster Omelet",
+			["name"] = "烹饪: 超级煎蛋卷",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2589,7 +2589,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[15915] = {
-			["name"] = "Cooking: Spiced Chili Crab",
+			["name"] = "烹饪: 辣椒蟹肉",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2603,7 +2603,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18238] = {
-			["name"] = "Cooking: Spotted Yellowtail",
+			["name"] = "烹饪: 斑点黄尾鱼",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2616,7 +2616,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[22480] = {
-			["name"] = "Cooking: Tender Wolf Steak",
+			["name"] = "烹饪: 嫩狼肉排",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2630,7 +2630,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[20626] = {
-			["name"] = "Cooking: Undermine Clam Chowder",
+			["name"] = "烹饪: 安德麦蚌肉杂烩",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2645,7 +2645,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18240] = {
-			["name"] = "Cooking: Grilled Squid",
+			["name"] = "烹饪: 烤鱿鱼",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2659,7 +2659,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18242] = {
-			["name"] = "Cooking: Hot Smoked Bass",
+			["name"] = "烹饪: 烟熏鲈鱼",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2673,7 +2673,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18243] = {
-			["name"] = "Cooking: Nightfin Soup",
+			["name"] = "烹饪: 夜鳞鱼汤",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2687,7 +2687,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18244] = {
-			["name"] = "Cooking: Poached Sunscale Salmon",
+			["name"] = "烹饪: 水煮阳鳞鲑鱼",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2700,7 +2700,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18247] = {
-			["name"] = "Cooking: Baked Salmon",
+			["name"] = "烹饪: 烤鲑鱼",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2714,7 +2714,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18245] = {
-			["name"] = "Cooking: Lobster Stew",
+			["name"] = "烹饪: 炖龙虾",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2728,7 +2728,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18246] = {
-			["name"] = "Cooking: Mightfish Steak",
+			["name"] = "烹饪: 大鱼片",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2743,7 +2743,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[22761] = {
-			["name"] = "Cooking: Runn Tum Tuber Surprise",
+			["name"] = "烹饪: 洛恩塔姆薯块",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2757,7 +2757,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24801] = {
-			["name"] = "Cooking: Smoked Desert Dumplings",
+			["name"] = "烹饪: 沙漠肉丸子",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2771,7 +2771,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[25659] = {
-			["name"] = "Cooking: Dirge's Kickin' Chimaerok Chops",
+			["name"] = "烹饪: 迪尔格的超美味奇美拉肉片",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2787,7 +2787,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57031] = {
-			["name"] = "Cooking: Danonzo's Tel'Abim Surprise",
+			["name"] = "烹饪: 达农佐的泰拉比姆惊喜",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2802,7 +2802,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57032] = {
-			["name"] = "Cooking: Danonzo's Tel'abim Medley",
+			["name"] = "烹饪: 达农佐的泰拉比姆的混响曲",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2817,7 +2817,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57033] = {
-			["name"] = "Cooking: Danonzo's Tel'abim Delight",
+			["name"] = "烹饪: 达农佐的泰拉比姆的喜悦",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2832,7 +2832,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46085] = {
-			["name"] = "Cooking: Gurubashi Gumbo",
+			["name"] = "烹饪: 古拉巴什浓汤",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2850,7 +2850,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[45625] = {
-			["name"] = "Cooking: Le Fishe Au Chocolat",
+			["name"] = "烹饪: 巧克力鱼",
 			["requires"] = AL["Cooking Fire"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -2866,7 +2866,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7630] = {
-			["name"] = "Tailoring: Blue Linen Vest",
+			["name"] = "裁缝: 蓝色亚麻外衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -2881,7 +2881,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7629] = {
-			["name"] = "Tailoring: Red Linen Vest",
+			["name"] = "裁缝: 红色亚麻外衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -2896,7 +2896,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3841] = {
-			["name"] = "Tailoring: Green Linen Bracers",
+			["name"] = "裁缝: 绿色亚麻护腕",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -2911,7 +2911,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2397] = {
-			["name"] = "Tailoring: Reinforced Linen Cape",
+			["name"] = "裁缝: 强化亚麻斗篷",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -2925,7 +2925,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2386] = {
-			["name"] = "Tailoring: Linen Boots",
+			["name"] = "裁缝: 亚麻靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -2940,7 +2940,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2395] = {
-			["name"] = "Tailoring: Barbaric Linen Vest",
+			["name"] = "裁缝: 野人亚麻外衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -2955,7 +2955,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7633] = {
-			["name"] = "Tailoring: Blue Linen Robe",
+			["name"] = "裁缝: 蓝色亚麻长袍",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -2970,7 +2970,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3842] = {
-			["name"] = "Tailoring: Handstitched Linen Britches",
+			["name"] = "裁缝: 手工亚麻裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -2984,7 +2984,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2396] = {
-			["name"] = "Tailoring: Green Linen Shirt",
+			["name"] = "裁缝: 绿色亚麻衬衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -2999,7 +2999,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6686] = {
-			["name"] = "Tailoring: Red Linen Bag",
+			["name"] = "裁缝: 红色亚麻包",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -3014,7 +3014,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2964] = {
-			["name"] = "Tailoring: Bolt of Woolen Cloth",
+			["name"] = "裁缝: 毛布卷",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -3027,7 +3027,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12046] = {
-			["name"] = "Tailoring: Simple Kilt",
+			["name"] = "裁缝: 简易的褶裙",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -3041,7 +3041,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12046] = {
-			["name"] = "Tailoring: Simple Kilt",
+			["name"] = "裁缝: 简易的褶裙",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -3055,7 +3055,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2402] = {
-			["name"] = "Tailoring: Woolen Cape",
+			["name"] = "裁缝: 毛纺斗篷",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -3069,7 +3069,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3845] = {
-			["name"] = "Tailoring: Soft-soled Linen Boots",
+			["name"] = "裁缝: 软底亚麻靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -3084,7 +3084,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3757] = {
-			["name"] = "Tailoring: Woolen Bag",
+			["name"] = "裁缝: 毛纺包",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -3098,7 +3098,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3843] = {
-			["name"] = "Tailoring: Heavy Woolen Gloves",
+			["name"] = "裁缝: 高级毛纺手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -3112,7 +3112,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2399] = {
-			["name"] = "Tailoring: Green Woolen Vest",
+			["name"] = "裁缝: 绿色毛纺外衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -3127,7 +3127,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6521] = {
-			["name"] = "Tailoring: Pearl-clasped Cloak",
+			["name"] = "裁缝: 珍珠披风",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -3142,7 +3142,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3847] = {
-			["name"] = "Tailoring: Red Woolen Boots",
+			["name"] = "裁缝: 红色毛纺靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -3158,7 +3158,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2401] = {
-			["name"] = "Tailoring: Woolen Boots",
+			["name"] = "裁缝: 毛纺靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -3173,7 +3173,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3758] = {
-			["name"] = "Tailoring: Green Woolen Bag",
+			["name"] = "裁缝: 绿色毛纺包",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -3188,7 +3188,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2406] = {
-			["name"] = "Tailoring: Gray Woolen Shirt",
+			["name"] = "裁缝: 灰色毛纺衬衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -3203,7 +3203,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7639] = {
-			["name"] = "Tailoring: Blue Overalls",
+			["name"] = "裁缝: 蓝色罩衫",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -3218,7 +3218,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3844] = {
-			["name"] = "Tailoring: Heavy Woolen Cloak",
+			["name"] = "裁缝: 高级毛纺披风",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -3233,7 +3233,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3844] = {
-			["name"] = "Tailoring: Heavy Woolen Cloak",
+			["name"] = "裁缝: 高级毛纺披风",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -3248,7 +3248,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2403] = {
-			["name"] = "Tailoring: Gray Woolen Robe",
+			["name"] = "裁缝: 灰色毛纺长袍",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -3263,7 +3263,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3850] = {
-			["name"] = "Tailoring: Heavy Woolen Pants",
+			["name"] = "裁缝: 高级毛纺短裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -3277,7 +3277,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3848] = {
-			["name"] = "Tailoring: Double-stitched Woolen Shoulders",
+			["name"] = "裁缝: 双线毛纺护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -3291,7 +3291,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3866] = {
-			["name"] = "Tailoring: Stylish Red Shirt",
+			["name"] = "裁缝: 漂亮的红衬衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -3306,7 +3306,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8467] = {
-			["name"] = "Tailoring: White Woolen Dress",
+			["name"] = "裁缝: 白色毛绒裙",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -3321,7 +3321,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7643] = {
-			["name"] = "Tailoring: Greater Adept's Robe",
+			["name"] = "裁缝: 大师长袍",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -3336,7 +3336,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6688] = {
-			["name"] = "Tailoring: Red Woolen Bag",
+			["name"] = "裁缝: 红色毛纺包",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -3351,7 +3351,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12047] = {
-			["name"] = "Tailoring: Colorful Kilt",
+			["name"] = "裁缝: 多彩褶裙",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -3366,7 +3366,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3849] = {
-			["name"] = "Tailoring: Reinforced Woolen Shoulders",
+			["name"] = "裁缝: 强化毛纺护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -3381,7 +3381,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7892] = {
-			["name"] = "Tailoring: Stylish Blue Shirt",
+			["name"] = "裁缝: 漂亮的蓝衬衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -3397,7 +3397,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7893] = {
-			["name"] = "Tailoring: Stylish Green Shirt",
+			["name"] = "裁缝: 漂亮的绿衬衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -3413,7 +3413,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3839] = {
-			["name"] = "Tailoring: Bolt of Silk Cloth",
+			["name"] = "裁缝: 丝绸卷",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -3426,7 +3426,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3855] = {
-			["name"] = "Tailoring: Spidersilk Boots",
+			["name"] = "裁缝: 蛛丝之靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -3442,7 +3442,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3868] = {
-			["name"] = "Tailoring: Phoenix Gloves",
+			["name"] = "裁缝: 凤凰手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -3459,7 +3459,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3851] = {
-			["name"] = "Tailoring: Phoenix Pants",
+			["name"] = "裁缝: 凤凰短裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -3474,7 +3474,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3852] = {
-			["name"] = "Tailoring: Gloves of Meditation",
+			["name"] = "裁缝: 冥想手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -3489,7 +3489,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3869] = {
-			["name"] = "Tailoring: Bright Yellow Shirt",
+			["name"] = "裁缝: 淡黄色衬衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -3504,7 +3504,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6690] = {
-			["name"] = "Tailoring: Lesser Wizard's Robe",
+			["name"] = "裁缝: 次级巫师袍",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -3519,7 +3519,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8758] = {
-			["name"] = "Tailoring: Azure Silk Pants",
+			["name"] = "裁缝: 碧蓝丝质短裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -3534,7 +3534,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3856] = {
-			["name"] = "Tailoring: Spider Silk Slippers",
+			["name"] = "裁缝: 蛛丝便鞋",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -3549,7 +3549,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8778] = {
-			["name"] = "Tailoring: Boots of Darkness",
+			["name"] = "裁缝: 黑暗之靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -3565,7 +3565,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8760] = {
-			["name"] = "Tailoring: Azure Silk Hood",
+			["name"] = "裁缝: 碧蓝丝质头巾",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -3580,7 +3580,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3854] = {
-			["name"] = "Tailoring: Azure Silk Gloves",
+			["name"] = "裁缝: 碧蓝丝质手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -3596,7 +3596,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8780] = {
-			["name"] = "Tailoring: Hands of Darkness",
+			["name"] = "裁缝: 黑暗之手",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -3612,7 +3612,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3859] = {
-			["name"] = "Tailoring: Azure Silk Vest",
+			["name"] = "裁缝: 碧蓝丝质外衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -3626,7 +3626,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6692] = {
-			["name"] = "Tailoring: Robes of Arcana",
+			["name"] = "裁缝: 奥法之袍",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -3641,7 +3641,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8782] = {
-			["name"] = "Tailoring: Truefaith Gloves",
+			["name"] = "裁缝: 信念手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -3657,7 +3657,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3813] = {
-			["name"] = "Tailoring: Small Silk Pack",
+			["name"] = "裁缝: 丝绸小包",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -3672,7 +3672,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3870] = {
-			["name"] = "Tailoring: Dark Silk Shirt",
+			["name"] = "裁缝: 黑丝衬衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -3687,7 +3687,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8762] = {
-			["name"] = "Tailoring: Silk Headband",
+			["name"] = "裁缝: 丝质头带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -3701,7 +3701,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8483] = {
-			["name"] = "Tailoring: White Swashbuckler's Shirt",
+			["name"] = "裁缝: 白色冒险者衬衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -3716,7 +3716,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3857] = {
-			["name"] = "Tailoring: Enchanter's Cowl",
+			["name"] = "裁缝: 巫术师兜帽",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -3731,7 +3731,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8784] = {
-			["name"] = "Tailoring: Green Silk Armor",
+			["name"] = "裁缝: 绿色丝甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -3746,7 +3746,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3871] = {
-			["name"] = "Tailoring: Formal White Shirt",
+			["name"] = "裁缝: 体面的白衬衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -3761,7 +3761,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8764] = {
-			["name"] = "Tailoring: Earthen Vest",
+			["name"] = "裁缝: 土灵外衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -3776,7 +3776,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3858] = {
-			["name"] = "Tailoring: Shadow Hood",
+			["name"] = "裁缝: 暗影头巾",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -3791,7 +3791,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3865] = {
-			["name"] = "Tailoring: Bolt of Mageweave",
+			["name"] = "裁缝: 魔纹布卷",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -3804,7 +3804,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8489] = {
-			["name"] = "Tailoring: Red Swashbuckler's Shirt",
+			["name"] = "裁缝: 红色冒险者衬衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -3819,7 +3819,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8766] = {
-			["name"] = "Tailoring: Azure Silk Belt",
+			["name"] = "裁缝: 碧蓝丝质腰带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -3836,7 +3836,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8786] = {
-			["name"] = "Tailoring: Azure Silk Cloak",
+			["name"] = "裁缝: 碧蓝丝质披风",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -3851,7 +3851,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3860] = {
-			["name"] = "Tailoring: Boots of the Enchanter",
+			["name"] = "裁缝: 附魔师长靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -3866,7 +3866,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8772] = {
-			["name"] = "Tailoring: Crimson Silk Belt",
+			["name"] = "裁缝: 深红丝质腰带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -3882,7 +3882,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6693] = {
-			["name"] = "Tailoring: Green Silk Pack",
+			["name"] = "裁缝: 绿色丝质包",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -3898,7 +3898,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8789] = {
-			["name"] = "Tailoring: Crimson Silk Cloak",
+			["name"] = "裁缝: 深红丝质披风",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -3914,7 +3914,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8774] = {
-			["name"] = "Tailoring: Green Silken Shoulders",
+			["name"] = "裁缝: 绿色丝质护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -3928,7 +3928,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3863] = {
-			["name"] = "Tailoring: Spider Belt",
+			["name"] = "裁缝: 蜘蛛腰带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -3943,7 +3943,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3872] = {
-			["name"] = "Tailoring: Rich Purple Silk Shirt",
+			["name"] = "裁缝: 紫色丝质衬衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -3958,7 +3958,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8791] = {
-			["name"] = "Tailoring: Crimson Silk Vest",
+			["name"] = "裁缝: 深红丝质外衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -3973,7 +3973,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3861] = {
-			["name"] = "Tailoring: Long Silken Cloak",
+			["name"] = "裁缝: 丝质长披风",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -3988,7 +3988,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6695] = {
-			["name"] = "Tailoring: Black Silk Pack",
+			["name"] = "裁缝: 黑色丝质背包",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -4003,7 +4003,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[21945] = {
-			["name"] = "Tailoring: Green Holiday Shirt",
+			["name"] = "裁缝: 绿色节日衬衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -4018,7 +4018,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8770] = {
-			["name"] = "Tailoring: Robe of Power",
+			["name"] = "裁缝: 力量法袍",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4036,7 +4036,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8795] = {
-			["name"] = "Tailoring: Azure Shoulders",
+			["name"] = "裁缝: 碧蓝护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -4052,7 +4052,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8793] = {
-			["name"] = "Tailoring: Crimson Silk Shoulders",
+			["name"] = "裁缝: 深红丝质护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -4068,7 +4068,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8799] = {
-			["name"] = "Tailoring: Crimson Silk Pantaloons",
+			["name"] = "裁缝: 深红丝质马裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -4083,7 +4083,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8797] = {
-			["name"] = "Tailoring: Earthen Silk Belt",
+			["name"] = "裁缝: 土灵丝质腰带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -4100,7 +4100,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3873] = {
-			["name"] = "Tailoring: Black Swashbuckler's Shirt",
+			["name"] = "裁缝: 黑色冒险者衬衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -4115,7 +4115,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3862] = {
-			["name"] = "Tailoring: Icy Cloak",
+			["name"] = "裁缝: 冰覆披风",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -4131,7 +4131,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[69420] = {
-			["name"] = "Tailoring: Augerer's Boots",
+			["name"] = "裁缝: 奥格勒的靴子",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4148,7 +4148,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[69421] = {
-			["name"] = "Tailoring: Augerer's Gloves",
+			["name"] = "裁缝: 奥格勒的手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4165,7 +4165,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[69422] = {
-			["name"] = "Tailoring: Augerer's Mantle",
+			["name"] = "裁缝: 奥格勒的斗篷",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4182,7 +4182,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[69423] = {
-			["name"] = "Tailoring: Augerer's Trousers",
+			["name"] = "裁缝: 奥格勒的长裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4199,7 +4199,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[69424] = {
-			["name"] = "Tailoring: Augerer's Hat",
+			["name"] = "裁缝: 奥格勒的帽子",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4216,7 +4216,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[69425] = {
-			["name"] = "Tailoring: Augerer's Robe",
+			["name"] = "裁缝: 奥格勒的长袍",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4234,7 +4234,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[69426] = {
-			["name"] = "Tailoring: Diviner's Boots",
+			["name"] = "裁缝: 预言者长靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4250,7 +4250,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[69427] = {
-			["name"] = "Tailoring: Diviner's Mitts",
+			["name"] = "裁缝: 预言者手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4266,7 +4266,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[69428] = {
-			["name"] = "Tailoring: Diviner's Epaulets",
+			["name"] = "裁缝: 占卜师肩章",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4283,7 +4283,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[69429] = {
-			["name"] = "Tailoring: Diviner's Pantaloons",
+			["name"] = "裁缝: 预言者马裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4299,7 +4299,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[69430] = {
-			["name"] = "Tailoring: Diviner's Cowl",
+			["name"] = "裁缝: 预言者兜帽",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4315,7 +4315,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[69431] = {
-			["name"] = "Tailoring: Diviner's Robes",
+			["name"] = "裁缝: 预言者长袍",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4333,7 +4333,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[69432] = {
-			["name"] = "Tailoring: Pillager's Shoes",
+			["name"] = "裁缝: 劫掠者之鞋",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4349,7 +4349,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[69433] = {
-			["name"] = "Tailoring: Pillager's Grips",
+			["name"] = "裁缝: 劫掠者之握",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4364,7 +4364,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[69434] = {
-			["name"] = "Tailoring: Pillager's Amice",
+			["name"] = "裁缝: 劫掠者护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4380,7 +4380,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[69435] = {
-			["name"] = "Tailoring: Pillager's Pantaloons",
+			["name"] = "裁缝: 劫掠者马裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4396,7 +4396,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[69436] = {
-			["name"] = "Tailoring: Pillager's Hood",
+			["name"] = "裁缝: 劫掠者兜帽",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4411,7 +4411,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[69437] = {
-			["name"] = "Tailoring: Pillager's Robe",
+			["name"] = "裁缝: 劫掠者长袍",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4429,7 +4429,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3864] = {
-			["name"] = "Tailoring: Star Belt",
+			["name"] = "裁缝: 星辰腰带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -4446,7 +4446,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12049] = {
-			["name"] = "Tailoring: Black Mageweave Leggings",
+			["name"] = "裁缝: 黑色魔纹短裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4460,7 +4460,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12048] = {
-			["name"] = "Tailoring: Black Mageweave Vest",
+			["name"] = "裁缝: 黑色魔纹外衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4474,7 +4474,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8802] = {
-			["name"] = "Tailoring: Crimson Silk Robe",
+			["name"] = "裁缝: 深红丝质长袍",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4491,7 +4491,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12050] = {
-			["name"] = "Tailoring: Black Mageweave Robe",
+			["name"] = "裁缝: 黑色魔纹长袍",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4505,7 +4505,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8804] = {
-			["name"] = "Tailoring: Crimson Silk Gloves",
+			["name"] = "裁缝: 深红丝质手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4523,7 +4523,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12052] = {
-			["name"] = "Tailoring: Shadoweave Pants",
+			["name"] = "裁缝: 暗纹短裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4538,7 +4538,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12059] = {
-			["name"] = "Tailoring: White Bandit Mask",
+			["name"] = "裁缝: 白色强盗面罩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4553,7 +4553,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12061] = {
-			["name"] = "Tailoring: Orange Mageweave Shirt",
+			["name"] = "裁缝: 橙色魔纹衬衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -4568,7 +4568,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12053] = {
-			["name"] = "Tailoring: Black Mageweave Gloves",
+			["name"] = "裁缝: 黑色魔纹手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4582,7 +4582,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12060] = {
-			["name"] = "Tailoring: Red Mageweave Pants",
+			["name"] = "裁缝: 红色魔纹短裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4597,7 +4597,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12056] = {
-			["name"] = "Tailoring: Red Mageweave Vest",
+			["name"] = "裁缝: 红色魔纹外衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4612,7 +4612,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12055] = {
-			["name"] = "Tailoring: Shadoweave Robe",
+			["name"] = "裁缝: 暗纹长袍",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4627,7 +4627,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12064] = {
-			["name"] = "Tailoring: Orange Martial Shirt",
+			["name"] = "裁缝: 橙色军用衬衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -4642,7 +4642,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12067] = {
-			["name"] = "Tailoring: Dreamweave Gloves",
+			["name"] = "裁缝: 梦纹手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4658,7 +4658,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12070] = {
-			["name"] = "Tailoring: Dreamweave Vest",
+			["name"] = "裁缝: 梦纹外衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4674,7 +4674,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12069] = {
-			["name"] = "Tailoring: Cindercloth Robe",
+			["name"] = "裁缝: 灰布长袍",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4689,7 +4689,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[27658] = {
-			["name"] = "Tailoring: Enchanted Mageweave Pouch",
+			["name"] = "裁缝: 魔化魔纹布包",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -4704,7 +4704,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12066] = {
-			["name"] = "Tailoring: Red Mageweave Gloves",
+			["name"] = "裁缝: 红色魔纹手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4719,7 +4719,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12071] = {
-			["name"] = "Tailoring: Shadoweave Gloves",
+			["name"] = "裁缝: 暗纹手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4734,7 +4734,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12065] = {
-			["name"] = "Tailoring: Mageweave Bag",
+			["name"] = "裁缝: 魔纹包",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4748,7 +4748,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12075] = {
-			["name"] = "Tailoring: Lavender Mageweave Shirt",
+			["name"] = "裁缝: 紫色魔纹衬衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -4763,7 +4763,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12073] = {
-			["name"] = "Tailoring: Black Mageweave Boots",
+			["name"] = "裁缝: 黑色魔纹之靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4778,7 +4778,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12072] = {
-			["name"] = "Tailoring: Black Mageweave Headband",
+			["name"] = "裁缝: 黑色魔纹头带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4792,7 +4792,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12074] = {
-			["name"] = "Tailoring: Black Mageweave Shoulders",
+			["name"] = "裁缝: 黑色魔纹护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4806,7 +4806,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12080] = {
-			["name"] = "Tailoring: Pink Mageweave Shirt",
+			["name"] = "裁缝: 粉色魔纹衬衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -4821,7 +4821,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12077] = {
-			["name"] = "Tailoring: Simple Black Dress",
+			["name"] = "裁缝: 简易的黑裙子",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -4837,7 +4837,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12078] = {
-			["name"] = "Tailoring: Red Mageweave Shoulders",
+			["name"] = "裁缝: 红色魔纹护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -4852,7 +4852,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12076] = {
-			["name"] = "Tailoring: Shadoweave Shoulders",
+			["name"] = "裁缝: 暗纹护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4867,7 +4867,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12076] = {
-			["name"] = "Tailoring: Shadoweave Shoulders",
+			["name"] = "裁缝: 暗纹护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4882,7 +4882,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12079] = {
-			["name"] = "Tailoring: Red Mageweave Bag",
+			["name"] = "裁缝: 红色魔纹包",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4897,7 +4897,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12085] = {
-			["name"] = "Tailoring: Tuxedo Shirt",
+			["name"] = "裁缝: 礼服衬衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -4912,7 +4912,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12081] = {
-			["name"] = "Tailoring: Admiral's Hat",
+			["name"] = "裁缝: 将军之帽",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4927,7 +4927,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12084] = {
-			["name"] = "Tailoring: Red Mageweave Headband",
+			["name"] = "裁缝: 红色魔纹头带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4942,7 +4942,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12082] = {
-			["name"] = "Tailoring: Shadoweave Boots",
+			["name"] = "裁缝: 暗纹之靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4958,7 +4958,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12089] = {
-			["name"] = "Tailoring: Tuxedo Pants",
+			["name"] = "裁缝: 礼服短裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -4972,7 +4972,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12088] = {
-			["name"] = "Tailoring: Cindercloth Boots",
+			["name"] = "裁缝: 灰布长靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -4988,7 +4988,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12086] = {
-			["name"] = "Tailoring: Shadoweave Mask",
+			["name"] = "裁缝: 暗纹面罩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5003,7 +5003,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18401] = {
-			["name"] = "Tailoring: Bolt of Runecloth",
+			["name"] = "裁缝: 符文布卷",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -5016,7 +5016,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12091] = {
-			["name"] = "Tailoring: White Wedding Dress",
+			["name"] = "裁缝: 白色婚纱",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -5031,7 +5031,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12092] = {
-			["name"] = "Tailoring: Dreamweave Circlet",
+			["name"] = "裁缝: 梦纹头饰",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5049,7 +5049,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[26403] = {
-			["name"] = "Tailoring: Festival Dress",
+			["name"] = "裁缝: Festival Dress",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -5065,7 +5065,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[26407] = {
-			["name"] = "Tailoring: Festive Red Pant Suit",
+			["name"] = "裁缝: 红色节庆裤装",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -5081,7 +5081,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12093] = {
-			["name"] = "Tailoring: Tuxedo Jacket",
+			["name"] = "裁缝: 礼服夹克",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -5095,7 +5095,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18560] = {
-			["name"] = "Tailoring: Mooncloth",
+			["name"] = "裁缝: 月布",
 			["requires"] = AL["Moonwell"],
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5108,7 +5108,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18404] = {
-			["name"] = "Tailoring: Frostweave Robe",
+			["name"] = "裁缝: 霜纹长袍",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5123,7 +5123,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18403] = {
-			["name"] = "Tailoring: Frostweave Tunic",
+			["name"] = "裁缝: 霜纹外套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5138,7 +5138,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18402] = {
-			["name"] = "Tailoring: Runecloth Belt",
+			["name"] = "裁缝: 符文布腰带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5152,7 +5152,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18408] = {
-			["name"] = "Tailoring: Cindercloth Vest",
+			["name"] = "裁缝: 灰布外衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5167,7 +5167,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18406] = {
-			["name"] = "Tailoring: Runecloth Robe",
+			["name"] = "裁缝: 符文布袍",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5182,7 +5182,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18407] = {
-			["name"] = "Tailoring: Runecloth Tunic",
+			["name"] = "裁缝: 符文布外套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5197,7 +5197,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[26085] = {
-			["name"] = "Tailoring: Soul Pouch",
+			["name"] = "裁缝: 灵魂袋",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5213,7 +5213,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18405] = {
-			["name"] = "Tailoring: Runecloth Bag",
+			["name"] = "裁缝: 符文布背包",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5228,7 +5228,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18411] = {
-			["name"] = "Tailoring: Frostweave Gloves",
+			["name"] = "裁缝: 霜纹手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5243,7 +5243,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18410] = {
-			["name"] = "Tailoring: Ghostweave Belt",
+			["name"] = "裁缝: 鬼纹腰带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5259,7 +5259,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18409] = {
-			["name"] = "Tailoring: Runecloth Cloak",
+			["name"] = "裁缝: 符文布披风",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5274,7 +5274,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18415] = {
-			["name"] = "Tailoring: Brightcloth Gloves",
+			["name"] = "裁缝: 亮布手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5289,7 +5289,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18414] = {
-			["name"] = "Tailoring: Brightcloth Robe",
+			["name"] = "裁缝: 亮布长袍",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5304,7 +5304,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18412] = {
-			["name"] = "Tailoring: Cindercloth Gloves",
+			["name"] = "裁缝: 灰布手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5319,7 +5319,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18413] = {
-			["name"] = "Tailoring: Ghostweave Gloves",
+			["name"] = "裁缝: 鬼纹手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5335,7 +5335,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[22813] = {
-			["name"] = "Tailoring: Gordok Ogre Suit",
+			["name"] = "裁缝: 戈多克食人魔装",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5351,7 +5351,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18422] = {
-			["name"] = "Tailoring: Cloak of Fire",
+			["name"] = "裁缝: 火焰披风",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5368,7 +5368,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18420] = {
-			["name"] = "Tailoring: Brightcloth Cloak",
+			["name"] = "裁缝: 亮布披风",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5383,7 +5383,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[27724] = {
-			["name"] = "Tailoring: Cenarion Herb Bag",
+			["name"] = "裁缝: 塞纳里奥草药包",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5399,7 +5399,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18418] = {
-			["name"] = "Tailoring: Cindercloth Cloak",
+			["name"] = "裁缝: 灰布披风",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5414,7 +5414,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[27659] = {
-			["name"] = "Tailoring: Enchanted Runecloth Bag",
+			["name"] = "裁缝: 魔化符文布包",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5429,7 +5429,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18419] = {
-			["name"] = "Tailoring: Felcloth Pants",
+			["name"] = "裁缝: 恶魔布短裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5444,7 +5444,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18416] = {
-			["name"] = "Tailoring: Ghostweave Vest",
+			["name"] = "裁缝: 鬼纹外衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5460,7 +5460,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18417] = {
-			["name"] = "Tailoring: Runecloth Gloves",
+			["name"] = "裁缝: 符文布手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5475,7 +5475,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18421] = {
-			["name"] = "Tailoring: Wizardweave Leggings",
+			["name"] = "裁缝: 巫纹护腿",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5490,7 +5490,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18434] = {
-			["name"] = "Tailoring: Cindercloth Pants",
+			["name"] = "裁缝: 灰布短裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5505,7 +5505,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18424] = {
-			["name"] = "Tailoring: Frostweave Pants",
+			["name"] = "裁缝: 霜纹短裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5520,7 +5520,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18423] = {
-			["name"] = "Tailoring: Runecloth Boots",
+			["name"] = "裁缝: 符文布靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5536,7 +5536,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[26086] = {
-			["name"] = "Tailoring: Felcloth Bag",
+			["name"] = "裁缝: 恶魔布包",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5552,7 +5552,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18436] = {
-			["name"] = "Tailoring: Robe of Winter Night",
+			["name"] = "裁缝: 冬夜法袍",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5569,7 +5569,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18437] = {
-			["name"] = "Tailoring: Felcloth Boots",
+			["name"] = "裁缝: 恶魔布靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5585,7 +5585,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18438] = {
-			["name"] = "Tailoring: Runecloth Pants",
+			["name"] = "裁缝: 符文布短裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5600,7 +5600,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19435] = {
-			["name"] = "Tailoring: Mooncloth Boots",
+			["name"] = "裁缝: 月布长靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5616,7 +5616,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23664] = {
-			["name"] = "Tailoring: Argent Boots",
+			["name"] = "裁缝: 银色长靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5633,7 +5633,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18440] = {
-			["name"] = "Tailoring: Mooncloth Leggings",
+			["name"] = "裁缝: 月布护腿",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5648,7 +5648,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23662] = {
-			["name"] = "Tailoring: Wisdom of the Timbermaw",
+			["name"] = "裁缝: 木喉之智",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5664,7 +5664,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18439] = {
-			["name"] = "Tailoring: Brightcloth Pants",
+			["name"] = "裁缝: 亮布短裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5680,7 +5680,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18442] = {
-			["name"] = "Tailoring: Felcloth Hood",
+			["name"] = "裁缝: 恶魔布帽",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5695,7 +5695,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18441] = {
-			["name"] = "Tailoring: Ghostweave Pants",
+			["name"] = "裁缝: 鬼纹短裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5710,7 +5710,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18444] = {
-			["name"] = "Tailoring: Runecloth Headband",
+			["name"] = "裁缝: 符文布头带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5725,7 +5725,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[22866] = {
-			["name"] = "Tailoring: Belt of the Archmage",
+			["name"] = "裁缝: 大法师腰带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5744,7 +5744,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[26087] = {
-			["name"] = "Tailoring: Core Felcloth Bag",
+			["name"] = "裁缝: 熔火恶魔布包",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5761,7 +5761,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[20849] = {
-			["name"] = "Tailoring: Flarecore Gloves",
+			["name"] = "裁缝: 光芒手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5778,7 +5778,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[23667] = {
-			["name"] = "Tailoring: Flarecore Leggings",
+			["name"] = "裁缝: 光芒护腿",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5795,7 +5795,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[20848] = {
-			["name"] = "Tailoring: Flarecore Mantle",
+			["name"] = "裁缝: 光芒衬肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5812,7 +5812,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[23666] = {
-			["name"] = "Tailoring: Flarecore Robe",
+			["name"] = "裁缝: 光芒长袍",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5829,7 +5829,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[28208] = {
-			["name"] = "Tailoring: Glacial Cloak",
+			["name"] = "裁缝: 冰川披风",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5845,7 +5845,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[28205] = {
-			["name"] = "Tailoring: Glacial Gloves",
+			["name"] = "裁缝: 冰川手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5861,7 +5861,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[28207] = {
-			["name"] = "Tailoring: Glacial Vest",
+			["name"] = "裁缝: 冰川外衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5877,7 +5877,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[28209] = {
-			["name"] = "Tailoring: Glacial Wrists",
+			["name"] = "裁缝: 冰川护腕",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5893,7 +5893,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[18454] = {
-			["name"] = "Tailoring: Gloves of Spell Mastery",
+			["name"] = "裁缝: 法术掌握手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5912,7 +5912,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[18457] = {
-			["name"] = "Tailoring: Robe of the Archmage",
+			["name"] = "裁缝: 大法师之袍",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5931,7 +5931,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[18458] = {
-			["name"] = "Tailoring: Robe of the Void",
+			["name"] = "裁缝: 虚空法袍",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5949,7 +5949,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[18456] = {
-			["name"] = "Tailoring: Truefaith Vestments",
+			["name"] = "裁缝: 信念外衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5967,7 +5967,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46656] = {
-			["name"] = "Tailoring: Robe of Sacrifice",
+			["name"] = "裁缝: 牺牲长袍",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -5986,7 +5986,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[54011] = {
-			["name"] = "Tailoring: Flarecore Boots",
+			["name"] = "裁缝: 喇叭靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6003,7 +6003,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[45485] = {
-			["name"] = "Tailoring: Gloves of Unwinding Mystery",
+			["name"] = "裁缝: 解开谜团的手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6020,7 +6020,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[45459] = {
-			["name"] = "Tailoring: Dreamthread Kilt",
+			["name"] = "裁缝: 梦线短裙",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6038,7 +6038,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[45461] = {
-			["name"] = "Tailoring: Dreamthread Bracers",
+			["name"] = "裁缝: 梦线护腕",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6054,7 +6054,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[45463] = {
-			["name"] = "Tailoring: Dreamthread Gloves",
+			["name"] = "裁缝: 梦线手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6071,7 +6071,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[45457] = {
-			["name"] = "Tailoring: Dreamthread Mantle",
+			["name"] = "裁缝: 梦线衬肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6089,7 +6089,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23665] = {
-			["name"] = "Tailoring: Argent Shoulders",
+			["name"] = "裁缝: 银色护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6104,7 +6104,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[24093] = {
-			["name"] = "Tailoring: Bloodvine Boots",
+			["name"] = "裁缝: 血藤长靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6121,7 +6121,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[24092] = {
-			["name"] = "Tailoring: Bloodvine Leggings",
+			["name"] = "裁缝: 血藤护腿",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6138,7 +6138,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[24091] = {
-			["name"] = "Tailoring: Bloodvine Vest",
+			["name"] = "裁缝: 血藤外套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6155,7 +6155,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[18455] = {
-			["name"] = "Tailoring: Bottomless Bag",
+			["name"] = "裁缝: 无底包",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6172,7 +6172,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[22870] = {
-			["name"] = "Tailoring: Cloak of Warding",
+			["name"] = "裁缝: 护卫披风",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6188,7 +6188,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[22867] = {
-			["name"] = "Tailoring: Felcloth Gloves",
+			["name"] = "裁缝: 恶魔布手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6205,7 +6205,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[28210] = {
-			["name"] = "Tailoring: Gaea's Embrace",
+			["name"] = "裁缝: 盖亚的拥抱",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6221,7 +6221,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[22868] = {
-			["name"] = "Tailoring: Inferno Gloves",
+			["name"] = "裁缝: 地狱火手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6237,7 +6237,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},		
 		[57024] = {
-			["name"] = "Tailoring: Windbinder Gloves",
+			["name"] = "裁缝: 缚风者手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6253,7 +6253,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57020] = {
-			["name"] = "Tailoring: Dustguider Sash",
+			["name"] = "裁缝: 导尘者腰带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6269,7 +6269,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[23663] = {
-			["name"] = "Tailoring: Mantle of the Timbermaw",
+			["name"] = "裁缝: 木喉衬肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6285,7 +6285,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[18452] = {
-			["name"] = "Tailoring: Mooncloth Circlet",
+			["name"] = "裁缝: 月布头饰",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6302,7 +6302,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[22869] = {
-			["name"] = "Tailoring: Mooncloth Gloves",
+			["name"] = "裁缝: 月布手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6318,7 +6318,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[22902] = {
-			["name"] = "Tailoring: Mooncloth Robe",
+			["name"] = "裁缝: 月布长袍",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6334,7 +6334,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[18448] = {
-			["name"] = "Tailoring: Mooncloth Shoulders",
+			["name"] = "裁缝: 月布护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6349,7 +6349,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[18447] = {
-			["name"] = "Tailoring: Mooncloth Vest",
+			["name"] = "裁缝: 月布外衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6364,7 +6364,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[24902] = {
-			["name"] = "Tailoring: Runed Stygian Belt",
+			["name"] = "裁缝: 符文冥河腰带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6381,7 +6381,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[24903] = {
-			["name"] = "Tailoring: Runed Stygian Boots",
+			["name"] = "裁缝: 符文冥河长靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6398,7 +6398,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[24901] = {
-			["name"] = "Tailoring: Runed Stygian Leggings",
+			["name"] = "裁缝: 符文冥河护腿",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6414,7 +6414,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[28481] = {
-			["name"] = "Tailoring: Sylvan Crown",
+			["name"] = "裁缝: 林栖者头冠",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6430,7 +6430,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[28482] = {
-			["name"] = "Tailoring: Sylvan Shoulders",
+			["name"] = "裁缝: 林栖者护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6445,7 +6445,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[28480] = {
-			["name"] = "Tailoring: Sylvan Vest",
+			["name"] = "裁缝: 林栖者外衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6461,7 +6461,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[27660] = {
-			["name"] = "Tailoring: Big Bag of Enchantment",
+			["name"] = "裁缝: 大附魔袋",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6477,7 +6477,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[18451] = {
-			["name"] = "Tailoring: Felcloth Robe",
+			["name"] = "裁缝: 恶魔布袍",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6493,7 +6493,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[18453] = {
-			["name"] = "Tailoring: Felcloth Shoulders",
+			["name"] = "裁缝: 恶魔布护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6510,7 +6510,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[18445] = {
-			["name"] = "Tailoring: Mooncloth Bag",
+			["name"] = "裁缝: 月布包",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6525,7 +6525,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[18449] = {
-			["name"] = "Tailoring: Runecloth Shoulders",
+			["name"] = "裁缝: 符文布护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6541,7 +6541,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[27725] = {
-			["name"] = "Tailoring: Satchel of Cenarius",
+			["name"] = "裁缝: 塞纳留斯之袋",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6557,7 +6557,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[18446] = {
-			["name"] = "Tailoring: Wizardweave Robe",
+			["name"] = "裁缝: 巫纹长袍",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6572,7 +6572,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[18450] = {
-			["name"] = "Tailoring: Wizardweave Turban",
+			["name"] = "裁缝: 巫纹头巾",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6588,7 +6588,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 				[22759] = {
-			["name"] = "Tailoring: Flarecore Wraps",
+			["name"] = "裁缝: 光芒护腕",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -6605,7 +6605,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2963] = {
-			["name"] = "Tailoring: Bolt of Linen Cloth",
+			["name"] = "裁缝: 亚麻布卷",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -6618,7 +6618,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3915] = {
-			["name"] = "Tailoring: Brown Linen Shirt",
+			["name"] = "裁缝: 棕色亚麻衬衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -6632,7 +6632,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2387] = {
-			["name"] = "Tailoring: Linen Cloak",
+			["name"] = "裁缝: 亚麻披风",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -6646,7 +6646,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12044] = {
-			["name"] = "Tailoring: Simple Linen Pants",
+			["name"] = "裁缝: 简易亚麻短裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -6660,7 +6660,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2393] = {
-			["name"] = "Tailoring: White Linen Shirt",
+			["name"] = "裁缝: 白色亚麻衬衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -6675,7 +6675,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2385] = {
-			["name"] = "Tailoring: Brown Linen Vest",
+			["name"] = "裁缝: 棕色亚麻外衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -6689,7 +6689,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8776] = {
-			["name"] = "Tailoring: Linen Belt",
+			["name"] = "裁缝: 亚麻腰带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -6703,7 +6703,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12045] = {
-			["name"] = "Tailoring: Simple Linen Boots",
+			["name"] = "裁缝: 简易的亚麻靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -6718,7 +6718,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7623] = {
-			["name"] = "Tailoring: Brown Linen Robe",
+			["name"] = "裁缝: 棕色亚麻长袍",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -6732,7 +6732,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7624] = {
-			["name"] = "Tailoring: White Linen Robe",
+			["name"] = "裁缝: 白色亚麻长袍",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -6747,7 +6747,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3914] = {
-			["name"] = "Tailoring: Brown Linen Pants",
+			["name"] = "裁缝: 棕色亚麻短裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -6761,7 +6761,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3840] = {
-			["name"] = "Tailoring: Heavy Linen Gloves",
+			["name"] = "裁缝: 高级亚麻手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -6775,7 +6775,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2389] = {
-			["name"] = "Tailoring: Red Linen Robe",
+			["name"] = "裁缝: 红色亚麻长袍",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -6790,7 +6790,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2394] = {
-			["name"] = "Tailoring: Blue Linen Shirt",
+			["name"] = "裁缝: 蓝色亚麻衬衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -6805,7 +6805,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2392] = {
-			["name"] = "Tailoring: Red Linen Shirt",
+			["name"] = "裁缝: 红色亚麻衬衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -6820,7 +6820,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8465] = {
-			["name"] = "Tailoring: Simple Dress",
+			["name"] = "裁缝: 简易的裙子",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -6836,7 +6836,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3755] = {
-			["name"] = "Tailoring: Linen Bag",
+			["name"] = "裁缝: 亚麻包",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -6850,7 +6850,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2329] = {
-			["name"] = "Alchemy: Elixir of Lion's Strength",
+			["name"] = "炼金术: 狮王之力药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -6865,7 +6865,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7183] = {
-			["name"] = "Alchemy: Elixir of Minor Defense",
+			["name"] = "炼金术: 初级防御药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -6879,7 +6879,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2330] = {
-			["name"] = "Alchemy: Minor Healing Potion",
+			["name"] = "炼金术: 初级治疗药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -6894,7 +6894,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3170] = {
-			["name"] = "Alchemy: Weak Troll's Blood Potion",
+			["name"] = "炼金术: 弱效巨魔之血药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -6909,7 +6909,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2331] = {
-			["name"] = "Alchemy: Minor Mana Potion",
+			["name"] = "炼金术: 初级法力药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -6924,7 +6924,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2332] = {
-			["name"] = "Alchemy: Minor Rejuvenation Potion",
+			["name"] = "炼金术: 初级活力药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -6939,7 +6939,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[4508] = {
-			["name"] = "Alchemy: Discolored Healing Potion",
+			["name"] = "炼金术: 透明治疗药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -6954,7 +6954,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3230] = {
-			["name"] = "Alchemy: Elixir of Minor Agility",
+			["name"] = "炼金术: 初级敏捷药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -6969,7 +6969,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2334] = {
-			["name"] = "Alchemy: Elixir of Minor Fortitude",
+			["name"] = "炼金术: 初级坚韧药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -6984,7 +6984,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2334] = {
-			["name"] = "Alchemy: Elixir of Minor Fortitude",
+			["name"] = "炼金术: 初级坚韧药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -6999,7 +6999,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2337] = {
-			["name"] = "Alchemy: Lesser Healing Potion",
+			["name"] = "炼金术: 次级治疗药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7013,7 +7013,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6617] = {
-			["name"] = "Alchemy: Rage Potion",
+			["name"] = "炼金术: 怒气药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7028,7 +7028,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2335] = {
-			["name"] = "Alchemy: Swiftness Potion",
+			["name"] = "炼金术: 迅捷药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7043,7 +7043,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7836] = {
-			["name"] = "Alchemy: Blackmouth Oil",
+			["name"] = "炼金术: 黑口鱼油",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5,
@@ -7057,7 +7057,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8240] = {
-			["name"] = "Alchemy: Elixir of Giant Growth",
+			["name"] = "炼金术: 增长药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7072,7 +7072,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7179] = {
-			["name"] = "Alchemy: Elixir of Water Breathing",
+			["name"] = "炼金术: 水下呼吸药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7087,7 +7087,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3171] = {
-			["name"] = "Alchemy: Elixir of Wisdom",
+			["name"] = "炼金术: 智慧药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7102,7 +7102,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7255] = {
-			["name"] = "Alchemy: Holy Protection Potion",
+			["name"] = "炼金术: 神圣防护药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7117,7 +7117,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7841] = {
-			["name"] = "Alchemy: Swim Speed Potion",
+			["name"] = "炼金术: 速游药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7132,7 +7132,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3447] = {
-			["name"] = "Alchemy: Healing Potion",
+			["name"] = "炼金术: 治疗药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7147,7 +7147,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3172] = {
-			["name"] = "Alchemy: Minor Magic Resistance Potion",
+			["name"] = "炼金术: 初级抗魔药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7162,7 +7162,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3173] = {
-			["name"] = "Alchemy: Lesser Mana Potion",
+			["name"] = "炼金术: 次级法力药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7177,7 +7177,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3174] = {
-			["name"] = "Alchemy: Elixir of Poison Resistance",
+			["name"] = "炼金术: 抗毒药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7192,7 +7192,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3176] = {
-			["name"] = "Alchemy: Strong Troll's Blood Potion",
+			["name"] = "炼金术: 强力巨魔之血药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7207,7 +7207,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7837] = {
-			["name"] = "Alchemy: Fire Oil",
+			["name"] = "炼金术: 火焰之油",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5,
@@ -7221,7 +7221,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3177] = {
-			["name"] = "Alchemy: Elixir of Defense",
+			["name"] = "炼金术: 防御药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7236,7 +7236,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7256] = {
-			["name"] = "Alchemy: Shadow Protection Potion",
+			["name"] = "炼金术: 暗影防护药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7251,7 +7251,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7845] = {
-			["name"] = "Alchemy: Elixir of Firepower",
+			["name"] = "炼金术: 火力药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7266,7 +7266,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2333] = {
-			["name"] = "Alchemy: Elixir of Lesser Agility",
+			["name"] = "炼金术: 次级敏捷药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7281,7 +7281,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3188] = {
-			["name"] = "Alchemy: Elixir of Ogre's Strength",
+			["name"] = "炼金术: 食人魔力量药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7296,7 +7296,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6624] = {
-			["name"] = "Alchemy: Free Action Potion",
+			["name"] = "炼金术: 自由行动药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7311,7 +7311,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7181] = {
-			["name"] = "Alchemy: Greater Healing Potion",
+			["name"] = "炼金术: 强效治疗药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7326,7 +7326,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3452] = {
-			["name"] = "Alchemy: Mana Potion",
+			["name"] = "炼金术: 法力药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7341,7 +7341,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3448] = {
-			["name"] = "Alchemy: Lesser Invisibility Potion",
+			["name"] = "炼金术: 次级隐形药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7356,7 +7356,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3449] = {
-			["name"] = "Alchemy: Shadow Oil",
+			["name"] = "炼金术: 暗影之油",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7371,7 +7371,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7257] = {
-			["name"] = "Alchemy: Fire Protection Potion",
+			["name"] = "炼金术: 火焰防护药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7386,7 +7386,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3450] = {
-			["name"] = "Alchemy: Elixir of Fortitude",
+			["name"] = "炼金术: 坚韧药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7401,7 +7401,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6618] = {
-			["name"] = "Alchemy: Great Rage Potion",
+			["name"] = "炼金术: 暴怒药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7416,7 +7416,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3451] = {
-			["name"] = "Alchemy: Mighty Troll's Blood Potion",
+			["name"] = "炼金术: 超强巨魔之血药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7431,7 +7431,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11449] = {
-			["name"] = "Alchemy: Elixir of Agility",
+			["name"] = "炼金术: 敏捷药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7446,7 +7446,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7258] = {
-			["name"] = "Alchemy: Frost Protection Potion",
+			["name"] = "炼金术: 冰霜防护药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7461,7 +7461,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[21923] = {
-			["name"] = "Alchemy: Elixir of Frost Power",
+			["name"] = "炼金术: 冰霜之力药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7476,7 +7476,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7259] = {
-			["name"] = "Alchemy: Nature Protection Potion",
+			["name"] = "炼金术: 自然防护药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7491,7 +7491,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3453] = {
-			["name"] = "Alchemy: Elixir of Detect Lesser Invisibility",
+			["name"] = "炼金术: 侦测次级隐形药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7506,7 +7506,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11450] = {
-			["name"] = "Alchemy: Elixir of Greater Defense",
+			["name"] = "炼金术: 强效防御药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7521,7 +7521,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12609] = {
-			["name"] = "Alchemy: Catseye Elixir",
+			["name"] = "炼金术: 猫眼药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7536,7 +7536,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3454] = {
-			["name"] = "Alchemy: Frost Oil",
+			["name"] = "炼金术: 冰霜之油",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5,
@@ -7551,7 +7551,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11459] = {
-			["name"] = "Alchemy: Philosopher's Stone",
+			["name"] = "炼金术: 点金石",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 30,
@@ -7567,7 +7567,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11448] = {
-			["name"] = "Alchemy: Greater Mana Potion",
+			["name"] = "炼金术: 强效法力药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7582,7 +7582,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11451] = {
-			["name"] = "Alchemy: Oil of Immolation",
+			["name"] = "炼金术: 献祭之油",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7597,7 +7597,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11456] = {
-			["name"] = "Alchemy: Goblin Rocket Fuel",
+			["name"] = "炼金术: 地精火箭燃油",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7612,7 +7612,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11453] = {
-			["name"] = "Alchemy: Magic Resistance Potion",
+			["name"] = "炼金术: 抗魔药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7627,7 +7627,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11452] = {
-			["name"] = "Alchemy: Restorative Potion",
+			["name"] = "炼金术: 滋补药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7642,7 +7642,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[22808] = {
-			["name"] = "Alchemy: Elixir of Greater Water Breathing",
+			["name"] = "炼金术: 强效水下呼吸药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7657,7 +7657,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[4942] = {
-			["name"] = "Alchemy: Lesser Stoneshield Potion",
+			["name"] = "炼金术: 次级石盾药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7672,7 +7672,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11457] = {
-			["name"] = "Alchemy: Superior Healing Potion",
+			["name"] = "炼金术: 超强治疗药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7687,7 +7687,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11479] = {
-			["name"] = "Alchemy: Transmute: Iron to Gold",
+			["name"] = "炼金术: 点铁成金",
 			["requires"] = "",
 			["tools"] = {9149},
 			["castTime"] = 25,
@@ -7700,7 +7700,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11480] = {
-			["name"] = "Alchemy: Transmute: Mithril to Truesilver",
+			["name"] = "炼金术: 转化秘银",
 			["requires"] = "",
 			["tools"] = {9149},
 			["castTime"] = 25,
@@ -7713,7 +7713,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11458] = {
-			["name"] = "Alchemy: Wildvine Potion",
+			["name"] = "炼金术: 野葡萄药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7728,7 +7728,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[15833] = {
-			["name"] = "Alchemy: Dreamless Sleep Potion",
+			["name"] = "炼金术: 昏睡药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7742,7 +7742,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11460] = {
-			["name"] = "Alchemy: Elixir of Detect Undead",
+			["name"] = "炼金术: 侦测亡灵药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7756,7 +7756,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11461] = {
-			["name"] = "Alchemy: Arcane Elixir",
+			["name"] = "炼金术: 奥法药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7771,7 +7771,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11465] = {
-			["name"] = "Alchemy: Elixir of Greater Intellect",
+			["name"] = "炼金术: 强效聪颖药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7786,7 +7786,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11464] = {
-			["name"] = "Alchemy: Invisibility Potion",
+			["name"] = "炼金术: 隐形药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7801,7 +7801,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11468] = {
-			["name"] = "Alchemy: Elixir of Dream Vision",
+			["name"] = "炼金术: 梦境药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7815,7 +7815,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11467] = {
-			["name"] = "Alchemy: Elixir of Greater Agility",
+			["name"] = "炼金术: 强效敏捷药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7830,7 +7830,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11466] = {
-			["name"] = "Alchemy: Gift of Arthas",
+			["name"] = "炼金术: 阿尔萨斯的礼物",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7845,7 +7845,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11473] = {
-			["name"] = "Alchemy: Ghost Dye",
+			["name"] = "炼金术: 幻象染料",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7860,7 +7860,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11472] = {
-			["name"] = "Alchemy: Elixir of Giants",
+			["name"] = "炼金术: 巨人药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7875,7 +7875,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11477] = {
-			["name"] = "Alchemy: Elixir of Demonslaying",
+			["name"] = "炼金术: 屠魔药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7890,7 +7890,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11478] = {
-			["name"] = "Alchemy: Elixir of Detect Demon",
+			["name"] = "炼金术: 侦测恶魔药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7904,7 +7904,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[26277] = {
-			["name"] = "Alchemy: Elixir of Greater Firepower",
+			["name"] = "炼金术: 强效火力药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7919,7 +7919,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11476] = {
-			["name"] = "Alchemy: Elixir of Shadow Power",
+			["name"] = "炼金术: 暗影之力药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7933,7 +7933,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17551] = {
-			["name"] = "Alchemy: Stonescale Oil",
+			["name"] = "炼金术: 石鳞鱼油",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7947,7 +7947,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3175] = {
-			["name"] = "Alchemy: Limited Invulnerability Potion",
+			["name"] = "炼金术: 有限无敌药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7962,7 +7962,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17552] = {
-			["name"] = "Alchemy: Mighty Rage Potion",
+			["name"] = "炼金术: 强效怒气药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7976,7 +7976,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17553] = {
-			["name"] = "Alchemy: Superior Mana Potion",
+			["name"] = "炼金术: 超强法力药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -7991,7 +7991,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17554] = {
-			["name"] = "Alchemy: Elixir of Superior Defense",
+			["name"] = "炼金术: 超强防御药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8006,7 +8006,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17555] = {
-			["name"] = "Alchemy: Elixir of the Sages",
+			["name"] = "炼金术: 先知药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8021,7 +8021,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17187] = {
-			["name"] = "Alchemy: Transmute: Arcanite",
+			["name"] = "炼金术: 转化：奥金",
 			["requires"] = "",
 			["tools"] = {9149},
 			["castTime"] = 25,
@@ -8035,7 +8035,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17559] = {
-			["name"] = "Alchemy: Transmute: Air to Fire",
+			["name"] = "炼金术: 转化：点气成火",
 			["requires"] = "",
 			["tools"] = {9149},
 			["castTime"] = 25,
@@ -8048,7 +8048,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17566] = {
-			["name"] = "Alchemy: Transmute: Earth to Life",
+			["name"] = "炼金术: 转化：土转生命",
 			["requires"] = "",
 			["tools"] = {9149},
 			["castTime"] = 25,
@@ -8061,7 +8061,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17561] = {
-			["name"] = "Alchemy: Transmute: Earth to Water",
+			["name"] = "炼金术: 转化：转土成水",
 			["requires"] = "",
 			["tools"] = {9149},
 			["castTime"] = 25,
@@ -8074,7 +8074,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17560] = {
-			["name"] = "Alchemy: Transmute: Fire to Earth",
+			["name"] = "炼金术: 转化：点火成土",
 			["requires"] = "",
 			["tools"] = {9149},
 			["castTime"] = 25,
@@ -8087,7 +8087,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17565] = {
-			["name"] = "Alchemy: Transmute: Life to Earth",
+			["name"] = "炼金术: 转化：生命归土",
 			["requires"] = "",
 			["tools"] = {9149},
 			["castTime"] = 25,
@@ -8100,7 +8100,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17563] = {
-			["name"] = "Alchemy: Transmute: Undeath to Water",
+			["name"] = "炼金术: 转化：死灵化水",
 			["requires"] = "",
 			["tools"] = {9149},
 			["castTime"] = 25,
@@ -8113,7 +8113,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17562] = {
-			["name"] = "Alchemy: Transmute: Water to Air",
+			["name"] = "炼金术: 转化：点水成气",
 			["requires"] = "",
 			["tools"] = {9149},
 			["castTime"] = 25,
@@ -8126,7 +8126,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17564] = {
-			["name"] = "Alchemy: Transmute: Water to Undeath",
+			["name"] = "炼金术: 转化：水转死灵",
 			["requires"] = "",
 			["tools"] = {9149},
 			["castTime"] = 25,
@@ -8139,7 +8139,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17557] = {
-			["name"] = "Alchemy: Elixir of Brute Force",
+			["name"] = "炼金术: 蛮力药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8154,7 +8154,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24366] = {
-			["name"] = "Alchemy: Greater Dreamless Sleep Potion",
+			["name"] = "炼金术: 强效昏睡药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8169,7 +8169,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24365] = {
-			["name"] = "Alchemy: Mageblood Potion",
+			["name"] = "炼金术: 魔血药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8184,7 +8184,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17556] = {
-			["name"] = "Alchemy: Major Healing Potion",
+			["name"] = "炼金术: 特效治疗药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8199,7 +8199,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17571] = {
-			["name"] = "Alchemy: Elixir of the Mongoose",
+			["name"] = "炼金术: 猫鼬药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8214,7 +8214,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17570] = {
-			["name"] = "Alchemy: Greater Stoneshield Potion",
+			["name"] = "炼金术: 强效石盾药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8229,7 +8229,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17573] = {
-			["name"] = "Alchemy: Greater Arcane Elixir",
+			["name"] = "炼金术: 强效奥法药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8244,7 +8244,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24367] = {
-			["name"] = "Alchemy: Living Action Potion",
+			["name"] = "炼金术: 活力行动药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8260,7 +8260,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17572] = {
-			["name"] = "Alchemy: Purification Potion",
+			["name"] = "炼金术: 净化药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8275,7 +8275,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17577] = {
-			["name"] = "Alchemy: Greater Arcane Protection Potion",
+			["name"] = "炼金术: 强效奥术防护药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8290,7 +8290,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17574] = {
-			["name"] = "Alchemy: Greater Fire Protection Potion",
+			["name"] = "炼金术: 强效火焰防护药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8305,7 +8305,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17575] = {
-			["name"] = "Alchemy: Greater Frost Protection Potion",
+			["name"] = "炼金术: 强效冰霜防护药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8320,7 +8320,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17576] = {
-			["name"] = "Alchemy: Greater Nature Protection Potion",
+			["name"] = "炼金术: 强效自然防护药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8335,7 +8335,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17578] = {
-			["name"] = "Alchemy: Greater Shadow Protection Potion",
+			["name"] = "炼金术: 强效暗影防护药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8350,7 +8350,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24368] = {
-			["name"] = "Alchemy: Major Troll's Blood Potion",
+			["name"] = "炼金术: 特效巨魔之血药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8365,7 +8365,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17580] = {
-			["name"] = "Alchemy: Major Mana Potion",
+			["name"] = "炼金术: 特效法力药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8380,7 +8380,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[25146] = {
-			["name"] = "Alchemy: Transmute: Elemental Fire",
+			["name"] = "炼金术: 转化：元素火焰",
 			["requires"] = "",
 			["tools"] = {9149},
 			["castTime"] = 25,
@@ -8393,7 +8393,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[22732] = {
-			["name"] = "Alchemy: Major Rejuvenation Potion",
+			["name"] = "炼金术: 特效活力药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8409,7 +8409,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24266] = {
-			["name"] = "Alchemy: Gurubashi Mojo Madness",
+			["name"] = "炼金术: 古拉巴什魔精",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8425,7 +8425,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17638] = {
-			["name"] = "Alchemy: Flask of Chromatic Resistance",
+			["name"] = "炼金术: 多重抗性合剂",
 			["requires"] = AL["Alchemy Lab"],
 			["tools"] = "",
 			["castTime"] = 25,
@@ -8441,7 +8441,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17636] = {
-			["name"] = "Alchemy: Flask of Distilled Wisdom",
+			["name"] = "炼金术: 精炼智慧合剂",
 			["requires"] = AL["Alchemy Lab"],
 			["tools"] = "",
 			["castTime"] = 25,
@@ -8457,7 +8457,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17634] = {
-			["name"] = "Alchemy: Flask of Petrification",
+			["name"] = "炼金术: 化石合剂",
 			["requires"] = AL["Alchemy Lab"],
 			["tools"] = {9149},
 			["castTime"] = 25,
@@ -8473,7 +8473,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17637] = {
-			["name"] = "Alchemy: Flask of Supreme Power",
+			["name"] = "炼金术: 超级能量合剂",
 			["requires"] = AL["Alchemy Lab"],
 			["tools"] = "",
 			["castTime"] = 25,
@@ -8489,7 +8489,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[17635] = {
-			["name"] = "Alchemy: Flask of the Titans",
+			["name"] = "炼金术: 泰坦合剂",
 			["requires"] = AL["Alchemy Lab"],
 			["tools"] = "",
 			["castTime"] = 25,
@@ -8505,7 +8505,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57131] = {
-			["name"] = "Alchemy: Dreamshard Elixir",
+			["name"] = "炼金术: 梦碎药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8520,7 +8520,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57129] = {
-			["name"] = "Alchemy: Lucidity Potion",
+			["name"] = "炼金术: 清醒药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8536,7 +8536,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[45989] = {
-			["name"] = "Alchemy: Elixir of Greater Nature Power",
+			["name"] = "炼金术: 强效自然力量药剂",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8552,7 +8552,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57111] = {
-			["name"] = "Alchemy: Potion of Quickness",
+			["name"] = "炼金术: 急速药水",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8568,7 +8568,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2657] = {
-			["name"] = "Smelting: Smelt Copper",
+			["name"] = "熔炼: 熔炼铜锭",
 			["requires"] = AL["Forge"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8581,7 +8581,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3304] = {
-			["name"] = "Smelting: Smelt Tin",
+			["name"] = "熔炼: 熔炼锡锭",
 			["requires"] = AL["Forge"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8594,7 +8594,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2659] = {
-			["name"] = "Smelting: Smelt Bronze",
+			["name"] = "熔炼: 熔炼青铜",
 			["requires"] = AL["Forge"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8608,7 +8608,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2658] = {
-			["name"] = "Smelting: Smelt Silver",
+			["name"] = "熔炼: 熔炼银锭",
 			["requires"] = AL["Forge"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8621,7 +8621,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3307] = {
-			["name"] = "Smelting: Smelt Iron",
+			["name"] = "熔炼: 熔炼铁锭",
 			["requires"] = AL["Forge"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8634,7 +8634,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3308] = {
-			["name"] = "Smelting: Smelt Gold",
+			["name"] = "熔炼: 熔炼金锭",
 			["requires"] = AL["Forge"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8647,7 +8647,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3569] = {
-			["name"] = "Smelting: Smelt Steel",
+			["name"] = "熔炼: 熔炼钢锭",
 			["requires"] = AL["Forge"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8661,7 +8661,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10097] = {
-			["name"] = "Smelting: Smelt Mithril",
+			["name"] = "熔炼: 熔炼秘银",
 			["requires"] = AL["Forge"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8674,7 +8674,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10098] = {
-			["name"] = "Smelting: Smelt Truesilver",
+			["name"] = "熔炼: 熔炼真银",
 			["requires"] = AL["Forge"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8687,7 +8687,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[14891] = {
-			["name"] = "Smelting: Smelt Dark Iron",
+			["name"] = "熔炼: 熔炼黑铁",
 			["requires"] = AL["Black Forge"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8700,7 +8700,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16153] = {
-			["name"] = "Smelting: Smelt Thorium",
+			["name"] = "熔炼: 熔炼瑟银",
 			["requires"] = AL["Forge"],
 			["tools"] = "",
 			["castTime"] = 3,
@@ -8713,7 +8713,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57121] = {
-			["name"] = "Smelting: Smelt Dreamsteel",
+			["name"] = "熔炼: 冶炼梦钢",
 			["requires"] = AL["Forge"],
 			["tools"] = "",
 			["castTime"] = 5,
@@ -8728,7 +8728,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[22967] = {
-			["name"] = "Smelting: Smelt Elementium",
+			["name"] = "熔炼: 熔炼源质",
 			["requires"] = AL["Forge"],
 			["tools"] = "",
 			["castTime"] = 10,
@@ -8744,7 +8744,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[100000] = {
-			["name"] = "Mining: Copper Vein",
+			["name"] = "采矿: 铜矿",
 			["requires"] = "",
 			["tools"] = {2901},
 			["castTime"] = 3.2,
@@ -8755,7 +8755,7 @@ GetSpellInfoVanillaDB = {
 			["reagents"] = "",
 		},
 		[100001] = {
-			["name"] = "Mining: Incendicite Mineral Vein",
+			["name"] = "采矿: 火岩矿脉",
 			["requires"] = "",
 			["tools"] = {2901},
 			["castTime"] = 3.2,
@@ -8766,7 +8766,7 @@ GetSpellInfoVanillaDB = {
 			["reagents"] = "",
 		},
 		[100002] = {
-			["name"] = "Mining: Tin Vein",
+			["name"] = "采矿: 锡矿",
 			["requires"] = "",
 			["tools"] = {2901},
 			["castTime"] = 3.2,
@@ -8777,7 +8777,7 @@ GetSpellInfoVanillaDB = {
 			["reagents"] = "",
 		},
 		[100003] = {
-			["name"] = "Mining: Silver Vein",
+			["name"] = "采矿: 银矿",
 			["requires"] = "",
 			["tools"] = {2901},
 			["castTime"] = 3.2,
@@ -8788,7 +8788,7 @@ GetSpellInfoVanillaDB = {
 			["reagents"] = "",
 		},
 		[100004] = {
-			["name"] = "Mining: Ooze Covered Silver Vein",
+			["name"] = "采矿: 软泥覆盖的银矿脉",
 			["requires"] = "",
 			["tools"] = {2901},
 			["castTime"] = 3.2,
@@ -8799,7 +8799,7 @@ GetSpellInfoVanillaDB = {
 			["reagents"] = "",
 		},
 		[100005] = {
-			["name"] = "Mining: Lesser Bloodstone Deposit",
+			["name"] = "采矿: 次级血石矿脉",
 			["requires"] = "",
 			["tools"] = {2901},
 			["castTime"] = 3.2,
@@ -8810,7 +8810,7 @@ GetSpellInfoVanillaDB = {
 			["reagents"] = "",
 		},
 		[100006] = {
-			["name"] = "Mining: Iron Deposit",
+			["name"] = "采矿: 铁矿石",
 			["requires"] = "",
 			["tools"] = {2901},
 			["castTime"] = 3.2,
@@ -8821,7 +8821,7 @@ GetSpellInfoVanillaDB = {
 			["reagents"] = "",
 		},
 		[100007] = {
-			["name"] = "Mining: Indurium Mineral Vein",
+			["name"] = "采矿: 精铁矿脉",
 			["requires"] = "",
 			["tools"] = {2901},
 			["castTime"] = 3.2,
@@ -8832,7 +8832,7 @@ GetSpellInfoVanillaDB = {
 			["reagents"] = "",
 		},
 		[100008] = {
-			["name"] = "Mining: Gold Vein",
+			["name"] = "采矿: 金矿石",
 			["requires"] = "",
 			["tools"] = {2901},
 			["castTime"] = 3.2,
@@ -8843,7 +8843,7 @@ GetSpellInfoVanillaDB = {
 			["reagents"] = "",
 		},
 		[100009] = {
-			["name"] = "Mining: Ooze Covered Gold Vein",
+			["name"] = "采矿: 软泥覆盖的金矿脉",
 			["requires"] = "",
 			["tools"] = {2901},
 			["castTime"] = 3.2,
@@ -8854,7 +8854,7 @@ GetSpellInfoVanillaDB = {
 			["reagents"] = "",
 		},
 		[100010] = {
-			["name"] = "Mining: Mithril Deposit",
+			["name"] = "采矿:软泥覆盖的秘银矿脉",
 			["requires"] = "",
 			["tools"] = {2901},
 			["castTime"] = 3.2,
@@ -8865,7 +8865,7 @@ GetSpellInfoVanillaDB = {
 			["reagents"] = "",
 		},
 		[100011] = {
-			["name"] = "Mining: Ooze Covered Mithril Deposit",
+			["name"] = "采矿: 软泥覆盖的秘银矿脉",
 			["requires"] = "",
 			["tools"] = {2901},
 			["castTime"] = 3.2,
@@ -8876,7 +8876,7 @@ GetSpellInfoVanillaDB = {
 			["reagents"] = "",
 		},
 		[100012] = {
-			["name"] = "Mining: Truesilver Deposit",
+			["name"] = "采矿: 真银矿脉",
 			["requires"] = "",
 			["tools"] = {2901},
 			["castTime"] = 3.2,
@@ -8887,7 +8887,7 @@ GetSpellInfoVanillaDB = {
 			["reagents"] = "",
 		},
 		[100013] = {
-			["name"] = "Mining: Ooze Covered Truesilver Deposit",
+			["name"] = "采矿: 软泥覆盖的真银矿脉",
 			["requires"] = "",
 			["tools"] = {2901},
 			["castTime"] = 3.2,
@@ -8898,7 +8898,7 @@ GetSpellInfoVanillaDB = {
 			["reagents"] = "",
 		},
 		[100014] = {
-			["name"] = "Mining: Dark Iron Deposit",
+			["name"] = "采矿: 黑铁矿脉",
 			["requires"] = "",
 			["tools"] = {2901},
 			["castTime"] = 3.2,
@@ -8909,7 +8909,7 @@ GetSpellInfoVanillaDB = {
 			["reagents"] = "",
 		},
 		[100015] = {
-			["name"] = "Mining: Small Thorium Vein",
+			["name"] = "采矿: 瑟银矿脉",
 			["requires"] = "",
 			["tools"] = {2901},
 			["castTime"] = 3.2,
@@ -8920,7 +8920,7 @@ GetSpellInfoVanillaDB = {
 			["reagents"] = "",
 		},
 		[100016] = {
-			["name"] = "Mining: Ooze Covered Thorium Vein",
+			["name"] = "采矿: 软泥覆盖的瑟银矿脉",
 			["requires"] = "",
 			["tools"] = {2901},
 			["castTime"] = 3.2,
@@ -8931,7 +8931,7 @@ GetSpellInfoVanillaDB = {
 			["reagents"] = "",
 		},
 		[100017] = {
-			["name"] = "Mining: Rich Thorium Vein",
+			["name"] = "采矿: 富瑟银矿",
 			["requires"] = "",
 			["tools"] = {2901},
 			["castTime"] = 3.2,
@@ -8942,7 +8942,7 @@ GetSpellInfoVanillaDB = {
 			["reagents"] = "",
 		},
 		[100018] = {
-			["name"] = "Mining: Ooze Covered Rich Thorium Vein",
+			["name"] = "采矿: 软泥覆盖的富瑟银矿脉",
 			["requires"] = "",
 			["tools"] = {2901},
 			["castTime"] = 3.2,
@@ -8953,7 +8953,7 @@ GetSpellInfoVanillaDB = {
 			["reagents"] = "",
 		},
 		[100019] = {
-			["name"] = "Mining: Hakkari Thorium Vein",
+			["name"] = "采矿: 哈卡莱瑟银矿脉",
 			["requires"] = "",
 			["tools"] = {2901},
 			["castTime"] = 3.2,
@@ -8964,7 +8964,7 @@ GetSpellInfoVanillaDB = {
 			["reagents"] = "",
 		},
 		[100020] = {
-			["name"] = "Mining: Hakkari Thorium Vein",
+			["name"] = "采矿: 哈卡莱瑟银矿脉",
 			["requires"] = "",
 			["tools"] = {2901},
 			["castTime"] = 3.2,
@@ -8975,7 +8975,7 @@ GetSpellInfoVanillaDB = {
 			["reagents"] = "",
 		},
 		[100021] = {
-			["name"] = "Mining: Small Obsidian Chunk",
+			["name"] = "采矿: 小黑曜石块",
 			["requires"] = "",
 			["tools"] = {2901},
 			["castTime"] = 3.2,
@@ -8986,7 +8986,7 @@ GetSpellInfoVanillaDB = {
 			["reagents"] = "",
 		},
 		[100022] = {
-			["name"] = "Mining: Small Obsidian Chunk",
+			["name"] = "采矿: 小黑曜石块",
 			["requires"] = "",
 			["tools"] = {2901},
 			["castTime"] = 3.2,
@@ -8997,7 +8997,7 @@ GetSpellInfoVanillaDB = {
 			["reagents"] = "",
 		},
 		[100023] = {
-			["name"] = "Mining: Large Obsidian Chunk",
+			["name"] = "采矿: 大黑曜石块",
 			["requires"] = "",
 			["tools"] = {2901},
 			["castTime"] = 3.2,
@@ -9008,7 +9008,7 @@ GetSpellInfoVanillaDB = {
 			["reagents"] = "",
 		},
 		[100024] = {
-			["name"] = "Mining: Large Obsidian Chunk",
+			["name"] = "采矿: 大黑曜石块",
 			["requires"] = "",
 			["tools"] = {2901},
 			["castTime"] = 3.2,
@@ -9019,7 +9019,7 @@ GetSpellInfoVanillaDB = {
 			["reagents"] = "",
 		},
 		[3918] = {
-			["name"] = "Engineering: Rough Blasting Powder",
+			["name"] = "工程学: 劣质火药",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -9032,7 +9032,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3920] = {
-			["name"] = "Engineering: Crafted Light Shot",
+			["name"] = "工程学: 精制轻弹丸",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -9046,7 +9046,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3919] = {
-			["name"] = "Engineering: Rough Dynamite",
+			["name"] = "工程学: 劣质炸药",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -9060,7 +9060,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3922] = {
-			["name"] = "Engineering: Handful of Copper Bolts",
+			["name"] = "工程学: 一把螺栓",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 5.125,
@@ -9073,7 +9073,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3923] = {
-			["name"] = "Engineering: Rough Copper Bomb",
+			["name"] = "工程学: zzOLDRough Copper Bomb",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 5.125,
@@ -9089,7 +9089,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7430] = {
-			["name"] = "Engineering: Arclight Spanner",
+			["name"] = "工程学: 扳手",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -9102,7 +9102,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3925] = {
-			["name"] = "Engineering: Rough Boomstick",
+			["name"] = "工程学: 劣质火枪",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -9117,7 +9117,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3924] = {
-			["name"] = "Engineering: Copper Tube",
+			["name"] = "工程学: 铜管",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 5.125,
@@ -9131,7 +9131,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3977] = {
-			["name"] = "Engineering: Crude Scope",
+			["name"] = "工程学: 粗制瞄准镜",
 			["requires"] = "",
 			["tools"] = {6219},
 			["castTime"] = 8,
@@ -9146,7 +9146,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3926] = {
-			["name"] = "Engineering: Copper Modulator",
+			["name"] = "工程学: 铜质调节器",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 5.125,
@@ -9161,7 +9161,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3929] = {
-			["name"] = "Engineering: Coarse Blasting Powder",
+			["name"] = "工程学: 粗制火药粉",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -9174,7 +9174,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3930] = {
-			["name"] = "Engineering: Crafted Heavy Shot",
+			["name"] = "工程学: 精制重弹丸",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -9188,7 +9188,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3931] = {
-			["name"] = "Engineering: Coarse Dynamite",
+			["name"] = "工程学: 劣质炸药",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -9202,7 +9202,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3928] = {
-			["name"] = "Engineering: Mechanical Squirrel",
+			["name"] = "工程学: 机械松鼠",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 8,
@@ -9218,7 +9218,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3932] = {
-			["name"] = "Engineering: Target Dummy",
+			["name"] = "工程学: 活动假人",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 8,
@@ -9234,7 +9234,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3973] = {
-			["name"] = "Engineering: Silver Contact",
+			["name"] = "工程学: 银触媒",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -9247,7 +9247,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8339] = {
-			["name"] = "Engineering: Ez-Thro Dynamite",
+			["name"] = "工程学: 简易投掷炸弹",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -9261,7 +9261,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8334] = {
-			["name"] = "Engineering: Practice Lock",
+			["name"] = "工程学: 练习锁",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -9276,7 +9276,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3933] = {
-			["name"] = "Engineering: Small Seaforium Charge",
+			["name"] = "工程学: 小型爆盐炸弹",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -9292,7 +9292,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3934] = {
-			["name"] = "Engineering: Flying Tiger Goggles",
+			["name"] = "工程学: 飞虎护目镜",
 			["requires"] = "",
 			["tools"] = {6219},
 			["castTime"] = 12.5,
@@ -9306,7 +9306,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3938] = {
-			["name"] = "Engineering: Bronze Tube",
+			["name"] = "工程学: 青铜管",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 5.125,
@@ -9320,7 +9320,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3937] = {
-			["name"] = "Engineering: Large Copper Bomb",
+			["name"] = "工程学: 大型铜壳炸弹",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -9335,7 +9335,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3936] = {
-			["name"] = "Engineering: Deadly Blunderbuss",
+			["name"] = "工程学: 致命的短枪",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 25,
@@ -9351,7 +9351,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3978] = {
-			["name"] = "Engineering: Standard Scope",
+			["name"] = "工程学: 普通瞄准镜",
 			["requires"] = "",
 			["tools"] = {6219},
 			["castTime"] = 8,
@@ -9365,7 +9365,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3941] = {
-			["name"] = "Engineering: Small Bronze Bomb",
+			["name"] = "工程学: 小型青铜炸弹",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -9381,7 +9381,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3939] = {
-			["name"] = "Engineering: Lovingly Crafted Boomstick",
+			["name"] = "工程学: 精致手工火枪",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 25,
@@ -9397,7 +9397,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3940] = {
-			["name"] = "Engineering: Shadow Goggles",
+			["name"] = "工程学: 暗影护目镜",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -9411,7 +9411,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[47027] = {
-			["name"] = "Engineering: Portable Wormhole Generator - Stormwind",
+			["name"] = "工程学: 便携式虫洞发生器 - 暴风城",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 10,
@@ -9427,7 +9427,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[47028] = {
-			["name"] = "Engineering: Portable Wormhole Generator - Orgrimmar",
+			["name"] = "工程学: 便携式虫洞发生器 - 奥格瑞玛",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 10,
@@ -9443,7 +9443,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3947] = {
-			["name"] = "Engineering: Crafted Solid Shot",
+			["name"] = "工程学: 精制实心弹丸",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -9457,7 +9457,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3945] = {
-			["name"] = "Engineering: Heavy Blasting Powder",
+			["name"] = "工程学: 烈性火药",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -9470,7 +9470,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3946] = {
-			["name"] = "Engineering: Heavy Dynamite",
+			["name"] = "工程学: 烈性炸药",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -9484,7 +9484,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[26416] = {
-			["name"] = "Engineering: Small Blue Rocket",
+			["name"] = "工程学: 小型蓝色烟花",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -9498,7 +9498,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[26417] = {
-			["name"] = "Engineering: Small Green Rocket",
+			["name"] = "工程学: 小型绿色烟花",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -9512,7 +9512,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[26418] = {
-			["name"] = "Engineering: Small Red Rocket",
+			["name"] = "工程学: 小型红色烟花",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -9526,7 +9526,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3944] = {
-			["name"] = "Engineering: Flame Deflector",
+			["name"] = "工程学: 火焰偏斜器",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 12.5,
@@ -9541,7 +9541,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3942] = {
-			["name"] = "Engineering: Whirring Bronze Gizmo",
+			["name"] = "工程学: 高速青铜齿轮",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 5.125,
@@ -9555,7 +9555,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9269] = {
-			["name"] = "Engineering: Gnomish Universal Remote",
+			["name"] = "工程学: 侏儒通用遥控器",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 12.5,
@@ -9572,7 +9572,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3949] = {
-			["name"] = "Engineering: Silver-plated Shotgun",
+			["name"] = "工程学: 镀银猎枪",
 			["requires"] = AL["Anvil"],
 			["tools"] = "",
 			["castTime"] = 25,
@@ -9588,7 +9588,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6458] = {
-			["name"] = "Engineering: Ornate Spyglass",
+			["name"] = "工程学: 精制望远镜",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -9604,7 +9604,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3950] = {
-			["name"] = "Engineering: Big Bronze Bomb",
+			["name"] = "工程学: 重磅青铜炸弹",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 8,
@@ -9619,7 +9619,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3952] = {
-			["name"] = "Engineering: Minor Recombobulator",
+			["name"] = "工程学: 自动净化装置",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -9636,7 +9636,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3953] = {
-			["name"] = "Engineering: Bronze Framework",
+			["name"] = "工程学: 青铜框架",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -9651,7 +9651,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3954] = {
-			["name"] = "Engineering: Moonsight Rifle",
+			["name"] = "工程学: 夜视步枪",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 25,
@@ -9667,7 +9667,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9271] = {
-			["name"] = "Engineering: Aquadynamic Fish Attractor",
+			["name"] = "工程学: 水下诱鱼器",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -9682,7 +9682,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23067] = {
-			["name"] = "Engineering: Blue Firework",
+			["name"] = "工程学: 蓝色焰火",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -9696,7 +9696,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23068] = {
-			["name"] = "Engineering: Green Firework",
+			["name"] = "工程学: 绿色焰火",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -9710,7 +9710,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23066] = {
-			["name"] = "Engineering: Red Firework",
+			["name"] = "工程学: 红色焰火",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -9724,7 +9724,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12584] = {
-			["name"] = "Engineering: Gold Power Core",
+			["name"] = "工程学: 黄金能量核心",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 25,
@@ -9737,7 +9737,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3956] = {
-			["name"] = "Engineering: Green Tinted Goggles",
+			["name"] = "工程学: 绿色护目镜",
 			["requires"] = "",
 			["tools"] = {6219},
 			["castTime"] = 12.5,
@@ -9752,7 +9752,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3955] = {
-			["name"] = "Engineering: Explosive Sheep",
+			["name"] = "工程学: 自爆绵羊",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 8,
@@ -9768,7 +9768,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12895] = {
-			["name"] = "Engineering: Inlaid Mithril Cylinder Plans",
+			["name"] = "工程学: 秘银杆设计图",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -9782,7 +9782,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[15633] = {
-			["name"] = "Engineering: Lil' Smoky",
+			["name"] = "工程学: 发条娃娃",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 25,
@@ -9799,7 +9799,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12899] = {
-			["name"] = "Engineering: Gnomish Shrink Ray",
+			["name"] = "工程学: 侏儒缩小射线",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 25,
@@ -9816,7 +9816,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12897] = {
-			["name"] = "Engineering: Gnomish Goggles",
+			["name"] = "工程学: 侏儒护目镜",
 			["requires"] = "",
 			["tools"] = {6219, 10498},
 			["castTime"] = 45,
@@ -9833,7 +9833,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12902] = {
-			["name"] = "Engineering: Gnomish Net-o-Matic Projector",
+			["name"] = "工程学: 侏儒撒网器",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 25,
@@ -9850,7 +9850,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12903] = {
-			["name"] = "Engineering: Gnomish Harm Prevention Belt",
+			["name"] = "工程学: 侏儒防护腰带",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 45,
@@ -9867,7 +9867,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12905] = {
-			["name"] = "Engineering: Gnomish Rocket Boots",
+			["name"] = "工程学: 侏儒火箭靴",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 12.5,
@@ -9884,7 +9884,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12906] = {
-			["name"] = "Engineering: Gnomish Battle Chicken",
+			["name"] = "工程学: 侏儒作战小鸡",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 25,
@@ -9902,7 +9902,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12907] = {
-			["name"] = "Engineering: Gnomish Mind Control Cap",
+			["name"] = "工程学: 侏儒精神控制帽",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 25,
@@ -9919,7 +9919,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12759] = {
-			["name"] = "Engineering: Gnomish Death Ray",
+			["name"] = "工程学: 侏儒死亡射线",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 12.5,
@@ -9936,7 +9936,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23129] = {
-			["name"] = "Engineering: World Enlarger",
+			["name"] = "工程学: 世界放大器",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -9953,7 +9953,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23489] = {
-			["name"] = "Engineering: Ultrasafe Transporter - Gadgetzan",
+			["name"] = "工程学: 安全传送器 - 加基森",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 45,
@@ -9971,7 +9971,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23096] = {
-			["name"] = "Engineering: Alarm-O-Bot",
+			["name"] = "工程学: 报警机器人",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 25,
@@ -9988,7 +9988,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[13240] = {
-			["name"] = "Engineering: The Mortar: Reloaded",
+			["name"] = "工程学: 迫击炮：重载",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 25,
@@ -10004,7 +10004,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12716] = {
-			["name"] = "Engineering: Goblin Mortar",
+			["name"] = "工程学: 地精迫击炮",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 25,
@@ -10022,7 +10022,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12715] = {
-			["name"] = "Engineering: Goblin Rocket Fuel Recipe",
+			["name"] = "工程学: 地精火箭燃油配方",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -10036,7 +10036,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[15628] = {
-			["name"] = "Engineering: Pet Bombling",
+			["name"] = "工程学: 炸弹宠物",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 25,
@@ -10052,7 +10052,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12760] = {
-			["name"] = "Engineering: Goblin Sapper Charge",
+			["name"] = "工程学: 地精工兵炸药",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -10067,7 +10067,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12718] = {
-			["name"] = "Engineering: Goblin Construction Helmet",
+			["name"] = "工程学: 地精施工头盔",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 25,
@@ -10082,7 +10082,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12717] = {
-			["name"] = "Engineering: Goblin Mining Helmet",
+			["name"] = "工程学: 地精采矿头盔",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 25,
@@ -10097,7 +10097,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8895] = {
-			["name"] = "Engineering: Goblin Rocket Boots",
+			["name"] = "工程学: 地精火箭靴",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 12.5,
@@ -10114,7 +10114,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12755] = {
-			["name"] = "Engineering: Goblin Bomb Dispenser",
+			["name"] = "工程学: 地精炸弹箱",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 12.5,
@@ -10131,7 +10131,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12754] = {
-			["name"] = "Engineering: The Big One",
+			["name"] = "工程学: 大炸弹",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 12.5,
@@ -10147,7 +10147,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12908] = {
-			["name"] = "Engineering: Goblin Dragon Gun",
+			["name"] = "工程学: 地精龙枪",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 25,
@@ -10164,7 +10164,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12758] = {
-			["name"] = "Engineering: Goblin Rocket Helmet",
+			["name"] = "工程学: 地精火箭头盔",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 12.5,
@@ -10180,7 +10180,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23486] = {
-			["name"] = "Engineering: Dimensional Ripper - Everlook",
+			["name"] = "工程学: 空间撕裂器 - 永望镇",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 45,
@@ -10197,7 +10197,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23078] = {
-			["name"] = "Engineering: Goblin Jumper Cables XL",
+			["name"] = "工程学: 地精起搏器XL型",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -10214,7 +10214,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3957] = {
-			["name"] = "Engineering: Ice Deflector",
+			["name"] = "工程学: 寒冰偏斜器",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 12.5,
@@ -10229,7 +10229,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3958] = {
-			["name"] = "Engineering: Iron Strut",
+			["name"] = "工程学: 铁棒",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -10242,7 +10242,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3959] = {
-			["name"] = "Engineering: Discombobulator Ray",
+			["name"] = "工程学: 退化射线",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 12.5,
@@ -10259,7 +10259,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9273] = {
-			["name"] = "Engineering: Goblin Jumper Cables",
+			["name"] = "工程学: 地精起搏器",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -10277,7 +10277,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3960] = {
-			["name"] = "Engineering: Portable Bronze Mortar",
+			["name"] = "工程学: 便携式青铜迫击炮",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 12.5,
@@ -10294,7 +10294,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3961] = {
-			["name"] = "Engineering: Gyrochronatom",
+			["name"] = "工程学: 发条式同步协调陀螺仪",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 8,
@@ -10308,7 +10308,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12585] = {
-			["name"] = "Engineering: Solid Blasting Powder",
+			["name"] = "工程学: 实心炸药",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -10321,7 +10321,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12586] = {
-			["name"] = "Engineering: Solid Dynamite",
+			["name"] = "工程学: 实心炸弹",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -10335,7 +10335,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[26420] = {
-			["name"] = "Engineering: Large Blue Rocket",
+			["name"] = "工程学: 大型蓝色烟花",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -10349,7 +10349,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[26421] = {
-			["name"] = "Engineering: Large Green Rocket",
+			["name"] = "工程学: 大型绿色烟花",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -10363,7 +10363,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[26422] = {
-			["name"] = "Engineering: Large Red Rocket",
+			["name"] = "工程学: 大型红色烟花",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -10377,7 +10377,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3963] = {
-			["name"] = "Engineering: Compact Harvest Reaper Kit",
+			["name"] = "工程学: 联合收割机组件",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 25,
@@ -10393,7 +10393,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12590] = {
-			["name"] = "Engineering: Gyromatic Micro-Adjustor",
+			["name"] = "工程学: 侏儒微调器",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -10406,7 +10406,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3962] = {
-			["name"] = "Engineering: Iron Grenade",
+			["name"] = "工程学: 铁皮手雷",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -10421,7 +10421,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12587] = {
-			["name"] = "Engineering: Bright-Eye Goggles",
+			["name"] = "工程学: 增亮护目镜",
 			["requires"] = "",
 			["tools"] = {6219, 10498},
 			["castTime"] = 45,
@@ -10435,7 +10435,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3979] = {
-			["name"] = "Engineering: Accurate Scope",
+			["name"] = "工程学: 精确瞄准镜",
 			["requires"] = "",
 			["tools"] = {6219, 10498},
 			["castTime"] = 25,
@@ -10450,7 +10450,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3965] = {
-			["name"] = "Engineering: Advanced Target Dummy",
+			["name"] = "工程学: 高级假人效果",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 12.5,
@@ -10466,7 +10466,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8243] = {
-			["name"] = "Engineering: Flash Bomb",
+			["name"] = "工程学: 闪光炸弹",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -10481,7 +10481,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3966] = {
-			["name"] = "Engineering: Craftsman's Monocle",
+			["name"] = "工程学: 工匠眼镜",
 			["requires"] = "",
 			["tools"] = {6219, 10498},
 			["castTime"] = 25,
@@ -10495,7 +10495,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3967] = {
-			["name"] = "Engineering: Big Iron Bomb",
+			["name"] = "工程学: 重磅铁制炸弹",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 12.5,
@@ -10510,7 +10510,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[21940] = {
-			["name"] = "Engineering: Snowmaster 9000",
+			["name"] = "工程学: Snowmaster 9000",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 25,
@@ -10526,7 +10526,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12589] = {
-			["name"] = "Engineering: Mithril Tube",
+			["name"] = "工程学: 秘银管",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -10539,7 +10539,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3968] = {
-			["name"] = "Engineering: Goblin Land Mine",
+			["name"] = "工程学: 地精暗雷",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 12.5,
@@ -10554,7 +10554,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23069] = {
-			["name"] = "Engineering: EZ-Thro Dynamite II",
+			["name"] = "工程学: 简易投掷炸弹II",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -10568,7 +10568,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3972] = {
-			["name"] = "Engineering: Large Seaforium Charge",
+			["name"] = "工程学: 大型爆盐炸弹",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -10583,7 +10583,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[15255] = {
-			["name"] = "Engineering: Mechanical Repair Kit",
+			["name"] = "工程学: 机械修理包",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 8,
@@ -10598,7 +10598,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12591] = {
-			["name"] = "Engineering: Unstable Trigger",
+			["name"] = "工程学: 不牢固的扳机",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 8,
@@ -10613,7 +10613,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3971] = {
-			["name"] = "Engineering: Gnomish Cloaking Device",
+			["name"] = "工程学: 侏儒隐形装置",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 45,
@@ -10630,7 +10630,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3969] = {
-			["name"] = "Engineering: Mechanical Dragonling",
+			["name"] = "工程学: 机械幼龙",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 45,
@@ -10647,7 +10647,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12594] = {
-			["name"] = "Engineering: Fire Goggles",
+			["name"] = "工程学: 火焰护目镜",
 			["requires"] = "",
 			["tools"] = {6219, 10498},
 			["castTime"] = 45,
@@ -10663,7 +10663,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12595] = {
-			["name"] = "Engineering: Mithril Blunderbuss",
+			["name"] = "工程学: 秘银火枪",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 45,
@@ -10680,7 +10680,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12596] = {
-			["name"] = "Engineering: Hi-Impact Mithril Slugs",
+			["name"] = "工程学: 高速秘银弹头",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -10694,7 +10694,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12597] = {
-			["name"] = "Engineering: Deadly Scope",
+			["name"] = "工程学: 致命瞄准镜",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 45,
@@ -10709,7 +10709,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12599] = {
-			["name"] = "Engineering: Mithril Casing",
+			["name"] = "工程学: 秘银外壳",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 8,
@@ -10722,7 +10722,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12603] = {
-			["name"] = "Engineering: Mithril Frag Bomb",
+			["name"] = "工程学: 秘银破片炸弹",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 8,
@@ -10737,7 +10737,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12607] = {
-			["name"] = "Engineering: Catseye Ultra Goggles",
+			["name"] = "工程学: 猫眼超级护目镜",
 			["requires"] = "",
 			["tools"] = {6219, 10498},
 			["castTime"] = 45,
@@ -10752,7 +10752,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12614] = {
-			["name"] = "Engineering: Mithril Heavy-bore Rifle",
+			["name"] = "工程学: 大口径秘银步枪",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 45,
@@ -10769,7 +10769,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[26423] = {
-			["name"] = "Engineering: Blue Rocket Cluster",
+			["name"] = "工程学: 蓝色烟花束",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -10783,7 +10783,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[26424] = {
-			["name"] = "Engineering: Green Rocket Cluster",
+			["name"] = "工程学: 绿色烟花束",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -10797,7 +10797,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[26425] = {
-			["name"] = "Engineering: Red Rocket Cluster",
+			["name"] = "工程学: 红色烟花束",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -10811,7 +10811,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12616] = {
-			["name"] = "Engineering: Parachute Cloak",
+			["name"] = "工程学: 降落伞披风",
 			["requires"] = "",
 			["tools"] = {6219, 10498},
 			["castTime"] = 45,
@@ -10827,7 +10827,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12615] = {
-			["name"] = "Engineering: Spellpower Goggles Xtreme",
+			["name"] = "工程学: 法术能量护目镜超级版",
 			["requires"] = "",
 			["tools"] = {6219, 10498},
 			["castTime"] = 45,
@@ -10841,7 +10841,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[26442] = {
-			["name"] = "Engineering: Firework Launcher",
+			["name"] = "工程学: 烟花发射器",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -10857,7 +10857,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12617] = {
-			["name"] = "Engineering: Deepdive Helmet",
+			["name"] = "工程学: 潜水头盔",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 45,
@@ -10874,7 +10874,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12618] = {
-			["name"] = "Engineering: Rose Colored Goggles",
+			["name"] = "工程学: 玫瑰色护目镜",
 			["requires"] = "",
 			["tools"] = {6219, 10498},
 			["castTime"] = 45,
@@ -10888,7 +10888,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12619] = {
-			["name"] = "Engineering: Hi-Explosive Bomb",
+			["name"] = "工程学: 高爆炸弹",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 8,
@@ -10903,7 +10903,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12620] = {
-			["name"] = "Engineering: Sniper Scope",
+			["name"] = "工程学: 狙击瞄准镜",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 45,
@@ -10918,7 +10918,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12621] = {
-			["name"] = "Engineering: Mithril Gyro-Shot",
+			["name"] = "工程学: 秘银螺旋弹",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -10932,7 +10932,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12622] = {
-			["name"] = "Engineering: Green Lens",
+			["name"] = "工程学: 绿色透镜",
 			["requires"] = "",
 			["tools"] = {6219, 10498},
 			["castTime"] = 45,
@@ -10950,7 +10950,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19788] = {
-			["name"] = "Engineering: Dense Blasting Powder",
+			["name"] = "工程学: 致密炸药粉",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -10963,7 +10963,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23070] = {
-			["name"] = "Engineering: Dense Dynamite",
+			["name"] = "工程学: 致密炸药",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -10977,7 +10977,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23507] = {
-			["name"] = "Engineering: Snake Burst Firework",
+			["name"] = "工程学: 长蛇焰火",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -10992,7 +10992,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12624] = {
-			["name"] = "Engineering: Mithril Mechanical Dragonling",
+			["name"] = "工程学: 秘银机械幼龙",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 45,
@@ -11010,7 +11010,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19567] = {
-			["name"] = "Engineering: Salt Shaker",
+			["name"] = "工程学: 筛盐器",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -11026,7 +11026,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46610] = {
-			["name"] = "Engineering: Battery-Powered Crowd Pummeler",
+			["name"] = "工程学: 电池供电的群体打击者",
 			["requires"] = "",
 			["tools"] = {5956, 10498},
 			["castTime"] = 25,
@@ -11045,7 +11045,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[26011] = {
-			["name"] = "Engineering: Tranquil Mechanical Yeti",
+			["name"] = "工程学: 安静的机械雪人",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 60,
@@ -11062,7 +11062,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23071] = {
-			["name"] = "Engineering: Truesilver Transformer",
+			["name"] = "工程学: 真银变压器",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 8,
@@ -11077,7 +11077,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23077] = {
-			["name"] = "Engineering: Gyrofreeze Ice Reflector",
+			["name"] = "工程学: 寒冰偏斜器",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 45,
@@ -11095,7 +11095,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19792] = {
-			["name"] = "Engineering: Thorium Rifle",
+			["name"] = "工程学: 瑟银火枪",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 45,
@@ -11112,7 +11112,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19790] = {
-			["name"] = "Engineering: Thorium Grenade",
+			["name"] = "工程学: 瑟银手榴弹",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -11128,7 +11128,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19791] = {
-			["name"] = "Engineering: Thorium Widget",
+			["name"] = "工程学: 瑟银零件",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 8,
@@ -11142,7 +11142,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19793] = {
-			["name"] = "Engineering: Lifelike Mechanical Toad",
+			["name"] = "工程学: 仿真机械蛙",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 8,
@@ -11158,7 +11158,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19794] = {
-			["name"] = "Engineering: Spellpower Goggles Xtreme Plus",
+			["name"] = "工程学: 法术能量护目镜超级改良版",
 			["requires"] = "",
 			["tools"] = {6219, 10498},
 			["castTime"] = 45,
@@ -11174,7 +11174,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[26426] = {
-			["name"] = "Engineering: Large Blue Rocket Cluster",
+			["name"] = "工程学: 大型蓝色烟花束",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -11188,7 +11188,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[26427] = {
-			["name"] = "Engineering: Large Green Rocket Cluster",
+			["name"] = "工程学: 大型绿色烟花束",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -11202,7 +11202,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[26428] = {
-			["name"] = "Engineering: Large Red Rocket Cluster",
+			["name"] = "工程学: 大型红色烟花束",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -11216,7 +11216,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23080] = {
-			["name"] = "Engineering: Powerful Seaforium Charge",
+			["name"] = "工程学: 强力爆盐炸弹",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -11232,7 +11232,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23079] = {
-			["name"] = "Engineering: Major Recombobulator",
+			["name"] = "工程学: 强力净化器",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -11248,7 +11248,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19796] = {
-			["name"] = "Engineering: Dark Iron Rifle",
+			["name"] = "工程学: 黑铁步枪",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 45,
@@ -11266,7 +11266,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19814] = {
-			["name"] = "Engineering: Masterwork Target Dummy",
+			["name"] = "工程学: 高级活动假人",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 12.5,
@@ -11284,7 +11284,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19795] = {
-			["name"] = "Engineering: Thorium Tube",
+			["name"] = "工程学: 瑟银管",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 8,
@@ -11297,7 +11297,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19799] = {
-			["name"] = "Engineering: Dark Iron Bomb",
+			["name"] = "工程学: 黑铁炸弹",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -11313,7 +11313,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19800] = {
-			["name"] = "Engineering: Thorium Shells",
+			["name"] = "工程学: 瑟银弹",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -11327,7 +11327,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19815] = {
-			["name"] = "Engineering: Delicate Arcanite Converter",
+			["name"] = "工程学: 精密奥金转换器",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 8,
@@ -11341,7 +11341,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23081] = {
-			["name"] = "Engineering: Hyper-Radiant Flame Reflector",
+			["name"] = "工程学: 高辐射烈焰反射器",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 45,
@@ -11358,7 +11358,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19825] = {
-			["name"] = "Engineering: Master Engineer's Goggles",
+			["name"] = "工程学: 高级技师护目镜",
 			["requires"] = "",
 			["tools"] = {6219, 10498},
 			["castTime"] = 60,
@@ -11373,7 +11373,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19819] = {
-			["name"] = "Engineering: Voice Amplification Modulator",
+			["name"] = "工程学: 语音增强模组",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 8,
@@ -11389,7 +11389,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[22793] = {
-			["name"] = "Engineering: Biznicks 247x128 Accurascope",
+			["name"] = "工程学: 比兹尼克247x128精确瞄准镜",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 45,
@@ -11406,7 +11406,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24356] = {
-			["name"] = "Engineering: Bloodvine Goggles",
+			["name"] = "工程学: 血藤护目镜",
 			["requires"] = "",
 			["tools"] = {10498, 6219},
 			["castTime"] = 60,
@@ -11423,7 +11423,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24357] = {
-			["name"] = "Engineering: Bloodvine Lens",
+			["name"] = "工程学: 血藤透镜",
 			["requires"] = "",
 			["tools"] = {10498, 6219},
 			["castTime"] = 60,
@@ -11440,7 +11440,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19833] = {
-			["name"] = "Engineering: Flawless Arcanite Rifle",
+			["name"] = "工程学: 完美的奥金步枪",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 60,
@@ -11458,7 +11458,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23082] = {
-			["name"] = "Engineering: Ultra-Flash Shadow Reflector",
+			["name"] = "工程学: 快速暗影反射器",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 45,
@@ -11476,7 +11476,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19831] = {
-			["name"] = "Engineering: Arcane Bomb",
+			["name"] = "工程学: 奥术炸弹",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -11491,7 +11491,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[22704] = {
-			["name"] = "Engineering: Field Repair Bot 74A",
+			["name"] = "工程学: 修理机器人74A型",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 60,
@@ -11508,7 +11508,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19830] = {
-			["name"] = "Engineering: Arcanite Dragonling",
+			["name"] = "工程学: 奥金幼龙",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 60,
@@ -11526,7 +11526,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[22795] = {
-			["name"] = "Engineering: Core Marksman Rifle",
+			["name"] = "工程学: 火核狙击步枪",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 60,
@@ -11543,7 +11543,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[22797] = {
-			["name"] = "Engineering: Force Reactive Disk",
+			["name"] = "工程学: 力反馈盾牌",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 60,
@@ -11560,7 +11560,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[45481] = {
-			["name"] = "Engineering: Intricate Gyroscope Goggles",
+			["name"] = "工程学: 复杂的陀螺仪护目镜",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956, 6219},
 			["castTime"] = 60,
@@ -11578,7 +11578,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16978] = {
-			["name"] = "Blacksmithing: Blazing Rapier",
+			["name"] = "锻造: 闪耀轻剑",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -11595,7 +11595,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16985] = {
-			["name"] = "Blacksmithing: Corruption",
+			["name"] = "锻造: 腐化",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -11614,7 +11614,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16992] = {
-			["name"] = "Blacksmithing: Frostguard",
+			["name"] = "锻造: 寒冰护卫者",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -11632,7 +11632,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[20890] = {
-			["name"] = "Blacksmithing: Dark Iron Reaver",
+			["name"] = "锻造: 黑铁利剑",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -11648,7 +11648,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16990] = {
-			["name"] = "Blacksmithing: Arcanite Champion",
+			["name"] = "锻造: 奥金圣剑",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -11666,7 +11666,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[27832] = {
-			["name"] = "Blacksmithing: Sageblade",
+			["name"] = "锻造: 先知之刃",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -11682,7 +11682,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46661] = {
-			["name"] = "Blacksmithing: Dream's Herald",
+			["name"] = "锻造: 梦想先驱",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -11700,7 +11700,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23652] = {
-			["name"] = "Blacksmithing: Blackguard",
+			["name"] = "锻造: 黑色卫士",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -11717,7 +11717,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16973] = {
-			["name"] = "Blacksmithing: Enchanted Battlehammer",
+			["name"] = "锻造: 魔化战锤",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -11734,7 +11734,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16983] = {
-			["name"] = "Blacksmithing: Serenity",
+			["name"] = "锻造: 平静",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -11752,7 +11752,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16988] = {
-			["name"] = "Blacksmithing: Hammer of the Titans",
+			["name"] = "锻造: 泰坦之锤",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -11769,7 +11769,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16993] = {
-			["name"] = "Blacksmithing: Masterwork Stormhammer",
+			["name"] = "锻造: 精工风暴战锤",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -11786,7 +11786,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23650] = {
-			["name"] = "Blacksmithing: Ebon Hand",
+			["name"] = "锻造: 黑手",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -11803,7 +11803,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[27830] = {
-			["name"] = "Blacksmithing: Persuader",
+			["name"] = "锻造: 说服者",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -11821,7 +11821,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16970] = {
-			["name"] = "Blacksmithing: Dawn's Edge",
+			["name"] = "锻造: 黎明之刃",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -11839,7 +11839,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16991] = {
-			["name"] = "Blacksmithing: Annihilator",
+			["name"] = "锻造: 歼灭者",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -11857,7 +11857,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16994] = {
-			["name"] = "Blacksmithing: Arcanite Reaper",
+			["name"] = "锻造: 奥金斧",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -11872,7 +11872,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[20897] = {
-			["name"] = "Blacksmithing: Dark Iron Destroyer",
+			["name"] = "锻造: 黑铁战斧",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -11888,7 +11888,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23653] = {
-			["name"] = "Blacksmithing: Nightfall",
+			["name"] = "锻造: 夜幕",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -11905,7 +11905,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12260] = {
-			["name"] = "Blacksmithing: Rough Copper Vest",
+			["name"] = "锻造: 劣质铜外衣",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 5.125,
@@ -11918,7 +11918,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2660] = {
-			["name"] = "Blacksmithing: Rough Sharpening Stone",
+			["name"] = "锻造: 劣质磨刀石",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -11931,7 +11931,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3115] = {
-			["name"] = "Blacksmithing: Rough Weightstone",
+			["name"] = "锻造: 劣质平衡石",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -11945,7 +11945,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2663] = {
-			["name"] = "Blacksmithing: Copper Bracers",
+			["name"] = "锻造: 铜质护腕",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 5.125,
@@ -11958,7 +11958,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2662] = {
-			["name"] = "Blacksmithing: Copper Chain Pants",
+			["name"] = "锻造: 铜质链甲短裤",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 5.125,
@@ -11971,7 +11971,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2737] = {
-			["name"] = "Blacksmithing: Copper Mace",
+			["name"] = "锻造: 铜质钉锤",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 5.125,
@@ -11986,7 +11986,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2738] = {
-			["name"] = "Blacksmithing: Copper Axe",
+			["name"] = "锻造: 铜斧",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 5.125,
@@ -12001,7 +12001,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3319] = {
-			["name"] = "Blacksmithing: Copper Chain Boots",
+			["name"] = "锻造: 铜质链甲战靴",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 5.125,
@@ -12014,7 +12014,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3320] = {
-			["name"] = "Blacksmithing: Rough Grinding Stone",
+			["name"] = "锻造: 劣质砂轮",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -12027,7 +12027,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2739] = {
-			["name"] = "Blacksmithing: Copper Shortsword",
+			["name"] = "锻造: 铜质短剑",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 5.125,
@@ -12042,7 +12042,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9983] = {
-			["name"] = "Blacksmithing: Copper Claymore",
+			["name"] = "锻造: 铜质双刃刀",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -12058,7 +12058,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8880] = {
-			["name"] = "Blacksmithing: Copper Dagger",
+			["name"] = "锻造: 铜质匕首",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -12074,7 +12074,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2661] = {
-			["name"] = "Blacksmithing: Copper Chain Belt",
+			["name"] = "锻造: 铜质链甲腰带",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -12087,7 +12087,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3293] = {
-			["name"] = "Blacksmithing: Copper Battle Axe",
+			["name"] = "锻造: 铜质战斧",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 12.5,
@@ -12104,7 +12104,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3321] = {
-			["name"] = "Blacksmithing: Copper Chain Vest",
+			["name"] = "锻造: 铜质链甲外衣",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -12119,7 +12119,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3323] = {
-			["name"] = "Blacksmithing: Runed Copper Gauntlets",
+			["name"] = "锻造: 铜质符文护手",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -12133,7 +12133,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3324] = {
-			["name"] = "Blacksmithing: Runed Copper Pants",
+			["name"] = "锻造: 铜质符文短裤",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 12.5,
@@ -12148,7 +12148,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3325] = {
-			["name"] = "Blacksmithing: Gemmed Copper Gauntlets",
+			["name"] = "锻造: 铜质宝石手套",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 12.5,
@@ -12164,7 +12164,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2665] = {
-			["name"] = "Blacksmithing: Coarse Sharpening Stone",
+			["name"] = "锻造: 粗制磨刀石",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -12177,7 +12177,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3116] = {
-			["name"] = "Blacksmithing: Coarse Weightstone",
+			["name"] = "锻造: 粗制平衡石",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -12191,7 +12191,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7408] = {
-			["name"] = "Blacksmithing: Heavy Copper Maul",
+			["name"] = "锻造: 铜质大锤",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 12.5,
@@ -12206,7 +12206,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2666] = {
-			["name"] = "Blacksmithing: Runed Copper Belt",
+			["name"] = "锻造: 铜质符文腰带",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -12219,7 +12219,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3294] = {
-			["name"] = "Blacksmithing: Thick War Axe",
+			["name"] = "锻造: 厚重战斧",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 12.5,
@@ -12236,7 +12236,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3326] = {
-			["name"] = "Blacksmithing: Coarse Grinding Stone",
+			["name"] = "锻造: 粗制砂轮",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -12249,7 +12249,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2667] = {
-			["name"] = "Blacksmithing: Runed Copper Breastplate",
+			["name"] = "锻造: 铜质符文胸甲",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 12.5,
@@ -12264,7 +12264,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2664] = {
-			["name"] = "Blacksmithing: Runed Copper Bracers",
+			["name"] = "锻造: 铜质符文护腕",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -12278,7 +12278,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7817] = {
-			["name"] = "Blacksmithing: Rough Bronze Boots",
+			["name"] = "锻造: 劣质青铜战靴",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -12292,7 +12292,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3292] = {
-			["name"] = "Blacksmithing: Heavy Copper Broadsword",
+			["name"] = "锻造: 铜质重剑",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 12.5,
@@ -12308,7 +12308,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7818] = {
-			["name"] = "Blacksmithing: Silver Rod",
+			["name"] = "锻造: 银棒",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -12322,7 +12322,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19666] = {
-			["name"] = "Blacksmithing: Silver Skeleton Key",
+			["name"] = "锻造: 白银万能钥匙",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -12336,7 +12336,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8367] = {
-			["name"] = "Blacksmithing: Ironforge Breastplate",
+			["name"] = "锻造: 铁炉堡胸甲",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 12.5,
@@ -12351,7 +12351,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2671] = {
-			["name"] = "Blacksmithing: Rough Bronze Bracers",
+			["name"] = "锻造: 劣质青铜护腕",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 12.5,
@@ -12364,7 +12364,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},		
 		[3491] = {
-			["name"] = "Blacksmithing: Big Bronze Knife",
+			["name"] = "锻造: 青铜匕首",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -12381,7 +12381,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2668] = {
-			["name"] = "Blacksmithing: Rough Bronze Leggings",
+			["name"] = "锻造: 劣质青铜护腿",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 12.5,
@@ -12394,7 +12394,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2670] = {
-			["name"] = "Blacksmithing: Rough Bronze Cuirass",
+			["name"] = "锻造: 劣质青铜胸甲",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 12.5,
@@ -12407,7 +12407,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2740] = {
-			["name"] = "Blacksmithing: Bronze Mace",
+			["name"] = "锻造: 青铜钉锤",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 12.5,
@@ -12422,7 +12422,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3328] = {
-			["name"] = "Blacksmithing: Rough Bronze Shoulders",
+			["name"] = "锻造: 劣质青铜护肩",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 12.5,
@@ -12437,7 +12437,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6517] = {
-			["name"] = "Blacksmithing: Pearl-handled Dagger",
+			["name"] = "锻造: 珍珠匕首",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -12453,7 +12453,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2741] = {
-			["name"] = "Blacksmithing: Bronze Axe",
+			["name"] = "锻造: 青铜斧",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 12.5,
@@ -12468,7 +12468,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2742] = {
-			["name"] = "Blacksmithing: Bronze Shortsword",
+			["name"] = "锻造: 青铜短剑",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 12.5,
@@ -12483,7 +12483,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2672] = {
-			["name"] = "Blacksmithing: Patterned Bronze Bracers",
+			["name"] = "锻造: 青铜花纹护腕",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 12.5,
@@ -12497,7 +12497,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2674] = {
-			["name"] = "Blacksmithing: Heavy Sharpening Stone",
+			["name"] = "锻造: 重磨刀石",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -12510,7 +12510,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3117] = {
-			["name"] = "Blacksmithing: Heavy Weightstone",
+			["name"] = "锻造: 重平衡石",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -12524,7 +12524,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3337] = {
-			["name"] = "Blacksmithing: Heavy Grinding Stone",
+			["name"] = "锻造: 重砂轮",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -12537,7 +12537,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9985] = {
-			["name"] = "Blacksmithing: Bronze Warhammer",
+			["name"] = "锻造: 青铜战锤",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 12.5,
@@ -12552,7 +12552,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3295] = {
-			["name"] = "Blacksmithing: Deadly Bronze Poniard",
+			["name"] = "锻造: 致命的青铜短剑",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -12570,7 +12570,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3330] = {
-			["name"] = "Blacksmithing: Silvered Bronze Shoulders",
+			["name"] = "锻造: 镀银青铜护肩",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -12585,7 +12585,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9986] = {
-			["name"] = "Blacksmithing: Bronze Greatsword",
+			["name"] = "锻造: 青铜巨剑",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 12.5,
@@ -12600,7 +12600,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3296] = {
-			["name"] = "Blacksmithing: Heavy Bronze Mace",
+			["name"] = "锻造: 青铜重锤",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -12618,7 +12618,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3331] = {
-			["name"] = "Blacksmithing: Silvered Bronze Boots",
+			["name"] = "锻造: 镀银青铜战靴",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -12633,7 +12633,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2673] = {
-			["name"] = "Blacksmithing: Silvered Bronze Breastplate",
+			["name"] = "锻造: 镀银青铜胸甲",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -12649,7 +12649,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9987] = {
-			["name"] = "Blacksmithing: Bronze Battle Axe",
+			["name"] = "锻造: 青铜战斧",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 12.5,
@@ -12664,7 +12664,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3333] = {
-			["name"] = "Blacksmithing: Silvered Bronze Gauntlets",
+			["name"] = "锻造: 镀银青铜护手",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -12679,7 +12679,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6518] = {
-			["name"] = "Blacksmithing: Iridescent Hammer",
+			["name"] = "锻造: 彩虹之锤",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -12696,7 +12696,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3334] = {
-			["name"] = "Blacksmithing: Green Iron Boots",
+			["name"] = "锻造: 绿铁战靴",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -12712,7 +12712,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3297] = {
-			["name"] = "Blacksmithing: Mighty Iron Hammer",
+			["name"] = "锻造: 巨型铁锤",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -12730,7 +12730,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2675] = {
-			["name"] = "Blacksmithing: Shining Silver Breastplate",
+			["name"] = "锻造: 银鳞胸甲",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -12747,7 +12747,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8768] = {
-			["name"] = "Blacksmithing: Iron Buckle",
+			["name"] = "锻造: 铁扣环",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 5.125,
@@ -12760,7 +12760,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19667] = {
-			["name"] = "Blacksmithing: Golden Skeleton Key",
+			["name"] = "锻造: 黄金万能钥匙",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -12774,7 +12774,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[14379] = {
-			["name"] = "Blacksmithing: Golden Rod",
+			["name"] = "锻造: 金棒",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -12788,7 +12788,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7221] = {
-			["name"] = "Blacksmithing: Iron Shield Spike",
+			["name"] = "锻造: 铁质盾刺",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -12802,7 +12802,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3336] = {
-			["name"] = "Blacksmithing: Green Iron Gauntlets",
+			["name"] = "锻造: 绿铁护手",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -12818,7 +12818,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10003] = {
-			["name"] = "Blacksmithing: The Shatterer",
+			["name"] = "锻造: 粉碎者",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -12837,7 +12837,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10007] = {
-			["name"] = "Blacksmithing: Phantom Blade",
+			["name"] = "锻造: 幻影之刃",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -12856,7 +12856,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10011] = {
-			["name"] = "Blacksmithing: Blight",
+			["name"] = "锻造: zzOLDBlight",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -12873,7 +12873,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10015] = {
-			["name"] = "Blacksmithing: Truesilver Champion",
+			["name"] = "锻造: 真银圣剑",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -12891,7 +12891,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[15292] = {
-			["name"] = "Blacksmithing: Dark Iron Pulverizer",
+			["name"] = "锻造: 黑铁粉碎者",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -12905,7 +12905,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[15294] = {
-			["name"] = "Blacksmithing: Dark Iron Sunderer",
+			["name"] = "锻造: 黑铁斩碎者",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -12919,7 +12919,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16995] = {
-			["name"] = "Blacksmithing: Heartseeker",
+			["name"] = "锻造: 寻心者",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -12938,7 +12938,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23638] = {
-			["name"] = "Blacksmithing: Black Amnesty",
+			["name"] = "锻造: 野蛮狂怒",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -12955,7 +12955,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23639] = {
-			["name"] = "Blacksmithing: Blackfury",
+			["name"] = "锻造: 黑色怒火",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -12971,7 +12971,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9954] = {
-			["name"] = "Blacksmithing: Truesilver Gauntlets",
+			["name"] = "锻造: 真银护手",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -12989,7 +12989,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9974] = {
-			["name"] = "Blacksmithing: Truesilver Breastplate",
+			["name"] = "锻造: 真银胸甲",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -13006,7 +13006,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16650] = {
-			["name"] = "Blacksmithing: Wildthorn Mail",
+			["name"] = "锻造: 野刺锁甲",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -13023,7 +13023,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16667] = {
-			["name"] = "Blacksmithing: Demon Forged Breastplate",
+			["name"] = "锻造: 魔铸胸甲",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -13039,7 +13039,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[15296] = {
-			["name"] = "Blacksmithing: Dark Iron Plate",
+			["name"] = "锻造: 黑铁板甲",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -13053,7 +13053,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16655] = {
-			["name"] = "Blacksmithing: Fiery Plate Gauntlets",
+			["name"] = "锻造: 炽热板甲护手",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -13069,7 +13069,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16661] = {
-			["name"] = "Blacksmithing: Storm Gauntlets",
+			["name"] = "锻造: 风暴护手",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -13085,7 +13085,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[20874] = {
-			["name"] = "Blacksmithing: Dark Iron Bracers",
+			["name"] = "锻造: 黑铁护腕",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -13100,7 +13100,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[20872] = {
-			["name"] = "Blacksmithing: Fiery Chain Girdle",
+			["name"] = "锻造: 炽热链甲束带",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -13115,7 +13115,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16745] = {
-			["name"] = "Blacksmithing: Enchanted Thorium Breastplate",
+			["name"] = "锻造: 魔化瑟银胸甲",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -13133,7 +13133,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16742] = {
-			["name"] = "Blacksmithing: Enchanted Thorium Helm",
+			["name"] = "锻造: 魔化瑟银头盔",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -13150,7 +13150,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16744] = {
-			["name"] = "Blacksmithing: Enchanted Thorium Leggings",
+			["name"] = "锻造: 魔化瑟银护腿",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -13167,7 +13167,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16728] = {
-			["name"] = "Blacksmithing: Helm of the Great Chief",
+			["name"] = "锻造: 大酋长头盔",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -13184,7 +13184,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16724] = {
-			["name"] = "Blacksmithing: Whitesoul Helm",
+			["name"] = "锻造: 白魂头盔",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -13201,7 +13201,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24399] = {
-			["name"] = "Blacksmithing: Dark Iron Boots",
+			["name"] = "锻造: 黑铁长靴",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -13218,7 +13218,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23637] = {
-			["name"] = "Blacksmithing: Dark Iron Gauntlets",
+			["name"] = "锻造: 黑铁护手",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -13235,7 +13235,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23636] = {
-			["name"] = "Blacksmithing: Dark Iron Helm",
+			["name"] = "锻造: 黑铁头盔",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -13250,7 +13250,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[20876] = {
-			["name"] = "Blacksmithing: Dark Iron Leggings",
+			["name"] = "锻造: 黑铁护腿",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -13265,7 +13265,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[20873] = {
-			["name"] = "Blacksmithing: Fiery Chain Shoulders",
+			["name"] = "锻造: 炽热链甲护肩",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -13280,7 +13280,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16746] = {
-			["name"] = "Blacksmithing: Invulnerable Mail",
+			["name"] = "锻造: 免伤锁甲",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -13296,7 +13296,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16729] = {
-			["name"] = "Blacksmithing: Lionheart Helm",
+			["name"] = "锻造: 狮心头盔",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -13313,7 +13313,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16741] = {
-			["name"] = "Blacksmithing: Stronghold Gauntlets",
+			["name"] = "锻造: 要塞护手",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -13330,7 +13330,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[27829] = {
-			["name"] = "Blacksmithing: Titanic Leggings",
+			["name"] = "锻造: 泰坦护腿",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -13346,7 +13346,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3506] = {
-			["name"] = "Blacksmithing: Green Iron Leggings",
+			["name"] = "锻造: 绿铁护腿",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -13361,7 +13361,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[12259] = {
-			["name"] = "Blacksmithing: Silvered Bronze Leggings",
+			["name"] = "锻造: 镀银青铜护腿",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -13376,7 +13376,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3494] = {
-			["name"] = "Blacksmithing: Solid Iron Maul",
+			["name"] = "锻造: 结实的铁锤",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -13393,7 +13393,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9813] = {
-			["name"] = "Blacksmithing: Barbaric Iron Breastplate",
+			["name"] = "锻造: 野人铁质胸甲",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -13407,7 +13407,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9811] = {
-			["name"] = "Blacksmithing: Barbaric Iron Shoulders",
+			["name"] = "锻造: 野人铁护肩",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -13423,7 +13423,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3504] = {
-			["name"] = "Blacksmithing: Green Iron Shoulders",
+			["name"] = "锻造: 绿铁护肩",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -13438,7 +13438,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3492] = {
-			["name"] = "Blacksmithing: Hardened Iron Shortsword",
+			["name"] = "锻造: 硬铁短剑",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -13455,7 +13455,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3501] = {
-			["name"] = "Blacksmithing: Green Iron Bracers",
+			["name"] = "锻造: 绿铁护腕",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -13469,7 +13469,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7222] = {
-			["name"] = "Blacksmithing: Iron Counterweight",
+			["name"] = "锻造: 铁质平衡锤",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -13484,7 +13484,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3495] = {
-			["name"] = "Blacksmithing: Golden Iron Destroyer",
+			["name"] = "锻造: 碎铁金锤",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -13502,7 +13502,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3507] = {
-			["name"] = "Blacksmithing: Golden Scale Leggings",
+			["name"] = "锻造: 金鳞护腿",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -13517,7 +13517,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3502] = {
-			["name"] = "Blacksmithing: Green Iron Helm",
+			["name"] = "锻造: 绿铁头盔",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -13532,7 +13532,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9814] = {
-			["name"] = "Blacksmithing: Barbaric Iron Helm",
+			["name"] = "锻造: 野人铁盔",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -13547,7 +13547,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3505] = {
-			["name"] = "Blacksmithing: Golden Scale Shoulders",
+			["name"] = "锻造: 金鳞护肩",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -13562,7 +13562,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3493] = {
-			["name"] = "Blacksmithing: Jade Serpentblade",
+			["name"] = "锻造: 玉蛇刀",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -13579,7 +13579,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3508] = {
-			["name"] = "Blacksmithing: Green Iron Hauberk",
+			["name"] = "锻造: 绿铁锁甲",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -13596,7 +13596,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9818] = {
-			["name"] = "Blacksmithing: Barbaric Iron Boots",
+			["name"] = "锻造: 野人铁靴",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -13612,7 +13612,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[15972] = {
-			["name"] = "Blacksmithing: Glinting Steel Dagger",
+			["name"] = "锻造: 亮闪闪的钢匕首",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -13629,7 +13629,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3496] = {
-			["name"] = "Blacksmithing: Moonsteel Broadsword",
+			["name"] = "锻造: 月钢宽剑",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -13646,7 +13646,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9820] = {
-			["name"] = "Blacksmithing: Barbaric Iron Gloves",
+			["name"] = "锻造: 野人铁手套",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -13661,7 +13661,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3498] = {
-			["name"] = "Blacksmithing: Massive Iron Axe",
+			["name"] = "锻造: 巨型铁斧",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -13678,7 +13678,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3513] = {
-			["name"] = "Blacksmithing: Polished Steel Boots",
+			["name"] = "锻造: 精钢战靴",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -13694,7 +13694,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7223] = {
-			["name"] = "Blacksmithing: Golden Scale Bracers",
+			["name"] = "锻造: 金鳞护腕",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -13708,7 +13708,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7224] = {
-			["name"] = "Blacksmithing: Steel Weapon Chain",
+			["name"] = "锻造: 钢质武器链",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -13723,7 +13723,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[21913] = {
-			["name"] = "Blacksmithing: Edge of Winter",
+			["name"] = "锻造: 寒冬之刃",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -13740,7 +13740,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3503] = {
-			["name"] = "Blacksmithing: Golden Scale Coif",
+			["name"] = "锻造: 金鳞罩盔",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -13755,7 +13755,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[15973] = {
-			["name"] = "Blacksmithing: Searing Golden Blade",
+			["name"] = "锻造: 灼热金剑",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -13771,7 +13771,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3511] = {
-			["name"] = "Blacksmithing: Golden Scale Cuirass",
+			["name"] = "锻造: 金鳞胸甲",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -13787,7 +13787,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9920] = {
-			["name"] = "Blacksmithing: Solid Grinding Stone",
+			["name"] = "锻造: 坚固的砂轮",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -13800,7 +13800,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9918] = {
-			["name"] = "Blacksmithing: Solid Sharpening Stone",
+			["name"] = "锻造: 坚固的磨刀石",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -13813,7 +13813,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9921] = {
-			["name"] = "Blacksmithing: Solid Weightstone",
+			["name"] = "锻造: 坚固的平衡石",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -13827,7 +13827,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19668] = {
-			["name"] = "Blacksmithing: Truesilver Skeleton Key",
+			["name"] = "锻造: 真银万能钥匙",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 5.125,
@@ -13841,7 +13841,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[14380] = {
-			["name"] = "Blacksmithing: Truesilver Rod",
+			["name"] = "锻造: 真银棒",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -13855,7 +13855,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3497] = {
-			["name"] = "Blacksmithing: Frost Tiger Blade",
+			["name"] = "锻造: 霜虎之刃",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -13873,7 +13873,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3515] = {
-			["name"] = "Blacksmithing: Golden Scale Boots",
+			["name"] = "锻造: 金鳞战靴",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -13889,7 +13889,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3500] = {
-			["name"] = "Blacksmithing: Shadow Crescent Axe",
+			["name"] = "锻造: 月牙斧",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -13907,7 +13907,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9916] = {
-			["name"] = "Blacksmithing: Steel Breastplate",
+			["name"] = "锻造: 钢质胸甲",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -13921,7 +13921,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11454] = {
-			["name"] = "Blacksmithing: Inlaid Mithril Cylinder",
+			["name"] = "锻造: 秘银杆",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 3,
@@ -13936,7 +13936,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[11643] = {
-			["name"] = "Blacksmithing: Golden Scale Gauntlets",
+			["name"] = "锻造: 金鳞护手",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -13952,7 +13952,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9928] = {
-			["name"] = "Blacksmithing: Heavy Mithril Gauntlet",
+			["name"] = "锻造: 重型秘银手套",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -13966,7 +13966,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9926] = {
-			["name"] = "Blacksmithing: Heavy Mithril Shoulder",
+			["name"] = "锻造: 重型秘银护肩",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -13980,7 +13980,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9933] = {
-			["name"] = "Blacksmithing: Heavy Mithril Pants",
+			["name"] = "锻造: 秘银短裤",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -13994,7 +13994,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9931] = {
-			["name"] = "Blacksmithing: Mithril Scale Pants",
+			["name"] = "锻造: 秘银鳞片短裤",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14007,7 +14007,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9993] = {
-			["name"] = "Blacksmithing: Heavy Mithril Axe",
+			["name"] = "锻造: 秘银重斧",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14023,7 +14023,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9937] = {
-			["name"] = "Blacksmithing: Mithril Scale Bracers",
+			["name"] = "锻造: 秘银鳞片护腕",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14037,7 +14037,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9939] = {
-			["name"] = "Blacksmithing: Mithril Shield Spike",
+			["name"] = "锻造: 秘银盾刺",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -14052,7 +14052,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9935] = {
-			["name"] = "Blacksmithing: Steel Plate Helm",
+			["name"] = "锻造: 钢质头盔",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -14066,7 +14066,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9950] = {
-			["name"] = "Blacksmithing: Ornate Mithril Gloves",
+			["name"] = "锻造: 精制秘银手套",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14082,7 +14082,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9945] = {
-			["name"] = "Blacksmithing: Ornate Mithril Pants",
+			["name"] = "锻造: 精制秘银短裤",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14098,7 +14098,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9995] = {
-			["name"] = "Blacksmithing: Blue Glittering Axe",
+			["name"] = "锻造: 蓝光斧",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14114,7 +14114,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9952] = {
-			["name"] = "Blacksmithing: Ornate Mithril Shoulders",
+			["name"] = "锻造: 精制秘银护肩",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14129,7 +14129,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9942] = {
-			["name"] = "Blacksmithing: Mithril Scale Gloves",
+			["name"] = "锻造: 秘银鳞片手套",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14144,7 +14144,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9997] = {
-			["name"] = "Blacksmithing: Wicked Mithril Blade",
+			["name"] = "锻造: 秘银魔剑",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14160,7 +14160,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9972] = {
-			["name"] = "Blacksmithing: Ornate Mithril Breastplate",
+			["name"] = "锻造: 精制秘银胸甲",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14176,7 +14176,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9979] = {
-			["name"] = "Blacksmithing: Ornate Mithril Boots",
+			["name"] = "锻造: 精制秘银战靴",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14193,7 +14193,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9980] = {
-			["name"] = "Blacksmithing: Ornate Mithril Helm",
+			["name"] = "锻造: 精制秘银头盔",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14209,7 +14209,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9959] = {
-			["name"] = "Blacksmithing: Ornate Mithril Helm",
+			["name"] = "锻造: 精制秘银头盔",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14222,7 +14222,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9961] = {
-			["name"] = "Blacksmithing: Mithril Coif",
+			["name"] = "锻造: 秘银罩帽",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14236,7 +14236,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10001] = {
-			["name"] = "Blacksmithing: Big Black Mace",
+			["name"] = "锻造: 巨型黑色锤",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14253,7 +14253,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9968] = {
-			["name"] = "Blacksmithing: Heavy Mithril Boots",
+			["name"] = "锻造: 秘银重靴",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14267,7 +14267,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9966] = {
-			["name"] = "Blacksmithing: Mithril Scale Shoulders",
+			["name"] = "锻造: 秘银鳞片护肩",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14282,7 +14282,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9964] = {
-			["name"] = "Blacksmithing: Mithril Spurs",
+			["name"] = "锻造: 秘银马刺",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14296,7 +14296,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10005] = {
-			["name"] = "Blacksmithing: Dazzling Mithril Rapier",
+			["name"] = "锻造: 秘银细剑",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14314,7 +14314,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9970] = {
-			["name"] = "Blacksmithing: Heavy Mithril Helm",
+			["name"] = "锻造: 重型秘银头盔",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14328,7 +14328,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10009] = {
-			["name"] = "Blacksmithing: Runed Mithril Hammer",
+			["name"] = "锻造: 秘银符文战锤",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14344,7 +14344,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16639] = {
-			["name"] = "Blacksmithing: Dense Grinding Stone",
+			["name"] = "锻造: 致密砂轮",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -14357,7 +14357,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16641] = {
-			["name"] = "Blacksmithing: Dense Sharpening Stone",
+			["name"] = "锻造: 致密磨刀石",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -14370,7 +14370,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16640] = {
-			["name"] = "Blacksmithing: Dense Weightstone",
+			["name"] = "锻造: 致密平衡石",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -14384,7 +14384,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16642] = {
-			["name"] = "Blacksmithing: Thorium Armor",
+			["name"] = "锻造: 瑟银护甲",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14399,7 +14399,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16643] = {
-			["name"] = "Blacksmithing: Thorium Belt",
+			["name"] = "锻造: 瑟银腰带",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14413,7 +14413,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16644] = {
-			["name"] = "Blacksmithing: Thorium Bracers",
+			["name"] = "锻造: 瑟银护腕",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14427,7 +14427,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10013] = {
-			["name"] = "Blacksmithing: Ebon Shiv",
+			["name"] = "锻造: 乌木刀",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14444,7 +14444,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16645] = {
-			["name"] = "Blacksmithing: Radiant Belt",
+			["name"] = "锻造: 辐光腰带",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14458,7 +14458,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16647] = {
-			["name"] = "Blacksmithing: Imperial Plate Belt",
+			["name"] = "锻造: 君王板甲腰带",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14473,7 +14473,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16646] = {
-			["name"] = "Blacksmithing: Imperial Plate Shoulders",
+			["name"] = "锻造: 君王板甲护肩",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14488,7 +14488,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[15293] = {
-			["name"] = "Blacksmithing: Dark Iron Mail",
+			["name"] = "锻造: 黑铁锁甲",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -14502,7 +14502,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16649] = {
-			["name"] = "Blacksmithing: Imperial Plate Bracers",
+			["name"] = "锻造: 君王板甲护腕",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14516,7 +14516,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16648] = {
-			["name"] = "Blacksmithing: Radiant Breastplate",
+			["name"] = "锻造: 辐光胸甲",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14531,7 +14531,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16965] = {
-			["name"] = "Blacksmithing: Bleakwood Hew",
+			["name"] = "锻造: 冷木斧",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14549,7 +14549,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16986] = {
-			["name"] = "Blacksmithing: Blood Talon",
+			["name"] = "锻造: 血爪",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14567,7 +14567,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[47032] = {
-			["name"] = "Blacksmithing: Hateforge Belt",
+			["name"] = "锻造: 恨铸腰带",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14583,7 +14583,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[47034] = {
-			["name"] = "Blacksmithing: Hateforge Boots",
+			["name"] = "锻造: 憎恨之靴",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14600,7 +14600,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57113] = {
-			["name"] = "Blacksmithing: Thorium Spurs",
+			["name"] = "锻造: 钍刺",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14616,7 +14616,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[47030] = {
-			["name"] = "Blacksmithing: Hateforge Cuirass",
+			["name"] = "锻造: 恨铸胸甲",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14634,7 +14634,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[47033] = {
-			["name"] = "Blacksmithing: Hateforge Grips",
+			["name"] = "锻造: 恨铸之握",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14651,7 +14651,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[47029] = {
-			["name"] = "Blacksmithing: Hateforge Helmet",
+			["name"] = "锻造: 恨铸头盔",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14667,7 +14667,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[47031] = {
-			["name"] = "Blacksmithing: Hateforge Leggings",
+			["name"] = "锻造: 恨铸护腿",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14684,7 +14684,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[20201] = {
-			["name"] = "Blacksmithing: Arcanite Rod",
+			["name"] = "锻造: 奥金棒",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -14698,7 +14698,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19669] = {
-			["name"] = "Blacksmithing: Arcanite Skeleton Key",
+			["name"] = "锻造: 奥金万能钥匙",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 8,
@@ -14712,7 +14712,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16651] = {
-			["name"] = "Blacksmithing: Thorium Shield Spike",
+			["name"] = "锻造: 瑟银盾刺",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14727,7 +14727,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16969] = {
-			["name"] = "Blacksmithing: Ornate Thorium Handaxe",
+			["name"] = "锻造: 华丽瑟银手斧",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14743,7 +14743,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[15295] = {
-			["name"] = "Blacksmithing: Dark Iron Shoulders",
+			["name"] = "锻造: 黑铁护肩",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 45,
@@ -14757,7 +14757,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16652] = {
-			["name"] = "Blacksmithing: Thorium Boots",
+			["name"] = "锻造: 瑟银长靴",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14772,7 +14772,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16653] = {
-			["name"] = "Blacksmithing: Thorium Helm",
+			["name"] = "锻造: 瑟银头盔",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14787,7 +14787,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16971] = {
-			["name"] = "Blacksmithing: Huge Thorium Battleaxe",
+			["name"] = "锻造: 巨型瑟银战斧",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14802,7 +14802,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23629] = {
-			["name"] = "Blacksmithing: Heavy Timbermaw Boots",
+			["name"] = "锻造: 重型木喉长靴",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14817,7 +14817,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[28463] = {
-			["name"] = "Blacksmithing: Ironvine Belt",
+			["name"] = "锻造: 铁藤腰带",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14831,7 +14831,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[28461] = {
-			["name"] = "Blacksmithing: Ironvine Breastplate",
+			["name"] = "锻造: 铁藤胸甲",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14847,7 +14847,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[28462] = {
-			["name"] = "Blacksmithing: Ironvine Gloves",
+			["name"] = "锻造: 铁藤手套",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14862,7 +14862,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[27588] = {
-			["name"] = "Blacksmithing: Light Obsidian Belt",
+			["name"] = "锻造: 轻型黑曜石腰带",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14876,7 +14876,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57026] = {
-			["name"] = "Blacksmithing: Mantle of Centaur Authority",
+			["name"] = "锻造: 半人马权威衬肩",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14893,7 +14893,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[27589] = {
-			["name"] = "Blacksmithing: Black Grasp of the Destroyer",
+			["name"] = "锻造: 毁灭者的黑暗之握",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14909,7 +14909,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[28244] = {
-			["name"] = "Blacksmithing: Icebane Bracers",
+			["name"] = "锻造: 破冰护腕",
 			["requires"] = AL["Icebellow Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14925,7 +14925,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[28242] = {
-			["name"] = "Blacksmithing: Icebane Breastplate",
+			["name"] = "锻造: 破冰胸甲",
 			["requires"] = AL["Icebellow Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14941,7 +14941,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[28243] = {
-			["name"] = "Blacksmithing: Icebane Gauntlets",
+			["name"] = "锻造: 破冰护手",
 			["requires"] = AL["Icebellow Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14957,7 +14957,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[27586] = {
-			["name"] = "Blacksmithing: Jagged Obsidian Shield",
+			["name"] = "锻造: 碎裂黑曜石盾牌",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14973,7 +14973,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[27590] = {
-			["name"] = "Blacksmithing: Obsidian Mail Tunic",
+			["name"] = "锻造: 黑曜石锁甲",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -14990,7 +14990,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[27587] = {
-			["name"] = "Blacksmithing: Thick Obsidian Breastplate",
+			["name"] = "锻造: 厚重黑曜石胸甲",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15007,7 +15007,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[54009] = {
-			["name"] = "Blacksmithing: Fiery Chain Breastplate",
+			["name"] = "锻造: 火热链甲胸甲",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15022,7 +15022,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57181] = {
-			["name"] = "Blacksmithing: Dreamsteel Belt Buckle",
+			["name"] = "锻造: 梦钢皮带扣",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15038,7 +15038,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[45471] = {
-			["name"] = "Blacksmithing: Dreamsteel Boots",
+			["name"] = "锻造: 梦钢靴子",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15055,7 +15055,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[45469] = {
-			["name"] = "Blacksmithing: Dreamsteel Bracers",
+			["name"] = "锻造: 梦钢护腕",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15071,7 +15071,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[45467] = {
-			["name"] = "Blacksmithing: Dreamsteel Leggings",
+			["name"] = "锻造: 梦钢护腿",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15087,7 +15087,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[45465] = {
-			["name"] = "Blacksmithing: Dreamsteel Mantle",
+			["name"] = "锻造: 梦钢护肩",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15105,7 +15105,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},		
 		[16654] = {
-			["name"] = "Blacksmithing: Radiant Gloves",
+			["name"] = "锻造: 辐光手套",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15119,7 +15119,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16656] = {
-			["name"] = "Blacksmithing: Radiant Boots",
+			["name"] = "锻造: 辐光长靴",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15133,7 +15133,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16660] = {
-			["name"] = "Blacksmithing: Dawnbringer Shoulders",
+			["name"] = "锻造: 黎明使者护肩",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15149,7 +15149,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23632] = {
-			["name"] = "Blacksmithing: Girdle of the Dawn",
+			["name"] = "锻造: 黎明束腰",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15164,7 +15164,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23628] = {
-			["name"] = "Blacksmithing: Heavy Timbermaw Belt",
+			["name"] = "锻造: 重型木喉腰带",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15179,7 +15179,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16984] = {
-			["name"] = "Blacksmithing: Volcanic Hammer",
+			["name"] = "锻造: 火山战锤",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15195,7 +15195,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16657] = {
-			["name"] = "Blacksmithing: Imperial Plate Boots",
+			["name"] = "锻造: 君王板甲战靴",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15210,7 +15210,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16658] = {
-			["name"] = "Blacksmithing: Imperial Plate Helm",
+			["name"] = "锻造: 君王板甲头盔",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15224,7 +15224,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16659] = {
-			["name"] = "Blacksmithing: Radiant Circlet",
+			["name"] = "锻造: 辐光头饰",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15238,7 +15238,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[22757] = {
-			["name"] = "Blacksmithing: Elemental Sharpening Stone",
+			["name"] = "锻造: 元素磨刀石",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -15252,7 +15252,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16663] = {
-			["name"] = "Blacksmithing: Imperial Plate Chest",
+			["name"] = "锻造: 君王板甲护胸",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15266,7 +15266,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16730] = {
-			["name"] = "Blacksmithing: Imperial Plate Leggings",
+			["name"] = "锻造: 君王板甲护腿",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15280,7 +15280,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16725] = {
-			["name"] = "Blacksmithing: Radiant Leggings",
+			["name"] = "锻造: 辐光护腿",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15294,7 +15294,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16731] = {
-			["name"] = "Blacksmithing: Runic Breastplate",
+			["name"] = "锻造: 符文板甲",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15309,7 +15309,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16665] = {
-			["name"] = "Blacksmithing: Runic Plate Boots",
+			["name"] = "锻造: 符文板甲战靴",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15324,7 +15324,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16726] = {
-			["name"] = "Blacksmithing: Runic Plate Helm",
+			["name"] = "锻造: 符文板甲头盔",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15340,7 +15340,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16732] = {
-			["name"] = "Blacksmithing: Runic Plate Leggings",
+			["name"] = "锻造: 符文板甲护腿",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15355,7 +15355,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16664] = {
-			["name"] = "Blacksmithing: Runic Plate Shoulders",
+			["name"] = "锻造: 符文板甲护肩",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15370,7 +15370,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16662] = {
-			["name"] = "Blacksmithing: Thorium Leggings",
+			["name"] = "锻造: 瑟银护腿",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15384,7 +15384,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24136] = {
-			["name"] = "Blacksmithing: Bloodsoul Breastplate",
+			["name"] = "锻造: 血魂胸甲",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15400,7 +15400,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24137] = {
-			["name"] = "Blacksmithing: Bloodsoul Shoulders",
+			["name"] = "锻造: 血魂护肩",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15416,7 +15416,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24138] = {
-			["name"] = "Blacksmithing: Bloodsoul Gauntlets",
+			["name"] = "锻造: 血魂护手",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15432,7 +15432,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24914] = {
-			["name"] = "Blacksmithing: Darkrune Breastplate",
+			["name"] = "锻造: 黑暗符文胸甲",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15447,7 +15447,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24912] = {
-			["name"] = "Blacksmithing: Darkrune Gauntlets",
+			["name"] = "锻造: 黑暗符文护手",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15463,7 +15463,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24913] = {
-			["name"] = "Blacksmithing: Darkrune Helm",
+			["name"] = "锻造: 黑暗符文头盔",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15479,7 +15479,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24139] = {
-			["name"] = "Blacksmithing: Darksoul Breastplate",
+			["name"] = "锻造: 黑暗之魂胸甲",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15494,7 +15494,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24140] = {
-			["name"] = "Blacksmithing: Darksoul Leggings",
+			["name"] = "锻造: 黑暗之魂护腿",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15509,7 +15509,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24141] = {
-			["name"] = "Blacksmithing: Darksoul Shoulders",
+			["name"] = "锻造: 黑暗之魂护肩",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15524,7 +15524,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23633] = {
-			["name"] = "Blacksmithing: Gloves of the Dawn",
+			["name"] = "锻造: 黎明手套",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15539,7 +15539,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[16987] = {
-			["name"] = "Blacksmithing: Darkspear",
+			["name"] = "锻造: 黑暗之矛",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15556,7 +15556,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[27585] = {
-			["name"] = "Blacksmithing: Heavy Obsidian Belt",
+			["name"] = "锻造: 重型黑曜石腰带",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15571,7 +15571,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9957] = {
-			["name"] = "Blacksmithing: Orcish War Leggings",
+			["name"] = "锻造: 兽人护腿",
 			["requires"] = AL["Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -15585,7 +15585,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2881] = {
-			["name"] = "Leatherworking: Light Leather",
+			["name"] = "制皮: 轻皮",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -15598,7 +15598,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2152] = {
-			["name"] = "Leatherworking: Light Armor Kit",
+			["name"] = "制皮: 轻型护甲片",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -15611,7 +15611,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2149] = {
-			["name"] = "Leatherworking: Handstitched Leather Boots",
+			["name"] = "制皮: 手工皮靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -15625,7 +15625,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9059] = {
-			["name"] = "Leatherworking: Handstitched Leather Bracers",
+			["name"] = "制皮: 手工皮护腕",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -15639,7 +15639,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9058] = {
-			["name"] = "Leatherworking: Handstitched Leather Cloak",
+			["name"] = "制皮: 手工皮披风",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -15653,7 +15653,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7126] = {
-			["name"] = "Leatherworking: Handstitched Leather Vest",
+			["name"] = "制皮: 手工皮外衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -15667,7 +15667,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2153] = {
-			["name"] = "Leatherworking: Handstitched Leather Pants",
+			["name"] = "制皮: 手工皮短裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -15681,7 +15681,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3753] = {
-			["name"] = "Leatherworking: Handstitched Leather Belt",
+			["name"] = "制皮: 手工皮带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -15695,7 +15695,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9060] = {
-			["name"] = "Leatherworking: Light Leather Quiver",
+			["name"] = "制皮: 轻皮箭袋",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -15709,7 +15709,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9062] = {
-			["name"] = "Leatherworking: Small Leather Ammo Pouch",
+			["name"] = "制皮: 皮质小弹药包",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -15723,7 +15723,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3816] = {
-			["name"] = "Leatherworking: Cured Light Hide",
+			["name"] = "制皮: 熟化轻毛皮",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -15737,7 +15737,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9064] = {
-			["name"] = "Leatherworking: Rugged Leather Pants",
+			["name"] = "制皮: 皱褶皮短裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -15751,7 +15751,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2160] = {
-			["name"] = "Leatherworking: Embossed Leather Vest",
+			["name"] = "制皮: 雕花皮外衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -15765,7 +15765,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[5244] = {
-			["name"] = "Leatherworking: Kodo Hide Bag",
+			["name"] = "制皮: 科多兽皮包",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -15780,7 +15780,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2161] = {
-			["name"] = "Leatherworking: Embossed Leather Boots",
+			["name"] = "制皮: 雕花皮靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -15794,7 +15794,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3756] = {
-			["name"] = "Leatherworking: Embossed Leather Gloves",
+			["name"] = "制皮: 雕花皮手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -15808,7 +15808,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2162] = {
-			["name"] = "Leatherworking: Embossed Leather Cloak",
+			["name"] = "制皮: 雕花皮质披风",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -15822,7 +15822,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2163] = {
-			["name"] = "Leatherworking: White Leather Jerkin",
+			["name"] = "制皮: 白色皮夹克",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -15837,7 +15837,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9065] = {
-			["name"] = "Leatherworking: Light Leather Bracers",
+			["name"] = "制皮: 轻皮护腕",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -15851,7 +15851,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3759] = {
-			["name"] = "Leatherworking: Embossed Leather Pants",
+			["name"] = "制皮: 雕花皮短裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -15866,7 +15866,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2164] = {
-			["name"] = "Leatherworking: Fine Leather Gloves",
+			["name"] = "制皮: 优质皮手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -15881,7 +15881,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3763] = {
-			["name"] = "Leatherworking: Fine Leather Belt",
+			["name"] = "制皮: 优质皮带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -15895,7 +15895,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2159] = {
-			["name"] = "Leatherworking: Fine Leather Cloak",
+			["name"] = "制皮: 优质皮披风",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -15909,7 +15909,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3761] = {
-			["name"] = "Leatherworking: Fine Leather Tunic",
+			["name"] = "制皮: 优质皮外套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -15924,7 +15924,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[8322] = {
-			["name"] = "Leatherworking: Moonglow Vest",
+			["name"] = "制皮: 月光外衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -15940,7 +15940,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7953] = {
-			["name"] = "Leatherworking: Deviate Scale Cloak",
+			["name"] = "制皮: 蛇鳞披风",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -15955,7 +15955,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6702] = {
-			["name"] = "Leatherworking: Murloc Scale Belt",
+			["name"] = "制皮: 鱼人鳞片腰带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -15970,7 +15970,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2158] = {
-			["name"] = "Leatherworking: Fine Leather Boots",
+			["name"] = "制皮: 优质皮靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -15984,7 +15984,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9068] = {
-			["name"] = "Leatherworking: Light Leather Pants",
+			["name"] = "制皮: 轻皮短裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -15999,7 +15999,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6703] = {
-			["name"] = "Leatherworking: Murloc Scale Breastplate",
+			["name"] = "制皮: 鱼人鳞片胸甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -16015,7 +16015,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[20648] = {
-			["name"] = "Leatherworking: Medium Leather",
+			["name"] = "制皮: 中皮",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -16028,7 +16028,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3817] = {
-			["name"] = "Leatherworking: Cured Medium Hide",
+			["name"] = "制皮: 熟化中毛皮",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -16042,7 +16042,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2165] = {
-			["name"] = "Leatherworking: Medium Armor Kit",
+			["name"] = "制皮: 中型护甲片",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -16056,7 +16056,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9070] = {
-			["name"] = "Leatherworking: Black Whelp Cloak",
+			["name"] = "制皮: 黑色雏龙披风",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -16071,7 +16071,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24940] = {
-			["name"] = "Leatherworking: Black Whelp Tunic",
+			["name"] = "制皮: 黑色雏龙外衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -16087,7 +16087,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2169] = {
-			["name"] = "Leatherworking: Dark Leather Tunic",
+			["name"] = "制皮: 黑皮外套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -16102,7 +16102,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3762] = {
-			["name"] = "Leatherworking: Hillman's Leather Vest",
+			["name"] = "制皮: 山地皮外衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -16117,7 +16117,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2167] = {
-			["name"] = "Leatherworking: Dark Leather Boots",
+			["name"] = "制皮: 黑皮战靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -16132,7 +16132,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7954] = {
-			["name"] = "Leatherworking: Deviate Scale Gloves",
+			["name"] = "制皮: 蛇鳞手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -16147,7 +16147,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7133] = {
-			["name"] = "Leatherworking: Fine Leather Pants",
+			["name"] = "制皮: 优质皮裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -16162,7 +16162,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2168] = {
-			["name"] = "Leatherworking: Dark Leather Cloak",
+			["name"] = "制皮: 黑皮披风",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -16177,7 +16177,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7955] = {
-			["name"] = "Leatherworking: Deviate Scale Belt",
+			["name"] = "制皮: 蛇鳞腰带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -16192,7 +16192,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7135] = {
-			["name"] = "Leatherworking: Dark Leather Pants",
+			["name"] = "制皮: 黑皮短裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -16207,7 +16207,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3767] = {
-			["name"] = "Leatherworking: Hillman's Belt",
+			["name"] = "制皮: 山地腰带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -16222,7 +16222,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9074] = {
-			["name"] = "Leatherworking: Nimble Leather Gloves",
+			["name"] = "制皮: 轻巧的皮手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -16237,7 +16237,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9072] = {
-			["name"] = "Leatherworking: Red Whelp Gloves",
+			["name"] = "制皮: 红色雏龙手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -16252,7 +16252,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[2166] = {
-			["name"] = "Leatherworking: Toughened Leather Armor",
+			["name"] = "制皮: 韧化皮甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -16267,7 +16267,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3765] = {
-			["name"] = "Leatherworking: Dark Leather Gloves",
+			["name"] = "制皮: 黑皮手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -16283,7 +16283,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3766] = {
-			["name"] = "Leatherworking: Dark Leather Belt",
+			["name"] = "制皮: 黑皮腰带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -16299,7 +16299,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9145] = {
-			["name"] = "Leatherworking: Fletcher's Gloves",
+			["name"] = "制皮: 造弓师手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -16314,7 +16314,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3768] = {
-			["name"] = "Leatherworking: Hillman's Shoulders",
+			["name"] = "制皮: 山地护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -16329,7 +16329,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3770] = {
-			["name"] = "Leatherworking: Toughened Leather Gloves",
+			["name"] = "制皮: 韧化皮手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -16346,7 +16346,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9147] = {
-			["name"] = "Leatherworking: Earthen Leather Shoulders",
+			["name"] = "制皮: 土灵皮护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -16361,7 +16361,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9146] = {
-			["name"] = "Leatherworking: Herbalist's Gloves",
+			["name"] = "制皮: 采药人手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -16376,7 +16376,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3769] = {
-			["name"] = "Leatherworking: Dark Leather Shoulders",
+			["name"] = "制皮: 黑皮护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -16392,7 +16392,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9148] = {
-			["name"] = "Leatherworking: Pilferer's Gloves",
+			["name"] = "制皮: 窃贼手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -16407,7 +16407,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9149] = {
-			["name"] = "Leatherworking: Heavy Earthen Gloves",
+			["name"] = "制皮: 重型土灵手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -16423,7 +16423,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3764] = {
-			["name"] = "Leatherworking: Hillman's Leather Gloves",
+			["name"] = "制皮: 山地皮手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -16437,7 +16437,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[20649] = {
-			["name"] = "Leatherworking: Heavy Leather",
+			["name"] = "制皮: 重皮",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -16450,7 +16450,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23190] = {
-			["name"] = "Leatherworking: Heavy Leather Ball",
+			["name"] = "制皮: 重皮球",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -16464,7 +16464,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3818] = {
-			["name"] = "Leatherworking: Cured Heavy Hide",
+			["name"] = "制皮: 熟化重毛皮",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -16478,7 +16478,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3771] = {
-			["name"] = "Leatherworking: Barbaric Gloves",
+			["name"] = "制皮: 野人手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -16493,7 +16493,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9194] = {
-			["name"] = "Leatherworking: Heavy Leather Ammo Pouch",
+			["name"] = "制皮: 重皮弹药包",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -16507,7 +16507,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9193] = {
-			["name"] = "Leatherworking: Heavy Quiver",
+			["name"] = "制皮: 重型箭袋",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -16521,7 +16521,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3780] = {
-			["name"] = "Leatherworking: Heavy Armor Kit",
+			["name"] = "制皮: 重型护甲片",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -16535,7 +16535,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3760] = {
-			["name"] = "Leatherworking: Hillman's Cloak",
+			["name"] = "制皮: 山地披风",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -16549,7 +16549,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23399] = {
-			["name"] = "Leatherworking: Barbaric Bracers",
+			["name"] = "制皮: 野人护腕",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -16566,7 +16566,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3772] = {
-			["name"] = "Leatherworking: Green Leather Armor",
+			["name"] = "制皮: 绿色皮甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -16581,7 +16581,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3774] = {
-			["name"] = "Leatherworking: Green Leather Belt",
+			["name"] = "制皮: 绿色皮带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -16598,7 +16598,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7147] = {
-			["name"] = "Leatherworking: Guardian Pants",
+			["name"] = "制皮: 守护短裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -16613,7 +16613,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9195] = {
-			["name"] = "Leatherworking: Dusky Leather Leggings",
+			["name"] = "制皮: 暗色皮护腿",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -16628,7 +16628,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[4097] = {
-			["name"] = "Leatherworking: Raptor Hide Belt",
+			["name"] = "制皮: 迅猛龙皮腰带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -16643,7 +16643,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[4096] = {
-			["name"] = "Leatherworking: Raptor Hide Harness",
+			["name"] = "制皮: 迅猛龙皮背心",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -16658,7 +16658,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7149] = {
-			["name"] = "Leatherworking: Barbaric Leggings",
+			["name"] = "制皮: 野人护腿",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -16673,7 +16673,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3775] = {
-			["name"] = "Leatherworking: Guardian Belt",
+			["name"] = "制皮: 守护腰带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -16689,7 +16689,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6704] = {
-			["name"] = "Leatherworking: Thick Murloc Armor",
+			["name"] = "制皮: 厚鱼人皮甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -16705,7 +16705,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7151] = {
-			["name"] = "Leatherworking: Barbaric Shoulders",
+			["name"] = "制皮: 野人护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -16720,7 +16720,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9196] = {
-			["name"] = "Leatherworking: Dusky Leather Armor",
+			["name"] = "制皮: 暗色皮甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -16735,7 +16735,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9197] = {
-			["name"] = "Leatherworking: Green Whelp Armor",
+			["name"] = "制皮: 绿色幼龙护甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -16750,7 +16750,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3773] = {
-			["name"] = "Leatherworking: Guardian Armor",
+			["name"] = "制皮: 守护之甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -16766,7 +16766,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9198] = {
-			["name"] = "Leatherworking: Frost Leather Cloak",
+			["name"] = "制皮: 冰霜皮质披风",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -16782,7 +16782,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3776] = {
-			["name"] = "Leatherworking: Green Leather Bracers",
+			["name"] = "制皮: 绿色皮护腕",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -16798,7 +16798,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3778] = {
-			["name"] = "Leatherworking: Gem-studded Leather Belt",
+			["name"] = "制皮: 宝石皮带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -16815,7 +16815,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9201] = {
-			["name"] = "Leatherworking: Dusky Bracers",
+			["name"] = "制皮: 暗色护腕",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -16830,7 +16830,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7153] = {
-			["name"] = "Leatherworking: Guardian Cloak",
+			["name"] = "制皮: 守护披风",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -16845,7 +16845,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[21943] = {
-			["name"] = "Leatherworking: Gloves of the Greatfather",
+			["name"] = "制皮: 冬天爷爷的手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -16860,7 +16860,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9202] = {
-			["name"] = "Leatherworking: Green Whelp Bracers",
+			["name"] = "制皮: 绿色幼龙护腕",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -16875,7 +16875,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6705] = {
-			["name"] = "Leatherworking: Murloc Scale Bracers",
+			["name"] = "制皮: 鱼人鳞片护腕",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -16891,7 +16891,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[6661] = {
-			["name"] = "Leatherworking: Barbaric Harness",
+			["name"] = "制皮: 野人背心",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -16906,7 +16906,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[7156] = {
-			["name"] = "Leatherworking: Guardian Gloves",
+			["name"] = "制皮: 守护手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -16921,7 +16921,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9206] = {
-			["name"] = "Leatherworking: Dusky Belt",
+			["name"] = "制皮: 暗色皮带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -16937,7 +16937,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3777] = {
-			["name"] = "Leatherworking: Guardian Leather Bracers",
+			["name"] = "制皮: 守护腕甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -16952,7 +16952,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10482] = {
-			["name"] = "Leatherworking: Cured Thick Hide",
+			["name"] = "制皮: 熟化厚毛皮",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -16966,7 +16966,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[20650] = {
-			["name"] = "Leatherworking: Thick Leather",
+			["name"] = "制皮: 厚皮",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -16979,7 +16979,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[22711] = {
-			["name"] = "Leatherworking: Shadowskin Gloves",
+			["name"] = "制皮: 影皮手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -16997,7 +16997,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[3779] = {
-			["name"] = "Leatherworking: Barbaric Belt",
+			["name"] = "制皮: 野人腰带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -17015,7 +17015,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46620] = {
-			["name"] = "Leatherworking: Grifter's Boots",
+			["name"] = "制皮: 骗子之靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 10,
@@ -17029,7 +17029,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46621] = {
-			["name"] = "Leatherworking: Grifter's Gauntlets",
+			["name"] = "制皮: 骗子护手",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 10,
@@ -17043,7 +17043,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46622] = {
-			["name"] = "Leatherworking: Grifter's Belt",
+			["name"] = "制皮: 骗子腰带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 10,
@@ -17058,7 +17058,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46623] = {
-			["name"] = "Leatherworking: Grifter's Leggings",
+			["name"] = "制皮: 骗子护腿",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 10,
@@ -17074,7 +17074,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46624] = {
-			["name"] = "Leatherworking: Grifter's Tunic",
+			["name"] = "制皮: 骗子外套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 10,
@@ -17090,7 +17090,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46625] = {
-			["name"] = "Leatherworking: Grifter's Cover",
+			["name"] = "制皮: 骗子面罩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 10,
@@ -17106,7 +17106,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10490] = {
-			["name"] = "Leatherworking: Comfortable Leather Hat",
+			["name"] = "制皮: 舒适的皮帽",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -17121,7 +17121,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[47015] = {
-			["name"] = "Leatherworking: Primalist's Gloves",
+			["name"] = "制皮: 原始主义者手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 10,
@@ -17136,7 +17136,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[47016] = {
-			["name"] = "Leatherworking: Primalist's Shoulders",
+			["name"] = "制皮: 原始主义者护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 10,
@@ -17151,7 +17151,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[47017] = {
-			["name"] = "Leatherworking: Primalist's Headdress",
+			["name"] = "制皮: 原始主义者头饰",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 10,
@@ -17167,7 +17167,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[47018] = {
-			["name"] = "Leatherworking: Primalist's Pants",
+			["name"] = "制皮: 原始主义者裤子",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 10,
@@ -17182,7 +17182,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[47019] = {
-			["name"] = "Leatherworking: Primalist's Vest",
+			["name"] = "制皮: 原始主义者外衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 10,
@@ -17198,7 +17198,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[47020] = {
-			["name"] = "Leatherworking: Primalist's Boots",
+			["name"] = "制皮: 原始主义者靴子",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 10,
@@ -17213,7 +17213,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9207] = {
-			["name"] = "Leatherworking: Dusky Boots",
+			["name"] = "制皮: 暗色长靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -17229,7 +17229,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[9208] = {
-			["name"] = "Leatherworking: Swift Boots",
+			["name"] = "制皮: 迅捷之靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -17245,7 +17245,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10487] = {
-			["name"] = "Leatherworking: Thick Armor Kit",
+			["name"] = "制皮: 厚重护甲片",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 5.125,
@@ -17259,7 +17259,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10507] = {
-			["name"] = "Leatherworking: Nightscape Headband",
+			["name"] = "制皮: 夜色头带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17273,7 +17273,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10499] = {
-			["name"] = "Leatherworking: Nightscape Tunic",
+			["name"] = "制皮: 夜色外套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17287,7 +17287,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10509] = {
-			["name"] = "Leatherworking: Turtle Scale Gloves",
+			["name"] = "制皮: 龟壳手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -17302,7 +17302,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10516] = {
-			["name"] = "Leatherworking: Nightscape Shoulders",
+			["name"] = "制皮: 夜色护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 45,
@@ -17317,7 +17317,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10518] = {
-			["name"] = "Leatherworking: Turtle Scale Bracers",
+			["name"] = "制皮: 龟壳护腕",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17332,7 +17332,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10511] = {
-			["name"] = "Leatherworking: Turtle Scale Breastplate",
+			["name"] = "制皮: 龟壳胸甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17347,7 +17347,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10520] = {
-			["name"] = "Leatherworking: Big Voodoo Robe",
+			["name"] = "制皮: 巫毒长袍",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17362,7 +17362,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10531] = {
-			["name"] = "Leatherworking: Big Voodoo Mask",
+			["name"] = "制皮: 巫毒面具",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17377,7 +17377,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10533] = {
-			["name"] = "Leatherworking: Tough Scorpid Bracers",
+			["name"] = "制皮: 硬化蝎壳护腕",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17392,7 +17392,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10525] = {
-			["name"] = "Leatherworking: Tough Scorpid Breastplate",
+			["name"] = "制皮: 硬化蝎壳胸甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17407,7 +17407,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10529] = {
-			["name"] = "Leatherworking: Wild Leather Shoulders",
+			["name"] = "制皮: 蛮皮护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17423,7 +17423,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[14930] = {
-			["name"] = "Leatherworking: Quickdraw Quiver",
+			["name"] = "制皮: 快捷箭袋",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -17439,7 +17439,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[14932] = {
-			["name"] = "Leatherworking: Thick Leather Ammo Pouch",
+			["name"] = "制皮: 厚皮弹药包",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -17455,7 +17455,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10542] = {
-			["name"] = "Leatherworking: Tough Scorpid Gloves",
+			["name"] = "制皮: 硬化蝎壳手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17470,7 +17470,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10546] = {
-			["name"] = "Leatherworking: Wild Leather Helmet",
+			["name"] = "制皮: 蛮皮头盔",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17486,7 +17486,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10544] = {
-			["name"] = "Leatherworking: Wild Leather Vest",
+			["name"] = "制皮: 蛮皮外衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17502,7 +17502,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10548] = {
-			["name"] = "Leatherworking: Nightscape Pants",
+			["name"] = "制皮: 夜色短裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17516,7 +17516,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10552] = {
-			["name"] = "Leatherworking: Turtle Scale Helm",
+			["name"] = "制皮: 龟壳头盔",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17531,7 +17531,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10558] = {
-			["name"] = "Leatherworking: Nightscape Boots",
+			["name"] = "制皮: 夜色长靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17545,7 +17545,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10554] = {
-			["name"] = "Leatherworking: Tough Scorpid Boots",
+			["name"] = "制皮: 硬化蝎壳战靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17560,7 +17560,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10556] = {
-			["name"] = "Leatherworking: Turtle Scale Leggings",
+			["name"] = "制皮: 龟壳护腿",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17575,7 +17575,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10562] = {
-			["name"] = "Leatherworking: Big Voodoo Cloak",
+			["name"] = "制皮: 巫毒披风",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17590,7 +17590,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10560] = {
-			["name"] = "Leatherworking: Big Voodoo Pants",
+			["name"] = "制皮: 巫毒短裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17605,7 +17605,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10564] = {
-			["name"] = "Leatherworking: Tough Scorpid Shoulders",
+			["name"] = "制皮: 硬化蝎壳护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17620,7 +17620,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10568] = {
-			["name"] = "Leatherworking: Tough Scorpid Leggings",
+			["name"] = "制皮: 硬化蝎壳护腿",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17635,7 +17635,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10566] = {
-			["name"] = "Leatherworking: Wild Leather Boots",
+			["name"] = "制皮: 蛮皮战靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17651,7 +17651,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[22331] = {
-			["name"] = "Leatherworking: Rugged Leather",
+			["name"] = "制皮: 硬甲皮",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 8,
@@ -17664,7 +17664,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19047] = {
-			["name"] = "Leatherworking: Cured Rugged Hide",
+			["name"] = "制皮: 熟化毛皮",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 12.5,
@@ -17678,7 +17678,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19058] = {
-			["name"] = "Leatherworking: Rugged Armor Kit",
+			["name"] = "制皮: 毛皮护甲片",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17691,7 +17691,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10570] = {
-			["name"] = "Leatherworking: Tough Scorpid Helm",
+			["name"] = "制皮: 硬化蝎壳头盔",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17706,7 +17706,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10574] = {
-			["name"] = "Leatherworking: Wild Leather Cloak",
+			["name"] = "制皮: 蛮皮披风",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17722,7 +17722,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10572] = {
-			["name"] = "Leatherworking: Wild Leather Leggings",
+			["name"] = "制皮: 蛮皮护腿",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17738,7 +17738,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19048] = {
-			["name"] = "Leatherworking: Heavy Scorpid Bracers",
+			["name"] = "制皮: 重型蝎壳护腕",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17753,7 +17753,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19049] = {
-			["name"] = "Leatherworking: Wicked Leather Gauntlets",
+			["name"] = "制皮: 邪恶皮甲护手",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17768,7 +17768,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19051] = {
-			["name"] = "Leatherworking: Heavy Scorpid Vest",
+			["name"] = "制皮: 重型蝎壳外衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17783,7 +17783,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19052] = {
-			["name"] = "Leatherworking: Wicked Leather Bracers",
+			["name"] = "制皮: 邪恶皮甲护腕",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17798,7 +17798,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19055] = {
-			["name"] = "Leatherworking: Runic Leather Gauntlets",
+			["name"] = "制皮: 符文皮甲护手",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17813,7 +17813,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[22815] = {
-			["name"] = "Leatherworking: Gordok Ogre Suit",
+			["name"] = "制皮: 戈多克食人魔装",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17829,7 +17829,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19064] = {
-			["name"] = "Leatherworking: Heavy Scorpid Gauntlets",
+			["name"] = "制皮: 重型蝎壳护手",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17844,7 +17844,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19065] = {
-			["name"] = "Leatherworking: Runic Leather Bracers",
+			["name"] = "制皮: 符文皮甲护腕",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17860,7 +17860,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19070] = {
-			["name"] = "Leatherworking: Heavy Scorpid Belt",
+			["name"] = "制皮: 重型蝎壳腰带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17875,7 +17875,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19072] = {
-			["name"] = "Leatherworking: Runic Leather Belt",
+			["name"] = "制皮: 符文皮甲腰带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17890,7 +17890,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19071] = {
-			["name"] = "Leatherworking: Wicked Leather Headband",
+			["name"] = "制皮: 邪恶皮甲头环",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17905,7 +17905,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19079] = {
-			["name"] = "Leatherworking: Stormshroud Armor",
+			["name"] = "制皮: 雷暴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17922,7 +17922,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19075] = {
-			["name"] = "Leatherworking: Heavy Scorpid Leggings",
+			["name"] = "制皮: 重型蝎壳护腿",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17937,7 +17937,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23705] = {
-			["name"] = "Leatherworking: Dawn Treaders",
+			["name"] = "制皮: 黎明皮靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17954,7 +17954,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23703] = {
-			["name"] = "Leatherworking: Might of the Timbermaw",
+			["name"] = "制皮: 木喉之力",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17971,7 +17971,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19082] = {
-			["name"] = "Leatherworking: Runic Leather Headband",
+			["name"] = "制皮: 符文皮甲头环",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -17986,7 +17986,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19083] = {
-			["name"] = "Leatherworking: Wicked Leather Pants",
+			["name"] = "制皮: 邪恶皮甲短裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18002,7 +18002,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19090] = {
-			["name"] = "Leatherworking: Stormshroud Shoulders",
+			["name"] = "制皮: 雷暴护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18019,7 +18019,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19088] = {
-			["name"] = "Leatherworking: Heavy Scorpid Helm",
+			["name"] = "制皮: 重型蝎壳头盔",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18035,7 +18035,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[28224] = {
-			["name"] = "Leatherworking: Icy Scale Bracers",
+			["name"] = "制皮: 寒鳞护腕",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18052,7 +18052,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[28222] = {
-			["name"] = "Leatherworking: Icy Scale Breastplate",
+			["name"] = "制皮: 寒鳞胸甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18069,7 +18069,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[28223] = {
-			["name"] = "Leatherworking: Icy Scale Gauntlets",
+			["name"] = "制皮: 寒鳞护手",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18086,7 +18086,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23707] = {
-			["name"] = "Leatherworking: Lava Belt",
+			["name"] = "制皮: 熔岩腰带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18101,7 +18101,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[28221] = {
-			["name"] = "Leatherworking: Polar Bracers",
+			["name"] = "制皮: 北极护腕",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18118,7 +18118,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[28220] = {
-			["name"] = "Leatherworking: Polar Gloves",
+			["name"] = "制皮: 北极手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18135,7 +18135,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[28219] = {
-			["name"] = "Leatherworking: Polar Tunic",
+			["name"] = "制皮: 北极外套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18152,7 +18152,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57115] = {
-			["name"] = "Leatherworking: Enchanted Armor Kit",
+			["name"] = "制皮: 魔法盔甲套件",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -18167,7 +18167,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[45483] = {
-			["name"] = "Leatherworking: Inscribed Runic Bracers",
+			["name"] = "制皮: 铭刻符文护腕",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18184,7 +18184,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[45473] = {
-			["name"] = "Leatherworking: Dreamhide Mantle",
+			["name"] = "制皮: 梦皮衬肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18200,7 +18200,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[45475] = {
-			["name"] = "Leatherworking: Dreamhide Bracers",
+			["name"] = "制皮: 梦皮护腕",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18216,7 +18216,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[45477] = {
-			["name"] = "Leatherworking: Dreamhide Leggings",
+			["name"] = "制皮: 梦皮护腿",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18233,7 +18233,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[45479] = {
-			["name"] = "Leatherworking: Dreamhide Belt",
+			["name"] = "制皮: 梦皮腰带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18250,7 +18250,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[54013] = {
-			["name"] = "Leatherworking: Chromatic Leggings",
+			["name"] = "制皮: 彩色护腿",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18268,7 +18268,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[54015] = {
-			["name"] = "Leatherworking: Chromatic Leggings",
+			["name"] = "制皮: 彩色护腿",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18286,7 +18286,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[54007] = {
-			["name"] = "Leatherworking: Corehound Gloves",
+			["name"] = "制皮: 猎犬手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18304,7 +18304,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24124] = {
-			["name"] = "Leatherworking: Blood Tiger Breastplate",
+			["name"] = "制皮: 血虎胸甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18320,7 +18320,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24125] = {
-			["name"] = "Leatherworking: Blood Tiger Shoulders",
+			["name"] = "制皮: 血虎护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18336,7 +18336,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[28474] = {
-			["name"] = "Leatherworking: Bramblewood Belt",
+			["name"] = "制皮: 荆木腰带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18351,7 +18351,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[28473] = {
-			["name"] = "Leatherworking: Bramblewood Boots",
+			["name"] = "制皮: 荆木长靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18367,7 +18367,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[28472] = {
-			["name"] = "Leatherworking: Bramblewood Helm",
+			["name"] = "制皮: 荆木头盔",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18383,7 +18383,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[22727] = {
-			["name"] = "Leatherworking: Core Armor Kit",
+			["name"] = "制皮: 熔火护甲片",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 25,
@@ -18397,7 +18397,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[22921] = {
-			["name"] = "Leatherworking: Girdle of Insight",
+			["name"] = "制皮: 洞察束带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18413,7 +18413,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23706] = {
-			["name"] = "Leatherworking: Golden Mantle of the Dawn",
+			["name"] = "制皮: 金色黎明衬肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18430,7 +18430,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[22922] = {
-			["name"] = "Leatherworking: Mongoose Boots",
+			["name"] = "制皮: 猫鼬长靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18447,7 +18447,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19093] = {
-			["name"] = "Leatherworking: Onyxia Scale Cloak",
+			["name"] = "制皮: 奥妮克希亚鳞片披风",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18462,7 +18462,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24123] = {
-			["name"] = "Leatherworking: Primal Batskin Bracers",
+			["name"] = "制皮: 原始蝙蝠皮护腕",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18478,7 +18478,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24122] = {
-			["name"] = "Leatherworking: Primal Batskin Gloves",
+			["name"] = "制皮: 原始蝙蝠皮手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18494,7 +18494,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24121] = {
-			["name"] = "Leatherworking: Primal Batskin Jerkin",
+			["name"] = "制皮: 原始蝙蝠皮外套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18510,7 +18510,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24849] = {
-			["name"] = "Leatherworking: Sandstalker Bracers",
+			["name"] = "制皮: 沙行者护腕",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18525,7 +18525,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24851] = {
-			["name"] = "Leatherworking: Sandstalker Breastplate",
+			["name"] = "制皮: 沙行者胸甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18541,7 +18541,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57022] = {
-			["name"] = "Leatherworking: Centaur Battle Harness",
+			["name"] = "制皮: 半人马战甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18557,7 +18557,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},		
 		[24850] = {
-			["name"] = "Leatherworking: Sandstalker Gauntlets",
+			["name"] = "制皮: 沙行者护手",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18573,7 +18573,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24846] = {
-			["name"] = "Leatherworking: Spitfire Bracers",
+			["name"] = "制皮: 飞火护腕",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18588,7 +18588,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24848] = {
-			["name"] = "Leatherworking: Spitfire Breastplate",
+			["name"] = "制皮: 飞火胸甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18604,7 +18604,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24847] = {
-			["name"] = "Leatherworking: Spitfire Gauntlets",
+			["name"] = "制皮: 飞火护手",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18620,7 +18620,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[26279] = {
-			["name"] = "Leatherworking: Stormshroud Gloves",
+			["name"] = "制皮: 雷暴手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18637,7 +18637,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[22923] = {
-			["name"] = "Leatherworking: Swift Flight Bracers",
+			["name"] = "制皮: 迅行护腕",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18654,7 +18654,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23704] = {
-			["name"] = "Leatherworking: Timbermaw Brawlers",
+			["name"] = "制皮: 木喉作战手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18671,7 +18671,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19100] = {
-			["name"] = "Leatherworking: Heavy Scorpid Shoulders",
+			["name"] = "制皮: 重型蝎壳护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18687,7 +18687,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19102] = {
-			["name"] = "Leatherworking: Runic Leather Armor",
+			["name"] = "制皮: 符文皮甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18704,7 +18704,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19091] = {
-			["name"] = "Leatherworking: Runic Leather Pants",
+			["name"] = "制皮: 符文皮甲短裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18720,7 +18720,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19103] = {
-			["name"] = "Leatherworking: Runic Leather Shoulders",
+			["name"] = "制皮: 符文皮甲护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18737,7 +18737,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19098] = {
-			["name"] = "Leatherworking: Wicked Leather Armor",
+			["name"] = "制皮: 邪恶皮甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18754,7 +18754,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19092] = {
-			["name"] = "Leatherworking: Wicked Leather Belt",
+			["name"] = "制皮: 邪恶皮甲腰带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18769,7 +18769,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10619] = {
-			["name"] = "Leatherworking: Dragonscale Gauntlets",
+			["name"] = "制皮: 龙鳞护手",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18785,7 +18785,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10650] = {
-			["name"] = "Leatherworking: Dragonscale Breastplate",
+			["name"] = "制皮: 龙鳞胸甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18801,7 +18801,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19050] = {
-			["name"] = "Leatherworking: Green Dragonscale Breastplate",
+			["name"] = "制皮: 绿龙鳞片胸甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18816,7 +18816,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19060] = {
-			["name"] = "Leatherworking: Green Dragonscale Leggings",
+			["name"] = "制皮: 绿龙鳞片护腿",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18831,7 +18831,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24655] = {
-			["name"] = "Leatherworking: Green Dragonscale Gauntlets",
+			["name"] = "制皮: 绿色龙鳞护手",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18847,7 +18847,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19077] = {
-			["name"] = "Leatherworking: Blue Dragonscale Breastplate",
+			["name"] = "制皮: 蓝龙鳞片胸甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18863,7 +18863,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19085] = {
-			["name"] = "Leatherworking: Black Dragonscale Breastplate",
+			["name"] = "制皮: 黑色龙鳞胸甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18879,7 +18879,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19089] = {
-			["name"] = "Leatherworking: Blue Dragonscale Shoulders",
+			["name"] = "制皮: 蓝龙鳞片护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18896,7 +18896,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46655] = {
-			["name"] = "Leatherworking: Red Dragonscale Boots",
+			["name"] = "制皮: 红色龙鳞长靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18913,7 +18913,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46659] = {
-			["name"] = "Leatherworking: Stormscale Leggings",
+			["name"] = "制皮: 风暴鳞片护腿",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18931,7 +18931,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46695] = {
-			["name"] = "Leatherworking: Dragonscale Leggings",
+			["name"] = "制皮: 龙鳞护腿",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 10,
@@ -18947,7 +18947,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[47035] = {
-			["name"] = "Leatherworking: Verdant Dreamer's Breastplate",
+			["name"] = "制皮: 青翠梦游者胸甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 10,
@@ -18965,7 +18965,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46654] = {
-			["name"] = "Leatherworking: Red Dragonscale Shoulders",
+			["name"] = "制皮: 红色龙鳞护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18982,7 +18982,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46653] = {
-			["name"] = "Leatherworking: Red Dragonscale Leggings",
+			["name"] = "制皮: 红色龙鳞护腿",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -18999,7 +18999,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24654] = {
-			["name"] = "Leatherworking: Blue Dragonscale Leggings",
+			["name"] = "制皮: 蓝龙鳞片护腿",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19015,7 +19015,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19107] = {
-			["name"] = "Leatherworking: Black Dragonscale Leggings",
+			["name"] = "制皮: 黑色龙鳞护腿",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19032,7 +19032,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19094] = {
-			["name"] = "Leatherworking: Black Dragonscale Shoulders",
+			["name"] = "制皮: 黑色龙鳞护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19049,7 +19049,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19054] = {
-			["name"] = "Leatherworking: Red Dragonscale Breastplate",
+			["name"] = "制皮: 红龙鳞片胸甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19064,7 +19064,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[20855] = {
-			["name"] = "Leatherworking: Black Dragonscale Boots",
+			["name"] = "制皮: 黑色龙鳞战靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19081,7 +19081,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[22926] = {
-			["name"] = "Leatherworking: Chromatic Cloak",
+			["name"] = "制皮: 多彩披风",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19099,7 +19099,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23708] = {
-			["name"] = "Leatherworking: Chromatic Gauntlets",
+			["name"] = "制皮: 多彩护手",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19117,7 +19117,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[24703] = {
-			["name"] = "Leatherworking: Dreamscale Breastplate",
+			["name"] = "制皮: 梦幻龙鳞胸甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19134,7 +19134,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10630] = {
-			["name"] = "Leatherworking: Gauntlets of the Sea",
+			["name"] = "制皮: 深海护手",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19151,7 +19151,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10632] = {
-			["name"] = "Leatherworking: Helm of Fire",
+			["name"] = "制皮: 火焰头盔",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19168,7 +19168,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57010] = {
-			["name"] = "Leatherworking: Boots of the Wind",
+			["name"] = "制皮: 风之靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19184,7 +19184,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19059] = {
-			["name"] = "Leatherworking: Volcanic Leggings",
+			["name"] = "制皮: 火山护腿",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19200,7 +19200,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19061] = {
-			["name"] = "Leatherworking: Living Shoulders",
+			["name"] = "制皮: 生命护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19215,7 +19215,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19067] = {
-			["name"] = "Leatherworking: Stormshroud Pants",
+			["name"] = "制皮: 雷暴短裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19231,7 +19231,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19078] = {
-			["name"] = "Leatherworking: Living Leggings",
+			["name"] = "制皮: 生命护腿",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19247,7 +19247,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19076] = {
-			["name"] = "Leatherworking: Volcanic Breastplate",
+			["name"] = "制皮: 火山胸甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19263,7 +19263,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19079] = {
-			["name"] = "Leatherworking: Stormshroud Armor",
+			["name"] = "制皮: 雷暴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19280,7 +19280,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19090] = {
-			["name"] = "Leatherworking: Stormshroud Shoulders",
+			["name"] = "制皮: 雷暴护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19297,7 +19297,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[26279] = {
-			["name"] = "Leatherworking: Stormshroud Gloves",
+			["name"] = "制皮: 雷暴手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19314,7 +19314,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19101] = {
-			["name"] = "Leatherworking: Volcanic Shoulders",
+			["name"] = "制皮: 火山护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19330,7 +19330,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19095] = {
-			["name"] = "Leatherworking: Living Breastplate",
+			["name"] = "制皮: 生命胸甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19347,7 +19347,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23710] = {
-			["name"] = "Leatherworking: Molten Belt",
+			["name"] = "制皮: 熔火腰带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19364,7 +19364,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[20854] = {
-			["name"] = "Leatherworking: Molten Helm",
+			["name"] = "制皮: 熔铸头盔",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19380,7 +19380,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[22928] = {
-			["name"] = "Leatherworking: Shifting Cloak",
+			["name"] = "制皮: 移形披风",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19398,7 +19398,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57012] = {
-			["name"] = "Leatherworking: Earthguard Tunic",
+			["name"] = "制皮: 大地卫士外套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19417,7 +19417,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57016] = {
-			["name"] = "Leatherworking: Depthstalker Helm",
+			["name"] = "制皮: 深渊追猎者头盔",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19436,7 +19436,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57014] = {
-			["name"] = "Leatherworking: Flamewrath Leggings",
+			["name"] = "制皮: 火怒护腿",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19455,7 +19455,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57018] = {
-			["name"] = "Leatherworking: Windwalker Boots",
+			["name"] = "制皮: 踏风靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19474,7 +19474,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10621] = {
-			["name"] = "Leatherworking: Wolfshead Helm",
+			["name"] = "制皮: 狼头之盔",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19491,7 +19491,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[10647] = {
-			["name"] = "Leatherworking: Feathered Breastplate",
+			["name"] = "制皮: 羽饰胸甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19508,7 +19508,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19053] = {
-			["name"] = "Leatherworking: Chimeric Gloves",
+			["name"] = "制皮: 奇美拉手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19523,7 +19523,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19062] = {
-			["name"] = "Leatherworking: Ironfeather Shoulders",
+			["name"] = "制皮: 铁羽护肩",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19539,7 +19539,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19068] = {
-			["name"] = "Leatherworking: Warbear Harness",
+			["name"] = "制皮: 战熊背心",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19554,7 +19554,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19063] = {
-			["name"] = "Leatherworking: Chimeric Boots",
+			["name"] = "制皮: 奇美拉长靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19569,7 +19569,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19066] = {
-			["name"] = "Leatherworking: Frostsaber Boots",
+			["name"] = "制皮: 霜刃长靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19584,7 +19584,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19073] = {
-			["name"] = "Leatherworking: Chimeric Leggings",
+			["name"] = "制皮: 奇美拉护腿",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19599,7 +19599,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19080] = {
-			["name"] = "Leatherworking: Warbear Woolies",
+			["name"] = "制皮: 战熊热裤",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19614,7 +19614,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19074] = {
-			["name"] = "Leatherworking: Frostsaber Leggings",
+			["name"] = "制皮: 霜刃护腿",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19629,7 +19629,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19086] = {
-			["name"] = "Leatherworking: Ironfeather Breastplate",
+			["name"] = "制皮: 铁羽胸甲",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19646,7 +19646,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19081] = {
-			["name"] = "Leatherworking: Chimeric Vest",
+			["name"] = "制皮: 奇美拉外衣",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19661,7 +19661,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19084] = {
-			["name"] = "Leatherworking: Devilsaur Gauntlets",
+			["name"] = "制皮: 魔暴龙皮手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19676,7 +19676,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19087] = {
-			["name"] = "Leatherworking: Frostsaber Gloves",
+			["name"] = "制皮: 霜刃手套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19691,7 +19691,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[20853] = {
-			["name"] = "Leatherworking: Corehound Boots",
+			["name"] = "制皮: 熔岩犬皮靴",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19707,7 +19707,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19097] = {
-			["name"] = "Leatherworking: Devilsaur Leggings",
+			["name"] = "制皮: 魔暴龙皮护腿",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19723,7 +19723,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[19104] = {
-			["name"] = "Leatherworking: Frostsaber Tunic",
+			["name"] = "制皮: 霜刃外套",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19739,7 +19739,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[23709] = {
-			["name"] = "Leatherworking: Corehound Belt",
+			["name"] = "制皮: 熔火犬皮腰带",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19756,7 +19756,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[22927] = {
-			["name"] = "Leatherworking: Hide of the Wild",
+			["name"] = "制皮: 野性之皮",
 			["requires"] = "",
 			["tools"] = "",
 			["castTime"] = 60,
@@ -19774,7 +19774,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[57196] = {
-			["name"] = "Bloody Belt Buckle",
+			["name"] = "血淋淋的皮带扣",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,
@@ -19789,7 +19789,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[46657] = {
-			["name"] = "Ornate Bloodstone Dagger",
+			["name"] = "精制血石匕首",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 60,

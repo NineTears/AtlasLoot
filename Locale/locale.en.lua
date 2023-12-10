@@ -2958,7 +2958,7 @@ AL:RegisterTranslations("enUS", function() return {
     ["WSG 50-59 Exalted Rewards"] = "战歌峡谷 50-59 崇拜奖励",
     ["WSG 60 Exalted Rewards"] = "战歌峡谷 60 崇拜奖励",
   
-        ["Neutral"] = "中立",
+    ["Neutral"] = "中立",
     ["Friendly"] = "友善",
     ["Honored"] = "尊敬",
     ["Revered"] = "崇敬",
@@ -3182,6 +3182,7 @@ AL:RegisterTranslations("enUS", function() return {
     ["|cffffffff[??]|cffffd200 M-0L1Y |cffffffff(???)"] = "|cffffffff[??]|CFF00FF00 M-0L1Y |cffffffff(???)",
 
     --专业技能增补汉化，wind
+    ["Back2"] = "返回",
     [" sec cast"] = " 秒施法时间",
     ["Reagents: "] = "需要: ",
     ["Tools: "] = "工具: ",

@@ -1737,13 +1737,13 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s100018", "inv_ore_thorium_02", "=ds=软泥覆盖的富瑟银矿", "=ds=#sr# =so1=275 =so2=300 =so3=325 =so4=365" },
 		{ "s100019", "inv_ore_thorium_02", "=ds=哈卡莱瑟银矿", "=ds=#sr# =so1=275 =so2=300 =so3=325 =so4=350" },
 		{ "s100020", "inv_misc_gem_01", "=ds=哈卡莱瑟银矿", "=ds=#sr# =so1=275 =so2=300 =so3=325 =so4=350" },
-		{ "s100021", "inv_misc_stonetablet_01", "=ds=小型黑曜石碎块", "=ds=#sr# =so1=305 =so2=330 =so3=355 =so4=370" },
-		{ "s100022", "inv_stone_15", "=ds=小型黑曜石碎块", "=ds=#sr# =so1=305 =so2=330 =so3=355 =so4=370" },
+		{ "s100021", "inv_misc_stonetablet_01", "=ds=小黑曜石块", "=ds=#sr# =so1=305 =so2=330 =so3=355 =so4=370" },
+		{ "s100022", "inv_stone_15", "=ds=小黑曜石块", "=ds=#sr# =so1=305 =so2=330 =so3=355 =so4=370" },
 	};
 
 	Mining2 = {
-		{ "s100023", "inv_misc_stonetablet_01", "=ds=大型黑曜石碎块", "=ds=#sr# =so1=305 =so2=330 =so3=355 =so4=370" },
-		{ "s100024", "inv_stone_15", "=ds=大型黑曜石碎块", "=ds=#sr# =so1=305 =so2=330 =so3=355 =so4=370" },
+		{ "s100023", "inv_misc_stonetablet_01", "=ds=大黑曜石块", "=ds=#sr# =so1=305 =so2=330 =so3=355 =so4=370" },
+		{ "s100024", "inv_stone_15", "=ds=大黑曜石块", "=ds=#sr# =so1=305 =so2=330 =so3=355 =so4=370" },
 	};
 
 	Smelting1 = {
