@@ -1300,7 +1300,7 @@
 			<OnLoad>
 				AtlasLoot_OnLoad();
 				local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
-				getglobal("AtlasLootItemsFrame_BACK"):SetText(AL["Back"]);
+				getglobal("AtlasLootItemsFrame_BACK"):SetText(AL["Back2"]);
 				getglobal("AtlasLoot_QuickLooks"):SetText(AL["Add to QuickLooks:"]);
 			</OnLoad>
 			<OnEvent>

@@ -3398,15 +3398,15 @@ function AtlasLootItem_OnEnter()
 			AtlasLootTooltip:SetOwner(this, "ANCHOR_RIGHT", -(this:GetWidth() / 2), 24);
 			AtlasLootTooltip:ClearLines();
 			AtlasLootTooltip:AddLine(GetSpellInfoVanillaDB["craftspells"][spellID]["name"]);
-			AtlasLootTooltip:AddLine(WHITE..GetSpellInfoVanillaDB["craftspells"][spellID]["castTime"].." sec cast");
+			AtlasLootTooltip:AddLine(WHITE..GetSpellInfoVanillaDB["craftspells"][spellID]["castTime"]..AL[" sec cast"]);
 			if GetSpellInfoVanillaDB["craftspells"][spellID]["requires"] ~= "" then
-				AtlasLootTooltip:AddLine(WHITE.."Requires: "..GetSpellInfoVanillaDB["craftspells"][spellID]["requires"]);
+				AtlasLootTooltip:AddLine(WHITE..AL["Reagents: "]..GetSpellInfoVanillaDB["craftspells"][spellID]["requires"]);
 			end
 			if TooltipTools ~= "" then
-				AtlasLootTooltip:AddLine(WHITE.."Tools: "..TooltipTools, nil, nil, nil, 1);
+				AtlasLootTooltip:AddLine(WHITE..AL["Tools: "]..TooltipTools, nil, nil, nil, 1);
 			end
 			if TooltipReagents ~= "" then
-				AtlasLootTooltip:AddLine(WHITE.."Reagents: "..TooltipReagents, nil, nil, nil, 1);
+				AtlasLootTooltip:AddLine(WHITE..AL["Requires: "]..TooltipReagents, nil, nil, nil, 1);
 			end
 			if GetSpellInfoVanillaDB["craftspells"][spellID]["text"] ~= "" then
 				AtlasLootTooltip:AddLine(GetSpellInfoVanillaDB["craftspells"][spellID]["text"], nil, nil, nil, 1);

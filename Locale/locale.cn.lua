@@ -1602,4 +1602,11 @@ AL:RegisterTranslations("zhCN", function() return {
     ["|cffffffff[61]|cffffd200 Shadeflayer Goliath |cffffffff(Hyjal)"] = "|cffffffff[61]|CFF00FF00 暗灭者歌利亚 |cffffffff(海加尔山)",
     ["|cffffffff[??]|cffffd200 Widow of the Woods |cffffffff(Gilneas)"] = "|cffffffff[??]|CFF00FF00 树林寡妇 |cffffffff(吉尔尼斯)",
     ["|cffffffff[??]|cffffd200 M-0L1Y |cffffffff(???)"] = "|cffffffff[??]|CFF00FF00 M-0L1Y |cffffffff(???)",
+
+    --专业技能增补汉化，wind
+    ["Back2"] = "返回",
+    [" sec cast"] = " 秒施法时间",
+    ["Reagents: "] = "需要: ",
+    ["Tools: "] = "工具: ",
+    ["Requires: "] = "材料: ",
 	} end)
