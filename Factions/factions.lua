@@ -145,7 +145,7 @@ AtlasLoot_Data["AtlasLootRepItems"] = {
 		{ 17017, "INV_Scroll_03", "=q1=图样：光芒衬肩", "=ds=#p8# #m14#" },
 		{ 19219, "INV_Scroll_03", "=q1=图样：光芒长袍", "=ds=#p8# #m14#" },
 		{ 19330, "INV_Scroll_03", "=q1=图样：熔岩腰带", "=ds=#p7# #m14#" },
-		{ 17025, "INV_Scroll_03", "=q1=图样：黑龙鳞片 Boots", "=ds=#p7# #m14#" },
+		{ 17025, "INV_Scroll_03", "=q1=图样：黑色龙鳞战靴", "=ds=#p7# #m14#" },
 		{ 19206, "INV_Scroll_03", "=q1=设计图：黑铁头盔", "=ds=#p2# #m14#" },
 		{ 19448, "INV_Misc_Note_01", "=q1=公式：附魔武器 - 强效精神", "=ds=#p4# #m14#" },
 	};
@@ -317,7 +317,7 @@ AtlasLoot_Data["AtlasLootRepItems"] = {
 		{ 19772, "INV_Scroll_03", "=q1=图样：血虎胸甲", "=ds=#p7# #m14#" },
 		{ 19776, "INV_Scroll_03", "=q1=图样：血魂胸甲", "=ds=#p2# #m14#" },
 		{ 19779, "INV_Scroll_03", "=q1=图样：黑暗之魂胸甲", "=ds=#p2# #m14#" },
-		{ 20011, "INV_Scroll_03", "=q1=Recipe: 魔血药水", "=ds=#p1# (275)" },
+		{ 20011, "INV_Scroll_03", "=q1=配方：魔血药水", "=ds=#p1# (275)" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
 		{ 0, "", "", "" },
@@ -328,7 +328,7 @@ AtlasLoot_Data["AtlasLootRepItems"] = {
 		{ 20076, "INV_Jewelry_Ring_46", "=q3=赞达拉魔精徽记", "=ds=#s3# #e11#", "", "", "", "", "", "15", "#zandalar#" },
 		{ 20078, "Spell_Holy_PowerWordShield", "=q3=赞达拉宁静徽记", "=ds=#s3# #e11#", "", "", "", "", "", "15", "#zandalar#" },
 		{ 65033, "spell_holy_devotionaura", "=q3=赞达拉毅力印记", "=ds=#s3# #e11#", "", "", "", "", "", "15", "#zandalar#" },
-		{ 20013, "INV_Scroll_03", "=q1=Recipe: 活力行动药水", "=ds=#p1# (285)" },
+		{ 20013, "INV_Scroll_03", "=q1=配方：活力行动药水", "=ds=#p1# (285)" },
 	};
 	Wintersaber1 = {
 		{ 0, "", "", "" },
@@ -444,7 +444,7 @@ AtlasLoot_Data["AtlasLootRepItems"] = {
 	Defilers = {
 		{ 0, "", "", "" },
 		{ 0, "INV_Jewelry_Amulet_07", "=q6=#r5#", "" },
-		{ 20131, "INV_Shirt_Guild大板斧d_01", "=q1=污染者军旗", "=q1=#m4#: =ds=#s7#" },
+		{ 20131, "INV_Shirt_GuildTabard_01", "=q1=污染者军旗", "=q1=#m4#: =ds=#s7#" },
 	};
 	GelkisClan1 = {
 		{ 5748, "inv_weapon_bow_07", "=q2=半人马长弓", "=ds=#w2#"},
@@ -752,7 +752,7 @@ AtlasLoot_Data["AtlasLootRepItems"] = {
 		{ 50068, "Spell_Nature_GuardianWard", "=q1=绿色水蛇", "=ds=#e15#" },
 		{ 0, "", "", "" },
 		{ 0, "INV_Staff_13", "=q2=Revered", "" },
-		{ 81196, "INV_Scroll_06", "=q3=Schematic: 地精无线电", "=ds=#p5# #m14#" },
+		{ 81196, "INV_Scroll_06", "=q3=设计图：地精收音机", "=ds=#p5# #m14#" },
 		{ 10585, "INV_Gizmo_GoblinBoomBox_01", "=q3=地精无线电神秘盒子 X23B76", "=ds=#e34#" },
 		{ 0, "", "", "" },
 		{ 0, "INV_Staff_13", "=q2=Exalted", "" },

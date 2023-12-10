@@ -2744,7 +2744,7 @@ AL:RegisterTranslations("enUS", function() return {
     ["Head"] = "头部",
     ["Neck"] = "项链",
     ["Shoulder"] = "肩",
-    ["Back"] = "返回",
+    ["Back"] = "背部",
     ["Chest"] = "胸部",
     ["Shirt"] = "衬衣",
     ["Tabard"] = "战袍",
