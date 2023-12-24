@@ -3841,7 +3841,7 @@ AtlasLoot_updater:SetScript("OnEvent", function()
 	if event == "CHAT_MSG_ADDON" and arg1 == "AtlasLoot" then
 		local v, remoteversion = AtlasLoot_strsplit(":", arg2)
 		local remoteversion = tonumber(remoteversion)
-		if remoteversion >= 11200 then remoteversion = 0 end --Block for people using some version from another version of WoW.
+		if remoteversion > 11200 then remoteversion = 0 end --Block for people using some version from another version of WoW.
 		if v == "VERSION" and remoteversion then
 			if remoteversion > localversion then
 				AtlasLoot_updateavailable = remoteversion
@@ -3862,7 +3862,7 @@ AtlasLoot_updater:SetScript("OnEvent", function()
 			local msg, v, remoteversion = AtlasLoot_strsplit(":", arg1)
 			if msg == "Atlasloot" then
 				local remoteversion = tonumber(remoteversion) or 0
-				if remoteversion >= 11200 then remoteversion = 0 end --Block for people using some version from another version of WoW.
+				if remoteversion > 11200 then remoteversion = 0 end --Block for people using some version from another version of WoW.
 				if v == "VERSION" and remoteversion then
 					if remoteversion > localversion then
 						AtlasLoot_updateavailable = remoteversion

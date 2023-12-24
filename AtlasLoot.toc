@@ -1,9 +1,9 @@
 ﻿## Interface: 11200
-## Title: AtlasLoot 副本掉落(Wind汉化修复)
-## Title-zhCN: AtlasLoot 副本掉落(Wind汉化修复)
-## Notes: |CFF00FF00AtlasLoot|R|N副本掉落。|N命令：/atlasloot
-## Notes-zhCN: |CFF00FF00AtlasLoot|R|N副本掉落。|N命令：/atlasloot
-## Author: Daviesh, Pompa (Turtle WoW World Bosses), Xerron (Turtle WoW World Bosses), Gurky (Turtle WoW 1.16/1.16.1 Dungeons), |cffbe5effLexie|r, |cffbe5effWind|r
+## Title: |CFF33AAFF[辅助]|RAtlasLoot 副本掉落 |cffcccccc[Turtle-WoW]|R
+## Title-zhCN: |CFF33AAFF[辅助]|RAtlasLoot 副本掉落 |cffcccccc[Turtle-WoW]|R
+## Notes: AtlasLoot 副本掉落 |cffcccccc[Turtle-WoW]|R中文端汉化修复由|cff33ffccNineTears(Wind)|R完成。|N命令：/atlasloot
+## Notes-zhCN: AtlasLoot 副本掉落 |cffcccccc[Turtle-WoW]|R中文端汉化修复由|cff33ffccNineTears(Wind)|R完成。|N命令：/atlasloot
+## Author: Daviesh, Pompa (Turtle WoW World Bosses), Xerron (Turtle WoW World Bosses), Gurky (Turtle WoW 1.16/1.16.1 Dungeons), |cffbe5effLexie|r, |cff33ffccNineTears(Wind)|R
 ## X-Repple: 地图
 ## Version: 1.1.0
 ## SavedVariables: AtlasLoot_updateavailable
