@@ -9,7 +9,6 @@
 local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
 
 AL:RegisterTranslations("zhCN", function() return {
-
     ["AtlasLoot"] = "AtlasLoot",
     ["Atlas"] = "Atlas",
     ["AtlasLoot Enhanced"] = "AtlasLoot 副本掉落",
