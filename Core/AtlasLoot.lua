@@ -3901,7 +3901,7 @@ AtlasLoot_updater:SetScript("OnEvent", function()
 	  end
 	end
   end)
-]]
+--]]
 
 --Update announcing code taken from pfUI
 local major, minor, fix = AtlasLoot_strsplit(".", tostring(GetAddOnMetadata("AtlasLoot", "Version")))
@@ -3927,7 +3927,7 @@ AtlasLoot_updater:SetScript("OnEvent", function()
             if remoteversion > localversion then
                 AtlasLoot_updateavailable = remoteversion
                 if not alreadyshown then
-                    DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot]|r 新版本！https://github.com/NineTears/AtlasLoot-Turtle-zhCN")
+                    DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot-Turtle-zhCN]|r 新版本！请下载：https://github.com/NineTears/AtlasLoot-Turtle-zhCN")
                     alreadyshown = true
                 end
             end
@@ -3946,7 +3946,7 @@ AtlasLoot_updater:SetScript("OnEvent", function()
                     if remoteversion > localversion then
                         AtlasLoot_updateavailable = remoteversion
                         if not alreadyshown then
-                            DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot]|r 新版本！https://github.com/NineTears/AtlasLoot-Turtle-zhCN")
+                            DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot-Turtle-zhCN]|r 新版本！请下载：https://github.com/NineTears/AtlasLoot-Turtle-zhCN")
                             alreadyshown = true
                         end
                     end
@@ -3967,7 +3967,7 @@ AtlasLoot_updater:SetScript("OnEvent", function()
 
     if event == "PLAYER_ENTERING_WORLD" then
       if not alreadyshown and localversion < remoteversion then
-        DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot]|r 新版本！https://github.com/NineTears/AtlasLoot-Turtle-zhCN")
+        DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot-Turtle-zhCN]|r 新版本！请下载：https://github.com/NineTears/AtlasLoot-Turtle-zhCN")
         AtlasLoot_updateavailable = localversion
         alreadyshown = true
       end
