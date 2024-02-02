@@ -1,12 +1,10 @@
 ﻿## Interface: 11200
-## Title: |CFF33AAFFAtlasLoot |R副本掉落 |cffff1450[红星1.21]|R
-## Title-zhCN: |CFF33AAFFAtlasLoot |R副本掉落 |cffff1450[红星1.21]|R
+## Title: |CFF33AAFFAtlasLoot |R副本掉落 |cffff1450[红星1.22]|R
+## Title-zhCN: |CFF33AAFFAtlasLoot |R副本掉落 |cffff1450[红星1.22]|R
 ## Notes: |CFF33AAFFAtlasLoot |R副本掉落 |cffff1450[红星]|R中文端由|cff33ffccNineTears(Wind)|R汉化修复，汉显端由|cff33ffcc名字不好起|R修改。|N命令：/atlasloot
 ## Notes-zhCN: |CFF33AAFFAtlasLoot |R副本掉落 |cffff1450[红星]|R中文端由|cff33ffccNineTears(Wind)|R汉化修复，汉显端由|cff33ffcc名字不好起|R修改。|N命令：/atlasloot
 ## Author: Daviesh, Pompa (Turtle WoW World Bosses), Xerron (Turtle WoW World Bosses), Gurky (Turtle WoW 1.16/1.16.1 Dungeons), |cffbe5effLexie|r, |cff33ffccNineTears(Wind)|R, |cff33ffcc名字不好起|R
-## X-Repple: 地图
-## Version: 1.1.1
-## X-Date: 24.01.2024
+## Version: 1.1.0
 ## SavedVariables: AtlasLoot_updateavailable
 ## SavedVariablesPerCharacter: AtlasLootCharDB
 ## OptionalDeps: Alphamap, AtlasLoader, LootLink, ItemSync, HewdropLib, Ace2, EquipCompare, EQCompare
