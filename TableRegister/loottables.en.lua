@@ -699,13 +699,14 @@ AtlasLoot_TableNames = {
 	["FirstbornofArugal"] = { "Firstborn of Arugal", "AtlasLootWBItems" },
 	["Letashaz"] = { "Letashaz", "AtlasLootWBItems" },
 	["MargontheMighty"] = { "Margon the Mighty", "AtlasLootWBItems" },
-	["Stoneshell"] = { "Stoneshell", "AtlasLootWBItems" },
-	["HighvaleSilverback"] = { "Highvale Silverback", "AtlasLootWBItems" },
+	["Stoneshell"] = { "Stoneshell", "AtlasLootWBItems" },
+	["HighvaleSilverback"] = { "Highvale Silverback", "AtlasLootWBItems" },
 	["Azurebeak"] = { "Azurebeak", "AtlasLootWBItems" },
 	["BarkskinFisher"] = { "Barkskin Fisher", "AtlasLootWBItems" },
 	["ShadeflayerGoliath"] = { "Shadeflayer Goliath", "AtlasLootWBItems" },
 	["M0L1Y"] = { "M-0L1Y", "AtlasLootWBItems" },
 	["WidowoftheWoods"] = { "Widow of the Woods", "AtlasLootWBItems" },
+	["KinTozo"] = { "Kin'Tozo", "AtlasLootWBItems" },
 
 	--------------
 	--- Events ---
@@ -727,6 +728,7 @@ AtlasLoot_TableNames = {
 	["Valentineday"] = { AL["Love is in the Air"], "AtlasLootWorldEvents" },
 	["Winterviel1"] = { AL["Feast of Winter Veil"], "AtlasLootWorldEvents" },
 	["Winterviel2"] = { AL["Feast of Winter Veil"], "AtlasLootWorldEvents" },
+	["WintervielSnowball"] = { "Snowball", "AtlasLootWorldEvents" },
 	--Other
 	["ElementalInvasion"] = { AL["Elemental Invasion"], "AtlasLootWorldEvents" },
 	["FishingExtravaganza"] = { AL["Stranglethorn Fishing Extravaganza"], "AtlasLootWorldEvents" },
@@ -1737,13 +1739,14 @@ AtlasLoot_TableNamesBoss = {
 		["FirstbornofArugal"] = { "Firstborn of Arugal", "AtlasLootWBItems" },
 		["Letashaz"] = { "Letashaz", "AtlasLootWBItems" },
 		["MargontheMighty"] = { "Margon the Mighty", "AtlasLootWBItems" },
-		["Stoneshell"] = { "Stoneshell", "AtlasLootWBItems" },
-		["HighvaleSilverback"] = { "Highvale Silverback", "AtlasLootWBItems" },
+		["Stoneshell"] = { "Stoneshell", "AtlasLootWBItems" },
+		["HighvaleSilverback"] = { "Highvale Silverback", "AtlasLootWBItems" },
 		["Azurebeak"] = { "Azurebeak", "AtlasLootWBItems" },
 		["BarkskinFisher"] = { "Barkskin Fisher", "AtlasLootWBItems" },
 		["ShadeflayerGoliath"] = { "Shadeflayer Goliath", "AtlasLootWBItems" },
 		["M0L1Y"] = { "M-0L1Y", "AtlasLootWBItems" },
 		["WidowoftheWoods"] = { "Widow of the Woods", "AtlasLootWBItems" },
+		["KinTozo"] = { "Kin'Tozo", "AtlasLootWBItems" },
 	},
 
 	--------------
@@ -1766,6 +1769,7 @@ AtlasLoot_TableNamesBoss = {
 		["Valentineday"] = { AL["Love is in the Air"], "AtlasLootWorldEvents" },
 		["Winterviel1"] = { AL["Feast of Winter Veil"], "AtlasLootWorldEvents" },
 		["Winterviel2"] = { AL["Feast of Winter Veil"], "AtlasLootWorldEvents" },
+		["WintervielSnowball"] = { "Snowball", "AtlasLootWorldEvents" },
 		--Other
 		["ElementalInvasion"] = { AL["Elemental Invasion"], "AtlasLootWorldEvents" },
 		["FishingExtravaganza"] = { AL["Stranglethorn Fishing Extravaganza"], "AtlasLootWorldEvents" },

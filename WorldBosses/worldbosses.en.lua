@@ -84,6 +84,7 @@ AtlasLootWBBossButtons = {
 		"BarkskinFisher";
 		"ShadeflayerGoliath";
 		"M0L1Y";
+		"KinTozo";
 	};
 };
 
@@ -432,6 +433,8 @@ AtlasLoot_Data["AtlasLootWBItems"] = {
 		{ 81361, "INV_Shoulder_23", "=q3=Dampener's Pauldron's", "=ds=#a2#", "25%" },
 		{ 81362, "INV_Boots_Plate_06", "=q3=蓝鳞铁靴", "=ds=#a4#", "25%" },
 		{ 81364, "INV_Misc_MonsterScales_09", "=q3=玛里苟斯的鳞片", "=ds=#s14#", "25%" },
+		{ 0, "", "", "", "" },
+		{ 81363, "Inv_staff_07", "=q4=苍蓝统御法杖", "=ds=#h2#, #w9#", "2%" },
 	};
 	Kargron = {
 		{ 81365, "INV_Pants_09", "=q3=卡格隆的护腿", "=ds=#a2#, #s11#", "25%" },
@@ -522,8 +525,9 @@ AtlasLoot_Data["AtlasLootWBItems"] = {
 		{ 61505, "INV_Pants_06", "=q2=怒火护腿", "=ds=#s11#, #a2#", "50%" },
 	};
 	WitchDoctorTanzo = {
-		{ 61507, "INV_Jewelry_Necklace_01", "=q2=荒野吊坠", "=ds=#s2#", "50%" },
-		{ 61508, "Ability_Creature_Poison_04", "=q2=荆棘树枝", "=ds=#s14#", "50%" },
+		{ 61507, "INV_Jewelry_Necklace_01", "=q2=荒野吊坠", "=ds=#s2#", "40%" },
+		{ 61506, "INV_Offhand_Blood_A_01", "=q2=狂野符咒碎片", "=ds=#s15#", "40%" },
+		{ 61508, "Ability_Creature_Poison_04", "=q2=荆棘树枝", "=ds=#s14#", "20%" },
 	};
 	Dawnhowl = {
 		{ 61580, "Ability_Mount_WhiteDireWolf", "=q2=狼颅骨", "=ds=#s1#, #a3#", "33%" },
@@ -548,6 +552,15 @@ AtlasLoot_Data["AtlasLootWBItems"] = {
 	};
 	BaronPerenolde = {
 		{ 61577, "INV_Sword_25", "=q2=中尉之剑", "=ds=#h1#, #w10#", "33%" },
+		{ 61578, "inv_pants_04", "=q2=老骑士护腿", "=ds=#s11#, #a4#", "33%" },
+	};
+	KinTozo = {
+		{ 60438, "INV_Bracer_19", "=q3=金托佐护腕", "=ds=#s8#, #a4#", "25%" },
+		{ 60439, "spell_nature_agitatingtotem", "=q3=酋长披肩", "=ds=#s3#, #a2#", "25%" },
+		{ 60440, "INV_Weapon_Bow_02", "=q3=血顶长弓", "=ds=#w2#", "25%" },
+		{ 60441, "INV_Jewelry_Ring_35", "=q3=魔精指环", "=ds=#s13#", "25%" },
+		{ 0, "", "", "", "" },
+		{ 60442, "INV_Axe_01", "=q4=哈卡索的传承", "=ds=#h3#, #w1#", "2%" },
 	};
 	FirstbornofArugal = {
 		{ 61586, "INV_Shoulder_08", "=q2=探险者护肩", "=ds=#s3#, #a2#", "40%" },
