@@ -61,6 +61,16 @@ strtrim
 
 ]]
 
+local function GetCNItemNameBack(item)
+	return item;
+end
+local GetCNItemName = GetCNItemName or GetCNItemNameBack
+
+local function GetLocalehxBack()
+	return false;
+end
+local GetLocalehx = GetLocalehx or GetLocalehxBack
+
 AtlasLoot = AceLibrary("AceAddon-2.0"):new("AceDB-2.0")
 
 --Instance required libraries
@@ -1239,6 +1249,19 @@ function AtlasLoot_ShowItemsFrame(dataID, dataSource, boss, pFrame)
 						quantityFrame = getglobal("AtlasLootItem_"..i.."_Quantity");
 						quantityFrame:SetText("")
 					end
+				end
+				if GetLocalehx then
+					local size = string.len(text)
+					local reversed1 = ""
+					local reversed2 = ""
+					for i = 1, size do
+						if i <= 10 then
+							reversed1 = reversed1 .. string.sub(text, i, i)
+						else
+							reversed2 = reversed2 .. string.sub(text, i, i)
+						end
+					end
+					text = reversed1..GetCNItemName(reversed2)
 				end
 				--Store data about the state of the items frame to allow minor tweaks or a recall of the current loot page
 				AtlasLootItemsFrame.refresh = {dataID, dataSource_backup, boss, pFrame};
@@ -3362,6 +3385,21 @@ function AtlasLootItem_OnEnter()
 					end
 				end
 			end
+			if GetLocalehx() then
+				if(this.itemID ~= nil) then
+					if(GetItemInfo(this.itemID) ~= nil) then
+						local ItemName = AtlasLootTooltipTextLeft1:GetText()
+						local ItemCNName = GetCNItemName(ItemName)
+						if ItemName ~= nil and ItemCNName ~= nil then
+							if ItemName ~= ItemCNName then
+								AtlasLootTooltipTextLeft1:SetText(ItemCNName)
+								AtlasLootTooltip:AppendText("\n"..ItemName)
+							end
+						end
+					end
+				end
+			end
+			AtlasLootTooltip:Show();
 		elseif isEnchant then
 			spellID = tonumber(string.sub(this.itemID, 2));
 			AtlasLootTooltip:SetOwner(this, "ANCHOR_RIGHT", -(this:GetWidth() / 2), 24);
@@ -3369,6 +3407,16 @@ function AtlasLootItem_OnEnter()
 			AtlasLootTooltip:SetHyperlink("enchant:"..spellID);
 			if ( AtlasLootCharDB.ItemIDs ) then
 				AtlasLootTooltip:AddLine(BLUE..AL["SpellID:"].." "..spellID, nil, nil, nil, 1);
+			end
+			if GetLocalehx then
+				local AtlasLootTooltipItemName = AtlasLootTooltipTextLeft1:GetText()
+				local AtlasLootTooltipItemCNName = GetCNItemName(AtlasLootTooltipItemName)
+				if AtlasLootTooltipItemName ~= nil and AtlasLootTooltipItemCNName ~= nil then
+					if AtlasLootTooltipItemName ~= AtlasLootTooltipItemCNName then
+						AtlasLootTooltipTextLeft1:SetText(AtlasLootTooltipItemCNName)
+						AtlasLootTooltip:AppendText("\n"..AtlasLootTooltipItemName)
+					end
+				end
 			end
 			AtlasLootTooltip:Show();
 			if GetSpellInfoVanillaDB["enchants"][spellID]["item"] and GetSpellInfoVanillaDB["enchants"][spellID]["item"] ~= nil and GetSpellInfoVanillaDB["enchants"][spellID]["item"] ~= "" then
@@ -3380,6 +3428,16 @@ function AtlasLootItem_OnEnter()
 				end
 				if ( AtlasLootCharDB.ItemIDs ) then
 					AtlasLootTooltip2:AddLine(BLUE..AL["ItemID:"].." "..GetSpellInfoVanillaDB["enchants"][spellID]["item"], nil, nil, nil, 1);
+				end
+				if GetLocalehx then
+					local AtlasLootTooltip2ItemName = AtlasLootTooltip2TextLeft1:GetText()
+					local AtlasLootTooltip2ItemCNName = GetCNItemName(AtlasLootTooltip2ItemName)
+					if AtlasLootTooltip2ItemName ~= nil and AtlasLootTooltip2ItemCNName ~= nil then
+						if AtlasLootTooltip2ItemName ~= AtlasLootTooltip2ItemCNName then
+							AtlasLootTooltip2TextLeft1:SetText(AtlasLootTooltip2ItemCNName)
+							AtlasLootTooltip2:AppendText("\n"..AtlasLootTooltip2ItemName)
+						end
+					end
 				end
 				AtlasLootTooltip2:Show();
 			end
@@ -3429,6 +3487,17 @@ function AtlasLootItem_OnEnter()
 					AtlasLootTooltip:AddLine(BLUE..AL["SpellID:"].." 10248", nil, nil, nil, 1);
 				end
 			end
+			if GetLocalehx then
+				local AtlasLootTooltipItemName = AtlasLootTooltipTextLeft1:GetText()
+				local AtlasLootTooltipItemCNName = GetCNItemName(AtlasLootTooltipItemName)
+				
+				if AtlasLootTooltipItemName ~= nil and AtlasLootTooltipItemCNName ~= nil then
+					if AtlasLootTooltipItemName ~= AtlasLootTooltipItemCNName then
+						AtlasLootTooltipTextLeft1:SetText(AtlasLootTooltipItemCNName)
+						AtlasLootTooltip:AppendText("\n"..AtlasLootTooltipItemName)
+					end
+				end
+			end
 			AtlasLootTooltip:Show();
 			local craftitem2 = GetSpellInfoVanillaDB["craftspells"][spellID]["craftItem"]
 			if craftitem2 ~= nil and craftitem2 ~= "" then
@@ -3440,6 +3509,16 @@ function AtlasLootItem_OnEnter()
 				end
 				if ( AtlasLootCharDB.ItemIDs ) then
 					AtlasLootTooltip2:AddLine(BLUE..AL["ItemID:"].." "..GetSpellInfoVanillaDB["craftspells"][spellID]["craftItem"], nil, nil, nil, 1);
+				end
+				if GetLocalehx then
+					local AtlasLootTooltip2ItemName = AtlasLootTooltip2TextLeft1:GetText()
+					local AtlasLootTooltip2ItemCNName = GetCNItemName(AtlasLootTooltip2ItemName)
+					if AtlasLootTooltip2ItemName ~= nil and AtlasLootTooltip2ItemCNName ~= nil then
+						if AtlasLootTooltip2ItemName ~= AtlasLootTooltip2ItemCNName then
+							AtlasLootTooltip2TextLeft1:SetText(AtlasLootTooltip2ItemCNName)
+							AtlasLootTooltip2:AppendText("\n"..AtlasLootTooltip2ItemName)
+						end
+					end
 				end
 				AtlasLootTooltip2:Show();
 			end
@@ -3511,7 +3590,8 @@ function AtlasLootItem_OnClick(arg1)
 			AtlasLootItemsFrame:Hide();
 			AtlasLoot_ShowItemsFrame(AtlasLootItemsFrame.refresh[1], AtlasLootItemsFrame.refresh[2], AtlasLootItemsFrame.refresh[3], AtlasLootItemsFrame.refresh[4]);
 			if not AtlasLootCharDB.ItemSpam then
-				DEFAULT_CHAT_FRAME:AddMessage(itemName..AL[" is safe."]);
+				-- DEFAULT_CHAT_FRAME:AddMessage(GetCNItemName(itemName)..AL[" is safe."]);
+				DEFAULT_CHAT_FRAME:AddMessage((itemName)..AL[" is safe."]);
 			end
 		elseif IsShiftKeyDown() and not iteminfo and this.itemID ~= 0 then
 			if AtlasLootCharDB.SafeLinks then
@@ -3686,18 +3766,18 @@ function AtlasLoot_CheckBagsForItems(id, qty)
 				itemsfound = itemsfound + stackCount
 				if itemsfound >= qty then
 					if qty == 1 then
-						return WHITE..itemName
+						return WHITE..GetCNItemName(itemName)
 					else
-						return WHITE..itemName.." ("..qty..")"
+						return WHITE..GetCNItemName(itemName).." ("..qty..")"
 					end
 				end
 			end
 		end
 	end
 	if qty == 1 then
-		return RED..itemName
+		return RED..GetCNItemName(itemName)
 	else
-		return RED..itemName.." ("..qty..")"
+		return RED..GetCNItemName(itemName).." ("..qty..")"
 	end
 end
 
