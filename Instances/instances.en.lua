@@ -640,8 +640,8 @@ AtlasLootBossButtons = {
 		"KCArchlichEnkhraz";
 		"KCCommanderAnderson";
 		"KCAlarus";
-		"KCTreasure";
 		"";
+		"KCTreasure";
 		"KCTrash";
 	};
 	CavernsOfTimeBlackMorass = {
@@ -667,13 +667,12 @@ AtlasLootBossButtons = {
 		"SWVBlackBride";
 		"SWVDamian";
 		"SWVVolkanCruelblade";
-		"SWVArctiras";
+		"";
 		"SWVVaultArmoryEquipment";
 		"";
 		"SWVTrash";
 	};
 	HateforgeQuarry = {
-		"";
 		"";
 		"";
 		"HQHighForemanBargulBlackhammer";
