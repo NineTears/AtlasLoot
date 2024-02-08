@@ -140,12 +140,16 @@ AtlasLootBattlegrounds = {
 		"";
 		"";
 		"";
+		"";
+		"";
 		"AVRepFriendly";
 		"AVRepHonored";
 		"AVRepRevered";
 		"AVRepExalted";
-		"AVKorrak";
-		"AVLokholarIvus";
+		"";
+		"";
+		"";
+		"";
 	};
 	AlteracValleySouth = {
 		"Frostwolf1";
@@ -192,12 +196,15 @@ AtlasLootBattlegrounds = {
 		"";
 		"";
 		"";
+		"";
 		"AVRepFriendly";
 		"AVRepHonored";
 		"AVRepRevered";
 		"AVRepExalted";
-		"AVKorrak";
-		"AVLokholarIvus";
+		"";
+		"";
+		"";
+		"";
 	};
 	ArathiBasin = {
 		"";
