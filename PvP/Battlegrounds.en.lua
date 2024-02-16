@@ -228,7 +228,7 @@ AtlasLootBattlegrounds = {
 		"";
 		"";
 		"";
-		"WSGRepFriendly4049";
+		"WSGRepFriendly";
 		"WSGRepHonored5059";
 		"WSGRepRevered5059";
 		"WSGRepExalted60";
