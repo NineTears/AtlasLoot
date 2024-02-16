@@ -3192,7 +3192,7 @@ AtlasLoot_HewdropDown_SubTables = {
 		{ AL["Honored Reputation Rewards"], "AVRepHonored" },
 		{ AL["Revered Reputation Rewards"], "AVRepRevered" },
 		{ AL["Exalted Reputation Rewards"], "AVRepExalted" },
-		{ AL["Exalted Reputation Rewards"], "AVRepExalted" },
+		--{ AL["Exalted Reputation Rewards"], "AVRepExalted" },
 		{ AL["Korrak the Bloodrager"], "AVKorrak" },
 		{ AL["Ivus & Lokholar"], "AVLokholarIvus" },
 	},
