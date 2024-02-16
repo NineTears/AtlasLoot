@@ -146,10 +146,8 @@ AtlasLootBattlegrounds = {
 		"AVRepHonored";
 		"AVRepRevered";
 		"AVRepExalted";
-		"";
-		"";
-		"";
-		"";
+		"AVKorrak";
+		"AVLokholarIvus";
 	};
 	AlteracValleySouth = {
 		"Frostwolf1";
@@ -201,10 +199,8 @@ AtlasLootBattlegrounds = {
 		"AVRepHonored";
 		"AVRepRevered";
 		"AVRepExalted";
-		"";
-		"";
-		"";
-		"";
+		"AVKorrak";
+		"AVLokholarIvus";
 	};
 	ArathiBasin = {
 		"";
