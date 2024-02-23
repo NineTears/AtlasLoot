@@ -707,6 +707,11 @@ AtlasLoot_TableNames = {
 	["M0L1Y"] = { "M-0L1Y", "AtlasLootWBItems" },
 	["WidowoftheWoods"] = { "Widow of the Woods", "AtlasLootWBItems" },
 	["KinTozo"] = { "Kin'Tozo", "AtlasLootWBItems" },
+	
+	----------------------------
+	--- Rare Spawns (1.17.1) ---
+	----------------------------
+	["ProfessorLysander"] = { "Professor Lysander", "AtlasLootWBItems" },
 
 	--------------
 	--- Events ---
@@ -1697,6 +1702,8 @@ AtlasLoot_TableNamesBoss = {
 		["Nerubian"] = { "Nerubian Overseer", "AtlasLootWBItems" },
 		["Reaver"] = { "Dark Reaver of Karazhan", "AtlasLootWBItems" },
 		["Ostarius"] = { "Ostarius", "AtlasLootWBItems" },
+		["Concavius"] = { "Concavius", "AtlasLootWBItems" },
+		["CowKing"] = { "CowKing", "AtlasLootWBItems" },
 		--Doom Lord Kazzak
 		["KKazzak"] = { AL["Lord Kazzak"], "AtlasLootWBItems" },
 		--Emrald Dragons
@@ -1707,9 +1714,9 @@ AtlasLoot_TableNamesBoss = {
 		["DTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Emerald Dragons"] .. ")", "AtlasLootWBItems" },
 	},
 	
-	--------------------------
-	--- Rare Spawns (1.16) ---
-	--------------------------
+	-------------------
+	--- Rare Spawns ---
+	-------------------
 	["Rare Spawns"] = {
 		["Tarangos"] = { "Tarangos The Dampener", "AtlasLootWBItems" },
 		["Kargron"] = { "Blademaster Kargron", "AtlasLootWBItems" },
@@ -1747,6 +1754,7 @@ AtlasLoot_TableNamesBoss = {
 		["M0L1Y"] = { "M-0L1Y", "AtlasLootWBItems" },
 		["WidowoftheWoods"] = { "Widow of the Woods", "AtlasLootWBItems" },
 		["KinTozo"] = { "Kin'Tozo", "AtlasLootWBItems" },
+		["ProfessorLysander"] = { "Professor Lysander", "AtlasLootWBItems" },
 	},
 
 	--------------

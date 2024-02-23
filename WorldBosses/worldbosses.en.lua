@@ -85,6 +85,7 @@ AtlasLootWBBossButtons = {
 		"ShadeflayerGoliath";
 		"M0L1Y";
 		"KinTozo";
+		"ProfessorLysander";
 	};
 };
 
@@ -561,6 +562,12 @@ AtlasLoot_Data["AtlasLootWBItems"] = {
 		{ 60441, "INV_Jewelry_Ring_35", "=q3=魔精指环", "=ds=#s13#", "25%" },
 		{ 0, "", "", "", "" },
 		{ 60442, "INV_Axe_01", "=q4=哈卡索的传承", "=ds=#h3#, #w1#", "2%" },
+	};
+	ProfessorLysander = {
+		{ 41060, "inv_potion_19", "=q3=精炼的瘟疫菌株", "=ds=#s14#", "25%" },
+		{ 41061, "inv_misc_rune_09", "=q3=纳克萨玛斯的冰冻符文", "=ds=#s2#", "25%" },
+		{ 41062, "inv_misc_eye_01", "=q3=窥视眼球", "=ds=#s13#", "25%" },
+		{ 41063, "inv_chest_cloth_24", "=q3=医生的实验外套","=ds=#s5#, #a1#", "25%" },
 	};
 	FirstbornofArugal = {
 		{ 61586, "INV_Shoulder_08", "=q2=探险者护肩", "=ds=#s3#, #a2#", "40%" },

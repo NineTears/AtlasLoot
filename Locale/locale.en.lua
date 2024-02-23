@@ -1349,6 +1349,7 @@ AL:RegisterTranslations("enUS", function() return {
 	["Highvale Silverback"] = true,
 	["Mallon The Moontouched"] = true,
 	["Blademaster Kargron"] = true,
+	["Professor Lysander"] = true,
 	["Admiral Barean Westwind"] = true,
 	["Azurebeak"] = true,
 	["Barkskin Fisher"] = true,
@@ -1574,19 +1575,19 @@ AL:RegisterTranslations("enUS", function() return {
 	["LKH Enchants"] = true,
 	["Korrak the Bloodrager"] = true,
 	["Ivus & Lokholar"] = true,
-    ["Arathi Basin Menu"] = true,
-    ["Warsong Gulch Menu"] = true,
+	["Arathi Basin Menu"] = true,
+	["Warsong Gulch Menu"] = true,
 
-    --专业技能增补汉化，wind
-    ["Back2"] = true,
-    [" sec cast"] = true,
+	--专业技能增补汉化，wind
+	["Back2"] = true,
+	[" sec cast"] = true,
 	["Reagents: "] = true,
 	["Tools: "] = true,
 	["Requires: "] = true,
 
     -- Wind汉化修复Turtle-WOW-zhCN端
     -- https://github.com/NineTears/AtlasLoot-Turtle-zhCN
-    -- Last update: 2023-11-25
+    -- Last update: 2024-02-23
     
     ["AtlasLoot"] = "AtlasLoot",
     ["Atlas"] = "Atlas",
@@ -2917,6 +2918,7 @@ AL:RegisterTranslations("enUS", function() return {
     ["Highvale Silverback"] = "高原银背兽",
     ["Mallon The Moontouched"] = "月触者玛隆",
     ["Blademaster Kargron"] = "剑圣卡格隆",
+    ["Professor Lysander"] = "莱桑德·琥珀",
     ["Admiral Barean Westwind"] = "海军上将巴瑞安·西风",
     ["Azurebeak"] = "蔚蓝喙",
     ["Barkskin Fisher"] = "树皮渔夫",
@@ -3172,8 +3174,9 @@ AL:RegisterTranslations("enUS", function() return {
     ["|cffffffff[56]|cffffd200 Stoneshell |cffffffff(Tel'abim)"] = "|cffffffff[56]|CFF00FF00 石壳 |cffffffff(泰拉比姆)",
     ["|cffffffff[57]|cffffd200 Zareth Terrorblade |cffffffff(Blasted Lands)"] = "|cffffffff[57]|CFF00FF00 吒雷斯·恐怖利刃 |cffffffff(诅咒之地)",
     ["|cffffffff[58]|cffffd200 Highvale Silverback |cffffffff(Tel'abim)"] = "|cffffffff[58]|CFF00FF00 高原银背兽 |cffffffff(泰拉比姆)",
-    ["|cffffffff[58]|cffffd200 Mallon The Moontouched |cffffffff(Winterspring)"] = "|cffffffff[58]|CFF00FF00 月抚犸郎 |cffffffff(冬泉谷)",
-    ["|cffffffff[59]|cffffd200 Blademaster Kargron |cffffffff(Burning Steppes)"] = "|cffffffff[59]|CFF00FF00 剑圣 咖哥隆 |cffffffff(燃烧平原)",
+    ["|cffffffff[58]|cffffd200 Mallon The Moontouched |cffffffff(Winterspring)"] = "|cffffffff[58]|CFF00FF00 月触者玛隆 |cffffffff(冬泉谷)",
+    ["|cffffffff[59]|cffffd200 Blademaster Kargron |cffffffff(Burning Steppes)"] = "|cffffffff[59]|CFF00FF00 剑圣卡格隆 |cffffffff(燃烧平原)",
+    ["|cffffffff[59]|cffffd200 Professor Lysander |cffffffff(EPL)"] = "|cffffffff[59]|cffffd200 莱桑德·琥珀 |cffffffff（东瘟疫之地）",
     ["|cffffffff[60]|cffffd200 Admiral Barean Westwind |cffffffff(Scarlet Enclave)"] = "|cffffffff[60]|CFF00FF00 海军上将巴瑞恩·西风 |cffffffff(血色领地)",
     ["|cffffffff[60]|cffffd200 Azurebeak |cffffffff(Hyjal)"] = "|cffffffff[60]|CFF00FF00 蔚蓝喙 |cffffffff(海加尔山)",
     ["|cffffffff[60]|cffffd200 Barkskin Fisher |cffffffff(Hyjal)"] = "|cffffffff[60]|CFF00FF00 树皮渔夫 |cffffffff(海加尔山)",

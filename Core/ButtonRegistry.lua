@@ -2944,12 +2944,19 @@ AtlasLoot_ButtonRegistry = {
 		Prev_Page = "Mallon";
 		Prev_Title = AL["Mallon The Moontouched"];
 	};
+	["ProfessorLysander"] = {
+		Title = AL["Professor Lysander"];
+		Next_Page = "AdmiralBareanWestwind";
+		Next_Title = AL["Admiral Barean Westwind"];
+		Prev_Page = "Kargron";
+		Prev_Title = AL["Blademaster Kargron"];
+	};
 	["AdmiralBareanWestwind"] = {
 		Title = AL["Admiral Barean Westwind"];
 		Next_Page = "Azurebeak";
 		Next_Title = AL["Azurebeak"];
-		Prev_Page = "Kargron";
-		Prev_Title = AL["Blademaster Kargron"];
+		Prev_Page = "ProfessorLysander";
+		Prev_Title = AL["Professor Lysander"];
 	};
 	["Azurebeak"] = {
 		Title = AL["Azurebeak"];
