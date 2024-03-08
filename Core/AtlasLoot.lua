@@ -3991,7 +3991,7 @@ AtlasLoot_updater:SetScript("OnEvent", function()
 	end
   end)
 --]]
-
+--[[禁用版本检查，降低内存消耗
 --Update announcing code taken from pfUI
 local major, minor, fix = AtlasLoot_strsplit(".", tostring(GetAddOnMetadata("AtlasLoot", "Version")))
 
@@ -4069,3 +4069,4 @@ AtlasLoot_updater:SetScript("OnEvent", function()
       end
     end
   end)
+]]
