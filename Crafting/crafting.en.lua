@@ -949,6 +949,7 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s9065", "inv_bracer_04", "=q1=轻皮护腕", "=ds=#sr# =so1=70 =so2=100 =so3=115 =so4=130" },
 		{ "s3759", "inv_pants_02", "=q2=雕花皮短裤", "=ds=#sr# =so1=75 =so2=105 =so3=120 =so4=135" },
 		{ "s2164", "inv_gauntlets_05", "=q2=优质皮手套", "=ds=#sr# =so1=75 =so2=105 =so3=120 =so4=135" },
+		{ "s45069", "INV_Boots_06", "=q2=山猫步靴", "=ds=#sr# =so1=75 =so2=? =so3=? =so4=?" },
 	};
 
 	LeatherJourneyman1 = {
@@ -1087,6 +1088,7 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s19049", "inv_gauntlets_31", "=q2=邪恶皮甲护手", "=ds=#sr# =so1=260 =so2=280 =so3=290 =so4=300" },
 		{ "s19051", "inv_chest_chain_15", "=q2=重型蝎壳外衣", "=ds=#sr# =so1=265 =so2=285 =so3=295 =so4=305" },
 		{ "s19052", "inv_bracer_07", "=q2=邪恶皮甲护腕", "=ds=#sr# =so1=265 =so2=285 =so3=295 =so4=305" },
+		{ "s57008", "inv_chest_leather_07", "=q3=大地护胸", "=ds=#sr# =so1=265 =so2=? =so3=? =so4=?" },
 		{ "s19055", "inv_gauntlets_31", "=q2=符文皮甲护手", "=ds=#sr# =so1=270 =so2=290 =so3=300 =so4=310" },
 		{ "s47015", "inv_gauntlets_09", "=q2=首领手套 ", "=ds=#sr# =so1=270 =so2=285 =so3=290 =so4=295" },
 		{ "s47017", "inv_helmet_04", "=q2=首领头饰", "=ds=#sr# =so1=270 =so2=290 =so3=291 =so4=295" },
@@ -1096,10 +1098,10 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s19065", "inv_bracer_11", "=q2=符文皮甲护腕", "=ds=#sr# =so1=275 =so2=295 =so3=305 =so4=315" },
 		{ "s47018", "inv_pants_04", "=q2=首领短裤", "=ds=#sr# =so1=280 =so2=290 =so3=291 =so4=295" },
 		{ "s47016", "inv_shoulder_09", "=q2=首领护肩", "=ds=#sr# =so1=280 =so2=285 =so3=290 =so4=295" },
-		{ "s19070", "inv_belt_03", "=q2=重型蝎壳腰带", "=ds=#sr# =so1=280 =so2=300 =so3=310 =so4=320" },
 	};
 
 	LeatherArtisan2 = {
+		{ "s19070", "inv_belt_03", "=q2=重型蝎壳腰带", "=ds=#sr# =so1=280 =so2=300 =so3=310 =so4=320" },
 		{ "s19072", "inv_belt_03", "=q2=符文皮甲腰带", "=ds=#sr# =so1=280 =so2=300 =so3=310 =so4=320" },
 		{ "s19071", "inv_misc_bandage_13", "=q2=邪恶皮甲头环", "=ds=#sr# =so1=280 =so2=300 =so3=310 =so4=320" },
 		{ "s47019", "inv_chest_plate08", "=q3=首领马甲", "=ds=#sr# =so1=285 =so2=290 =so3=291 =so4=295" },
@@ -1129,10 +1131,10 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s24122", "inv_gauntlets_31", "=q3=原始蝙蝠皮手套", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 		{ "s24121", "inv_chest_leather_03", "=q3=原始蝙蝠皮外套", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 		{ "s24849", "inv_bracer_12", "=q3=沙行者护腕", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
-		{ "s24851", "inv_chest_plate07", "=q3=沙行者胸甲", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },	
 	};
 
 	LeatherArtisan3 = {
+		{ "s24851", "inv_chest_plate07", "=q3=沙行者胸甲", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },	
 		{ "s57022", "inv_chest_leather_04", "=q3=半人马战甲", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 		{ "s24850", "inv_gauntlets_11", "=q3=沙行者护手", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },
 		{ "s24846", "inv_bracer_05", "=q3=飞火护腕", "=ds=#sr# =so1=300 =so2=320 =so3=330 =so4=340" },

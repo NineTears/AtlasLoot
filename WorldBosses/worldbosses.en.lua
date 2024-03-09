@@ -638,9 +638,16 @@ AtlasLoot_Data["AtlasLootWBItems"] = {
 		{ 84507, "INV_Fishingpole_02", "=q2=巴克斯基费舍尔", "=ds=#w14#", "100%" },
 	};
 	ShadeflayerGoliath = {
-		{ 61707, "INV_Bracer_01", "=q1=暗影猎手部族护腕", "=ds=#m3#" },
+		{ 61546, "INV_Pants_01", "=q2=堕落骑士护腿", "=ds=#s11#, #a4#", "30%" },
+		{ 61548, "INV_Banner_01", "=q2=巫医面具", "=ds=#s1#, #a1#", "30%" },
+		{ 0, "", "", "", "" },
+		{ 61545, "INV_Jewelry_Ring_39", "=q3=暗影猎手印记", "=ds=#s13#", "20%" },
+		{ 61547, "INV_QirajIdol_Death", "=q3=邪恶魔力图腾", "=ds=#s16#, #e17# =q15=#c7#", "20%" },
 	};
 	M0L1Y = {
-		{ 0, "", "", "", "" },
+		{ 41297, "INV_Boots_01", "=q2=腐蚀马靴", "=ds=#s12#, #a2#", "30%" },
+		{ 41295, "INV_Pick_01", "=q2=失落的挖掘镐", "=ds=#h2#, #w1#", "30%" },
+		{ 41296, "INV_Shoulder_26", "=q3=潮湿的肩甲", "=ds=#s3#, #a4#", "30%" },
+		{ 41298, "Spell_Frost_FireResistanceTotem", "=q3=超载加热线圈", "=ds=#s14#", "10%" },
 	};
 };
