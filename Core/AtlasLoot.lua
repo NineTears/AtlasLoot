@@ -92,8 +92,8 @@ ATLASLOOT_OPTIONS_EQUIPCOMPARE_DISABLED = AL["|cff9d9d9dUse EquipCompare|r"];
 ATLASLOOT_INDENT = "	";
 
 --Make the Hewdrop menu in the standalone loot browser accessible here
-AtlasLoot_Hewdrop = AceLibrary("Hewdrop-2.0");
-AtlasLoot_HewdropSubMenu = AceLibrary("Hewdrop-2.0");
+AtlasLoot_Hewdrop = AceLibrary("Hewdrop-2.0-atlasloot");
+AtlasLoot_HewdropSubMenu = AceLibrary("Hewdrop-2.0-atlasloot");
 
 --Variable to cap debug spam
 ATLASLOOT_DEBUGSHOWN = false;
@@ -1934,7 +1934,7 @@ button: Identity of the button pressed to trigger the function
 Shows the GUI for setting Quicklooks
 ]]
 function AtlasLoot_ShowQuickLooks(button)
-	local Hewdrop = AceLibrary("Hewdrop-2.0");
+	local Hewdrop = AceLibrary("Hewdrop-2.0-atlasloot");
 	if Hewdrop:IsOpen(button) then
 		Hewdrop:Close(1);
 	else

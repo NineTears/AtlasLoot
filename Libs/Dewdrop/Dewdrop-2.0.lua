@@ -9,7 +9,7 @@ Description: A library to provide a clean dropdown menu interface.
 Dependencies: AceLibrary
 ]]
 
-local MAJOR_VERSION = "Dewdrop-2.0"
+local MAJOR_VERSION = "Dewdrop-2.0-atlasloot"
 local MINOR_VERSION = "$Revision: 17882 $"
 
 if not AceLibrary then error(MAJOR_VERSION .. " requires AceLibrary") end

@@ -95,7 +95,7 @@ function AtlasLoot:Search(Text)
 end
 
 function AtlasLoot:ShowSearchOptions(button)
-	local Hewdrop = AceLibrary("Hewdrop-2.0");
+	local Hewdrop = AceLibrary("Hewdrop-2.0-atlasloot");
 	if Hewdrop:IsOpen(button) then
 		Hewdrop:Close(1);
 	else

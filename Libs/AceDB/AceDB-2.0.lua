@@ -120,7 +120,7 @@ local AceDB = Mixin {
 						"IsActive",
 						"AcquireDBNamespace",
 					}
-local Hewdrop = AceLibrary:HasInstance("Hewdrop-2.0") and AceLibrary("Hewdrop-2.0")
+local Hewdrop = AceLibrary:HasInstance("Hewdrop-2.0-atlasloot") and AceLibrary("Hewdrop-2.0-atlasloot")
 
 local _G = getfenv(0)
 
@@ -1418,7 +1418,7 @@ local function external(self, major, instance)
 		
 		self:RegisterEvent("ADDON_LOADED")
 		self:RegisterEvent("PLAYER_LOGOUT")
-	elseif major == "Hewdrop-2.0" then
+	elseif major == "Hewdrop-2.0-atlasloot" then
 		Hewdrop = instance
 	end
 end
