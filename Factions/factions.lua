@@ -548,8 +548,8 @@ AtlasLoot_Data["AtlasLootRepItems"] = {
 	Helf2 = {
 		{ 0, "INV_Staff_13", "=q3=Cloaks", "" },
 		{ 80505, "inv_misc_cape_10", "=q3=奎尔多雷英雄披风", "=ds=#s4#" },
-		{ 80506, "inv_misc_cape_16", "=q3=奎尔多雷英雄斗篷", "=ds=#s4#" },
 		{ 80527, "inv_misc_cape_16", "=q3=奎尔多雷英雄的披风", "=ds=#s4#" },
+		{ 80506, "inv_misc_cape_16", "=q3=奎尔多雷英雄斗篷", "=ds=#s4#" },
 		{ 0, "", "", "" },
 		{ 0, "INV_Staff_13", "=q2=Weapons", "" },
 		{ 80502, "Inv_staff_38", "=q2=弯曲的礼仪法杖", "=ds=#w9#" },
@@ -638,8 +638,8 @@ AtlasLoot_Data["AtlasLootRepItems"] = {
 	Revantusk2 = {
 		{ 0, "INV_Misc_Head_Troll_01", "=q2=Cloaks", "" },
 		{ 80605, "INV_Misc_Cape_15", "=q3=恶齿英雄披风", "=ds=#s4#, #a1#" },
-		{ 80606, "INV_Misc_Cape_18", "=q3=恶齿英雄斗篷", "=ds=#s4#, #a1#" },
 		{ 80627, "INV_Misc_Cape_17", "=q3=恶齿英雄的披风", "=ds=#s4#, #a1#" },
+		{ 80606, "INV_Misc_Cape_18", "=q3=恶齿英雄斗篷", "=ds=#s4#, #a1#" },
 		{ 0, "", "", "" },
 		{ 0, "INV_Misc_Head_Troll_01", "=q2=Weapons", "" },
 		{ 80602, "INV_Staff_Goldfeathered_01", "=q2=粗糙导魔法杖", "=ds=#h2#, #w9#" },

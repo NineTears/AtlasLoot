@@ -3373,6 +3373,7 @@ function AtlasLootItem_OnEnter()
 						if( this.droprate ~= nil) then
 							AtlasLootTooltip:AddLine(AL["Drop Rate: "]..this.droprate, 1, 1, 0);
 						end
+						--QuestTest_TooltipUpdate(AtlasLootTooltip,"item:"..this.itemID..":0:0:0")
 						AtlasLootTooltip:Show();
 					else
 						AtlasLootTooltip:SetOwner(this, "ANCHOR_RIGHT", -(this:GetWidth() / 2), 24);
@@ -3405,7 +3406,11 @@ function AtlasLootItem_OnEnter()
 			spellID = tonumber(string.sub(this.itemID, 2));
 			AtlasLootTooltip:SetOwner(this, "ANCHOR_RIGHT", -(this:GetWidth() / 2), 24);
 			AtlasLootTooltip:ClearLines();
-			AtlasLootTooltip:SetHyperlink("enchant:"..spellID);
+			if SetAutoloot == nil then
+				AtlasLootTooltip:SetHyperlink("enchant:"..spellID)
+			else
+				AtlasLootTooltip:SetHyperlink("spell:"..spellID);
+			end
 			if ( AtlasLootCharDB.ItemIDs ) then
 				AtlasLootTooltip:AddLine(BLUE..AL["SpellID:"].." "..spellID, nil, nil, nil, 1);
 			end
