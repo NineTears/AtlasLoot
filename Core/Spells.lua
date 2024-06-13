@@ -2193,7 +2193,7 @@ GetSpellInfoVanillaDB = {
 			},
 		},
 		[45487] = {
-			["name"] = "锻造: 萨弗隆战锤",
+			["name"] = "锻造: 黎明石锤",
 			["requires"] = AL["Black Anvil"],
 			["tools"] = {5956},
 			["castTime"] = 25,
@@ -2202,7 +2202,7 @@ GetSpellInfoVanillaDB = {
 			["craftQuantityMin"] = "",
 			["craftQuantityMax"] = "",
 			["reagents"] = {
-				[1] = {12360, 8},
+				[1] = {12360, 16},
 				[2] = {12811, 6},
 				[3] = {12800, 6},
 				[4] = {12810, 6},
