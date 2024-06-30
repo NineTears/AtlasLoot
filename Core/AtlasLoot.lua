@@ -3950,7 +3950,8 @@ AtlasLoot_updater:SetScript("OnEvent", function()
 		if source then
 			_,name = GetChannelName(source)
 		end
-		if name == "LFT" then
+		if not name then return end
+		if string.upper(name) == "LFT" then
 			local msg, v, remoteversion, remotetitle = AtlasLoot_strsplit(":", arg1)
 			if msg == "Atlasloot" then
 				local remoteversion = tonumber(remoteversion) or 0

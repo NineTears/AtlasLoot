@@ -603,6 +603,7 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s3320", "inv_stone_grindingstone_01", "=q1=劣质砂轮", "=ds=#sr# =so1=25 =so2=45 =so3=65 =so4=85" },
 		{ "s2739", "inv_sword_26", "=q1=铜质短剑", "=ds=#sr# =so1=25 =so2=65 =so3=85 =so4=105" },
 		{ "s57163", "INV_Misc_Buckle_01", "=q2=铜皮带扣", "=ds=#sr# =so1=25 =so2=65 =so3=85 =so4=105" },
+		{ "s46663", "inv_gauntlets_11", "=q1=铜指虎", "=ds=#sr# =so1=30 =so2=60 =so3=62 =so4=65" },
 		{ "s9983", "inv_sword_21", "=q1=铜质双刃刀", "=ds=#sr# =so1=30 =so2=70 =so3=90 =so4=110" },
 		{ "s8880", "inv_weapon_shortblade_14", "=q1=铜质匕首", "=ds=#sr# =so1=30 =so2=70 =so3=90 =so4=110" },
 		{ "s2661", "inv_belt_02", "=q1=铜质链甲腰带", "=ds=#sr# =so1=35 =so2=75 =so3=95 =so4=115" },
@@ -617,6 +618,7 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s2666", "inv_belt_03", "=q2=铜质符文腰带", "=ds=#sr# =so1=70 =so2=110 =so3=130 =so4=150" },
 		{ "s3294", "inv_throwingaxe_01", "=q2=厚重的战斧", "=ds=#sr# =so1=70 =so2=110 =so3=130 =so4=150" },
 		{ "s3326", "inv_stone_grindingstone_02", "=q1=粗制砂轮", "=ds=#sr# =so1=75 =so2=75 =so3=87 =so4=100" },
+		{ "s46664", "inv_misc_monsterclaw_01", "=q2=锋利之爪", "=ds=#sr# =so1=75 =so2=90 =so3=95 =so4=100" },
 	};
 
 	SmithingJourneyman1 = {
@@ -636,6 +638,7 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s3328", "inv_shoulder_05", "=q2=劣质青铜护肩", "=ds=#sr# =so1=110 =so2=140 =so3=155 =so4=170" },
 		{ "s6517", "inv_weapon_shortblade_05", "=q2=珍珠匕首", "=ds=#sr# =so1=110 =so2=140 =so3=155 =so4=170" },
 		{ "s2741", "inv_axe_17", "=q1=青铜斧", "=ds=#sr# =so1=115 =so2=145 =so3=160 =so4=175" },
+		{ "s46665", "inv_gauntlets_11", "=q2=青铜荣耀者", "=ds=#sr# =so1=120 =so2=140 =so3=145 =so4=150" },
 		{ "s2742", "inv_sword_04", "=q1=青铜短剑", "=ds=#sr# =so1=120 =so2=150 =so3=165 =so4=180" },
 		{ "s2672", "inv_bracer_07", "=q2=青铜花纹护腕", "=ds=#sr# =so1=120 =so2=150 =so3=165 =so4=180" },
 		{ "s2674", "inv_stone_sharpeningstone_03", "=q1=重磨刀石", "=ds=#sr# =so1=125 =so2=125 =so3=132 =so4=140" },
@@ -649,10 +652,10 @@ AtlasLoot_Data["AtlasLootCrafting"] = {
 		{ "s3331", "inv_boots_01", "=q2=镀银青铜战靴", "=ds=#sr# =so1=130 =so2=160 =so3=175 =so4=190" },
 		{ "s2673", "inv_chest_chain_09", "=q2=镀银青铜胸甲", "=ds=#sr# =so1=130 =so2=160 =so3=175 =so4=190" },
 		{ "s9987", "inv_axe_21", "=q1=青铜战斧", "=ds=#sr# =so1=135 =so2=165 =so3=180 =so4=195" },
-		{ "s3333", "inv_gauntlets_05", "=q2=镀银青铜护手", "=ds=#sr# =so1=135 =so2=165 =so3=180 =so4=195" },
 	};
 
 	SmithingJourneyman2 = {
+		{ "s3333", "inv_gauntlets_05", "=q2=镀银青铜护手", "=ds=#sr# =so1=135 =so2=165 =so3=180 =so4=195" },
 		{ "s57169", "INV_Misc_Buckle_03", "=q2=铁质皮带", "=ds=#sr# =so1=140 =so2=170 =so3=185 =so4=200" },
 		{ "s6518", "inv_hammer_05", "=q2=彩虹之锤", "=ds=#sr# =so1=140 =so2=170 =so3=185 =so4=200" },
 		{ "s3334", "inv_boots_01", "=q2=绿铁战靴", "=ds=#sr# =so1=145 =so2=175 =so3=190 =so4=205" },
