@@ -704,7 +704,7 @@ function AtlasLoot_SurvivalMenu()
 	AtlasLootMenuItem_2.lootpage = "Survival1";
 	AtlasLootMenuItem_2:Show();
 	--Journeyman
-	AtlasLootMenuItem_3_Name:SetText(AL["Garderning"]);
+	AtlasLootMenuItem_3_Name:SetText(AL["Gardening"]);
 	AtlasLootMenuItem_3_Extra:SetText("");
 	AtlasLootMenuItem_3_Icon:SetTexture("Interface\\Icons\\trade_herbalism");
 	AtlasLootMenuItem_3.lootpage = "Survival2";

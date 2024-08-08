@@ -1430,7 +1430,7 @@ AL:RegisterTranslations("zhCN", function() return {
     ["Cooking"] = "烹饪",
     ["First Aid"] = "|cffffd200急救",
     ["Survival"] = "|CFF00FF00生存",
-    ["Garderning"] = "|CFF00FF00园艺",
+    ["Gardening"] = "|CFF00FF00园艺",
     ["Alterac Valley"] = "奥特兰克山谷",
     ["Arathi Basin"] = "阿拉希盆地",
     ["Warsong Gulch"] = "战歌峡谷",

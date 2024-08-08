@@ -889,7 +889,7 @@ AtlasLoot_TableNames = {
 	["FirstAid1"] = { AL["First Aid"], "AtlasLootCrafting" },
 	--Survival
 	["Survival1"] = { AL["Survival"], "AtlasLootCrafting" },
-	["Survival2"] = { AL["Garderning"], "AtlasLootCrafting" },
+	["Survival2"] = { AL["Gardening"], "AtlasLootCrafting" },
 	--Poisons
 	["Poisons1"] = { AL["Rogue"] .. ": " .. AL["Poisons"], "AtlasLootCrafting" },
 	
@@ -1584,6 +1584,7 @@ AtlasLoot_TableNamesBoss = {
 	},
 	--Crafted Sets - Blacksmithing
 	["Crafted Sets - Blacksmithing"] = {
+		["SteelPlate"] = { AL["Steel Plate"], "AtlasLootCrafting" },
 		["ImperialPlate"] = { AL["Imperial Plate"], "AtlasLootCrafting" },
 		["TheDarksoul"] = { AL["The Darksoul"], "AtlasLootCrafting" },
 		["BloodsoulEmbrace"] = { AL["Bloodsoul Embrace"], "AtlasLootCrafting" },
@@ -1849,6 +1850,7 @@ AtlasLoot_TableNamesBoss = {
 		["Undercity"] = { AL["Undercity"], "AtlasLootRepItems" },
 		["Orgrimmar"] = { AL["Orgrimmar"], "AtlasLootRepItems" },
 		["ThunderBluff"] = { AL["Thunder Bluff"], "AtlasLootRepItems" },
+		["Dalaran"] = { AL["Dalaran"], "AtlasLootRepItems" },
 		["Wildhammer"] = { AL["Wildhammer Clan"], "AtlasLootRepItems" },
 	},
 
@@ -1936,7 +1938,7 @@ AtlasLoot_TableNamesBoss = {
 		["FirstAid1"] = { AL["First Aid"], "AtlasLootCrafting" },
 		--Survival
 		["Survival1"] = { AL["Survival"], "AtlasLootCrafting" },
-		["Survival2"] = { AL["Garderning"], "AtlasLootCrafting" },
+		["Survival2"] = { AL["Gardening"], "AtlasLootCrafting" },
 		--Poisons
 		["Poisons1"] = { AL["Rogue"] .. ": " .. AL["Poisons"], "AtlasLootCrafting" },
 	},

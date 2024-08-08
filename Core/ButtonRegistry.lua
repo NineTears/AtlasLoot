@@ -4877,12 +4877,12 @@ AtlasLoot_ButtonRegistry = {
 		Back_Page = "SURVIVALMENU";
 		Back_Title = AL["Survival"];
 		Prev_Page = "Survival2";
-		Prev_Title = AL["Garderning"];
+		Prev_Title = AL["Gardening"];
 		Next_Page = "Survival2";
-		Next_Title = AL["Garderning"];
+		Next_Title = AL["Gardening"];
 	};
 	["Survival2"] = {
-		Title = AL["Garderning"];
+		Title = AL["Gardening"];
 		Back_Page = "SURVIVALMENU";
 		Back_Title = AL["Survival"];
 		Prev_Page = "Survival1";

@@ -1,6 +1,6 @@
 ﻿## Interface: 11200
-## Title: |CFF33AAFFAtlasLoot |R副本掉落 |cffff1450[1.25]|R
-## Title-zhCN: |CFF33AAFFAtlasLoot |R副本掉落 |cffff1450[1.25]|R
+## Title: |CFF33AAFFAtlasLoot |R副本掉落 |cffff1450[1.26]|R
+## Title-zhCN: |CFF33AAFFAtlasLoot |R副本掉落 |cffff1450[1.26]|R
 ## Notes: |CFF33AAFFAtlasLoot |R副本掉落 |cffff1450|R中文端由|cff33ffccWind|R汉化修复，汉显端由|cff33ffcc名字不好起|R修改。|N命令：/atlasloot
 ## Notes-zhCN: |CFF33AAFFAtlasLoot |R副本掉落 |cffff1450|R中文端由|cff33ffccWind|R汉化修复，汉显端由|cff33ffcc名字不好起|R修改。|N命令：/atlasloot
 ## Author: Daviesh, Pompa (Turtle WoW World Bosses), Xerron (Turtle WoW World Bosses), Gurky (Turtle WoW 1.16/1.16.1 Dungeons), |cffbe5effLexie|r, Wind, 名字不好起

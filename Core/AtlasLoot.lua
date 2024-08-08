@@ -3912,7 +3912,7 @@ local function AtlasLoot_strsplit(delimiter, subject)
   string.gsub(subject, pattern, function(c) fields[table.getn(fields)+1] = c end)
   return unpack(fields)
 end
---[[
+--[[禁用版本检查，降低内存消耗
 --Update announcing code taken from pfUI
 local major, minor, fix = AtlasLoot_strsplit(".", tostring(GetAddOnMetadata("AtlasLoot", "Version")))
 
@@ -3927,6 +3927,10 @@ AtlasLoot_updater:RegisterEvent("CHAT_MSG_ADDON")
 AtlasLoot_updater:RegisterEvent("CHAT_MSG_CHANNEL")
 AtlasLoot_updater:RegisterEvent("PLAYER_ENTERING_WORLD")
 AtlasLoot_updater:RegisterEvent("PARTY_MEMBERS_CHANGED")
+AtlasLoot_updater:RegisterEvent("CHAT_MSG_CHANNEL_JOIN")
+
+AtlasLootUserCounter = {}
+PlayerCounter = {}
 
 AtlasLoot_updater:SetScript("OnEvent", function()
 	if event == "CHAT_MSG_ADDON" and arg1 == "AtlasLoot" then
@@ -3942,6 +3946,13 @@ AtlasLoot_updater:SetScript("OnEvent", function()
 					alreadyshown = true
 				end
 			end
+		end
+	end
+
+	if event == "CHAT_MSG_CHANNEL_JOIN" then
+		local name = arg2
+		if not PlayerCounter[name] then
+			PlayerCounter[name] = 1
 		end
 	end
 
@@ -3965,6 +3976,10 @@ AtlasLoot_updater:SetScript("OnEvent", function()
 							alreadyshown = true
 						end
 					end
+				end
+				local name = arg2
+				if not AtlasLootUserCounter[name] then
+					AtlasLootUserCounter[name] = 1
 				end
 			end
 		end
@@ -3997,82 +4012,3 @@ AtlasLoot_updater:SetScript("OnEvent", function()
 	end
   end)
 --]]
---[[禁用版本检查，降低内存消耗
---Update announcing code taken from pfUI
-local major, minor, fix = AtlasLoot_strsplit(".", tostring(GetAddOnMetadata("AtlasLoot", "Version")))
-
-local alreadyshown = false
-local localversion  = tonumber(major*10000 + minor*100 + fix)
-local remoteversion = tonumber(AtlasLoot_updateavailable) or 0
-local loginchannels = { "BATTLEGROUND", "RAID", "GUILD" }
-local groupchannels = { "BATTLEGROUND", "RAID" }
-
-AtlasLoot_updater = CreateFrame("Frame")
-AtlasLoot_updater:RegisterEvent("CHAT_MSG_ADDON")
-AtlasLoot_updater:RegisterEvent("CHAT_MSG_CHANNEL")
-AtlasLoot_updater:RegisterEvent("PLAYER_ENTERING_WORLD")
-AtlasLoot_updater:RegisterEvent("PARTY_MEMBERS_CHANGED")
-
-AtlasLoot_updater:SetScript("OnEvent", function()
-    if event == "CHAT_MSG_ADDON" and arg1 == "AtlasLoot" then
-        local v, remoteversion = AtlasLoot_strsplit(":", arg2)
-        local remoteversion = tonumber(remoteversion)
-        if remoteversion >= 40000 then remoteversion = 0 end --Block for people using some version from another version of WoW.
-        if v == "VERSION" and remoteversion then
-            if remoteversion > localversion then
-                AtlasLoot_updateavailable = remoteversion
-                if not alreadyshown then
-                    DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot-Turtle-zhCN]|r 新版本！请下载：https://github.com/NineTears/AtlasLoot-Turtle-zhCN")
-                    alreadyshown = true
-                end
-            end
-        end
-    end
-
-    if event == "CHAT_MSG_CHANNEL" then
-        local _,_,source = string.find(arg4,"(%d+)%.")
-        local _,name = GetChannelName(source)
-        if name == "LFT" then
-            local msg, v, remoteversion = AtlasLoot_strsplit(":", arg1)
-            if msg == "AtlasLoot" then
-                local remoteversion = tonumber(remoteversion) or 0
-                if remoteversion >= 40000 then remoteversion = 0 end --Block for people using some version from another version of WoW.
-                if v == "VERSION" and remoteversion then
-                    if remoteversion > localversion then
-                        AtlasLoot_updateavailable = remoteversion
-                        if not alreadyshown then
-                            DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot-Turtle-zhCN]|r 新版本！请下载：https://github.com/NineTears/AtlasLoot-Turtle-zhCN")
-                            alreadyshown = true
-                        end
-                    end
-                end
-            end
-        end
-    end
-
-    if event == "PARTY_MEMBERS_CHANGED" then
-        local groupsize = GetNumRaidMembers() > 0 and GetNumRaidMembers() or GetNumPartyMembers() > 0 and GetNumPartyMembers() or 0
-        if ( this.group or 0 ) < groupsize then
-            for _, chan in pairs(groupchannels) do
-                SendAddonMessage("AtlasLoot", "VERSION:" .. localversion, chan)
-            end
-        end
-        this.group = groupsize
-    end
-
-    if event == "PLAYER_ENTERING_WORLD" then
-      if not alreadyshown and localversion < remoteversion then
-        DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot-Turtle-zhCN]|r 新版本！请下载：https://github.com/NineTears/AtlasLoot-Turtle-zhCN")
-        AtlasLoot_updateavailable = localversion
-        alreadyshown = true
-      end
-
-      for _, chan in pairs(loginchannels) do
-        SendAddonMessage("AtlasLoot", "VERSION:" .. localversion, chan)
-      end
-      if GetChannelName("LFT") ~= 0 then
-        SendChatMessage("AtlasLoot:VERSION:" .. localversion, "CHANNEL", nil, GetChannelName("LFT"))
-      end
-    end
-  end)
-]]
