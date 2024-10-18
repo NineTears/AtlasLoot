@@ -457,13 +457,13 @@ AtlasLoot_ButtonRegistry = {
 	};
 	["KCArchlichEnkhraz"] = {
 		Title = AL["Archlich Enkhraz"];
-		Next_Page = "KCCommanderAnderson";
-		Next_Title = AL["Commander Anderson"];
+		Next_Page = "KCCommanderAndreon";
+		Next_Title = AL["Commander Andreon"];
 		Prev_Page = "KCGuardCaptainGort";
 		Prev_Title = AL["Guard Captain Gort"];
 	};
-	["KCCommanderAnderson"] = {
-		Title = AL["Commander Anderson"];
+	["KCCommanderAndreon"] = {
+		Title = AL["Commander Andreon"];
 		Next_Page = "KCAlarus";
 		Next_Title = AL["Alarus"];
 		Prev_Page = "KCArchlichEnkhraz";
@@ -473,8 +473,8 @@ AtlasLoot_ButtonRegistry = {
 		Title = AL["Alarus"];
 		Next_Page = "KCTreasure";
 		Next_Title = AL["Half-Buried Treasure Chest"];
-		Prev_Page = "KCCommanderAnderson";
-		Prev_Title = AL["Commander Anderson"];
+		Prev_Page = "KCCommanderAndreon";
+		Prev_Title = AL["Commander Andreon"];
 	};
 	["KCTreasure"] = {
 		Title = AL["Half-Buried Treasure Chest"];
@@ -492,17 +492,10 @@ AtlasLoot_ButtonRegistry = {
 	};
 	["COTBMChronar"] = {
 		Title = AL["Chronar"];
-		Next_Page = "COTBMHarbingerAphygth";
-		Next_Title = AL["Harbinger Aph'ygth"];
-		Prev_Page = "COTTrash";
-		Prev_Title = AL["Trash Mobs"];
-	};
-	["COTBMHarbingerAphygth"] = {
-		Title = AL["Harbinger Aph'ygth"];
 		Next_Page = "COTBMEpidamu";
 		Next_Title = AL["Epidamu"];
-		Prev_Page = "COTBMChronar";
-		Prev_Title = AL["Chronar"];
+		Prev_Page = "COTTrash";
+		Prev_Title = AL["Trash Mobs"];
 	};
 	["COTBMEpidamu"] = {
 		Title = AL["Epidamu"];
@@ -4476,6 +4469,8 @@ AtlasLoot_ButtonRegistry = {
 		Title = AL["Enchanting"] .. ": " .. AL["Apprentice"];
 		Back_Page = "ENCHANTINGMENU";
 		Back_Title = AL["Enchanting"];
+		Prev_Page = "EnchantingMisc1";
+		Prev_Title = AL["Enchanting"] .. ": " .. AL["Misc"];
 		Next_Page = "EnchantingJourneyman1";
 		Next_Title = AL["Enchanting"] .. ": " .. AL["Journeyman"];
 	};
@@ -4539,6 +4534,89 @@ AtlasLoot_ButtonRegistry = {
 		Back_Title = AL["Enchanting"];
 		Prev_Page = "EnchantingArtisan2";
 		Prev_Title = AL["Enchanting"] .. ": " .. AL["Artisan"];
+		Next_Page = "EnchantingCloak1";
+		Next_Title = AL["Enchanting"] .. ": " .. AL["Cloak"];
+	};
+	["EnchantingCloak1"] = {
+		Title = AL["Enchanting"] .. ": " .. AL["Cloak"];
+		Back_Page = "ENCHANTINGMENU";
+		Back_Title = AL["Enchanting"];
+		Prev_Page = "EnchantingArtisan3";
+		Prev_Title = AL["Enchanting"] .. ": " .. AL["Artisan"];
+		Next_Page = "EnchantingChest1";
+		Next_Title = AL["Enchanting"] .. ": " .. AL["Chest"];
+	};
+	["EnchantingChest1"] = {
+		Title = AL["Enchanting"] .. ": " .. AL["Chest"];
+		Back_Page = "ENCHANTINGMENU";
+		Back_Title = AL["Enchanting"];
+		Prev_Page = "EnchantingCloak1";
+		Prev_Title = AL["Enchanting"] .. ": " .. AL["Cloak"];
+		Next_Page = "EnchantingBracer1";
+		Next_Title = AL["Enchanting"] .. ": " .. AL["Bracer"];
+	};
+	["EnchantingBracer1"] = {
+		Title = AL["Enchanting"] .. ": " .. AL["Bracer"];
+		Back_Page = "ENCHANTINGMENU";
+		Back_Title = AL["Enchanting"];
+		Prev_Page = "EnchantingChest1";
+		Prev_Title = AL["Enchanting"] .. ": " .. AL["Chest"];
+		Next_Page = "EnchantingGlove1";
+		Next_Title = AL["Enchanting"] .. ": " .. AL["Glove"];
+	};
+	["EnchantingGlove1"] = {
+		Title = AL["Enchanting"] .. ": " .. AL["Glove"];
+		Back_Page = "ENCHANTINGMENU";
+		Back_Title = AL["Enchanting"];
+		Prev_Page = "EnchantingBracer1";
+		Prev_Title = AL["Enchanting"] .. ": " .. AL["Bracer"];
+		Next_Page = "EnchantingBoots1";
+		Next_Title = AL["Enchanting"] .. ": " .. AL["Boots"];
+	};
+	["EnchantingBoots1"] = {
+		Title = AL["Enchanting"] .. ": " .. AL["Boots"];
+		Back_Page = "ENCHANTINGMENU";
+		Back_Title = AL["Enchanting"];
+		Prev_Page = "EnchantingGlove1";
+		Prev_Title = AL["Enchanting"] .. ": " .. AL["Glove"];
+		Next_Page = "Enchanting2HWeapon1";
+		Next_Title = AL["Enchanting"] .. ": " .. AL["2H Weapon"];
+	};
+	["Enchanting2HWeapon1"] = {
+		Title = AL["Enchanting"] .. ": " .. AL["2H Weapon"];
+		Back_Page = "ENCHANTINGMENU";
+		Back_Title = AL["Enchanting"];
+		Prev_Page = "EnchantingBoots1";
+		Prev_Title = AL["Enchanting"] .. ": " .. AL["Boots"];
+		Next_Page = "EnchantingWeapon1";
+		Next_Title = AL["Enchanting"] .. ": " .. AL["Weapon"];
+	};
+	["EnchantingWeapon1"] = {
+		Title = AL["Enchanting"] .. ": " .. AL["Weapon"];
+		Back_Page = "ENCHANTINGMENU";
+		Back_Title = AL["Enchanting"];
+		Prev_Page = "Enchanting2HWeapon1";
+		Prev_Title = AL["Enchanting"] .. ": " .. AL["2H Weapon"];
+		Next_Page = "EnchantingShield1";
+		Next_Title = AL["Enchanting"] .. ": " .. AL["Shield"];
+	};
+	["EnchantingShield1"] = {
+		Title = AL["Enchanting"] .. ": " .. AL["Shield"];
+		Back_Page = "ENCHANTINGMENU";
+		Back_Title = AL["Enchanting"];
+		Prev_Page = "EnchantingWeapon1";
+		Prev_Title = AL["Enchanting"] .. ": " .. AL["Weapon"];
+		Next_Page = "EnchantingMisc1";
+		Next_Title = AL["Enchanting"] .. ": " .. AL["Misc"];
+	};
+	["EnchantingMisc1"] = {
+		Title = AL["Enchanting"] .. ": " .. AL["Misc"];
+		Back_Page = "ENCHANTINGMENU";
+		Back_Title = AL["Enchanting"];
+		Prev_Page = "EnchantingShield1";
+		Prev_Title = AL["Enchanting"] .. ": " .. AL["Shield"];
+		Next_Page = "EnchantingApprentice1";
+		Next_Title = AL["Enchanting"] .. ": " .. AL["Apprentice"];
 	};
 	["EngineeringApprentice1"] = {
 		Title = AL["Engineering"] .. ": " .. AL["Apprentice"];
@@ -4753,6 +4831,17 @@ AtlasLoot_ButtonRegistry = {
 		Title = AL["Tailoring"] .. ": " .. AL["Apprentice"];
 		Back_Page = "TAILORINGMENU";
 		Back_Title = AL["Tailoring"];
+		Prev_Page = "TailoringArtisan5";
+		Prev_Title = AL["Tailoring"] .. ": " .. AL["Artisan"];
+		Next_Page = "TailoringApprentice2";
+		Next_Title = AL["Tailoring"] .. ": " .. AL["Journeyman"];
+	};
+	["TailoringApprentice2"] = {
+		Title = AL["Tailoring"] .. ": " .. AL["Apprentice"];
+		Back_Page = "TAILORINGMENU";
+		Back_Title = AL["Tailoring"];
+		Prev_Page = "TailoringApprentice1";
+		Prev_Title = AL["Tailoring"] .. ": " .. AL["Apprentice"];
 		Next_Page = "TailoringJourneyman1";
 		Next_Title = AL["Tailoring"] .. ": " .. AL["Journeyman"];
 	};
@@ -4760,7 +4849,7 @@ AtlasLoot_ButtonRegistry = {
 		Title = AL["Tailoring"] .. ": " .. AL["Journeyman"];
 		Back_Page = "TAILORINGMENU";
 		Back_Title = AL["Tailoring"];
-		Prev_Page = "TailoringApprentice1";
+		Prev_Page = "TailoringApprentice2";
 		Prev_Title = AL["Tailoring"] .. ": " .. AL["Apprentice"];
 		Next_Page = "TailoringJourneyman2";
 		Next_Title = AL["Tailoring"] .. ": " .. AL["Journeyman"];
@@ -4834,6 +4923,8 @@ AtlasLoot_ButtonRegistry = {
 		Back_Title = AL["Tailoring"];
 		Prev_Page = "TailoringArtisan4";
 		Prev_Title = AL["Tailoring"] .. ": " .. AL["Artisan"];
+		Next_Page = "TailoringApprentice1";
+		Next_Title = AL["Tailoring"] .. ": " .. AL["Apprentice"];
 	};
 	["CookingApprentice1"] = {
 		Title = AL["Cooking"] .. ": " .. AL["Apprentice"];

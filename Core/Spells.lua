@@ -1,7 +1,7 @@
 
 local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
 
-GetSpellInfoVanillaDB = {
+GetSpellInfoAtlasLootDB = {
 	["enchants"] = {
 		[7418] = {
 			["name"] = "附魔护腕 - 初级生命",
@@ -1481,6 +1481,20 @@ GetSpellInfoVanillaDB = {
 				[2] = {1179},
 				[3] = {17196},
 				[4] = {17194},
+			},
+		},
+		[45054] = {
+			["name"] = "烹饪: 海上秋葵浓汤",
+			["requires"] = AL["Cooking Fire"],
+			["tools"] = "",
+			["castTime"] = 3,
+			["text"] = "",
+			["craftItem"] = 30818,
+			["craftQuantityMin"] = "",
+			["craftQuantityMax"] = "",
+			["reagents"] = {
+				[1] = {2674},
+				[2] = {159},
 			},
 		},
 		[6414] = {
@@ -3066,6 +3080,21 @@ GetSpellInfoVanillaDB = {
 			["reagents"] = {
 				[1] = {2997},
 				[2] = {2321},
+			},
+		},
+		[45066] = {
+			["name"] = "裁缝: 玛纳瑟斯特手套",
+			["requires"] = "",
+			["tools"] = "",
+			["castTime"] = 8,
+			["text"] = "",
+			["craftItem"] = 51256,
+			["craftQuantityMin"] = "",
+			["craftQuantityMax"] = "",
+			["reagents"] = {
+				[1] = {2996, 3},
+				[2] = {2321, 2},
+				[3] = {6260, 3},
 			},
 		},
 		[3845] = {
@@ -9199,6 +9228,21 @@ GetSpellInfoVanillaDB = {
 			["reagents"] = {
 				[1] = {4364, 3},
 				[2] = {2589},
+			},
+		},
+		[45057] = {
+			["name"] = "工程学: 不稳定的采矿炸药",
+			["requires"] = "",
+			["tools"] = "",
+			["castTime"] = 5.125,
+			["text"] = "",
+			["craftItem"] = 51268,
+			["craftQuantityMin"] = 1,
+			["craftQuantityMax"] = 3,
+			["reagents"] = {
+				[1] = {4359, 4},
+				[2] = {2589, 2},
+				[3] = {4357, 2},
 			},
 		},
 		[3928] = {

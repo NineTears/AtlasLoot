@@ -421,24 +421,78 @@ function AtlasLoot_EnchantingMenu()
 	AtlasLootMenuItem_2_Icon:SetTexture("Interface\\Icons\\Trade_Engraving");
 	AtlasLootMenuItem_2.lootpage = "EnchantingApprentice1";
 	AtlasLootMenuItem_2:Show();
-	--Expert
-	AtlasLootMenuItem_4_Name:SetText(AL["Enchanting"]..": "..AL["Expert"]);
-	AtlasLootMenuItem_4_Extra:SetText("");
-	AtlasLootMenuItem_4_Icon:SetTexture("Interface\\Icons\\Trade_Engraving");
-	AtlasLootMenuItem_4.lootpage="EnchantingExpert1";
-	AtlasLootMenuItem_4:Show();
 	--Journeyman
 	AtlasLootMenuItem_3_Name:SetText(AL["Enchanting"]..": "..AL["Journeyman"]);
 	AtlasLootMenuItem_3_Extra:SetText("");
 	AtlasLootMenuItem_3_Icon:SetTexture("Interface\\Icons\\Trade_Engraving");
 	AtlasLootMenuItem_3.lootpage = "EnchantingJourneyman1";
 	AtlasLootMenuItem_3:Show();
+	--Expert
+	AtlasLootMenuItem_4_Name:SetText(AL["Enchanting"]..": "..AL["Expert"]);
+	AtlasLootMenuItem_4_Extra:SetText("");
+	AtlasLootMenuItem_4_Icon:SetTexture("Interface\\Icons\\Trade_Engraving");
+	AtlasLootMenuItem_4.lootpage="EnchantingExpert1";
+	AtlasLootMenuItem_4:Show();
 	--Artisan
 	AtlasLootMenuItem_5_Name:SetText(AL["Enchanting"]..": "..AL["Artisan"]);
 	AtlasLootMenuItem_5_Extra:SetText("");
 	AtlasLootMenuItem_5_Icon:SetTexture("Interface\\Icons\\Trade_Engraving");
 	AtlasLootMenuItem_5.lootpage="EnchantingArtisan1";
 	AtlasLootMenuItem_5:Show();
+	--By Slot, Cloak
+	AtlasLootMenuItem_7_Name:SetText(AL["Enchanting"]..": "..AL["Cloak"]);
+	AtlasLootMenuItem_7_Extra:SetText("");
+	AtlasLootMenuItem_7_Icon:SetTexture("Interface\\Icons\\Trade_Engraving");
+	AtlasLootMenuItem_7.lootpage="EnchantingCloak1";
+	AtlasLootMenuItem_7:Show();
+	--By Slot, Chest
+	AtlasLootMenuItem_8_Name:SetText(AL["Enchanting"]..": "..AL["Chest"]);
+	AtlasLootMenuItem_8_Extra:SetText("");
+	AtlasLootMenuItem_8_Icon:SetTexture("Interface\\Icons\\Trade_Engraving");
+	AtlasLootMenuItem_8.lootpage="EnchantingChest1";
+	AtlasLootMenuItem_8:Show();
+	--By Slot, Bracer
+	AtlasLootMenuItem_9_Name:SetText(AL["Enchanting"]..": "..AL["Bracer"]);
+	AtlasLootMenuItem_9_Extra:SetText("");
+	AtlasLootMenuItem_9_Icon:SetTexture("Interface\\Icons\\Trade_Engraving");
+	AtlasLootMenuItem_9.lootpage="EnchantingBracer1";
+	AtlasLootMenuItem_9:Show();
+	--By Slot, Glove
+	AtlasLootMenuItem_10_Name:SetText(AL["Enchanting"]..": "..AL["Glove"]);
+	AtlasLootMenuItem_10_Extra:SetText("");
+	AtlasLootMenuItem_10_Icon:SetTexture("Interface\\Icons\\Trade_Engraving");
+	AtlasLootMenuItem_10.lootpage="EnchantingGlove1";
+	AtlasLootMenuItem_10:Show();
+	--By Slot, Boots
+	AtlasLootMenuItem_11_Name:SetText(AL["Enchanting"]..": "..AL["Boots"]);
+	AtlasLootMenuItem_11_Extra:SetText("");
+	AtlasLootMenuItem_11_Icon:SetTexture("Interface\\Icons\\Trade_Engraving");
+	AtlasLootMenuItem_11.lootpage="EnchantingBoots1";
+	AtlasLootMenuItem_11:Show();
+	--By Slot, 2H Weapon
+	AtlasLootMenuItem_12_Name:SetText(AL["Enchanting"]..": "..AL["2H Weapon"]);
+	AtlasLootMenuItem_12_Extra:SetText("");
+	AtlasLootMenuItem_12_Icon:SetTexture("Interface\\Icons\\Trade_Engraving");
+	AtlasLootMenuItem_12.lootpage="Enchanting2HWeapon1";
+	AtlasLootMenuItem_12:Show();
+	--By Slot, Weapon
+	AtlasLootMenuItem_13_Name:SetText(AL["Enchanting"]..": "..AL["Weapon"]);
+	AtlasLootMenuItem_13_Extra:SetText("");
+	AtlasLootMenuItem_13_Icon:SetTexture("Interface\\Icons\\Trade_Engraving");
+	AtlasLootMenuItem_13.lootpage="EnchantingWeapon1";
+	AtlasLootMenuItem_13:Show();
+	--By Slot, Shield
+	AtlasLootMenuItem_14_Name:SetText(AL["Enchanting"]..": "..AL["Shield"]);
+	AtlasLootMenuItem_14_Extra:SetText("");
+	AtlasLootMenuItem_14_Icon:SetTexture("Interface\\Icons\\Trade_Engraving");
+	AtlasLootMenuItem_14.lootpage="EnchantingShield1";
+	AtlasLootMenuItem_14:Show();
+	--By Slot, Misc
+	AtlasLootMenuItem_14_Name:SetText(AL["Enchanting"]..": "..AL["Misc"]);
+	AtlasLootMenuItem_14_Extra:SetText("");
+	AtlasLootMenuItem_14_Icon:SetTexture("Interface\\Icons\\Trade_Engraving");
+	AtlasLootMenuItem_14.lootpage="EnchantingMisc1";
+	AtlasLootMenuItem_14:Show();
 	for i = 1, 30, 1 do
 		getglobal("AtlasLootMenuItem_"..i.."_Extra"):Show();
 	end

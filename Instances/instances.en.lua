@@ -346,7 +346,7 @@ AtlasLootBossButtons = {
 		"MaraRotgrip";
 		"MaraPrincessTheradras";
 		"LunarFestival1";
-		"";
+		"";		--添加分割线
 		"MaraTrash";
 	};
 	MaraudonEnt = {
@@ -627,7 +627,7 @@ AtlasLootBossButtons = {
 		"TCGHighPriestessAlathea";
 		"TCGFenektistheDeceiver";
 		"TCGMasterRaxxieth";
-		"";
+		"";		--添加分割线
 		"TCGTrash";
 	};
 	KarazhanCrypt = {
@@ -638,9 +638,9 @@ AtlasLootBossButtons = {
 		"KCCorpsemuncher";
 		"KCGuardCaptainGort";
 		"KCArchlichEnkhraz";
-		"KCCommanderAnderson";
+		"KCCommanderAndreon";
 		"KCAlarus";
-		"";
+		"";		--添加分割线
 		"KCTreasure";
 		"KCTrash";
 	};
@@ -656,7 +656,7 @@ AtlasLootBossButtons = {
 		"COTBMRotmaw";
 		"COTBMAntnormi";
 		--"COTBMInfiniteChromie";
-		"";
+		"";		--添加分割线
 		"COTTrash";
 	};
 	StormwindVault = {
@@ -667,9 +667,9 @@ AtlasLootBossButtons = {
 		"SWVBlackBride";
 		"SWVDamian";
 		"SWVVolkanCruelblade";
-		"";
+		"SWVArctiras";
 		"SWVVaultArmoryEquipment";
-		"";
+		"";		--添加分割线
 		"SWVTrash";
 	};
 	HateforgeQuarry = {
@@ -680,7 +680,7 @@ AtlasLootBossButtons = {
 		"HQCorrosis";
 		"HQHatereaverAnnihilator";
 		"HQHargeshDoomcaller";
-		"";
+		"";		--添加分割线
 		"HQTrash";
 	};
 	TheDeadmines = {
@@ -846,7 +846,7 @@ AtlasLootBossButtons = {
 		"GCHorsemasterLevvin";
 		"GCHarlowFamilyChest";
 		"GCGennGreymane";
-		"";
+		"";		--添加分割线
 		"GCTrash";
 	};
 	WailingCaverns = {
@@ -947,7 +947,7 @@ AtlasLootBossButtons = {
 		"LKHClawlordHowlfang";
 		"LKHLordBlackwaldII";
 		"LKHMoroes";
-		"";
+		"";		--添加分割线
 		"LKHTrash";
 		"LKHEnchants";
 	};
@@ -956,7 +956,7 @@ AtlasLootBossButtons = {
 		"ESSolnius1";
 		"ESSolnius2";
 		"ESHardMode";
-		"";
+		"";		--添加分割线
 		"ESTrash";
 	}
 };
@@ -1331,7 +1331,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 	MCGarr = { --https://database.turtle-wow.org/?npc=12057
 		{ 16813, "INV_Helmet_34", "=q4=预言头饰", "=ds=#s1#, #a1# =q9=#c5#", "20%" },
 		{ 16795, "INV_Helmet_53", "=q4=奥术师头冠", "=ds=#s1#, #a1# =q10=#c3#", "20%" },
-		{ 16808, "INV_Helmet_08", "=q4=Felheart Horns", "=ds=#s1#, #a1# =q11=#c8#", "20%" },
+		{ 16808, "INV_Helmet_08", "=q4=恶魔之心角饰", "=ds=#s1#, #a1# =q11=#c8#", "20%" },
 		{ 16821, "INV_Helmet_41", "=q4=夜幕杀手头巾", "=ds=#s1#, #a2# =q12=#c6#", "20%" },
 		{ 16834, "INV_Helmet_09", "=q4=塞纳里奥头盔", "=ds=#s1#, #a2# =q13=#c1#", "17%" },
 		{ 16846, "INV_Helmet_05", "=q4=巨人追猎者头盔", "=ds=#s1#, #a3# =q14=#c2#", "17%" },
@@ -1423,7 +1423,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 16820, "INV_Chest_Cloth_07", "=q4=夜幕杀手胸甲", "=ds=#s5#, #a2# =q12=#c6#", "25%" },
 		{ 16833, "INV_Chest_Cloth_06", "=q4=塞纳里奥胸甲", "=ds=#s5#, #a2# =q13=#c1#", "20%" },
 		{ 16845, "INV_Chest_Chain_03", "=q4=巨人追猎者胸甲", "=ds=#s5#, #a3# =q14=#c2#", "20%" },
-		{ 16841, "INV_Chest_Chain_11", "=q4=Earthfury Vestments", "=ds=#s5#, #a3# =q15=#c7#", "20%" },
+		{ 16841, "INV_Chest_Chain_11", "=q4=大地之怒外衣", "=ds=#s5#, #a3# =q15=#c7#", "20%" },
 		{ 16853, "INV_Chest_Plate03", "=q4=秩序之源胸甲", "=ds=#s5#, #a4# =q16=#c4#", "20%" },
 		{ 16865, "INV_Chest_Plate16", "=q4=力量胸甲", "=ds=#s5#, #a4# =q17=#c9#", "20%" },
 		{ 0,"","","" },
@@ -1944,7 +1944,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 19711, "INV_Bijou_Green", "=q3=绿色哈卡莱宝石", "=ds=#m39#", "2%" },
 		{ 19710, "INV_Bijou_Orange", "=q3=橙色哈卡莱宝石", "=ds=#m39#", "2%" },
 		{ 19712, "INV_Bijou_Purple", "=q3=紫色哈卡莱宝石", "=ds=#m39#", "2%" },
-		{ 19707, "INV_Bijou_Red", "=q3=Red aHakkari Bijou", "=ds=#m39#", "2%" },
+		{ 19707, "INV_Bijou_Red", "=q3=红色哈卡莱宝石", "=ds=#m39#", "2%" },
 		{ 19714, "INV_Bijou_Silver", "=q3=银色哈卡莱宝石", "=ds=#m39#", "2%" },
 		{ 19709, "INV_Bijou_Yellow", "=q3=黄色哈卡莱宝石", "=ds=#m39#", "2%" },
 	};
@@ -2795,6 +2795,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 83221, "INV_hammer_16", "=q3=刺根重锤", "=ds=#h2#, #w6#", "24%" },
 		{ 83222, "INV_bracer_12", "=q3=林域长者护腕", "=ds=#s8#, #a1#", "24%" },
 		{ 83223, "INV_gauntlets_24", "=q3=熊怪战斗之握", "=ds=#s9#, #a2#", "24%" },
+		{ 0, "", "", "" },
 		{ 83224, "INV_misc_horn_03", "=q3=恩嘉斯之角", "=ds=#s14#", "5%" },
 		{ 0, "", "", "" },
 		{ 60176, "INV_misc_coin_13", "=q1=林荫徽记", "=ds=#m3#", "100%" },
@@ -2806,6 +2807,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 83227, "inv_chest_cloth_27", "=q3=林地修复者长袍", "=ds=#s5#, #a1#", "24%" },
 		{ 83226, "INV_bracer_12", "=q3=拉纳索斯之环", "=ds=#s8#, #a2#", "24%" },
 		{ 83228, "INV_boots_03", "=q3=守护者踏靴", "=ds=#s12#, #a3#", "24%" },
+		{ 0, "", "", "" },
 		{ 83229, "INV_jewelry_ring_08", "=q3=塞纳留斯头环", "=ds=#s13#", "5%" },
 		{ 0, "", "", "" },
 		{ 51217, "INV_misc_ribbon_01", "=q2=幻化币", "=ds=#e27#", "1%" },
@@ -2814,6 +2816,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 83208, "INV_belt_22", "=q3=新月头环", "=ds=#s1#, #a1#", "30%" },
 		{ 83209, "INV_axe_12", "=q3=哨兵的劈月者", "=ds=#h2#, #w1#", "30%" },
 		{ 83211, "INV_shoulder_05", "=q3=月光护肩", "=ds=#s3#, #a2#", "30%" },
+		{ 0, "", "", "" },
 		{ 83210, "inv_weapon_shortblade_23", "=q3=新月印记", "=ds=#s14#", "10%" },
 		{ 0, "", "", "" },
 		{ 51217, "INV_misc_ribbon_01", "=q2=幻化币", "=ds=#e27#", "1%" },
@@ -2829,7 +2832,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 	TCGMasterRaxxieth = {
 		{ 60258, "INV_helmet_08", "=q4=腐蚀王冠", "=ds=#s1#, #a2#", "0.5%" },
 		{ 0, "", "", "" },
-		{ 83216, "INV_helmet_17", "=q3=Bloodforged Helm", "=ds=#s1#, #a3#", "25%" },
+		{ 83216, "INV_helmet_17", "=q3=染血头盔", "=ds=#s1#, #a3#", "25%" },
 		{ 83217, "INV_jewelry_ring_16", "=q3=狂暴恶魔之戒", "=ds=#s13#", "25%" },
 		{ 83218, "INV_misc_cape_19", "=q3=暗影丝线斗篷", "=ds=#s4#, #a1#", "25%" },
 		{ 83219, "INV_sword_18", "=q3=杀戮之刃", "=ds=#h1#, #w10#", "25%" },
@@ -2856,7 +2859,6 @@ AtlasLoot_Data["AtlasLootItems"] = {
 	GCPackmasterRagetooth = {
 		{ 61301, "INV_Boots_05", "=q2=阴影行靴", "=ds=#s12#, #a1#", "33%" },
 		{ 61300, "INV_Gauntlets_21", "=q2=驭兽手套", "=ds=#s9#, #a2#", "33%" },
-		{ 0, "", "", "" },
 		{ 61302, "INV_Jewelry_Necklace_13", "=q2=狼心项链", "=ds=#s2#", "33%" },
 		{ 0, "", "", "" },
 		{ 61303, "INV_Misc_Orb_04", "=q3=阿卡萨宝球", "=ds=#s15#", "2%" },
@@ -2865,28 +2867,27 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 61309, "inv_shoulder_24", "=q3=法律披肩", "=ds=#s3#, #a1#", "25%" },
 		{ 61311, "INV_Bracer_07", "=q3=萨瑟兰护腕", "=ds=#s8#, #a1#", "25%" },
 		{ 61310, "INV_Belt_15", "=q3=信念腰带", "=ds=#s10#, #a1#", "25%" },
-		{ 61312, "INV_Jewelry_Necklace_17", "=q3=黑色吊坠", "=ds=#s2#", "2%" },
-		{ 0, "", "", "" },
 		{ 61308, "INV_Hammer_05", "=q3=吉尔尼斯司法之锤", "=ds=#h3#, #w6#", "25%" },
+		{ 0, "", "", "" },
+		{ 61312, "INV_Jewelry_Necklace_17", "=q3=黑色吊坠", "=ds=#s2#", "2%" },
 	};
 	GCDustivanBlackcowl = {		
 		{ 61331, "INV_Belt_17", "=q3=黑罩腰带", "=ds=#s10#, #a2#", "25%" },
 		{ 61332, "INV_Jewelry_Ring_35", "=q3=电气缠绕之戒", "=ds=#s13#", "25%" },
-		{ 61334, "INV_Misc_Cape_19", "=q3=黑暗之纱斗篷", "=ds=#s4#", "5%" },
-		{ 0, "", "", "" },
 		{ 61330, "INV_Knife_1H_Draenei_A_03", "=q3=罪恶秘密之刃", "=ds=#h1#, #w4#", "25%" },
 		{ 61333, "INV_Sword_36", "=q3=钩锋斩击者", "=ds=#h1#, #w10#", "25%" },
+		{ 0, "", "", "" },
+		{ 61334, "INV_Misc_Cape_19", "=q3=黑暗之纱斗篷", "=ds=#s4#", "5%" },
 		{ 0, "", "", "" },
 		{ 61626, "INV_Scroll_03", "=q1=黑水契约", "=ds=#m3#", "100%" },
 	};
 	GCMarshalMagnusGreystone = {
 		{ 61313, "inv_helmet_02", "=q3=格雷迈恩头盔", "=ds=#s1#, #a4#", "25%" },
-		{ 0, "", "", "" },
+		{ 61314, "INV_Shield_06", "=q3=元帅之盾", "=ds=#w8#", "25%" },
 		{ 61315, "INV_Jewelry_Ring_27", "=q3=暗影穿透指环", "=ds=#s13#", "25%" },
-		{ 61317, "INV_Misc_Book_10", "=q3=鲜血经文", "=ds=#s14#", "5%" },
 		{ 61316, "INV_Misc_Cape_02", "=q3=锁链披风", "=ds=#s4#", "25%" },
 		{ 0, "", "", "" },
-		{ 61314, "INV_Shield_06", "=q3=元帅之盾", "=ds=#w8#", "25%" },
+		{ 61317, "INV_Misc_Book_10", "=q3=鲜血经文", "=ds=#s14#", "5%" },
 		{ 0, "", "", "" },
 		{ 61368, "INV_Shirt_GuildTabard_01", "=q2=格雷迈恩战袍", "=ds=#s7#", "3%" },
 	};
@@ -2897,7 +2898,6 @@ AtlasLoot_Data["AtlasLootItems"] = {
 	GCHorsemasterLevvin = {
 		{ 61734, "INV_Belt_09", "=q2=马主腰带", "=ds=#s10#, #a2#", "25%" },
 		{ 61736, "INV_Misc_Pelt_Bear_Ruin_03", "=q2=马贼斗篷", "=ds=#s4#", "25%" },
-		{ 0, "", "", "" },
 		{ 61735, "INV_Staff_08", "=q2=马仆扫帚", "=ds=#h2#, #w9#", "25%" },
 		{ 61737, "INV_Misc_Lantern_01", "=q3=马厩长明夜灯", "=ds=#s15#", "25%" },
 		{ 0, "", "", "" },
@@ -2907,7 +2907,6 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 61319, "INV_Chest_Cloth_04", "=q3=摄政王袍", "=ds=#s5#, #a1#", "25%" },
 		{ 61321, "INV_Bracer_13", "=q3=荒羽护腕", "=ds=#s8#, #a2#", "25%" },
 		{ 61320, "inv_misc_desecrated_mailpants", "=q3=灰烬护腿", "=ds=#s11#, #a3#", "25%" },
-		{ 0, "", "", "" },
 		{ 61318, "INV_ThrowingAxe_06", "=q3=血肉劈刀", "=ds=#h2#, #w1#", "25%" },
 		{ 0, "", "", "" },
 		{ 61322, "INV_Jewelry_Necklace_16", "=q3=复苏项链", "=ds=#s2#", "5%" },
@@ -2918,7 +2917,6 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 61327, "INV_Boots_07", "=q3=谍影之靴", "=ds=#s12#, #a2#", "15%" },
 		{ 61325, "inv_chest_plate04", "=q3=皇家金铸胸甲", "=ds=#s5#, #a3#", "15%" },
 		{ 61324, "inv_shoulder_12", "=q3=格雷迈恩护肩", "=ds=#s3#, #a4#", "15%" },
-		{ 0, "", "", "" },
 		{ 61328, "INV_Sword_17", "=q3=狼血", "=ds=#h2#, #w10#", "15%" },
 		{ 61329, "inv_misc_bag_10_red", "=q3=可怖显耀之袋", "=ds=#s15#", "15%" },
 		{ 0, "", "", "" },
@@ -2995,7 +2993,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 0, "", "", "", "" },
 		{ 51217, "INV_misc_ribbon_01", "=q2=幻化币", "=ds=#e27#", "5%" },
 	};
-	KCCommanderAnderson = {
+	KCCommanderAndreon = {
 		{ 50188, "INV_Belt_03", "=q3=死亡熔炉腰带", "=ds=#s10#, #a4#", "16% ?" },
 		{ 50189, "INV_Belt_27", "=q3=威严指环", "=ds=#s13#", "16% ?" },
 		{ 50190, "INV_Boots_05", "=q3=神圣导师之靴", "=ds=#s12#, #a1#", "16% ?" },
@@ -3010,6 +3008,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 83466, "INV_pants_plate_20", "=q3=灾厄铸造护腿", "=ds=#s11#, #a4#", "25%" },
 		{ 83467, "INV_wand_03", "=q3=地窖守卫之召", "=ds=#w12#", "25%" },
 		{ 83468, "INV_jewelry_ring_09", "=q3=守尸者充能之环", "=ds=#s13#", "25%" },
+		{ 0, "", "", "" },
 		{ 83469, "INV_crown_01", "=q3=地窖魔石头环", "=ds=#s1#, #a1#", "21%" },
 		{ 83470, "INV_pants_03", "=q3=幽灵鳞片护腿", "=ds=#s11#, #a3#", "21%" },
 		{ 83471, "INV_staff_08", "=q3=艾拉鲁斯法杖", "=ds=#h2#, #w9#", "21%" },
@@ -3090,7 +3089,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 61045, "INV_Shoulder_07", "=q3=漩涡护肩", "=ds=#s3#, #a2#", "13%" },
 		{ 61055, "INV_Misc_Book_01", "=q3=裂隙秘法典籍", "=ds=#s15#", "13%" },
 		{ 61056, "INV_Boots_07", "=q3=奥法织靴", "=ds=#s12#, #a1#", "13%" },
-		{ 61700, "inv_fabric_celestial_cloth", "=q3=时间之布", "=ds=#s14#" },
+		{ 61700, "inv_fabric_celestial_cloth", "=q3=时间之布", "=ds=#s14#", "13%" },
 		{ 61698, "INV_QirajIdol_Life", "=q3=时光洪流图腾", "=ds=#s16#, #e17# =q15=#c7#", "13%" },
 	};
 	COTBMDriftingAvatar = {
@@ -3103,6 +3102,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 61042, "INV_Gauntlets_11", "=q3=风暴之拳", "=ds=#h1#, #w13#", "14%" },
 		{ 61044, "INV_Hammer_04", "=q3=北风之锤", "=ds=#h2#, #w6#", "14%" },
 		{ 61057, "INV_Gauntlets_24", "=q3=奥法手套", "=ds=#s9#, #a2#", "14%" },
+		{ 0, "", "", "" },
 		{ 61020, "INV_Wand_02", "=q4=磁石", "=ds=#w12#", "2%" },
 	};
 	COTBMTimeLordEpochronos = {
@@ -3146,16 +3146,17 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 0, "", "", "" },
 		{ 50427, "INV_chest_leather_08", "=q3=被时间侵蚀的胸甲", "=ds=#s5#, #a2#", "50%" },
 		{ 61053, "INV_helmet_24", "=q3=时间循环头盔", "=ds=#s1#, #a3#", "50%" },
+		{ 0, "", "", "" },
 		{ 61046, "INV_axe_08", "=q3=暗影收割者", "=ds=#h1#, #w1#", "33%" },
-		{ 61031, "INV_staff_07", "=q3=裂隙编织者", "=ds=#h2#, #w9#", "33%" },
 		{ 50429, "INV_spear_07", "=q3=无尽狩猎长矛", "=ds=#h2#, #w7#", "33%" },
 		{ 61037, "INV_chest_plate09", "=q3=失落勇士护胸", "=ds=#s5#, #a4#", "33%" },
+		{ 0, "", "", "" },
+		{ 61031, "INV_staff_07", "=q3=裂隙编织者", "=ds=#h2#, #w9#", "33%" },
 		{ 61027, "INV_shoulder_24", "=q3=遗忘过去护肩", "=ds=#s3#, #a1#", "33%" },
 		{ 61040, "INV_gauntlets_05", "=q3=未知之握", "=ds=#s9#, #a1#", "33%" },
 		{ 0, "", "", "" },
 		{ 61014, "INV_Enchant_ShardBrilliantLarge", "永恒碎片", "=ds=#s14#", "1%" },
 		{ 61043, "Spell_Shadow_SoulGem", "=q4=深渊之眼", "=ds=#s2#", "1.1%" },
-		{ 0, "", "", "" },
 		{ 51044, "INV_misc_head_dragon_black", "=q1=昂诺米的头颅", "=ds=#m3#", "100%" },
 		{ 0, "", "", "", "" },
 		{ 51217, "INV_misc_ribbon_01", "=q2=幻化币", "=ds=#e27#, 数量 2", "100%" },
@@ -3243,11 +3244,12 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 40003, "INV_shield_06", "=q3=金库守卫者", "=ds=#h4#, #w8#", "25%" },
 		{ 60505, "INV_jewelry_ring_27", "=q3=老年看守之戒", "=ds=#s13#", "25%" },
 		{ 60506, "INV_weapon_crossbow_05", "=q3=警戒", "=ds=#w3#", "25%" },
+		{ 60501, "INV_Misc_Crop_01", "=q3=鞭笞马鞭", "=ds=#s14#", "25%" },
+		{ 0, "", "", "" },
 		{ 60420, "INV_jewelry_necklace_16", "=q3=守护护符", "=ds=#s2#", "25%" },
 		{ 60426, "INV_Chest_Plate08", "=q3=近卫队长胸甲", "=ds=#s5#, #a4#", "25%" },
 		{ 60429, "INV_bracer_19", "=q3=奥金锁链", "=ds=#s8#, #a4#", "25%" },
 		{ 60430, "INV_boots_05", "=q3=符文行者之靴", "=ds=#s12#, #a1#", "25%" },
-		{ 60501, "INV_Misc_Crop_01", "=q3=鞭笞马鞭", "=ds=#s14#", "25%" },
 		{ 0, "", "", "" },
 		{ 83570, "inv_scroll_02", "=q3=技巧：以剑制敌", "=ds=#c9#", "15%" },
 		{ 0, "", "", "" },
@@ -3293,7 +3295,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 80673, "INV_pants_10", "=q2=暗水护腿", "=ds=#s11#, #a3#", "20%" },
 		{ 80670, "INV_boots_01", "=q2=泥浸马靴", "=ds=#s12#, #a4#", "20%" },
 		{ 80671, "INV_weapon_shortblade_15", "=q2=毒性撕裂者", "=ds=#h1#, #w4#", "20%" },
-		{ 80674, "ability_creature_poison_06", "=q3=Corossive Core", "=ds=#s14#", "20%" },
+		{ 80674, "ability_creature_poison_06", "=q3=腐蚀核心", "=ds=#s14#", "20%" },
 	};
 	HQHatereaverAnnihilator = {
 		{ 60562, "INV_helmet_19", "=q3=愤怒掠夺者头盔", "=ds=#s1#, #a4#", "20%" },
@@ -3315,7 +3317,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 60549, "INV_misc_cape_02", "=q3=末日斗篷", "=ds=#s4#", "20%" },
 		{ 60548, "INV_bracer_10", "=q3=黄昏警戒护腕", "=ds=#s8#, #a1#", "20%" },
 		{ 60550, "INV_belt_09", "=q3=暗影符文腰带", "=ds=#s10#, #a2#", "20%" },
-		{ 60547, "INV_jewelry_ring_25", "=q3=Band of Calamity", "=ds=#s13#", "20%" },
+		{ 60547, "INV_jewelry_ring_25", "=q3=灾变之环", "=ds=#s13#", "20%" },
 		{ 60546, "INV_staff_13", "=q3=末日呼唤法杖", "=ds=#h2#", "20%" },
 		{ 0, "", "", "" },
 		{ 60551, "spell_shadow_antishadow", "=q4=无面者之饰", "=ds=#s14#", "1.2%" },
@@ -3625,7 +3627,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 80755, "inv_gauntlets_09", "=q3=污秽绷带手套", "=ds=#s9#, #a1#", "0.01%" },
 		{ 80749, "inv_belt_03", "=q3=派桑的遗失腰带", "=ds=#s10#, #a4#", "0.01%" },
 		{ 80754, "inv_boots_plate_06", "=q3=大地之歌踏靴", "=ds=#s12#, #a3#", "0.01%" },
-		{ 80757, "inv_misc_herb_08", "=q3=Thornpod", "=ds=#s14#", "0.01%" },
+		{ 80757, "inv_misc_herb_08", "=q3=荆棘豆荚", "=ds=#s14#", "0.01%" },
 		{ 80750, "inv_gauntlets_11", "=q3=荆拳", "=ds=#h3#, #w13#", "0.01%" },
 		{ 80751, "inv_hammer_23", "=q3=荆甲战锤", "=ds=#h2#, #w6#", "0.01%" },
 		{ 80748, "inv_wand_09", "=q3=腐蚀者魔杖", "=ds=#w12#", "0.01%" },
@@ -4973,7 +4975,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 16672,"INV_Gauntlets_11","=q3=元素护手", "=ds=#s9#, #a3# (D1, =q15=#c7#=ds=)", "20%" },
 		{ 0,"","","" },
 		{ 12929,"INV_Jewelry_Necklace_05","=q3=灰烬之怒","=ds=#s2#", "20%" },
-		{ 12927,"INV_Shoulder_10","=q3=TruestrikeShoulders", "=ds=#s3#, #a2#", "20%" },
+		{ 12927,"INV_Shoulder_10","=q3=强击护肩", "=ds=#s3#, #a2#", "20%" },
 		{ 12905,"INV_Chest_Cloth_16","=q3=野火斗篷", "=ds=#s4#", "20%" },
 		{ 12926,"Spell_Holy_InnerFire","=q3=喷焰指环", "=ds=#s13# =q2=#e31#", "20%" },
 		{ 0,"","","" },
@@ -5026,7 +5028,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 12628, "INV_Chest_Plate06", "=q3=魔铸胸甲", "=ds=#s5#, #a4#" },
 	};
 	UBRSRend = {
-		{ 12590,"INV_Weapon_ShortBlade_25","=q4=Felstriker","=ds=#h1#, #w4#", "1%" },
+		{ 12590,"INV_Weapon_ShortBlade_25","=q4=恶魔之击","=ds=#h1#, #w4#", "1%" },
 		{ 0,"","","" },
 		{ 16733,"INV_Shoulder_30","=q3=勇气肩甲","=ds=#s3#, #a4# (D1, =q17=#c9#=ds=)", "17%" },
 		{ 0,"","","" },
@@ -5052,7 +5054,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 22225,"INV_Helmet_27","=q3=龙皮罩帽","=ds=#s1#, #a1# =q2=#e32#", "20%" },
 		{ 12960,"INV_Helmet_24","=q3=部族作战羽盔","=ds=#s1#, #a2# =q2=#e32#", "20%" },
 		{ 12953,"INV_Helmet_39","=q3=龙眼头巾","=ds=#s1#, #a3# =q2=#e32#", "20%" },
-		{ 12952,"INV_Helmet_23","=q3=Gyth's Skull","=ds=#s1#, #a4# =q2=#e32#", "20%" },
+		{ 12952,"INV_Helmet_23","=q3=盖斯之颅","=ds=#s1#, #a4# =q2=#e32#", "20%" },
 		{ 0,"","","" },
 		{ 13522,"INV_Scroll_06","=q2=配方：多重抗性合剂", "=ds=#p1# #m14#", "3%" },
 		{ 0, "", "", "" },
@@ -5411,13 +5413,13 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 13349, "INV_Mace_07", "=q3=邪恶权杖", "=ds=#h3#, #w6#", "14%" },
 		{ 13368, "INV_Weapon_ShortBlade_12", "=q3=刮骨者", "=ds=#h1#, #w4#", "14%" },
 		{ 13361, "INV_Sword_12", "=q3=斩骨剑", "=ds=#h1#, #w10#", "14%" },
-		{ 16694, "INV_Pants_08", "=q3=Devout Skirt", "=ds=#s11#, #a1# (D1, =q9=#c5#=ds=)", "11%" },
+		{ 16694, "INV_Pants_08", "=q3=虔诚长裙", "=ds=#s11#, #a1# (D1, =q9=#c5#=ds=)", "11%" },
 		{ 16687, "INV_Pants_06", "=q3=博学者护腿", "=ds=#s11#, #a1# (D1, =q10=#c3#=ds=)", "11%" },
 		{ 16699, "INV_Pants_08", "=q3=鬼雾护腿", "=ds=#s11#, #a1# (D1, =q11=#c8#=ds=)", "11%" },
 		{ 16709, "INV_Pants_02", "=q3=迅影短裤", "=ds=#s11#, #a2# (D1, =q12=#c6#=ds=)", "11%" },
 		{ 16719, "INV_Pants_08", "=q3=野性之心褶裙", "=ds=#s11#, #a2# (D1, =q13=#c1#=ds=)", "11%" },
 		{ 16678, "INV_Pants_03", "=q3=野兽追猎者短裤", "=ds=#s11#, #a3# (D1, =q14=#c2#=ds=)", "11%" },
-		{ 16668, "INV_Pants_03", "=q3=Kilt of Elements", "=ds=#s11#, #a3# (D1, =q15=#c7#=ds=)", "11%" },
+		{ 16668, "INV_Pants_03", "=q3=元素护腿", "=ds=#s11#, #a3# (D1, =q15=#c7#=ds=)", "11%" },
 		{ 16728, "INV_Pants_04", "=q3=光铸腿铠", "=ds=#s11#, #a4# (D1, =q16=#c4#=ds=)", "11%" },
 		{ 16732, "INV_Pants_04", "=q3=勇气腿铠", "=ds=#s11#, #a4# (D1, =q17=#c9#=ds=)", "11%" },
 		{ 0, "", "", "", "" },
@@ -5467,7 +5469,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 12533, "INV_Spear_01", "=q1=尖锐长矛", "=ds=#m8#", "100%" },
 	};
 	LBRSOmokk = {
-		{ 16670, "INV_Boots_Wolf", "=q3=Boots of the Elements", "=ds=#s12#, #a3# (D1, =q15=#c7#=ds=)", "17%" },
+		{ 16670, "INV_Boots_Wolf", "=q3=元素长靴", "=ds=#s12#, #a3# (D1, =q15=#c7#=ds=)", "17%" },
 		{ 0, "", "", "", "" },
 		{ 13166, "INV_Shoulder_23", "=q3=猛击护肩", "=ds=#s3#, #a4#", "17%" },
 		{ 13168, "INV_Chest_Plate13", "=q3=萨满之王的板甲", "=ds=#s5#, #a4#", "17%" },
@@ -6248,13 +6250,13 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 22799, "INV_Staff_15", "=q4=搜魂者", "=ds=#w9#", "9%" },
 		{ 0, "", "", "" },
 		{ 22520, "INV_Misc_Urn_01", "=q4=克尔苏加德的护符匣", "=ds=#m2#", "100%" },
-		{ 23207, "INV_Misc_Token_ArgentDawn3", "=q4=Mark of the Champion", "=q1=#m4# =ds=#s14#" },
-		{ 23206, "INV_Misc_Token_ArgentDawn2", "=q4=Mark of the Champion", "=q1=#m4# =ds=#s14#" },
+		{ 23207, "INV_Misc_Token_ArgentDawn3", "=q4=勇士印记", "=q1=#m4# =ds=#s14#" },
+		{ 23206, "INV_Misc_Token_ArgentDawn2", "=q4=勇士印记", "=q1=#m4# =ds=#s14#" },
 		{ 23061, "INV_Jewelry_Ring_51Naxxramas", "=q4=信仰之戒", "=ds=#s13# =q9=#c5#", "11%" },
 		{ 23062, "INV_Jewelry_Ring_51Naxxramas", "=q4=霜火之戒", "=ds=#s13# =q10=#c3#", "11%" },
 		{ 23063, "INV_Jewelry_Ring_51Naxxramas", "=q4=瘟疫之心指环", "=ds=#s13# =q11=#c8#", "11%" },
 		{ 23060, "INV_Jewelry_Ring_51Naxxramas", "=q4=骨镰之戒", "=ds=#s13# =q12=#c6#", "11%" },
-		{ 23064, "INV_Jewelry_Ring_51Naxxramas", "=q4=Ring of the Dreamwalker", "=ds=#s13# =q13=#c1#", "11%" },
+		{ 23064, "INV_Jewelry_Ring_51Naxxramas", "=q4=梦游者之戒", "=ds=#s13# =q13=#c1#", "11%" },
 		{ 23067, "INV_Jewelry_Ring_51Naxxramas", "=q4=地穴追猎者指环", "=ds=#s13# =q14=#c2#", "11%" },
 		{ 23065, "INV_Jewelry_Ring_51Naxxramas", "=q4=碎地者之戒", "=ds=#s13# =q15=#c7#", "11%" },
 		{ 23066, "INV_Jewelry_Ring_51Naxxramas", "=q4=救赎之戒", "=ds=#s13# =q16=#c4#", "11%" },
