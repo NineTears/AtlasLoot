@@ -233,19 +233,19 @@ AtlasLoot_Data["AtlasLootWBItems"] = {
 		{ 20520, "spell_shadow_sealofkings", "=q2=黑暗符文", "Group 3", "[2-4] 20%" },
 	};
 	CowKing = {
-		{ 60486, "inv_misc_fish_02", "=q4=There Is No Cow Level", "There Is No Cow Level", "25%" },
+		{ 60486, "inv_misc_fish_02", "=q4=没有奶牛关", "There Is No Cow Level", "25%" },
 		{ 0, "", "", "", "" },
-		{ 60487, "INV_Misc_Cape_20", "=q4=There Is No Cow Level", "There Is No Cow Level", "50%" },
-		{ 60488, "INV_Misc_Cape_20", "=q4=There Is No Cow Level", "There Is No Cow Level", "50%" },
-		{ 60489, "INV_Helmet_28", "=q4=There Is No Cow Level", "There Is No Cow Level", "50%" },
-		{ 60490, "INV_Helmet_28", "=q4=There Is No Cow Level", "There Is No Cow Level", "50%" },
+		{ 60487, "INV_Misc_Cape_20", "=q4=没有奶牛关", "There Is No Cow Level", "50%" },
+		{ 60488, "INV_Misc_Cape_20", "=q4=没有奶牛关", "There Is No Cow Level", "50%" },
+		{ 60489, "INV_Helmet_28", "=q4=没有奶牛关", "There Is No Cow Level", "50%" },
+		{ 60490, "INV_Helmet_28", "=q4=没有奶牛关", "There Is No Cow Level", "50%" },
 		{ 0, "", "", "", "" },
-		{ 4144, "inv_misc_book_07", "=q1=There Is No Cow Level", "There Is No Cow Level", "??%" },
+		{ 4144, "inv_misc_book_07", "=q1=没有奶牛关", "There Is No Cow Level", "??%" },
 		{ 0, "", "", "", "" },
-		{ 60485, "spell_shadow_curseoftounges", "=q0=There Is No Cow Level", "There Is No Cow Level", "100%" },
-		{ 60491, "inv_misc_orb_05", "=q0=There Is No Cow Level", "There Is No Cow Level", "100%" },
+		{ 60485, "spell_shadow_curseoftounges", "=q0=没有奶牛关", "There Is No Cow Level", "100%" },
+		{ 60491, "inv_misc_orb_05", "=q0=没有奶牛关", "There Is No Cow Level", "100%" },
 		{ 0, "", "", "", "" },
-		{ 51261, "inv_misc_bell_01", "=q1=There Is No Cow Level", "There Is No Cow Level", "100%" },
+		{ 51261, "inv_misc_bell_01", "=q1=没有奶牛关", "There Is No Cow Level", "100%" },
 	};
 	KKazzak = {
 		{ 18546, "INV_Helmet_18", "=q4=恶魔颅壳", "=ds=#s1#, #a3#", "20%" },
@@ -476,12 +476,12 @@ AtlasLoot_Data["AtlasLootWBItems"] = {
 		{ 83260, "INV_Chest_Chain_09", "=q3=步兵胸甲", "=ds=#a3#", "25%" },
 	};
 	CrusaderLarsarius = {
-		{ 60437, "INV_Helmet_03", "=q4=正义十字军头盔", "=ds=#a4#", "0.2%" },
 		{ 83261, "INV_Misc_Book_09", "=q3=最初的圣典", "=ds=#s15#", "25%" },
 		{ 83262, "INV_Hammer_17", "=q3=血色游荡者之锤", "=ds=#w6#", "25%" },
 		{ 83263, "INV_Bracer_10", "=q3=法官的护腕", "=ds=#a2#", "25%" },
-		{ 0, "", "", "", "" },
 		{ 83264, "INV_Jewelry_Ring_23", "=q3=牺牲之戒", "=ds=#s13#", "25%" },
+		{ 0, "", "", "", "" },
+		{ 60437, "INV_Helmet_03", "=q4=正义十字军头盔", "=ds=#a4#", "0.2%" },
 	};
 	Zareth = {
 		{ 83265, "INV_Misc_Bandana_03", "=q3=恶魔猎手眼罩", "=ds=#a2#", "25%" },
@@ -500,12 +500,12 @@ AtlasLoot_Data["AtlasLootWBItems"] = {
 		{ 83274, "INV_Jewelry_Necklace_19", "=q4=奇异巫毒项圈", "=ds=#s2#", "0.5%" },
 	};
 	Ashbeard = {
-		{ 83275, "INV_Misc_Spyglass_02", "=q4=灰须的幸运望远镜", "=ds=#s14#", "0.5%" },
 		{ 83276, "INV_Helmet_44", "=q3=峡谷勘探员之镜", "=ds=#a1#", "25%" },
 		{ 83277, "INV_Misc_Cape_02", "=q3=黑铁冒险者披风", "=ds=#a1#", "25%" },
 		{ 83278, "INV_Shoulder_22", "=q3=灰烬探险者护肩", "=ds=#a2#", "25%" },
-		{ 0, "", "", "", "" },
 		{ 83279, "Spell_Fire_Fire", "=q3=永焰火把", "=ds=#w6#", "25%" },
+		{ 0, "", "", "", "" },
+		{ 83275, "INV_Misc_Spyglass_02", "=q4=灰须的幸运望远镜", "=ds=#s14#", "0.5%" },
 	};
 	AdmiralBareanWestwind = {
 		{ 60383, "inv_staff_08", "=q3=舰队司令权杖", "=ds=#w9#", "17%" },

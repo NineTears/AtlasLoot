@@ -802,6 +802,9 @@ AtlasLootBossButtons = {
 		"AQ40SET";
 		"AQOpening";
 	};
+	Kara40 = {
+		"Kara40";
+	};
 	Uldaman = {
 		"VanillaKeys";
 		"";
@@ -2411,12 +2414,12 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 23557, "INV_Weapon_Rifle_10", "=q4=巨虫的幼体", "=ds=#w5#", "13%" },
 		{ 21613, "INV_Boots_04", "=q4=虫皮之靴", "=ds=#s12#, #a2#", "13%" },
 		{ 21612, "INV_Boots_Chain_08", "=q4=虫鳞长靴", "=ds=#s12#, #a3#", "13%" },
+		{ 21614, "INV_Helmet_09", "=q4=蠕虫隐藏保护器", "=ds=#s1#, #a2#", "Unknown %" },
+		{ 55554, "INV_Gauntlets_26", "=q4=甲壳护手", "=ds=#s9#, #a3#", "Unknown %" },
+		{ 55553, "inv_gauntlets_23", "=q4=原始掘地者手套", "=ds=#s9#, #a2#", "Unknown %" },
 		{ 0,"","","" },
 		{ 20927, "INV_Qiraj_OuroHide", "=q4=奥罗的外皮", "=q17=#c9#=ds=, =q12=#c6#=ds=, =q9=#c5#=ds=, =q10=#c3#", "100%" },
 		{ 20931, "INV_Qiraj_SkinSandworm", "=q4=巨型沙虫的皮", "=q16=#c4#=ds=, =q14=#c2#=ds=, =q15=#c7#=ds=, =q11=#c8#=ds=, =q13=#c1#", "100%" },
-		{ 0,"","","" },
-		{ 0,"","","" },
-		{ 0,"","","" },
 		{ 0,"","","" },
 		{ 21237, "INV_Staff_20", "=q4=其拉帝王徽记", "=ds=#m3# ", "4%" },
 		{ 21268, "INV_Mace_24", "=q4=神圣其拉战锤", "=q1=#m4# =ds=#h1#, #w6#" },
@@ -2543,6 +2546,9 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 21521, "INV_Sword_51", "=q4=红龙符文剑", "=ds=#h3#, #w10#" },
 		{ 21522, "INV_Weapon_ShortBlade_25", "=q4=影歌的悲伤", "=ds=#h1#, #w4#" },
 		{ 21520, "INV_Sword_49", "=q4=拉文凯斯的遗产", "=ds=#h1#, #w10#" },
+	};
+	NoKara40 = {
+		{ 694201337, "", "=q6=卡拉赞之塔暂无数据", "等待乌龟数据库上线" },
 	};
 	GnGrubbis = {
 		{ 9445, "INV_Gauntlets_17", "=q3=格鲁比斯的爪子", "=ds=#s9#, #a3#", "10%" },
@@ -3016,7 +3022,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 0, "", "", "" },
 		{ 83464, "INV_shoulder_11", "=q4=扭曲诅咒披肩", "=ds=#s3#, #a1#", "1%" },
 		{ 0, "", "", "" },
-		{ 83571, "inv_misc_book_05", "=q3=典籍：暗影愈合", "=ds=#c5#", "15" },
+		{ 83571, "inv_misc_book_05", "=q3=典籍：暗影愈合", "=ds=#c5#", "15%" },
 		{ 0, "", "", "", "" },
 		{ 51217, "INV_misc_ribbon_01", "=q2=幻化币", "=ds=#e27#, 数量 2", "100%" },
 	};
@@ -3195,7 +3201,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 60419, "INV_helmet_15", "=q3=死灵法师的面孔", "=ds=#s1#, #a1#", "17%" },
 		{ 60425, "INV_chest_cloth_48", "=q3=暗影守卫长袍", "=ds=#s5#, #a1#", "17%" },
 		{ 60431, "INV_misc_book_06", "=q3=残暴记录图鉴", "=ds=#h4#", "17%" },
-		{ 60434, "INV_gauntlets_17", "=q3=精英卫队护腿", "=ds=#s11#, #a4#", "17%" },
+		{ 60434, "INV_pants_04", "=q3=精英卫队护腿", "=ds=#s11#, #a4#", "17%" },
 		{ 0, "", "", "" },
 		{ 51217, "INV_misc_ribbon_01", "=q2=幻化币", "=ds=#e27#", "5%" },
 	};
@@ -3627,7 +3633,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 80755, "inv_gauntlets_09", "=q3=污秽绷带手套", "=ds=#s9#, #a1#", "0.01%" },
 		{ 80749, "inv_belt_03", "=q3=派桑的遗失腰带", "=ds=#s10#, #a4#", "0.01%" },
 		{ 80754, "inv_boots_plate_06", "=q3=大地之歌踏靴", "=ds=#s12#, #a3#", "0.01%" },
-		{ 80757, "inv_misc_herb_08", "=q3=荆棘豆荚", "=ds=#s14#", "0.01%" },
+		{ 62008, "inv_misc_herb_08", "=q3=荆棘豆荚", "=ds=#s14#", "0.01%" },
 		{ 80750, "inv_gauntlets_11", "=q3=荆拳", "=ds=#h3#, #w13#", "0.01%" },
 		{ 80751, "inv_hammer_23", "=q3=荆甲战锤", "=ds=#h2#, #w6#", "0.01%" },
 		{ 80748, "inv_wand_09", "=q3=腐蚀者魔杖", "=ds=#w12#", "0.01%" },
@@ -5352,7 +5358,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 51217, "INV_misc_ribbon_01", "=q2=幻化币", "=ds=#e27#", "5%" },
 	};
 	STRATMalekithePallid = {
-		{ 16691, "INV_Boots_05", "=q3=Devout Sandals", "=ds=#s12#, #a1# (D1, =q9=#c5#=ds=)", "20%" },
+		{ 16691, "INV_Boots_05", "=q3=虔诚软鞋", "=ds=#s12#, #a1# (D1, =q9=#c5#=ds=)", "20%" },
 		{ 0, "", "", "", "" },
 		{ 18734, "INV_Misc_Cape_11", "=q3=暗月披风", "=ds=#s4#", "20%" },
 		{ 18735, "INV_Boots_03", "=q3=玛勒基的裹足", "=ds=#s12#, #a1#", "20%" },

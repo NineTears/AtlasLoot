@@ -64,30 +64,36 @@ function AtlasLoot_CraftingMenu()
 	AtlasLootMenuItem_9_Icon:SetTexture("Interface\\Icons\\Trade_Tailoring");
 	AtlasLootMenuItem_9.lootpage="TAILORINGMENU";
 	AtlasLootMenuItem_9:Show();
+	--Jewelcrafting
+	AtlasLootMenuItem_10_Name:SetText(AL["Jewelcrafting"]);
+	AtlasLootMenuItem_10_Extra:SetText("");
+	AtlasLootMenuItem_10_Icon:SetTexture("Interface\\Icons\\Trade_Tailoring");
+	AtlasLootMenuItem_10.lootpage="JEWELCRAFTMENU";
+	AtlasLootMenuItem_10:Show();
 	--Cooking
-	AtlasLootMenuItem_11_Name:SetText(AL["Cooking"]);
-	AtlasLootMenuItem_11_Extra:SetText("");
-	AtlasLootMenuItem_11_Icon:SetTexture("Interface\\Icons\\INV_Misc_Food_15");
-	AtlasLootMenuItem_11.lootpage="COOKINGMENU";
-	AtlasLootMenuItem_11:Show();
-	--First Aid
-	AtlasLootMenuItem_12_Name:SetText(AL["First Aid"]);
+	AtlasLootMenuItem_12_Name:SetText(AL["Cooking"]);
 	AtlasLootMenuItem_12_Extra:SetText("");
-	AtlasLootMenuItem_12_Icon:SetTexture("Interface\\Icons\\Spell_Holy_SealOfSacrifice");
-	AtlasLootMenuItem_12.lootpage="FirstAid1";
+	AtlasLootMenuItem_12_Icon:SetTexture("Interface\\Icons\\INV_Misc_Food_15");
+	AtlasLootMenuItem_12.lootpage="COOKINGMENU";
 	AtlasLootMenuItem_12:Show();
-	--Survival
-	AtlasLootMenuItem_13_Name:SetText(AL["Survival"]);
+	--First Aid
+	AtlasLootMenuItem_13_Name:SetText(AL["First Aid"]);
 	AtlasLootMenuItem_13_Extra:SetText("");
-	AtlasLootMenuItem_13_Icon:SetTexture("Interface\\Icons\\Trade_Survival");
-	AtlasLootMenuItem_13.lootpage="SURVIVALMENU";
+	AtlasLootMenuItem_13_Icon:SetTexture("Interface\\Icons\\Spell_Holy_SealOfSacrifice");
+	AtlasLootMenuItem_13.lootpage="FirstAid1";
 	AtlasLootMenuItem_13:Show();
+	--Survival
+	AtlasLootMenuItem_14_Name:SetText(AL["Survival"]);
+	AtlasLootMenuItem_14_Extra:SetText("");
+	AtlasLootMenuItem_14_Icon:SetTexture("Interface\\Icons\\Trade_Survival");
+	AtlasLootMenuItem_14.lootpage="SURVIVALMENU";
+	AtlasLootMenuItem_14:Show();
 	--Poisons
-	AtlasLootMenuItem_15_Name:SetText(AL["Poisons"]);
-	AtlasLootMenuItem_15_Extra:SetText("|cfffff468"..AL["Rogue"]);
-	AtlasLootMenuItem_15_Icon:SetTexture("Interface\\Icons\\Trade_BrewPoison");
-	AtlasLootMenuItem_15.lootpage="Poisons1";
-	AtlasLootMenuItem_15:Show();
+	AtlasLootMenuItem_16_Name:SetText(AL["Poisons"]);
+	AtlasLootMenuItem_16_Extra:SetText("|cfffff468"..AL["Rogue"]);
+	AtlasLootMenuItem_16_Icon:SetTexture("Interface\\Icons\\Trade_BrewPoison");
+	AtlasLootMenuItem_16.lootpage="Poisons1";
+	AtlasLootMenuItem_16:Show();
 	--Crafted Armor Sets
 	AtlasLootMenuItem_17_Name:SetText(AL["Crafted Sets"]);
 	AtlasLootMenuItem_17_Extra:SetText("");
@@ -763,4 +769,65 @@ function AtlasLoot_SurvivalMenu()
 	AtlasLootMenuItem_3_Icon:SetTexture("Interface\\Icons\\trade_herbalism");
 	AtlasLootMenuItem_3.lootpage = "Survival2";
 	AtlasLootMenuItem_3:Show();
+end
+function AtlasLoot_JewelcraftingMenu()
+	for i = 1, 30, 1 do
+		getglobal("AtlasLootItem_"..i):Hide();
+	end
+	for i = 1, 30, 1 do
+		getglobal("AtlasLootMenuItem_"..i):Hide();
+		getglobal("AtlasLootMenuItem_"..i).isheader = false;
+	end
+	getglobal("AtlasLootItemsFrame_BACK"):Show();
+	getglobal("AtlasLootItemsFrame_BACK").lootpage = "CRAFTINGMENU";
+	getglobal("AtlasLootItemsFrame_NEXT"):Hide();
+	getglobal("AtlasLootItemsFrame_PREV"):Hide();
+	getglobal("AtlasLootServerQueryButton"):Hide();
+	--Apprentice
+	AtlasLootMenuItem_2_Name:SetText(AL["Jewelcrafting"]..": "..AL["Apprentice"]);
+	AtlasLootMenuItem_2_Extra:SetText("");
+	AtlasLootMenuItem_2_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Necklace_11");
+	AtlasLootMenuItem_2.lootpage = "JewelcraftingApprentice1";
+	AtlasLootMenuItem_2:Show();
+	--Journeyman
+	AtlasLootMenuItem_3_Name:SetText(AL["Jewelcrafting"]..": "..AL["Journeyman"]);
+	AtlasLootMenuItem_3_Extra:SetText("");
+	AtlasLootMenuItem_3_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Necklace_11");
+	AtlasLootMenuItem_3.lootpage = "JewelcraftingJourneyman1";
+	AtlasLootMenuItem_3:Show();
+	--Expert
+	AtlasLootMenuItem_4_Name:SetText(AL["Jewelcrafting"]..": "..AL["Expert"]);
+	AtlasLootMenuItem_4_Extra:SetText("");
+	AtlasLootMenuItem_4_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Necklace_11");
+	AtlasLootMenuItem_4.lootpage="JewelcraftingExpert1";
+	AtlasLootMenuItem_4:Show();
+	--Artisan
+	AtlasLootMenuItem_5_Name:SetText(AL["Jewelcrafting"]..": "..AL["Artisan"]);
+	AtlasLootMenuItem_5_Extra:SetText("");
+	AtlasLootMenuItem_5_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Necklace_11");
+	AtlasLootMenuItem_5.lootpage="JewelcraftingArtisan1";
+	AtlasLootMenuItem_5:Show();
+	--Gemoloy
+	AtlasLootMenuItem_5_Name:SetText(AL["Jewelcrafting"]..": "..AL["Gemoloy"]);
+	AtlasLootMenuItem_5_Extra:SetText("");
+	AtlasLootMenuItem_5_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Necklace_11");
+	AtlasLootMenuItem_5.lootpage="JewelcraftingGemology1";
+	AtlasLootMenuItem_5:Show();
+	--Goldsmithing
+	AtlasLootMenuItem_5_Name:SetText(AL["Jewelcrafting"]..": "..AL["Goldsmithing"]);
+	AtlasLootMenuItem_5_Extra:SetText("");
+	AtlasLootMenuItem_5_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Necklace_11");
+	AtlasLootMenuItem_5.lootpage="JewelcraftingGoldsmithing1";
+	AtlasLootMenuItem_5:Show();
+	--Gemstones
+	AtlasLootMenuItem_5_Name:SetText(AL["Jewelcrafting"]..": "..AL["Gemstones"]);
+	AtlasLootMenuItem_5_Extra:SetText("");
+	AtlasLootMenuItem_5_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Necklace_11");
+	AtlasLootMenuItem_5.lootpage="JewelcraftingGemstones1";
+	AtlasLootMenuItem_5:Show();
+	for i = 1, 30, 1 do
+		getglobal("AtlasLootMenuItem_"..i.."_Extra"):Show();
+	end
+	AtlasLoot_BossName:SetText("|cffFFFFFF"..AL["Jewelcrafting"]);
+	AtlasLoot_SetItemInfoFrame(AtlasLoot_AnchorFrame);
 end

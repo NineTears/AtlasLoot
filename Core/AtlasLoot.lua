@@ -79,8 +79,8 @@ local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
 --Establish version number and compatible version of Atlas
 local VERSION_MAJOR = "1";
 local VERSION_MINOR = "1";
-local VERSION_BOSSES = "3";
-ATLASLOOT_VERSION = "|cffFF8400AtlasLoot Wind汉化修复 v"..VERSION_MAJOR.."."..VERSION_MINOR.."."..VERSION_BOSSES.."|r";
+local VERSION_BOSSES = "4";
+ATLASLOOT_VERSION = "|cffFF8400AtlasLoot Wind&Sune汉化 v"..VERSION_MAJOR.."."..VERSION_MINOR.."."..VERSION_BOSSES.."|r";
 ATLASLOOT_CURRENT_ATLAS = "1.12.0";
 ATLASLOOT_PREVIEW_ATLAS = "1.12.1";
 
@@ -206,6 +206,7 @@ AtlasLoot_MenuList = {
 	"CRAFTSET",
 	"COOKINGMENU",
 	"SURVIVALMENU",
+	"JEWELCRAFTMENU",
 };
 
 --entrance maps to instance maps NOT NEEDED FOR ATLAS 1.12
@@ -1194,6 +1195,8 @@ function AtlasLoot_ShowItemsFrame(dataID, dataSource, boss, pFrame)
 		AtlasLoot_CookingMenu();
 	elseif(dataID=="SURVIVALMENU") then
 		AtlasLoot_SurvivalMenu();
+	elseif(dataID=="JEWELCRAFTMENU") then
+		AtlasLoot_JewelcraftingMenu();
 	else
 		--Iterate through each item object and set its properties
 		for i = 1, 30, 1 do
@@ -2296,31 +2299,34 @@ AtlasLoot_HewdropDown = {
 				{ AL["Stormwind Vault"], "StormwindVault", "Submenu" },
 			},
 			[27] = {
-				{ AL["Zul'Gurub"], "ZulGurub", "Submenu" },
+				{ "|cffff0000[团队]|cffffd200 "..AL["Zul'Gurub"], "ZulGurub", "Submenu" },
 			},
 			[28] = {
-				{ AL["Ruins of Ahn'Qiraj"], "RuinsofAQ", "Submenu" },
+				{ "|cffff0000[团队]|cffffd200 "..AL["Ruins of Ahn'Qiraj"], "RuinsofAQ", "Submenu" },
 			},
 			[29] = {
-				{ AL["Molten Core"], "MoltenCore", "Submenu" },
+				{ "|cffff0000[团队]|cffffd200 "..AL["Molten Core"], "MoltenCore", "Submenu" },
 			},
 			[30] = {
-				{ AL["Onyxia's Lair"], "Onyxia", "Submenu" },
+				{ "|cffff0000[团队]|cffffd200 "..AL["Onyxia's Lair"], "Onyxia", "Submenu" },
 			},
 			[31] = {
-				{ AL["Lower Karazhan Halls"], "LowerKara", "Submenu" },
+				{ "|cffff0000[团队]|cffffd200 "..AL["Lower Karazhan Halls"], "LowerKara", "Submenu" },
 			},
 			[32] = {
-				{ AL["Blackwing Lair"], "BlackwingLair", "Submenu" },
+				{ "|cffff0000[团队]|cffffd200 "..AL["Blackwing Lair"], "BlackwingLair", "Submenu" },
 			},
 			[33] = {
-				{ AL["Emerald Sanctum"], "EmeraldSanctum", "Submenu" },
+				{ "|cffff0000[团队]|cffffd200 "..AL["Emerald Sanctum"], "EmeraldSanctum", "Submenu" },
 			},
 			[34] = {
-				{ AL["Temple of Ahn'Qiraj"], "TempleofAQ", "Submenu" },
+				{ "|cffff0000[团队]|cffffd200 "..AL["Temple of Ahn'Qiraj"], "TempleofAQ", "Submenu" },
 			},
 			[35] = {
-				{ AL["Naxxramas"], "Naxxramas", "Submenu" },
+				{ "|cffff0000[团队]|cffffd200 "..AL["Naxxramas"], "Naxxramas", "Submenu" },
+			},
+			[36] = {
+				{ "|cffff0000[团队]|cffffd200 "..AL["Upper Karazhan Halls"], "Kara40", "Submenu" },
 			},
 		},
 	},
@@ -2359,58 +2365,92 @@ AtlasLoot_HewdropDown = {
 		},
 	},
 	[5] = {
-		[AL["Sets/Collections"]] = {
+		[AL["Sets"]] = {
 			[1] = {
 				{ AL["Pre 60 Sets"], "Pre60Sets", "Submenu" },
 			},
 			[2] = {
-				{ AL["Dungeon 1/2 Sets"], "DungeonSets12", "Submenu" },
+				{ "|cffffffff"..AL["Priest Sets"], "PriestSets", "Submenu" },
 			},
 			[3] = {
-				{ AL["Ruins of Ahn'Qiraj Sets"], "AQ20Sets", "Submenu" },
+				{ "|cff68ccef"..AL["Mage Sets"], "MageSets", "Submenu" },
 			},
 			[4] = {
-				{ AL["Temple of Ahn'Qiraj Sets"], "AQ40Sets", "Submenu" },
+				{  "|cff9382c9"..AL["Warlock Sets"], "WarlockSets", "Submenu" },
 			},
 			[5] = {
-				{ AL["Zul'Gurub Sets"], "ZGSets", "Submenu" },
+				{  "|cfffff468"..AL["Rogue Sets"], "RogueSets", "Submenu" },
 			},
 			[6] = {
-				{ AL["Tier 1 Sets"], "T1Sets", "Submenu" },
+				{ "|cffff7c0a"..AL["Druid Sets"], "DruidSets", "Submenu" },
 			},
 			[7] = {
-				{ AL["Tier 2 Sets"], "T2Sets", "Submenu" },
+				{ "|cffaad372"..AL["Hunter Sets"], "HunterSets", "Submenu" },
 			},
 			[8] = {
-				{ AL["Tier 3 Sets"], "T3Sets", "Submenu" },
+				{ "|cff2773ff"..AL["Shaman Sets"], "ShamanSets", "Submenu" },
 			},
 			[9] = {
-				{ AL["Legendary Items"], "Legendaries", "Table" },
+				{ "|cfff48cba"..AL["Paladin Sets"], "PaladinSets", "Submenu" },
 			},
 			[10] = {
-				{ AL["Rare Pets"], "RarePets1", "Table" },
+				{ "|cffc69b6d"..AL["Warrior Sets"], "WarriorSets", "Submenu" },
 			},
 			[11] = {
-				{ AL["Rare Mounts"], "RareMounts", "Table" },
+				{ AL["Dungeon 1/2 Sets"], "DungeonSets12", "Submenu" },
 			},
 			[12] = {
-				{ AL["Old Mounts"], "OldMounts", "Table" },
+				{ AL["Ruins of Ahn'Qiraj Sets"], "AQ20Sets", "Submenu" },
 			},
 			[13] = {
-				{ AL["Unobtainable Mounts"], "UnobMounts", "Table" },
+				{ AL["Temple of Ahn'Qiraj Sets"], "AQ40Sets", "Submenu" },
 			},
 			[14] = {
-				{ AL["Tabards"], "Tabards", "Table" },
+				{ AL["Zul'Gurub Sets"], "ZGSets", "Submenu" },
 			},
 			[15] = {
-				{ AL["World Epics"], "BoEWorldEpics", "Submenu" },
+				{ AL["Tier 1 Sets"], "T1Sets", "Submenu" },
+			},
+			[16] = {
+				{ AL["Tier 2 Sets"], "T2Sets", "Submenu" },
+			},
+			[17] = {
+				{ AL["Tier 3 Sets"], "T3Sets", "Submenu" },
+			},
+			[18] = {
+				{ AL["Kara40 Sets"], "T35Sets", "Submenu" },
 			},
 		},
 	},
 	[6] = {
-		{ AL["Reputation Factions"], "Factions", "Submenu" },
+		[AL["Collections"]] = {
+			[1] = {
+				{ AL["Legendary Items"], "Legendaries", "Table" },
+			},
+			[2] = {
+				{ AL["Rare Pets"], "RarePets1", "Table" },
+			},
+			[3] = {
+				{ AL["Rare Mounts"], "RareMounts", "Table" },
+			},
+			[4] = {
+				{ AL["Old Mounts"], "OldMounts", "Table" },
+			},
+			[5] = {
+				{ AL["Unobtainable Mounts"], "UnobMounts", "Table" },
+			},
+			[6] = {
+				{ AL["Tabards"], "Tabards", "Table" },
+			},
+			[7] = {
+				{ AL["World Epics"], "BoEWorldEpics", "Submenu" },
+			},
+		},
 	},
 	[7] = {
+		{ AL["Reputation Factions"], "Factions", "Submenu" },
+	},
+	[8] = {
 		[AL["World Events"]] = {
 			[1] = {
 				{ AL["Abyssal Council"], "AbyssalCouncil", "Submenu" },
@@ -2453,7 +2493,7 @@ AtlasLoot_HewdropDown = {
 			},
 		},
 	},
-	[8] = {
+	[9] = {
 		[AL["Crafting"]] = {
 			[1] = { { AL["Alchemy"], "Alchemy", "Submenu" }, },
 			[2] = { { (AL["Blacksmithing"]), "Blacksmithing", "Submenu" }, },
@@ -2463,18 +2503,19 @@ AtlasLoot_HewdropDown = {
 			[6] = { { (AL["Leatherworking"]), "Leatherworking", "Submenu" }, },
 			[7] = { { (AL["Mining"]), "Mining", "Submenu" }, },
 			[8] = { { (AL["Tailoring"]), "Tailoring", "Submenu" }, },
-			[9] = { { (AL["Cooking"]), "Cooking", "Submenu" }, },
-			[10] = { { (AL["First Aid"]), "FirstAid1", "Table" }, },
-			[11] = { { (AL["Survival"]), "Survival", "Submenu" }, },
-			[12] = { { (AL["Poisons"]), "Poisons1", "Table" }, },
-			[13] = {
+			[9] = { { (AL["Jewelcrafting"]), "Jewelcrafting", "Submenu" }, },
+			[10] = { { (AL["Cooking"]), "Cooking", "Submenu" }, },
+			[11] = { { (AL["First Aid"]), "FirstAid1", "Table" }, },
+			[12] = { { (AL["Survival"]), "Survival", "Submenu" }, },
+			[13] = { { (AL["Poisons"]), "Poisons1", "Table" }, },
+			[14] = {
 				[AL["Crafted Sets"]] = {
 					{ (AL["Blacksmithing"]), "CraftSetBlacksmith", "Submenu" },
 					{ (AL["Leatherworking"]), "CraftSetLeatherwork", "Submenu" },
 					{ (AL["Tailoring"]), "CraftSetTailoring", "Submenu" },
 				},
 			},
-			[14] = { { AL["Crafted Epic Weapons"], "CraftedWeapons1", "Table" }, },
+			[15] = { { AL["Crafted Epic Weapons"], "CraftedWeapons1", "Table" }, },
 		},
 	},
 };
@@ -2482,6 +2523,96 @@ AtlasLoot_HewdropDown = {
 --This table defines all the subtables needed for the full menu
 --Each sub table entry contains the text entry and the loot table that goes wih it
 AtlasLoot_HewdropDown_SubTables = {
+	["PriestSets"] = {
+		{ (AL["Dungeon Sets"]), "T0Priest" },
+		{ (AL["Tier 1"]), "T1Priest" },
+		{ (AL["Zul'Gurub"]), "ZGPriest" },
+		{ (AL["AQ20"]), "AQ20Priest" },
+		{ (AL["Tier 2"]), "T2Priest" },
+		{ (AL["AQ40"]), "AQ40Priest" },
+		{ (AL["Tier 3"]), "T3Priest" },
+		{ (AL["Kara40"]), "T35Priest" },
+	},
+	["MageSets"] = {
+		{ (AL["Dungeon Sets"]), "T0Mage" },
+		{ (AL["Tier 1"]), "T1Mage" },
+		{ (AL["Zul'Gurub"]), "ZGMage" },
+		{ (AL["AQ20"]), "AQ20Mage" },
+		{ (AL["Tier 2"]), "T2Mage" },
+		{ (AL["AQ40"]), "AQ40Mage" },
+		{ (AL["Tier 3"]), "T3Mage" },
+		{ (AL["Kara40"]), "T35Mage" },
+	},
+	["WarlockSets"] = {
+		{ (AL["Dungeon Sets"]), "T0Warlock" },
+		{ (AL["Tier 1"]), "T1Warlock" },
+		{ (AL["Zul'Gurub"]), "ZGWarlock" },
+		{ (AL["AQ20"]), "AQ20Warlock" },
+		{ (AL["Tier 2"]), "T2Warlock" },
+		{ (AL["AQ40"]), "AQ40Warlock" },
+		{ (AL["Tier 3"]), "T3Warlock" },
+		{ (AL["Kara40"]), "T35Warlock" },
+	},
+	["RogueSets"] = {
+		{ (AL["Dungeon Sets"]), "T0Rogue" },
+		{ (AL["Tier 1"]), "T1Rogue" },
+		{ (AL["Zul'Gurub"]), "ZGRogue" },
+		{ (AL["AQ20"]), "AQ20Rogue" },
+		{ (AL["Tier 2"]), "T2Rogue" },
+		{ (AL["AQ40"]), "AQ40Rogue" },
+		{ (AL["Tier 3"]), "T3Rogue" },
+		{ (AL["Kara40"]), "T35Rogue" },
+	},
+	["DruidSets"] = {
+		{ (AL["Dungeon Sets"]), "T0Druid" },
+		{ (AL["Tier 1"]), "T1Druid" },
+		{ (AL["Zul'Gurub"]), "ZGDruid" },
+		{ (AL["AQ20"]), "AQ20Druid" },
+		{ (AL["Tier 2"]), "T2Druid" },
+		{ (AL["AQ40"]), "AQ40Druid" },
+		{ (AL["Tier 3"]), "T3Druid" },
+		{ (AL["Kara40"]), "T35Druid" },
+	},
+	["HunterSets"] = {
+		{ (AL["Dungeon Sets"]), "T0Hunter" },
+		{ (AL["Tier 1"]), "T1Hunter" },
+		{ (AL["Zul'Gurub"]), "ZGHunter" },
+		{ (AL["AQ20"]), "AQ20Hunter" },
+		{ (AL["Tier 2"]), "T2Hunter" },
+		{ (AL["AQ40"]), "AQ40Hunter" },
+		{ (AL["Tier 3"]), "T3Hunter" },
+		{ (AL["Kara40"]), "T35Hunter" },
+	},
+	["ShamanSets"] = {
+		{ (AL["Dungeon Sets"]), "T0Shaman" },
+		{ (AL["Tier 1"]), "T1Shaman" },
+		{ (AL["Zul'Gurub"]), "ZGShaman" },
+		{ (AL["AQ20"]), "AQ20Shaman" },
+		{ (AL["Tier 2"]), "T2Shaman" },
+		{ (AL["AQ40"]), "AQ40Shaman" },
+		{ (AL["Tier 3"]), "T3Shaman" },
+		{ (AL["Kara40"]), "T35Shaman" },
+	},
+	["PaladinSets"] = {
+		{ (AL["Dungeon Sets"]), "T0Paladin" },
+		{ (AL["Tier 1"]), "T1Paladin" },
+		{ (AL["Zul'Gurub"]), "ZGPaladin" },
+		{ (AL["AQ20"]), "AQ20Paladin" },
+		{ (AL["Tier 2"]), "T2Paladin" },
+		{ (AL["AQ40"]), "AQ40Paladin" },
+		{ (AL["Tier 3"]), "T3Paladin" },
+		{ (AL["Kara40"]), "T35Paladin" },
+	},
+	["WarriorSets"] = {
+		{ (AL["Dungeon Sets"]), "T0Warrior" },
+		{ (AL["Tier 1"]), "T1Warrior" },
+		{ (AL["Zul'Gurub"]), "ZGWarrior" },
+		{ (AL["AQ20"]), "AQ20Warrior" },
+		{ (AL["Tier 2"]), "T2Warrior" },
+		{ (AL["AQ40"]), "AQ40Warrior" },
+		{ (AL["Tier 3"]), "T3Warrior" },
+		{ (AL["Kara40"]), "T35Warrior" },
+	},
 	["HateforgeQuarry"] = {
 		{ AL["High Foreman Bargul Blackhammer"], "HQHighForemanBargulBlackhammer" },
 		{ AL["Engineer Figgles"], "HQEngineerFiggles" },
@@ -2920,6 +3051,9 @@ AtlasLoot_HewdropDown_SubTables = {
 		{ AL["AQ Enchants"], "AQEnchants" },
 		{ AL["AQ Opening Quest Chain"], "AQOpening" },
 	},
+	["Kara40"] = {
+		{ "No Kara40 Yet", "NoKara40" },
+	},
 	["WailingCaverns"] = {
 		{ AL["Lord Cobrahn"], "WCLordCobrahn" },
 		{ AL["Lady Anacondra"], "WCLadyAnacondra" },
@@ -3149,6 +3283,17 @@ AtlasLoot_HewdropDown_SubTables = {
 		{ "|cfff48cba"..AL["Paladin"], "T3Paladin" },
 		{ "|cffc69b6d"..AL["Warrior"], "T3Warrior" },
 	},
+	["T35Sets"] = {
+		{ "|cffffffff"..AL["Priest"], "T35Priest" },
+		{ "|cff68ccef"..AL["Mage"], "T35Mage" },
+		{ "|cff9382c9"..AL["Warlock"], "T35Warlock" },
+		{ "|cfffff468"..AL["Rogue"], "T35Rogue" },
+		{ "|cffff7c0a"..AL["Druid"], "T35Druid" },
+		{ "|cffaad372"..AL["Hunter"], "T35Hunter" },
+		{ "|cff2773ff"..AL["Shaman"], "T35Shaman" },
+		{ "|cfff48cba"..AL["Paladin"], "T35Paladin" },
+		{ "|cffc69b6d"..AL["Warrior"], "T35Warrior" },
+	},
 	["ZGSets"] = {
 		{ "|cffffffff"..AL["Priest"], "ZGPriest" },
 		{ "|cff68ccef"..AL["Mage"], "ZGMage" },
@@ -3290,6 +3435,15 @@ AtlasLoot_HewdropDown_SubTables = {
 		{ AtlasLoot_TableNames["Survival1"][1], "Survival1" },
 		{ AtlasLoot_TableNames["Survival2"][1], "Survival2" },
 	},
+	["Jewelcrafting"] = {
+		{ AtlasLoot_TableNames["JewelcraftingApprentice1"][1], "JewelcraftingApprentice1" },
+		{ AtlasLoot_TableNames["JewelcraftingJourneyman1"][1], "JewelcraftingJourneyman1" },
+		{ AtlasLoot_TableNames["JewelcraftingExpert1"][1], "JewelcraftingExpert1" },
+		{ AtlasLoot_TableNames["JewelcraftingArtisan1"][1], "JewelcraftingArtisan1" },
+		{ AtlasLoot_TableNames["JewelcraftingGemology1"][1], "JewelcraftingGemology1" },
+		{ AtlasLoot_TableNames["JewelcraftingGoldsmithing1"][1], "JewelcraftingGoldsmithing1" },
+		{ AtlasLoot_TableNames["JewelcraftingGemstones1"][1], "JewelcraftingGemstones1" },
+	},
 };
 
 --------------------------------------------------------------------------------
@@ -3414,11 +3568,10 @@ function AtlasLootItem_OnEnter()
 			spellID = tonumber(string.sub(this.itemID, 2));
 			AtlasLootTooltip:SetOwner(this, "ANCHOR_RIGHT", -(this:GetWidth() / 2), 24);
 			AtlasLootTooltip:ClearLines();
-			if SetAutoloot == nil then
-				AtlasLootTooltip:SetHyperlink("enchant:"..spellID)
-			else
-				AtlasLootTooltip:SetHyperlink("spell:"..spellID);
+			if SetAutoloot ~= nil then
+				DEFAULT_CHAT_FRAME:AddMessage("SuperWoW的附魔法术链接不兼容。balake需要为SuperWoW添加正确的TurtleWoW支持。");
 			end
+			AtlasLootTooltip:SetHyperlink("enchant:"..spellID);
 			if ( AtlasLootCharDB.ItemIDs ) then
 				AtlasLootTooltip:AddLine(BLUE..AL["SpellID:"].." "..spellID, nil, nil, nil, 1);
 			end
@@ -3946,7 +4099,7 @@ AtlasLoot_updater:SetScript("OnEvent", function()
 		local _,title = GetAddOnInfo("AtlasLoot")
 		local remoteversion = tonumber(remoteversion)
 		if remoteversion >= 40000 then remoteversion = 0 end --Block for people using some version from another version of WoW.
-		if remoteversion >= 10200 then remoteversion = 0 end --Block for people using Otari98's fork. Otari98, speak with devs if you want to work with them on their projects. Don't attempt to hijack. fuck you
+		if remoteversion >= 10200 then remoteversion = 0 end
 		if v == "VERSION" and remoteversion and title == remotetitle then
 			if remoteversion > localversion then
 				AtlasLoot_updateavailable = remoteversion

@@ -140,8 +140,6 @@ AtlasLootBattlegrounds = {
 		"";
 		"";
 		"";
-		"";
-		"";
 		"AVRepFriendly";
 		"AVRepHonored";
 		"AVRepRevered";
@@ -151,7 +149,6 @@ AtlasLootBattlegrounds = {
 	};
 	AlteracValleySouth = {
 		"Frostwolf1";
-		"";
 		"";
 		"";
 		"";
@@ -224,7 +221,7 @@ AtlasLootBattlegrounds = {
 		"";
 		"";
 		"";
-		"WSGRepFriendly";
+		"WSGRepFriendly4049";
 		"WSGRepHonored5059";
 		"WSGRepRevered5059";
 		"WSGRepExalted60";
@@ -416,7 +413,7 @@ AtlasLoot_Data["AtlasLootBGItems"] = {
 		{ 13080, "INV_Chest_Cloth_02", "=q3=寡妇蛛袍", "=ds=#s5#, #a1#", "20%" },
 		{ 12970, "INV_Chest_Plate10", "=q3=将军的葬礼板甲", "=ds=#s5#, #a4#", "20%" },
 		{ 0, "", "", "" },
-		{ 12686, "INV_Sword_32", "=q3=Einhorn's Skinner", "=ds=#h4#, #w4#", "20%" },
+		{ 12686, "INV_Sword_32", "=q3=埃因霍恩的斯金纳", "=ds=#h4#, #w4#", "20%" },
 		{ 21135, "INV_ThrowingAxe_06", "=q3=刺客的飞斧", "=ds=#w11#, 100", "20%" },
 		{ 0, "", "", "" },
 		{ 17108, "INV_Jewelry_Ring_22", "=q4=偏斜徽记之戒", "=ds=#s13#", "20%" },
@@ -1146,8 +1143,8 @@ AtlasLoot_Data["AtlasLootGeneralPvPItems"] = {
 		{ 18830, "INV_Axe_10", "=q4=大元帅的斩石斧", "=ds=#h2#, #w1#" },
 		{ 18838, "INV_Weapon_ShortBlade_26", "=q4=大元帅的匕首", "=ds=#h1#, #w4#" },
 		{ 23451, "INV_Weapon_ShortBlade_26", "=q4=大元帅的法师之刃", "=ds=#h1#, #w4#" },
-		{ 18843, "INV_Weapon_ShortBlade_07", "=q4=Grand Marshal's Right Hand Blade", "=ds=#h3#, #w13#" },
-		{ 18847, "Ability_Rogue_Rupture", "=q4=Grand Marshal's Left Hand Blade", "=ds=#h4#, #w13#" },
+		{ 18843, "INV_Weapon_ShortBlade_07", "=q4=大元帅的右手刃", "=ds=#h3#, #w13#" },
+		{ 18847, "Ability_Rogue_Rupture", "=q4=大元帅的左手刃", "=ds=#h4#, #w13#" },
 		{ 18865, "INV_Mace_13", "=q4=大元帅的惩戒之锤", "=ds=#h1#, #w6#" },
 		{ 23454, "INV_Hammer_02", "=q4=大元帅的战锤", "=ds=#h1#, #w6#" },
 		{ 23455, "INV_Hammer_23", "=q4=大元帅的破坏者", "=ds=#h2#, #w6#" },
