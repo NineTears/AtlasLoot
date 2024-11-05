@@ -666,6 +666,7 @@ AtlasLoot_TableNames = {
 	["Ostarius"] = { "Ostarius", "AtlasLootWBItems" },
 	["Concavius"] = { "Concavius", "AtlasLootWBItems" },
 	["CowKing"] = { "CowKing", "AtlasLootWBItems" },
+	["Clackora"] = { "Cla'ckora", "AtlasLootWBItems" },
 	--Doom Lord Kazzak
 	["KKazzak"] = { AL["Lord Kazzak"], "AtlasLootWBItems" },
 	--Emrald Dragons
@@ -1754,6 +1755,7 @@ AtlasLoot_TableNamesBoss = {
 		["Ostarius"] = { "Ostarius", "AtlasLootWBItems" },
 		["Concavius"] = { "Concavius", "AtlasLootWBItems" },
 		["CowKing"] = { "CowKing", "AtlasLootWBItems" },
+		["Clackora"] = { "Cla'ckora", "AtlasLootWBItems" },
 		--Doom Lord Kazzak
 		["KKazzak"] = { AL["Lord Kazzak"], "AtlasLootWBItems" },
 		--Emrald Dragons

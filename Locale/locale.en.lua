@@ -1655,9 +1655,11 @@ AL:RegisterTranslations("enUS", function() return {
 	["Tools: "] = true,
 	["Requires: "] = true,
 
+	["Cla'ckora"] = true,
+
     -- Wind&Sunelegy汉化修复Turtle-WOW-zhCN端
     -- https://github.com/NineTears/AtlasLoot-Turtle-zhCN
-    -- Last update: 2024-11-04
+    -- Last update: 2024-11-05
     
     ["AtlasLoot"] = "AtlasLoot",
     ["Atlas"] = "Atlas",
@@ -3292,4 +3294,6 @@ AL:RegisterTranslations("enUS", function() return {
     ["Reagents: "] = "需要: ",
     ["Tools: "] = "工具: ",
     ["Requires: "] = "材料: ",
+
+	["Cla'ckora"] = "|CFF00FF00克拉科拉",
 	} end)

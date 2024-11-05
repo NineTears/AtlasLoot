@@ -2659,8 +2659,8 @@ AtlasLoot_ButtonRegistry = {
 		Title = AL["Azuregos"];
 		Next_Page = "DEmeriss";
 		Next_Title = AL["Emeriss"];
-		Prev_Page = "CowKing";
-		Prev_Title = AL["There Is No Cow Level"];
+		Prev_Page = "Clackora";
+		Prev_Title = AL["Cla'ckora"];
 	};
 	["DEmeriss"] = {
 		Title = AL["Emeriss"];
@@ -2734,10 +2734,17 @@ AtlasLoot_ButtonRegistry = {
 	};
 	["CowKing"] = {
 		Title = AL["There Is No Cow Level"];
-		Next_Page =	"AAzuregos";
-		Next_Title = AL["Azuregos"];
+		Next_Page =	"Clackora";
+		Next_Title = AL["Cla'ckora"];
 		Prev_Page = "Concavius";
 		Prev_Title = AL["Concavius"];
+	};
+	["Clackora"] = {
+		Title = AL["Cla'ckora"];
+		Next_Page =	"AAzuregos";
+		Next_Title = AL["Azuregos"];
+		Prev_Page = "CowKing";
+		Prev_Title = AL["There Is No Cow Level"];
 	};
 
 	--Rare Spawns
@@ -3347,7 +3354,7 @@ AtlasLoot_ButtonRegistry = {
 	["ABRepExalted"] = {
 		Back_Page = "ABRepMenu";
 		Title = AL["AB Exalted Rewards"];
-		Prev_Page = "ABRepExalted5059";
+		Prev_Page = "ABRepRevered5059";
 		Next_Page = "ABRepFriendly";
 	};
 	["AVRepFriendly"] = {

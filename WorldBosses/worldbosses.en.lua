@@ -37,6 +37,9 @@ AtlasLootWBBossButtons = {
 	CowKing = {
 		"CowKing";
 	};
+	Clackora = {
+		"Clackora";
+	};
 	RareSpawns = {
 		"";
 		"";
@@ -247,6 +250,23 @@ AtlasLoot_Data["AtlasLootWBItems"] = {
 		{ 0, "", "", "", "" },
 		{ 51261, "inv_misc_bell_01", "=q1=没有奶牛关", "There Is No Cow Level", "100%" },
 	};
+	Clackora = {
+		{ 55494, "inv_misc_birdbeck_02", "=q4=深渊之钳", "=ds=#h3#, #w13#" },
+		{ 55495, "inv_spear_04", "=q4=赞达拉捕食者之刃", "=ds=#h2#, #w7#" },
+		{ 55504, "INV_Generic_Anchor", "=q4=破浪者之锚", "=ds=#h2#, #w6#" },
+		{ 0, "", "", "", "" },
+		{ 55498, "inv_misc_shell_03", "=q4=深海贝壳", "=ds=#w8#" },
+		{ 0, "", "", "", "" },
+		{ 55502, "INV_Pants_12", "=q4=冰板护腿", "=ds=#s11#, #a2#" },
+		{ 55499, "INV_Belt_35", "=q4=原始鱼人鳞片腰带", "=ds=#s10#, #a3#" },
+		{ 55500, "INV_Bracer_17", "=q4=藤壶臂甲", "=ds=#s8#, #a4#" },
+		{ 0, "", "", "", "" },
+		{ 55496, "INV_Jewelry_Necklace_25", "=q4=多彩珍珠项链", "=ds=#s2#" },
+		{ 55503, "INV_Jewelry_Ring_38", "=q4=寒霜之环", "=ds=#s13#" },
+		{ 55501, "INV_Ore_Arcanite_02", "=q4=无尽峡谷之球", "=ds=#s14#" },
+		{ 0, "", "", "", "" },
+		{ 55497, "INV_QirajIdol_Night", "=q4=潮汐神像", "=ds=#e16# =q13=#c1#" },
+	 };
 	KKazzak = {
 		{ 18546, "INV_Helmet_18", "=q4=恶魔颅壳", "=ds=#s1#, #a3#", "20%" },
 		{ 17112, "INV_Hammer_05", "=q4=苍穹击碎者", "=ds=#h3#, #w6#", "20%" },
