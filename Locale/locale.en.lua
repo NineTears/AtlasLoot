@@ -1606,7 +1606,7 @@ AL:RegisterTranslations("enUS", function() return {
 	["Shield"] = true,
 	["Misc"] = true,
 
-    --补充稀有精英内容，wind
+    --补充稀有精英内容，Wind&Sunelegy
 	["Arathi Basin Menu"] = true,
 	["Warsong Gulch Menu"] = true,
 	["|cffffffff[17]|cffffd200 Earthcaller Rezengal |cffffffff(Stonetalon)"] = true,
@@ -1647,7 +1647,7 @@ AL:RegisterTranslations("enUS", function() return {
 	["|cffffffff[??]|cffffd200 Widow of the Woods |cffffffff(Gilneas)"] = true,
 	["|cffffffff[??]|cffffd200 M-0L1Y |cffffffff(???)"] = true,
 
-    --专业技能增补汉化，wind
+    --专业技能增补汉化，Wind&Sunelegy
     ["Rare Spawns"] = true,
 	["Back2"] = true,
 	[" sec cast"] = true,
@@ -3224,7 +3224,7 @@ AL:RegisterTranslations("enUS", function() return {
     ["Harlow Family Chest"] = "哈洛家庭宝箱",
     ["Genn Greymane"] = "吉恩·格雷迈恩",
     ["Erennius"] = "埃伦纽斯",
-    ["Solnius the Awakener"] = "唤醒者索尔纽斯",
+    ["Solnius the Awakener"] = "觉醒者索尔纽斯",
     ["Solnius the Awakener (Page 2)"] = "索尔纽斯·唤醒者 (第2页)",
     ["Favor of Erennius (ES Hard Mode)"] = "埃伦尼乌斯的青睐 (艾萨拉之眼 难度模式)",
     ["Master Blacksmith Rolfen"] = "锻造大师罗尔芬",
@@ -3246,7 +3246,7 @@ AL:RegisterTranslations("enUS", function() return {
     ["Shield"] = "盾牌",
     ["Misc"] = "杂项",
 
-    --补充稀有精英内容，wind
+    --补充稀有精英内容，Wind&Sunelegy
     ["Arathi Basin Menu"] = "目录",
     ["Warsong Gulch Menu"] = "目录",
     ["|cffffffff[17]|cffffd200 Earthcaller Rezengal |cffffffff(Stonetalon)"] = "|cffffffff[17]|CFF00FF00 唤地者雷森加尔 |cffffffff(石爪山)",
@@ -3287,7 +3287,7 @@ AL:RegisterTranslations("enUS", function() return {
     ["|cffffffff[??]|cffffd200 Widow of the Woods |cffffffff(Gilneas)"] = "|cffffffff[??]|CFF00FF00 树林寡妇 |cffffffff(吉尔尼斯)",
     ["|cffffffff[??]|cffffd200 M-0L1Y |cffffffff(???)"] = "|cffffffff[??]|CFF00FF00 M-0L1Y |cffffffff(???)",
 
-    --专业技能增补汉化，wind
+    --专业技能增补汉化，Wind&Sunelegy
     ["Rare Spawns"] = "稀有精英",
     ["Back2"] = "返回",
     [" sec cast"] = " 秒施法时间",

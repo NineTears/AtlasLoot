@@ -80,7 +80,7 @@ local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
 local VERSION_MAJOR = "1";
 local VERSION_MINOR = "1";
 local VERSION_BOSSES = "4";
-ATLASLOOT_VERSION = "|cffFF8400AtlasLoot Wind&Sune汉化 v"..VERSION_MAJOR.."."..VERSION_MINOR.."."..VERSION_BOSSES.."|r";
+ATLASLOOT_VERSION = "|cffFF8400AtlasLoot Wind&Sunelegy汉化 v"..VERSION_MAJOR.."."..VERSION_MINOR.."."..VERSION_BOSSES.."|r";
 ATLASLOOT_CURRENT_ATLAS = "1.12.0";
 ATLASLOOT_PREVIEW_ATLAS = "1.12.1";
 
