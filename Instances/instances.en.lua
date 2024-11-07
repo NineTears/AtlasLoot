@@ -648,7 +648,7 @@ AtlasLootBossButtons = {
 		"";
 		"";
 		"COTBMChronar";
-		"COTBMHarbingerAphygth";
+		"";		--已移除BOSS
 		"COTBMEpidamu";
 		"COTBMDriftingAvatar";
 		"COTBMTimeLordEpochronos";
@@ -667,7 +667,7 @@ AtlasLootBossButtons = {
 		"SWVBlackBride";
 		"SWVDamian";
 		"SWVVolkanCruelblade";
-		"SWVArctiras";
+		"";		--无直接掉落,暂时注释掉
 		"SWVVaultArmoryEquipment";
 		"";		--添加分割线
 		"SWVTrash";
