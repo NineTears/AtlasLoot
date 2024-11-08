@@ -3569,9 +3569,6 @@ function AtlasLootItem_OnEnter()
 			spellID = tonumber(string.sub(this.itemID, 2));
 			AtlasLootTooltip:SetOwner(this, "ANCHOR_RIGHT", -(this:GetWidth() / 2), 24);
 			AtlasLootTooltip:ClearLines();
-			if SetAutoloot ~= nil then
-				DEFAULT_CHAT_FRAME:AddMessage("SuperWoW的附魔法术链接不兼容。balake需要为SuperWoW添加正确的TurtleWoW支持。");
-			end
 			AtlasLootTooltip:SetHyperlink("enchant:"..spellID);
 			if ( AtlasLootCharDB.ItemIDs ) then
 				AtlasLootTooltip:AddLine(BLUE..AL["SpellID:"].." "..spellID, nil, nil, nil, 1);
