@@ -932,7 +932,7 @@ AL:RegisterTranslations("zhCN", function() return {
     ["Caverns of Time: Black Morass"] = "|cffffffff[60]|cffffd200 黑色沼泽",
     ["Chronar"] = "克罗纳",
     ["Epidamu"] = "埃皮达姆",
-    ["Drifting Avatar of Time"] = "沙之漂流化身",
+    ["Drifting Avatar of Sand"] = "沙之漂流化身",
     ["Time-Lord Epochronos"] = "时间领主伊波克洛诺斯",
     ["Mossheart"] = "莫斯哈特",
     ["Rotmaw"] = "腐烂之喉",

@@ -807,8 +807,8 @@ function AtlasLoot_JewelcraftingMenu()
 	AtlasLootMenuItem_5_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Necklace_11");
 	AtlasLootMenuItem_5.lootpage="JewelcraftingArtisan1";
 	AtlasLootMenuItem_5:Show();
-	--Gemoloy
-	AtlasLootMenuItem_5_Name:SetText(AL["Jewelcrafting"]..": "..AL["Gemoloy"]);
+	--Gemology
+	AtlasLootMenuItem_5_Name:SetText(AL["Jewelcrafting"]..": "..AL["Gemology"]);
 	AtlasLootMenuItem_5_Extra:SetText("");
 	AtlasLootMenuItem_5_Icon:SetTexture("Interface\\Icons\\INV_Jewelry_Necklace_11");
 	AtlasLootMenuItem_5.lootpage="JewelcraftingGemology1";

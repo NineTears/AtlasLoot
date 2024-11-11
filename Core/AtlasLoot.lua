@@ -2697,7 +2697,7 @@ AtlasLoot_HewdropDown_SubTables = {
 	["CavernsOfTimeBlackMorass"] = {
 		{ AL["Chronar"], "COTBMChronar" },
 		{ AL["Epidamu"], "COTBMEpidamu" },
-		{ AL["Drifting Avatar of Time"], "COTBMDriftingAvatar" },
+		{ AL["Drifting Avatar of Sand"], "COTBMDriftingAvatar" },
 		{ AL["Time-Lord Epochronos"], "COTBMTimeLordEpochronos" },
 		{ AL["Mossheart"], "COTBMMossheart" },
 		{ AL["Rotmaw"], "COTBMRotmaw" },

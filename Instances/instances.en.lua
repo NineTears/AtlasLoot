@@ -2264,6 +2264,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 21683, "INV_Shoulder_29", "=q4=沙漠远征衬肩", "=ds=#s3#, #a4# =q7=亚尔基公主", "25%" },
 		{ 21682, "INV_Gauntlets_21", "=q4=胆汁护手", "=ds=#s9#, #a2# =q7=亚尔基公主", "25%" },
 		{ 21687, "INV_Jewelry_Ring_24", "=q4=奥库的黑暗之戒", "=ds=#s13# =q7=亚尔基公主", "25%" },
+		{ 21695, "INV_Jewelry_Ring_AhnQiraj_04", "=q4=安格莉丝塔的触摸", "=ds=#s13#", "未知掉落率" },
 	};
 	AQ40Sartura = {
 		{ 21669, "INV_Helmet_01", "=q4=爬藤头盔", "=ds=#s1#, #a2#", "15%" },

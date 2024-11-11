@@ -500,12 +500,12 @@ AtlasLoot_ButtonRegistry = {
 	["COTBMEpidamu"] = {
 		Title = AL["Epidamu"];
 		Next_Page = "COTBMDriftingAvatar";
-		Next_Title = AL["Drifting Avatar of Time"];
+		Next_Title = AL["Drifting Avatar of Sand"];
 		Prev_Page = "COTBMChronar";
 		Prev_Title = AL["Chronar"];
 	};
 	["COTBMDriftingAvatar"] = {
-		Title = AL["Drifting Avatar of Time"];
+		Title = AL["Drifting Avatar of Sand"];
 		Next_Page = "COTBMTimeLordEpochronos";
 		Next_Title = AL["Time-Lord Epochronos"];
 		Prev_Page = "COTBMEpidamu";
@@ -516,7 +516,7 @@ AtlasLoot_ButtonRegistry = {
 		Next_Page = "COTBMMossheart";
 		Next_Title = AL["Mossheart"];
 		Prev_Page = "COTBMDriftingAvatar";
-		Prev_Title = AL["Drifting Avatar of Time"];
+		Prev_Title = AL["Drifting Avatar of Sand"];
 	};
 	["COTBMMossheart"] = {
 		Title = AL["Mossheart"];

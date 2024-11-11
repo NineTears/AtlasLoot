@@ -381,7 +381,7 @@ AtlasLoot_TableNames = {
 	-- Caverns of Time: Black Morass
 	["COTBMChronar"] = { AL["Chronar"], "AtlasLootItems" },
 	["COTBMEpidamu"] = { AL["Epidamu"], "AtlasLootItems" },
-	["COTBMDriftingAvatar"] = { AL["Drifting Avatar of Time"], "AtlasLootItems" },
+	["COTBMDriftingAvatar"] = { AL["Drifting Avatar of Sand"], "AtlasLootItems" },
 	["COTBMTimeLordEpochronos"] = { AL["Time-Lord Epochronos"], "AtlasLootItems" },
 	["COTBMMossheart"] = { AL["Mossheart"], "AtlasLootItems" },
 	["COTBMRotmaw"] = { AL["Rotmaw"], "AtlasLootItems" },
@@ -1165,7 +1165,7 @@ AtlasLoot_TableNamesBoss = {
 	["Caverns of Time: Black Morass"] = {
 		["COTBMChronar"] = { AL["Chronar"], "AtlasLootItems" },
 		["COTBMEpidamu"] = { AL["Epidamu"], "AtlasLootItems" },
-		["COTBMDriftingAvatar"] = { AL["Drifting Avatar of Time"], "AtlasLootItems" },
+		["COTBMDriftingAvatar"] = { AL["Drifting Avatar of Sand"], "AtlasLootItems" },
 		["COTBMTimeLordEpochronos"] = { AL["Time-Lord Epochronos"], "AtlasLootItems" },
 		["COTBMMossheart"] = { AL["Mossheart"], "AtlasLootItems" },
 		["COTBMRotmaw"] = { AL["Rotmaw"], "AtlasLootItems" },
