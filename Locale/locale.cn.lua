@@ -1319,7 +1319,7 @@ AL:RegisterTranslations("zhCN", function() return {
     ["Taerar"] = "|CFF00FF00泰拉尔",
     ["Ysondre"] = "|CFF00FF00伊森德雷",
     ["The Cow King"] = "牛头人之王",
-    ["There Is No Cow Level"] = "|CFF00FF00没有奶牛关卡",
+    ["There Is No Cow Level"] = "|CFF00FF00奶牛王",
     ["Nerubian Overseer"] = "|CFF00FF00蛛魔监工",
     ["Turtlhu, the Black Turtle of Doom"] = "|CFF00FF00胡龟-末日黑龟",
     ["Dark Reaver of Karazhan"] = "|CFF00FF00卡拉赞黑暗掠夺者",
