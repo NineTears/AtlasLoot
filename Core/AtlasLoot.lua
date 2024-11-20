@@ -335,11 +335,12 @@ function AtlasLoot_OnVariablesLoaded()
 	--If Atlas is installed, set up for Atlas
 	if ( Hooked_Atlas_Refresh ) then
 		AtlasLoot_SetupForAtlas();
-		--If a first time user, set up options
-		if AtlasLootCharDB.FirstTime == nil or AtlasLootCharDB.FirstTime == true then
-			StaticPopup_Show ("ATLASLOOT_SETUP");
-			AtlasLootCharDB.FirstTime = false;
-		end
+		--If a first time user, set up options(取消显示第一次提示框)
+		-- if AtlasLootCharDB.FirstTime == nil or AtlasLootCharDB.FirstTime == true then
+		-- 	StaticPopup_Show ("ATLASLOOT_SETUP");
+		-- 	AtlasLootCharDB.FirstTime = false;
+		-- end
+		AtlasLootCharDB.FirstTime = false;  -- 设置为false
 		--If an older version
 		if AtlasLootCharDB.FirstTime == nil and tonumber(AtlasLootCharDB.AtlasLootVersion) < 40500 then
 			AtlasLootCharDB.SafeLinks = true;
