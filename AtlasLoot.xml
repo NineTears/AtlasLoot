@@ -1274,7 +1274,7 @@
 				</Texture>
 			</Layer>
 			<Layer level="OVERLAY">
-				<FontString name="AtlasLoot_BossName" inherits="GameFontHighlightNormal" justifyH="CENTER">
+				<FontString name="AtlasLoot_BossName" inherits="GameFontHighlight" justifyH="CENTER">
 					<Size>
 						<AbsDimension x="512" y="30"/>
 					</Size>
