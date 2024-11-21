@@ -6030,7 +6030,7 @@ AtlasLoot_Data["AtlasLootItems"] = {
 		{ 22354, "INV_Misc_Desecrated_PlateShoulder", "=q4=被玷污的肩铠", "=q17=#c9#=ds=, =q12=#c6#", "33%" },
 		{ 0, "", "", "" },
 		{ 22960, "INV_Misc_Cape_Naxxramas_02", "=q4=缝合披风", "=ds=#s4#", "20%" },
-		{ 22961, "INV_Jewelry_Ring_49Naxxramas", "=q4=鼓舞之戒", "=ds=Ring", "20%" },
+		{ 22961, "INV_Jewelry_Ring_49Naxxramas", "=q4=鼓舞之戒", "=ds=#s13#", "20%" },
 		{ 22820, "INV_Wand_1H_Stratholme_D_01", "=q4=命运魔杖", "=ds=#w12#", "20%" },
 		{ 22818, "INV_Shield_27", "=q4=瘟疫携带者", "=ds=#w8#", "20%" },
 		{ 22815, "INV_Axe_22", "=q4=断离", "=ds=#h2#, #w1#", "20%" },
