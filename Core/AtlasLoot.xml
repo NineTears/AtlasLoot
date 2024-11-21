@@ -377,7 +377,7 @@
 						this:ClearFocus();
 					</OnEnterPressed>
 				</Scripts>
-				<FontString name="AtlasLootDefaultFrameSearchString" inherits="GameFontNormalSmall"></FontString>
+				<FontString name="AtlasLootDefaultFrameSearchString" inherits="GameFontNormal"></FontString>
 			</EditBox>
 			<Button name="AtlasLootDefaultFrameSearchButton" inherits="UIPanelButtonTemplate2" parent="AtlasLootDefaultFrameSearchBox">
 				<Size>
@@ -498,7 +498,7 @@
 			<Layer level="ARTWORK">
 				<Texture name="$parentHeader" file="Interface\DialogFrame\UI-DialogBox-Header">
 					<Size>
-						<AbsDimension x="515" y="64"/>
+						<AbsDimension x="570" y="64"/>
 					</Size>
 					<Anchors>
 						<Anchor point="TOP">
@@ -508,7 +508,7 @@
 						</Anchor>
 					</Anchors>
 				</Texture>
-				<FontString inherits="GameFontNormalSmall" text="ATLASLOOT_VERSION">
+				<FontString inherits="GameFontNormal" text="ATLASLOOT_VERSION">
 					<Anchors>
 						<Anchor point="TOP">
 							<Offset>
@@ -528,7 +528,7 @@
 				</FontString>
 			</Layer>
 			<Layer level="OVERLAY">
-				<FontString name="$parent_SelectedCategory" inherits="GameFontNormalSmall" text="Test">
+				<FontString name="$parent_SelectedCategory" inherits="GameFontNormal" text="Test">
 					<Anchors>
 						<Anchor point="TOP">
 							<Offset>
@@ -537,7 +537,7 @@
 						</Anchor>
 					</Anchors>
 				</FontString>
-				<FontString name="$parent_SelectedTable" inherits="GameFontNormalSmall" text="Test">
+				<FontString name="$parent_SelectedTable" inherits="GameFontNormal" text="Test">
 					<Anchors>
 						<Anchor point="TOP">
 							<Offset>
@@ -694,7 +694,7 @@
 						</Anchor>
 					</Anchors>
 				</FontString>
-				<FontString name="$parent_Name" inherits="GameFontNormalSmall" justifyH="LEFT">
+				<FontString name="$parent_Name" inherits="GameFontNormal" justifyH="LEFT">
 					<Size>
 						<AbsDimension x="205" y="12"/>
 					</Size>
@@ -1282,7 +1282,7 @@
 						<Anchor point="TOP" relativeTo="$parent" relativePoint="TOP"/>
 					</Anchors>
 				</FontString>
-				<FontString name="AtlasLoot_QuickLooks" inherits="GameFontNormalSmall" justifyH="RIGHT">
+				<FontString name="AtlasLoot_QuickLooks" inherits="GameFontNormal" justifyH="RIGHT">
 					<Size>
 						<AbsDimension x="200" y="25"/>
 					</Size>
@@ -1341,7 +1341,7 @@
 						</Anchor>
 					</Anchors>
 				</Texture>
-				<FontString name="$parent_Title" inherits="GameFontNormalSmall">
+				<FontString name="$parent_Title" inherits="GameFontNormal">
 					<Anchors>
 						<Anchor point="TOP">
 							<Offset>
@@ -1729,7 +1729,7 @@
 						</Anchor>
 					</Anchors>
 				</Texture>
-				<FontString inherits="GameFontNormalSmall" text="Atlasloot Enhanced">
+				<FontString inherits="GameFontNormal" text="Atlasloot Enhanced">
 					<Anchors>
 						<Anchor point="BOTTOM" relativeTo="$parent_Title" relativePoint="BOTTOM">
 							<Offset>
@@ -2134,7 +2134,7 @@
 						this:ClearFocus();
 					</OnEnterPressed>
 				</Scripts>
-				<FontString name="AtlasLootSearchString" inherits="GameFontNormalSmall"></FontString>
+				<FontString name="AtlasLootSearchString" inherits="GameFontNormal"></FontString>
 			</EditBox>
 			<Button name="AtlasLootSearchButton" inherits="UIPanelButtonTemplate2" parent="AtlasLootSearchBox">
 				<Size>
