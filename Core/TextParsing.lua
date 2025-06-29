@@ -570,7 +570,7 @@ function AtlasLoot_FixText(text)
 	text = gsub(text, "=q12=", "|cfffff468"); -- rogue colour
 	text = gsub(text, "=q13=", "|cffff7c0a"); -- druid colour
 	text = gsub(text, "=q14=", "|cffaad372"); -- hunter colour
-	text = gsub(text, "=q15=", "|cff2773ff"); -- shaman colour
+	text = gsub(text, "=q15=", "|cff0070DE"); -- shaman colour
 	text = gsub(text, "=q16=", "|cfff48cba"); -- paladin colour
 	text = gsub(text, "=q17=", "|cffc69b6d"); -- warrior colour
 	text = gsub(text, "=q18=", "|cffff3100"); -- horde rank colour

@@ -512,11 +512,11 @@ GetSpellInfoAtlasLootDB = {
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[22749] = {
-			["name"] = "Enchant Weapon - Spell Power",
+			["name"] = "附魔武器 - 法术能量",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[22750] = {
-			["name"] = "Enchant Weapon - Healing Power",
+			["name"] = "附魔武器 - 治疗能量",
 			["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 		},
 		[23799] = {

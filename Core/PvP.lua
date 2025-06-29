@@ -459,7 +459,7 @@ function AtlasLootPVPSetMenu()
 	AtlasLootMenuItem_18.lootpage="PVPHunter";
 	AtlasLootMenuItem_18:Show();
 	--Shaman
-	AtlasLootMenuItem_19_Name:SetText("|cff2773ff"..AL["Shaman"]);
+	AtlasLootMenuItem_19_Name:SetText("|cff0070DE"..AL["Shaman"]);
 	AtlasLootMenuItem_19_Extra:SetText("");
 	AtlasLootMenuItem_19_Icon:SetTexture("Interface\\Icons\\Spell_FireResistanceTotem_01");
 	AtlasLootMenuItem_19.lootpage="PVPShaman";

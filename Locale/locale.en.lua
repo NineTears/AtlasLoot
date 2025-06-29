@@ -1032,7 +1032,7 @@ AL:RegisterTranslations("enUS", function() return {
 	["Sapphiron"] = true,
 	["Kel'Thuzad"] = true,
 	["Naxxramas"] = true,
-	["Upper Karazhan Halls"] = true,
+	["Tower of Karazhan"] = true,
 	["Onyxia"] = true,
 	["Onyxia's Lair"] = "Onyxia's Lair",
 	["Ragefire Chasm"] = "|cffffffff[13-18]|cffffd200 Ragefire Chasm",
@@ -1606,7 +1606,7 @@ AL:RegisterTranslations("enUS", function() return {
 	["Shield"] = true,
 	["Misc"] = true,
 
-    --补充稀有精英内容，Wind&Sunelegy
+	-- 补充稀有精英内容，Wind&Sunelegy
 	["Arathi Basin Menu"] = true,
 	["Warsong Gulch Menu"] = true,
 	["|cffffffff[17]|cffffd200 Earthcaller Rezengal |cffffffff(Stonetalon)"] = true,
@@ -1646,20 +1646,47 @@ AL:RegisterTranslations("enUS", function() return {
 	["|cffffffff[61]|cffffd200 Shadeflayer Goliath |cffffffff(Hyjal)"] = true,
 	["|cffffffff[??]|cffffd200 Widow of the Woods |cffffffff(Gilneas)"] = true,
 	["|cffffffff[??]|cffffd200 M-0L1Y |cffffffff(???)"] = true,
-
-    --专业技能增补汉化，Wind&Sunelegy
-    ["Rare Spawns"] = true,
+	-- 专业技能增补汉化，Wind&Sunelegy
+	["Rare Spawns"] = true,
 	["Back2"] = true,
 	[" sec cast"] = true,
 	["Reagents: "] = true,
 	["Tools: "] = true,
 	["Requires: "] = true,
 
+	-- Karazhan40增补汉化，Sunelegy
+	["King (Chess fight)"] = true,
+	["Sanv Tas'dal"] = true,
+	["Kruul"] = true,
+	["Ley-Watcher Incantagos"] = true,
+	["Anomalus"] = true,
+	["Echo of Medivh"] = true,
+	["Keeper Gnarlmoon"] = true,
+	["Rupturan"] = true,
+	["Mephistroth"] = true,
+	["Unknown boss Upper Kara"]  = true,
 	["Cla'ckora"] = true,
+	
+	-- 1172新增，Wind&Sunelegy
+	-- 死亡矿井
+	["Jared Voss"] = true,
+	["Masterpiece Harvester"] = true,
+	-- 影牙城堡
+	["Melenas' Belongings"] = true,
+	["Prelate Ironmane"] = true,
+	-- 墓地
+	["Duke Dreadmoore"] = true,
+	-- 图书馆
+	["Brother Wystan"] = true,
+	-- 军械库
+	["Armory Quartermaster Daghelm"] = true,
+	-- 哀嚎洞穴
+	["Zandara Windhoof"] = true,
+	["Vangros"] = true,
 
     -- Wind&Sunelegy汉化修复Turtle-WOW-zhCN端
     -- https://github.com/NineTears/AtlasLoot-Turtle-zhCN
-    -- Last update: 2024-11-05
+    -- Last update: 2025-06-18
     
     ["AtlasLoot"] = "AtlasLoot",
     ["Atlas"] = "Atlas",
@@ -2672,7 +2699,7 @@ AL:RegisterTranslations("enUS", function() return {
     ["Sapphiron"] = "萨菲隆",
     ["Kel'Thuzad"] = "克尔苏加德",
     ["Naxxramas"] = "纳克萨玛斯",
-    ["Upper Karazhan Halls"] = "卡拉赞之塔",
+    ["Tower of Karazhan"] = "卡拉赞之塔",
     ["Onyxia"] = "奥妮克希亚",
     ["Onyxia's Lair"] = "奥妮克希亚的巢穴",
     ["Ragefire Chasm"] = "|cffffffff[13-18]|cffffd200 怒焰裂谷",
@@ -2851,7 +2878,7 @@ AL:RegisterTranslations("enUS", function() return {
     ["Ring"] = "戒指",
     ["Trinket"] = "饰品",
     ["Held In Off-hand"] = "副手物品",
-    ["Relic"] = "遗物",
+    ["Relic"] = "圣物",
     ["One-Hand"] = "单手",
     ["Two-Hand"] = "双手",
     ["Main Hand"] = "主手",
@@ -2869,7 +2896,7 @@ AL:RegisterTranslations("enUS", function() return {
     ["Thrown"] = "投掷武器",
     ["Wand"] = "魔杖",
     ["Fist Weapon"] = "拳套",
-    ["Idol"] = "雕像",
+    ["Idol"] = "神像",
     ["Totem"] = "图腾",
     ["Libram"] = "圣契",
     ["Arrow"] = "箭矢",
@@ -2966,10 +2993,10 @@ AL:RegisterTranslations("enUS", function() return {
     ["Azuregos"] = "艾索雷葛斯",
     ["Lord Kazzak"] = "卡扎克",
     ["Doomwalker"] = "末日行者",
-    ["Emeriss"] = "艾莫莉丝",
-    ["Lethon"] = "雷索",
-    ["Taerar"] = "泰拉尔",
-    ["Ysondre"] = "伊森德雷",
+    ["Emeriss"] = "|CFF00FF00艾莫莉丝",
+    ["Lethon"] = "|CFF00FF00雷索",
+    ["Taerar"] = "|CFF00FF00泰拉尔",
+    ["Ysondre"] = "|CFF00FF00伊森德雷",
     ["The Cow King"] = "牛头人之王",
     ["There Is No Cow Level"] = "|CFF00FF00奶牛王",
     ["Nerubian Overseer"] = "|CFF00FF00蛛魔监工",
@@ -3224,8 +3251,8 @@ AL:RegisterTranslations("enUS", function() return {
     ["Harlow Family Chest"] = "哈洛家庭宝箱",
     ["Genn Greymane"] = "吉恩·格雷迈恩",
     ["Erennius"] = "埃伦纽斯",
-    ["Solnius the Awakener"] = "觉醒者索尔纽斯",
-    ["Solnius the Awakener (Page 2)"] = "索尔纽斯·唤醒者 (第2页)",
+    ["Solnius the Awakener"] = "索尔纽斯",
+    ["Solnius the Awakener (Page 2)"] = "索尔纽斯 (第2页)",
     ["Favor of Erennius (ES Hard Mode)"] = "埃伦尼乌斯的青睐 (艾萨拉之眼 难度模式)",
     ["Master Blacksmith Rolfen"] = "锻造大师罗尔芬",
     ["Brood Queen Araxxna"] = "巢穴女王阿拉克萨娜",
@@ -3246,7 +3273,7 @@ AL:RegisterTranslations("enUS", function() return {
     ["Shield"] = "盾牌",
     ["Misc"] = "杂项",
 
-    --补充稀有精英内容，Wind&Sunelegy
+    -- 补充稀有精英内容，Wind&Sunelegy
     ["Arathi Basin Menu"] = "目录",
     ["Warsong Gulch Menu"] = "目录",
     ["|cffffffff[17]|cffffd200 Earthcaller Rezengal |cffffffff(Stonetalon)"] = "|cffffffff[17]|CFF00FF00 唤地者雷森加尔 |cffffffff(石爪山)",
@@ -3286,14 +3313,41 @@ AL:RegisterTranslations("enUS", function() return {
     ["|cffffffff[61]|cffffd200 Shadeflayer Goliath |cffffffff(Hyjal)"] = "|cffffffff[61]|CFF00FF00 暗灭者歌利亚 |cffffffff(海加尔山)",
     ["|cffffffff[??]|cffffd200 Widow of the Woods |cffffffff(Gilneas)"] = "|cffffffff[??]|CFF00FF00 树林寡妇 |cffffffff(吉尔尼斯)",
     ["|cffffffff[??]|cffffd200 M-0L1Y |cffffffff(???)"] = "|cffffffff[??]|CFF00FF00 M-0L1Y |cffffffff(???)",
+	-- 专业技能增补汉化，Wind&Sunelegy
+	["Rare Spawns"] = "稀有精英",
+	["Back2"] = "返回",
+	[" sec cast"] = " 秒施法时间",
+	["Reagents: "] = "需要: ",
+	["Tools: "] = "工具: ",
+	["Requires: "] = "材料: ",
 
-    --专业技能增补汉化，Wind&Sunelegy
-    ["Rare Spawns"] = "稀有精英",
-    ["Back2"] = "返回",
-    [" sec cast"] = " 秒施法时间",
-    ["Reagents: "] = "需要: ",
-    ["Tools: "] = "工具: ",
-    ["Requires: "] = "材料: ",
-
+	-- Karazhan40增补汉化，Sunelegy
+	["King (Chess fight)"] = "国王议会",
+	["Sanv Tas'dal"] = "桑夫·塔斯达尔",
+	["Kruul"] = "库鲁尔",
+	["Ley-Watcher Incantagos"] = "魔网观察者因塔苟斯",
+	["Anomalus"] = "阿诺玛鲁斯",
+	["Echo of Medivh"] = "麦迪文的回响",
+	["Keeper Gnarlmoon"] = "守护者纳尔穆恩",
+	["Rupturan"] = "破碎者鲁普图兰",
+	["Mephistroth"] = "孟菲斯托斯",
+	["Unknown boss Upper Kara"]  = "其他",
 	["Cla'ckora"] = "|CFF00FF00克拉科拉",
+
+	-- 1172新增，Wind&Sunelegy
+	-- 死亡矿井
+	["Jared Voss"] = "杰里德·维斯",
+	["Masterpiece Harvester"] = "收割者-最后杰作",
+	-- 影牙城堡
+	["Melenas' Belongings"] = "迈雷纳斯的财产",
+	["Prelate Ironmane"] = "艾隆迈恩主教",
+	-- 墓地
+	["Duke Dreadmoore"] = "德雷德摩尔公爵",
+	-- 图书馆
+	["Brother Wystan"] = "威斯坦修士",
+	-- 军械库
+	["Armory Quartermaster Daghelm"] = "军械库军需官达格海姆",
+	-- 哀嚎洞穴
+	["Zandara Windhoof"] = "赞达拉·风蹄",
+	["Vangros"] = "范格罗斯",
 	} end)

@@ -720,10 +720,24 @@ AtlasLoot_ButtonRegistry = {
 		Prev_Page = "DMCaptainGreenskin";
 		Prev_Title = AL["Captain Greenskin"];
 	};
-	["DMTrash"] = {
-		Title = AL["Trash Mobs"];
+	["DMJaredVoss"] = {
+		Title = AL["Jared Voss"];
+		Next_Page = "DMMasterpieceHarvester";
+		Next_Title = AL["Masterpiece Harvester"];
 		Prev_Page = "DMVanCleef";
 		Prev_Title = AL["Edwin VanCleef"];
+	};
+	["DMMasterpieceHarvester"] = {
+		Title = AL["Masterpiece Harvester"];
+		Next_Page = "DMTrash";
+		Next_Title = AL["Trash Mobs"];
+		Prev_Page = "DMJaredVoss";
+		Prev_Title = AL["Jared Voss"];
+	};
+	["DMTrash"] = {
+		Title = AL["Trash Mobs"];
+		Prev_Page = "DMMasterpieceHarvester";
+		Prev_Title = AL["Masterpiece Harvester"];
 	};
 	["TCGGrovetenderEngryss"] = {
 		Title = AL["Grovetender Engryss"];
@@ -1036,10 +1050,17 @@ AtlasLoot_ButtonRegistry = {
 		Prev_Page = "SMFallenChampion";
 		Prev_Title = AL["Fallen Champion"].." ("..AL["Rare"]..")";
 	};
-	["SMGTrash"] = {
-		Title = AL["Trash Mobs"];
+	["SMDukeDreadmoore"] = {
+		Title = AL["Duke Dreadmoore"];
+		Next_Page = "SMGTrash";
+		Next_Title = AL["Trash Mobs"];
 		Prev_Page = "SMBloodmageThalnos";
 		Prev_Title = AL["Bloodmage Thalnos"];
+	};
+	["SMGTrash"] = {
+		Title = AL["Trash Mobs"];
+		Prev_Page = "SMDukeDreadmoore";
+		Prev_Title = AL["Duke Dreadmoore"];
 	};
 	["SMHoundmasterLoksey"] = {
 		Title = AL["Houndmaster Loksey"];
@@ -1053,20 +1074,34 @@ AtlasLoot_ButtonRegistry = {
 		Prev_Page = "SMHoundmasterLoksey";
 		Prev_Title = AL["Houndmaster Loksey"];
 	};
-	["SMLTrash"] = {
-		Title = AL["Trash Mobs"];
+	["SMBrotherWystan"] = {
+		Title = AL["Brother Wystan"];
+		Next_Page = "SMLTrash";
+		Next_Title = AL["Trash Mobs"];
 		Prev_Page = "SMDoan";
 		Prev_Title = AL["Arcanist Doan"];
 	};
+	["SMLTrash"] = {
+		Title = AL["Trash Mobs"];
+		Prev_Page = "SMBrotherWystan";
+		Prev_Title = AL["Brother Wystan"];
+	};
 	["SMHerod"] = {
 		Title = AL["Herod"];
+		Next_Page = "SMArmoryQuartermasterDaghelm";
+		Next_Title = AL["Armory Quartermaster Daghelm"];
+	};
+	["SMArmoryQuartermasterDaghelm"] = {
+		Title = AL["Armory Quartermaster Daghelm"];
 		Next_Page = "SMATrash";
 		Next_Title = AL["Trash Mobs"];
+		Prev_Page = "SMHerod";
+		Prev_Title = AL["Herod"];
 	};
 	["SMATrash"] = {
 		Title = AL["Trash Mobs"];
-		Prev_Page = "SMHerod";
-		Prev_Title = AL["Herod"];
+		Prev_Page = "SMArmoryQuartermasterDaghelm";
+		Prev_Title = AL["Armory Quartermaster Daghelm"];
 	};
 	["SMFairbanks"] = {
 		Title = AL["High Inquisitor Fairbanks"];
@@ -1296,10 +1331,17 @@ AtlasLoot_ButtonRegistry = {
 		Prev_Page = "SFKWolfMasterNandos";
 		Prev_Title = AL["Wolf Master Nandos"];
 	};
-	["SFKTrash"] = {
-		Title = AL["Trash Mobs"];
+	["SFKPrelateIronmane"] = {
+		Title = AL["Prelate Ironmane"];
+		Next_Page = "SFKTrash";
+		Next_Title = AL["Trash Mobs"];
 		Prev_Page = "SFKArchmageArugal";
 		Prev_Title = AL["Archmage Arugal"];
+	};
+	["SFKTrash"] = {
+		Title = AL["Trash Mobs"];
+		Prev_Page = "SFKPrelateIronmane";
+		Prev_Title = AL["Prelate Ironmane"];
 	};
 	["SWStTargorr"] = {
 		Title = AL["Targorr the Dread"];
@@ -2498,6 +2540,21 @@ AtlasLoot_ButtonRegistry = {
 		Next_Title = AL["Trash Mobs"];
 		Prev_Page = "WCMutanus";
 		Prev_Title = AL["Mutanus the Devourer"];
+	};
+	--1172 Wind&Sunegely add 
+	["WCZandaraWindhoof"] = {
+		Title = AL["Zandara Windhoof"];
+		Next_Page = "WCVangros";
+		Next_Title = AL["Vangros"];
+		Prev_Page = "WCDeviateFaerieDragon";
+		Prev_Title = AL["Deviate Faerie Dragon"];
+	};
+	["WCVangros"] = {
+		Title = AL["Vangros"];
+		Next_Page = "WCTrash";
+		Next_Title = AL["Trash Mobs"];
+		Prev_Page = "WCZandaraWindhoof";
+		Prev_Title = AL["Zandara Windhoof"];
 	};
 	["WCTrash"] = {
 		Title = AL["Trash Mobs"];
@@ -5091,5 +5148,98 @@ AtlasLoot_ButtonRegistry = {
 		Title = AL["Poisons"];
 		Back_Page = "CRAFTINGMENU";
 		Back_Title = AL["Crafting"];
+	};
+	-- Upper Karazhan Halls
+	-- Guessed order:keeper gnarlmoon -> incantagos -> anomalus -> echo of medivh (optional) -> king's council -> sanv tas'dal  -> rupturan -> kruul -> mephistroph
+
+	["Kara40Gnarlmoon"] = {
+		Title = AL["Keeper Gnarlmoon"];
+		Next_Page = "Kara40Incantagos";
+		Next_Title = AL["Ley-Watcher Incantagos"];
+		Prev_Page = "Kara40Trash";
+		Prev_Title = AL["Trash Mobs"];
+		Back_Page = "DUNGEONSMENU2";
+		Back_Title = AL["Dungeons & Raids"];
+	};
+	["Kara40Incantagos"] = {
+		Title = AL["Ley-Watcher Incantagos"];
+		Next_Page = "Kara40Anomalus";
+		Next_Title = AL["Anomalus"];
+		Prev_Page = "Kara40Gnarlmoon";
+		Prev_Title = AL["Keeper Gnarlmoon"];
+		Back_Page = "DUNGEONSMENU2";
+		Back_Title = AL["Dungeons & Raids"];
+	};
+	["Kara40Anomalus"] = {
+		Title = AL["Anomalus"];
+		Next_Page = "Kara40Echo";
+		Next_Title = AL["Echo of Medivh"];
+		Prev_Page = "Kara40Incantagos";
+		Prev_Title = AL["Ley-Watcher Incantagos"];
+		Back_Page = "DUNGEONSMENU2";
+		Back_Title = AL["Dungeons & Raids"];
+	};
+	["Kara40Echo"] = {
+		Title = AL["Echo of Medivh"];
+		Next_Page = "Kara40King";
+		Next_Title = AL["King (Chess fight)"];
+		Prev_Page = "Kara40Anomalus";
+		Prev_Title = AL["Anomalus"];
+		Back_Page = "DUNGEONSMENU2";
+		Back_Title = AL["Dungeons & Raids"];
+	};
+	["Kara40King"] = {
+		Title = AL["King (Chess fight)"];
+		Next_Page = "Kara40SanvTasdal";
+		Next_Title = AL["Sanv Tas'dal"];
+		Prev_Page = "Kara40Echo";
+		Prev_Title = AL["Echo of Medivh"];
+		Back_Page = "DUNGEONSMENU2";
+		Back_Title = AL["Dungeons & Raids"];
+	};
+	["Kara40SanvTasdal"] = {
+		Title = AL["Sanv Tas'dal"];
+		Next_Page = "Kara40Rupturan";
+		Next_Title = AL["Rupturan"];
+		Prev_Page = "Kara40King";
+		Prev_Title = AL["King (Chess fight)"];
+		Back_Page = "DUNGEONSMENU2";
+		Back_Title = AL["Dungeons & Raids"];
+	};
+	["Kara40Rupturan"] = {
+		Title = AL["Rupturan"];
+		Next_Page = "Kara40Kruul";
+		Next_Title = AL["Kruul"];
+		Prev_Page = "Kara40SanvTasdal";
+		Prev_Title = AL["Sanv Tas'dal"];
+		Back_Page = "DUNGEONSMENU2";
+		Back_Title = AL["Dungeons & Raids"];
+	};
+	["Kara40Kruul"] = {
+		Title = AL["Kruul"];
+		Next_Page = "Kara40Mephistroth";
+		Next_Title = AL["Mephistroth"];
+		Prev_Page = "Kara40Rupturan";
+		Prev_Title = AL["Rupturan"];
+		Back_Page = "DUNGEONSMENU2";
+		Back_Title = AL["Dungeons & Raids"];
+	},
+	["Kara40Mephistroth"] = {
+		Title = AL["Mephistroth"];
+		Next_Page = "Kara40Trash";
+		Next_Title = AL["Trash Mobs"];
+		Prev_Page = "Kara40Kruul";
+		Prev_Title = AL["Kruul"];
+		Back_Page = "DUNGEONSMENU2";
+		Back_Title = AL["Dungeons & Raids"];
+	},
+	["Kara40Trash"] = {
+		Title = AL["Trash Mobs"];
+		Next_Page = "Kara40Gnarlmoon";
+		Next_Title = AL["Keeper Gnarlmoon"];
+		Prev_Page = "Kara40Mephistroth";
+		Prev_Title = AL["Mephistroth"];
+		Back_Page = "DUNGEONSMENU2";
+		Back_Title = AL["Dungeons & Raids"];
 	};
 };

@@ -56,7 +56,7 @@ AtlasLootItem_OnLeave()
 AtlasLootItem_OnClick()
 AtlasLoot_QueryLootPage()
 
-strsplit
+AtlasLoot_strsplit
 strtrim
 
 ]]
@@ -78,8 +78,8 @@ local AL = AceLibrary("AceLocale-2.2"):new("AtlasLoot");
 
 --Establish version number and compatible version of Atlas
 local VERSION_MAJOR = "1";
-local VERSION_MINOR = "1";
-local VERSION_BOSSES = "4";
+local VERSION_MINOR = "3";
+local VERSION_BOSSES = "6";
 ATLASLOOT_VERSION = "|cffFF8400AtlasLoot Wind&Sunelegy汉化版 v"..VERSION_MAJOR.."."..VERSION_MINOR.."."..VERSION_BOSSES.."|r";
 ATLASLOOT_CURRENT_ATLAS = "1.12.0";
 ATLASLOOT_PREVIEW_ATLAS = "1.12.1";
@@ -1377,7 +1377,7 @@ function AtlasLoot_ShowItemsFrame(dataID, dataSource, boss, pFrame)
 				end
 				--Set prices for items, up to 5 different currencies can be used in combination
 				if (dataID == "SearchResult" or dataID == "WishList") and dataSource[dataID][i][5] then
-					local wishDataID, wishDataSource = strsplit("|", dataSource[dataID][i][5])
+					local wishDataID, wishDataSource = AtlasLoot_strsplit("|", dataSource[dataID][i][5])
 					if wishDataSource == "AtlasLootRepItems" then
 						if wishDataID and AtlasLoot_IsLootTableAvailable(wishDataID) then
 							for _, v in ipairs(AtlasLoot_Data[wishDataSource][wishDataID]) do
@@ -2173,7 +2173,7 @@ function AtlasLootMinimapButton_SetPosition(v)
 	AtlasLootMinimapButton_UpdatePosition();
 end
 
-function strsplit(delim, str, maxNb, onlyLast)
+function AtlasLoot_strsplit(delim, str, maxNb, onlyLast)
 	-- Eliminate bad cases...
 	if string.find(str, delim) == nil then
 		return { str }
@@ -2327,7 +2327,7 @@ AtlasLoot_HewdropDown = {
 				{ "|cffff0000[团队]|cffffd200 "..AL["Naxxramas"], "Naxxramas", "Submenu" },
 			},
 			[36] = {
-				{ "|cffff0000[团队]|cffffd200 "..AL["Upper Karazhan Halls"], "Kara40", "Submenu" },
+				{ "|cffff0000[团队]|cffffd200 "..AL["Tower of Karazhan"], "TowerofKarazhan", "Submenu" },
 			},
 		},
 	},
@@ -2389,7 +2389,7 @@ AtlasLoot_HewdropDown = {
 				{ "|cffaad372"..AL["Hunter Sets"], "HunterSets", "Submenu" },
 			},
 			[8] = {
-				{ "|cff2773ff"..AL["Shaman Sets"], "ShamanSets", "Submenu" },
+				{ "|cff0070DE"..AL["Shaman Sets"], "ShamanSets", "Submenu" },
 			},
 			[9] = {
 				{ "|cfff48cba"..AL["Paladin Sets"], "PaladinSets", "Submenu" },
@@ -2736,6 +2736,8 @@ AtlasLoot_HewdropDown_SubTables = {
 		{ AL["Cookie"], "DMCookie" },
 		{ AL["Captain Greenskin"], "DMCaptainGreenskin" },
 		{ AL["Edwin VanCleef"], "DMVanCleef" },
+		{ AL["Jared Voss"], "DMJaredVoss" },
+		{ AL["Masterpiece Harvester"], "DMMasterpieceHarvester" },
 		{ AL["Trash Mobs"], "DMTrash" },
 	},
 	["TheCrescentGrove"] = {
@@ -2794,15 +2796,18 @@ AtlasLoot_HewdropDown_SubTables = {
 		{ AL["Azshir the Sleepless"].." ("..AL["Rare"]..")", "SMAzshir" },
 		{ AL["Fallen Champion"].." ("..AL["Rare"]..")", "SMFallenChampion" },
 		{ AL["Bloodmage Thalnos"], "SMBloodmageThalnos" },
+		{ AL["Duke Dreadmoore"], "SMDukeDreadmoore" },
 		{ AL["Trash Mobs"], "SMGTrash" },
 	},
 	["SMLibrary"] = {
 		{ AL["Houndmaster Loksey"], "SMHoundmasterLoksey" },
 		{ AL["Arcanist Doan"], "SMDoan" },
+		{ AL["Brother Wystan"], "SMBrotherWystan" },
 		{ AL["Trash Mobs"], "SMLTrash" },
 	},
 	["SMArmory"] = {
 		{ AL["Herod"], "SMHerod" },
+		{ AL["Armory Quartermaster Daghelm"], "SMArmoryQuartermasterDaghelm" },
 		{ AL["Trash Mobs"], "SMATrash" },
 	},
 	["SMCathedral"] = {
@@ -2844,6 +2849,7 @@ AtlasLoot_HewdropDown_SubTables = {
 		{ AL["Arugal's Voidwalker"], "SFKArugalsVoidwalker" },
 		{ AL["Wolf Master Nandos"], "SFKWolfMasterNandos" },
 		{ AL["Archmage Arugal"], "SFKArchmageArugal" },
+		{ AL["Prelate Ironmane"], "SFKPrelateIronmane" },
 		{ AL["Trash Mobs"], "SFKTrash" },
 	},
 	["TheStockade"] = {
@@ -3052,8 +3058,17 @@ AtlasLoot_HewdropDown_SubTables = {
 		{ AL["AQ Enchants"], "AQEnchants" },
 		{ AL["AQ Opening Quest Chain"], "AQOpening" },
 	},
-	["Kara40"] = {
-		{ "No Kara40 Yet", "NoKara40" },
+	["TowerofKarazhan"] = {
+		{ AL["Keeper Gnarlmoon"], "Kara40Gnarlmoon" },
+		{ AL["Ley-Watcher Incantagos"], "Kara40Incantagos" },
+		{ AL["Anomalus"], "Kara40Anomalus" },
+		{ AL["King (Chess fight)"], "Kara40King" },
+		{ AL["Echo of Medivh"], "Kara40Echo" },
+		{ AL["Sanv Tas'dal"], "Kara40SanvTasdal" },
+		{ AL["Rupturan"], "Kara40Rupturan" },
+		{ AL["Kruul"], "Kara40Kruul" },
+		{ AL["Mephistroth"], "Kara40Mephistroth" },
+		{ AL["Trash Mobs"], "Kara40Trash" },
 	},
 	["WailingCaverns"] = {
 		{ AL["Lord Cobrahn"], "WCLordCobrahn" },
@@ -3065,6 +3080,8 @@ AtlasLoot_HewdropDown_SubTables = {
 		{ AL["Verdan the Everliving"], "WCVerdan" },
 		{ AL["Mutanus the Devourer"], "WCMutanus" },
 		{ AL["Deviate Faerie Dragon"].." ("..AL["Rare"]..")", "WCDeviateFaerieDragon" },
+		{ AL["Zandara Windhoof"], "WCZandaraWindhoof" },
+		{ AL["Vangros"], "WCVangros" },
 		{ AL["Trash Mobs"], "WCTrash" },
 	},
 	["ZulFarrak"] = {
@@ -3226,7 +3243,7 @@ AtlasLoot_HewdropDown_SubTables = {
 		{ "|cfffff468"..AL["Rogue"], "T0Rogue" },
 		{ "|cffff7c0a"..AL["Druid"], "T0Druid" },
 		{ "|cffaad372"..AL["Hunter"], "T0Hunter" },
-		{ "|cff2773ff"..AL["Shaman"], "T0Shaman" },
+		{ "|cff0070DE"..AL["Shaman"], "T0Shaman" },
 		{ "|cfff48cba"..AL["Paladin"], "T0Paladin" },
 		{ "|cffc69b6d"..AL["Warrior"], "T0Warrior" },
 	},
@@ -3237,7 +3254,7 @@ AtlasLoot_HewdropDown_SubTables = {
 		{ "|cfffff468"..AL["Rogue"], "AQ20Rogue" },
 		{ "|cffff7c0a"..AL["Druid"], "AQ20Druid" },
 		{ "|cffaad372"..AL["Hunter"], "AQ20Hunter" },
-		{ "|cff2773ff"..AL["Shaman"], "AQ20Shaman" },
+		{ "|cff0070DE"..AL["Shaman"], "AQ20Shaman" },
 		{ "|cfff48cba"..AL["Paladin"], "AQ20Paladin" },
 		{ "|cffc69b6d"..AL["Warrior"], "AQ20Warrior" },
 	},
@@ -3248,7 +3265,7 @@ AtlasLoot_HewdropDown_SubTables = {
 		{ "|cfffff468"..AL["Rogue"], "AQ40Rogue" },
 		{ "|cffff7c0a"..AL["Druid"], "AQ40Druid" },
 		{ "|cffaad372"..AL["Hunter"], "AQ40Hunter" },
-		{ "|cff2773ff"..AL["Shaman"], "AQ40Shaman" },
+		{ "|cff0070DE"..AL["Shaman"], "AQ40Shaman" },
 		{ "|cfff48cba"..AL["Paladin"], "AQ40Paladin" },
 		{ "|cffc69b6d"..AL["Warrior"], "AQ40Warrior" },
 	},
@@ -3259,7 +3276,7 @@ AtlasLoot_HewdropDown_SubTables = {
 		{ "|cfffff468"..AL["Rogue"], "T1Rogue" },
 		{ "|cffff7c0a"..AL["Druid"], "T1Druid" },
 		{ "|cffaad372"..AL["Hunter"], "T1Hunter" },
-		{ "|cff2773ff"..AL["Shaman"], "T1Shaman" },
+		{ "|cff0070DE"..AL["Shaman"], "T1Shaman" },
 		{ "|cfff48cba"..AL["Paladin"], "T1Paladin" },
 		{ "|cffc69b6d"..AL["Warrior"], "T1Warrior" },
 	},
@@ -3270,7 +3287,7 @@ AtlasLoot_HewdropDown_SubTables = {
 		{ "|cfffff468"..AL["Rogue"], "T2Rogue" },
 		{ "|cffff7c0a"..AL["Druid"], "T2Druid" },
 		{ "|cffaad372"..AL["Hunter"], "T2Hunter" },
-		{ "|cff2773ff"..AL["Shaman"], "T2Shaman" },
+		{ "|cff0070DE"..AL["Shaman"], "T2Shaman" },
 		{ "|cfff48cba"..AL["Paladin"], "T2Paladin" },
 		{ "|cffc69b6d"..AL["Warrior"], "T2Warrior" },
 	},
@@ -3281,7 +3298,7 @@ AtlasLoot_HewdropDown_SubTables = {
 		{ "|cfffff468"..AL["Rogue"], "T3Rogue" },
 		{ "|cffff7c0a"..AL["Druid"], "T3Druid" },
 		{ "|cffaad372"..AL["Hunter"], "T3Hunter" },
-		{ "|cff2773ff"..AL["Shaman"], "T3Shaman" },
+		{ "|cff0070DE"..AL["Shaman"], "T3Shaman" },
 		{ "|cfff48cba"..AL["Paladin"], "T3Paladin" },
 		{ "|cffc69b6d"..AL["Warrior"], "T3Warrior" },
 	},
@@ -3292,7 +3309,7 @@ AtlasLoot_HewdropDown_SubTables = {
 		{ "|cfffff468"..AL["Rogue"], "T35Rogue" },
 		{ "|cffff7c0a"..AL["Druid"], "T35Druid" },
 		{ "|cffaad372"..AL["Hunter"], "T35Hunter" },
-		{ "|cff2773ff"..AL["Shaman"], "T35Shaman" },
+		{ "|cff0070DE"..AL["Shaman"], "T35Shaman" },
 		{ "|cfff48cba"..AL["Paladin"], "T35Paladin" },
 		{ "|cffc69b6d"..AL["Warrior"], "T35Warrior" },
 	},
@@ -3303,7 +3320,7 @@ AtlasLoot_HewdropDown_SubTables = {
 		{ "|cfffff468"..AL["Rogue"], "ZGRogue" },
 		{ "|cffff7c0a"..AL["Druid"], "ZGDruid" },
 		{ "|cffaad372"..AL["Hunter"], "ZGHunter" },
-		{ "|cff2773ff"..AL["Shaman"], "ZGShaman" },
+		{ "|cff0070DE"..AL["Shaman"], "ZGShaman" },
 		{ "|cfff48cba"..AL["Paladin"], "ZGPaladin" },
 		{ "|cffc69b6d"..AL["Warrior"], "ZGWarrior" },
 	},
@@ -3794,10 +3811,10 @@ function AtlasLootItem_OnClick(arg1)
 			elseif AtlasLootItemsFrame.refresh[1] == "SearchResult" then
 				AtlasLoot_AddToWishlist(AtlasLoot:GetOriginalDataFromSearchResult(this.itemID));
 			else
-				AtlasLoot_AddToWishlist(this.itemID, strsplit("\\", getglobal("AtlasLootItem_"..this:GetID().."_Icon"):GetTexture(), 0, true), this.itemIDName, this.itemIDExtra, AtlasLootItemsFrame.refresh[1].."|"..AtlasLootItemsFrame.refresh[2]);
+				AtlasLoot_AddToWishlist(this.itemID, AtlasLoot_strsplit("\\", getglobal("AtlasLootItem_"..this:GetID().."_Icon"):GetTexture(), 0, true), this.itemIDName, this.itemIDExtra, AtlasLootItemsFrame.refresh[1].."|"..AtlasLootItemsFrame.refresh[2]);
 			end
 		elseif((AtlasLootItemsFrame.refresh[1] == "SearchResult" or AtlasLootItemsFrame.refresh[1] == "WishList") and this.sourcePage) then
-			local dataID, dataSource = strsplit("|", this.sourcePage);
+			local dataID, dataSource = AtlasLoot_strsplit("|", this.sourcePage);
 			if(dataID and dataSource and AtlasLoot_IsLootTableAvailable(dataID)) then
 				AtlasLoot_ShowItemsFrame(dataID, dataSource, AtlasLoot_TableNames[dataID][1], AtlasLootItemsFrame.refresh[4]);
 			end
@@ -3815,12 +3832,12 @@ function AtlasLootItem_OnClick(arg1)
 			elseif AtlasLootItemsFrame.refresh[1] == "SearchResult" then
 				AtlasLoot_AddToWishlist(AtlasLoot:GetOriginalDataFromSearchResult(this.itemID));
 			else
-				AtlasLoot_AddToWishlist(this.itemID, strsplit("\\", getglobal("AtlasLootItem_"..this:GetID().."_Icon"):GetTexture(), 0, true), this.itemIDName, this.itemIDExtra, AtlasLootItemsFrame.refresh[1].."|"..AtlasLootItemsFrame.refresh[2]);
+				AtlasLoot_AddToWishlist(this.itemID, AtlasLoot_strsplit("\\", getglobal("AtlasLootItem_"..this:GetID().."_Icon"):GetTexture(), 0, true), this.itemIDName, this.itemIDExtra, AtlasLootItemsFrame.refresh[1].."|"..AtlasLootItemsFrame.refresh[2]);
 			end
 		elseif(IsControlKeyDown()) then
 			DressUpItemLink("item:"..this.dressingroomID..":0:0:0");
 		elseif((AtlasLootItemsFrame.refresh[1] == "SearchResult" or AtlasLootItemsFrame.refresh[1] == "WishList") and this.sourcePage) then
-			local dataID, dataSource = strsplit("|", this.sourcePage);
+			local dataID, dataSource = AtlasLoot_strsplit("|", this.sourcePage);
 			if(dataID and dataSource and AtlasLoot_IsLootTableAvailable(dataID)) then
 				AtlasLoot_ShowItemsFrame(dataID, dataSource, AtlasLootItemsFrame.refresh[3], AtlasLootItemsFrame.refresh[4]);
 			end
@@ -3880,12 +3897,12 @@ function AtlasLootItem_OnClick(arg1)
 			elseif AtlasLootItemsFrame.refresh[1] == "SearchResult" then
 				AtlasLoot_AddToWishlist(AtlasLoot:GetOriginalDataFromSearchResult(this.itemID));
 			else
-				AtlasLoot_AddToWishlist(this.itemID, strsplit("\\", getglobal("AtlasLootItem_"..this:GetID().."_Icon"):GetTexture(), 0, true), this.itemIDName, this.itemIDExtra, AtlasLootItemsFrame.refresh[1].."|"..AtlasLootItemsFrame.refresh[2]);
+				AtlasLoot_AddToWishlist(this.itemID, AtlasLoot_strsplit("\\", getglobal("AtlasLootItem_"..this:GetID().."_Icon"):GetTexture(), 0, true), this.itemIDName, this.itemIDExtra, AtlasLootItemsFrame.refresh[1].."|"..AtlasLootItemsFrame.refresh[2]);
 			end
 		elseif(IsControlKeyDown()) then
 			DressUpItemLink("item:"..this.dressingroomID..":0:0:0");
 		elseif((AtlasLootItemsFrame.refresh[1] == "SearchResult" or AtlasLootItemsFrame.refresh[1] == "WishList") and this.sourcePage) then
-			local dataID, dataSource = strsplit("|", this.sourcePage);
+			local dataID, dataSource = AtlasLoot_strsplit("|", this.sourcePage);
 			if(dataID and dataSource and AtlasLoot_IsLootTableAvailable(dataID)) then
 				AtlasLoot_ShowItemsFrame(dataID, dataSource, AtlasLootItemsFrame.refresh[3], AtlasLootItemsFrame.refresh[4]);
 			end
@@ -4063,114 +4080,3 @@ function AtlasLoot_GetChatLink(id)
 	local e = string.sub(d, 2)
 	return "\124"..e.."\124H"..b.."\124h["..a.."]\124h\124r"
 end
-
---pfUI.api.strsplit
-local function AtlasLoot_strsplit(delimiter, subject)
-  if not subject then return nil end
-  local delimiter, fields = delimiter or ":", {}
-  local pattern = string.format("([^%s]+)", delimiter)
-  string.gsub(subject, pattern, function(c) fields[table.getn(fields)+1] = c end)
-  return unpack(fields)
-end
---[[禁用版本检查，降低内存消耗
---Update announcing code taken from pfUI
-local major, minor, fix = AtlasLoot_strsplit(".", tostring(GetAddOnMetadata("AtlasLoot", "Version")))
-
-local alreadyshown = false
-local localversion  = tonumber(major*10000 + minor*100 + fix)
-local remoteversion = tonumber(AtlasLoot_updateavailable) or 0
-local loginchannels = { "BATTLEGROUND", "RAID", "GUILD" }
-local groupchannels = { "BATTLEGROUND", "RAID" }
-
-AtlasLoot_updater = CreateFrame("Frame")
-AtlasLoot_updater:RegisterEvent("CHAT_MSG_ADDON")
-AtlasLoot_updater:RegisterEvent("CHAT_MSG_CHANNEL")
-AtlasLoot_updater:RegisterEvent("PLAYER_ENTERING_WORLD")
-AtlasLoot_updater:RegisterEvent("PARTY_MEMBERS_CHANGED")
-AtlasLoot_updater:RegisterEvent("CHAT_MSG_CHANNEL_JOIN")
-
-AtlasLootUserCounter = {}
-PlayerCounter = {}
-
-AtlasLoot_updater:SetScript("OnEvent", function()
-	if event == "CHAT_MSG_ADDON" and arg1 == "AtlasLoot" then
-		local v, remoteversion, remotetitle = AtlasLoot_strsplit(":", arg2)
-		local _,title = GetAddOnInfo("AtlasLoot")
-		local remoteversion = tonumber(remoteversion)
-		if remoteversion >= 40000 then remoteversion = 0 end --Block for people using some version from another version of WoW.
-		if remoteversion >= 10200 then remoteversion = 0 end
-		if v == "VERSION" and remoteversion and title == remotetitle then
-			if remoteversion > localversion then
-				AtlasLoot_updateavailable = remoteversion
-				if not alreadyshown then
-					DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot]|r New version available! https://github.com/Lexiebean/AtlasLoot/")
-					alreadyshown = true
-				end
-			end
-		end
-	end
-
-	if event == "CHAT_MSG_CHANNEL_JOIN" then
-		local name = arg2
-		if not PlayerCounter[name] then
-			PlayerCounter[name] = 1
-		end
-	end
-
-	if event == "CHAT_MSG_CHANNEL" then
-		local _,_,source = string.find(arg4,"(%d+)%.")
-		if source then
-			_,name = GetChannelName(source)
-		end
-		if not name then return end
-		if string.upper(name) == "LFT" then
-			local msg, v, remoteversion, remotetitle = AtlasLoot_strsplit(":", arg1)
-			if msg == "Atlasloot" then
-				local remoteversion = tonumber(remoteversion) or 0
-				local _,title = GetAddOnInfo("AtlasLoot")
-				if remoteversion >= 40000 then remoteversion = 0 end --Block for people using some version from another version of WoW.
-				if remoteversion >= 10200 then remoteversion = 0 end
-				if v == "VERSION" and remoteversion and title == remotetitle then
-					if remoteversion > localversion then
-						AtlasLoot_updateavailable = remoteversion
-						if not alreadyshown then
-							DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot]|r New version available! https://github.com/Lexiebean/AtlasLoot/")
-							alreadyshown = true
-						end
-					end
-				end
-				local name = arg2
-				if not AtlasLootUserCounter[name] then
-					AtlasLootUserCounter[name] = 1
-				end
-			end
-		end
-	end
-	
-	local _,title = GetAddOnInfo("AtlasLoot")
-	if event == "PARTY_MEMBERS_CHANGED" then
-		local groupsize = GetNumRaidMembers() > 0 and GetNumRaidMembers() or GetNumPartyMembers() > 0 and GetNumPartyMembers() or 0
-		if ( this.group or 0 ) < groupsize then
-			for _, chan in pairs(groupchannels) do
-				SendAddonMessage("AtlasLoot", "VERSION:" .. localversion..":"..title, chan)
-			end
-		end
-		this.group = groupsize
-	end
-
-	if event == "PLAYER_ENTERING_WORLD" then
-	  if not alreadyshown and localversion < remoteversion then
-		DEFAULT_CHAT_FRAME:AddMessage("|cffbe5eff[AtlasLoot]|r New version available! https://github.com/Lexiebean/AtlasLoot/")
-		AtlasLoot_updateavailable = localversion
-		alreadyshown = true
-	  end
-
-	  for _, chan in pairs(loginchannels) do
-		SendAddonMessage("AtlasLoot", "VERSION:" .. localversion..":"..title, chan)
-	  end
-	  if GetChannelName("LFT") ~= 0 then
-		SendChatMessage("Atlasloot:VERSION:" .. localversion..":"..title, "CHANNEL", nil, GetChannelName("LFT"))
-	  end
-	end
-  end)
---]]

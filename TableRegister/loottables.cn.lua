@@ -113,6 +113,8 @@ AtlasLoot_TableNames = {
 	["DMCookie"] = { AL["Cookie"], "AtlasLootItems" },
 	["DMCaptainGreenskin"] = { AL["Captain Greenskin"], "AtlasLootItems" },
 	["DMVanCleef"] = { AL["Edwin VanCleef"], "AtlasLootItems" },
+	["DMJaredVoss"] = { AL["Jared Voss"], "AtlasLootItems" },
+	["DMMasterpieceHarvester"] = { AL["Masterpiece Harvester"], "AtlasLootItems" },
 	["DMTrash"] = { AL["Trash Mobs"] .. " (" .. AL["The Deadmines"] .. ")", "AtlasLootItems" },
 	--Dire Maul East
 	["DMEPusillin"] = { AL["Pusillin"], "AtlasLootItems" },
@@ -252,6 +254,7 @@ AtlasLoot_TableNames = {
 	["AQEnchants"] = { "AQ Enchants", "AtlasLootItems" },
 	--Scarlet Monestery - Armory
 	["SMHerod"] = { AL["Herod"], "AtlasLootItems" },
+	["SMArmoryQuartermasterDaghelm"] = { AL["Armory Quartermaster Daghelm"], "AtlasLootItems" },
 	["SMATrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery (Armory)"] .. ")", "AtlasLootItems" },
 	--Scarlet Monestery - Cathedral
 	["SMFairbanks"] = { AL["High Inquisitor Fairbanks"], "AtlasLootItems" },
@@ -265,10 +268,12 @@ AtlasLoot_TableNames = {
 	["SMAzshir"] = { AL["Azshir the Sleepless"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
 	["SMFallenChampion"] = { AL["Fallen Champion"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
 	["SMBloodmageThalnos"] = { AL["Bloodmage Thalnos"], "AtlasLootItems" },
+	["SMDukeDreadmoore"] = { AL["Duke Dreadmoore"], "AtlasLootItems" },
 	["SMGTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery (Graveyard)"] .. ")", "AtlasLootItems" },
 	--Scarlet Monestery - Library
 	["SMHoundmasterLoksey"] = { AL["Houndmaster Loksey"], "AtlasLootItems" },
 	["SMDoan"] = { AL["Arcanist Doan"], "AtlasLootItems" },
+	["SMBrotherWystan"] = { AL["Brother Wystan"], "AtlasLootItems" },
 	["SMDoansBox"] = { AL["Doan's Strongbox"], "AtlasLootItems" },
 	["SMLTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery (Library)"] .. ")", "AtlasLootItems" },
 	--Scholomance
@@ -301,9 +306,11 @@ AtlasLoot_TableNames = {
 	["SFKOdotheBlindwatcher"] = { AL["Odo the Blindwatcher"], "AtlasLootItems" },
 	["SFKFenrustheDevourer"] = { AL["Fenrus the Devourer"], "AtlasLootItems" },
 	["SFKBookofUr"] = { AL["The Book of Ur"], "AtlasLootItems" },
+	["SFKMelenasBelongings"] = { AL["Melenas' Belongings"], "AtlasLootItems" },
 	["SFKArugalsVoidwalker"] = { AL["Arugal's Voidwalker"], "AtlasLootItems" },
 	["SFKWolfMasterNandos"] = { AL["Wolf Master Nandos"], "AtlasLootItems" },
 	["SFKArchmageArugal"] = { AL["Archmage Arugal"], "AtlasLootItems" },
+	["SFKPrelateIronmane"] = { AL["Prelate Ironmane"], "AtlasLootItems" },
 	["SFKDeathswornCaptain"] = { AL["Deathsworn Captain"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
 	["SFKTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Shadowfang Keep"] .. ")", "AtlasLootItems" },
 	--The Stockade
@@ -411,7 +418,17 @@ AtlasLoot_TableNames = {
 	["AQ40Trash2"] = { AL["Trash Mobs"] .. " (AQ40)", "AtlasLootItems" },
 	["AQOpening"] = { "AQ Opening Quest Line", "AtlasLootItems" },
 	--Kara40
-	["NoKara40"] = { "No Kara 40", "AtlasLootItems" },
+	--Tower of Karazhan
+	["Kara40Gnarlmoon"] = { AL["Keeper Gnarlmoon"], "AtlasLootItems" },
+	["Kara40Incantagos"] = { AL["Ley-Watcher Incantagos"], "AtlasLootItems" },
+	["Kara40Anomalus"] = { AL["Anomalus"], "AtlasLootItems" },
+	["Kara40King"] = { AL["King (Chess fight)"], "AtlasLootItems" },
+	["Kara40Echo"] = { AL["Echo of Medivh"], "AtlasLootItems" },
+	["Kara40SanvTasdal"] = { AL["Sanv Tas'dal"], "AtlasLootItems" },
+	["Kara40Rupturan"] = { AL["Rupturan"], "AtlasLootItems" },
+	["Kara40Kruul"] = { AL["Kruul"], "AtlasLootItems" },
+	["Kara40Mephistroth"] = { AL["Mephistroth"], "AtlasLootItems" },
+	["Kara40Trash"] = { AL["Trash Mobs"], "AtlasLootItems" },
 	--Uldaman
 	["UldMagreganDeepshadow"] = { AL["Magregan Deepshadow"], "AtlasLootItems" },
 	["UldTabletofRyuneh"] = { "Tablet of Ryun'eh", "AtlasLootItems" },
@@ -456,6 +473,8 @@ AtlasLoot_TableNames = {
 	["WCVerdan"] = { AL["Verdan the Everliving"], "AtlasLootItems" },
 	["WCMutanus"] = { AL["Mutanus the Devourer"], "AtlasLootItems" },
 	["WCDeviateFaerieDragon"] = { AL["Deviate Faerie Dragon"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+	["WCZandaraWindhoof"] = { AL["Zandara Windhoof"], "AtlasLootItems" },
+	["WCVangros"] = { AL["Vangros"], "AtlasLootItems" },
 	["WCTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Wailing Caverns"] .. ")", "AtlasLootItems" },
 	--Zul'Farrak
 	["ZFAntusul"] = { AL["Antu'sul"], "AtlasLootItems" },
@@ -1194,6 +1213,8 @@ AtlasLoot_TableNamesBoss = {
 		["DMCookie"] = { AL["Cookie"], "AtlasLootItems" },
 		["DMCaptainGreenskin"] = { AL["Captain Greenskin"], "AtlasLootItems" },
 		["DMVanCleef"] = { AL["Edwin VanCleef"], "AtlasLootItems" },
+		["DMJaredVoss"] = { AL["Jared Voss"], "AtlasLootItems" },
+		["DMMasterpieceHarvester"] = { AL["Masterpiece Harvester"], "AtlasLootItems" },
 		["DMTrash"] = { AL["Trash Mobs"] .. " (" .. AL["The Deadmines"] .. ")", "AtlasLootItems" },
 	},
 	["Dire Maul East"] = {
@@ -1350,6 +1371,7 @@ AtlasLoot_TableNamesBoss = {
 	},
 	["Scarlet Monestery - Armory"] = {
 		["SMHerod"] = { AL["Herod"], "AtlasLootItems" },
+		["SMArmoryQuartermasterDaghelm"] = { AL["Armory Quartermaster Daghelm"], "AtlasLootItems" },
 		["SMATrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery (Armory)"] .. ")", "AtlasLootItems" },
 	},
 	["Scarlet Monestery - Cathedral"] = {
@@ -1365,11 +1387,13 @@ AtlasLoot_TableNamesBoss = {
 		["SMAzshir"] = { AL["Azshir the Sleepless"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
 		["SMFallenChampion"] = { AL["Fallen Champion"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
 		["SMBloodmageThalnos"] = { AL["Bloodmage Thalnos"], "AtlasLootItems" },
+		["SMDukeDreadmoore"] = { AL["Duke Dreadmoore"], "AtlasLootItems" },
 		["SMGTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery (Graveyard)"] .. ")", "AtlasLootItems" },
 	},
 	["Scarlet Monestery - Library"] = {
 		["SMHoundmasterLoksey"] = { AL["Houndmaster Loksey"], "AtlasLootItems" },
 		["SMDoan"] = { AL["Arcanist Doan"], "AtlasLootItems" },
+		["SMBrotherWystan"] = { AL["Brother Wystan"], "AtlasLootItems" },
 		["SMDoansBox"] = { AL["Doan's Strongbox"], "AtlasLootItems" },
 		["SMLTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Scarlet Monastery (Library)"] .. ")", "AtlasLootItems" },
 	},
@@ -1404,9 +1428,11 @@ AtlasLoot_TableNamesBoss = {
 		["SFKOdotheBlindwatcher"] = { AL["Odo the Blindwatcher"], "AtlasLootItems" },
 		["SFKFenrustheDevourer"] = { AL["Fenrus the Devourer"], "AtlasLootItems" },
 		["SFKBookofUr"] = { AL["The Book of Ur"], "AtlasLootItems" },
+		["SFKMelenasBelongings"] = { AL["Melenas' Belongings"], "AtlasLootItems" },
 		["SFKArugalsVoidwalker"] = { AL["Arugal's Voidwalker"], "AtlasLootItems" },
 		["SFKWolfMasterNandos"] = { AL["Wolf Master Nandos"], "AtlasLootItems" },
 		["SFKArchmageArugal"] = { AL["Archmage Arugal"], "AtlasLootItems" },
+		["SFKPrelateIronmane"] = { AL["Prelate Ironmane"], "AtlasLootItems" },
 		["SFKDeathswornCaptain"] = { AL["Deathsworn Captain"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
 		["SFKTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Shadowfang Keep"] .. ")", "AtlasLootItems" },
 	},
@@ -1476,9 +1502,18 @@ AtlasLoot_TableNamesBoss = {
 		["AQ40Trash2"] = { AL["Trash Mobs"] .. " (AQ40)", "AtlasLootItems" },
 		["AQOpening"] = { "AQ Opening Quest Line", "AtlasLootItems" },
 	},
-	--Kara40
-	["NoKara40"] = { "No Kara 40", "AtlasLootItems" },
-
+	["Tower of Karazhan"] = {
+		["Kara40Gnarlmoon"] = { AL["Keeper Gnarlmoon"], "AtlasLootItems" },
+		["Kara40Incantagos"] = { AL["Ley-Watcher Incantagos"], "AtlasLootItems" },
+		["Kara40Anomalus"] = { AL["Anomalus"], "AtlasLootItems" },
+		["Kara40King"] = { AL["King (Chess fight)"], "AtlasLootItems" },
+		["Kara40Echo"] = { AL["Echo of Medivh"], "AtlasLootItems" },
+		["Kara40SanvTasdal"] = { AL["Sanv Tas'dal"], "AtlasLootItems" },
+		["Kara40Rupturan"] = { AL["Rupturan"], "AtlasLootItems" },
+		["Kara40Kruul"] = { AL["Kruul"], "AtlasLootItems" },
+		["Kara40Mephistroth"] = { AL["Mephistroth"], "AtlasLootItems" },
+		["Kara40Trash"] = { AL["Trash Mobs"], "AtlasLootItems" },
+	},
 	["Uldaman Entrance"] = {
 		["UldMagreganDeepshadow"] = { AL["Magregan Deepshadow"], "AtlasLootItems" },
 		["UldTabletofRyuneh"] = { "Tablet of Ryun'eh", "AtlasLootItems" },
@@ -1529,6 +1564,8 @@ AtlasLoot_TableNamesBoss = {
 		["WCVerdan"] = { AL["Verdan the Everliving"], "AtlasLootItems" },
 		["WCMutanus"] = { AL["Mutanus the Devourer"], "AtlasLootItems" },
 		["WCDeviateFaerieDragon"] = { AL["Deviate Faerie Dragon"] .. " (" .. AL["Rare"] .. ")", "AtlasLootItems" },
+		["WCZandaraWindhoof"] = { AL["Zandara Windhoof"], "AtlasLootItems" },
+		["WCVangros"] = { AL["Vangros"], "AtlasLootItems" },
 		["WCTrash"] = { AL["Trash Mobs"] .. " (" .. AL["Wailing Caverns"] .. ")", "AtlasLootItems" },
 	},
 	["Zul'Farrak"] = {

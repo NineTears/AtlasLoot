@@ -333,7 +333,7 @@ function AtlasLootZGSetMenu()
 	AtlasLootMenuItem_18.lootpage="ZGHunter";
 	AtlasLootMenuItem_18:Show();
 	--Shaman
-	AtlasLootMenuItem_19_Name:SetText("|cff2773ff"..AL["Shaman"]);
+	AtlasLootMenuItem_19_Name:SetText("|cff0070DE"..AL["Shaman"]);
 	AtlasLootMenuItem_19_Extra:SetText("");
 	AtlasLootMenuItem_19_Icon:SetTexture("Interface\\Icons\\Spell_FireResistanceTotem_01");
 	AtlasLootMenuItem_19.lootpage="ZGShaman";
@@ -407,7 +407,7 @@ function AtlasLootAQ40SetMenu()
 	AtlasLootMenuItem_18.lootpage="AQ40Hunter";
 	AtlasLootMenuItem_18:Show();
 	--Shaman
-	AtlasLootMenuItem_19_Name:SetText("|cff2773ff"..AL["Shaman"]);
+	AtlasLootMenuItem_19_Name:SetText("|cff0070DE"..AL["Shaman"]);
 	AtlasLootMenuItem_19_Extra:SetText("");
 	AtlasLootMenuItem_19_Icon:SetTexture("Interface\\Icons\\Spell_FireResistanceTotem_01");
 	AtlasLootMenuItem_19.lootpage="AQ40Shaman";
@@ -481,7 +481,7 @@ function AtlasLootAQ20SetMenu()
 	AtlasLootMenuItem_18.lootpage="AQ20Hunter";
 	AtlasLootMenuItem_18:Show();
 	--Shaman
-	AtlasLootMenuItem_19_Name:SetText("|cff2773ff"..AL["Shaman"]);
+	AtlasLootMenuItem_19_Name:SetText("|cff0070DE"..AL["Shaman"]);
 	AtlasLootMenuItem_19_Extra:SetText("");
 	AtlasLootMenuItem_19_Icon:SetTexture("Interface\\Icons\\Spell_FireResistanceTotem_01");
 	AtlasLootMenuItem_19.lootpage="AQ20Shaman";
@@ -555,7 +555,7 @@ function AtlasLootT0SetMenu()
 	AtlasLootMenuItem_18.lootpage="T0Hunter";
 	AtlasLootMenuItem_18:Show();
 	--Shaman
-	AtlasLootMenuItem_19_Name:SetText("|cff2773ff"..AL["Shaman"]);
+	AtlasLootMenuItem_19_Name:SetText("|cff0070DE"..AL["Shaman"]);
 	AtlasLootMenuItem_19_Extra:SetText("");
 	AtlasLootMenuItem_19_Icon:SetTexture("Interface\\Icons\\Spell_FireResistanceTotem_01");
 	AtlasLootMenuItem_19.lootpage="T0Shaman";
@@ -629,7 +629,7 @@ function AtlasLootT1SetMenu()
 	AtlasLootMenuItem_18.lootpage="T1Hunter";
 	AtlasLootMenuItem_18:Show();
 	--Shaman
-	AtlasLootMenuItem_19_Name:SetText("|cff2773ff"..AL["Shaman"]);
+	AtlasLootMenuItem_19_Name:SetText("|cff0070DE"..AL["Shaman"]);
 	AtlasLootMenuItem_19_Extra:SetText("");
 	AtlasLootMenuItem_19_Icon:SetTexture("Interface\\Icons\\Spell_FireResistanceTotem_01");
 	AtlasLootMenuItem_19.lootpage="T1Shaman";
@@ -703,7 +703,7 @@ function AtlasLootT2SetMenu()
 	AtlasLootMenuItem_18.lootpage="T2Hunter";
 	AtlasLootMenuItem_18:Show();
 	--Shaman
-	AtlasLootMenuItem_19_Name:SetText("|cff2773ff"..AL["Shaman"]);
+	AtlasLootMenuItem_19_Name:SetText("|cff0070DE"..AL["Shaman"]);
 	AtlasLootMenuItem_19_Extra:SetText("");
 	AtlasLootMenuItem_19_Icon:SetTexture("Interface\\Icons\\Spell_FireResistanceTotem_01");
 	AtlasLootMenuItem_19.lootpage="T2Shaman";
@@ -777,7 +777,7 @@ function AtlasLootT3SetMenu()
 	AtlasLootMenuItem_18.lootpage="T3Hunter";
 	AtlasLootMenuItem_18:Show();
 	--Shaman
-	AtlasLootMenuItem_19_Name:SetText("|cff2773ff"..AL["Shaman"]);
+	AtlasLootMenuItem_19_Name:SetText("|cff0070DE"..AL["Shaman"]);
 	AtlasLootMenuItem_19_Extra:SetText("");
 	AtlasLootMenuItem_19_Icon:SetTexture("Interface\\Icons\\Spell_FireResistanceTotem_01");
 	AtlasLootMenuItem_19.lootpage="T3Shaman";
